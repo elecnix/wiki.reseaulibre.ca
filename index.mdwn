@@ -1,5 +1,27 @@
 Welcome to the Montreal Mesh Wiki.
 
+# Introduction
+
+While [Ile Sans Fil](http://ilesansfil.org) has done incredible work in providing free wifi access to the community, the goal of creating an alternative network, independant from big corporate providers and decentralized, has remained elusive.
+
+The goal of this project is to create a community wireless network accessible from both fixed and mobile devices that can be used in day to day life by regular people as well as during emergencies.
+
+# Similar projects
+
+This project is inspired, guided and sometimes in communication with the following projects:
+
+* <http://freifunk.net/>
+* <http://www.opennet-initiative.de/>
+
+# Technical information
+
+* [[Requirements]]
+* [[HardwareTools]]
+* [[SoftwareTools]]
+* [[NodeDirectory]]
+
+# Meta
+
 This wiki is designed to be distributed (as in: no single point of failure!) so you should be able to clone it and edit it offline if you need to. See [[WikiReplication]] for more information.
 
 All wikis are supposed to have a [[SandBox]], so this one does too.
