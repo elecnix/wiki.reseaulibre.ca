@@ -1,0 +1,13 @@
+No node has been clearly established yet. Here is, however, a list of
+possible nodes:
+
+* [[AnarcatNode]]
+* ...? your name here?
+
+## Meta
+
+I have contacted the [techno-viking][] to see if he could share his
+IkiWiki/OpenLayers integration to document the nodes locations and so
+on... Awaiting his feedback. -- [[TheAnarcat]] 2011-10-10
+
+ [techno-viking][http://techno-viking.com/posts/ikiwiki-maps/]
