@@ -1,0 +1,9 @@
+Welcome to the Montreal Mesh Wiki.
+
+This wiki is designed to be distributed (as in: no single point of failure!) so you should be able to clone it and edit it offline if you need to. See [[WikiReplication]] for more information.
+
+All wikis are supposed to have a [[SandBox]], so this one does too.
+
+----
+
+This wiki is powered by [[ikiwiki]].
