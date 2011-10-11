@@ -1,0 +1,267 @@
+## Flasher le firmware de AirOS à ROBIN
+
+Redémarer le PS2HP en retirant le fil puis en apuyant sur le petit bouton reset à côté du connecteur du fil dès l'insertion et jusqu'à ce que les DELs se mettent à flasher.
+
+Ensuite vérifiez avec ping que 192.168.1.20 (defaut) répond bien puis avec un client tftp envoyez le nouveau firmware de ROBIN, exemple:
+
+ atftp --option "mode octet" --option "timeout  60" --verbose --trace -p -l openwrt-atheros-ubnt2-HP-squashfs.bin -r flash_update 192.168.1.20
+
+Ce qui finit ici par:
+ ...
+ sent DATA <block: 6346, size: 512>
+ received ACK <block: 6346>
+ sent DATA <block: 6347, size: 512>
+ received ACK <block: 6347>
+ sent DATA <block: 6348, size: 488>
+ received ACK <block: 6348>
+ >
+
+Pour revenir à AirOS il suffit de faire la même chose mais avec l'autre image, par exemple: XS2.ar2316.v3.4.4390.090521.1757-8M.bin
+
+## Fichiers de configuration
+
+### Setup de base
+
+Une fois branché en ssh, changez le mot de passe par défaut (root / 0p3nm35h) avec passwd(1).
+
+### /etc/config/management
+
+Voici la configuration juste après avoir flashé le firmware r2135:
+*Notez que la commande "uci" permet d'éditer les fichiers dans /etc/config. Par exemple uci get management.enable.https retournera 0 en allant lire le fichier)
+
+ config management enable
+        option heartbeat         1
+        option https             0
+        option update            0
+        option update_rate       5
+        option custom_update     0
+        option dashboard_onLan   0
+        option upgrade           1
+        option upgrade_f         1
+        option upgrade_t         23
+        option gw_repository     0
+        option force_reboot      never
+        option rootpwd           0p3nm35h
+        option defessid          0
+        option ap2hidden         0
+        option bridge            1
+        option messages      0
+        option freeze_version    0
+        option strict_mesh       0
+        option gmt_offset        '-6'
+        option dhcpd             1
+        option max_w4n_fails     8
+        option smart_banner      1
+        option shaper            0
+        option wake_slowly       0
+        option countrycode       840
+ #
+
+Je modifie pour l'instant:
+
+* https (1)
+* upgrade/upgrade_f (0)
+* rootpwd (Vo7re_Secre7_ICI)  (NOTE: ne semble pas affecter le mdp pour le login root par ssh, doit donc être utilisé pour le dashboard?)
+* gmt_offset ('-5')
+* shaper (1)
+* countrycode (124)
+
+### /etc/config/general 
+
+ config general services
+        option name_srv 18.26.4.9
+        option upstream 0
+        option updt_srv     'checkin.open-mesh.com'
+        option checker      'checkin-batman.php'
+        option upgd_srv 'www.open-mesh.com/firmware/mr3201a/test/'
+        option beat_srv 'www.open-mesh.com'
+        option ntpd_srv 'tick.greyware.com'
+        option cstm_srv     'www.open-mesh.com/firmware/mr3201a/'
+        option base_beta        'www.open-mesh.com/firmware/mr3201a/'
+        option base_test        'www.open-mesh.com/firmware/mr3201a/test/'
+
+ # real upgrade server URL is upgd_srv
+
+Ceci semble d'après moi être la cause du problème de l'upgrade raté lors d'un test avec open-mesh (ie: upgrader un PS2HP vers un firmware de MR3021a!)
+
+### /etc/config/iprules 
+
+ # MTU_CLAMP 
+ #       0: set MTU to auto
+ #       9: use eth0 MTU
+ # <value>: set MTU fixed to this <value>
+ 
+ config iprules filter
+        option SMTP_rdir       0
+        option SMTP_dest       0.0.0.0
+        option LAN_BLOCK       1
+        option ICMP_BLOCK      0
+        option AP1_bridge      1
+        option AP2_bridge      1
+        option MTU_CLAMP       0 
+        option dashboard_IP    0.0.0.0
+        option enable_log      0
+        option log_server
+ 
+ config iprules start
+        option pre             S77
+        option post            S79
+ 
+ #
+
+* Sécuriser l'accès au LAN (192.168.1.* ou autre) à partir de l'AP ouvert à tous:
+
+Changer LAN_BLOCK de 0 à 1:
+
+ option LAN_BLOCK       1
+
+Cela bloque autant l'accès au lan par le réseau public que privé malheureusement.
+Pour permettre aux gens qui ont le mot de passe du réseau privé d'accéder au réseau, il faut aller dans /etc/init.d/iprules et y changer la ligne 176:
+
+ for IFACE in $AP1_iface $AP2_iface $WAN ; do
+Par
+ for IFACE in $AP1_iface $WAN ; do
+
+L'interface $AP2_iface étant l'interface privée...
+
+* *FIXME*: trouver de l'info sur la configuration du dashboard...
+
+### /etc/config/mesh 
+
+config mesh iface
+        option net      5
+        option prefix   8
+        option bssid    02:ca:ff:ee:ba:be
+ 
+ config mesh ap
+        option up      1
+        option net      '101'
+        option prefix   24
+        option ssid     'open-mesh'
+        option encryption 'none'
+        option key 
+ 
+ config mesh Myap
+        option up      1
+        option net      '102'
+        option prefix   24
+        option ssid     'my*open-mesh'
+        option encryption 'psk'
+        option key        '0p3nm35h'
+ 
+ config mesh hna
+        option announce 0
+ #
+
+Dans public je change le ssid. Dans private je change encryption à psk2, key et ssid aussi.
+
+### /etc/config/radio 
+
+ config radio channel
+        option auto      0
+        option default   5
+        option current   5
+        option alternate 5
+        option tts       0
+ #
+
+Pas encore testé mais il s'agit du canal utilisé pour le wifi... default vs current (??)
+
+### /etc/config/wireless 
+
+ config 'wifi-device' 'wifi0'
+        option 'type' 'atheros'
+        option 'channel' '5'
+        option 'agmode' '11g'
+ 
+ config 'wifi-iface' 'mesh'
+        option 'device' 'wifi0'
+        option 'network' 'mesh'
+        option 'mode' 'ap'
+        option 'ssid' 'mesh'
+        option 'hidden' '0'
+        option 'encryption' 'none'
+ 
+ config 'wifi-iface' 'public'
+        option 'device' 'wifi0'
+        option 'network' 'ap1'
+        option 'mode' 'ap'
+        option 'ssid' 'open-mesh'
+        option 'hidden' '0'
+        option 'encryption' 'none'
+        option 'isolate' '1'
+        option 'key' ''
+ 
+ config 'wifi-iface' 'private'
+        option 'device' 'wifi0'
+        option 'network' 'ap2'
+        option 'mode' 'ap'
+        option 'hidden' '0'
+        option 'encryption' 'psk'
+        option 'key' '0p3nm35h'
+        option 'ssid' 'my open-mesh'
+        option 'isolate' '1'
+
+Dans public je change le ssid et dans private je change encryption à psk2, key et ssid aussi mais en sans succès:
+Après un reboot cela n'a aucun effet et a été écrasé.
+
+### /etc/config/wshaper 
+
+ # wondershaper configuration for OpenWrt
+ # downlink_rate uplink_rate expressed in Kilobits per second
+ 
+ config wshaper rate
+        option downlink     1250
+        option uplink       650
+
+Les valeurs sont modifiées au choix, ici: 1000/400 mais aucun testes quant à l'effet de ces options pour l'instant...
+
+### /etc/config/system 
+
+ config system
+        option hostname open-mesh
+
+Vous pouvez changer le hostname ici ...
+
+
+## Autres  configurations
+
+### Changer l'adresse IP à static plutôt que dhcp (facultatif) 
+
+J'aime bien que mes infrastructures soient à des adresses prévisibles sur le LAN. (*FIXME*)
+
+### Changer le SSID public/privé, mot de passe, ... 
+
+Il faut allez dans /etc/config/mesh et y changer les noms, ajouter son mot de passe.
+On peut aussi changer l'encryption pour le réseau privé de psk (WPA) à psk2 (WPA2).
+
+### Configurer le AP privé: "my open-mesh" (ath2) 
+
+* voir iprules plus haut.
+
+### Configurer le AP public: "open-mesh" (ath1) 
+
+* voir iprules plus haut.
+
+### Configurer l'interface du mesh (ath0) 
+
+* OLSR 
+* BATMAN
+* ...
+
+### Configurer le Dashboard 
+
+* Empêcher le dashboard d'éffacer les configs (enlever open-mesh et/ou config solo et/ou config avec OrangeMesh / MeshConnect / Jo.ke.r)
+* *FIXME*
+
+## Benchmarks / Testes
+
+* Vitesse
+* Distance
+* QoS
+* VoIP
+* ...
+
+## Références
+
+[1] - http://robin.forumup.it/viewtopic.php?t=1686&mforum=robin
