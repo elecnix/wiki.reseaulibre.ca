@@ -31,6 +31,10 @@ published through the repolist plugin:
 
 See [[meta/Replication]] for instructions on how to replicate this wiki.
 
+## HTTP acceleration
+
+First, [[ikiwiki]] is designed to serve static pages, which is very efficient. Unless the wiki gets edited a **lot**, there should be no performance issues hosting it. Also, the wiki emits [[etags|http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19]] based on the content, which means that pages are cached by proxies and your browser will not fetch new data until it is told so or the page changes, which is very useful. This seems to be the default Apache configuration on my machine...
+
 # Plugins
 
 ## Enabled plugins
