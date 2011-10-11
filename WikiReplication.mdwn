@@ -1,0 +1,32 @@
+This wiki is designed to be distributed and "redundant" (as in having
+multiple copies). Basically, this is to allow you to access the
+documentation even if the network goes down. This is done through
+[[ikiwiki]], which is a the engine behind this wiki.
+
+# Basic offline editing and sharing
+
+Basically, this wiki is a collection of [[markdown]]-formatted pages
+committed to a git repository. The git repository can be freely cloned
+using this command:
+
+    git clone http://anarcat.ath.cx/software/mtl-mesh-wiki.git/
+
+This will at least provide you with the raw source, the text files
+that generate the wiki website. There you can make changes and send me
+the patches by email.
+
+# Creating a mirror
+
+To create a mirror of this wiki, if it ever goes down, you can start
+from the above repository and create a new wiki.
+
+The following steps should get you going:
+
+    git clone --bare http://anarcat.ath.cx/software/mtl-mesh-wiki.git/
+    git clone mtl-mesh-wiki.git
+    cp mtl-mesh-wiki/WikiMaintenance/mtl-mesh-wiki.setup .
+    edit mtl-mesh-wiki.setup # fix paths
+    ikiwiki --setup mtl-mesh-wiki.setup
+
+See also [[WikiMaintenance]] for the plugins to enable and the hooks
+configuration.
