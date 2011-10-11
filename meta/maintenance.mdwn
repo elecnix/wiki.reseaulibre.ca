@@ -1,3 +1,5 @@
+[[!toc]]
+
 # Overall configuration
 
 This wiki was created using the default [[!iki setup]]
@@ -56,6 +58,12 @@ the wiki:
 * [[!iki plugins/highlight]] - source code hilighting
 * [[!iki plugins/mirrorlist]] - if/when we get mirrors of this wiki
 * [[!iki plugins/contrib/googlemaps]] or preferebly [OpenLayers integration](http://techno-viking.com/posts/ikiwiki-maps/)
+
+# Templates
+
+This section documents which templates are available and to what pages they apply, see also the [[!iki plugins/editemplate]] plugin.
+
+[[!edittemplate template="templates/nodes" match="nodes/*"]]
 
 # Other tools
 
