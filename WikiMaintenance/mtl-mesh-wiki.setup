@@ -8,9 +8,9 @@
 # Remember to re-run ikiwiki --setup any time you edit this file.
 use IkiWiki::Setup::Standard {
 	# name of the wiki
-	wikiname => 'mtl-mesh-wiki',
+	wikiname => 'Montreal Mesh Wiki',
 	# contact email for wiki
-	adminemail => 'anarcat@marcos.anarcat.ath.cx',
+	adminemail => 'anarcat+meshmtl@orangeseeds.org',
 	# users who are wiki admins
 	adminuser => [qw{https://id.koumbit.net/anarcat}],
 	# users who are banned from the wiki
@@ -30,7 +30,7 @@ use IkiWiki::Setup::Standard {
 	# rcs backend to use
 	rcs => 'git',
 	# plugins to add to the default configuration
-	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff attachment}],
+	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff rename remove}],
 	# plugins to disable
 	disable_plugins => [],
 	# additional directory to search for template files
@@ -229,7 +229,7 @@ use IkiWiki::Setup::Standard {
 
 	# repolist plugin
 	# URIs of repositories containing the wiki's source
-	#repositories => [qw{svn://svn.example.org/wiki/trunk}],
+	repositories => [qw{http://anarcat.ath.cx/software/mtl-mesh-wiki.git/}],
 
 	# search plugin
 	# path to the omega cgi program
