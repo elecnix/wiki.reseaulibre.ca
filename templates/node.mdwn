@@ -1,0 +1,11 @@
+(Description of the node here, with a link to your homepage.)
+
+    MAC address:
+    IP address:
+    IPv6 address:
+    Software:
+    Hardware:
+    Power:
+    Location:
+    Azimuth:
+    Panorama:
