@@ -27,41 +27,6 @@
 */
 
 
-body
-{
-  font-family: "Bitstream Vera Sans", sans-serif;
-  padding: 0.5em;
-}
-
-p
-{
-  clear: left;
-}
-
-hr
-{
-  height: 1px;
-  border-style: none;
-  background-color: black;
-  margin-left: 0;
-}
-
-pre
-{
-  margin-left: 3em;
-  font-weight: bold;
-  padding: 0.5em;
-}
-
-a
-{
-  text-decoration: none;
-}
-a:hover
-{
-  border-bottom: 1px dotted blue;
-}
-
 /* Put these elements side by side.  */
 .pagedate,
 .pagecopyright,
