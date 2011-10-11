@@ -5,7 +5,7 @@ documentation even if the network goes down. This is done through
 
 # Basic offline editing and sharing
 
-Basically, this wiki is a collection of [[markdown]]-formatted pages
+Basically, this wiki is a collection of [[ikiwiki/markdown]]-formatted pages
 committed to a git repository. The git repository can be freely cloned
 using this command:
 
