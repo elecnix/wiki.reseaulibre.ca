@@ -1,0 +1,27 @@
+Topologie réseau chez bgm.
+
+ * Réseau interne IPv4: 192.168.42.0/24
+ * Réseau wifi IPv4: 172.16.42.0/24
+
+= m2-sud.net4.bidon.ca =
+
+ * Adresse IPv4 lan: 192.168.42.4 + IPv6
+ * Adresse IPv4 wlan: 172.16.42.4
+
+= m2-nord.net4.bidon.ca =
+
+= partage.m2.bidon.ca, aka damas.net4.bidon.ca =
+
+Serveur de fichiers
+
+ * Adresse IPv4 à partir du réseau: 172.16.42.1
+
+= TODO =
+
+ * (./) configurer nodogsplash pour qu'il affiche un avertissement, puis redirige vesr partage.m2
+ * Rendre accessible le serveur de fichiers
+ * Tester OLSR sur OpenWRT
+ * Tester OLSR sur AirOS
+ * Statistiques d'utilisation
+ ** (./) vnstat pour la bande passante: http://wiki.openwrt.org/doc/howto/vnstat
+ ** nombre de personnes connectées? (leases dhcp)
