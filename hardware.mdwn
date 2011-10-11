@@ -8,6 +8,9 @@ Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez d
 
 La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un magasin d'article de pèche/camping) mais le service est excellent: vous pouvez donner le nom de Pierre-david en référence et vous aurez du service VIP ;)
 
+<!> note that flashing your Ubiquity device with OpenWRT or similar may mean a significant reduction in signal quality - rene suggests using a [[airOS-based firmware|https://wiki.opennet-initiative.de/wiki/AirOS-opennet]] instead.
+
+
 ## Nanostation
 
 [Ubiquiti](http://www.ubnt.ca), modèles [Nanostation M2](http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=115&category_id=35&option=com_virtuemart&Itemid=1) (2.4gHz) / M5 (5gHz).
