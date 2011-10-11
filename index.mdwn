@@ -14,7 +14,6 @@ This project is inspired, guided and sometimes in communication with the followi
 
 * [[nodes]] - the list of deployed nodes
 * [[links]] - the links between the nodes
-
 * [[Hardware]] - hardware used in the project, and how it's configured
 * [[Software]] - the software used in the project...
 * [[ConfigurationInstructions]] - step by step config instructions to join the network
