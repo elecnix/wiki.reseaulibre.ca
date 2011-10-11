@@ -6,8 +6,8 @@ possible nodes:
 
 ## Meta
 
-I have contacted the [techno-viking][] to see if he could share his
-IkiWiki/OpenLayers integration to document the nodes locations and so
-on... Awaiting his feedback. -- [[TheAnarcat]] 2011-10-10
-
- [techno-viking][http://techno-viking.com/posts/ikiwiki-maps/]
+I have contacted the
+[techno-viking](http://techno-viking.com/posts/ikiwiki-maps/) to see
+if he could share his IkiWiki/OpenLayers integration to document the
+nodes locations and so on... Awaiting his feedback. -- [[TheAnarcat]]
+2011-10-10
