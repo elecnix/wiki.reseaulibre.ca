@@ -1,0 +1,51 @@
+# Ubiquiti
+
+Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca
+
+Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez directement pour faire une commande ils peuvent vous la charger en $CAN et tout le monde sauve au bout du compte (Paypal sont assez chers pour les taux de change).
+
+La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un magasin d'article de pèche/camping) mais le service est excellent: vous pouvez donner le nom de Pierre-david en référence et vous aurez du service VIP ;)
+
+## Nanostation
+
+[Ubiquiti](http://www.ubnt.ca), modèles [Nanostation M2](http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=115&category_id=35&option=com_virtuemart&Itemid=1) (2.4gHz) / M5 (5gHz).
+
+ * Roule Linux par défaut
+ * De nombreux modèles supportent ROBIN (pour faire du mesh), c.f. <http://robin.forumup.it/forum-103-robin.html>
+ * Wifi atheros, supporte 802.11n
+ * fait pour couvrir des grandes zones
+ * power over ethernet
+
+## PicoStation
+
+* Émission à 29dBm ( 800mW )
+ 
+I hope you're only using this equipment at least ~20m from living
+space. Otherwise I find this rather irresponsible: 100mW is the
+maximum allowed power in the EU at least, with a non-directional
+antenna. I'm usually setting my home equipment to 1mW, since that's
+already more than enough to cover an appartment in a house built out
+of mostly wood (it's even enough to surf from in front of the house
+when the accesspoint is on the 3rd floor). Compared to that you're
+kind of claiming that your service is benefitting 800 simultaneous
+users per such access point if you're radiating that power.
+
+### Specifications
+
+* Atheros MIPS 4KC, 180MHz
+* 32MB SDRAM, 8MB Flash
+* Prise 10/100 BASE-TX
+* RP-SMA omni antenna included ( 6dBi )
+* 15V, 0.8A DC, avec l'adapteur PoE inclu.
+* PoE Passif (paires (+)4,5; (-)7,8)
+* -20C à +70C
+* 0.10 kg
+* Intérieur: 200 m et Extérieur (Ligne de vue): 400 m à 11Mbps
+
+### Testing and configuration
+
+Voir [[RobinConfiguration]].
+
+# Other stuff
+
+* <http://wiki.daviddarts.com/PirateBox_DIY>
