@@ -1,5 +1,3 @@
-The list of known links:
-
 [[!if test="(enabled(template) or enabled(edittemplate))
 and enabled(inline)" then="""
 The list of known links:
