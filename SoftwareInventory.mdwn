@@ -50,6 +50,8 @@ our notes on how to configure robin.
 
 AirOS est le système d'exploitation qui vient par défaut avec les NanoStation d'Unbt. Pourrions-nous y faire rouler OLSR?
 
- * http://208.68.95.4/forum/showthread.php?t=27476&page=2 : AirOS + OLSR, lien vers un binaire
- * https://wiki.graz.funkfeuer.at/UbntStations : plus général
- * http://dev.wifidog.org/wiki/doc/install/airos : Exemple de rajout à AirOS de ISF
+ * <http://208.68.95.4/forum/showthread.php?t=27476&page=2> : AirOS + OLSR, lien vers un binaire
+ * <https://wiki.graz.funkfeuer.at/UbntStations> : plus général
+ * <http://dev.wifidog.org/wiki/doc/install/airos> : Exemple de rajout à AirOS de ISF
+
+(!) Update: je sais que rene @ opennet roule OLSR avec une distro custom sur les machines de Unbt... -- [[anarcat]] 2011-10-11
