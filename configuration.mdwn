@@ -10,6 +10,7 @@ the mesh.
 
 We need to decide of a topology. Opennet has an interesting concept, where public IPs are hidden behind VPN gateways:
 
+[[!img https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png]]
 
 
 This has a few advantages:
