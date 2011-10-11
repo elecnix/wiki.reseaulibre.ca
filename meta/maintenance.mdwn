@@ -5,7 +5,9 @@
 This wiki was created using the default [[!iki setup]]
 instructions. The [[resulting .setup file|meta/mtl-mesh-wiki.setup]] is available
 [[here|meta/mtl-mesh-wiki.setup]] in case this wiki needs to be
-reconstructed, although that copy may be out of date.
+reconstructed. 
+
+(!) By storing the setup file within the wiki, it ensures the wiki can more easily be rebuilt (see [[replication]] for this), but it also means that the [[!iki plugins/websetup]] interface will make uncommitted changes in the git checkout that will need to be manually checked in.
 
 ## Publishing the wiki source
 
@@ -46,12 +48,15 @@ the wiki:
 * [[!iki plugins/edittemplate]] - used for the [[templates/node]] template
 * [[!iki plugins/getsource]]
 * [[!iki plugins/headinganchors]]
+* [[!iki plugins/mirrorlist]]
 * [[!iki plugins/relativedate]]
 * [[!iki plugins/recentchangesdiff]]
 * [[!iki plugins/rename]]
 * [[!iki plugins/remove]]
+* [[!iki plugins/search]]
 * [[!iki plugins/sortnaturally]]
 * [[!iki plugins/theme]] - using the actiontabs theme
+* [[!iki plugins/userlist]]
 
 ## Possible plugins to enable
 
