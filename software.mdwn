@@ -1,3 +1,5 @@
+[[!toc levels=3]]
+
 # Routing protocols
 
 ## OLSR
@@ -39,6 +41,12 @@ is now implemented in the kernel (batman-adv).
 
 # Distributions
 
+## OpenWRT
+
+basic distribution. features OLSRd too.
+
+note
+
 ## Robin
 
 Based on [OpenWrt](http://openwrt.org),
@@ -54,4 +62,5 @@ AirOS est le système d'exploitation qui vient par défaut avec les NanoStation 
  * <https://wiki.graz.funkfeuer.at/UbntStations> : plus général
  * <http://dev.wifidog.org/wiki/doc/install/airos> : Exemple de rajout à AirOS de ISF
 
-(!) Update: je sais que rene @ opennet roule OLSR avec une distro custom sur les machines de Unbt... -- [[anarcat]] 2011-10-11
+(!) Update: je sais que rene @ opennet roule OLSR avec une distro custom sur les machines de Unbt... Voir <https://wiki.opennet-initiative.de/wiki/AirOS-opennet> -- [[anarcat]] 2011-10-11
+
