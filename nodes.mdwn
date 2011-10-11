@@ -13,5 +13,5 @@ The links between nodes is documented in [[links]].
 I have contacted the
 [techno-viking](http://techno-viking.com/posts/ikiwiki-maps/) to see
 if he could share his IkiWiki/OpenLayers integration to document the
-nodes locations and so on... Awaiting his feedback. -- [[TheAnarcat]]
+nodes locations and so on... Awaiting his feedback. -- [[anarcat]]
 2011-10-10
