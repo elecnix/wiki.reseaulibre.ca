@@ -8,3 +8,13 @@ network in montreal. They may or may not be still interested.
  * Alex (|R) déjà un noeud actif (voir mesh-mtl)
  * [[nicolas marchildon|http://techno.marchildon.net/2008/05/04/reseau-wifi-mesh-a-montreal/]] (2008 - il voit presque anarcat!)
  * ChrisG (ergonlogic)
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
