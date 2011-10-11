@@ -1,3 +1,10 @@
+# Overall configuration
+
+This wiki was created using the default [[!iki setup]]
+instructions. The resulting .setup file is available
+[[mtl-mesh-wiki.setup|here]] in case this wiki needs to be
+reconstructed.
+
 # Plugins
 
 ## Enable plugins
