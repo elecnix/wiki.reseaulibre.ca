@@ -5,6 +5,28 @@ instructions. The resulting .setup file is available
 [[WikiMaintenance/mtl-mesh-wiki.setup|here]] in case this wiki needs to be
 reconstructed.
 
+## Publishing the wiki source
+
+To publish the source, I use a regular HTTP server. For this, I had to
+change the post-update hook as described
+[[!iki todo/call_git-update-server-info_from_post-udpate_hook/|here]],
+which means specifically changing the git-wrapper parameter to:
+
+	git_wrapper => '/home/anarcat/public_html/software/mtl-mesh-wiki.git/hooks/post-update.ikiwiki
+
+then creating the post-update hook with the following content:
+
+    #!/bin/sh
+    
+    ./hooks/post-update.ikiwiki
+    
+    exec git update-server-info
+
+... and setting it executable. Then the URL of the repository can be
+published through the repolist plugin:
+
+	repositories => [qw{http://anarcat.ath.cx/software/mtl-mesh-wiki.git/}],
+
 # Plugins
 
 ## Enable plugins
