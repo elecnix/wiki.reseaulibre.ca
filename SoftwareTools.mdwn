@@ -16,6 +16,7 @@ Part of the Robin firmware (see below).
 ### Deployments
 
 * <http://www.opennet-initiative.de/>
+* <http://reseaucitoyen.be/>
 
 ## B.A.T.M.A.N.
 
