@@ -30,7 +30,7 @@ use IkiWiki::Setup::Standard {
 	# rcs backend to use
 	rcs => 'git',
 	# plugins to add to the default configuration
-	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff rename remove creole getsource}],
+	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff rename remove creole getsource mirrorlist search userlist}],
 	# plugins to disable
 	disable_plugins => [],
 	# additional directory to search for template files
@@ -198,9 +198,9 @@ use IkiWiki::Setup::Standard {
 
 	######################################################################
 	# web plugins
-	#   (404, attachment, comments, editdiff, edittemplate, google,
-	#    goto, mirrorlist, repolist, search, theme, userlist, websetup,
-	#    wmd)
+	#   (404, attachment, comments, editdiff, edittemplate, getsource,
+	#    google, goto, mirrorlist, remove, rename, repolist, search,
+	#    theme, userlist, websetup, wmd)
 	######################################################################
 
 	# attachment plugin
@@ -222,6 +222,10 @@ use IkiWiki::Setup::Standard {
 	#comments_allowauthor => 0,
 	# commit comments to the VCS
 	comments_commit => 1,
+
+	# getsource plugin
+	# Mime type for returned source.
+	#getsource_mimetype => 'text/plain; charset=utf-8',
 
 	# mirrorlist plugin
 	# list of mirrors
