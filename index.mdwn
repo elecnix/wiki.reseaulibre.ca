@@ -28,7 +28,7 @@ This project is inspired, guided and sometimes in communication with the followi
 
 This wiki is designed to be distributed (as in: no single point of
 failure!) so you should be able to clone it and edit it offline if you
-need to. See [[meta/Replication]] for more information. There is also the [[WikiMaintenance]] documentation.
+need to. See [[meta/Replication]] for more information. There is also the [[meta/Maintenance]] documentation.
 
 All wikis are supposed to have a [[SandBox]], so this one does too.
 
