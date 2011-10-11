@@ -1,0 +1,240 @@
+Installation d'OpenWRT sur le NanoStation M2:
+
+[[!toc]]
+
+= Télécharger le firmware =
+
+ * OpenWRT ar71xx ubnt nano m: 
+  * squashfs (recommandé): http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin
+  * jffs2: http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-jffs2-factory.bin
+
+Enregistrer le fichier localement sur l'ordinateur qui va se connecter à l'AP pour le flasher.
+
+= Configurer une interface réseau pour flasher =
+
+Si votre réseau local n'est pas sur 192.168.1.x, déclarer une interface virtuelle:
+
+{{{
+# ifconfig eth0:ap 192.168.1.123
+}}}
+
+= Flasher =
+
+ * Connecter l'AP et, au moment de l'alimenter en électricité, peser sur le bouton "reset" (petit bouton à côté de la prise réseau "main"). Si l'AP est prêt, les indicateurs de la connexion réseau sans fil clignoteront comme des lumières de noël.
+
+ * S'assurer que la connection est fiable, électricité fiable, etc. Si cette étape est interrompue, ça pourrait endommager le matériel.
+
+ * Envoyer le firmware par le logiciel tftp;
+
+{{{
+$ tftp 192.168.1.20
+
+tftp> binary
+tftp> put openwrt-ar71xx-ubnt-bullet-m-squashfs-factory.bin
+}}}
+
+ * Attendre au moins 5-10 minutes.
+
+= Configuration initiale =
+
+Par défaut, OpenWRT va utiliser 192.168.1.1, donc si votre réseau local n'est pas sur 192.168.1.x, déclarer une interface virtuelle:
+
+{{{
+# ifconfig eth0:ap 192.168.1.123
+}}}
+
+Faire une connection telnet au routeur:
+
+{{{
+$ telnet 192.168.1.1
+}}}
+
+Activer ssh en configurant un mot de passe root:
+
+{{{
+openwrt# passwd
+}}}
+
+Si l'AP n'est pas votre routeur, vous voudrez sans doute changer son adresse IP:
+
+{{{
+openwrt# vi /etc/config/network
+}}}
+
+{{{
+config interface lan
+        option ifname   eth0
+        option type     bridge
+        option proto    static
+        option ipaddr   192.168.42.4
+        option gateway  192.168.42.1
+        option netmask  255.255.255.0
+}}}
+
+Puis redémarrer pour tester le tout:
+
+{{{
+openwrt# reboot
+}}}
+
+Maintenant votre AP sera disponible sur la nouvelle adresse, par ssh:
+
+{{{
+$ ssh root@192.168.42.4
+}}}
+
+Puis on peut accéder à l'interface web de configuration, ex: http://192.168.42.4
+
+= Configuration du réseau sans fil =
+
+== Manuellement ==
+
+Activer la carte wifi en commentant la ligne `option disabled 1` dans /etc/config/wireless :
+
+{{{
+config wifi-device  radio0
+[...]
+        # REMOVE THIS LINE TO ENABLE WIFI:
+        # option disabled 1
+}}}
+
+Voir les autres options dans ce fichier, on peut y changer le SSID et le mode d'encryption. Puis redémarrer le routeur.
+
+Référence: http://wiki.openwrt.org/doc/uci/network
+
+== Par l'interface graphique ==
+
+Dans Network -> Wireless, il faut cocher la case "enable", puis configurer le reste.
+
+= Mesh avec OLSR =
+
+<!> still testing <!>
+
+{{{
+root@OpenWrt:~# opkg update
+root@OpenWrt:~# opkg install olsrd olsrd-luci olsrd-mod-txtinfo olsrd-luci-mod-txtinfo
+root@OpenWrt:~# opkg install luci-app-splash luci-app-statistics luci-app-qos luci-app-olsr luci-app-livestats
+root@OpenWrt:~# opkg install olsrd-mod-nameservice olsrd-mod-p2pd olsrd-mod-txtinfo olsrd-mod-dyn-gw
+}}}
+
+Configurer la bonne interface sans fil dans /etc/config/olsrd :
+
+{{{
+config Interface
+        list interface 'lan'
+}}}
+
+Et faire en sorte que txtinfo soit accessible de 127.0.0.1 (pour avoir des stats par l'interface web):
+
+{{{
+config LoadPlugin
+        option library 'olsrd_txtinfo.so.0.1'
+        option accept '127.0.0.1'
+}}}
+
+Démarrer:
+
+{{{
+root@OpenWrt:~# /etc/init.d/olsrd start
+}}}
+
+Tester:
+
+{{{
+root@OpenWrt:~# wget -qO- http://127.0.0.1:2006/
+}}}
+
+= IPv6 =
+
+Si le réseau local est déjà configuré pour supporter l'IPv6:
+
+{{{
+root@OpenWrt:~# opkg update
+root@OpenWrt:~# opkg install kmod-ipv6 radvd ip kmod-ip6tables ip6tables
+}}}
+
+L'interface réseau du wan va s'auto-configurer:
+
+{{{
+root@OpenWrt:~# ping ipv6.google.com
+PING ipv6.google.com (2001:4860:800b::93): 56 data bytes
+64 bytes from 2001:4860:800b::93: seq=0 ttl=53 time=57.845 ms
+}}}
+
+... mais je n'ai pas encore testé comment propager les configurations aux clients de l'AP.
+
+BROUILLON de configuration avec des clients aux AP, i.e. activer le "forwarding":
+
+ * il faut un kernel >= 2.6.37, OpenWRT Backfire utilise 2.6.32.x, donc il faut utiliser une version "trunk", ex: http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin
+ * activer "net.ipv6.conf.all.forwarding = 2", "2 means to enable forwarding, but also accept RAs and configure addresses/routes from them, 1 = forwarding only, 0  = disable", c.f. /etc/sysctl.conf, ou /proc/sys/net/ipv6/conf/*/forwarding
+
+
+= Splash page: nodogsplash =
+
+{{{
+root@OpenWrt:~# opkg install nodogsplash
+}}}
+
+Fichier de configuration dans /etc/nodogsplash/nodogsplash.conf
+
+{{{
+GatewayInterface wlan0
+
+FirewallRuleSet authenticated-users {
+  FirewallRule block to 192.168.0.0/16
+  FirewallRule block to 10.0.0.0/8
+
+  # Serveur de fichiers
+  FirewallRule allow tcp port 80 to 172.16.42.2
+
+  # respectivement: DNS, http, https, ssh
+  FirewallRule allow tcp port 53
+  FirewallRule allow udp port 53
+  FirewallRule allow tcp port 80
+  FirewallRule allow tcp port 443
+  FirewallRule allow tcp port 22
+}
+
+FirewallRuleSet preauthenticated-users 
+{
+  # DNS
+  FirewallRule allow tcp port 53
+  FirewallRule allow udp port 53
+  
+  # Splash page
+  FirewallRule allow tcp port 80 to 172.16.42.1
+}
+
+GatewayName librenet-m2-sud
+RedirectURL http://partage.m2.bidon.ca/
+TrafficControl yes
+UploadLimit 128
+}}}
+
+On peut modifier le html de la splash page dans /etc/nodogsplash/htdocs/
+
+= vnstat: stats de bande passante =
+
+[/VnStat]
+
+= QoS =
+
+{{{
+root@OpenWrt:~# opkg install qos-scripts
+root@OpenWrt:~# /etc/init.d/qos enable
+root@OpenWrt:~# /etc/init.d/qos start
+}}}
+
+La configuration est dans /etc/config/qos. La configuration par défaut limite à 50ko/sec en aval, 15kb/sec en amont.
+
+<!> 2011-07-08: ceci semble causer un conflit avec nodogsplash... j'ai dû l'enlever -ML <!>
+
+= Références =
+
+ * Support matériel avec OpenWRT: http://wiki.openwrt.org/toh/ubiquiti/nanostation (pas très à jour)
+ * IPv6: http://wiki.openwrt.org/doc/howto/ipv6
+
+= TODO =
+
+ * Configuration réseau à suggérer?
+ * mesh?
