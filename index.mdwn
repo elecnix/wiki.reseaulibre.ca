@@ -12,9 +12,11 @@ This project is inspired, guided and sometimes in communication with the followi
 
 # Technical information
 
-* [[HardwareInventory]]
-* [[SoftwareInventory]]
-* [[NodeDirectory]]
+* [[NodeDirectory]] - the list of deployed nodes
+
+* [[HardwareInventory]] - hardware used in the project, and how it's configured
+* [[SoftwareInventory]] - the software used in the project...
+* [[ConfigurationInstructions]] - step by step config instructions to join the network
 
 # Participating
 
