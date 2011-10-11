@@ -3,7 +3,7 @@ No node has been clearly established yet.
 and enabled(inline)" then="""
 Here is the list of documented nodes:
 
-[[!inline pages="nodes/* and !*/*/* and !*/discussion" feeds=no archive=yes sort=title rootpage=nodes postform="yes" postformtext="Add a new node named:"]]
+[[!inline pages="nodes/* and !*/*/* and !*/discussion" feeds=no archive=yes sort=title rootpage=nodes template=titlepage postformtext="Add a new node named:"]]
 """]]
 
 The links between nodes is documented in [[links]].
