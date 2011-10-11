@@ -64,3 +64,13 @@ AirOS est le système d'exploitation qui vient par défaut avec les NanoStation 
 
 (!) Update: je sais que rene @ opennet roule OLSR avec une distro custom sur les machines de Unbt... Voir <https://wiki.opennet-initiative.de/wiki/AirOS-opennet> -- [[anarcat]] 2011-10-11
 
+## Opennet
+
+Firmware based on OpenWRT, OLSR and a VPN.
+
+ * [Docs in german](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware_NG)
+ * [Network topology](https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png)
+
+## Freifunk
+
+They have an OLSR-based firmware here: <http://wiki.freifunk.net/Freifunk_Firmware_%28English%29>
