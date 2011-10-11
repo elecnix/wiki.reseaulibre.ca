@@ -13,7 +13,7 @@ This project is inspired, guided and sometimes in communication with the followi
 # Technical information
 
 * [[HardwareInventory]]
-* [[SoftwareTools]]
+* [[SoftwareInventory]]
 * [[NodeDirectory]]
 
 # Participating
