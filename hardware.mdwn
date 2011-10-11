@@ -8,7 +8,7 @@ Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez d
 
 La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un magasin d'article de pèche/camping) mais le service est excellent: vous pouvez donner le nom de Pierre-david en référence et vous aurez du service VIP ;)
 
-<!> note that flashing your Ubiquity device with OpenWRT or similar may mean a significant reduction in signal quality - rene suggests using a [[airOS-based firmware|https://wiki.opennet-initiative.de/wiki/AirOS-opennet]] instead.
+/!\ note that flashing your Ubiquity device with OpenWRT or similar may mean a significant reduction in signal quality - rene suggests using a [[airOS-based firmware|https://wiki.opennet-initiative.de/wiki/AirOS-opennet]] instead.
 
 
 ## Nanostation
