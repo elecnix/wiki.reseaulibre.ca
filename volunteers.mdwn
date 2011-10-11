@@ -2,9 +2,9 @@ This is a list of people that have volunteered in the past for a mesh
 network in montreal. They may or may not be still interested.
 
  * MathieuL (bgm)
- * AntoineB ([[TheAnarcat]])
+ * [[TheAnarcat]]
  * AntoineT (hexa) hexa00 -a-t- gmail.com
- * [[KurthBemis]] (hRedBeard)
+ * [[KurthBemis|https://wiki.koumbit.net/KurthBemis]] (hRedBeard)
  * Alex (|R) déjà un noeud actif (voir mesh-mtl)
- * [[http://techno.marchildon.net/2008/05/04/reseau-wifi-mesh-a-montreal/|nicolas marchildon]] (2008 - il voit presque anarcat!)
+ * [[nicolas marchildon|http://techno.marchildon.net/2008/05/04/reseau-wifi-mesh-a-montreal/]] (2008 - il voit presque anarcat!)
  * ChrisG (ergonlogic)
