@@ -12,7 +12,7 @@ This project is inspired, guided and sometimes in communication with the followi
 
 # Technical information
 
-* [[NodeDirectory]] - the list of deployed nodes
+* [[Nodes]] - the list of deployed nodes
 
 * [[HardwareInventory]] - hardware used in the project, and how it's configured
 * [[SoftwareInventory]] - the software used in the project...
