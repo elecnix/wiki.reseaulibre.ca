@@ -1,2 +1,5 @@
+This page details how to configure your [[hardware]] for operation in
+the mesh.
+
 * [[ad-hoc]] - configuration ad-hoc de base, sans mesh
-* [[olsr+ipv6]] - configuration avec OLSR, IPv6 on a nanostation
+* [[olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
