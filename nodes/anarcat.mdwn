@@ -1,3 +1,15 @@
+A node on my roof.
+
+    MAC address: N/A
+    IP address:
+    IPv6 address:
+    Software: OpenWRT + OLSR?
+    Hardware: Linksys WRT54G
+    Power:
+    Location:
+    Azimuth:
+    Panorama:
+
 # battle plan
 
  1. setup [[configuration/ad-hoc]] mode between the laptop, the linksys and the n900
