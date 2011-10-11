@@ -215,7 +215,7 @@ On peut modifier le html de la splash page dans /etc/nodogsplash/htdocs/
 
 = vnstat: stats de bande passante =
 
-Voir [[graphs-vnstat.sh]] [[source|http://wiki.openwrt.org/doc/howto/vnstat]]
+Voir [[graphs-vnstat.sh]] ([[source|http://wiki.openwrt.org/doc/howto/vnstat]]).
 
 = QoS =
 
