@@ -1,0 +1,3 @@
+ * Mode: bridge
+ * Distance: 500 m
+ * Vitesse: ~ 1mbps  (bloqué par le gros édifice)
