@@ -1,12 +1,27 @@
-## Configuration
+# Plugins
 
+## Enable plugins
 
+On top of the default plugins, the following plugins are enabled in
+the wiki:
+
+* [[!iki plugins/editdiff]]
+* [[!iki plugins/edittemplate]] - used for the [[NodeTemplate]]
+* [[!iki plugins/getsource]]
+* [[!iki plugins/headinganchors]]
+* [[!iki plugins/relativedate]]
+* [[!iki plugins/recentchangesdiff]]
+* [[!iki plugins/rename]]
+* [[!iki plugins/remove]]
+* [[!iki plugins/sortnaturally]]
+* [[!iki plugins/theme]] - using the actiontabs theme
 
 ## Possible plugins to enable
 
 * [[!iki plugins/404]] - requires webserver config
 * [[!iki plugins/anonok]] - may provoke a deluge of spam
-* [[!iki plugins/editdiff]]
-* [[!iki plugins/edittemplate]] - useful for node templates for example
-
-* [OpenLayers integration](http://techno-viking.com/posts/ikiwiki-maps/)
+* [[!iki plugins/favicon]] - once we have an icon
+* [[!iki plugins/format]] - for different markup types in a page
+* [[!iki plugins/highlight]] - source code hilighting
+* [[!iki plugins/mirrorlist]] - if/when we get mirrors of this wiki
+* [[!iki plugins/contrib/googlemaps]] or preferebly [OpenLayers integration](http://techno-viking.com/posts/ikiwiki-maps/)
