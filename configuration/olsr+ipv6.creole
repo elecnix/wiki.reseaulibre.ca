@@ -5,8 +5,8 @@ Installation d'OpenWRT sur le NanoStation M2:
 = Télécharger le firmware =
 
  * OpenWRT ar71xx ubnt nano m: 
- ** squashfs (recommandé): http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin
- ** jffs2: http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-jffs2-factory.bin
+ ** squashfs (recommandé): <http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin>
+ ** jffs2: <http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-jffs2-factory.bin>
 
 Enregistrer le fichier localement sur l'ordinateur qui va se connecter à l'AP pour le flasher.
 
@@ -83,7 +83,7 @@ Maintenant votre AP sera disponible sur la nouvelle adresse, par ssh:
 $ ssh root@192.168.42.4
 }}}
 
-Puis on peut accéder à l'interface web de configuration, ex: http://192.168.42.4
+Puis on peut accéder à l'interface web de configuration, ex: <http://192.168.42.4>
 
 = Configuration du réseau sans fil =
 
@@ -100,7 +100,7 @@ config wifi-device  radio0
 
 Voir les autres options dans ce fichier, on peut y changer le SSID et le mode d'encryption. Puis redémarrer le routeur.
 
-Référence: http://wiki.openwrt.org/doc/uci/network
+Référence: <http://wiki.openwrt.org/doc/uci/network>
 
 == Par l'interface graphique ==
 
@@ -231,8 +231,8 @@ La configuration est dans /etc/config/qos. La configuration par défaut limite �
 
 = Références =
 
- * Support matériel avec OpenWRT: http://wiki.openwrt.org/toh/ubiquiti/nanostation (pas très à jour)
- * IPv6: http://wiki.openwrt.org/doc/howto/ipv6
+ * Support matériel avec OpenWRT: <http://wiki.openwrt.org/toh/ubiquiti/nanostation> (pas très à jour)
+ * IPv6: <http://wiki.openwrt.org/doc/howto/ipv6>
 
 = TODO =
 
