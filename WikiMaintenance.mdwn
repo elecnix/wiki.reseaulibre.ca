@@ -9,7 +9,7 @@ reconstructed.
 
 To publish the source, I use a regular HTTP server. For this, I had to
 change the post-update hook as described
-[[!iki todo/call_git-update-server-info_from_post-udpate_hook/|here]],
+[[!iki todo/call_git-update-server-info_from_post-udpate_hook desc="here"]],
 which means specifically changing the git-wrapper parameter to:
 
 	git_wrapper => '/home/anarcat/public_html/software/mtl-mesh-wiki.git/hooks/post-update.ikiwiki
