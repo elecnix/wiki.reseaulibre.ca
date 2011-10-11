@@ -10,9 +10,9 @@ The goal of this project is to create a community wireless network accessible fr
 
 This project is inspired, guided and sometimes in communication with the following projects:
 
-* <http://www.opennet-initiative.de/> - utilise OLSR
-* Réseau Citoyen en Belgique (forké et devenu <http://bombolong.net>) semble également utiliser OLSR.
-* <http://freifunk.net/> - utilise B.A.T.M.A.N.
+* <http://www.opennet-initiative.de/>
+* <http://reseaucitoyen.be/> - forké et devenu <http://bombolong.net>
+* <http://freifunk.net/>
 
 # Technical information
 
