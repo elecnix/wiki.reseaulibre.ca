@@ -1,7 +1,7 @@
 No node has been clearly established yet. Here is, however, a list of
 possible nodes:
 
-* [[AnarcatNode]]
+* [[nodes/anarcat]]
 * [[nodes/Bgm]]
 * ...? your name here?
 
