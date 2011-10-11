@@ -52,6 +52,10 @@ First, [[ikiwiki]] is designed to serve static pages, which is very efficient. U
 
 The wiki content is under GFDL, as detailed in the footer. A [[!iki plugins/meta]] tag is in every page to document that fact, and that is enforced through the edit templates below.
 
+## Theme
+
+The [[!iki plugins/theme]] (actiontabs) was slightly tweaked to have the footer display properly, based on the work at the [[GNU HURD wiki|http://www.bddebian.com/~hurd-web/]]. For this, the [[local.css]] file was created and can be modified through git.
+
 # Plugins
 
 ## Enabled plugins
