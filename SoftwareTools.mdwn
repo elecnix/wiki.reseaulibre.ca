@@ -1,28 +1,46 @@
-# OLSR
+# Routing protocols
+
+## OLSR
 
 [OLSR](https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol)
 (or the Optimized Link State Routing Protocol)
 
-## Implementations
+### Implementations
 
 * [OLSRd](http://www.olsr.org/)
 * [NRL-OLSR](http://cs.itd.nrl.navy.mil/work/olsr/index.php)
 * [wmolsr](http://sourceforge.net/projects/wmolsr/)
 
-## Deployments
+Part of the Robin firmware (see below).
+
+### Deployments
 
 * <http://www.opennet-initiative.de/>
 
-# B.A.T.M.A.N.
+## B.A.T.M.A.N.
 
 Implemented by the folks at [Freifunk](http://freifunk.net),
-[B.A.T.M.A.N.](https://en.wikipedia.org/wiki/B.A.T.M.A.N.) is
-intendended to be a replacement for OLSR.
+[B.A.T.M.A.N.](https://en.wikipedia.org/wiki/B.A.T.M.A.N.) (Better
+Approach To Mobile Ad-hoc Networking) is intendended to be a
+replacement for OLSR.
 
-## Implementations
+### Implementations
 
+Freifunk seem to be the sole implementors of this protocol (?). The
+first and second version were using UDP (port 1966) for propagating
+route information, and were implemented as a daemon (batmand). The
+third implementation switched to layer 2 for routing advertisement and
+is now implemented in the kernel (batman-adv).
 
-
-## Deployments
+### Deployments
 
 * <http://freifunk.net/>
+
+# Distributions
+
+## Robin
+
+Based on [OpenWrt](http://openwrt.org),
+[Robin](http://www.robin-mesh.com/) seems to be a fairly complete
+solution integrating BATMAN and a GUI. See [[RobinConfiguration]] for
+our notes on how to configure robin.
