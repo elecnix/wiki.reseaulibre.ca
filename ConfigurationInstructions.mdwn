@@ -1,0 +1,37 @@
+[[!toc]]
+
+= Configuration adhoc de base =
+
+Par défaut, le point d'accès est distribué avec le système "Air OS", basé sur Linux et une interface web assez standard.
+
+ * Connecter l'appareil tel qu'indiqué sur le bloc d'alimentation (un câble vers l'AP, l'autre vers le réseau)
+ * Brancher le câble réseau dans une machine directement (ex: laptop)
+ * Configurer le réseau de la machine pour utiliser une adresse statique:
+
+ {{{
+ifconfig eth0 192.168.1.21
+route add default gw 192.168.1.20
+}}}
+
+Alternativement, on peut brancher l'AP dans une switch et créer une interface virtuelle à partir de n'importe quelle autre machine sur la switch:
+
+ {{{
+ifconfig eth0:ap 192.168.1.21
+}}}
+
+ * Ouvrir un navigateur web et accéder à http://192.168.1.20
+  * login / pass: ubnt
+
+ * Configurer l'interface sans fil:
+  * Wireless mode: Station <!> pas sûr ..
+  * Choisir un ESSID
+  * Optionnel: choisir un mode d'encryption
+  * <!> Utiliser un channel width de 20MHz: certaines cartes réseau sans-fil ne supportent pas le 40MHz
+  * <!> Ne pas activer le channel shifting: non-supporté par la plupart des cartes réseau sans-fil
+
+ * Configurer le réseau:
+  * Network mode: router
+  * WLAN: dhcp
+  * Lan settings: ...
+
+ * Une fois les changements appliqués, si le réseau a été configuré pour utiliser DHCP, il faudra reconnecter l'interface réseau (du laptop).
