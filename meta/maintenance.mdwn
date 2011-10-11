@@ -1,7 +1,7 @@
 # Overall configuration
 
 This wiki was created using the default [[!iki setup]]
-instructions. The resulting .setup file is available
+instructions. The [[resulting .setup file|WikiMaintenance/mtl-mesh-wiki.setup]] is available
 [[here|WikiMaintenance/mtl-mesh-wiki.setup]] in case this wiki needs to be
 reconstructed, although that copy may be out of date.
 
