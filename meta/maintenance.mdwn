@@ -48,6 +48,20 @@ See [[meta/Replication]] for instructions on how to replicate this wiki.
 
 First, [[ikiwiki]] is designed to serve static pages, which is very efficient. Unless the wiki gets edited a **lot**, there should be no performance issues hosting it. Also, the wiki emits [[etags|http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19]] based on the content, which means that pages are cached by proxies and your browser will not fetch new data until it is told so or the page changes, which is very useful. This seems to be the default Apache configuration on my machine...
 
+## License
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]----
+
+The wiki content is under GFDL, as detailed in the footer. A [[!iki plugins/meta]] tag is in every page to document that fact, and that is enforced through the edit templates below.
+
 # Plugins
 
 ## Enabled plugins
@@ -85,6 +99,7 @@ This section documents which templates are available and to what pages they appl
 
 [[!edittemplate template="templates/node" match="nodes/*"]]
 [[!edittemplate template="templates/link" match="links/*"]]
+[[!edittemplate template="templates/all" match="*"]]
 
 # Other tools
 
