@@ -5,8 +5,8 @@ Installation d'OpenWRT sur le NanoStation M2:
 = Télécharger le firmware =
 
  * OpenWRT ar71xx ubnt nano m: 
-  * squashfs (recommandé): http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin
-  * jffs2: http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-jffs2-factory.bin
+ ** squashfs (recommandé): http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin
+ ** jffs2: http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-jffs2-factory.bin
 
 Enregistrer le fichier localement sur l'ordinateur qui va se connecter à l'AP pour le flasher.
 
