@@ -39,7 +39,7 @@ On top of the default plugins, the following plugins are enabled in
 the wiki:
 
 * [[!iki plugins/editdiff]]
-* [[!iki plugins/edittemplate]] - used for the [[NodeTemplate]]
+* [[!iki plugins/edittemplate]] - used for the [[templates/node]] template
 * [[!iki plugins/getsource]]
 * [[!iki plugins/headinganchors]]
 * [[!iki plugins/relativedate]]
