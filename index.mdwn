@@ -12,7 +12,7 @@ This project is inspired, guided and sometimes in communication with the followi
 
 # Technical information
 
-* [[HardwareTools]]
+* [[HardwareInventory]]
 * [[SoftwareTools]]
 * [[NodeDirectory]]
 
