@@ -5,6 +5,8 @@ possible nodes:
 * [[nodes/Bgm]]
 * ...? your name here?
 
+The links between nodes is documented in [[links]].
+
 ## Meta
 
 I have contacted the
