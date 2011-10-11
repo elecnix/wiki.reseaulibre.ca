@@ -2,21 +2,20 @@
 
 Par défaut, le point d'accès est distribué avec le système "Air OS", basé sur Linux et une interface web assez standard.
 
- * Connecter l'appareil tel qu'indiqué sur le bloc d'alimentation (un câble vers l'AP, l'autre vers le réseau)
- * Brancher le câble réseau dans une machine directement (ex: laptop)
- * Configurer le réseau de la machine pour utiliser une adresse statique:
- {{{
+* Connecter l'appareil tel qu'indiqué sur le bloc d'alimentation (un câble vers l'AP, l'autre vers le réseau)
+* Brancher le câble réseau dans une machine directement (ex: laptop)
+* Configurer le réseau de la machine pour utiliser une adresse statique:
+  {{{
 ifconfig eth0 192.168.1.21
 route add default gw 192.168.1.20
 }}}
 
-Alternativement, on peut brancher l'AP dans une switch et créer une interface virtuelle à partir de n'importe quelle autre machine sur la switch:
-
- {{{
+  Alternativement, on peut brancher l'AP dans une switch et créer une interface virtuelle à partir de n'importe quelle autre machine sur la switch:
+  {{{
 ifconfig eth0:ap 192.168.1.21
 }}}
 
- * Ouvrir un navigateur web et accéder à http://192.168.1.20
+* Ouvrir un navigateur web et accéder à http://192.168.1.20
  ** login / pass: ubnt
 
  * Configurer l'interface sans fil:
