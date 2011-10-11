@@ -1,3 +1,5 @@
+[[! toc]]
+
 # Ubiquiti
 
 Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca
