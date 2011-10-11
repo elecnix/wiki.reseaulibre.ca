@@ -24,9 +24,9 @@ The following steps should get you going:
 
     git clone --bare http://anarcat.ath.cx/software/mtl-mesh-wiki.git/
     git clone mtl-mesh-wiki.git
-    cp mtl-mesh-wiki/WikiMaintenance/mtl-mesh-wiki.setup .
-    edit mtl-mesh-wiki.setup # fix paths
-    ikiwiki --setup mtl-mesh-wiki.setup
+    cd mtl-mesh-wiki
+    edit meta/mtl-mesh-wiki.setup # fix paths
+    ikiwiki --setup meta/mtl-mesh-wiki.setup
 
 See also [[meta/Maintenance]] for the plugins to enable and the hooks
 configuration.
