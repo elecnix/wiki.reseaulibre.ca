@@ -20,18 +20,18 @@ ifconfig eth0:ap 192.168.1.21
 }}}
 
  * Ouvrir un navigateur web et accéder à http://192.168.1.20
-  * login / pass: ubnt
+ ** login / pass: ubnt
 
  * Configurer l'interface sans fil:
-  * Wireless mode: Station <!> pas sûr ..
-  * Choisir un ESSID
-  * Optionnel: choisir un mode d'encryption
-  * <!> Utiliser un channel width de 20MHz: certaines cartes réseau sans-fil ne supportent pas le 40MHz
-  * <!> Ne pas activer le channel shifting: non-supporté par la plupart des cartes réseau sans-fil
+ ** Wireless mode: Station <!> pas sûr ..
+ ** Choisir un ESSID
+ ** Optionnel: choisir un mode d'encryption
+ ** <!> Utiliser un channel width de 20MHz: certaines cartes réseau sans-fil ne supportent pas le 40MHz
+ ** <!> Ne pas activer le channel shifting: non-supporté par la plupart des cartes réseau sans-fil
 
  * Configurer le réseau:
-  * Network mode: router
-  * WLAN: dhcp
-  * Lan settings: ...
+ ** Network mode: router
+ ** WLAN: dhcp
+ ** Lan settings: ...
 
  * Une fois les changements appliqués, si le réseau a été configuré pour utiliser DHCP, il faudra reconnecter l'interface réseau (du laptop).
