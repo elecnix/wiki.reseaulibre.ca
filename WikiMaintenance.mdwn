@@ -31,7 +31,7 @@ See [[WikiReplication]] for instructions on how to replicate this wiki.
 
 # Plugins
 
-## Enable plugins
+## Enabled plugins
 
 On top of the default plugins, the following plugins are enabled in
 the wiki:
@@ -56,3 +56,7 @@ the wiki:
 * [[!iki plugins/highlight]] - source code hilighting
 * [[!iki plugins/mirrorlist]] - if/when we get mirrors of this wiki
 * [[!iki plugins/contrib/googlemaps]] or preferebly [OpenLayers integration](http://techno-viking.com/posts/ikiwiki-maps/)
+
+# Other tools
+
+* [[!iki tips/inside_dot_ikiwiki]] - good tips on how to interact with ikiwiki's metadata
