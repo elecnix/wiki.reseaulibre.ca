@@ -1,3 +1,8 @@
 The list of known links:
 
-[[!map pages="links/* and !*/*/* and !*/Discussion"]]
+[[!if test="(enabled(template) or enabled(edittemplate))
+and enabled(inline)" then="""
+The list of known links:
+
+[[!inline pages="links/* and !*/*/* and !*/discussion" archive=yes sort=title rootpage=links template=titlepage postformtext="Add a new node named:"]]
+"""]]
