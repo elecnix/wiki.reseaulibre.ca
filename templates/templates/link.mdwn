@@ -1,0 +1,5 @@
+    Mode: managed|adhoc
+    Distance: 
+    Nodes: <links to nodes>
+    Speed: <X mbps>
+    Picture:
