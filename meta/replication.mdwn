@@ -28,7 +28,7 @@ The following steps should get you going:
     edit mtl-mesh-wiki.setup # fix paths
     ikiwiki --setup mtl-mesh-wiki.setup
 
-See also [[WikiMaintenance]] for the plugins to enable and the hooks
+See also [[meta/Maintenance]] for the plugins to enable and the hooks
 configuration.
 
 (!) Oh, and [this](http://piny.be/jrayhawk/notes/ikiwiki_creation/)
