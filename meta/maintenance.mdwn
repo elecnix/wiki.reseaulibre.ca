@@ -64,6 +64,7 @@ the wiki:
 This section documents which templates are available and to what pages they apply, see also the [[!iki plugins/editemplate]] plugin.
 
 [[!edittemplate template="templates/node" match="nodes/*"]]
+[[!edittemplate template="templates/link" match="links/*"]]
 
 # Other tools
 
