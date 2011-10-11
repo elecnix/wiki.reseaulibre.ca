@@ -1,5 +1,5 @@
- * Mode: bridge
- * Distance: 500 m
- * Vitesse: ~ 1mbps  (bloqué par le gros édifice)
-
-[[!img IMG_3134.JPG]]
+ * Mode: managed
+ * Distance: 500m
+ * Nodes: [[nodes/hexa]], [[nodes/bgm]]
+ * Speed: 1mbps (bloqué par le gros édifice
+ * Picture: [[!img IMG_3134.JPG]]
