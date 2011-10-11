@@ -95,7 +95,7 @@ use IkiWiki::Setup::Standard {
 
 	# git plugin
 	# git hook to generate
-	git_wrapper => '/home/anarcat/wikis/mtl-mesh-wiki.git/hooks/post-update',
+	git_wrapper => '/home/anarcat/public_html/software/mtl-mesh-wiki.git/hooks/post-update.ikiwiki',
 	# shell command for git_wrapper to run, in the background
 	#git_wrapper_background_command => 'git push github',
 	# mode for git_wrapper (can safely be made suid)
