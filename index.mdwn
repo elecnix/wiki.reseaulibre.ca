@@ -2,14 +2,6 @@ While [Ile Sans Fil](http://ilesansfil.org) has done incredible work in providin
 
 The goal of this project is to create a community wireless network accessible from both fixed and mobile devices that can be used in day to day life by regular people as well as during emergencies.
 
-# Similar projects
-
-This project is inspired, guided and sometimes in communication with the following projects:
-
-* <http://www.opennet-initiative.de/>
-* <http://reseaucitoyen.be/> - forké et devenu <http://bombolong.net>
-* <http://freifunk.net/>
-
 # Technical information
 
 * [[Nodes]] - the list of deployed nodes
@@ -23,6 +15,14 @@ This project is inspired, guided and sometimes in communication with the followi
 We need volunteers! On parle français aussi!
 
 * [[Volunteers]]
+
+# Similar projects
+
+This project is inspired, guided and sometimes in communication with the following projects:
+
+* <http://www.opennet-initiative.de/>
+* <http://reseaucitoyen.be/> - forké et devenu <http://bombolong.net>
+* <http://freifunk.net/>
 
 # Meta
 
