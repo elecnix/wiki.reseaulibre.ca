@@ -15,10 +15,15 @@ This project is inspired, guided and sometimes in communication with the followi
 
 # Technical information
 
-* [[Requirements]]
 * [[HardwareTools]]
 * [[SoftwareTools]]
 * [[NodeDirectory]]
+
+# Participating
+
+We need volunteers! On parle français aussi!
+
+* [[VolunteerList]]
 
 # Meta
 
