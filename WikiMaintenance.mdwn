@@ -1,0 +1,12 @@
+## Configuration
+
+
+
+## Possible plugins to enable
+
+* [[!iki plugins/404]] - requires webserver config
+* [[!iki plugins/anonok]] - may provoke a deluge of spam
+* [[!iki plugins/editdiff]]
+* [[!iki plugins/edittemplate]] - useful for node templates for example
+
+* [OpenLayers integration](http://techno-viking.com/posts/ikiwiki-maps/)
