@@ -27,7 +27,7 @@ published through the repolist plugin:
 
 	repositories => [qw{http://anarcat.ath.cx/software/mtl-mesh-wiki.git/}],
 
-See [[WikiReplication]] for instructions on how to replicate this wiki.
+See [[meta/Replication]] for instructions on how to replicate this wiki.
 
 # Plugins
 
