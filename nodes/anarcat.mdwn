@@ -20,7 +20,7 @@ A node on my roof.
    * [!] problem here - the laptop doesn't support ad-hoc mode!! see
      [[!debbug 645055]]
    * (!) next step: setup olsrd on the n900, see <http://wiki.funkfeuer.at/index.php/OLSR_am_Nokia_N900>
- 2. setup [[configuration/olsr]] between the nodes
+ 2. setup [[configuration/olsrd]] between the nodes
    * (./) OpenWRT and wired laptop configured
  3. hookup the linksys to `roadkill.anarcat.ath.cx`, setup vpn for outgoing?
  4. think about system-wide [[configuration/numbering]] (and [[configuration/ipv6]]?)
