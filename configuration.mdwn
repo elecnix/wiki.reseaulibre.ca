@@ -40,7 +40,7 @@ We are also considering ad-hoc mode and OLSR, see [[todo/determine network topol
 
 ## IP allocation
 
-`10.0.0.0/8` so far, see the [[nodes]] pages for allocation. [[configuration/ipv6]] considered, see [[todo/determine address allocation strategy]] for details.
+`10.0.0.0/8` so far, see the [[nodes]] pages for allocation. [[configuration/ipv6]] considered, see [[todo/numbering_policy]] for details.
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
