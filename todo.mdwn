@@ -1,4 +1,4 @@
-Fee free to post your ideas here
+Fee free to post your ideas here. Link to [[todo/done]] when they are done.
 
 [[!inline pages="todo/* and !todo/done and !link(todo/done) and
 !link(patch) and !link(wishlist) and !todo/*/*"
