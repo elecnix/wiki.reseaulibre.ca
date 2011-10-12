@@ -11,14 +11,14 @@ devices, others have done this better.
 1. connect the router with a wire to your computer
 2. configure an IP on your computer
 
-    ifconfig eth0:flash 192.168.1.2
+        ifconfig eth0:flash 192.168.1.2
 
 3. reboot the router with the reset button pressed until the leds flash like a christmas tree
-4. send the new firmware through tftp
+4. send the new firmware through tftp:
 
-    $ tftp 192.168.1.20
-    tftp> binary
-    tftp> put openwrt.bin
+        $ tftp 192.168.1.20
+        tftp> binary
+        tftp> put openwrt.bin
 
 # Password reset
 
@@ -31,7 +31,9 @@ to reset the password using this simpler procedure:
 2. Connect the router's LAN1 port directly to your PC.
 3. Configure your PC with a static IP address between 192.168.1.2 and
 192.168.1.254. E. g. 192.168.1.2 (gateway and DNS is not required).
-    ifconfig eth0:flash 192.168.1.2
+
+        ifconfig eth0:flash 192.168.1.2
+
 4. Plug the power on and wait for the DMZ LED to light up.
 5. While the DMZ LED is on immediately press any button (Reset and Secure Easy Setup will work) a few times .
 
