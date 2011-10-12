@@ -9,6 +9,8 @@ Those instructions attempt to be platform-independent or at least cover multiple
 
 * [[configuration/ad-hoc]] - basic 
 * [[configuration/flashing]] - flashing your device with the proper firmware
+* [[configuration/olsrd]] - configuring OLSRd to join the mesh
+* [[configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
 
 ## Specific instructions
 
