@@ -10,7 +10,7 @@ The links between nodes is documented in [[links]].
 
 ## meta
 
-See [[todo/create a map]] to map those nodes. [[todo/determine address allocation strategy]] currently says to dig into each of the pages above to get the IPs, which is sub-optimal of course.
+See [[todo/create a map]] to map those nodes. [[todo/numbering_policy]] currently says to dig into each of the pages above to get the IPs, which is sub-optimal of course.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
