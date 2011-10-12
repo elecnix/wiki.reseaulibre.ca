@@ -22,6 +22,24 @@ Click `save`.
 
 ## Configuration file
 
+The above yields the following configuration.
+
+    config 'wifi-device' 'radio0'
+            option 'type' 'mac80211'
+            option 'channel' '5'
+            option 'macaddr' '00:90:4c:5f:00:2a'
+            option 'hwmode' '11g'
+            option 'disabled' '0'
+    
+    config 'wifi-iface'
+            option 'device' 'radio0'
+            option 'network' 'lan'
+            option 'encryption' 'none'
+            option 'ssid' 'mesh-mtl'
+            option 'mode' 'adhoc'
+
+In the above, the macaddr and hwmode settings are unnecessary.
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
