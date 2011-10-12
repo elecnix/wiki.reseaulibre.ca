@@ -14,7 +14,8 @@ The goal of this project is to create a community wireless network accessible fr
 
 We need volunteers! On parle français aussi!
 
-* [[Volunteers]]
+* [[Volunteers]] - register here and tell us what you can do
+* [[Todo]] - the tasks on hand
 
 # Similar projects
 
