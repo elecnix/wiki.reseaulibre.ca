@@ -21,7 +21,7 @@ A node on my roof.
      [[!debbug 645055]]
    * (!) next step: setup olsrd on the n900, see <http://wiki.funkfeuer.at/index.php/OLSR_am_Nokia_N900>
  2. setup [[configuration/olsr]] between the nodes
-   * (./) installed `olsrd-luci` ([source](https://dev.openwrt.org/browser/packages/net/olsrd)) on `mesh0.anarcat.ath.cx` (used [those instructions](http://www.ubnt.com/wiki/OLSR_on_OpenWrt)) (`opkg update; opkg install olsrd-luci`)
+   * (./) installed `olsrd-luci` ([source](https://dev.openwrt.org/browser/packages/net/olsrd)) on `mesh0.anarcat.ath.cx` (used [those instructions](http://www.ubnt.com/wiki/OLSR_on_OpenWrt)) (`opkg update; opkg install olsrd-luci luci-app-olsr`)
  3. hookup the linksys to `roadkill.anarcat.ath.cx`, setup vpn for outgoing?
  4. think about system-wide [[configuration/numbering]] (and [[configuration/ipv6]]?)
  5. think about [[configuration/dns]] within the mesh
