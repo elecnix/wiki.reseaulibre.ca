@@ -1,0 +1,24 @@
+[[!meta title="VPN configuration"]]
+[[!meta description="How to setup secure gateways to the internet"]]
+
+Just a brainstorm for now:
+
+ 1. no default route (0.0.0.0) should be announced unless people are really nice and want to give out free (and insecure) internet
+ 2. let's use [[openvpn]]
+ 3. we need to distribute certificates
+ 4. how do give access? through a client cert? or username/password? how do we revoke it?
+
+# References
+
+ * [Freifunk VPN + OLSR GSOC project](http://wiki.freifunk.net/GSOC:VPN)
+ * [Opennet VPN configuration details](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware/Firmware-Paket_technische_Dokumentation) (in german)
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
