@@ -8,13 +8,9 @@ Here is the list of documented nodes:
 
 The links between nodes is documented in [[links]].
 
-## Meta
+## meta
 
-I have contacted the
-[techno-viking](http://techno-viking.com/posts/ikiwiki-maps/) to see
-if he could share his IkiWiki/OpenLayers integration to document the
-nodes locations and so on... Awaiting his feedback. -- [[anarcat]]
-2011-10-10
+See [[todo/create a map]] to map those nodes. [[todo/determine address allocation strategy]] currently says to dig into each of the pages above to get the IPs, which is sub-optimal of course.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
