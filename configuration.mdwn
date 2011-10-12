@@ -3,9 +3,20 @@
 This page details how to configure your [[hardware]] for operation in
 the mesh.
 
-* [[configuration/ubnt-ad-hoc]] - configuration ad-hoc de base, sans mesh
-* [[configuration/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
+## General instructions
+
+Those instructions attempt to be platform-independent or at least cover multiple platforms.
+
+* [[configuration/ad-hoc]] - basic 
 * [[configuration/flashing]] - flashing your device with the proper firmware
+
+## Specific instructions
+
+Those instructions are more specific to some platforms.
+
+* [[configuration/ubnt-ad-hoc]] - configuration ad-hoc de base, sans mesh, sur une station Ubiquiti
+* [[configuration/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
+
 
 # Network topology
 
