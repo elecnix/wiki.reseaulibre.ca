@@ -20,9 +20,17 @@ This will bring up your network interface with an IP in the 10.0.0.0/8 range.
 
 Click `save`.
 
+Then head for the `Network -> Interfaces -> LAN` configuration page and assign the following settings:
+
+    Protocol: static
+    IPv4-Address: 10.0.1.1
+    IPv4-Netmask: 255.0.0.0
+
+Leave the rest as is.
+
 ## Configuration file
 
-The above yields the following configuration.
+The above yields the following configuration, in `/etc/config/wireless`:
 
     config 'wifi-device' 'radio0'
             option 'type' 'mac80211'
@@ -37,6 +45,17 @@ The above yields the following configuration.
             option 'encryption' 'none'
             option 'ssid' 'mesh-mtl'
             option 'mode' 'adhoc'
+
+And this chunk ends up in `/etc/config/network`:
+
+    config 'interface' 'lan'
+            option 'type' 'bridge'
+            option 'ifname' 'eth0.0'
+            option 'proto' 'static'
+            option 'ipaddr' '10.0.1.1'
+            option 'netmask' '255.0.0.0'
+            option 'defaultroute' '0'
+            option 'peerdns' '0'
 
 In the above, the macaddr and hwmode settings are unnecessary.
 
