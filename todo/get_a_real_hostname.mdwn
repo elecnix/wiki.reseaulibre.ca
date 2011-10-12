@@ -1,5 +1,7 @@
 <http://mesh.openisp.ca/>? something not pointing directly to my domain would be nicer and easier to remember
 
+the domain points to my server, need to create a vhost now. 
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
