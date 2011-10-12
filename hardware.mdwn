@@ -51,6 +51,26 @@ users per such access point if you're radiating that power.
 
 Voir [[configuration/Robin]].
 
+# Cisco/Linksys WRT*
+
+Those devices are everywhere, but they are cheap and may not be worth it.
+
+## Pros
+
+ * readily available
+ * cheap
+
+## Cons
+
+ * uses [RP-TNC](https://en.wikipedia.org/wiki/TNC_connector) (reverse-polarity) connectors so that regular antenna equipment cannot be used to amplify the signal
+ * known to overheat
+ * very low power (~28mW by default)
+ * low bandwidth (~2mbps)
+
+# TP-Link
+
+Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND), "cheap and nice". :)
+
 # Other stuff
 
 * <http://wiki.daviddarts.com/PirateBox_DIY>
