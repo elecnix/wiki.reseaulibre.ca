@@ -1,3 +1,5 @@
+[[!meta title="OLSRd configuration"]]
+
 OLSR is a network protocol used to propagate route information in a decentralized and highly resilient manner.
 
 [[!toc]]
@@ -27,6 +29,7 @@ This configuration will enable olsrd on the wired interface of a machine:
 
  * [Install instructions on OpenWRT](http://www.ubnt.com/wiki/OLSR_on_OpenWrt)
  * [OLSR IPv6 HOWTO](http://tldp.org/HOWTO/OLSR-IPv6-HOWTO)
+ * [Optimized Link State Routing Protocol on wikipedia](https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol)
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
