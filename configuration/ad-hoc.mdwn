@@ -1,0 +1,33 @@
+# Debian configuration
+
+This will bring up your network interface with an IP in the 10.0.0.0/8 range.
+
+    iwconfig wlan0 mode ad-hoc essid mesh-mtl
+    ifconfig wlan0 10.0.1.42 netmask 255.0.0.0 up
+
+# OpenWRT configuration
+
+## Through the luci web interface
+
+ 1. enable the device by checking (./) the enable checkbox in the `Devices`
+ 2. choose an appropriate channel
+ 3. fill in the details
+
+    Network Name (ESSID): mesh-mtl
+    BSSID: <leave blank>
+    Mode: Independent (Ad-Hoc)
+    Encryption: No Encryption
+
+Click `save`.
+
+## Configuration file
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]----
