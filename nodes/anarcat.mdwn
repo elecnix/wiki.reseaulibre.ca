@@ -12,7 +12,7 @@ A node on my roof.
 
 # battle plan
 
- 1. setup [[configuration/ad-hoc]] mode between the laptop, the linksys and the n900
+ 1. setup [[configuration/ubnt-ad-hoc]] mode between the laptop, the linksys and the n900
  2. setup [[configuration/olsr]] between the nodes
  3. hookup the linksys to `roadkill.anarcat.ath.cx`, setup vpn for outgoing?
  4. think about system-wide [[configuration/numbering]] (and [[configuration/ipv6]]?)
