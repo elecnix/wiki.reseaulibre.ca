@@ -4,6 +4,52 @@ OLSR is a network protocol used to propagate route information in a decentralize
 
 [[!toc levels=3]]
 
+# Current issues
+
+Now it seems the routes are propagating properly, but for some reason,
+the second i start OLSRd, packets do not get through anymore.
+
+My routing table before OLSRd:
+
+    root@angela:/etc/olsrd# route -n
+    Table de routage IP du noyau
+    Destination     Passerelle      Genmask         Indic Metric Ref    Use Iface
+    10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 eth0
+    192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 eth0
+    192.168.2.0     0.0.0.0         255.255.255.0   U     2      0        0 wlan0
+
+OLSRd output:
+
+           *** olsr.org - 0.5.6-r7 (2009-11-11 17:29:46 on matrix) ***
+    
+    --- 02:58:47.285323 ---------------------------------------------------- LINKS
+    
+    IP address       hyst         LQ       ETX
+    10.0.1.1         0.000  1.000/1.000    1.000
+    
+    --- 02:58:47.285348 ----------------------- TWO-HOP NEIGHBORS
+    
+    IP addr (2-hop)  IP addr (1-hop)  Total cost
+    
+    --- 02:58:47.285359 ------------------------------------------------- TOPOLOGY
+    
+    Source IP addr  Dest IP addr          LQ        ETX
+    10.0.1.1        10.0.1.2        1.000/1.000    1.000
+    10.0.1.2        10.0.1.1        1.000/1.000    1.000
+
+New routing table:
+    
+    Table de routage IP du noyau
+    Destination     Passerelle      Genmask         Indic Metric Ref    Use Iface
+    10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 eth0
+    10.0.1.1        0.0.0.0         255.255.255.255 UH    2      0        0 eth0
+    192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 eth0
+    192.168.2.0     0.0.0.0         255.255.255.0   U     2      0        0 wlan0
+
+There has to be something i am missing here.... Now the cool thing is
+that I can manually add 10.0.1.1 as a default gw and it actually
+routes my packets through, but i still can't ping 10.0.1.1 directly.
+
 # Base configuration
 
 Before you configure OLSR, you probably want a basic [[ad-hoc]]
