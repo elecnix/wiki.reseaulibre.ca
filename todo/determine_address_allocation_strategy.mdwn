@@ -1,0 +1,15 @@
+We need to think about how IPs are allocated, a constant sticky problem in mesh networks. [reseaucitoyen.be](http://reseaucitoyen.be) are suggesting to use IPv6 with the nodes' MAC addresses as a base, with tunnels for inter-mesh communication. The non-MAC part of the address remains to determine obviously...
+
+Freifunk have been using unallocated IP space. Opennet has been using `192.168.0.0/16`.
+
+So far, i've been using `10.0.0.0/8`, but we should really look at [[configuration/ipv6]]. See also <http://wiki.freifunk.net/6mesh.freifunk.net>.
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
