@@ -7,6 +7,7 @@ Just a brainstorm for now:
  2. let's use [[openvpn]]
  3. we need to distribute certificates
  4. how do give access? through a client cert? or username/password? how do we revoke it?
+ 5. the bug in the [[olsrd]] routing is a big issue: we can't setup a VPN if we can't ping the remote host!
 
 # References
 
