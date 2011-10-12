@@ -121,8 +121,6 @@ IPv6 is also supported, of course.
  * [Install instructions on OpenWRT](http://www.ubnt.com/wiki/OLSR_on_OpenWrt)
  * [OLSR IPv6 HOWTO](http://tldp.org/HOWTO/OLSR-IPv6-HOWTO)
  * [Optimized Link State Routing Protocol on wikipedia](https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol)
- * [Freifunk VPN + OLSR GSOC project](http://wiki.freifunk.net/GSOC:VPN)
- * [Opennet VPN configuration details](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware/Firmware-Paket_technische_Dokumentation) (in german)
  * [Opennet topology](https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png)
  * [Opennet firmware](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware)
 
