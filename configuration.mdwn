@@ -20,6 +20,7 @@ Those instructions are more specific to some platforms.
 
 * [[configuration/ubnt-ad-hoc]] - configuration ad-hoc de base, sans mesh, sur une station Ubiquiti
 * [[configuration/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
+* [[configuration/robin]] - configuration d'une machine avec [[robin]]
 
 # Architectural issues
 
