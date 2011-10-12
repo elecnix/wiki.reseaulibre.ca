@@ -13,10 +13,10 @@ This will bring up your network interface with an IP in the 10.0.0.0/8 range.
  2. choose an appropriate channel
  3. fill in the details
 
-    Network Name (ESSID): mesh-mtl
-    BSSID: <leave blank>
-    Mode: Independent (Ad-Hoc)
-    Encryption: No Encryption
+        Network Name (ESSID): mesh-mtl
+        BSSID: <leave blank>
+        Mode: Independent (Ad-Hoc)
+        Encryption: No Encryption
 
 Click `save`.
 
