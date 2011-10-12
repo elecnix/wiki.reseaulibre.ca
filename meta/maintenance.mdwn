@@ -85,7 +85,7 @@ the wiki:
 * [[!iki plugins/format]] - for different markup types in a page
 * [[!iki plugins/highlight]] - source code hilighting
 * [[!iki plugins/mirrorlist]] - if/when we get mirrors of this wiki
-* [[!iki plugins/contrib/googlemaps]] or preferebly [OpenLayers integration](http://techno-viking.com/posts/ikiwiki-maps/)
+* [[!iki plugins/contrib/googlemaps]] or preferebly [OpenLayers integration](http://techno-viking.com/posts/ikiwiki-maps/) (see [[todo/create_a_map]])
 
 # Templates
 
