@@ -3,7 +3,7 @@
 This page details how to configure your [[hardware]] for operation in
 the mesh.
 
-* [[configuration/ad-hoc]] - configuration ad-hoc de base, sans mesh
+* [[configuration/ubnt-ad-hoc]] - configuration ad-hoc de base, sans mesh
 * [[configuration/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
 * [[configuration/flashing]] - flashing your device with the proper firmware
 
