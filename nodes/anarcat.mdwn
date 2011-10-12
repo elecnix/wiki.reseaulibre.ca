@@ -21,7 +21,7 @@ A node on my roof.
      [[!debbug 645055]]
    * (!) next step: setup olsrd on the n900, see <http://wiki.funkfeuer.at/index.php/OLSR_am_Nokia_N900>
  2. (./) setup [[configuration/olsrd]] between the nodes (OpenWRT and wired laptop configured)
- 3. hookup the linksys to `roadkill.anarcat.ath.cx`, setup [[vpn]] for outgoing?
+ 3. hookup the linksys to `roadkill.anarcat.ath.cx`, setup [[configuration/vpn]] for outgoing?
  4. think about system-wide [[configuration/numbering]] (and [[configuration/ipv6]]?)
  5. think about [[configuration/dns]] within the mesh
  5. test [opennet's firmware](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware_NG) ([for ubiquity devices](https://wiki.opennet-initiative.de/wiki/AirOS-opennet))?
