@@ -22,7 +22,7 @@ Those instructions are more specific to some platforms.
 * [[configuration/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
 * [[configuration/robin]] - configuration d'une machine avec [[robin]]
 
-# Architectural issues
+# Architectural design
 
 ## Network topology
 
@@ -36,10 +36,11 @@ This has a few advantages:
  2. no need to change gateway if network topology changes
  3. access to the internet only to subscribers
 
+We are also considering ad-hoc mode and OLSR, see [[todo/determine network topology]].
+
 ## IP allocation
 
-We also need to think about how IPs are allocated, a constant sticky problem in mesh networks. [reseaucitoyen.be](http://reseaucitoyen.be) are suggesting to use IPv6 with the nodes' MAC addresses as a base, with tunnels for inter-mesh communication. The non-MAC part of the address remains to determine obviously...
-
+`10.0.0.0/8` so far, see the [[nodes]] pages for allocation. [[configuration/ipv6]] considered, see [[todo/determine address allocation strategy]] for details.
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
