@@ -6,6 +6,11 @@ OLSR is a network protocol used to propagate route information in a decentralize
 
 # Base configuration
 
+Before you configure OLSR, you probably want a basic [[ad-hoc]]
+configuration, especially having an IP on some link, even if it's
+ad-hoc and you do not know your neighbors yet. As long as the SSID is
+the same, you will be able to pick them up through OLSRd.
+
 ## OpenWRT config
 
  1. install the packages
@@ -49,6 +54,21 @@ You can of course announce whole netblocks in there and even a default route, if
 
 
 IPv6 is also supported, of course.
+
+# Web interface
+
+[!] Warning: this makes the web interface available to everybody.
+
+    LoadPlugin "olsrd_httpinfo.so.0.1"
+    {
+    	# defaults to 1978
+    	PlParam "Port" "8080"
+    	# if you dont set these, the default is to listen only on the loopback device
+    	#PlParam "Host"   "80.23.53.22"
+    	#PlParam "Net"    "10.0.0.0 255.0.0.0"
+        # gives access to everybody!!
+    	PlParam "Net" "0.0.0.0 0.0.0.0"
+    }
 
 # References
 
