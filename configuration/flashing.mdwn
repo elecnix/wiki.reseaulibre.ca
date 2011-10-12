@@ -10,9 +10,12 @@ devices, others have done this better.
 
 1. connect the router with a wire to your computer
 2. configure an IP on your computer
+
     ifconfig eth0:flash 192.168.1.2
+
 3. reboot the router with the reset button pressed until the leds flash like a christmas tree
 4. send the new firmware through tftp
+
     $ tftp 192.168.1.20
     tftp> binary
     tftp> put openwrt.bin
