@@ -1,4 +1,4 @@
-Register our project at http://global.freifunk.net/
+Register our project at <http://global.freifunk.net/>
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
