@@ -59,6 +59,11 @@ And this chunk ends up in `/etc/config/network`:
 
 In the above, the macaddr and hwmode settings are unnecessary.
 
+[!] Note: the above doesn't actually work for me - i can't ping
+10.0.1.1 from another ad-hoc node with the same essid. Also, the wlan0
+interface can't seem to be put in ad-hoc mode either - there's got to
+be something i am missing here. --[[anarcat]] 2011-10-12
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
