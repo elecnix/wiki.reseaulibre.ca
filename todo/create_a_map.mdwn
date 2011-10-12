@@ -1,4 +1,11 @@
-This can be done using [Freifunk's Freimap](https://wiki.freifunk.net/Freimap) or using ISF's or rolling our own... 
+This can be done using [Freifunk's Freimap](https://wiki.freifunk.net/Freimap) or using ISF's or rolling our own...
+
+I have contacted the
+[techno-viking](http://techno-viking.com/posts/ikiwiki-maps/) to see
+if he could share his IkiWiki/OpenLayers integration to document the
+nodes locations and so on... Awaiting his feedback. -- [[anarcat]]
+2011-10-10
+ 
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
