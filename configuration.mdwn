@@ -1,3 +1,5 @@
+[[!toc levels=3]]
+
 # Configuration guides
 
 This page details how to configure your [[hardware]] for operation in
@@ -5,12 +7,12 @@ the mesh.
 
 ## General instructions
 
-Those instructions attempt to be platform-independent or at least cover multiple platforms.
+Those instructions attempt to be platform-independent or at least cover multiple platforms. This 4 step process should get you on the mesh, with full internet access if you are so privileged.
 
-* [[configuration/ad-hoc]] - basic 
-* [[configuration/flashing]] - flashing your device with the proper firmware
-* [[configuration/olsrd]] - configuring OLSRd to join the mesh
-* [[configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
+1. [[configuration/flashing]] - flashing your device with the proper firmware (optional - if you already have the software on your machine, just go to step 2)
+2. [[configuration/ad-hoc]] - basic point to point configuration, includes [[adress allocation]]
+3. [[configuration/olsrd]] - configuring OLSRd to join the mesh
+4. [[configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
 
 ## Specific instructions
 
@@ -19,8 +21,9 @@ Those instructions are more specific to some platforms.
 * [[configuration/ubnt-ad-hoc]] - configuration ad-hoc de base, sans mesh, sur une station Ubiquiti
 * [[configuration/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
 
+# Architectural issues
 
-# Network topology
+## Network topology
 
 We need to decide of a topology. Opennet has an interesting concept, where public IPs are hidden behind VPN gateways:
 
@@ -32,7 +35,7 @@ This has a few advantages:
  2. no need to change gateway if network topology changes
  3. access to the internet only to subscribers
 
-# IP allocation
+## IP allocation
 
 We also need to think about how IPs are allocated, a constant sticky problem in mesh networks. [reseaucitoyen.be](http://reseaucitoyen.be) are suggesting to use IPv6 with the nodes' MAC addresses as a base, with tunnels for inter-mesh communication. The non-MAC part of the address remains to determine obviously...
 
