@@ -1,12 +1,38 @@
 [[!toc levels=3]]
 
-# Flashing various types of firmware
-
 This page is designed to give you quick howtos to flash common
 devices. It is not meant to be a complete directory of all esoteric
 devices, others have done this better.
 
-## Linksys devices
+# Firmware downloads
+
+## OpenWRT firmware
+
+To choose the firmware, look into the
+[table of hardware](http://wiki.openwrt.org/toh/start) on the OpenWRT
+site, each device page will list which firmware you should use.
+
+(!) Hint: most Linksys WRT54 devices use the brcm47xx firmware.
+
+# Flashing methods
+
+## Web interface
+
+If your router is still functional, the easiest way is to flash the
+device through the web interface. This works on most firmware, even
+the proprietary ones shipped with the device.
+
+During the upload, pay attention to the following:
+
+* do not disconnect the network cable
+* do not close your browser
+* look at the LEDs pattern to see if they settle down
+* keep a ping to the router running
+
+## TFTP upload
+
+(!) In general, use the [[!debpkg atftp]] package instead of plain
+"netkit" tftp, as it is more reliable.
 
 1. connect the router with a wire to your computer
 2. configure an IP on your computer
@@ -20,7 +46,13 @@ devices, others have done this better.
         tftp> binary
         tftp> put openwrt.bin
 
+See also <http://wiki.openwrt.org/doc/howto/generic.flashing.tftp>
+
 # Password reset
+
+In general, try to connect on the web interface at
+<http://192.168.1.1> (a commonly used default IP), that may give you
+an idea of the firmware that is running.
 
 ## OpenWRT firmwares
 
@@ -65,6 +97,10 @@ If you are done with failsafe mode power cycle the router and boot in normal mod
 ## Tomato firmware
 
 Just hold the reset key down until the power led flashes, see <http://www.polarcloud.com/tomatofaq#why_doesnt_my_password_work>.
+
+## DD-WRT firmware
+
+Hold the reset button for 30 seconds, see <http://www.dd-wrt.com/wiki/index.php/Reset_And_Reboot>.
 
 # Other guides
 
