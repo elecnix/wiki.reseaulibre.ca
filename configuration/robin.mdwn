@@ -1,3 +1,5 @@
+[[!toc levels=3]]
+
 ## Flasher le firmware de AirOS à ROBIN
 
 Redémarer le PS2HP en retirant le fil puis en apuyant sur le petit bouton reset à côté du connecteur du fil dès l'insertion et jusqu'à ce que les DELs se mettent à flasher.
