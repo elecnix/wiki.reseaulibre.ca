@@ -1,14 +1,14 @@
 A node on my roof.
 
-    MAC address: N/A
-    IP address:
-    IPv6 address:
-    Software: OpenWRT + OLSR?
-    Hardware: Linksys WRT54G
-    Power:
-    Location:
-    Azimuth:
-    Panorama:
+    MAC address: 00:90:4c:5f:00:2a
+    IP address: 10.0.1.1
+    IPv6 address: N/A
+    Software: OpenWRT backfire + OLSR?
+    Hardware: Linksys WRT54G 1.1
+    Power: 
+    Location: not deployed
+    Azimuth: N/A
+    Panorama: N/A
 
 # battle plan
 
