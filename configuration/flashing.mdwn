@@ -29,8 +29,7 @@ to reset the password using this simpler procedure:
 
 1. Unplug the router's power cord.
 2. Connect the router's LAN1 port directly to your PC.
-3. Configure your PC with a static IP address between 192.168.1.2 and
-192.168.1.254. E. g. 192.168.1.2 (gateway and DNS is not required).
+3. Configure your PC with a static IP address
 
         ifconfig eth0:flash 192.168.1.2
 
@@ -62,6 +61,10 @@ installing to big packages (clean the JFFS2 partition and start over)
     mtd -r erase rootfs_data
 
 If you are done with failsafe mode power cycle the router and boot in normal mode.
+
+## Tomato firmware
+
+Just hold the reset key down until the power led flashes, see <http://www.polarcloud.com/tomatofaq#why_doesnt_my_password_work>.
 
 # Other guides
 
