@@ -51,7 +51,7 @@ note
 
 Based on [OpenWrt](http://openwrt.org),
 [Robin](http://www.robin-mesh.com/) seems to be a fairly complete
-solution integrating BATMAN and a GUI. See [[RobinConfiguration]] for
+solution integrating BATMAN and a GUI. See [[configuration/Robin]] for
 our notes on how to configure robin.
 
 ## AirOS
