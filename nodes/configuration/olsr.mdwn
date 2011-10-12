@@ -1,0 +1,39 @@
+OLSR is a network protocol used to propagate route information in a decentralized and highly resilient manner.
+
+[[!toc]]
+
+# OpenWRT config
+
+ 1. install the packages
+
+        opkg update
+        opkg install olsrd-luci luci-app-olsr
+
+ 2. enable the OLSR daemon and start it in `Services -> Initscripts`
+ 3. configure OLSR in `Services -> OLSR` (just enable it on the `lan`)
+
+Those instructions were taken from [here](http://www.ubnt.com/wiki/OLSR_on_OpenWrt). This is [the package source](https://dev.openwrt.org/browser/packages/net/olsrd).
+
+# Debian wired config
+
+This configuration will enable olsrd on the wired interface of a machine:
+
+    apt-get install olsrd
+    vi /etc/olsrd/olsrd.conf # change eth1 to eth0
+    olsrd -f /etc/olsrd/olsrd.conf -d 1 # to run in debugging mode for now
+    vi /etc/default/olsrd # enable daemon when satisfied
+
+# References
+
+ * [Install instructions on OpenWRT](http://www.ubnt.com/wiki/OLSR_on_OpenWrt)
+ * [OLSR IPv6 HOWTO](http://tldp.org/HOWTO/OLSR-IPv6-HOWTO)
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
