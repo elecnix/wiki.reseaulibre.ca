@@ -33,6 +33,7 @@ A node on my roof.
  1. test [opennet's firmware](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware_NG) ([for ubiquity devices](https://wiki.opennet-initiative.de/wiki/AirOS-opennet))
  2. setup local test environment with martn with two antennas
  3. setup link between the two places
+ 4. at this point, [[todo/network topology]] should be clear and documented
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
