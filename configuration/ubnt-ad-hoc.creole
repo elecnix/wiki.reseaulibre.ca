@@ -1,3 +1,5 @@
+(!) This page details a simple ad-hoc configuration on a [[ubiquiti]] device, see [[ad-hoc]] for a more generic approach.
+
 = Configuration ad-hoc de base =
 
 Par défaut, le point d'accès est distribué avec le système "Air OS", basé sur Linux et une interface web assez standard.
