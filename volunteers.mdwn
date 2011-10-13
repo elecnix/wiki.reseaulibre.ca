@@ -8,6 +8,7 @@ network in montreal. They may or may not be still interested.
  * Alex (|R) déjà un noeud actif (voir mesh-mtl)
  * [[nicolas marchildon|http://techno.marchildon.net/2008/05/04/reseau-wifi-mesh-a-montreal/]] (2008 - il voit presque anarcat!)
  * ChrisG (ergonlogic)
+ * Aurélien (keru)
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
