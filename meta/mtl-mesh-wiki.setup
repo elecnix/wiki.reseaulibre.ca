@@ -20,9 +20,9 @@ use IkiWiki::Setup::Standard {
 	# where to build the wiki
 	destdir => '/home/anarcat/public_html/mtl-mesh-wiki',
 	# base url to the wiki
-	url => 'http://anarcat.ath.cx/mtl-mesh-wiki',
+	url => 'http://mesh.openisp.ca',
 	# url to the ikiwiki.cgi
-	cgiurl => 'http://anarcat.ath.cx/mtl-mesh-wiki/ikiwiki.cgi',
+	cgiurl => 'http://mesh.openisp.ca/ikiwiki.cgi',
 	# filename of cgi wrapper to generate
 	cgi_wrapper => '/home/anarcat/public_html/mtl-mesh-wiki/ikiwiki.cgi',
 	# mode for cgi_wrapper (can safely be made suid)
@@ -30,7 +30,7 @@ use IkiWiki::Setup::Standard {
 	# rcs backend to use
 	rcs => 'git',
 	# plugins to add to the default configuration
-	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff rename remove creole getsource mirrorlist search userlist txt}],
+	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff rename remove creole getsource mirrorlist search userlist txt 404}],
 	# plugins to disable
 	disable_plugins => [],
 	# additional directory to search for template files
