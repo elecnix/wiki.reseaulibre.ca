@@ -113,6 +113,28 @@ This section documents which templates are available and to what pages they appl
 [[!edittemplate template="templates/link" match="links/*"]]
 [[!edittemplate template="templates/all" match="*"]]
 
+# Multiple committers
+
+The [[!iki rcs/git]] page details a bit of the git internals of ikiwiki, but doesn't explain clearly how to do such a setup. In order to allow multiple committers, I therefore had to go through a few hoops to be able to allow the web interface, myself and others to push commits to the repository.
+
+First, create the sandbox user:
+
+    adduser --system --group mtl-mesh
+
+Those bits ensure the wrappers are suid with the group.
+
+	# group for wrappers to run in
+	wrappergroup => 'mtl-mesh',
+
+Then the git repository (repository.git) needs to be marked as shared so that permissions are kept right:
+
+    git config core.sharedRepository group
+    chmod -R g+ws .
+
+To allow users to push to the repository, use:
+
+    adduser anarcat mtl-mesh
+
 # Other tools
 
 * [[!iki tips/inside_dot_ikiwiki]] - good tips on how to interact with ikiwiki's metadata
