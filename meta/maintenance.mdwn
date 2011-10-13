@@ -9,7 +9,7 @@ reconstructed.
 
 (!) By storing the setup file within the wiki, it ensures the wiki can more easily be rebuilt (see [[replication]] for this), but it also means that the [[!iki plugins/websetup]] interface will make uncommitted changes in the git checkout that will need to be manually checked in.
 
-## Support software
+## Ikiwiki and extensions
 
 ikiwiki was installed through the [[!debpkg ikiwiki]] debian package. We are running version at least 3.0, and we recommend running backports if not running testing/unstable. Some of the packages suggested by ikiwiki were also necessary for extra functionality:
 
@@ -19,6 +19,12 @@ ikiwiki was installed through the [[!debpkg ikiwiki]] debian package. We are run
  * [[!debpkg xapian-omega]]
 
 All the recommended packages were installed.
+
+## Apache and configuration
+
+I originally ran this straight out of my ~/public_html directory, but now we have a real virtual host:
+
+
 
 ## Publishing the wiki source
 
