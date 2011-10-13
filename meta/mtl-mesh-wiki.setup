@@ -233,7 +233,7 @@ use IkiWiki::Setup::Standard {
 
 	# repolist plugin
 	# URIs of repositories containing the wiki's source
-	repositories => [qw{http://anarcat.ath.cx/software/mtl-mesh-wiki.git/}],
+	repositories => [qw{http://mesh.openisp.ca/repository.git/}],
 
 	# search plugin
 	# path to the omega cgi program
