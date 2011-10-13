@@ -24,7 +24,19 @@ All the recommended packages were installed.
 
 I originally ran this straight out of my ~/public_html directory, but now we have a real virtual host:
 
-
+    <VirtualHost *:80>
+        ServerName mesh.openisp.ca
+        DocumentRoot /home/anarcat/public_html/mtl-mesh-wiki
+    
+        <Directory "/home/anarcat/public_html/mtl-mesh-wiki">
+            Options Indexes FollowSymLinks MultiViews ExecCGI
+            AllowOverride None
+            Order allow,deny
+            Allow from all
+            AddHandler cgi-script .cgi
+            ErrorDocument 404 /ikiwiki.cgi
+        </Directory>
+    </VirtualHost>
 
 ## Publishing the wiki source
 
