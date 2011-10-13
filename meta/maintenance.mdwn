@@ -36,6 +36,15 @@ I originally ran this straight out of my ~/public_html directory, but now we hav
             AddHandler cgi-script .cgi
             ErrorDocument 404 /ikiwiki.cgi
         </Directory>
+
+        Alias /repository.git /home/mtl-mesh/repository.git
+
+        <Directory "/home/mtl-mesh/repository.git">
+            AllowOverride None
+            Order allow,deny
+            Allow from all
+        </Directory>
+        
     </VirtualHost>
 
 ## Publishing the wiki source
