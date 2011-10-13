@@ -16,17 +16,23 @@ This will bring up your network interface with an IP in the 10.0.0.0/8 range.
  3. fill in the details
 
         Network Name (ESSID): mesh-mtl
-        BSSID: <leave blank>
+        BSSID: <copy existing bssid>
         Mode: Independent (Ad-Hoc)
         Encryption: No Encryption
+        Network: wlan <new>
 
-Click `save`.
+Note the latter part is important: this segregates the wifi from the lan
+bridge, which allows to stay have diffent networks for the diagnostic
+wire and the wireless.
 
-Then head for the `Network -> Interfaces -> LAN` configuration page and assign the following settings:
+Then head for the `Network -> Interfaces` configuration page, enable the
+wlan network and assign the following settings:
 
     Protocol: static
     IPv4-Address: 10.0.1.1
     IPv4-Netmask: 255.0.0.0
+    Zone: lan
+    Interface: wlan0
 
 Leave the rest as is.
 
@@ -43,28 +49,31 @@ The above yields the following configuration, in `/etc/config/wireless`:
     
     config 'wifi-iface'
             option 'device' 'radio0'
-            option 'network' 'lan'
+            option 'network' 'wlan0'
             option 'encryption' 'none'
             option 'ssid' 'mesh-mtl'
             option 'mode' 'adhoc'
+            option 'bssid' '2A:96:BF:DD:8C:98'
 
 And this chunk ends up in `/etc/config/network`:
 
-    config 'interface' 'lan'
-            option 'type' 'bridge'
-            option 'ifname' 'eth0.0'
+    config 'interface' 'wlan0'
             option 'proto' 'static'
+            option 'ifname' 'wlan0'
             option 'ipaddr' '10.0.1.1'
             option 'netmask' '255.0.0.0'
             option 'defaultroute' '0'
             option 'peerdns' '0'
 
-In the above, the macaddr and hwmode settings are unnecessary.
+also note that in the `/etc/config/firewall` file, you'll see that the
+wlan0 interface is assigned to the lan zone:
 
-[!] Note: the above doesn't actually work for me - i can't ping
-10.0.1.1 from another ad-hoc node with the same essid. Also, the wlan0
-interface can't seem to be put in ad-hoc mode either - there's got to
-be something i am missing here. --[[anarcat]] 2011-10-12
+    config 'zone'
+            option 'name' 'lan'
+            option 'input' 'ACCEPT'
+            option 'output' 'ACCEPT'
+            option 'forward' 'REJECT'
+            option 'network' 'lan wlan0'
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
