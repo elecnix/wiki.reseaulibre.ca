@@ -34,6 +34,10 @@ configuration.
 (!) Oh, and [this](http://piny.be/jrayhawk/notes/ikiwiki_creation/)
 may also be of use if the above doesn't work.
 
+# Merging back into the wiki
+
+Now that multi-user configuration is enabled in the wiki (see [[maintenance]]), i can allow git over SSH access for people that are into that kind of stuff, just ask here or by email.
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
