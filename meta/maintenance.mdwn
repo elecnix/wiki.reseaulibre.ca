@@ -26,25 +26,24 @@ I originally ran this straight out of my ~/public_html directory, but now we hav
 
     <VirtualHost *:80>
         ServerName mesh.openisp.ca
-        DocumentRoot /home/anarcat/public_html/mtl-mesh-wiki
+        DocumentRoot /home/mtl-mesh/public_html
     
-        <Directory "/home/anarcat/public_html/mtl-mesh-wiki">
+        <Directory "/home/mtl-mesh/public_html/">
             Options Indexes FollowSymLinks MultiViews ExecCGI
             AllowOverride None
             Order allow,deny
             Allow from all
             AddHandler cgi-script .cgi
-            ErrorDocument 404 /ikiwiki.cgi
+    	ErrorDocument 404 /ikiwiki.cgi
         </Directory>
-
+    
         Alias /repository.git /home/mtl-mesh/repository.git
-
+    
         <Directory "/home/mtl-mesh/repository.git">
             AllowOverride None
             Order allow,deny
             Allow from all
         </Directory>
-        
     </VirtualHost>
 
 ## Publishing the wiki source
@@ -54,7 +53,7 @@ change the post-update hook as described
 [[!iki todo/call_git-update-server-info_from_post-udpate_hook desc="here"]],
 which means specifically changing the git-wrapper parameter to:
 
-	git_wrapper => '/home/anarcat/public_html/software/mtl-mesh-wiki.git/hooks/post-update.ikiwiki
+	git_wrapper => '/home/mtl-mesh/repository.git/hooks/post-update.ikiwiki
 
 then creating the post-update hook with the following content:
 
@@ -67,7 +66,10 @@ then creating the post-update hook with the following content:
 ... and setting it executable. Then the URL of the repository can be
 published through the repolist plugin:
 
-	repositories => [qw{http://anarcat.ath.cx/software/mtl-mesh-wiki.git/}],
+	repositories => [qw{http://mesh.openisp.ca.git/}],
+
+The above url works because of the `Alias` directive in the above
+Apache configuration.
 
 See [[meta/Replication]] for instructions on how to replicate this wiki.
 
@@ -90,6 +92,7 @@ The [[!iki plugins/theme]] (actiontabs) was slightly tweaked to have the footer 
 On top of the default plugins, the following plugins are enabled in
 the wiki:
 
+* [[!iki plugins/404]]
 * [[!iki plugins/editdiff]]
 * [[!iki plugins/edittemplate]] - used for the [[templates/node]] template
 * [[!iki plugins/getsource]]
@@ -106,7 +109,6 @@ the wiki:
 
 ## Possible plugins to enable
 
-* [[!iki plugins/404]] - requires webserver config
 * [[!iki plugins/anonok]] - may provoke a deluge of spam
 * [[!iki plugins/favicon]] - once we have an icon
 * [[!iki plugins/format]] - for different markup types in a page
@@ -118,9 +120,9 @@ the wiki:
 
 This section documents which templates are available and to what pages they apply, see also the [[!iki plugins/editemplate]] plugin.
 
-[[!edittemplate template="templates/node" match="nodes/*"]]
-[[!edittemplate template="templates/link" match="links/*"]]
-[[!edittemplate template="templates/all" match="*"]]
+ * [[!edittemplate template="templates/node" match="nodes/*"]]
+ * [[!edittemplate template="templates/link" match="links/*"]]
+ * [[!edittemplate template="templates/all" match="*"]]
 
 # Multiple committers
 
