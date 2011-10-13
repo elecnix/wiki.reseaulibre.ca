@@ -16,15 +16,15 @@ use IkiWiki::Setup::Standard {
 	# users who are banned from the wiki
 	banned_users => [],
 	# where the source of the wiki is located
-	srcdir => '/home/anarcat/wikis/mtl-mesh-wiki',
+	srcdir => '/home/mtl-mesh/srcdir',
 	# where to build the wiki
-	destdir => '/home/anarcat/public_html/mtl-mesh-wiki',
+	destdir => '/home/mtl-mesh/public_html',
 	# base url to the wiki
 	url => 'http://mesh.openisp.ca',
 	# url to the ikiwiki.cgi
 	cgiurl => 'http://mesh.openisp.ca/ikiwiki.cgi',
 	# filename of cgi wrapper to generate
-	cgi_wrapper => '/home/anarcat/public_html/mtl-mesh-wiki/ikiwiki.cgi',
+	cgi_wrapper => '/home/mtl-mesh/public_html/ikiwiki.cgi',
 	# mode for cgi_wrapper (can safely be made suid)
 	cgi_wrappermode => '06755',
 	# rcs backend to use
@@ -72,9 +72,9 @@ use IkiWiki::Setup::Standard {
 	# force ikiwiki to use a particular umask
 	#umask => 022,
 	# group for wrappers to run in
-	#wrappergroup => 'ikiwiki',
+	wrappergroup => 'mtl-mesh',
 	# extra library and plugin directory
-	libdir => '/home/anarcat/.ikiwiki',
+	libdir => '/home/mtl-mesh/.ikiwiki',
 	# environment variables
 	ENV => {},
 	# time zone name
@@ -95,7 +95,7 @@ use IkiWiki::Setup::Standard {
 
 	# git plugin
 	# git hook to generate
-	git_wrapper => '/home/anarcat/public_html/software/mtl-mesh-wiki.git/hooks/post-update.ikiwiki',
+	git_wrapper => '/home/mtl-mesh/mtl-mesh-wiki.git/hooks/post-update.ikiwiki',
 	# shell command for git_wrapper to run, in the background
 	#git_wrapper_background_command => 'git push github',
 	# mode for git_wrapper (can safely be made suid)
@@ -301,7 +301,7 @@ use IkiWiki::Setup::Standard {
 	#aggregate_webtrigger => 0,
 	# cookie control
 	cookiejar => {
-	  file => '/home/anarcat/.ikiwiki/cookies'
+	  file => '/home/mtl-mesh/.ikiwiki/cookies'
 	},
 
 	# autoindex plugin
