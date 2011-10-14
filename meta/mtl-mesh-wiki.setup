@@ -207,7 +207,7 @@ use IkiWiki::Setup::Standard {
 	# enhanced PageSpec specifying what attachments are allowed
 	allowed_attachments => 'virusfree() and mimetype(image/*) and maxsize(2048kb)  ',
 	# virus checker program (reads STDIN, returns nonzero if virus found)
-	#virus_checker => 'clamdscan -',
+	virus_checker => 'clamscan -',
 
 	# comments plugin
 	# PageSpec of pages where comments are allowed
