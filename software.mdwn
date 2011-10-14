@@ -62,7 +62,7 @@ AirOS est le système d'exploitation qui vient par défaut avec les NanoStation 
  * <https://wiki.graz.funkfeuer.at/UbntStations> : plus général
  * <http://dev.wifidog.org/wiki/doc/install/airos> : Exemple de rajout à AirOS de ISF
 
-(!) Update: je sais que rene @ opennet roule OLSR avec une distro custom sur les machines de Unbt... Voir <https://wiki.opennet-initiative.de/wiki/AirOS-opennet> -- [[anarcat]] 2011-10-11
+(!) Update: je sais que rene @ opennet roule OLSR avec une distro custom sur les machines de Unbt... Voir <https://wiki.opennet-initiative.de/wiki/AirOS-opennet> -- [[users/anarcat]] 2011-10-11
 
 ## Opennet
 
