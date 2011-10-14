@@ -35,7 +35,7 @@ All wikis are supposed to have a [[SandBox]], so this one does too.
 
 ----
 
-This wiki is powered by [[ikiwiki]].
+This wiki is powered by [[ikiwiki]] version [[!version]].
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
