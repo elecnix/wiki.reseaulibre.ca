@@ -74,7 +74,7 @@ Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.co
 # Other stuff
 
 * <http://wiki.daviddarts.com/PirateBox_DIY>
-* [[Fun cube dongle|fdc]]
+* The Fun cube dongle can be useful for debugging
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
