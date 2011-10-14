@@ -107,10 +107,12 @@ the wiki:
 * [[!iki plugins/theme]] - using the actiontabs theme
 * [[!iki plugins/userlist]]
 
+... and more, see the setup file.
+
 ## Possible plugins to enable
 
 * [[!iki plugins/anonok]] - may provoke a deluge of spam
-* [[!iki plugins/favicon]] - once we have an icon
+* [[!iki plugins/favicon]] - once we have an icon (but can't we just edit favicon.ico in the root of the wiki?)
 * [[!iki plugins/format]] - for different markup types in a page
 * [[!iki plugins/highlight]] - source code hilighting
 * [[!iki plugins/mirrorlist]] - if/when we get mirrors of this wiki
