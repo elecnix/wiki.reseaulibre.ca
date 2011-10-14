@@ -1,3 +1,5 @@
+[[!img folipon.jpg align="left" size="" alt="picture of me"]]
+
 See <https://wiki.koumbit.net/TheAnarcat> and backlinks.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
@@ -9,3 +11,5 @@ any later version published by the Free Software Foundation; with no Invariant
 Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
+
+
