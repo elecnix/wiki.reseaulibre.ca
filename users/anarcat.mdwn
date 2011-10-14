@@ -1,6 +1,6 @@
 [[!img folipon.jpg align="left" size="" alt="picture of me"]]
 
-See <https://wiki.koumbit.net/TheAnarcat> and backlinks.
+See <https://wiki.koumbit.net/TheAnarcat> and [[nodes/anarcat]].
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
