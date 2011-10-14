@@ -30,7 +30,7 @@ use IkiWiki::Setup::Standard {
 	# rcs backend to use
 	rcs => 'git',
 	# plugins to add to the default configuration
-	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff rename remove creole getsource mirrorlist search userlist txt 404}],
+	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff rename remove creole getsource mirrorlist search userlist txt 404 version attachment listdirectives}],
 	# plugins to disable
 	disable_plugins => [],
 	# additional directory to search for template files
@@ -189,7 +189,7 @@ use IkiWiki::Setup::Standard {
 
 	# mdwn plugin
 	# enable multimarkdown features?
-	#multimarkdown => 0,
+	multimarkdown => 1,
 
 	######################################################################
 	# misc plugins
@@ -205,7 +205,7 @@ use IkiWiki::Setup::Standard {
 
 	# attachment plugin
 	# enhanced PageSpec specifying what attachments are allowed
-	#allowed_attachments => 'virusfree() and mimetype(image/*) and maxsize(50kb)',
+	allowed_attachments => 'virusfree() and mimetype(image/*) and maxsize(50kb)  ',
 	# virus checker program (reads STDIN, returns nonzero if virus found)
 	#virus_checker => 'clamdscan -',
 
