@@ -4,7 +4,7 @@ Installation d'OpenWRT sur le NanoStation M2:
 
 = Télécharger le firmware =
 
-(!) On peut fusionner ceci avec [[flashing]]? --[[anarcat]]
+(!) On peut fusionner ceci avec [[flashing]]? --[[users/anarcat]]
 
  * OpenWRT ar71xx ubnt nano m: 
  ** squashfs (recommandé): <http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin>
@@ -14,7 +14,7 @@ Enregistrer le fichier localement sur l'ordinateur qui va se connecter à l'AP p
 
 = Configurer une interface réseau pour flasher =
 
-(!) On peut fusionner ceci avec [[flashing]]? --[[anarcat]]
+(!) On peut fusionner ceci avec [[flashing]]? --[[users/anarcat]]
 
 Si votre réseau local n'est pas sur 192.168.1.x, déclarer une interface virtuelle:
 
@@ -24,7 +24,7 @@ Si votre réseau local n'est pas sur 192.168.1.x, déclarer une interface virtue
 
 = Flasher =
 
-(!) On peut fusionner ceci avec [[flashing]]? --[[anarcat]]
+(!) On peut fusionner ceci avec [[flashing]]? --[[users/anarcat]]
 
  * Connecter l'AP et, au moment de l'alimenter en électricité, peser sur le bouton "reset" (petit bouton à côté de la prise réseau "main"). Si l'AP est prêt, les indicateurs de la connexion réseau sans fil clignoteront comme des lumières de noël.
 
@@ -221,7 +221,7 @@ On peut modifier le html de la splash page dans /etc/nodogsplash/htdocs/
 
 = vnstat: stats de bande passante =
 
-Voir [[graphs-vnstat.sh]] ([[source|http://wiki.openwrt.org/doc/howto/vnstat]]).
+Voir [[graphs-vnstat.sh]] ().
 
 = QoS =
 
