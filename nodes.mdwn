@@ -8,6 +8,13 @@ Here is the list of documented nodes:
 
 The links between nodes is documented in [[links]].
 
+## node ideas
+
+ * Est: moreau + ontario
+ * Nord: en face d'el motor machin
+ * Centre: DIRA etc, maison notman?
+ * Sud-ouest: [[nodes/bgm]] etc
+
 ## meta
 
 See [[todo/create a map]] to map those nodes. [[todo/numbering_policy]] currently says to dig into each of the pages above to get the IPs, which is sub-optimal of course.
