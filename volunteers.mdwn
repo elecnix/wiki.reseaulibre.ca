@@ -11,6 +11,7 @@ you are interested of doing is also good.
  * 
  * ChrisG (ergonlogic)
  * Aurélien (keru)
+ * MartN (martn à martn.info)
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
