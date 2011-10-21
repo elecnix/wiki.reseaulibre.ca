@@ -1,0 +1,322 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-10-20 22:24-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"OLSRd configuration\"]]\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"OLSR is a network protocol used to propagate route information in a "
+"decentralized and highly resilient manner."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!toc levels=3]]\n"
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Current issues"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Now it seems the routes are propagating properly, but for some reason, the "
+"second i start OLSRd, packets do not get through anymore."
+msgstr ""
+
+#. type: Plain text
+msgid "My routing table before OLSRd:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    root@angela:/etc/olsrd# route -n\n"
+"    Table de routage IP du noyau\n"
+"    Destination     Passerelle      Genmask         Indic Metric Ref    Use "
+"Iface\n"
+"    10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 "
+"eth0\n"
+"    192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 "
+"eth0\n"
+"    192.168.2.0     0.0.0.0         255.255.255.0   U     2      0        0 "
+"wlan0\n"
+msgstr ""
+
+#. type: Plain text
+msgid "OLSRd output:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "           *** olsr.org - 0.5.6-r7 (2009-11-11 17:29:46 on matrix) ***\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    --- 02:58:47.285323 ---------------------------------------------------- "
+"LINKS\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    IP address       hyst         LQ       ETX\n"
+"    10.0.1.1         0.000  1.000/1.000    1.000\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "    --- 02:58:47.285348 ----------------------- TWO-HOP NEIGHBORS\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "    IP addr (2-hop)  IP addr (1-hop)  Total cost\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    --- 02:58:47.285359 ------------------------------------------------- "
+"TOPOLOGY\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    Source IP addr  Dest IP addr          LQ        ETX\n"
+"    10.0.1.1        10.0.1.2        1.000/1.000    1.000\n"
+"    10.0.1.2        10.0.1.1        1.000/1.000    1.000\n"
+msgstr ""
+
+#. type: Plain text
+msgid "New routing table:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    Table de routage IP du noyau\n"
+"    Destination     Passerelle      Genmask         Indic Metric Ref    Use "
+"Iface\n"
+"    10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 "
+"eth0\n"
+"    10.0.1.1        0.0.0.0         255.255.255.255 UH    2      0        0 "
+"eth0\n"
+"    192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 "
+"eth0\n"
+"    192.168.2.0     0.0.0.0         255.255.255.0   U     2      0        0 "
+"wlan0\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"There has to be something i am missing here.... Now the cool thing is that I "
+"can manually add 10.0.1.1 as a default gw and it actually routes my packets "
+"through, but i still can't ping 10.0.1.1 directly."
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Base configuration"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Before you configure OLSR, you probably want a basic [[ad-hoc]] "
+"configuration, especially having an IP on some link, even if it's ad-hoc and "
+"you do not know your neighbors yet. As long as the SSID is the same, you "
+"will be able to pick them up through OLSRd."
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "OpenWRT config"
+msgstr ""
+
+#. type: Bullet: ' 1. '
+msgid "install the packages"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"        opkg update\n"
+"        opkg install olsrd-luci luci-app-olsr\n"
+msgstr ""
+
+#. type: Bullet: ' 2. '
+msgid "enable the OLSR daemon and start it in `Services -> Initscripts`"
+msgstr ""
+
+#. type: Bullet: ' 3. '
+msgid "configure OLSR in `Services -> OLSR` (just enable it on the `lan`)"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Those instructions were taken from "
+"[here](http://www.ubnt.com/wiki/OLSR_on_OpenWrt). This is [the package "
+"source](https://dev.openwrt.org/browser/packages/net/olsrd)."
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "Debian wired config"
+msgstr ""
+
+#. type: Plain text
+msgid "This configuration will enable olsrd on the wired interface of a machine:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    apt-get install olsrd\n"
+"    vi /etc/olsrd/olsrd.conf # change eth1 to eth0\n"
+"    olsrd -f /etc/olsrd/olsrd.conf -d 1 # to run in debugging mode for now\n"
+"    vi /etc/default/olsrd # enable daemon when satisfied\n"
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Route announcements"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"By default, OLSRd only announces the IP address of the interface it is "
+"configured on. To announce more routes, you need to add an HNA block. This "
+"can be done through the OpenWRT interface or as a code block. For example, "
+"if your node can route (say) 72.0.72.144/32 (your static IP), you will want "
+"a block like this:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    Hna4\n"
+"    {\n"
+"        # my public IP\n"
+"        72.0.72.144 255.255.255.255\n"
+"    }\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"You can of course announce whole netblocks in there and even a default "
+"route, if you want to give everyone access to the internets:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    Hna4\n"
+"    {\n"
+"        # my local network\n"
+"        192.168.42.0 255.255.255.0\n"
+"        # this machine is a gateway\n"
+"        0.0.0.0 0.0.0.0\n"
+"    }\n"
+msgstr ""
+
+#. type: Plain text
+msgid "IPv6 is also supported, of course."
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Web interface"
+msgstr ""
+
+#. type: Plain text
+msgid "[!] Warning: this makes the web interface available to everybody."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    LoadPlugin \"olsrd_httpinfo.so.0.1\"\n"
+"    {\n"
+"    \t# defaults to 1978\n"
+"    \tPlParam \"Port\" \"8080\"\n"
+"    \t# if you dont set these, the default is to listen only on the loopback "
+"device\n"
+"    \t#PlParam \"Host\"   \"80.23.53.22\"\n"
+"    \t#PlParam \"Net\"    \"10.0.0.0 255.0.0.0\"\n"
+"        # gives access to everybody!!\n"
+"    \tPlParam \"Net\" \"0.0.0.0 0.0.0.0\"\n"
+"    }\n"
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "References"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "[Install instructions on OpenWRT](http://www.ubnt.com/wiki/OLSR_on_OpenWrt)"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "[OLSR IPv6 HOWTO](http://tldp.org/HOWTO/OLSR-IPv6-HOWTO)"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"[Optimized Link State Routing Protocol on "
+"wikipedia](https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol)"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"[Opennet "
+"topology](https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png)"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "[Opennet firmware](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware)"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta copyright=\"Copyright © 2011 Antoine Beaupré\"]]\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"[[!meta license=\"\"\"[[!toggle id=\"license\" text=\"GFDL "
+"1.2+\"]][[!toggleable\n"
+"id=\"license\" text=\"Permission is granted to copy, distribute and/or "
+"modify this\n"
+"document under the terms of the GNU Free Documentation License, Version 1.2 "
+"or\n"
+"any later version published by the Free Software Foundation; with no "
+"Invariant\n"
+"Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the "
+"license\n"
+"is included in the section entitled [[GNU Free Documentation\n"
+"License|meta/gfdl]].\"]]\"\"\"]]\n"
+msgstr ""

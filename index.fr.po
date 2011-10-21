@@ -1,0 +1,139 @@
+# Traduction de ikiwiki
+# Copyright (C) 2009 Debian French l10n team <debian-l10n-french@lists.debian.org>
+# This file is distributed under the same license as the PACKAGE Ikiwiki.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ikiwiki\n"
+"POT-Creation-Date: 2011-10-20 22:24-0300\n"
+"PO-Revision-Date: 2009-08-23 18:50+0200\n"
+"Last-Translator: Philippe Batailler <philippe.batailler@free.fr>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+msgid ""
+"While [Ile Sans Fil](http://ilesansfil.org) has done incredible work in "
+"providing free wifi access to the community, the goal of creating an "
+"alternative network, independant from big corporate providers and "
+"decentralized, has remained elusive."
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"The goal of this project is to create a community wireless network "
+"accessible from both fixed and mobile devices that can be used in day to day "
+"life by regular people as well as during emergencies."
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Technical information"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "[[Nodes]] - the list of deployed nodes"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "[[Links]] - the links between the nodes"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "[[Hardware]] - hardware used in the project, and how it's configured"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "[[Software]] - the software used in the project..."
+msgstr ""
+
+#. type: Bullet: '* '
+msgid ""
+"[[Configuration]] - step by step config instructions to join the network"
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Participating"
+msgstr ""
+
+#. type: Plain text
+msgid "We need volunteers! On parle français aussi!"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "[[Volunteers]] - register here and tell us what you can do"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "[[Todo]] - the tasks on hand"
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Similar projects"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"This project is inspired, guided and sometimes in communication with the "
+"following projects:"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "<http://www.opennet-initiative.de/>"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "<http://reseaucitoyen.be/> - forké en <http://bombolong.net> (down?)"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "<http://freifunk.net/>"
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Meta"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"This wiki is designed to be distributed (as in: no single point of failure!) "
+"and redundant (as in: multiple copies) so you should be able to clone it and "
+"edit it offline if you need to. See [[meta/Replication]] for more "
+"information. There is also the [[meta/Maintenance]] documentation."
+msgstr ""
+
+#. type: Plain text
+msgid "All wikis are supposed to have a [[SandBox]], so this one does too."
+msgstr "Comme tous les wikis, ce wiki possède une page [[SandBox]]."
+
+#. type: Plain text
+#, fuzzy
+#| msgid "This wiki is powered by [[ikiwiki]]."
+msgid "This wiki is powered by [[ikiwiki]] version [[!version]]."
+msgstr "Ce wiki est propulsé par [[ikiwiki]]."
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta copyright=\"Copyright © 2011 Antoine Beaupré\"]]\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"[[!meta license=\"\"\"[[!toggle id=\"license\" text=\"GFDL 1.2+\"]][[!toggleable\n"
+"id=\"license\" text=\"Permission is granted to copy, distribute and/or modify this\n"
+"document under the terms of the GNU Free Documentation License, Version 1.2 or\n"
+"any later version published by the Free Software Foundation; with no Invariant\n"
+"Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license\n"
+"is included in the section entitled [[GNU Free Documentation\n"
+"License|meta/gfdl]].\"]]\"\"\"]]\n"
+msgstr ""
+
+#~ msgid "Welcome to your new wiki."
+#~ msgstr "Bienvenue sur votre nouveau wiki."

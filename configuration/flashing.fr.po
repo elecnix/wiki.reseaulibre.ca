@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-10-20 22:24-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!toc levels=3]]\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"This page is designed to give you quick howtos to flash common devices. It "
+"is not meant to be a complete directory of all esoteric devices, others have "
+"done this better."
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Firmware downloads"
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "OpenWRT firmware"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"To choose the firmware, look into the [table of "
+"hardware](http://wiki.openwrt.org/toh/start) on the OpenWRT site, each "
+"device page will list which firmware you should use."
+msgstr ""
+
+#. type: Plain text
+msgid "(!) Hint: most Linksys WRT54 devices use the brcm47xx firmware."
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Flashing methods"
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "Web interface"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"If your router is still functional, the easiest way is to flash the device "
+"through the web interface. This works on most firmware, even the proprietary "
+"ones shipped with the device."
+msgstr ""
+
+#. type: Plain text
+msgid "During the upload, pay attention to the following:"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "do not disconnect the network cable"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "do not close your browser"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "look at the LEDs pattern to see if they settle down"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "keep a ping to the router running"
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "TFTP upload"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"(!) In general, use the [[!debpkg atftp]] package instead of plain "
+"\"netkit\" tftp, as it is more reliable."
+msgstr ""
+
+#. type: Bullet: '1. '
+msgid "connect the router with a wire to your computer"
+msgstr ""
+
+#. type: Bullet: '2. '
+msgid "configure an IP on your computer"
+msgstr ""
+
+#. type: Plain text
+#:  
+#, no-wrap
+msgid "        ifconfig eth0:flash 192.168.1.2\n"
+msgstr ""
+
+#. type: Bullet: '3. '
+msgid ""
+"reboot the router with the reset button pressed until the leds flash like a "
+"christmas tree"
+msgstr ""
+
+#. type: Bullet: '4. '
+msgid "send the new firmware through tftp:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"        $ tftp 192.168.1.20\n"
+"        tftp> binary\n"
+"        tftp> put openwrt.bin\n"
+msgstr ""
+
+#. type: Plain text
+msgid "See also <http://wiki.openwrt.org/doc/howto/generic.flashing.tftp>"
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Password reset"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"In general, try to connect on the web interface at <http://192.168.1.1> (a "
+"commonly used default IP), that may give you an idea of the firmware that is "
+"running."
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "OpenWRT firmwares"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"If you are lucky enough to have a [[OpenWRT]] device, you may be able to "
+"reset the password using this simpler procedure:"
+msgstr ""
+
+#. type: Bullet: '1. '
+msgid "Unplug the router's power cord."
+msgstr ""
+
+#. type: Bullet: '2. '
+msgid "Connect the router's LAN1 port directly to your PC."
+msgstr ""
+
+#. type: Bullet: '3. '
+msgid "Configure your PC with a static IP address"
+msgstr ""
+
+#. type: Bullet: '4. '
+msgid "Plug the power on and wait for the DMZ LED to light up."
+msgstr ""
+
+#. type: Bullet: '5. '
+msgid ""
+"While the DMZ LED is on immediately press any button (Reset and Secure Easy "
+"Setup will work) a few times ."
+msgstr ""
+
+#. type: Plain text
+msgid "If done right the DMZ LED will quickly flash 3 times every second."
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"You should be able to telnet to the router at 192.168.1.1 now (no username "
+"and password)"
+msgstr ""
+
+#. type: Title ###
+#, no-wrap
+msgid "Simple tips to recover the router in failsafe mode"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"NOTE: The root file system in failsafe mode is the SquashFS partition "
+"mounted in readonly mode. To switch to the normal writable root file system "
+"run mount_root and make any changes. Run `mount_root` now."
+msgstr ""
+
+#. type: Plain text
+msgid "Forgot/lost your password and you like to set a new one"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "    passwd\n"
+msgstr ""
+
+#. type: Plain text
+msgid "Forgot the routers IP address"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "    uci get network.lan.ipaddr\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"You accidentally run 'ipkg upgrade' or filled up the flash by installing to "
+"big packages (clean the JFFS2 partition and start over)"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "    mtd -r erase rootfs_data\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"If you are done with failsafe mode power cycle the router and boot in normal "
+"mode."
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "Tomato firmware"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Just hold the reset key down until the power led flashes, see "
+"<http://www.polarcloud.com/tomatofaq#why_doesnt_my_password_work>."
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "DD-WRT firmware"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Hold the reset button for 30 seconds, see "
+"<http://www.dd-wrt.com/wiki/index.php/Reset_And_Reboot>."
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Other guides"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid ""
+"[[ddwrt install "
+"instructions|http://www.dd-wrt.com/wiki/index.php/Installation]]"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid ""
+"[[ddwrt bad flash recovery "
+"instructions|http://www.dd-wrt.com/wiki/index.php/Recover_from_a_bad_flash]]"
+msgstr ""

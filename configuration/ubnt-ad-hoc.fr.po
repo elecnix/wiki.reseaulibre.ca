@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-10-20 22:24-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+msgid ""
+"(!) This page details a simple ad-hoc configuration on a [[ubiquiti]] "
+"device, see [[ad-hoc]] for a more generic approach."
+msgstr ""
+
+#. type: Plain text
+msgid "= Configuration ad-hoc de base ="
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Par défaut, le point d'accès est distribué avec le système \"Air OS\", basé "
+"sur Linux et une interface web assez standard."
+msgstr ""
+
+#. type: Bullet: '* '
+msgid ""
+"Connecter l'appareil tel qu'indiqué sur le bloc d'alimentation (un câble "
+"vers l'AP, l'autre vers le réseau)"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "Brancher le câble réseau dans une machine directement (ex: laptop)"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"* Configurer le réseau de la machine pour utiliser une adresse statique:\n"
+"  {{{\n"
+"ifconfig eth0 192.168.1.21\n"
+"route add default gw 192.168.1.20\n"
+"}}}\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  Alternativement, on peut brancher l'AP dans une switch et créer une "
+"interface virtuelle à partir de n'importe quelle autre machine sur la "
+"switch:\n"
+"  {{{\n"
+"ifconfig eth0:ap 192.168.1.21\n"
+"}}}\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"* Ouvrir un navigateur web et accéder à http://192.168.1.20\n"
+" ** login / pass: ubnt\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+" * Configurer l'interface sans fil:\n"
+" ** Wireless mode: Station [!] pas sûr ..\n"
+" ** Choisir un ESSID, exemple: `mesh-mtl`\n"
+" ** Optionnel: choisir un mode d'encryption\n"
+" ** [!] Utiliser un channel width de 20MHz: certaines cartes réseau sans-fil "
+"ne supportent pas le 40MHz\n"
+" ** [!] Ne pas activer le channel shifting: non-supporté par la plupart des "
+"cartes réseau sans-fil\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+" * Configurer le réseau:\n"
+" ** Network mode: router\n"
+" ** WLAN: dhcp\n"
+" ** Lan settings: ...\n"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"Une fois les changements appliqués, si le réseau a été configuré pour "
+"utiliser DHCP, il faudra reconnecter l'interface réseau (du laptop)."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta copyright=\"Copyright © 2011 Antoine Beaupré\"]]\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"[[!meta license=\"\"\"[[!toggle id=\"license\" text=\"GFDL "
+"1.2+\"]][[!toggleable\n"
+"id=\"license\" text=\"Permission is granted to copy, distribute and/or "
+"modify this\n"
+"document under the terms of the GNU Free Documentation License, Version 1.2 "
+"or\n"
+"any later version published by the Free Software Foundation; with no "
+"Invariant\n"
+"Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the "
+"license\n"
+"is included in the section entitled [[GNU Free Documentation\n"
+"License|meta/gfdl]].\"]]\"\"\"]]\n"
+msgstr ""

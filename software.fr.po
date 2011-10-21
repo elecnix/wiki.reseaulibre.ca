@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-10-20 22:24-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!toc levels=3]]\n"
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Routing protocols"
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "OLSR"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"[OLSR](https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol)  "
+"(or the Optimized Link State Routing Protocol)"
+msgstr ""
+
+#. type: Title ###
+#:  
+#, no-wrap
+msgid "Implementations"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "[OLSRd](http://www.olsr.org/)"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "[NRL-OLSR](http://cs.itd.nrl.navy.mil/work/olsr/index.php)"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "[wmolsr](http://sourceforge.net/projects/wmolsr/)"
+msgstr ""
+
+#. type: Plain text
+msgid "Part of the Robin firmware (see below)."
+msgstr ""
+
+#. type: Title ###
+#:  
+#, no-wrap
+msgid "Deployments"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "<http://www.opennet-initiative.de/>"
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "<http://reseaucitoyen.be/>"
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "B.A.T.M.A.N."
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Implemented by the folks at [Freifunk](http://freifunk.net), "
+"[B.A.T.M.A.N.](https://en.wikipedia.org/wiki/B.A.T.M.A.N.) (Better Approach "
+"To Mobile Ad-hoc Networking) is intendended to be a replacement for OLSR."
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Freifunk seem to be the sole implementors of this protocol (?). The first "
+"and second version were using UDP (port 1966) for propagating route "
+"information, and were implemented as a daemon (batmand). The third "
+"implementation switched to layer 2 for routing advertisement and is now "
+"implemented in the kernel (batman-adv)."
+msgstr ""
+
+#. type: Bullet: '* '
+msgid "<http://freifunk.net/>"
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Distributions"
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "OpenWRT"
+msgstr ""
+
+#. type: Plain text
+msgid "basic distribution. features OLSRd too."
+msgstr ""
+
+#. type: Plain text
+msgid "note"
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "Robin"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Based on [OpenWrt](http://openwrt.org), [Robin](http://www.robin-mesh.com/) "
+"seems to be a fairly complete solution integrating BATMAN and a GUI. See "
+"[[configuration/Robin]] for our notes on how to configure robin."
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "AirOS"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"AirOS est le système d'exploitation qui vient par défaut avec les "
+"NanoStation d'Unbt. Pourrions-nous y faire rouler OLSR?"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"<http://208.68.95.4/forum/showthread.php?t=27476&page=2> : AirOS + OLSR, "
+"lien vers un binaire"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "<https://wiki.graz.funkfeuer.at/UbntStations> : plus général"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"<http://dev.wifidog.org/wiki/doc/install/airos> : Exemple de rajout à AirOS "
+"de ISF"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"(!) Update: je sais que rene @ opennet roule OLSR avec une distro custom sur "
+"les machines de Unbt... Voir "
+"<https://wiki.opennet-initiative.de/wiki/AirOS-opennet> -- [[users/anarcat]] "
+"2011-10-11"
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "Opennet"
+msgstr ""
+
+#. type: Plain text
+msgid "Firmware based on OpenWRT, OLSR and a VPN."
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"[Docs in "
+"german](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware_NG)"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"[Network "
+"topology](https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png)"
+msgstr ""
+
+#. type: Title ##
+#, no-wrap
+msgid "Freifunk"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"They have an OLSR-based firmware here: "
+"<http://wiki.freifunk.net/Freifunk_Firmware_%28English%29>"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta copyright=\"Copyright © 2011 Antoine Beaupré\"]]\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"[[!meta license=\"\"\"[[!toggle id=\"license\" text=\"GFDL "
+"1.2+\"]][[!toggleable\n"
+"id=\"license\" text=\"Permission is granted to copy, distribute and/or "
+"modify this\n"
+"document under the terms of the GNU Free Documentation License, Version 1.2 "
+"or\n"
+"any later version published by the Free Software Foundation; with no "
+"Invariant\n"
+"Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the "
+"license\n"
+"is included in the section entitled [[GNU Free Documentation\n"
+"License|meta/gfdl]].\"]]\"\"\"]]\n"
+msgstr ""

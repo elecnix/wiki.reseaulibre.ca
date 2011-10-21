@@ -1,0 +1,493 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-10-20 22:24-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+msgid "Installation d'OpenWRT sur le NanoStation M2:"
+msgstr ""
+
+#. type: Plain text
+msgid "= Télécharger le firmware ="
+msgstr ""
+
+#. type: Plain text
+#:   
+msgid "(!) On peut fusionner ceci avec [[flashing]]? --[[users/anarcat]]"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+" * OpenWRT ar71xx ubnt nano m: \n"
+" ** squashfs (recommandé): "
+"<http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin>\n"
+" ** jffs2: "
+"<http://downloads.openwrt.org/backfire/10.03.1-rc4/ar71xx/openwrt-ar71xx-ubnt-nano-m-jffs2-factory.bin>\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Enregistrer le fichier localement sur l'ordinateur qui va se connecter à "
+"l'AP pour le flasher."
+msgstr ""
+
+#. type: Plain text
+msgid "= Configurer une interface réseau pour flasher ="
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Si votre réseau local n'est pas sur 192.168.1.x, déclarer une interface "
+"virtuelle:"
+msgstr ""
+
+#. type: Plain text
+#:  
+msgid "{{{"
+msgstr ""
+
+#. type: Title #
+#:  
+#, no-wrap
+msgid "ifconfig eth0:ap 192.168.1.123"
+msgstr ""
+
+#. type: Plain text
+#:  
+msgid "}}}"
+msgstr ""
+
+#. type: Plain text
+msgid "= Flasher ="
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"Connecter l'AP et, au moment de l'alimenter en électricité, peser sur le "
+"bouton \"reset\" (petit bouton à côté de la prise réseau \"main\"). Si l'AP "
+"est prêt, les indicateurs de la connexion réseau sans fil clignoteront comme "
+"des lumières de noël."
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"S'assurer que la connection est fiable, électricité fiable, etc. Si cette "
+"étape est interrompue, ça pourrait endommager le matériel."
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "Envoyer le firmware par le logiciel tftp;"
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ $ tftp 192.168.1.20"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"tftp> binary\n"
+"tftp> put openwrt-ar71xx-ubnt-bullet-m-squashfs-factory.bin\n"
+"}}}\n"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "Attendre au moins 5-10 minutes."
+msgstr ""
+
+#. type: Plain text
+msgid "= Configuration initiale ="
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Par défaut, OpenWRT va utiliser 192.168.1.1, donc si votre réseau local "
+"n'est pas sur 192.168.1.x, déclarer une interface virtuelle:"
+msgstr ""
+
+#. type: Plain text
+msgid "Faire une connection telnet au routeur:"
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ $ telnet 192.168.1.1 }}}"
+msgstr ""
+
+#. type: Plain text
+msgid "Activer ssh en configurant un mot de passe root:"
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ openwrt# passwd }}}"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Si l'AP n'est pas votre routeur, vous voudrez sans doute changer son adresse "
+"IP:"
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ openwrt# vi /etc/config/network }}}"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"{{{\n"
+"config interface lan\n"
+"        option ifname   eth0\n"
+"        option type     bridge\n"
+"        option proto    static\n"
+"        option ipaddr   192.168.42.4\n"
+"        option gateway  192.168.42.1\n"
+"        option netmask  255.255.255.0\n"
+"}}}\n"
+msgstr ""
+
+#. type: Plain text
+msgid "Puis redémarrer pour tester le tout:"
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ openwrt# reboot }}}"
+msgstr ""
+
+#. type: Plain text
+msgid "Maintenant votre AP sera disponible sur la nouvelle adresse, par ssh:"
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ $ ssh root@192.168.42.4 }}}"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Puis on peut accéder à l'interface web de configuration, ex: "
+"<http://192.168.42.4>"
+msgstr ""
+
+#. type: Plain text
+msgid "= Configuration du réseau sans fil ="
+msgstr ""
+
+#. type: Plain text
+msgid "== Manuellement =="
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Activer la carte wifi en commentant la ligne `option disabled 1` dans "
+"/etc/config/wireless :"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"{{{\n"
+"config wifi-device  radio0\n"
+"[...]\n"
+"        # REMOVE THIS LINE TO ENABLE WIFI:\n"
+"        # option disabled 1\n"
+"}}}\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Voir les autres options dans ce fichier, on peut y changer le SSID et le "
+"mode d'encryption. Puis redémarrer le routeur."
+msgstr ""
+
+#. type: Plain text
+msgid "Référence: <http://wiki.openwrt.org/doc/uci/network>"
+msgstr ""
+
+#. type: Plain text
+msgid "== Par l'interface graphique =="
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"Dans Network -> Wireless, il faut cocher la case \"enable\", puis configurer "
+"le reste.\n"
+msgstr ""
+
+#. type: Plain text
+msgid "= Mesh avec OLSR ="
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "<!> still testing <!>\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"{{{ root@OpenWrt:~# opkg update root@OpenWrt:~# opkg install olsrd "
+"olsrd-luci olsrd-mod-txtinfo olsrd-luci-mod-txtinfo root@OpenWrt:~# opkg "
+"install luci-app-splash luci-app-statistics luci-app-qos luci-app-olsr "
+"luci-app-livestats root@OpenWrt:~# opkg install olsrd-mod-nameservice "
+"olsrd-mod-p2pd olsrd-mod-txtinfo olsrd-mod-dyn-gw }}}"
+msgstr ""
+
+#. type: Plain text
+msgid "Configurer la bonne interface sans fil dans /etc/config/olsrd :"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"{{{\n"
+"config Interface\n"
+"        list interface 'lan'\n"
+"}}}\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Et faire en sorte que txtinfo soit accessible de 127.0.0.1 (pour avoir des "
+"stats par l'interface web):"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"{{{\n"
+"config LoadPlugin\n"
+"        option library 'olsrd_txtinfo.so.0.1'\n"
+"        option accept '127.0.0.1'\n"
+"}}}\n"
+msgstr ""
+
+#. type: Plain text
+msgid "Démarrer:"
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ root@OpenWrt:~# /etc/init.d/olsrd start }}}"
+msgstr ""
+
+#. type: Plain text
+msgid "Tester:"
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ root@OpenWrt:~# wget -qO- http://127.0.0.1:2006/ }}}"
+msgstr ""
+
+#. type: Plain text
+msgid "= IPv6 ="
+msgstr ""
+
+#. type: Plain text
+msgid "Si le réseau local est déjà configuré pour supporter l'IPv6:"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"{{{ root@OpenWrt:~# opkg update root@OpenWrt:~# opkg install kmod-ipv6 radvd "
+"ip kmod-ip6tables ip6tables }}}"
+msgstr ""
+
+#. type: Plain text
+msgid "L'interface réseau du wan va s'auto-configurer:"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"{{{ root@OpenWrt:~# ping ipv6.google.com PING ipv6.google.com "
+"(2001:4860:800b::93): 56 data bytes 64 bytes from 2001:4860:800b::93: seq=0 "
+"ttl=53 time=57.845 ms }}}"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"... mais je n'ai pas encore testé comment propager les configurations aux "
+"clients de l'AP."
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"BROUILLON de configuration avec des clients aux AP, i.e. activer le "
+"\"forwarding\":"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"il faut un kernel >= 2.6.37, OpenWRT Backfire utilise 2.6.32.x, donc il faut "
+"utiliser une version \"trunk\", ex: "
+"http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"activer \"net.ipv6.conf.all.forwarding = 2\", \"2 means to enable "
+"forwarding, but also accept RAs and configure addresses/routes from them, 1 "
+"= forwarding only, 0 = disable\", c.f. /etc/sysctl.conf, ou "
+"/proc/sys/net/ipv6/conf/*/forwarding"
+msgstr ""
+
+#. type: Plain text
+msgid "= Splash page: nodogsplash ="
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ root@OpenWrt:~# opkg install nodogsplash }}}"
+msgstr ""
+
+#. type: Plain text
+msgid "Fichier de configuration dans /etc/nodogsplash/nodogsplash.conf"
+msgstr ""
+
+#. type: Plain text
+msgid "{{{ GatewayInterface wlan0"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"FirewallRuleSet authenticated-users {\n"
+"  FirewallRule block to 192.168.0.0/16\n"
+"  FirewallRule block to 10.0.0.0/8\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  # Serveur de fichiers\n"
+"  FirewallRule allow tcp port 80 to 172.16.42.2\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  # respectivement: DNS, http, https, ssh\n"
+"  FirewallRule allow tcp port 53\n"
+"  FirewallRule allow udp port 53\n"
+"  FirewallRule allow tcp port 80\n"
+"  FirewallRule allow tcp port 443\n"
+"  FirewallRule allow tcp port 22\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"FirewallRuleSet preauthenticated-users \n"
+"{\n"
+"  # DNS\n"
+"  FirewallRule allow tcp port 53\n"
+"  FirewallRule allow udp port 53\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  # Splash page\n"
+"  FirewallRule allow tcp port 80 to 172.16.42.1\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"GatewayName librenet-m2-sud RedirectURL http://partage.m2.bidon.ca/ "
+"TrafficControl yes UploadLimit 128 }}}"
+msgstr ""
+
+#. type: Plain text
+msgid "On peut modifier le html de la splash page dans /etc/nodogsplash/htdocs/"
+msgstr ""
+
+#. type: Plain text
+msgid "= vnstat: stats de bande passante ="
+msgstr ""
+
+#. type: Plain text
+msgid "Voir [[graphs-vnstat.sh]] ()."
+msgstr ""
+
+#. type: Plain text
+msgid "= QoS ="
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"{{{ root@OpenWrt:~# opkg install qos-scripts root@OpenWrt:~# /etc/init.d/qos "
+"enable root@OpenWrt:~# /etc/init.d/qos start }}}"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"La configuration est dans /etc/config/qos. La configuration par défaut "
+"limite à 50ko/sec en aval, 15kb/sec en amont."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<!> 2011-07-08: ceci semble causer un conflit avec nodogsplash... j'ai dû "
+"l'enlever -ML <!>\n"
+msgstr ""
+
+#. type: Plain text
+msgid "= Références ="
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid ""
+"Support matériel avec OpenWRT: "
+"<http://wiki.openwrt.org/toh/ubiquiti/nanostation> (pas très à jour)"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "IPv6: <http://wiki.openwrt.org/doc/howto/ipv6>"
+msgstr ""
+
+#. type: Plain text
+msgid "= TODO ="
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "Configuration réseau à suggérer?"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "mesh?"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta copyright=\"Copyright © 2011 Antoine Beaupré\"]]\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"[[!meta license=\"\"\"[[!toggle id=\"license\" text=\"GFDL "
+"1.2+\"]][[!toggleable\n"
+"id=\"license\" text=\"Permission is granted to copy, distribute and/or "
+"modify this\n"
+"document under the terms of the GNU Free Documentation License, Version 1.2 "
+"or\n"
+"any later version published by the Free Software Foundation; with no "
+"Invariant\n"
+"Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the "
+"license\n"
+"is included in the section entitled [[GNU Free Documentation\n"
+"License|meta/gfdl]].\"]]\"\"\"]]\n"
+msgstr ""

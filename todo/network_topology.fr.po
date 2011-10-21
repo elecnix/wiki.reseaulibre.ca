@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-10-20 22:24-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+msgid ""
+"We need to decide how the network is to be configured. Some more tests are "
+"required but so far i am thinking of:"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "[[configuration/olsrd]]"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "[[configuration/ad-hoc]] mode"
+msgstr ""
+
+#. type: Bullet: ' * '
+msgid "[[configuration/vpn]] over that for global network access"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta copyright=\"Copyright © 2011 Antoine Beaupré\"]]\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"[[!meta license=\"\"\"[[!toggle id=\"license\" text=\"GFDL "
+"1.2+\"]][[!toggleable\n"
+"id=\"license\" text=\"Permission is granted to copy, distribute and/or "
+"modify this\n"
+"document under the terms of the GNU Free Documentation License, Version 1.2 "
+"or\n"
+"any later version published by the Free Software Foundation; with no "
+"Invariant\n"
+"Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the "
+"license\n"
+"is included in the section entitled [[GNU Free Documentation\n"
+"License|meta/gfdl]].\"]]\"\"\"]]\n"
+msgstr ""

@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-10-20 22:24-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+msgid ""
+"This wiki is designed to be distributed and \"redundant\" (as in having "
+"multiple copies). Basically, this is to allow you to access the "
+"documentation even if the network goes down. This is done through "
+"[[ikiwiki]], which is a the engine behind this wiki."
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Basic offline editing and sharing"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Basically, this wiki is a collection of [[ikiwiki/markdown]]-formatted pages "
+"committed to a git repository. The git repository can be freely cloned using "
+"this command:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "    git clone http://anarcat.ath.cx/software/mtl-mesh-wiki.git/\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"This will at least provide you with the raw source, the text files that "
+"generate the wiki website. There you can make changes and send me the "
+"patches by email."
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Creating a mirror"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"To create a mirror of this wiki, if it ever goes down, you can start from "
+"the above repository and create a new wiki."
+msgstr ""
+
+#. type: Plain text
+msgid "The following steps should get you going:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    git clone --bare http://anarcat.ath.cx/software/mtl-mesh-wiki.git/\n"
+"    git clone mtl-mesh-wiki.git\n"
+"    cd mtl-mesh-wiki\n"
+"    edit meta/mtl-mesh-wiki.setup # fix paths\n"
+"    ikiwiki --setup meta/mtl-mesh-wiki.setup\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"See also [[meta/Maintenance]] for the plugins to enable and the hooks "
+"configuration."
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"(!) Oh, and [this](http://piny.be/jrayhawk/notes/ikiwiki_creation/)  may "
+"also be of use if the above doesn't work."
+msgstr ""
+
+#. type: Title #
+#, no-wrap
+msgid "Merging back into the wiki"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Now that multi-user configuration is enabled in the wiki (see "
+"[[maintenance]]), i can allow git over SSH access for people that are into "
+"that kind of stuff, just ask here or by email."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta copyright=\"Copyright © 2011 Antoine Beaupré\"]]\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"[[!meta license=\"\"\"[[!toggle id=\"license\" text=\"GFDL "
+"1.2+\"]][[!toggleable\n"
+"id=\"license\" text=\"Permission is granted to copy, distribute and/or "
+"modify this\n"
+"document under the terms of the GNU Free Documentation License, Version 1.2 "
+"or\n"
+"any later version published by the Free Software Foundation; with no "
+"Invariant\n"
+"Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the "
+"license\n"
+"is included in the section entitled [[GNU Free Documentation\n"
+"License|meta/gfdl]].\"]]\"\"\"]]\n"
+msgstr ""
