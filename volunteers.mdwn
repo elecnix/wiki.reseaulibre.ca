@@ -12,6 +12,7 @@ you are interested of doing is also good.
  * ChrisG (ergonlogic)
  * Aurélien (keru)
  * MartN (martn à martn.info)
+ * elecnix - running a node (Nano Station M5)
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
