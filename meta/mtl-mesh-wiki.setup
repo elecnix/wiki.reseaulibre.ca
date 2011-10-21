@@ -30,7 +30,7 @@ use IkiWiki::Setup::Standard {
 	# rcs backend to use
 	rcs => 'git',
 	# plugins to add to the default configuration
-	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff rename remove creole getsource mirrorlist search userlist txt 404 version attachment listdirectives}],
+	add_plugins => [qw{goodstuff websetup edittemplate headinganchors editdiff relativedate theme sortnaturally recentchangesdiff rename remove creole getsource mirrorlist search userlist txt 404 version attachment listdirectives po}],
 	# plugins to disable
 	disable_plugins => [],
 	# additional directory to search for template files
@@ -349,4 +349,9 @@ use IkiWiki::Setup::Standard {
 	# underlay plugin
 	# extra underlay directories to add
 	#add_underlays => [qw{/home/mtl-mesh/wiki.underlay}],
+
+	# po plugin
+	po_master_language => 'en|English',
+	po_slave_languages => [ 'fr|Français', ],
+	po_translatable_pages => '*',
 }
