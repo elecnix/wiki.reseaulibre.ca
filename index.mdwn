@@ -27,6 +27,10 @@ This project is inspired, guided and sometimes in communication with the followi
 
 # Meta
 
+Ce wiki est bilingue - le contenu peut être soit en français, soit en anglais selon l'auteur ou les circonstances (e.g. beaucoup de documentation technique est souvent en anglais).
+
+This wiki is bilingual - the content can be in english or in french depending on the author or the circumstances (e.g. a lot of technical documentation is often in english).
+
 This wiki is designed to be distributed (as in: no single point of
 failure!) and redundant (as in: multiple copies) so you should be able to clone it and edit it offline if you
 need to. See [[meta/Replication]] for more information. There is also the [[meta/Maintenance]] documentation.
