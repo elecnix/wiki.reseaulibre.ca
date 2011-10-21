@@ -52,7 +52,7 @@ use IkiWiki::Setup::Standard {
 	# name of Discussion pages
 	discussionpage => 'Discussion',
 	# generate HTML5?
-	html5 => 1,
+	html5 => 0,
 	# only send cookies over SSL connections?
 	sslcookie => 0,
 	# extension to use for new pages
