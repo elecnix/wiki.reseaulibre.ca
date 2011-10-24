@@ -1,4 +1,5 @@
-[[!toc]]
+[[!toc levels=3]]
+[[!meta title="Ad-hoc network configuration"]]
 
 # Debian configuration
 
