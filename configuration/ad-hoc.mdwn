@@ -1,3 +1,5 @@
+[[!toc]]
+
 # Debian configuration
 
 This will bring up your network interface with an IP in the 10.0.0.0/8 range.
