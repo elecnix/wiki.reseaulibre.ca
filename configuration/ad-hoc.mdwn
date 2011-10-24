@@ -8,7 +8,7 @@ This will bring up your network interface with an IP in the 10.0.0.0/8 range.
     iwconfig wlan0 mode ad-hoc essid mesh-mtl
     ifconfig wlan0 10.0.1.42 netmask 255.0.0.0 up
 
-(!) http://linuxwireless.org/en/developers/Documentation/nl80211 - it seems the proper way to configure interfaces is not through iwconfig anymore. see [[!debbug 645055]] too.
+(!) <http://linuxwireless.org/en/developers/Documentation/nl80211> - it seems the proper way to configure interfaces is not through iwconfig anymore. see [[!debbug 645055]] too.
 
 # OpenWRT configuration
 
