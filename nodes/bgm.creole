@@ -3,7 +3,7 @@ Topologie réseau chez bgm.
  * Réseau interne IPv4: 192.168.42.0/24
  * Réseau interne IPv6: 2001:470:b1e2::/48
 
-= m2-nord.net4.bidon.ca =
+### m2-nord.net4.bidon.ca =
 
     hostname: m2-nord.net4.bidon.ca
     MAC address: 00:15:6D:70:37:EA
@@ -17,7 +17,7 @@ Topologie réseau chez bgm.
     Panorama: N/A
 
 
-= m2-sud.net4.bidon.ca =
+### m2-sud.net4.bidon.ca =
 
     hostname: m2-sud.net4.bidon.ca
     MAC address: 00:15:6D:72:94:2F
