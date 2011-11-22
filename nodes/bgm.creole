@@ -1,30 +1,35 @@
 Topologie réseau chez bgm.
 
  * Réseau interne IPv4: 192.168.42.0/24
- * Réseau wifi IPv4: 172.16.42.0/24
-
-= m2-sud.net4.bidon.ca =
-
- * Adresse IPv4 lan: 192.168.42.4 + IPv6
- * Adresse IPv4 wlan: 172.16.42.4
+ * Réseau interne IPv6: 2001:470:b1e2::/48
 
 = m2-nord.net4.bidon.ca =
 
-= partage.m2.bidon.ca, aka damas.net4.bidon.ca =
+    hostname: m2-nord.net4.bidon.ca
+    MAC address: 00:15:6D:70:37:EA
+    IPv4 address: 192.168.50.1
+    IPv6 address: 2001:470:b1e2:50::1
+    Software: OpenWRT backfire
+    Hardware: NanoStation M2
+    Power: N/A
+    Location: 45.465654,-73.569303
+    Azimuth: ouest
+    Panorama: N/A
 
-Serveur de fichiers
 
- * Adresse IPv4 à partir du réseau: 172.16.42.1
+= m2-sud.net4.bidon.ca =
 
-= TODO =
+    hostname: m2-sud.net4.bidon.ca
+    MAC address: 00:15:6D:72:94:2F
+    IPv4 address: 192.168.51.1
+    IPv6 address: 2001:470:b1e2:51::1
+    Software: OpenWRT backfire
+    Hardware: NanoStation M2
+    Power: N/A
+    Location: 45.465654,-73.569303
+    Azimuth: est
+    Panorama: N/A
 
- * (./) configurer nodogsplash pour qu'il affiche un avertissement, puis redirige vesr partage.m2
- * Rendre accessible le serveur de fichiers
- * Tester OLSR sur OpenWRT
- * Tester OLSR sur AirOS
- * Statistiques d'utilisation
- ** (./) vnstat pour la bande passante: http://wiki.openwrt.org/doc/howto/vnstat
- ** nombre de personnes connectées? (leases dhcp)
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
