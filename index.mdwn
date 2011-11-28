@@ -21,9 +21,10 @@ We need volunteers! On parle français aussi!
 
 This project is inspired, guided and sometimes in communication with the following projects:
 
-* <http://www.opennet-initiative.de/>
-* <http://reseaucitoyen.be/> - forké en <http://bombolong.net> (down?)
-* <http://freifunk.net/>
+* <http://www.opennet-initiative.de/> - Rostock
+* <http://reseaucitoyen.be/> - Bruxelles - forké en <http://bombolong.net> (down?)
+* <http://freifunk.net/> - Berlin
+* <http://802x.fr/> - Dijon
 
 # Meta
 
