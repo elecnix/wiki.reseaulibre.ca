@@ -3,13 +3,14 @@
 # Ubiquiti
 
 Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca
-Un excellent revendeur à Boucherville http://www.converbit.ca/magasin/ Richard Marquis (on s'arrange toujours très bien ensemble) un "gosseux" avec talent !!
 
 Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez directement pour faire une commande ils peuvent vous la charger en $CAN et tout le monde sauve au bout du compte (Paypal sont assez chers pour les taux de change).
 
 La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un magasin d'article de pèche/camping) mais le service est excellent: vous pouvez donner le nom de Pierre-david en référence et vous aurez du service VIP ;)
 
 /!\ note that flashing your Ubiquity device with OpenWRT or similar may mean a significant reduction in signal quality - rene suggests using a  instead.
+
+** Un excellent revendeur à Boucherville http://www.converbit.ca/magasin/ Richard Marquis (on s'arrange toujours très bien ensemble) un "gosseux" avec talent !!
 
 
 ## Nanostation
