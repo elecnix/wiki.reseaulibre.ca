@@ -3,6 +3,7 @@
 # Ubiquiti
 
 Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca
+Un excellent revendeur à Boucherville http://www.converbit.ca/magasin/ Richard Marquis (on s'arrange toujours très bien ensemble) un "gosseux" avec talent !!
 
 Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez directement pour faire une commande ils peuvent vous la charger en $CAN et tout le monde sauve au bout du compte (Paypal sont assez chers pour les taux de change).
 
@@ -70,6 +71,8 @@ Those devices are everywhere, but they are cheap and may not be worth it.
 # TP-Link
 
 Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND), "cheap and nice". :)
+Another model is being looked at a lot by Elektra (the BatWomen) with Village-Telco group. TL-WR703N... on peux l'obtenir pour +- 20$ (B/G/N)
+I just setup one with open-wrt / luci
 
 # Other stuff
 
