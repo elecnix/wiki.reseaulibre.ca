@@ -15,6 +15,7 @@ you are interested of doing is also good.
  * elecnix - running a node (Nano Station M5)
  * RichardL, former ISF volunteer, mesh builder, aka macgyver richard.lussier at inter-node.com
  * AlexisC, former ISF volunteer, Apple Fanboy, Podcaster, Motivator Clown, Soldier of lost cause. alexis.cornellier at gmail dot com
+ * GenB, ISF volunteer, software developer, big brother paranoid. gbastien at versatic dot net
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
