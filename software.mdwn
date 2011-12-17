@@ -35,6 +35,11 @@ route information, and were implemented as a daemon (batmand). The
 third implementation switched to layer 2 for routing advertisement and
 is now implemented in the kernel (batman-adv).
 
+BATMAN is also used in a very nice project called Village-Telco. http://villagetelco.org/ 
+They have build a device (the Mesh Potato) with mesh and a phone interface (ATA)to run a private telco.
+This project is growing fast (development in SA and Germany)
+The main developper of BATMAN, Elektra, is working heavily on the project.
+
 ### Deployments
 
 * <http://freifunk.net/>

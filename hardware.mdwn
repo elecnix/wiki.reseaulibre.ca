@@ -10,6 +10,8 @@ La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un mag
 
 /!\ note that flashing your Ubiquity device with OpenWRT or similar may mean a significant reduction in signal quality - rene suggests using a  instead.
 
+** Un excellent revendeur à Boucherville http://www.converbit.ca/magasin/ Richard Marquis (on s'arrange toujours très bien ensemble) un "gosseux" avec talent !!
+
 
 ## Nanostation
 
@@ -70,6 +72,8 @@ Those devices are everywhere, but they are cheap and may not be worth it.
 # TP-Link
 
 Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND), "cheap and nice". :)
+Another model is being looked at a lot by Elektra (the BatWomen) with Village-Telco group. TL-WR703N... on peux l'obtenir pour +- 20$ (B/G/N)
+I just setup one with open-wrt / luci
 
 # Other stuff
 
