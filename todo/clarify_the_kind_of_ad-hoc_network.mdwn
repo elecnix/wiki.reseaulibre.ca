@@ -1,0 +1,17 @@
+[[!wikipedia Ad-hoc_network desc="Wikipedia"]] has a good description of the different [[!wikipedia Ad-hoc_network]] we can deploy. They mention:
+
+* [[!wikipedia MANET]] - Mobile Ad-hoc NETworks
+* [[!wikipedia WMN]] - Wireless Mesh Networks
+* [[!wikipedia WSN]] - Wireless Sensor Networks
+
+So which one is it? The idea here is to read up on this documentation too.
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]

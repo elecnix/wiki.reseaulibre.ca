@@ -1,0 +1,53 @@
+While [Ile Sans Fil](http://ilesansfil.org) has done incredible work in providing free wifi access to the community, the goal of creating an alternative network, independant from big corporate providers and decentralized, has remained elusive.
+
+The goal of this project is to create a community wireless network accessible from both fixed and mobile devices that can be used in day to day life by regular people as well as during emergencies.
+
+# Technical information
+
+* [[Nodes]] - the list of deployed nodes
+* [[Links]] - the links between the nodes
+* [[Hardware]] - hardware used in the project, and how it's configured
+* [[Software]] - the software used in the project...
+* [[Configuration]] - step by step config instructions to join the network
+
+# Participating
+
+We need volunteers! On parle français aussi!
+
+* [[Volunteers]] - register here and tell us what you can do
+* [[Todo]] - the tasks on hand
+
+# Similar projects
+
+This project is inspired, guided and sometimes in communication with the following projects:
+
+* <http://www.opennet-initiative.de/> - Rostock
+* <http://reseaucitoyen.be/> - Bruxelles - forké en <http://bombolong.net> (down?)
+* <http://freifunk.net/> - Berlin
+* <http://802x.fr/> - Dijon
+
+# Meta
+
+Ce wiki est bilingue - le contenu peut être soit en français, soit en anglais selon l'auteur ou les circonstances (e.g. beaucoup de documentation technique est souvent en anglais).
+
+This wiki is bilingual - the content can be in english or in french depending on the author or the circumstances (e.g. a lot of technical documentation is often in english).
+
+This wiki is designed to be distributed (as in: no single point of
+failure!) and redundant (as in: multiple copies) so you should be able to clone it and edit it offline if you
+need to. See [[meta/Replication]] for more information. There is also the [[meta/Maintenance]] documentation.
+
+All wikis are supposed to have a [[SandBox]], so this one does too.
+
+----
+
+This wiki is powered by [[ikiwiki]] version [[!version]].
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]

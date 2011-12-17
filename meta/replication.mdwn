@@ -1,0 +1,49 @@
+This wiki is designed to be distributed and "redundant" (as in having
+multiple copies). Basically, this is to allow you to access the
+documentation even if the network goes down. This is done through
+[[ikiwiki]], which is a the engine behind this wiki.
+
+# Basic offline editing and sharing
+
+Basically, this wiki is a collection of [[ikiwiki/markdown]]-formatted pages
+committed to a git repository. The git repository can be freely cloned
+using this command:
+
+    git clone http://anarcat.ath.cx/software/mtl-mesh-wiki.git/
+
+This will at least provide you with the raw source, the text files
+that generate the wiki website. There you can make changes and send me
+the patches by email.
+
+# Creating a mirror
+
+To create a mirror of this wiki, if it ever goes down, you can start
+from the above repository and create a new wiki.
+
+The following steps should get you going:
+
+    git clone --bare http://anarcat.ath.cx/software/mtl-mesh-wiki.git/
+    git clone mtl-mesh-wiki.git
+    cd mtl-mesh-wiki
+    edit meta/mtl-mesh-wiki.setup # fix paths
+    ikiwiki --setup meta/mtl-mesh-wiki.setup
+
+See also [[meta/Maintenance]] for the plugins to enable and the hooks
+configuration.
+
+(!) Oh, and [this](http://piny.be/jrayhawk/notes/ikiwiki_creation/)
+may also be of use if the above doesn't work.
+
+# Merging back into the wiki
+
+Now that multi-user configuration is enabled in the wiki (see [[maintenance]]), i can allow git over SSH access for people that are into that kind of stuff, just ask here or by email.
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]

@@ -1,0 +1,30 @@
+No node has been clearly established yet. 
+[[!if test="(enabled(template) or enabled(edittemplate))
+and enabled(inline)" then="""
+Here is the list of documented nodes:
+
+[[!inline pages="nodes/* and !*/*/* and !*/discussion" archive=yes sort=title rootpage=nodes template=titlepage postformtext="Add a new node named:"]]
+"""]]
+
+The links between nodes is documented in [[links]].
+
+## node ideas
+
+ * Est: moreau + ontario
+ * Nord: en face d'el motor machin, [[nodes/anarcat]]
+ * Centre: DIRA etc, maison notman?
+ * Sud-ouest: [[nodes/bgm]], smurf, canix2??
+
+## meta
+
+See [[todo/create a map]] to map those nodes. [[todo/numbering_policy]] currently says to dig into each of the pages above to get the IPs, which is sub-optimal of course.
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]

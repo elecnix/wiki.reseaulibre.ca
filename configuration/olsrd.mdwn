@@ -1,0 +1,135 @@
+[[!meta title="OLSRd configuration"]]
+
+OLSR is a network protocol used to propagate route information in a decentralized and highly resilient manner.
+
+[[!toc levels=3]]
+
+# Current issues
+
+Now it seems the routes are propagating properly, but for some reason,
+the second i start OLSRd, packets do not get through anymore.
+
+My routing table before OLSRd:
+
+    root@angela:/etc/olsrd# route -n
+    Table de routage IP du noyau
+    Destination     Passerelle      Genmask         Indic Metric Ref    Use Iface
+    10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 eth0
+    192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 eth0
+    192.168.2.0     0.0.0.0         255.255.255.0   U     2      0        0 wlan0
+
+OLSRd output:
+
+           *** olsr.org - 0.5.6-r7 (2009-11-11 17:29:46 on matrix) ***
+    
+    --- 02:58:47.285323 ---------------------------------------------------- LINKS
+    
+    IP address       hyst         LQ       ETX
+    10.0.1.1         0.000  1.000/1.000    1.000
+    
+    --- 02:58:47.285348 ----------------------- TWO-HOP NEIGHBORS
+    
+    IP addr (2-hop)  IP addr (1-hop)  Total cost
+    
+    --- 02:58:47.285359 ------------------------------------------------- TOPOLOGY
+    
+    Source IP addr  Dest IP addr          LQ        ETX
+    10.0.1.1        10.0.1.2        1.000/1.000    1.000
+    10.0.1.2        10.0.1.1        1.000/1.000    1.000
+
+New routing table:
+    
+    Table de routage IP du noyau
+    Destination     Passerelle      Genmask         Indic Metric Ref    Use Iface
+    10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 eth0
+    10.0.1.1        0.0.0.0         255.255.255.255 UH    2      0        0 eth0
+    192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 eth0
+    192.168.2.0     0.0.0.0         255.255.255.0   U     2      0        0 wlan0
+
+There has to be something i am missing here.... Now the cool thing is
+that I can manually add 10.0.1.1 as a default gw and it actually
+routes my packets through, but i still can't ping 10.0.1.1 directly.
+
+# Base configuration
+
+Before you configure OLSR, you probably want a basic [[ad-hoc]]
+configuration, especially having an IP on some link, even if it's
+ad-hoc and you do not know your neighbors yet. As long as the SSID is
+the same, you will be able to pick them up through OLSRd.
+
+## OpenWRT config
+
+ 1. install the packages
+
+        opkg update
+        opkg install olsrd-luci luci-app-olsr
+
+ 2. enable the OLSR daemon and start it in `Services -> Initscripts`
+ 3. configure OLSR in `Services -> OLSR` (just enable it on the `lan`)
+
+Those instructions were taken from [here](http://www.ubnt.com/wiki/OLSR_on_OpenWrt). This is [the package source](https://dev.openwrt.org/browser/packages/net/olsrd).
+
+## Debian wired config
+
+This configuration will enable olsrd on the wired interface of a machine:
+
+    apt-get install olsrd
+    vi /etc/olsrd/olsrd.conf # change eth1 to eth0
+    olsrd -f /etc/olsrd/olsrd.conf -d 1 # to run in debugging mode for now
+    vi /etc/default/olsrd # enable daemon when satisfied
+
+# Route announcements
+
+By default, OLSRd only announces the IP address of the interface it is configured on. To announce more routes, you need to add an HNA block. This can be done through the OpenWRT interface or as a code block. For example, if your node can route (say) 72.0.72.144/32 (your static IP), you will want a block like this:
+
+    Hna4
+    {
+        # my public IP
+        72.0.72.144 255.255.255.255
+    }
+
+You can of course announce whole netblocks in there and even a default route, if you want to give everyone access to the internets:
+
+    Hna4
+    {
+        # my local network
+        192.168.42.0 255.255.255.0
+        # this machine is a gateway
+        0.0.0.0 0.0.0.0
+    }
+
+
+IPv6 is also supported, of course.
+
+# Web interface
+
+[!] Warning: this makes the web interface available to everybody.
+
+    LoadPlugin "olsrd_httpinfo.so.0.1"
+    {
+    	# defaults to 1978
+    	PlParam "Port" "8080"
+    	# if you dont set these, the default is to listen only on the loopback device
+    	#PlParam "Host"   "80.23.53.22"
+    	#PlParam "Net"    "10.0.0.0 255.0.0.0"
+        # gives access to everybody!!
+    	PlParam "Net" "0.0.0.0 0.0.0.0"
+    }
+
+# References
+
+ * [Install instructions on OpenWRT](http://www.ubnt.com/wiki/OLSR_on_OpenWrt)
+ * [OLSR IPv6 HOWTO](http://tldp.org/HOWTO/OLSR-IPv6-HOWTO)
+ * [Optimized Link State Routing Protocol on wikipedia](https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol)
+ * [Opennet topology](https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png)
+ * [Opennet firmware](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware)
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]

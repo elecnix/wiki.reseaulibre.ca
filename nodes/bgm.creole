@@ -1,0 +1,35 @@
+Topologie réseau chez bgm.
+
+ * Réseau interne IPv4: 192.168.42.0/24
+ * Réseau interne IPv6: 2001:470:b1e2::/48
+
+= m2-nord.net4.bidon.ca =
+
+ * hostname: m2-nord.net4.bidon.ca
+ * MAC address: 00:15:6D:70:37:EA
+ * IPv4 address: 192.168.50.1
+ * IPv6 address: 2001:470:b1e2:50::1
+ * Software: OpenWRT backfire
+ * Hardware: NanoStation M2
+ * Power: N/A
+ * Location: 45.465654,-73.569303
+ * Azimuth: nord-ouest
+ * Panorama: N/A
+
+= m2-sud.net4.bidon.ca =
+
+ * hostname: m2-sud.net4.bidon.ca
+ * MAC address: 00:15:6D:72:94:2F
+ * IPv4 address: 192.168.51.1
+ * IPv6 address: 2001:470:b1e2:51::1
+ * Software: OpenWRT backfire
+ * Hardware: NanoStation M2
+ * Power: N/A
+ * Location: 45.465654,-73.569303
+ * Azimuth: sud-est
+ * Panorama: N/A
+
+= Tests =
+
+ * J'expérimente avec batman-adv (http://www.open-mesh.org/wiki/open-mesh/UserDocs) pour créer un réseau mesh
+ * Sinon le reste du temps les antennes fonctionnent en mode AP normal et ont un écran captif (nodogsplash) pour informer les gens des services disponibles. Seul le traffic IPv6 est routé vers Internet (http://partage.bidon.ca).

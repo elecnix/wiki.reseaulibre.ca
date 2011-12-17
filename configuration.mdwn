@@ -1,0 +1,52 @@
+[[!toc levels=3]]
+
+# Configuration guides
+
+This page details how to configure your [[hardware]] for operation in
+the mesh.
+
+## General instructions
+
+Those instructions attempt to be platform-independent or at least cover multiple platforms. This 4 step process should get you on the mesh, with full internet access if you are so privileged.
+
+1. [[configuration/flashing]] - flashing your device with the proper firmware (optional - if you already have the software on your machine, just go to step 2)
+2. [[configuration/ad-hoc]] - basic point to point configuration, includes [[adress allocation]]
+3. [[configuration/olsrd]] - configuring OLSRd to join the mesh
+4. [[configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
+
+## Specific instructions
+
+Those instructions are more specific to some platforms.
+
+* [[configuration/ubnt-ad-hoc]] - configuration ad-hoc de base, sans mesh, sur une station Ubiquiti
+* [[configuration/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
+* [[configuration/robin]] - configuration d'une machine avec [[robin]]
+
+# Architectural design
+
+## Network topology
+
+We need to decide of a topology. Opennet has an interesting concept, where public IPs are hidden behind VPN gateways:
+
+<https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png>
+
+This has a few advantages:
+
+ 1. strong over-the-air encryption
+ 2. no need to change gateway if network topology changes
+ 3. access to the internet only to subscribers
+
+We are also considering ad-hoc mode and OLSR, see [[todo/network_topology]].
+
+## IP allocation
+
+`10.0.0.0/8` so far, see the [[nodes]] pages for allocation. [[configuration/ipv6]] considered, see [[todo/numbering_policy]] for details.
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
