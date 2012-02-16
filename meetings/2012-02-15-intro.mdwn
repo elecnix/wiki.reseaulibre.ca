@@ -127,6 +127,7 @@ Technologies utilisées
        packages Android, utilisé par [Village Telco][]. Une seule
        radio donne un lien mesh mais aussi un accès managed.
      * Babel - petit nouveau
+ * topologie - [[todo/network_topology]], [[todo/clarify_the_kind_of_ad-hoc_network]]
 
  [Village Telco]: http://villagetelco.org/
 
@@ -139,7 +140,7 @@ et wifi/mesh.
 
 Enjeux:
 
- * adressage (IPv6?)
+ * adressage (IPv6? - voir [[todo/numbering_policy]]
  * nommage (DNS?!)
  * plug and play?
 
@@ -181,7 +182,7 @@ On fait des nodes. On peut s'interconnecter avec thic ou d'autres
 VPNs, rouler OLSR par dessus?
 
 il y a un site ([darknetmap][]) pour documenter les points d'accès,
-utiliser ça pour faire un inventaire et visualiser où on est?
+utiliser ça pour faire un inventaire et visualiser où on est? voir aussi [[todo/create_a_map/]]
 
 [darknetmap]: http://darknetmap.zone42.ca/
 
