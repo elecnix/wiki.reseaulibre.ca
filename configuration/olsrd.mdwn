@@ -66,6 +66,7 @@ the same, you will be able to pick them up through OLSRd.
 
  2. enable the OLSR daemon and start it in `Services -> Initscripts`
  3. configure OLSR in `Services -> OLSR` (just enable it on the `lan`)
+ (!) you may need to reboot the box for this service to appear.
 
 Those instructions were taken from [here](http://www.ubnt.com/wiki/OLSR_on_OpenWrt). This is [the package source](https://dev.openwrt.org/browser/packages/net/olsrd).
 
