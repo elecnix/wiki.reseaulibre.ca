@@ -127,7 +127,7 @@ Technologies utilisées
        packages Android, utilisé par [Village Telco][]. Une seule
        radio donne un lien mesh mais aussi un accès managed.
      * Babel - petit nouveau
- * topologie - [[todo/network_topology]], [[todo/clarify_the_kind_of_ad-hoc_network]]
+ * topologie - voir [[todo/network_topology]], [[todo/clarify_the_kind_of_ad-hoc_network]]
 
  [Village Telco]: http://villagetelco.org/
 
@@ -140,7 +140,7 @@ et wifi/mesh.
 
 Enjeux:
 
- * adressage (IPv6? - voir [[todo/numbering_policy]]
+ * adressage (IPv6? - voir [[todo/numbering_policy]])
  * nommage (DNS?!)
  * plug and play?
 
