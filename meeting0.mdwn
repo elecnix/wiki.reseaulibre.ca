@@ -51,7 +51,8 @@ Communications du projet
 ------------------------
 
 On fait une mailing list, Antoine s'en occuppe et va prendre les
-adresses à la fin.
+adresses à la fin. La mailing list est nodes sur lists.openisp.ca mais
+manque le DNS pour être activée.
 
 Problème: le wiki ne marche plus! On ne peut plus se logguer avec les
 comptes Google...
@@ -110,6 +111,7 @@ Technologies utilisées
    * wimax
    * fillaire
    * VPNs pour interconnecter les mesh locaux
+   * ethernet over power lines
  * Protocoles
    * thic VPN
    * cjDNS - protocole réseau parallèle à IP, décentralisé et
@@ -154,11 +156,30 @@ Idées:
 On grossi comme on peut! On doit pas se bloquer avec les
 protocoles. Pas obligés de faire un protocole mesh au départ. 
 
+Cas type: j'ai 3 voisins à 100m de rayon (pas line of sight) avec qui
+je veux faire un mesh. C'est quoi le plus simple? À date: connexion
+802.11n avec 2 murs et 100m, marche bien; connexion Nanostation
+protocole propriétaire au travers d'un building et 500m, 1mbps.
+
+ * nanostation 900mhz (125$)
+ * TDMA pour faire du partage de fréquence plus efficace
+
 On doit construire une masse critique.
 
 Ouverture du projet
 -------------------
 
+Point sauté...
+
 Suites
 ------
 
+On fait des nodes. On peut s'interconnecter avec thic ou d'autres
+VPNs, rouler OLSR par dessus?
+
+il y a un site ([darknetmap][]) pour documenter les points d'accès,
+utiliser ça pour faire un inventaire et visualiser où on est?
+
+[darknetmap]: http://darknetmap.zone42.ca/
+
+réunion dans un mois? on organise un doodle et la mailing list.
