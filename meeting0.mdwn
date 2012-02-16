@@ -8,10 +8,10 @@ Présentations
    prog sauf assembleur / C bas niveau, sauf dotnet. A participé à
    UQBM aussi, sur le CA et Communautel.
  * Richard Lussier: électronique, audio, multimédia puis réseau,
-   beaucoup hardware et téléphonie IP. Impliqué dans [Ile Sans Fil]()
+   beaucoup hardware et téléphonie IP. Impliqué dans [Ile Sans Fil][]
    depuis 6 ans, 50 points d'accès ISF puis ça a grossi... Gagne sa
    vie en contrat de wifi et un peu de téléphonie et réseautique. Sur
-   le CA d'ISF et de [UQBM]() (Un Québec Branché sur le Monde), aidé à
+   le CA d'ISF et de [UQBM][] (Un Québec Branché sur le Monde), aidé à
    démarrer Communautel. Allé au sommet du sans fil à Vienne, avec
    Geneviève et Philippe, rencontré les gens de Mesh d'Europe. Des
    gros mesh en Europe: Athènes (1000 nodes et 400 sous-nodes).
@@ -25,18 +25,18 @@ Présentations
  * Mathieu Lutfy: deux points d'accès ouverts pour partager des fichiers
    avec les voisin avec page explicative. OLSR, BATMAN, IPv6. Lien
    500m avec un voisin 1mbps à cause d'un bâtiment qui bloque.
- * Antoine: cofondateur [koumbit.org](), radio amateur, IPv6, OLSR, wifi
+ * Antoine: cofondateur [koumbit.org][], radio amateur, IPv6, OLSR, wifi
    ouvert à la maison, cherche à voir un mesh neutre pour permettre
    les communications et des services par dessus.
  * Mao: bénévole ISF, interessé au mesh, mise en place de réseaux
    sans-fil wimax et wifi, Alvarion(?)
- * Mathieu Lalonde: président [foulab]() (hackerspace montreal), intéressé
+ * Mathieu Lalonde: président [foulab][] (hackerspace montreal), intéressé
    à participer au mesh au foulab.
 
- [foulab]:: http://foulab.org/
- [koumbit.org]:: http://koumbit.org/
- [Ile Sans Fil]:: http://ilesansfil.org/
- [UQBM]:: http://uqbm.com/
+ [foulab]: http://foulab.org/
+ [koumbit.org]: http://koumbit.org/
+ [Ile Sans Fil]: http://ilesansfil.org/
+ [UQBM]: http://uqbm.com/
 
 Ordre du jour
 =============
@@ -53,17 +53,15 @@ Communications du projet
 On fait une mailing list, Antoine s'en occuppe et va prendre les
 adresses à la fin.
 
+Problème: le wiki ne marche plus! On ne peut plus se logguer avec les
+comptes Google...
+
 Buts du projet
 --------------
 
 Faire un réseau non-commercial, neutre, organiquement grandi et
 créé. Sans responsabilité légale, on ne fait que passer des
 paquets. Refaire l'internet de la bonne façon.
-
-Pas nécessairement sans fil, on se branche comme on peut.
-
-Pas nécessairement de fournir accès à internet ou d'offrir des
-services, mais on peut le faire.
 
 Les gens qui roulent leurs noeuds sur le réseau sont responsable de
 leur connexion, s'ils ne veulent pas permettre l'accès internet, ils
@@ -81,8 +79,82 @@ les gateways vers Internet.
 Quelqu'un sur le mesh s'engage à router des paquets et c'est à
 l'utilisateur de voir ce qu'il veut faire.
 
+Enjeux:
+
+ * possibilité de saturation si tout le monde roule n'importe quel
+   service
+ * est-ce que le mesh lui-même offre des services?
+ * on ne peut pas partager nos connexions internet chez Bell
+
+Réseau qui veut reproduire les propriétés d'internet mais plus
+résilient à la censure, participation et services
+variables. Plateforme à différent usages non-contrôlée.
+
+Pas de qualité de service garantie, parce que bénévole... mais si on a
+du financement, il serait possible de stabiliser un
+service. L'internet devrait être un service public. On note que ISF
+n'a jamais réussi à avoir du financement de la ville, on ne veut pas
+perdre notre temps avec ça.
+
+Pas de publicité!
+
 Technologies utilisées
 ----------------------
+
+ * Matériel
+   * TP-Link TL-WR703N tout petit routeur (wifi, ethernet) qu'on
+     circule dans le groupe
+   * Fon - petit routeur préconfiguré de partage d'internet
+ * Transport
+   * wifi
+   * wimax
+   * fillaire
+   * VPNs pour interconnecter les mesh locaux
+ * Protocoles
+   * thic VPN
+   * cjDNS - protocole réseau parallèle à IP, décentralisé et
+     sécurisé, point à point
+   * mesh
+     * OLSRd - un des plus utilisé, fonctionne bien mais peut être
+       lourd sur les gros mesh (floode le réseau, etc)
+     * BATMAN advanced - très utilisé, plus léger et facile que OLSR,
+       mieux documenté et supporté que OLSRd, `apt-get install`,
+       packages Android, utilisé par [Village Telco][]. Une seule
+       radio donne un lien mesh mais aussi un accès managed.
+     * Babel - petit nouveau
+
+ [Village Telco]: http://villagetelco.org/
+
+Battle of the mesh: 5ième compétition de mesh où les gens se benchmark et s'examinent et
+discutent de leurs protocoles. prochaine compétition à Athènes en avril...
+
+Village telco: intègre mesh et téléphonie, simplement brancher la
+machine et on peut parler à son voisin. Ports ATA (téléphone), Ethernet
+et wifi/mesh.
+
+Enjeux:
+
+ * adressage (IPv6?)
+ * nommage (DNS?!)
+ * plug and play?
+
+Idées:
+
+ * IPv6: avoir une grosse allocation de IPv6 pour tous les mesh.
+   faire que la responsabilité du mesh local est d'allouer des
+   sous-réseaux (e.g. des /48) aux nodes du réseau. la seule
+   responsabilité des nodes est prouver qu'ils utilisent le /48.
+ * allocation: utiliser un système de notaires pour permettre
+   l'allocation.
+ * BATMAN est en layer 2, donc c'est une grosse switch donc une seule
+   personne est responsable de l'allocation IP.
+ * Koumbit ou un autre OSBL peut aller chercher des allocations IP, on
+   promet rien! Koumbit commence aussi à faire du BGP.
+
+On grossi comme on peut! On doit pas se bloquer avec les
+protocoles. Pas obligés de faire un protocole mesh au départ. 
+
+On doit construire une masse critique.
 
 Ouverture du projet
 -------------------
