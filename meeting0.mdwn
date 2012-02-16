@@ -1,19 +1,20 @@
+[!toc]
+
 Présentations
--------------
+=============
 
  * Nicolas: programmeur impliqué dans le logiciel libre, a déployé un
    mesh avec son frère. Inscrit sur le wiki, a ajouté son lien. Toute
    prog sauf assembleur / C bas niveau, sauf dotnet. A participé à
    UQBM aussi, sur le CA et Communautel.
  * Richard Lussier: électronique, audio, multimédia puis réseau,
-   beaucoup hardware et téléphonie IP. Impliqué dans Ile Sans Fil
+   beaucoup hardware et téléphonie IP. Impliqué dans [Ile Sans Fil]()
    depuis 6 ans, 50 points d'accès ISF puis ça a grossi... Gagne sa
    vie en contrat de wifi et un peu de téléphonie et réseautique. Sur
-   le CA d'ISF et de [UQBM](http://uqbm.com/) (Un Québec Branché sur
-   le Monde), aidé à démarrer Communautel. Allé au sommet du sans fil
-   à Vienne, avec Geneviève et Philippe, rencontré les gens de Mesh
-   d'Europe. Des gros mesh en Europe: Athènes (1000 nodes et 400
-   sous-nodes).
+   le CA d'ISF et de [UQBM]() (Un Québec Branché sur le Monde), aidé à
+   démarrer Communautel. Allé au sommet du sans fil à Vienne, avec
+   Geneviève et Philippe, rencontré les gens de Mesh d'Europe. Des
+   gros mesh en Europe: Athènes (1000 nodes et 400 sous-nodes).
  * Genevière: bénévole ISF, programmeuse languages haut niveau,
    travaillé sur Wifidog, firmwares de routeurs. C'est le bon moment
    de faire un mesh en Amérique, à cause de SOPA et autres lois. Mesh
@@ -21,19 +22,71 @@ Présentations
    l'Espagne... connecter l'afrique du nord, etc.. 
  * Angelina: bénévole ISF, technicienne informatique, intéressée au
    mesh.
- * Mathieu: deux points d'accès ouverts pour partager des fichiers
+ * Mathieu Lutfy: deux points d'accès ouverts pour partager des fichiers
    avec les voisin avec page explicative. OLSR, BATMAN, IPv6. Lien
    500m avec un voisin 1mbps à cause d'un bâtiment qui bloque.
- * Antoine: cofondateur koumbit.org, radio amateur, IPv6, OLSR, wifi
+ * Antoine: cofondateur [koumbit.org](), radio amateur, IPv6, OLSR, wifi
    ouvert à la maison, cherche à voir un mesh neutre pour permettre
    les communications et des services par dessus.
  * Mao: bénévole ISF, interessé au mesh, mise en place de réseaux
    sans-fil wimax et wifi, Alvarion(?)
+ * Mathieu Lalonde: président [foulab]() (hackerspace montreal), intéressé
+   à participer au mesh au foulab.
+
+ [foulab]:: http://foulab.org/
+ [koumbit.org]:: http://koumbit.org/
+ [Ile Sans Fil]:: http://ilesansfil.org/
+ [UQBM]:: http://uqbm.com/
 
 Ordre du jour
--------------
+=============
 
  * communications du projet
  * buts du projet
  * technologies utilisées
  * ouverture du projet
+ * suites
+ 
+Communications du projet
+------------------------
+
+On fait une mailing list, Antoine s'en occuppe et va prendre les
+adresses à la fin.
+
+Buts du projet
+--------------
+
+Faire un réseau non-commercial, neutre, organiquement grandi et
+créé. Sans responsabilité légale, on ne fait que passer des
+paquets. Refaire l'internet de la bonne façon.
+
+Pas nécessairement sans fil, on se branche comme on peut.
+
+Pas nécessairement de fournir accès à internet ou d'offrir des
+services, mais on peut le faire.
+
+Les gens qui roulent leurs noeuds sur le réseau sont responsable de
+leur connexion, s'ils ne veulent pas permettre l'accès internet, ils
+le bloquent.
+
+Éviter le contrôle de l'internet. Avoir un internet indépendant,
+décentralisé.
+
+On peut rouler des freedombox sur le mesh!
+
+Le mesh est content-agnostic - le but est de router des paquets. Il y
+a deux types de gateways: les gateways d'interconnexion internes et
+les gateways vers Internet.
+
+Quelqu'un sur le mesh s'engage à router des paquets et c'est à
+l'utilisateur de voir ce qu'il veut faire.
+
+Technologies utilisées
+----------------------
+
+Ouverture du projet
+-------------------
+
+Suites
+------
+
