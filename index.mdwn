@@ -23,7 +23,7 @@ We need volunteers! On parle français aussi!
 
 ## Rencontres précédentes
 
-[[!inline pages="meetings"]]
+[[!inline pages=meetings/* and !*/*/* and !*/discussion" archive=yes]]
 
 # Similar projects
 
