@@ -1,4 +1,4 @@
-[[!osm loc="45°30′N 73°40′W"]]
+[[!osm lat="45°30N" lon="73°40W"]]
 
 A node on my roof.
 
