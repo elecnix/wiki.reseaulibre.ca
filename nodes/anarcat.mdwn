@@ -1,4 +1,4 @@
-[[!osm lat="45.5335122" lon="-73.6031785" type="planned" embed  width="400px" height="400px" right]]
+[[!osm lat="45.5335122" lon="-73.6031785" type="planned" embed  width="400px" height="400px" right desc="A node on my roof"]]
 
 A node on my roof.
 
