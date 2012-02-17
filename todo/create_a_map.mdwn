@@ -6,6 +6,12 @@ if he could share his IkiWiki/OpenLayers integration to document the
 nodes locations and so on... Awaiting his feedback. -- [[users/anarcat]]
 2011-10-10
  
+Got the code, improved it, this works now!
+
+We are *not* using [[!iki plugins/contrib/googlemaps]]! :)
+
+[[done]]!
+
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
