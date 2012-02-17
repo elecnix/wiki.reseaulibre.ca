@@ -1,6 +1,5 @@
 [[!osm lat="45.5335122" lon="-73.6031785" type="planned"]]
 
-
 A node on my roof.
 
     hostname: mesh0.anarcat.ath.cx
