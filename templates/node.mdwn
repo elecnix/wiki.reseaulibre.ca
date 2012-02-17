@@ -1,14 +1,16 @@
 (Description of the node here, with a link to your homepage.)
 
-    MAC address:
-    IP address:
-    IPv6 address:
-    Software:
-    Hardware:
-    Power:
-    Location:
-    Azimuth:
-    Panorama:
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware:
+ * Power:
+ * Location:
+   [[!osm lat="45.5335122" lon="-73.6031785" type="planned"]] (type
+   can also be "up, down, unknown")
+ * Azimuth:
+ * Panorama:
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
