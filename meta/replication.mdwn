@@ -9,7 +9,7 @@ Basically, this wiki is a collection of [[ikiwiki/markdown]]-formatted pages
 committed to a git repository. The git repository can be freely cloned
 using this command:
 
-    git clone http://anarcat.ath.cx/software/mtl-mesh-wiki.git/
+    git clone git://mesh.openisp.ca/
 
 This will at least provide you with the raw source, the text files
 that generate the wiki website. There you can make changes and send me
@@ -22,7 +22,7 @@ from the above repository and create a new wiki.
 
 The following steps should get you going:
 
-    git clone --bare http://anarcat.ath.cx/software/mtl-mesh-wiki.git/
+    git clone --bare git://mesh.openisp.ca/
     git clone mtl-mesh-wiki.git
     cd mtl-mesh-wiki
     edit meta/mtl-mesh-wiki.setup # fix paths
