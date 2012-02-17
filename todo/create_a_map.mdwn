@@ -8,7 +8,7 @@ nodes locations and so on... Awaiting his feedback. -- [[users/anarcat]]
  
 Got the code, improved it, this works now!
 
-We are *not* using [[!iki plugins/contrib/googlemaps]]! :)
+We are *not* using [[!iki plugins/contrib/googlemaps]]! :) See [[!iki plugins/contrib/osm]]!
 
 [[done]]!
 
