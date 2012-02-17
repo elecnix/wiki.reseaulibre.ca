@@ -106,6 +106,7 @@ the wiki:
 * [[!iki plugins/sortnaturally]]
 * [[!iki plugins/theme]] - using the actiontabs theme
 * [[!iki plugins/userlist]]
+* [[!iki plugins/osm]] - the OSM integration here, get the code at `git://src.anarcat.ath.cx/ikiwiki-osm.git`
 
 ... and more, see the setup file.
 
