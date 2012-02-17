@@ -7,7 +7,7 @@ A node on my roof.
  * Software: OpenWRT backfire
  * Hardware: Linksys WRT54G 1.1
  * Power: 15dBm/28mW (default)
- * Location: [[!osm lat="45.5335122" lon="-73.6031785" type="planned"]]
+ * Location: [[!osm lat="45.5335122" lon="-73.6031785" type="planned" embed]]
  * Azimuth: N/A
  * Panorama: N/A
 
