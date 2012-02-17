@@ -1,17 +1,15 @@
-[[!osm lat="45.5335122" lon="-73.6031785" type="planned"]]
-
 A node on my roof.
 
-    hostname: mesh0.anarcat.ath.cx
-    MAC address: 00:90:4c:5f:00:2a
-    IP address: 10.0.1.1
-    IPv6 address: N/A
-    Software: OpenWRT backfire
-    Hardware: Linksys WRT54G 1.1
-    Power: 15dBm/28mW (default)
-    Location: not deployed
-    Azimuth: N/A
-    Panorama: N/A
+ * hostname: mesh0.anarcat.ath.cx
+ * MAC address: 00:90:4c:5f:00:2a
+ * IP address: 10.0.1.1
+ * IPv6 address: N/A
+ * Software: OpenWRT backfire
+ * Hardware: Linksys WRT54G 1.1
+ * Power: 15dBm/28mW (default)
+ * Location: [[!osm lat="45.5335122" lon="-73.6031785" type="planned"]]
+ * Azimuth: N/A
+ * Panorama: N/A
 
 (!) Power can apparently be pushed up to 84mW (20dBm), see [seattlewireless](http://www.seattlewireless.net/LinksysWrt54g).
 
