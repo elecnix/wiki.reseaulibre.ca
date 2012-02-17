@@ -1,4 +1,4 @@
-[[!osm lat="45°30N" lon="73°40W"]]
+[[!osm lat="45°30N" lon="73°40W" icon="img/planned.png"]]
 
 A node on my roof.
 
