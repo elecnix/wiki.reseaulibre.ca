@@ -1,3 +1,5 @@
+[[!osm loc="45°30′N 73°40′W"]]
+
 A node on my roof.
 
     hostname: mesh0.anarcat.ath.cx
