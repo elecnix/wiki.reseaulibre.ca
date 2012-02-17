@@ -124,7 +124,6 @@ This section documents which templates are available and to what pages they appl
 
  * [[!edittemplate template="templates/node" match="nodes/*"]]
  * [[!edittemplate template="templates/link" match="links/*"]]
- * [[!edittemplate template="templates/all" match="*"]]
 
 # Multiple committers
 
