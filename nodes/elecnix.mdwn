@@ -2,17 +2,17 @@
 
 A node in my window.
 
-    hostname: UBNT-elecnix
-    MAC address: 00:15:6D:3C:01:B9
-    IP address: 192.168.3.20
-    IPv6 address: N/A
-    Software: AirOS
-    Hardware: Ubiquity NanoStation M5 (XM.v5.2)
-    Setup: WDS Access Point with WPA2-AES PSK
-    Power: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
-    Location: 45.56569,-73.6031785
-    Azimuth: North-East
-    Panorama: N/A
+ * hostname: UBNT-elecnix
+ * MAC address: 00:15:6D:3C:01:B9
+ * IP address: 192.168.3.20
+ * IPv6 address: N/A
+ * Software: AirOS
+ * Hardware: Ubiquity NanoStation M5 (XM.v5.2)
+ * Setup: WDS Access Point with WPA2-AES PSK
+ * Power: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
+ * Location: 45.56569,-73.6031785
+ * Azimuth: North-East
+ * Panorama: N/A
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
