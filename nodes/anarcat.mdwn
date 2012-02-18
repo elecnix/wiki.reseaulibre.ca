@@ -1,5 +1,3 @@
-[[!osm lat="45.5335122" lon="-73.6031785" type="planned" embed  width="400px" height="400px" right desc="A node on my roof"]]
-
 A node on my roof.
 
  * hostname: mesh0.anarcat.ath.cx
@@ -9,7 +7,7 @@ A node on my roof.
  * Software: OpenWRT backfire
  * Hardware: Linksys WRT54G 1.1
  * Power: 15dBm/28mW (default)
- * Location:
+ * Location: [[!osm lat="45.5335122" lon="-73.6031785" type="planned" embed  width="400px" height="400px" right desc="A node on my roof"]]
  * Azimuth: N/A
  * Panorama: N/A
 
