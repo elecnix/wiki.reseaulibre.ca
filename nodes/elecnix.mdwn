@@ -1,3 +1,5 @@
+[[!osm lat="45.56569" lon="-73.6031785" type="planned" embed  width="400px" height="400px" right desc="A node in my window"]]
+
 A node in my window.
 
     hostname: UBNT-elecnix
@@ -8,7 +10,7 @@ A node in my window.
     Hardware: Ubiquity NanoStation M5 (XM.v5.2)
     Setup: WDS Access Point with WPA2-AES PSK
     Power: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
-    Location: 45.56569,-73.594698
+    Location: 45.56569,-73.6031785
     Azimuth: North-East
     Panorama: N/A
 
