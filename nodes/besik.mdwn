@@ -1,16 +1,16 @@
-A node on my roof.
+[[!osm lat="45.566779" lon="-73.595172" type="planned" embed  width="400px" height="400px" right desc="A node on my roof"]]
 
-    hostname: UBNT-besik
-    MAC address: 00:15:6D:3C:00:7B
-    IP address: 192.168.1.20
-    IPv6 address: N/A
-    Software: AirOS
-    Hardware: Ubiquity NanoStation M5 (XM.v5.2)
-    Setup: WDS with WPA2-AES PSK
-    Power: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
-    Location: 45.566779,-73.595172
-    Azimuth: South-East
-    Panorama: N/A
+ * hostname: UBNT-besik
+ * MAC address: 00:15:6D:3C:00:7B
+ * IP address: 192.168.1.20
+ * IPv6 address: N/A
+ * Software: AirOS
+ * Hardware: Ubiquity NanoStation M5 (XM.v5.2)
+ * Setup: WDS with WPA2-AES PSK
+ * Power: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
+ * Location: 45.566779,-73.595172
+ * Azimuth: South-East
+ * Panorama: N/A
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
