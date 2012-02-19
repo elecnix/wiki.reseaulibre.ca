@@ -1,4 +1,4 @@
-[[!osm lat="45.56569" lon="-73.6031785" type="planned" embed  width="400px" height="400px" right desc="A node in my window"]]
+[[!waypoint lat="45.56569" lon="-73.6031785" type="planned" embed  width="400px" height="400px" right desc="A node in my window"]]
 
 A node in my window.
 
