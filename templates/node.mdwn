@@ -1,3 +1,5 @@
+[[!waypoint lat="45.5" lon="-73.666667" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+
 (Description of the node here, with a link to your homepage.)
 
  * MAC address:
@@ -7,8 +9,8 @@
  * Hardware:
  * Power:
  * Location:
-   [[!osm lat="45.5335122" lon="-73.6031785" type="planned"]] (type
-   can also be "up, down, unknown")
+ * Status: [[!taglink planned]] (can also be up, down, unknown)
+ * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
  * Azimuth:
  * Panorama:
 
