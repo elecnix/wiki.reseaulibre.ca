@@ -12,6 +12,7 @@ A node on my roof.
  * Location:
  * Azimuth: N/A
  * Panorama: N/A
+ * Links: [[besik]]
 
 (!) Power can apparently be pushed up to 84mW (20dBm), see [seattlewireless](http://www.seattlewireless.net/LinksysWrt54g).
 
