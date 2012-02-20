@@ -1,3 +1,5 @@
+[[!osm lat="45.56569" lon="-73.6031785" map="map" href="map" zoom=8 right]]
+
  * Mode: WDS
  * Distance: 180m
  * Nodes: [[nodes/elecnix]], [[nodes/besik]]
