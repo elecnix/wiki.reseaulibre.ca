@@ -11,7 +11,8 @@
  * Location: 45.566779,-73.595172
  * Azimuth: South-East
  * Panorama: N/A
- * Status: [[!taglink planned]]
+ * Status: [[!taglink up]]
+ * Links: [[elecnix]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
