@@ -12,7 +12,7 @@
  * Azimuth: South-East
  * Panorama: N/A
  * Status: [[!taglink up]]
- * Links: [[elecnix]]
+ * Links: [[elecnix]] ([[links/elecnix-besik/]])
  
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
