@@ -1,4 +1,4 @@
-[[!osm lat="45.56569" lon="-73.6031785" map="map" href="map" zoom=15 right]]
+[[!osm lat="45.5661" lon="-73.598172" map="map" href="map" zoom=15 right]]
 
  * Mode: WDS
  * Distance: 180m
