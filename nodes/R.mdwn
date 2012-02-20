@@ -2,6 +2,7 @@
 
 A 802.11b/g node in a window (pointing North-North-West)
 
+ * Hostname: Mesh-mtl.org
  * MAC address: 00:15:6D:AD:E7:26
  * IP address: 5.174.231.38
  * IPv6 address: N/A
@@ -13,6 +14,9 @@ A 802.11b/g node in a window (pointing North-North-West)
  * Azimuth: North-North-West
  * Panorama: N/A
  * Links: [[R]] ([[links/R/]])
+
+Ubnt NanoStation M² also available in a window pointing south.
+(currently WPA2 on AirOS)
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
