@@ -1,4 +1,6 @@
 [[!meta title="pages tagged planned"]]
 
+Those [[nodes]] are not yet deployed - they are "planned". They show up with this icon on the map: [[!img icon.png]].
+
 [[!inline pages="tagged(planned)" actions="no" archive="yes"
 feedshow=10]]
