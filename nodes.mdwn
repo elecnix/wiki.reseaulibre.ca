@@ -1,12 +1,9 @@
-No node has been clearly established yet. 
 [[!if test="(enabled(template) or enabled(edittemplate))
 and enabled(inline)" then="""
 Here is the list of documented nodes:
 
 [[!inline pages="nodes/* and !*/*/* and !*/discussion" archive=yes sort=title rootpage=nodes template=titlepage postformtext="Add a new node named:"]]
 """]]
-
-The links between nodes is documented in [[links]].
 
 ## node ideas
 
@@ -17,7 +14,7 @@ The links between nodes is documented in [[links]].
 
 ## meta
 
-See [[todo/create a map]] to map those nodes. [[todo/numbering_policy]] currently says to dig into each of the pages above to get the IPs, which is sub-optimal of course.
+[[todo/numbering_policy]] currently says to dig into each of the pages above to get the IPs, which is sub-optimal of course.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
