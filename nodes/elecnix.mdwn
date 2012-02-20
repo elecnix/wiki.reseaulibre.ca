@@ -13,7 +13,8 @@ A node in my window.
  * Location: 45.56569,-73.6031785
  * Azimuth: North-East
  * Panorama: N/A
- * Status: [[!taglink planned]]
+ * Status: [[!taglink up]]
+ * Links: [[besik]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
