@@ -1,4 +1,4 @@
-[[!waypoint lat="45.56569" lon="-73.6031785" type="planned" embed  width="400px" height="400px" right desc="A node in my window"]]
+[[!waypoint lat="45.56569" lon="-73.6031785" embed  width="400px" height="400px" right desc="A node in my window"]]
 
 A node in my window.
 
@@ -13,6 +13,7 @@ A node in my window.
  * Location: 45.56569,-73.6031785
  * Azimuth: North-East
  * Panorama: N/A
+ * Status: [[!taglink planned]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 

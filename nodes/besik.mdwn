@@ -1,4 +1,4 @@
-[[!waypoint lat="45.566779" lon="-73.595172" type="planned" embed  width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.566779" lon="-73.595172" embed  width="400px" height="400px" right desc="A node on my roof"]]
 
  * hostname: UBNT-besik
  * MAC address: 00:15:6D:3C:00:7B
@@ -11,6 +11,7 @@
  * Location: 45.566779,-73.595172
  * Azimuth: South-East
  * Panorama: N/A
+ * Status: [[!taglink planned]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
