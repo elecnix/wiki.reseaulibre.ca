@@ -5,7 +5,7 @@ Topologie réseau chez bgm.
  * Réseau interne IPv4: 192.168.42.0/24
  * Réseau interne IPv6: 2001:470:b1e2::/48
 
- * Status: [[!taglink planned]]
+ * Status: [[!taglink up]]
 
 
 = m2-nord.net4.bidon.ca =
