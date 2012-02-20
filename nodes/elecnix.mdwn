@@ -14,7 +14,7 @@ A node in my window.
  * Azimuth: North-East
  * Panorama: N/A
  * Status: [[!taglink up]]
- * Links: [[besik]]
+ * Links: [[besik]] ([[links/elecnix-besik/]])
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
