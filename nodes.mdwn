@@ -5,6 +5,14 @@ Here is the list of documented nodes:
 [[!inline pages="nodes/* and !*/*/* and !*/discussion" archive=yes sort=title rootpage=nodes template=titlepage postformtext="Add a new node named:"]]
 """]]
 
+## Comment créer un node
+
+ 1. Créer une page ci-haut avec le nom de votre node
+ 2. Remplissez les champ, et en particulier:
+  * la directive `waypoint` avec les coordonnées du point, pour que le node soit affiché dans la carte
+  * le champ `status` (réglé à `planned`, `up` ou `down` selon le statut)
+ 3. Si vous avez un lien avec un autre node, faites un lien wiki vers le node dans la page, il va être affiché dans la carte
+
 ## node ideas
 
  * Est: moreau + ontario
