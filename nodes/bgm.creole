@@ -1,4 +1,4 @@
-[[!waypoint lat="45.465654" lon="-73.569303" embed hidden width="400px" height="400px" right desc="Deux nodes chez moi."]]
+[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Deux nodes chez moi."]]
 
 Topologie réseau chez bgm.
 
@@ -17,7 +17,7 @@ Topologie réseau chez bgm.
  * Software: OpenWRT backfire
  * Hardware: NanoStation M2
  * Power: N/A
- * Location: 45.465654,-73.569303
+ * Location: 45.465676,-73.572185
  * Azimuth: nord-ouest
  * Panorama: N/A
 
@@ -30,7 +30,7 @@ Topologie réseau chez bgm.
  * Software: OpenWRT backfire
  * Hardware: NanoStation M2
  * Power: N/A
- * Location: 45.465654,-73.569303
+ * Location: 45.465676,-73.572185
  * Azimuth: sud-est
  * Panorama: N/A
 
