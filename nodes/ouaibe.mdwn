@@ -1,0 +1,23 @@
+[[!waypoint lat="45.535894" lon="-73.620778" embed hidden width="400px" height="400px" right desc="A node in a window"]]
+
+ * Hostname: mesh-mtl2
+ * MAC address: 00:15:6D:70:37:26
+ * IP address: 10.0.x.x
+ * IPv6 address:
+ * Software: Airos 5.3.x
+ * Hardware: UBNT Nanostation M2
+ * Power: 27dBm
+ * Location: 45.535894,-73.620778
+ * Status: [[!taglink planned]] (can also be up, down, unknown)
+ * Azimuth: North-North-West
+ * Panorama: 60°(H-pol) / 60° (V-pol) / 60° (Elevation) 
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
