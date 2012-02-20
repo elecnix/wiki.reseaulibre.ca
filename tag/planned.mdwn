@@ -1,0 +1,4 @@
+[[!meta title="pages tagged planned"]]
+
+[[!inline pages="tagged(planned)" actions="no" archive="yes"
+feedshow=10]]
