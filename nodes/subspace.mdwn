@@ -1,4 +1,4 @@
-[[!waypoint lat="45.457060" lon="-73.565633" embed hidden width="400px" height="400px" right desc="Possible location for my nod"]]
+[[!waypoint lat="45.457060" lon="-73.56563" embed hidden width="400px" height="400px" right desc="Possible location for my nod"]]
 
 I'm looking to build my own nod here. Information to come as soon as it's up! (I'm learning the ropes!)
 
@@ -13,9 +13,6 @@ I'm looking to build my own nod here. Information to come as soon as it's up! (I
  * Links: *TBA*
  * Azimuth: *TBA*
  * Panorama: *TBA*
- * Operator: [[users/alice]]
-
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
