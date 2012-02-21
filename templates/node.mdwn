@@ -14,6 +14,7 @@
  * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
  * Azimuth:
  * Panorama:
+ * Operator: [[user/foo]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
