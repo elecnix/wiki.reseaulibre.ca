@@ -119,11 +119,17 @@ IPv6 is also supported, of course.
 
 # References
 
+ * [Main OLSR project page](http://www.olsr.org/)
  * [Install instructions on OpenWRT](http://www.ubnt.com/wiki/OLSR_on_OpenWrt)
+ * [OpenWRT mesh howto](http://wiki.openwrt.org/inbox/mesh.olsr)
  * [OLSR IPv6 HOWTO](http://tldp.org/HOWTO/OLSR-IPv6-HOWTO)
  * [Optimized Link State Routing Protocol on wikipedia](https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol)
  * [Opennet topology](https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png)
- * [Opennet firmware](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware)
+ * [OLRR on n900 phones](http://wiki.funkfeuer.at/index.php/OLSR_am_Nokia_N900)
+ * [Slides of a presentation at at IETF80 by OLSR.org (PDF)](http://wiki.tools.ietf.org/agenda/80/slides/manet-5.pdf) - has nice graphs and information about various mesh networks in Europe
+ * Firmwares based on OLSR:
+  * [Opennet firmware](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware)
+  * [Freifunk](http://wiki.freifunk.net/Freifunk_Firmware_%28English%29)
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
