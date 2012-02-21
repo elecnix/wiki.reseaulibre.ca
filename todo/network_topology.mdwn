@@ -4,6 +4,8 @@ We need to decide how the network is to be configured. Some more tests are requi
  * [[configuration/ad-hoc]] mode
  * [[configuration/vpn]] over that for global network access
 
+We also need to figure out how [[nodes]] are interconnected, at the physical level. Do we want a tree?
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
