@@ -1,0 +1,6 @@
+## Map?
+
+C'est moi ou les nodes ne sont pas sur la map? Et la map ne focus pas sur Montréal par défaut:
+http://mesh.openisp.ca/map/
+
+Et je sais pas pour les autres mais moi je n'arrive pas à cliquer les tabs sur la page "map".
