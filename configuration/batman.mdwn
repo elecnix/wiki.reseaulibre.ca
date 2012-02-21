@@ -1,0 +1,8 @@
+[[!meta title="B.A.T.M.A.N. mesh network"]]
+
+B.A.T.M.A.N., a "better approach to mobile ad-hoc networking", is an alternative to <a href="/notes/wifi/olsr">OLSR</a>. The current implementation is "batman-adv", which works on the Layer 2. This makes the network look like "one big switch". You can use whatever layer 3 protocol on top of that (ipv4, ipv6, ipx, etc.).
+
+ * [Main project page open-mesh.org](http://www.open-mesh.org/)
+  * [batman-adv](http://www.open-mesh.org/projects/batman-adv/wiki)
+  * [batman-adv quickstart guide](http://www.open-mesh.org/wiki/batman-adv/Quick-start-guide)
+  * [user guide with most of the docs](http://www.open-mesh.org/wiki/open-mesh/UserDocs)
