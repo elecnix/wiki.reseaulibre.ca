@@ -1,0 +1,29 @@
+[[!waypoint map=null  lat="45.518984" lon="-73.599214" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+
+Looking to build a node here if possible (not sure what sort of roof/balcony access I will be able to have). More information to follow...
+
+Je veux essayer d'établir un node ici (pas sûr si je peux accéder le toit ou le balcon). Plus d'infos à suivre...
+
+
+ * MAC address: tba
+ * IP address: tba
+ * IPv6 address: tba
+ * Software: tba
+ * Hardware: tba
+ * Power: tba
+ * Location: tba
+ * Status: [[!taglink planned]]
+ * Links: none
+ * Azimuth: tba
+ * Panorama: tba
+ * Operator: [[users/midnight]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
