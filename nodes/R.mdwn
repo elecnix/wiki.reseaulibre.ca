@@ -16,7 +16,9 @@ A 802.11b/g node in a window (pointing North-North-West)
  * Links: [[R]] ([[links/R/]])
 
 Ubnt NanoStation M² also available in a window pointing south.
-(currently WPA2 on AirOS)
+(currently WPA2 on AirOS). 
+
+Also VE2TUX licenced HAM.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
