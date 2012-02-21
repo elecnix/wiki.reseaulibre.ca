@@ -2,6 +2,10 @@ While [Ile Sans Fil](http://ilesansfil.org) has done incredible work in providin
 
 The goal of this project is to create a community wireless network accessible from both fixed and mobile devices that can be used in day to day life by regular people as well as during emergencies.
 
+# The map!
+
+The [[map]] page is a good starting point, showing where all the nodes are!
+
 # Technical information
 
 * [[Nodes]] - the list of deployed nodes
