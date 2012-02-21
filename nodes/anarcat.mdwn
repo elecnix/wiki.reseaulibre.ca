@@ -13,6 +13,7 @@ A node on my roof.
  * Azimuth: N/A
  * Panorama: N/A
  * Status: [[!taglink planned]]
+ * Operator: [[users/anarcat]]
 
 (!) Power can apparently be pushed up to 84mW (20dBm), see [seattlewireless](http://www.seattlewireless.net/LinksysWrt54g).
 
