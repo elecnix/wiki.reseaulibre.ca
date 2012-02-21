@@ -13,6 +13,7 @@ I'm looking to build my own nod here. Information to come as soon as it's up! (I
  * Links: *TBA*
  * Azimuth: *TBA*
  * Panorama: *TBA*
+ * Operator: [[users/lapinblanc]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
