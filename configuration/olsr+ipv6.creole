@@ -1,3 +1,5 @@
+[[!meta title="OpenWRT on a NanoStation M2 with IPv6"]]
+
 Installation d'OpenWRT sur le NanoStation M2:
 
 [[!toc]]
