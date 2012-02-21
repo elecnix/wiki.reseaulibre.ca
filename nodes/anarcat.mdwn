@@ -1,3 +1,4 @@
+[[!waypoint lat="45.5335122" lon="-73.6031785" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 
 A node on my roof.
 
