@@ -39,7 +39,7 @@ Session de travail collaborative pour améliorer la documentation et tester les 
 
 ## Rencontres précédentes
 
-[[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes]]
+[[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes feeds=no]]
 
 # Similar projects
 
