@@ -2,6 +2,8 @@ While [Ile Sans Fil](http://ilesansfil.org) has done incredible work in providin
 
 The goal of this project is to create a community wireless network accessible from both fixed and mobile devices that can be used in day to day life by regular people as well as during emergencies.
 
+[[!toc]]
+
 # The map!
 
 The [[map]] page is a good starting point, showing where all the nodes are!
@@ -20,7 +22,6 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Hardware]] - hardware used in the project, and how it's configured
 * [[Software]] - the software used in the project...
 * [[Configuration]] - step by step config instructions to join the network
-* [[Policy]] - what we agree on when opening a node on the mesh
 
 # Participating
 
@@ -30,6 +31,7 @@ We need volunteers! On parle français aussi!
 * [[Volunteers]] - register here and tell us what you can do
 * [[Todo]] - the tasks on hand
 * [[FAQ]] - frequently asked questions
+* [[Policy]] - what we agree on when opening a node on the mesh
 
 ## Prochaine rencontre
 
