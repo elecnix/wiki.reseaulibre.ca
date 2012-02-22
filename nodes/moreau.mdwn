@@ -1,0 +1,26 @@
+[[!waypoint lat="45.53991" lon="-73.54866" embed hidden width="400px" height="400px" right desc="Window node pointing downtown"]]
+
+This is a potential spot, although I have yet to confirm with the tenants of the space, they have a very good view from their window on the 4th (5th?) floor of basically the whole city: downtown all the way up to rosemont...
+
+ * MAC address: TBD
+ * IP address: TBD
+ * IPv6 address: TBD
+ * Software: TBD
+ * Hardware: TBD
+ * Power: TBD
+ * Location: espace coopératif sur moreau près de ontario
+ * Status: [[!taglink planned]]
+ * Links: none yet
+ * Azimuth: west
+ * Panorama: N/A
+ * Operator: [[users/anarcat]]?
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
