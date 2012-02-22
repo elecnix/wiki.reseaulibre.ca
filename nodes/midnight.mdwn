@@ -1,4 +1,4 @@
-[[!waypoint lat="45.518984" lon="-73.599214" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.518984" lon="-73.599214" embed hidden width="400px" height="400px" right desc="Node potentiel"]]
 
 Looking to build a node here if possible (not sure what sort of roof/balcony access I will be able to have). More information to follow...
 
@@ -18,7 +18,6 @@ Je veux essayer d'établir un node ici (pas sûr si je peux accéder le toit ou 
  * Panorama: tba
  * Operator: [[users/midnight]]
 
-*Peux-tu me contacter? Je peux peut-être faire un lien avec toi. --elecnix*
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
