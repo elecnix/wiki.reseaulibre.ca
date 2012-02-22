@@ -6,7 +6,7 @@ Topologie réseau chez bgm.
  * Réseau interne IPv6: 2001:470:b1e2::/48
 
  * Status: [[!taglink up]]
- * Contact: <http://identi.ca/bgm> @bgm, freenode 'bgm'
+ * Contact: [identi.ca @bgm](http://identi.ca/bgm>), freenode 'bgm'
 
 
 = m2-nord.net4.bidon.ca =
