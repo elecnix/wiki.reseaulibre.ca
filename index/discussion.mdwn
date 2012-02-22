@@ -3,6 +3,8 @@
 C'est moi ou les nodes ne sont pas sur la map? Et la map ne focus pas sur Montréal par défaut:
 http://mesh.openisp.ca/map/
 
-Et je sais pas pour les autres mais moi je n'arrive pas à cliquer les tabs sur la page "map".
+Et je sais pas pour les autres mais moi je n'arrive pas à cliquer les tabs sur la page "map".  -- [[users/gboudrias]]
 
 > Ici ça marche! Quel node il manque? ici j'en vois 8! Pour ce qui est des tabs, normalement il ne devrait pas y en avoir dans la map, tout simplement... Si tu vois des tabs, c'est que le fullscreen de la map embarque pas correctement... -- [[users/anarcat]]
+
+­­Ça semble fonctionner sur Chrome mais sur Firefox 10.0.2 (fresh install) il manque tous les nodes. En tout cas c'est peut-être juste moi. --[[users/gboudrias]]
