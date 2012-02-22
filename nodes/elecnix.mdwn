@@ -16,9 +16,10 @@ A node in my window.
  * Status: [[!taglink up]]
  * Links: [[besik]] ([[links/elecnix-besik/]])
 
-Pour me contacter: 
+Pour me contacter, utiliser le courriel marchildon.net retourné par: 
 
     gpg --recv-keys 5E8410890036BB636997232C8FFB777D39D4B2D4
+    gpg --list-keys 39D4B2D4
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
