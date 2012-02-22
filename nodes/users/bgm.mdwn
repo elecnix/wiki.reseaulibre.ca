@@ -1,4 +1,4 @@
-bgm @ bidon.ca
 
-Freenode: bgm
-Identi.ca: @bgm
+* Courriel: bgm @ bidon.ca
+* Freenode: bgm
+* Identi.ca: @bgm
