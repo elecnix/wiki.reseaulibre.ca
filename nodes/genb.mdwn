@@ -1,12 +1,12 @@
-[[!waypoint map=null  lat="45.53975" lon="-73.601008" embed hidden width="400px" height="400px" right desc="ile sans fil access point"]]
+[[!waypoint  lat="45.539759" lon="-73.601008" embed hidden width="400px" height="400px" right desc="ile sans fil access point"]]
 
-(Description of the node here, with a link to your homepage.)
+Pour l'instant mon node est un point d'accès île sans fil, mais quand j'aurai le temps, j'en ferai un point mesh.
 
  * MAC address:
  * IP address:
  * IPv6 address:
- * Software:
- * Hardware:
+ * Software: Openwrt Kamikaze
+ * Hardware: Linksys wrtsl54gs
  * Power:
  * Location:
  * Status: [[!taglink up]] (can also be up, down, unknown)
