@@ -179,6 +179,12 @@ BROUILLON de configuration avec des clients aux AP, i.e. activer le "forwarding"
 
 = Splash page: nodogsplash =
 
+Votre routeur offre maintenant l'accès à internet à quiconque s'y connecte. Pour informer vos visiteurs à propos du Mesh, forcer l'affichage de conditions d'utilisation ou déclarer, par exemple, vous pouvez rediriger les nouveaux visiteurs vers une page web grâce à *Nodogsplash*. Quand le visiteur clique sur un lien de cette page, cela débarre l'accès à internet pour une durée donnée.
+
+C'est une solution idéale si vous ne désirez pas avoir à maintenir de base de données d'utilisateurs. Une fois installé, Nosplashdog détecte qu'un utilisateur tente de demander une page web. Il intercepte cette demande, et retransmet plutôt une page web servie par son propre serveur web. Quand l'utilisateur clique dans cette page, il est redirigé à la page qu'il avait initialement demandé.
+
+Nodogsplash permet aussi de limiter la bande passante utilisée par tous les visiteurs. Cela vous permet d'éviter de saturer votre connexion à internet.
+
 {{{
 root@OpenWrt:~# opkg install nodogsplash
 }}}
