@@ -1,1 +1,1 @@
-[[!osm fullscreen]]
+[[!osm fullscreen editable]]
