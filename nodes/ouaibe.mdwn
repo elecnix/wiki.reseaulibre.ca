@@ -4,7 +4,7 @@
  * MAC address: 00:15:6D:70:37:26
  * IP address: 10.0.x.x
  * IPv6 address:
- * Software: Airos 5.3.x
+ * Software: AirOS 5
  * Hardware: UBNT Nanostation M2
  * Power: 27dBm
  * Location: 45.535894,-73.620778
