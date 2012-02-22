@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.518984" lon="-73.599214" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.518984" lon="-73.599214" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 
 Looking to build a node here if possible (not sure what sort of roof/balcony access I will be able to have). More information to follow...
 
