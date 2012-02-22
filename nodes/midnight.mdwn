@@ -18,6 +18,8 @@ Je veux essayer d'établir un node ici (pas sûr si je peux accéder le toit ou 
  * Panorama: tba
  * Operator: [[users/midnight]]
 
+*Peux-tu me contacter? Je peux peut-être faire un lien avec toi. --elecnix*
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
