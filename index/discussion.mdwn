@@ -10,3 +10,5 @@ Et je sais pas pour les autres mais moi je n'arrive pas à cliquer les tabs sur 
 ­­Ça semble fonctionner sur Chrome mais sur Firefox 10.0.2 (fresh install) il manque tous les nodes. En tout cas c'est peut-être juste moi. --[[users/gboudrias]]
 
 > Confirmation: Tout semble fonctionner sur Chrome et sur Safari. Il manque les nodes, le focus ne marche pas et on voit les tabs lorsque sur Firefox 10.0.2 ainsi que sur IE 9.0
+
+> Il ne fonctionne pas pour moi avec Firefox 10.0.2 ou IE8. Mais il a marché la nuit dernière, la première fois que je l'ai vu... --[[users/midnight]]
