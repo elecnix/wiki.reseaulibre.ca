@@ -1,0 +1,26 @@
+[[!waypoint lat="45.52901" lon="-73.6004" embed hidden width="400px" height="400px" right desc="Planifié au 2e étage, orienté vers l'ouest"]]
+
+Un noeud planifié dans une fenêtre du 2e étage. Possibilité d'accès à une fenêtre du 3e étage ou au toit (bonne vue nord et ouest).
+
+ * MAC address: N/A
+ * IP address: N/A
+ * IPv6 address: N/A
+ * Software: N/A
+ * Hardware: N/A
+ * Power: N/A
+ * Location: Fenêtre?
+ * Status: [[!taglink planned]]
+ * Links: N/A
+ * Azimuth: Sud-Ouest
+ * Panorama: N/A
+ * Operator: [[users/elecnix]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
