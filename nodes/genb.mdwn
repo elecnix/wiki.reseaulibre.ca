@@ -1,5 +1,4 @@
-[[!waypoint map=null  lat="45.539759" lon="-73.601008" embed hidden width="400px" height="400px" right desc="Point d'accès"]]
-(remove map=null to display on the main map)
+[[!waypoint map=null  lat="45.53975" lon="-73.601008" embed hidden width="400px" height="400px" right desc="ile sans fil access point"]]
 
 (Description of the node here, with a link to your homepage.)
 
@@ -10,7 +9,7 @@
  * Hardware:
  * Power:
  * Location:
- * Status: [[!taglink planned]] (can also be up, down, unknown)
+ * Status: [[!taglink up]] (can also be up, down, unknown)
  * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
  * Azimuth:
  * Panorama:
