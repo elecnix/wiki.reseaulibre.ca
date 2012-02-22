@@ -3,15 +3,15 @@
 Comment je peux m'impliquer?
 ============================
 
- * inscrivez-vous à la [[liste de discussion|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]]
- * configurez votre propre [[node|nodes]] et ajoutez-le à la [[map]] (en créant une sous-page [[nodes]])
- * participez au [[meetings]] de travail
- * améliorez la [[documentation|configuration]]
+ * Inscrivez-vous à la [[liste de discussion|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]] et envoyez un petit bonjour
+ * Configurez votre propre [[node|nodes]] et ajoutez-le à la [[carte|map]] (en créant une sous-page de [[nodes]])
+ * Participez aux [[réunions|meetings]] de travail. Ils sont annoncés sur la liste de discussion.
+ * Améliorez la [[documentation|configuration]]
 
 Je n'ai pas accès à un toit, je peux aider quand même?
 ======================================================
 
-Pour joindre le réseau, il faut généralement voir un autre noeud (voir plus bas). Si ce n'est pas votre cas, vous pourrez peut-être aider avec la documentation, voir plus haut.
+Pour joindre le réseau, il faut généralement voir un autre noeud. Il est possible d'installer un point d'accès au réseau dans une fenêtre, et de le relier aux autres noeuds par votre connexion internet. Un voisin remarquera peut-être ce point d'accès et vous contactera pour établir un lien. En attendant vous aurez appris à configurer un noeud, et vous pourrez aider les autres. Sinon, vous pourriez peut-être aider à compléter la [[documentation|configuration]].
 
 Comment je peux configurer un nouveau "noeud" dans le réseau?
 =============================================================
@@ -21,4 +21,4 @@ Nous n'avons pas encore de procédure complète, mais vous pouvez déjà consult
 Est-ce que je dois avoir un "line of sight" entre deux noeuds pour faire une connexion?
 =======================================================================================
 
-Généralement, oui, c'est préférable. Il est /possible/ de faire des liens avec des obstacles, mais ceci réduit grandement le débit et la fiabilité du lien. Mais ceci dépend aussi de la fréquence utilisée. Le B et G, par exemple, fonctionnent en 2.4Ghz, qui est près de la fréquence de résonnance de l'eau, et est donc facilement bloqué par les feuilles d'arbre et le béton. Le A, par contre, est moins bloqué par les arbres. Des fréquences plus basses (par exemple le 900Mhz) peuvent également être utilisées pour faire de plus longues distances mais demandent du matériel spécial.
+C'est préférable d'être capable de voir l'autre noeud. Il est /possible/ de faire des liens avec des obstacles, mais ceci réduit grandement le débit et la fiabilité du lien. Celle-ci dépend aussi de la fréquence utilisée. Le B et G, par exemple, fonctionnent en 2.4Ghz, qui est près de la fréquence de résonnance de l'eau, et est donc facilement bloqué par les feuilles d'arbre et le béton. Le A, par contre, est moins bloqué par les arbres. Des fréquences plus basses (par exemple le 900Mhz) peuvent également être utilisées pour faire de plus longues distances mais demandent du matériel spécial.
