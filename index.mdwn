@@ -35,7 +35,9 @@ We need volunteers! On parle français aussi!
 
 ## Prochaine rencontre
 
-Session de travail collaborative pour améliorer la documentation et tester les différents protocoles de mesh (OLSR, BATMAN, etc) et monter des liens de tests en laboratoire. [[doodle|http://doodle.com/m9w4th5abht2aksb]] - pour une rencontre au foulab, un mardi vers 20h.
+Session de travail collaborative pour améliorer la documentation et tester les différents protocoles de mesh (OLSR, BATMAN, etc) et monter des liens de tests en laboratoire. 
+
+Inscrivez-vous au [[doodle|http://doodle.com/m9w4th5abht2aksb]] - pour une rencontre au foulab, un mardi vers 20h.
 
 ## Rencontres précédentes
 
