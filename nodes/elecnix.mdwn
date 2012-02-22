@@ -16,6 +16,10 @@ A node in my window.
  * Status: [[!taglink up]]
  * Links: [[besik]] ([[links/elecnix-besik/]])
 
+Pour me contacter: 
+
+    gpg --recv-keys 5E8410890036BB636997232C8FFB777D39D4B2D4
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
