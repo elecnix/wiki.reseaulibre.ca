@@ -9,7 +9,7 @@ Présentations
  * Nicolas: programmeur impliqué dans le logiciel libre, a déployé un
    mesh avec son frère. Inscrit sur le wiki, a ajouté son lien. Toute
    prog sauf assembleur / C bas niveau, sauf dotnet. A participé à
-   UQBM aussi, sur le CA et Communautel.
+   UQBM aussi, sur le CA.
  * Richard Lussier: électronique, audio, multimédia puis réseau,
    beaucoup hardware et téléphonie IP. Impliqué dans [Ile Sans Fil][]
    depuis 6 ans, 50 points d'accès ISF puis ça a grossi... Gagne sa
