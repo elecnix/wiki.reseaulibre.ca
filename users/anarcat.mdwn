@@ -1,6 +1,6 @@
 [[!img folipon.jpg align="left" size="" alt="picture of me"]]
 
-See <https://wiki.koumbit.net/TheAnarcat> and [[nodes/anarcat]].
+See <https://wiki.koumbit.net/TheAnarcat> and [[nodes/anarcat]]. I can be easily contact on [identica](http://identi.ca/anarcat) and elsewhere (email @here works).
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
