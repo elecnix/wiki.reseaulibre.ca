@@ -1,4 +1,4 @@
-[[!waypoint lat="45.456613" lon="-73.571587" embed hidden width="400px" height="400px" right desc="A node"]]
+[[!waypoint lat="45.463197" lon="-73.575734" embed hidden width="400px" height="400px" right desc="A node"]]
 
 Possibilité de poser une antenne. Je renommerai quand la personne m'aura confirmé. -bgm.
 
