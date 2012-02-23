@@ -16,15 +16,20 @@ EXCEPT:
 
 This means that a PTP with a 30dBm (1 Watt) radio and a 32dbi antenna can use 1600 Watts e.i.r.p.
 
+Mesh Access Points cannot be in that category because they are designed to serve multiple links.
+
 *************************************
 Relationship between Watts and dBm :
 *************************************
 
-The watt is a measure of power
+The watt is a measure of power.
+
 The dBm is a logaritmic representation of gain.
 
 The difference in dBm between two power levels is 10(log p1/p2)
+
 Everytime the power doubles, we add 3 dBm
+
 The reference is 0dBm = 1 mW
 
-Mesh Access Points cannot be in that category because they are designed to serve multiple links.
+
