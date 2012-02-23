@@ -1,4 +1,4 @@
-[[!waypoint lat="45.470313" lon="-73.612186" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.4703130" lon="-73.6121860" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 
 Always on the top !!
 
