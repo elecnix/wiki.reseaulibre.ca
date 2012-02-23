@@ -14,4 +14,5 @@ EXCEPT:
 " (5) Point-to-point systems in the bands 2400-2483.5 MHz and 5725-5850 MHz are permitted to have an e.i.r.p. higher than 4 W, provided that the higher e.i.r.p. is achieved by employing higher gain directional antennas and not higher transmitter output powers. Point-to-multipoint systems, omni-directional applications and multiple co-located transmitters transmitting the same information are prohibited from exceeding 4 W e.i.r.p. However, remote stations of point-to-multipoint systems shall be allowed to operate at greater than 4 W e.i.r.p, under the same conditions as for point-to-point systems."
 
 This means that a PTP with a 30dBm (1 Watt) radio and a 32dbi antenna can use 1600 Watts e.i.r.p.
+
 Mesh Access Points cannot be in that category because they are designed to serve multiple links.
