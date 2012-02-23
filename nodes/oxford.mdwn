@@ -1,6 +1,6 @@
-[[!waypoint lat="45.470313" lon="-73.612186" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.470313" lon="-73.612186" embed hidden width="400px" height="400px" right desc="Always on TOP"]]
 
-Always on the top !!
+Always on the TOP !!
 
  * MAC address:
  * IP address:
