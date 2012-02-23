@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.4703" lon="-73.6121" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint map=null  lat="45.470313" lon="-73.612186" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 (remove map=null to display on the main map)
 
 (Description of the node here, with a link to your homepage.)
