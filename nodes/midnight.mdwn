@@ -1,8 +1,8 @@
 [[!waypoint lat="45.518984" lon="-73.599214" embed hidden width="400px" height="400px" right desc="Node potentiel"]]
 
-Looking to build a node here if possible (not sure what sort of roof/balcony access I will be able to have). More information to follow...
+Planned rooftop node, with view to Mile-End, Outremont, Rosemont, and the Avenue du Parc corridor. (Final confirmation to come after meeting with building manager on March 5th.)
 
-Je veux essayer d'établir un node ici (pas sûr si je peux accéder le toit ou le balcon). Plus d'infos à suivre...
+Noeud prévu sur le toit, avec accès à Mile-End, Outremont, Rosemont, et le corridor de l'Avenue du Parc. (Confirmation finale est à venir après une rencontre avec la propriétaire le 5 Mars.)
 
 
  * MAC address: tba
