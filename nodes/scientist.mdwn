@@ -1,6 +1,8 @@
 [[!waypoint  lat="45.4717" lon="-73.570628" embed hidden width="400px" height="400px" right desc="A node"]]
 
-Possibilité de poser une antenne. Je renommerai quand la personne m'aura confirmé. -bgm.
+Possibilité de poser une antenne. 
+
+Je ne sais pas encore si l'accès au toit est possible. A la limite, je peux poser une antenne à l'avant et à l'arrière au 2e étage
 
 
 
