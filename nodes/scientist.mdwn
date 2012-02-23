@@ -15,4 +15,4 @@ Possibilité de poser une antenne. Je renommerai quand la personne m'aura confir
  * Links: 
  * Azimuth:
  * Panorama:
- * Operator: [[users/bgm]]
+ * Operator: [[users/scientist]]
