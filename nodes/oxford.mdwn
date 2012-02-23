@@ -1,7 +1,6 @@
 [[!waypoint lat="45.470313" lon="-73.612186" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
-(remove map=null to display on the main map)
 
-(Description of the node here, with a link to your homepage.)
+Always on the top !!
 
  * MAC address:
  * IP address:
