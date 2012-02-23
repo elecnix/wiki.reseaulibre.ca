@@ -6,11 +6,11 @@ Bientôt en ligne et bientôt déménagée.
  * IP address:
  * IPv6 address:
  * Software:
- * Hardware:
+ * Hardware: NanoStation M2
  * Power:
- * Location:
+ * Location: 45.54155, -73.60750
  * Status: [[!taglink planned]]
- * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+ * Links: 
  * Azimuth:
  * Panorama:
  * Operator: [[users/gboudrias]]
