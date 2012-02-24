@@ -20,7 +20,7 @@ La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un mag
  * Roule Linux par défaut
  * De nombreux modèles supportent ROBIN (pour faire du mesh), c.f. <http://robin.forumup.it/forum-103-robin.html>
  * Wifi atheros, supporte 802.11n
- * fait pour couvrir des grandes zones
+ * fait pour couvrir des grandes zones (directionnelle a 60°)
  * power over ethernet
 
 ## PicoStation
@@ -48,10 +48,15 @@ users per such access point if you're radiating that power.
 * -20C à +70C
 * 0.10 kg
 * Intérieur: 200 m et Extérieur (Ligne de vue): 400 m à 11Mbps
+* Omnidirectionnelle
 
 ### Testing and configuration
 
 Voir [[configuration/Robin]].
+
+## Bullet2
+
+Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une antenne externe. Pareil comme la pico station sinon.
 
 # Cisco/Linksys WRT*
 
