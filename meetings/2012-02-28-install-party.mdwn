@@ -1,0 +1,14 @@
+Session de travail technique
+============================
+
+Emplacement
+: [[Foulab|http://foulab.org/fr/wiki/Contact_Foulab]] Suite 33B, 999 du Collège (métro st-henri)
+
+Objectifs
+: Ajoutez vos intérêts ici!
+
+ * configuration d'un mesh à plusieurs nodes en laboratoire, basé au minimum sur OLSR, possiblement aussi BATMAN
+ * documentation étape par étape pour l'ajout d'un node au mesh
+ * familiarisation avec le wiki
+ * initiation OpenWRT
+ * bonjour au foulab ;)
