@@ -13,7 +13,7 @@ La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un mag
 ** Un excellent revendeur à Boucherville http://www.converbit.ca/magasin/ Richard Marquis (on s'arrange toujours très bien ensemble) un "gosseux" avec talent !!
 
 
-## Nanostation
+## Nanostation (directionnelle)
 
 [Ubiquiti](http://www.ubnt.ca), modèles [Nanostation M2](http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=115&category_id=35&option=com_virtuemart&Itemid=1) (2.4gHz) / M5 (5gHz).
 
@@ -23,7 +23,7 @@ La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un mag
  * fait pour couvrir des grandes zones (directionnelle a 60°)
  * power over ethernet
 
-## PicoStation
+## PicoStation (omni)
 
 * Émission à 29dBm ( 800mW )
  
@@ -54,11 +54,11 @@ users per such access point if you're radiating that power.
 
 Voir [[configuration/Robin]].
 
-## Bullet2
+## Bullet2 (sans antenne)
 
 Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une antenne externe. Pareil comme la pico station sinon.
 
-# Cisco/Linksys WRT*
+# Cisco/Linksys WRT* (omni)
 
 Those devices are everywhere, but they are cheap and may not be worth it.
 
@@ -74,7 +74,7 @@ Those devices are everywhere, but they are cheap and may not be worth it.
  * very low power (~28mW by default)
  * low bandwidth (~2mbps)
 
-# TP-Link
+# TP-Link (omni)
 
 Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND), "cheap and nice". :)
 Another model is being looked at a lot by Elektra (the BatWomen) with Village-Telco group. TL-WR703N... on peux l'obtenir pour +- 20$ (B/G/N)
