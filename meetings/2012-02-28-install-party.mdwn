@@ -1,13 +1,13 @@
 Session de travail technique
 ============================
 
-Emplacement
+Quand?
+: Mardi 28 février vers 20h ([[Doodle|http://doodle.com/m9w4th5abht2aksb]] - *à noter qu'on prend la date plus proche, ça n'empêche pas de faire une autre rencontre un mois plus tard, d'autres ont également parlé d'une rencontre un weekend*)
+
+Où?
 : [[Foulab|http://foulab.org/fr/wiki/Contact_Foulab]] Suite 33B, 999 du Collège (métro st-henri)
 
-Doodle
-: <http://doodle.com/m9w4th5abht2aksb>
-
-Objectifs
+Quoi?
 : Session de travail collaborative pour améliorer la documentation et tester les différents protocoles de mesh (OLSR, BATMAN, etc) et monter des liens de tests en laboratoire. En particulier:
 
  * configuration d'un mesh à plusieurs nodes en laboratoire, basé au minimum sur OLSR, possiblement aussi BATMAN
