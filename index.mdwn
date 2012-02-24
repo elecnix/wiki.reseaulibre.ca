@@ -34,8 +34,6 @@ We need volunteers! On parle français aussi!
 * [[FAQ]] - frequently asked questions
 * [[Policy]] - what we agree on when opening a node on the mesh
 
-Allez dans la page [[meetings]] ppour planifier une réunion.
-
 ## Prochaine rencontre
 
 [[meetings/2012-02-28-install-party]]
