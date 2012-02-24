@@ -38,3 +38,4 @@ A node on my roof.
  2. setup local test environment with martn with two antennas
  3. setup link between the two places
  4. at this point, [[todo/network topology]] should be clear and documented
+
