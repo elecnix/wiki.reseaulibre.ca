@@ -34,15 +34,15 @@ We need volunteers! On parle français aussi!
 * [[FAQ]] - frequently asked questions
 * [[Policy]] - what we agree on when opening a node on the mesh
 
+Allez dans la page [[meetings]] ppour planifier une réunion.
+
 ## Prochaine rencontre
 
-Session de travail collaborative pour améliorer la documentation et tester les différents protocoles de mesh (OLSR, BATMAN, etc) et monter des liens de tests en laboratoire. 
+[[meetings/2012-02-28-install-party]]
 
-Inscrivez-vous au [[doodle|http://doodle.com/m9w4th5abht2aksb]] - pour une rencontre au foulab, un mardi vers 20h.
+## Toutes les rencontres
 
-## Rencontres précédentes
-
-[[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes feeds=no]]
+[[!inline pages="meetings" raw=yes]]
 
 # Similar projects
 
