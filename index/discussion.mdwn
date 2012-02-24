@@ -12,3 +12,7 @@ Et je sais pas pour les autres mais moi je n'arrive pas à cliquer les tabs sur 
 > > Confirmation: Tout semble fonctionner sur Chrome et sur Safari. Il manque les nodes, le focus ne marche pas et on voit les tabs lorsque sur Firefox 10.0.2 ainsi que sur IE 9.0
 
 > > Il ne fonctionne pas pour moi avec Firefox 10.0.2 ou IE8. Mais il a marché la nuit dernière, la première fois que je l'ai vu... --[[users/midnight]]
+
+> Fixed: c'est un bug de Firefox, à mon avis, qui refuse de reconnaître [[atom:link|https://code.google.com/intl/fr/apis/kml/documentation/kmlreference.html#atomlink]], pourtant bien spécifié dans le [[standard|http://www.opengis.net/kml/2.2]] (qui importe en fait ceci de [[Atom|http://www.w3.org/2005/Atom]])... -- [[users/anarcat]]
+
+> > *The nice thing about standards is that you have so many to choose from.* [[Andrew Tanenbaum|https://en.wikiquote.org/wiki/Andrew_S._Tanenbaum]]
