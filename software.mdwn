@@ -12,6 +12,7 @@
 * [OLSRd](http://www.olsr.org/)
 * [NRL-OLSR](http://cs.itd.nrl.navy.mil/work/olsr/index.php)
 * [wmolsr](http://sourceforge.net/projects/wmolsr/)
+* <http://tldp.org/HOWTO/OLSR-IPv6-HOWTO/>
 
 Part of the Robin firmware (see below).
 
