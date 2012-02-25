@@ -1,27 +1,26 @@
 [[!toc levels=3]]
 
+Les antennes à utiliser sont préférablement omnidirectionnelles, pour communiquer dans toutes les directions et permettre d'étendre le réseau uniformément. Certains liens de plus grande distance (plus de 500 mètres) nécessitent toutefois des antennes directionnelles à gain plus élevé.
+
+Le matériel préconisé consiste en une antenne fixée directement sur un routeur, car cela diminue les pertes de puissances et le bruit de réception. C'est aussi généralement la solution la moins onéreuse.
+
+Il est possible d'utiliser un routeur de maison, et de le laisser à l'intérieur. La portée de ce noeud sera cependant limitée à quelques appartements. On peut placer ces routeurs dans des boîtes à l'extérieur de la maison si on a une âme de bricoleur.
+
+Il existe des routeurs d'extérieur très bon marché, simples, flexibles, puissants et durables, pour moins de 100$, que ce soit en omnidirectionnel ou en directionnel.
+
+Le réseau de Montréal préconise la bande de fréquence 2.4 GHz.
+
 # Ubiquiti
 
-Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca
+La compagnie Ubiquiti produit du matériel excellent et bon marché. Pour un noeud placé à l'extérieur, l'option la moins coûteuse et la plus simple est la [[PicoStation M2HP|http://dl.ubnt.com/datasheets/picostationm/picom2hp_DS.pdf]]. Elle a une portée de 500 mètres maximum (dans toutes les directions), et vient avec un injecteur PoE qui évite d'avoir à passer un fil d'alimentation, le câble réseau servant à transporter le courant.
 
-Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez directement pour faire une commande ils peuvent vous la charger en $CAN et tout le monde sauve au bout du compte (Paypal sont assez chers pour les taux de change).
+Pour des liens à plus grande distance, le [[Bullet-M2HP|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]] est plus flexible, car vous choisissez quelle antenne vous branchez dessus, et obtenir ainsi plusieurs kilomètres de portée.
 
-La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un magasin d'article de pèche/camping) mais le service est excellent: vous pouvez donner le nom de Pierre-david en référence et vous aurez du service VIP ;)
+Le revendeur [[Converbit|http://www.converbit.ca/magasin/]] à Boucherville, Richard Marquis, offre la [[PicoStation M2HP pour 71$|http://www.converbit.ca/magasin/products.php?product=PicoStation-M2HP]]. Le Bullet M2HP est offert [[tout nu à 75$|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]] (pas d'injecteur PoE ni d'antenne), mais le [[kit omnidirectionnel avec injecteur PoE est 130$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-Antenne-Omni--8DBI-%252b-POE-15V]], et le [[kit à antenne parabolique avec injecteur PoE est 115$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-GRid-24DBI-%252b-POE-15V]].
+
+Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez directement pour faire une commande ils peuvent vous la charger en $CAN et tout le monde sauve au bout du compte (Paypal sont assez chers pour les taux de change). La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un magasin d'article de pèche/camping) mais le service est excellent: vous pouvez donner le nom de Pierre-david en référence et vous aurez du service VIP ;)
 
 /!\ note that flashing your Ubiquity device with OpenWRT or similar may mean a significant reduction in signal quality - rene suggests using a different firmware instead, he is working on a firmware based on AirOS.
-
-** Un excellent revendeur à Boucherville http://www.converbit.ca/magasin/ Richard Marquis (on s'arrange toujours très bien ensemble) un "gosseux" avec talent !!
-
-
-## Nanostation (directionnelle)
-
-[Ubiquiti](http://www.ubnt.ca), modèles [Nanostation M2](http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=115&category_id=35&option=com_virtuemart&Itemid=1) (2.4gHz) / M5 (5gHz).
-
- * Roule Linux par défaut
- * De nombreux modèles supportent ROBIN (pour faire du mesh), c.f. <http://robin.forumup.it/forum-103-robin.html>
- * Wifi atheros, supporte 802.11n
- * fait pour couvrir des grandes zones (directionnelle a 60°)
- * power over ethernet
 
 ## PicoStation (omni)
 
@@ -73,6 +72,16 @@ Those devices are everywhere, but they are cheap and may not be worth it.
  * known to overheat
  * very low power (~28mW by default)
  * low bandwidth (~2mbps)
+
+## Nanostation (directionnelle)
+
+[Ubiquiti](http://www.ubnt.ca), modèles [Nanostation M2](http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=115&category_id=35&option=com_virtuemart&Itemid=1) (2.4gHz) / M5 (5gHz).
+
+ * Roule Linux par défaut
+ * De nombreux modèles supportent ROBIN (pour faire du mesh), c.f. <http://robin.forumup.it/forum-103-robin.html>
+ * Wifi atheros, supporte 802.11n
+ * fait pour couvrir des grandes zones (directionnelle a 60°)
+ * power over ethernet
 
 # TP-Link (omni)
 
