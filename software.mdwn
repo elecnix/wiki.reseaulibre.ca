@@ -45,6 +45,8 @@ The main developper of BATMAN, Elektra, is working heavily on the project.
 
 * <http://freifunk.net/>
 
+See also our [[configuration/batman]] page.
+
 # Distributions
 
 ## OpenWRT
