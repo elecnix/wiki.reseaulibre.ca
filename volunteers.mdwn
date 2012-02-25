@@ -13,7 +13,7 @@ you are interested of doing is also good.
  * ChrisG (ergonlogic)
  * Aurélien (keru)
  * MartN (martn à martn.info)
- * elecnix - running a node (Nano Station M5)
+ * elecnix - running a [[node|nodes/elecnix]] (Nano Station M5)
  * RichardL, former ISF volunteer, mesh builder, aka macgyver richard.lussier at inter-node.com
  * AlexisC, former ISF volunteer, Apple Fanboy, Podcaster, Motivator Clown, Soldier of lost cause. alexis.cornellier at gmail dot com
  * GenB, ISF volunteer, software developer, big brother paranoid. gbastien at versatic dot net
