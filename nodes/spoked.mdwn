@@ -1,5 +1,5 @@
-[[!waypoint map=null  lat="45.5" lon="-73.666667" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
-(remove map=null to display on the main map)
+[[!waypoint lat="45.5352" lon="-73.584" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+
 
 Node planifiee pour cet ete. Acces au toit, le range devrait etre bon si je peux monter une pole au dessus des arbres...
 
