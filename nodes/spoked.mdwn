@@ -1,0 +1,27 @@
+[[!waypoint map=null  lat="45.5" lon="-73.666667" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+(remove map=null to display on the main map)
+
+Node planifiee pour cet ete. Acces au toit, le range devrait etre bon si je peux monter une pole au dessus des arbres...
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware:
+ * Power:
+ * Location:45.5352,-73.584
+ * Status: [[!taglink planned]] (can also be up, down, unknown)
+ * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+ * Azimuth:
+ * Panorama:
+ * Operator: [[users/spoked]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
