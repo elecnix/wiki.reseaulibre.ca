@@ -35,6 +35,12 @@ i tried bridging the wifi and ethernet interfaces of lap2 but this failed:
 
     can't add wlan0 to bridge br0: Operation not supported
 
+commands were:
+
+    brctl addbr br0
+    brctl addif br0 eth0
+    brctl addif br0 wlan0
+
 this would have somehow helped lap2 in figuring out where to send the
 packets at least...
 
