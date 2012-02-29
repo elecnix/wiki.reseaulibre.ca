@@ -2,6 +2,8 @@
 
 B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative to [[OLSR|olsrd]]. The current implementation is "batman-adv", which works on the Layer 2. This makes the network look like "one big switch". You can use whatever layer 3 protocol on top of that (ipv4, ipv6, ipx, etc.).
 
+[[!toc levels=3]]
+
 # Quickstart
 
 ## Installer les logiciels nécessaires
@@ -66,6 +68,23 @@ Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes l
     batctl translocal
     batctl transglobal
 
+# Assignation d'adresses IP
+
+Si on veut faire une communication utile entre les machines, il faut assigner des adresses IP. On peut utiliser du DHCP, des adresses statiques ou IPv6.
+
+## IPv4 statique
+
+Assigner une adresse unique par machine. Par exemple:
+
+    ifconfig bat0 192.168.1.10
+
+## IPv6 avec les adresses locales
+
+todo
+
+## IPv6 avec routage et découverte "stateless"
+
+todo
 
 # Diagnostiques
 
@@ -82,6 +101,14 @@ Désactiver puis ré-activer la carte réseau (malheureusement, il faut deviner 
     lsmod | grep 802
     rmmod iwlwifi
     modprobe iwlwifi
+
+Ça peut être utile d'assigner une adresse statique sur l'interface ad-hoc pour confirmer que la connexion fonctionner bien. Assigner une adresse unique par machine, par exemple:
+
+    machine A: ifconfig wlan0 192.168.1.10
+    machine B: ifconfig wlan0 192.168.1.11
+    machine C: ifconfig wlan0 192.168.1.12
+
+Puis utiliser la commande "ping" pour voir si on peut parler à une autre machine.
 
 # References
 
