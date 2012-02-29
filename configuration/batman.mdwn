@@ -2,6 +2,64 @@
 
 B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative to [[OLSR|olsrd]]. The current implementation is "batman-adv", which works on the Layer 2. This makes the network look like "one big switch". You can use whatever layer 3 protocol on top of that (ipv4, ipv6, ipx, etc.).
 
+Quickstart
+==========
+
+Sous Debian/Ubuntu, installer le package Debian pour batctl (gestion des configurations)
+
+    sudo apt-get install batctl
+
+Idéalement il faut aussi un noyau Linux qui est à jour. Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2011.0.0 ou 2012.0.0.
+Par exemple:
+
+    uname -a
+apt-cache search lnux-image-3
+sudo apt-get install linux-image-2.3.0-1-686-pae
+
+Si vous avez mis à jour votre noyau, il faut redémarrer la machine.
+
+Maintenant on est prêt à configurer Batman.
+
+Découvrir quelle est l'interface réseau (ex: wlan0) :
+
+    /sbin/iwconfig
+
+À partir d'ici, on assume que vous êtes "root" (sudo -s).
+
+Configurer le mode ad-hoc:
+
+    iwconfig wlan0 mode ad-hoc essid mesh-mtl
+
+Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. Sinon, descendre l'interface réseau (voir même désactiver son module noyau) et la ré-activer.
+
+Configurer l'interface réseau, il faut augmenter le MTU car les "packets" de Batman ajoutent des données aux frames ethernet:
+
+    ifconfig wlan0 mtu 1528 up
+
+Ajouter l'interface à Batman:
+
+    batctl if add wlan0
+
+Afficher l'état:
+
+    batctl if
+
+Activer l'interface:
+
+    ifconfig bat0 up
+
+Voilà, on n'a pas d'adresses IP de configurées (à moins d'utiliser IPv6, todo: à documenter), mais on peut faire des "pings" en utilisant les adresses MAC:
+
+    batctl tcpdump wlan0
+    batctl ping 00:11:22:33:44:55
+    batctl traceroute 00:11:22:33:44:55
+
+Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes les nodes accessibles via le mesh (global):
+
+    batctl translocal
+    batctl transglobal
+
+
 References
 ==========
 
