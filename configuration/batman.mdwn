@@ -90,8 +90,8 @@ todo
 
 En général, batman ou le mode ad-hoc affiche régulièrement des messages kernel, on peut y accéder par:
 
-   dmesg | tail
-   tail -f /var/log/messages
+    dmesg | tail
+    tail -f /var/log/messages
 
 ## Problèmes à créer une connexion ad-hoc
 
