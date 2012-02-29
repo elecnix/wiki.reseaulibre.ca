@@ -1,0 +1,13 @@
+# Idées pour l'utilisation du MESH
+
+Utilisez cette page pour documenter les utilisations potentielles. Le but de cette page est de répondre à la question "qu'est-ce que je vais pouvoir faire avec le MESH?".
+Use this page to document potential utilizations. The goal is to answer "what will I be able to do with the MESH?".
+
+* Partager des fichiers sur nos intérêts envers les films et la musique de façon anonyme
+* Partager des fichiers de notre création
+* Partager des torrents (légaux)
+* Avoir un forum (ou un chat IRC) qui répondrait aux questions et besoins des utilisateurs du MESH (pour tous champs d'intérêts)
+* Faire la promotion de services (aspect professionnel)
+* Avoir accès à Internet (si possible?)
+* Publier des pages web (serveurs HTML)
+* Faire du VOIP
