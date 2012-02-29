@@ -19,6 +19,10 @@ Par exemple:
 
 Si vous avez mis à jour votre noyau, il faut redémarrer la machine.
 
+Activer le module kernel (la majorité des distributions Linux ont ce module par défaut)
+
+    modprobe batman-adv
+
 ## Configuration du mode ad hoc
 
 Découvrir quelle est l'interface réseau (ex: wlan0) :
@@ -63,8 +67,23 @@ Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes l
     batctl transglobal
 
 
-References
-==========
+# Diagnostiques
+
+En général, batman ou le mode ad-hoc affiche régulièrement des messages kernel, on peut y accéder par:
+
+   dmesg | tail
+   tail -f /var/log/messages
+
+## Problèmes à créer une connexion ad-hoc
+
+Désactiver puis ré-activer la carte réseau (malheureusement, il faut deviner le module de la carte, pas toujours évident). Au pire, redémarrer.
+
+    lsmod
+    lsmod | grep 802
+    rmmod iwlwifi
+    modprobe iwlwifi
+
+# References
 
  * [Main project page open-mesh.org](http://www.open-mesh.org/)
   * [batman-adv](http://www.open-mesh.org/projects/batman-adv/wiki)
