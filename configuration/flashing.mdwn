@@ -42,11 +42,18 @@ During the upload, pay attention to the following:
 3. reboot the router with the reset button pressed until the leds flash like a christmas tree
 4. send the new firmware through tftp:
 
-        $ tftp 192.168.1.20
-        tftp> binary
-        tftp> put openwrt.bin
+    atftp --trace --option "timeout 1" --option "mode octet" --put --local-file openwrt-xxx-x.x-xxx.bin 192.168.1.1
 
-See also <http://wiki.openwrt.org/doc/howto/generic.flashing.tftp>
+ with netkit-tftp:
+ 
+    $ tftp 192.168.1.1
+    tftp> binary
+    tftp> rexmt 1
+    tftp> timeout
+    tftp> trace
+    tftp> put openwrt.bin
+
+For other platforms (Mac, Windows, etc), see: <http://wiki.openwrt.org/doc/howto/generic.flashing.tftp>
 
 # Password reset
 
