@@ -19,7 +19,7 @@ Quoi?
 Notes
 -----
 
-Une présentation sur les antennes et les ondes radios a été faite par Richard, qui a bien aidé les gens à se familiariser avec les protocoles et le matériel.
+Une présentation sur les antennes et les ondes radios a été faite par Richard, qui a bien aidé les gens à se familiariser avec les protocoles et le matériel. On a présenté les antennes directionnelles et omnidirectionnelles, expliqué la notion de "gain" d'une antenne et des limites de puissance permises. On a aussi mentionné [[l'ellipse de fresnel|https://fr.wikipedia.org/wiki/Ellipso%C3%AFde_de_Fresnel]] et présenté les différentes fréquences utilisées (2.4Ghz, 5.8Ghz, 900Mhz, etc).
 
 On a mentionné le wiki, et il a été demandé comment on pouvait pousser les changements effectués par git. Pour l'instant on demande d'envoyer les changements par courriel à anarcat, voir aussi [[meta/replication]].
 
