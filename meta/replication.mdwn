@@ -3,6 +3,9 @@ multiple copies). Basically, this is to allow you to access the
 documentation even if the network goes down. This is done through
 [[ikiwiki]], which is a the engine behind this wiki.
 
+(!) Note that this is all much easier with the "branchable" plugin of
+the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package.
+
 # Basic offline editing and sharing
 
 Basically, this wiki is a collection of [[ikiwiki/markdown]]-formatted pages
