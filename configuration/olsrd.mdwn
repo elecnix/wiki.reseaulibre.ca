@@ -4,7 +4,44 @@ OLSR is a network protocol used to propagate route information in a decentralize
 
 [[!toc levels=3]]
 
-# Current issues
+# Experimental results
+
+## experiment 2
+
+problem: uses MAC discovery instead of sending packets to the detected
+route, because all IPs are in the same subnet. olsrd is not actually
+adding routes.
+
+steps taken:
+
+ 1. configure laptop 1 (lap1) with [[ad-hoc]] and a static IP (10.0.1.44)
+ 2. configure laptop 2 (lap2) with [[ad-hoc]] and a static IP (10.0.1.42)
+ 3. connect lap2 with a linksys router (rtr1) on the upstream port (ethernet)
+ 4. configure rtr1's upstream port with static IP 10.0.1.20
+ 5. configure a wifi access point on rtr1
+ 5. start OLSRd on all nodes
+
+expected result:
+
+ * route for lap1 via lap2 gets added to rtr1's routing table
+ * another laptop (lap3) connected to rtr1's wifi access point can ping lap1
+
+actual result:
+
+ * no route added
+ * rtr1 sends ARP requests for 10.0.1.44 to lap2, no ping replys from lap3
+
+i tried bridging the wifi and ethernet interfaces of lap2 but this failed:
+
+    can't add wlan0 to bridge br0: Operation not supported
+
+this would have somehow helped lap2 in figuring out where to send the
+packets at least...
+
+(!) note: the interface 1 of the openwrt is left configured with
+factory-standard 192.168.1.1 to ease debugging
+
+## Experiment 1
 
 Now it seems the routes are propagating properly, but for some reason,
 the second i start OLSRd, packets do not get through anymore.
