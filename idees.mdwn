@@ -7,8 +7,8 @@ Use this page to document potential utilizations. The goal is to answer "what wi
 * Partager des fichiers sur nos intérêts envers les films et la musique de façon anonyme
 * Partager des fichiers de notre création
 * Partager des torrents (légaux)
-* Avoir un forum (ou un chat IRC) qui répondrait aux questions et besoins des utilisateurs du MESH (pour tous champs d'intérêts)
+* Avoir un forum (ou un chat IRC) qui répondrait aux questions et besoins des utilisateurs du mesh (pour tous champs d'intérêts)
 * Faire la promotion de services (aspect professionnel)
 * Avoir accès à Internet (si possible?)
-* Publier des pages web (serveurs HTML)
-* Faire du VOIP
+* Publier des pages web (serveurs HTML etc.)
+* Faire du VOIP (avec d'autres gens du mesh)
