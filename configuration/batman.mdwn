@@ -2,8 +2,9 @@
 
 B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative to [[OLSR|olsrd]]. The current implementation is "batman-adv", which works on the Layer 2. This makes the network look like "one big switch". You can use whatever layer 3 protocol on top of that (ipv4, ipv6, ipx, etc.).
 
-Quickstart
-==========
+# Quickstart
+
+## Installer les logiciels nécessaires
 
 Sous Debian/Ubuntu, installer le package Debian pour batctl (gestion des configurations)
 
@@ -18,7 +19,7 @@ Par exemple:
 
 Si vous avez mis à jour votre noyau, il faut redémarrer la machine.
 
-Maintenant on est prêt à configurer Batman.
+## Configuration du mode ad hoc
 
 Découvrir quelle est l'interface réseau (ex: wlan0) :
 
@@ -31,6 +32,8 @@ Configurer le mode ad-hoc:
     iwconfig wlan0 mode ad-hoc essid mesh-mtl
 
 Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. Sinon, descendre l'interface réseau (voir même désactiver son module noyau) et la ré-activer.
+
+## Configuration de Batman
 
 Configurer l'interface réseau, il faut augmenter le MTU car les "packets" de Batman ajoutent des données aux frames ethernet:
 
