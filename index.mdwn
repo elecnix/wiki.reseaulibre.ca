@@ -33,6 +33,7 @@ We need volunteers! On parle français aussi!
 * [[Todo]] - the tasks on hand
 * [[FAQ]] - frequently asked questions
 * [[Policy]] - what we agree on when opening a node on the mesh
+* [[Idees]] - possible uses for the mesh
 
 ## Prochaine rencontre
 
