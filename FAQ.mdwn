@@ -8,6 +8,10 @@ Comment je peux m'impliquer?
  * Participez aux [[réunions|meetings]] de travail. Ils sont annoncés sur la liste de discussion.
  * Améliorez la [[documentation|configuration]]
 
+Pourquoi un mesh?
+============================
+Voir [[Idees]].
+
 Je n'ai pas accès à un toit, je peux aider quand même?
 ======================================================
 
