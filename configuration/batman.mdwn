@@ -13,8 +13,8 @@ Idéalement il faut aussi un noyau Linux qui est à jour. Pour nos tests, ça fo
 Par exemple:
 
     uname -a
-apt-cache search lnux-image-3
-sudo apt-get install linux-image-2.3.0-1-686-pae
+    apt-cache search lnux-image-3
+    sudo apt-get install linux-image-2.3.0-1-686-pae
 
 Si vous avez mis à jour votre noyau, il faut redémarrer la machine.
 
