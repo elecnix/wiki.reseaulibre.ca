@@ -15,10 +15,9 @@ The reference is 0dBm = 1 mW
  Maximum transmitter power versus largest antenna table for PTMP:
 
 
- Transmitter RF power      Antenna Gain        EIRP in watts
-
       
      Radio Power            Antenna gain        EIRP in watts
+
       30dBm 1W                 6dBi                  3.98
       27dBm 500mW              9dBi                  3.98
       24dBm 250mW             12dBi                  3.98
