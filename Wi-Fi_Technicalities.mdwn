@@ -24,6 +24,44 @@ The reference is 0dBm = 1 mW
       14dBm 25mW              21dBi                  3.98
       10dBm 10mW              24dBi                  3.98
 
+*****
+**Antenna Connectors and Cable**
+*****
 
+*CONNECTORS ON ROUTERS*
+
+There are 3 types of connectors used :
+
+1- The RP-SMA (reverse polarity SMA) is the connector used on most indoor units.
+It is small, inexpensive, but cannot accommodate large cable.
+insert picture:
+
+2- The N connector is mostly used in the professional field.
+It is robust, and suitable for outdoor use.
+insert picture:
+
+3- The RP-TNC is in the middle and was mostly only used on the Linksys WRT-54G.
+insert picture:
+
+To install connectors to cables, you need a crimper. 
+Very seldom solder is used, it often cause corrosion in harsh environments.
+I have tools and connectors if you need them. (Richard)
+
+*CABLES*
+ 
+Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
+The attenuation of signal in the cable is more significant at higher frequencies.
+Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
+These cables cannot be bent or squeezed. We have to be careful using gun tackers on them.
+
+1- RG174U: this cable is the smallest we use. It has 2.5mm diameter and is used for very short distances.
+It's a high loss cable (1.4db/m at 2.4Ghz) so we use it where we need a short and flexible cable.
+It fits very well on the RP-SMA connector.
+
+2- RG58 (or LMR195 high quality) varies between 4.7mm and 5.4mm in diameter. It loses .8db/m at 2.4Ghz, so it is suitable for medium distances (up to 10 feet is ok)
+
+
+3- RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
+this cable is not flexible at all and can only accept N connectors size.
 
 
