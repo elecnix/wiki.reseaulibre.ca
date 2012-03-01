@@ -52,7 +52,7 @@ I have tools and connectors if you need them. (Richard)
 Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
 The attenuation of signal in the cable is more significant at higher frequencies.
 Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
-These cables cannot be bent or squeezed. We have to be careful using gun tackers on them.
+These cables cannot be sharply bent or squeezed. We have to be careful using gun tackers on them.
 
 1- RG174U: this cable is the smallest we use. It has 2.5mm diameter and is used for very short distances.
 It's a high loss cable (1.4db/m at 2.4Ghz) so we use it where we need a short and flexible cable.
