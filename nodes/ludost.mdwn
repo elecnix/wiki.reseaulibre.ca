@@ -1,7 +1,5 @@
 [[!waypoint lat="45.466497" lon="-73.569657" embed hidden width="400px" height="400px" right desc="A node"]]
 
-Possibilité de poser une antenne. Je renommerai quand la personne m'aura confirmé. -bgm.
-
  * MAC address:
  * IP address:
  * IPv6 address:
@@ -13,4 +11,4 @@ Possibilité de poser une antenne. Je renommerai quand la personne m'aura confir
  * Links: 
  * Azimuth:
  * Panorama:
- * Operator: [[users/bgm]]
+ * Operator: [[users/ludost]], [[users/bgm]]
