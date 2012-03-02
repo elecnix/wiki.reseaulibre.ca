@@ -14,6 +14,8 @@ site, each device page will list which firmware you should use.
 
 (!) Hint: most Linksys WRT54 devices use the brcm47xx firmware.
 
+(!) Note: Si vous avez des problèmes inhabituel, essayez une autre version du bon firmware http://downloads.openwrt.org/backfire/
+
 # Flashing methods
 
 ## Web interface
