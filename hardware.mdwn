@@ -91,15 +91,16 @@ I just setup one with open-wrt / luci
 
 TL-MR3220
 
-A small router b/g/n with one chain, compatible with openwrt, very cheap 31.06$ at directcanada
-http://wiki.openwrt.org/toh/tp-link/tl-mr3420
-I am working on a weatherproof enclosure for it
-Comes with a 5dbi omni antenna
+A small router b/g/n with one chain, compatible with openwrt, very cheap 31.06$ at directcanada.
+
+<http://wiki.openwrt.org/toh/tp-link/tl-mr3420> .
+I am working on a weatherproof enclosure for it.
+Comes with a 5dbi omni antenna.
 It has a rp-sma connector for the antenna.
 
 insert image naked
 
-http://2.bp.blogspot.com/-eRqqW1mfuTc/Tgwx57oswcI/AAAAAAAAAG4/SR0Kw04D8uc/s1600/IMG_20110628_172208.jpg
+<http://2.bp.blogspot.com/-eRqqW1mfuTc/Tgwx57oswcI/AAAAAAAAAG4/SR0Kw04D8uc/s1600/IMG_20110628_172208.jpg>
 
 
 TL-MR3420
@@ -110,7 +111,7 @@ It has a rp-sma connector for the antennas.
 
 insert image naked
 
-http://www.ferra.ru/images/298/298975.jpg
+<http://www.ferra.ru/images/298/298975.jpg>
 
 
 
