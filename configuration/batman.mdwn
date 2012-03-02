@@ -93,6 +93,14 @@ En général, batman ou le mode ad-hoc affiche régulièrement des messages kern
     dmesg | tail
     tail -f /var/log/messages
 
+Si Network Manager est actif, vous pourriez voir:
+
+    iwconfig wlan0 mode ad-hoc essid mesh-mtl
+    Error for wireless request "Set Mode" (8B06) :
+        SET failed on device wlan0 ; Device or resource busy.
+
+Il faut alors désactiver le réseau, avec l'icône dans Gnome.
+
 ## Problèmes à créer une connexion ad-hoc
 
 Désactiver puis ré-activer la carte réseau (malheureusement, il faut deviner le module de la carte, pas toujours évident). Au pire, redémarrer.
