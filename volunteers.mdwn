@@ -5,7 +5,7 @@ you are interested of doing is also good.
 
 (!) We are now using [[this mailing list|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]] to coordinate instead of this crappy list. 
 
- * MathieuL (bgm) - un [[noeud|nodes/bgm]], réseautique, programmation
+ * MathieuL ([[bgm|users/bgm]]) - un [[noeud|nodes/bgm]], réseautique, programmation
  * [[users/anarcat]] - running a [[node|nodes/anarcat]]
  * AntoineT (hexa) hexa00 -a-t- gmail.com - running a node
  * (hRedBeard)
