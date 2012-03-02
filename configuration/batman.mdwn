@@ -120,11 +120,31 @@ Puis utiliser la commande "ping" pour voir si on peut parler à une autre machin
 
 # Installation sur OpenWRT
 
-todo
+[DRAFT]
 
-Pas d'images pré-compilées? Peut-on installer en module dans OpenWRT standard?
+Pas d'images pré-compilées? Peut-on installer en module dans OpenWRT standard? Le package n'est pas dispo:
 
-Il faut compiler: http://www.open-mesh.org/wiki/batman-adv/Building-with-openwrt
+    ipkg update
+    ipkg install batman-adv
+
+## Compiler OpenWRT avec batman
+
+Instructions génériques pour compiler OpwnWRT: http://wiki.openwrt.org/doc/howto/build
+
+http://www.open-mesh.org/wiki/batman-adv/Building-with-openwrt
+
+Il faut choisir un noyau 2.6 (PAS 2.4) dans 'make menuconfig'.
+
+Flasher le fichier '.trx' compilé dans le répertoire bin de OpenWRT.
+
+Connecter câble ethernet.
+
+    telnet 192.168.1.1
+    passwd
+
+Reboot
+
+Tester 'batctl', et vérifier que l'interface wifi existe: 'iw'.
 
 # Installation sur DD-WRT
 
