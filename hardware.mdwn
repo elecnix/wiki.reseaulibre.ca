@@ -94,7 +94,9 @@ TL-MR3220
 A small router b/g/n with one chain, compatible with openwrt, very cheap 31.06$ at directcanada.
 
 <http://wiki.openwrt.org/toh/tp-link/tl-mr3420> .
+
 I am working on a weatherproof enclosure for it.
+
 Comes with a 5dbi omni antenna.
 It has a rp-sma connector for the antenna.
 
