@@ -24,6 +24,612 @@ The reference is 0dBm = 1 mW
       14dBm 25mW              21dBi                  3.98
       10dBm 10mW              24dBi                  3.98
 
+Content-Transfer-Encoding: 8bit
+
+<html>
+  <head>
+    
+    <p style="margin-bottom: 0cm"><br>
+    </p>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <colgroup><col width="256*"> </colgroup><tbody>
+        <tr>
+          <td width="100%">
+            <p align="CENTER"><strong><font color="#000000"><font
+                    face="Verdana"><font size="3">dBm to Watt Conversion
+                      Table</font></font></font></strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <hr color="#c0c0c0" size="4"> </td>
+        </tr>
+        <tr>
+          <td width="100%">
+            <center>
+              <table border="0" cellpadding="2" cellspacing="0"
+                width="487">
+                <colgroup><col width="38"> <col width="84"> <col
+                    width="50"> <col width="40"> <col width="78"> <col
+                    width="54"> <col width="41"> <col width="69"> </colgroup><tbody>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>dBm</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>Watts</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>dBm</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>Watts</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>dBm</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>Watts</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>0</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>1.0 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>16</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>40 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>32</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>1.6 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>1</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>1.3 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>17</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>50 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>33</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>2.0 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>2</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>1.6 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>18</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>63 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>34</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>2.5 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>3</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>2.0 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>19</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>79 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>35</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>3.2 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>4</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>2.5 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>20</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>100 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>36</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>4.0 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>5</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>3.2 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>21</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>126 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>37</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>5.0 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>6</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>4 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>22</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>158 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>38</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>6.3 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>7</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>5 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>23</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>200 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>39</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>8.0 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>8</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>6 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>24</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>250 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>40</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>10 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>9</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>8 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>25</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>316 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>41</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>13 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>10</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>10 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>26</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>398 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>42</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>16 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>11</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>13 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>27</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>500 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>43</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>20 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>12</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>16 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>28</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>630 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>44</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>25 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>13</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>20 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>29</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>800 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>45</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>32 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>14</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>25 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>30</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>1.0 W</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>46</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>40 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#c0c0c0" width="38">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>15</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="84">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>32 mW</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="50">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="40">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>31</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="78">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>1.3 W</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#ffffff" width="54">
+                      <p><font color="#000000"> </font> </p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="41">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>47</b></font></font></font></p>
+                    </td>
+                    <td bgcolor="#c0c0c0" width="69">
+                      <p align="CENTER"><font color="#000000"><font
+                            face="Arial"><font size="3"><b>50 W</b></font></font></font></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="0" cellpadding="2" cellspacing="0" width="598">
+      <colgroup><col width="594"> </colgroup><tbody>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-bottom: 0cm"><br>
+    </p>
+    <title></title>
+    <meta name="GENERATOR" content="OpenOffice.org 3.3 (Win32)">
+    <style type="text/css">
+	<!--
+		@page { margin: 2cm }
+		TD P { margin-bottom: 0cm }
+		P { margin-bottom: 0.21cm }
+	-->
+	</style><br>
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
 *****
 **Antenna Connectors and Cable**
 *****
