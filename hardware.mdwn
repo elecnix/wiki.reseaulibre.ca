@@ -99,6 +99,7 @@ I am working on a weatherproof enclosure for it.
 
 Comes with a 5dbi omni antenna.
 It has a rp-sma connector for the antenna.
+Connectors are on a cable to the pcb so easy to relocate
 
 insert image naked
 
@@ -110,6 +111,7 @@ TL-MR3420
 Same as above with 2 chain (more speed) and 40.77$ at directcanada
 Comes with 2 3dbi omni antennas
 It has a rp-sma connector for the antennas.
+Connectors are on a cable to the pcb so easy to relocate
 
 insert image naked
 
