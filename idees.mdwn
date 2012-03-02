@@ -13,3 +13,4 @@ Use this page to document potential utilizations. The goal is to answer "what wi
 * Publier des pages web (serveurs HTML etc.)
 * Faire du VOIP (avec d'autres gens du mesh)
 * Créer "hotspot" sur la ville de Montréal. Partager ses bon coups, endroits intéressants à ne pas manquer. Une sorte de mesh *plusvalue* touristique.
+* Déploiement de IPv6 (partage de connaissances, popularisation)
