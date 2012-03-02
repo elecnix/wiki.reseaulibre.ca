@@ -114,6 +114,10 @@ Puis utiliser la commande "ping" pour voir si on peut parler à une autre machin
 
 todo
 
+Pas d'images pré-compilées? Peut-on installer en module dans OpenWRT standard?
+
+Il faut compiler: http://www.open-mesh.org/wiki/batman-adv/Building-with-openwrt
+
 # Installation sur DD-WRT
 
 todo
