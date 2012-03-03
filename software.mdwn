@@ -62,6 +62,8 @@ Based on [OpenWrt](http://openwrt.org),
 solution integrating BATMAN and a GUI. See [[configuration/Robin]] for
 our notes on how to configure robin.
 
+Not actively maintained for the past two years?
+
 ## AirOS
 
 AirOS est le système d'exploitation qui vient par défaut avec les NanoStation d'Unbt. Pourrions-nous y faire rouler OLSR?
