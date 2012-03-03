@@ -9,9 +9,9 @@ Il est possible d'utiliser un routeur de maison, et de le laisser à l'intérieu
 Il existe des routeurs d'extérieur très bon marché, simples, flexibles, puissants et durables, pour moins de 100$, que ce soit en omnidirectionnel ou en directionnel.
 
 Le réseau de Montréal préconise la bande de fréquence 2.4 GHz.
-
+*****
 # Routers and embeded devices
-
+*****
 ## Ubiquiti
 
 La compagnie Ubiquiti produit du matériel excellent et bon marché. Pour un noeud placé à l'extérieur, l'option la moins coûteuse et la plus simple est la [[PicoStation M2HP|http://dl.ubnt.com/datasheets/picostationm/picom2hp_DS.pdf]]. Elle a une portée de 500 mètres maximum (dans toutes les directions), et vient avec un injecteur PoE qui évite d'avoir à passer un fil d'alimentation, le câble réseau servant à transporter le courant.
@@ -128,12 +128,13 @@ Connectors are on a cable to the pcb so easy to relocate
 insert image naked
 
 <http://www.ferra.ru/images/298/298975.jpg>
-
+*****
 # Antennas
-
+*****
+*****
 # Cables and connectors
-
-## CONNECTORS ON ROUTERS
+*****
+## Connectors on routers
 
 To install connectors to cables, you need a crimper.  Very seldom solder is used, it often cause corrosion in harsh environments.
 
@@ -178,9 +179,9 @@ It is most notably used on the Linksys WRT-54G devices, but pretty much *only* t
 It is not recommended to use this cable for new projects unless really necessary, as it is non-standard and harder to find. 
 
 ...
-
-## CABLES
- 
+*****
+## Cables
+*****
 Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
 The attenuation of signal in the cable is more significant at higher frequencies.N_Connector.jpg
 Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
