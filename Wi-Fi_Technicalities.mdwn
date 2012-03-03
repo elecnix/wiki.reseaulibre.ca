@@ -1,18 +1,13 @@
-*************************************
-**Relationship between Watts and dBm :**
-*************************************
+Relationship between Watts and dBm
+==================================
 
-The watt is a measure of power.
+ * The watt is a measure of power.
+ * The dBm is a logaritmic representation of gain.
+ * The difference in dBm between two power levels is `10(log p1/p2)`
+ * Therefore, everytime the power doubles, we add 3 dBm
+ * By convention in wifi, the reference power at 0dBm is 1 mW (0dBm = 1mW)
 
-The dBm is a logaritmic representation of gain.
-
-The difference in dBm between two power levels is 10(log p1/p2)
-
-Everytime the power doubles, we add 3 dBm
-
-The reference is 0dBm = 1 mW
-
- Maximum transmitter power versus largest antenna table for PTMP:
+Maximum transmitter power versus largest antenna table for PTMP:
       
      Radio Power            Antenna gain        EIRP in watts
 
@@ -23,11 +18,6 @@ The reference is 0dBm = 1 mW
       17dBm 50mW              18dBi                  3.98
       14dBm 25mW              21dBi                  3.98
       10dBm 10mW              24dBi                  3.98
-
-Content-Transfer-Encoding: 8bit
-
-Content-Type: text/html; charset=UTF-8
-Content-Transfer-Encoding: 8bit
 
 <html>
   <head>
