@@ -480,7 +480,7 @@ CONNECTORS ON ROUTERS
 
 There are 3 types of connectors used :
 
- 1. The RP-SMA (reverse polarity SMA) is the connector used on most indoor units. It is small, inexpensive, but cannot accommodate large cable.
+ 1. The [[RP-SMA|https://en.wikipedia.org/wiki/SMA_connector]] (reverse polarity SMA) is the connector used on most indoor units. It is small, inexpensive, but cannot accommodate large cable. [[https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gniazdo_RPSMA.jpg/200px-Gniazdo_RPSMA.jpg]]
  2. The N connector is mostly used in the professional field. It is robust, and suitable for outdoor use.
  3. The RP-TNC is in the middle and was mostly only used on the Linksys WRT-54G.
 
@@ -500,5 +500,4 @@ These cables cannot be sharply bent or squeezed. We have to be careful using gun
  2. RG58 (or LMR195 high quality) varies between 4.7mm and 5.4mm in diameter. It loses .8db/m at 2.4Ghz, so it is suitable for medium distances (up to 10 feet is ok)
  3. RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
 this cable is not flexible at all and can only accept N connectors size.
-
 
