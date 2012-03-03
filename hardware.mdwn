@@ -191,8 +191,13 @@ These cables cannot be sharply bent or squeezed. We have to be careful using gun
  2. RG58 (or LMR195 high quality) varies between 4.7mm and 5.4mm in diameter. It loses .8db/m at 2.4Ghz, so it is suitable for medium distances (up to 10 feet is ok)
  3. RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
 this cable is not flexible at all and can only accept N connectors size.
-
+*****
 # Other stuff
+*****
+
+## POE
+
+## Links
 
 * <http://wiki.daviddarts.com/PirateBox_DIY>
 * The Fun cube dongle can be useful for debugging
