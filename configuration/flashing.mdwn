@@ -57,6 +57,24 @@ During the upload, pay attention to the following:
 
 For other platforms (Mac, Windows, etc), see: <http://wiki.openwrt.org/doc/howto/generic.flashing.tftp>
 
+## sysupgrade (OpenWRT)
+
+Si vous avez déjà OpenWRT, mais que vous voulez le flasher avec une autre version, vous pouvez utiliser la commande `sysupgrade`:
+
+    ssh 192.168.1.1
+    sysupgrade http:// ... /openwrt-blah-squashfs.trx
+
+Si votre routeur n'a pas accès à internet, vous pouvez installer un petit serveur web sur votre ordinateur:
+
+    sudo apt-get install nginx
+    sudo cp openwrt-blah-squashfs.trx /usr/share/nginx/www/
+    sudo /etc/init.d/nginx start
+
+Puis vous spécifiez l'addresse de votre serveur sur votre PC connecté par ethernet sur un port LAN:
+
+   sysupgrade http://192.168.1.2/openwrt-blah-squashfs.trx
+
+
 # Password reset
 
 In general, try to connect on the web interface at
@@ -102,23 +120,6 @@ installing to big packages (clean the JFFS2 partition and start over)
     mtd -r erase rootfs_data
 
 If you are done with failsafe mode power cycle the router and boot in normal mode.
-
-### sysupgrade
-
-Si vous avez déjà OpenWRT, mais que vous voulez le flasher avec une autre version, vous pouvez utiliser la commande `sysupgrade`:
-
-    ssh 192.168.1.1
-    sysupgrade http:// ... /openwrt-blah-squashfs.trx
-
-Si votre routeur n'a pas accès à internet, vous pouvez installer un petit serveur web sur votre ordinateur:
-
-    sudo apt-get install nginx
-    sudo cp openwrt-blah-squashfs.trx /usr/share/nginx/www/
-    sudo /etc/init.d/nginx start
-
-Puis vous spécifiez l'addresse de votre serveur sur votre PC connecté par ethernet sur un port LAN:
-
-   sysupgrade http://192.168.1.2/openwrt-blah-squashfs.trx
 
 ## Tomato firmware
 
