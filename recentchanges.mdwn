@@ -5,4 +5,5 @@ Recent changes to this wiki:
 
 [[!inline pages="internal(recentchanges/change_*) and !*/Discussion" 
 template=recentchanges show=0]]
-[[!toggle]]
+[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="test"]]
