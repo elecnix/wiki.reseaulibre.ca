@@ -33,6 +33,14 @@ Par exemple:
 
 ## Outremont
 
-''L'installation d'antennes, parabolique ou de tout autre type, est régie par le Service de l'aménagement urbain et du patrimoine. Ces règles d'installation ont pour but de limiter l'impact visuel des antennes par la réglementation de leur dimension et de leur localisation. Un permis de construction est exigé pour autoriser l'exécution des travaux et doit être affiché bien en vue de la voie publique pendant toute leur durée.'' [[source|http://www11.ville.montreal.qc.ca/sherlock2/servlet/template/sherlock%2CAfficherDocumentInternet.vm/nodocument/22105]]
+> *L'installation d'antennes, parabolique ou de tout autre type, est régie par le Service de l'aménagement urbain et du patrimoine. Ces règles d'installation ont pour but de limiter l'impact visuel des antennes par la réglementation de leur dimension et de leur localisation. Un permis de construction est exigé pour autoriser l'exécution des travaux et doit être affiché bien en vue de la voie publique pendant toute leur durée.* 
+>
+> *Ces antennes ne sont autorisées que dans les cours arrière et sur le toit d'un bâtiment, aux conditions suivantes :*
+>
+> * *elles doivent reposer sur une fondation permanente lorsqu'elles sont installées au sol*
+> * *elles doivent être éloignées des circuits électriques et munies de paratonnerres*
+> * *elles ne doivent pas être visibles de la rue à une hauteur de 1.5 mètre depuis l'axe du trottoir situé de l'autre côté d'une rue publique*
+>
+> [[source|http://www11.ville.montreal.qc.ca/sherlock2/servlet/template/sherlock%2CAfficherDocumentInternet.vm/nodocument/22105]]
 
-Translation: there are rules to avoid visual impact. A permit is required to do the work to install the Antenna.
+Translation: there are rules to avoid visual impact. A permit is required to do the work to install the antenna. The antenna needs to be grounded to a lightning rod, must not be visible from the street, and more.
