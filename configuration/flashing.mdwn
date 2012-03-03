@@ -103,6 +103,23 @@ installing to big packages (clean the JFFS2 partition and start over)
 
 If you are done with failsafe mode power cycle the router and boot in normal mode.
 
+### sysupgrade
+
+Si vous avez déjà OpenWRT, mais que vous voulez le flasher avec une autre version, vous pouvez utiliser la commande `sysupgrade`:
+
+    ssh 192.168.1.1
+    sysupgrade http:// ... /openwrt-blah-squashfs.trx
+
+Si votre routeur n'a pas accès à internet, vous pouvez installer un petit serveur web sur votre ordinateur:
+
+    sudo apt-get install nginx
+    sudo cp openwrt-blah-squashfs.trx /usr/share/nginx/www/
+    sudo /etc/init.d/nginx start
+
+Puis vous spécifiez l'addresse de votre serveur sur votre PC connecté par ethernet sur un port LAN:
+
+   sysupgrade http://192.168.1.2/openwrt-blah-squashfs.trx
+
 ## Tomato firmware
 
 Just hold the reset key down until the power led flashes, see <http://www.polarcloud.com/tomatofaq#why_doesnt_my_password_work>.
