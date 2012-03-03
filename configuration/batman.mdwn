@@ -4,9 +4,14 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 [[!toc levels=3]]
 
-# Installation sur Debian
+# Prérequis
+
+ 1. Configuration du mode [[ad-hoc]]
+ 2. [[Flashing]] de votre routeur
 
 ## Installer les logiciels nécessaires
+
+### Sur Debian
 
 Sous Debian/Ubuntu, installer le package Debian pour batctl (gestion des configurations)
 
@@ -25,23 +30,7 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
     modprobe batman-adv
 
-### Configuration du mode ad hoc
-
-(!) Bouger dans [[ad-hoc]]?
-
-Découvrir quelle est l'interface réseau (ex: wlan0) :
-
-    /sbin/iwconfig
-
-À partir d'ici, on assume que vous êtes "root" (sudo -s).
-
-Configurer le mode ad-hoc:
-
-    iwconfig wlan0 mode ad-hoc essid mesh-mtl
-
-Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. Sinon, descendre l'interface réseau (voir même désactiver son module noyau) et la ré-activer.
-
-## Configuration de Batman
+# Configuration de Batman
 
 Configurer l'interface réseau, il faut augmenter le MTU car les "packets" de Batman ajoutent des données aux frames ethernet:
 
@@ -94,35 +83,6 @@ En général, batman ou le mode ad-hoc affiche régulièrement des messages kern
 
     dmesg | tail
     tail -f /var/log/messages
-
-(!) Bouger dans [[ad-hoc]]?
-
-Si Network Manager est actif, vous pourriez voir:
-
-    iwconfig wlan0 mode ad-hoc essid mesh-mtl
-    Error for wireless request "Set Mode" (8B06) :
-        SET failed on device wlan0 ; Device or resource busy.
-
-Il faut alors désactiver le réseau, avec l'icône dans Gnome.
-
-## Problèmes à créer une connexion ad-hoc
-
-(!) Bouger dans [[ad-hoc]]?
-
-Désactiver puis ré-activer la carte réseau (malheureusement, il faut deviner le module de la carte, pas toujours évident). Au pire, redémarrer.
-
-    lsmod
-    lsmod | grep 802
-    rmmod iwlwifi
-    modprobe iwlwifi
-
-Ça peut être utile d'assigner une adresse statique sur l'interface ad-hoc pour confirmer que la connexion fonctionner bien. Assigner une adresse unique par machine, par exemple:
-
-    machine A: ifconfig wlan0 192.168.1.10
-    machine B: ifconfig wlan0 192.168.1.11
-    machine C: ifconfig wlan0 192.168.1.12
-
-Puis utiliser la commande "ping" pour voir si on peut parler à une autre machine.
 
 # Installation sur OpenWRT
 
