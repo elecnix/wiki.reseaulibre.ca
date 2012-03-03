@@ -88,6 +88,11 @@ They have an OLSR-based Broadcom firmware: "OpenWrt is heading straight for an u
  * <http://wiki.freifunk.net/Freifunk_Firmware_%28English%29>
  * http://ff-firmware.sourceforge.net/
 
+## Afrimesh
+
+Batman + scripts pour OpenWRT Kamikaze, ne semble plus développé depuis 2010.
+
+ * <https://code.google.com/p/afrimesh/>
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
