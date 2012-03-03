@@ -52,14 +52,12 @@ Connecter câble ethernet.
 
 Reboot
 
-Tester 'batctl', et vérifier que l'interface wifi existe: 'iw'.
+Configurer le réseau [[ad-hoc]]:
 
     iw phy phy0 interface add wlan0 type adhoc
     iwconfig wlan0 mode adhoc essid mesh-mtl
-    ifconfig wlan0 mtu 1528 up
-    batctl if add wlan0
-    ifconfig bat0 up
-    batctl tcpdump wlan0
+
+... faire le reste de la configuration plus bas.
 
 ### Sur DD-WRT
 
