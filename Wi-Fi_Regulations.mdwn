@@ -18,4 +18,4 @@ EXCEPTION
 
 This means that a PTP with a 30dBm (1 Watt) radio and a 32dbi antenna can use 1600 Watts e.i.r.p.
 
-Mesh Access Points cannot be in that category because they are designed to serve multiple links.
+Mesh Access Points cannot be in that category because they are designed to serve multiple links. However, long-range interconnexions that are designed to be point to point may be in that category.
