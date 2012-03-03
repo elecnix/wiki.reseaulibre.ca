@@ -22,9 +22,8 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Hardware]] - hardware used in the project, and how it's configured
 * [[Software]] - the software used in the project...
 * [[Configuration]] - step by step config instructions to join the network
-* [[Wi-Fi Regulations]] - Ce que Industrie Canada nous demande de respecter
 * [[Wi-Fi Technicalities]] - Basics of the physical layer and mechanics. 
-* [[Montreal Regulations]] - Réglements pertinants de la Ville de Montréal
+* [[Regulations]] - Réglements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
 
 # Participating
 
