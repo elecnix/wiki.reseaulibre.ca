@@ -94,6 +94,20 @@ Batman + scripts pour OpenWRT Kamikaze, ne semble plus développé depuis 2010.
 
  * <https://code.google.com/p/afrimesh/>
 
+## WiND
+
+Développé par AthensWireless. Interface web de gestion de nodes.  Version 2 prévue, mais pas encore de détails là-dessus.
+
+  (genb: j'ai regardé vite vite, mais j'ai pas trouvé comment c'est lié au firmware et comment indiquer à ce système si un node est up ou down)
+
+ * <http://wind.cube.gr/>
+
+## NodeWatcher
+
+Développé par Wlan Slovenija:  Générateur de firmware openwrt + OLSR, pas mal de trucs qui ont l'air intéressants
+
+ * <http://dev.wlan-si.net/wiki/Nodewatcher>
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
