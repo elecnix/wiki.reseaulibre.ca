@@ -27,6 +27,8 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
 ### Configuration du mode ad hoc
 
+(!) Bouger dans [[ad-hoc]]?
+
 Découvrir quelle est l'interface réseau (ex: wlan0) :
 
     /sbin/iwconfig
@@ -93,6 +95,8 @@ En général, batman ou le mode ad-hoc affiche régulièrement des messages kern
     dmesg | tail
     tail -f /var/log/messages
 
+(!) Bouger dans [[ad-hoc]]?
+
 Si Network Manager est actif, vous pourriez voir:
 
     iwconfig wlan0 mode ad-hoc essid mesh-mtl
@@ -102,6 +106,8 @@ Si Network Manager est actif, vous pourriez voir:
 Il faut alors désactiver le réseau, avec l'icône dans Gnome.
 
 ## Problèmes à créer une connexion ad-hoc
+
+(!) Bouger dans [[ad-hoc]]?
 
 Désactiver puis ré-activer la carte réseau (malheureusement, il faut deviner le module de la carte, pas toujours évident). Au pire, redémarrer.
 
@@ -122,12 +128,15 @@ Puis utiliser la commande "ping" pour voir si on peut parler à une autre machin
 
 [DRAFT]
 
+
 Pas d'images pré-compilées? Peut-on installer en module dans OpenWRT standard? Le package n'est pas dispo:
 
     ipkg update
     ipkg install batman-adv
 
 ## Compiler OpenWRT avec batman
+
+(!) On pourrait migrer ça dans la page [[flashing]]? Ça semble être commun à tous les modes...
 
 Instructions génériques pour compiler OpwnWRT: http://wiki.openwrt.org/doc/howto/build
 
