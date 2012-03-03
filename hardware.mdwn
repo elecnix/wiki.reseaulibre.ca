@@ -125,20 +125,48 @@ insert image naked
 
 ## CONNECTORS ON ROUTERS
 
-There are 3 types of connectors used :
-
- 1. The [[RP-SMA|https://en.wikipedia.org/wiki/SMA_connector]] (reverse polarity SMA) is the connector used on most indoor units. It is small, inexpensive, but cannot accommodate large cable. [[200px-Gniazdo_RPSMA.jpg]]
- 2. The N connector is mostly used in the professional field. It is robust, and suitable for outdoor use.
- 3. The RP-TNC is in the middle and was mostly only used on the Linksys WRT-54G.
-
 To install connectors to cables, you need a crimper.  Very seldom solder is used, it often cause corrosion in harsh environments.
 
 > I have tools and connectors if you need them. (Richard)
 
+There are 3 types of connectors used :
+
+### RP-SMA
+
+[[!img Gniazdo_RPSMA.jpg align="left" size="100x"]]
+
+The [[RP-SMA|https://en.wikipedia.org/wiki/SMA_connector]] (reverse polarity SMA) is the connector used on most indoor units. It is small, inexpensive, but cannot accommodate large cable. 
+
+It is often found on:
+
+ * wireless cards
+ * wireless routers
+
+The RP-SMA connector is "reversed polarity" to keep people from connecting high-gain antennas (for example used by ham radio operators) to commodity hardware.
+
+### N connectors
+
+[[!img N_Connector.jpg align="left" size="100x"]]
+
+The [[N connector|https://en.wikipedia.org/wiki/N_connector]] is mostly used in the professional field and ham radio operators.
+
+It is robust, and suitable for outdoor use.
+
+It is specifically used for [[Cantennas|https://en.wikipedia.org/wiki/Cantenna]] and ham radio UHF  transceivers.
+
+### RP-TNC
+
+[[!img RP-TNC-female.jpg align="left" size="100x"]]
+[[!img RP-TNC-male.jpg align="left" size="100x"]]
+
+The RP-TNC is a threaded version of the venerable BNC connector (used in older wired networks) and sits between the SMA and N connectors.
+
+It is most notably used on the Linksys WRT-54G devices.
+
 ## CABLES
  
 Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
-The attenuation of signal in the cable is more significant at higher frequencies.
+The attenuation of signal in the cable is more significant at higher frequencies.N_Connector.jpg
 Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
 These cables cannot be sharply bent or squeezed. We have to be careful using gun tackers on them.
 
