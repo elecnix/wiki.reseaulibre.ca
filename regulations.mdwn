@@ -1,7 +1,7 @@
 [[!toc]]
-
+*****
 # Puissance
-
+*****
 Source: Document Industrie Canada RSS-210 (2007)
 
 Annex 8 
@@ -22,9 +22,9 @@ This means that a PTP with a 30dBm (1 Watt) radio and a 32dbi antenna can use 16
 
 Mesh Access Points cannot be in that category because they are designed to serve multiple links. However, long-range interconnexions that are designed to be point to point may be in that category.
 
-
+*****
 # Antennes
-
+*****
 Règlements pertinents à l'installation d'antennes sur le territoire de la Ville de Montréal, pour chaque arrondissement:
 
 <http://www11.ville.montreal.qc.ca/sherlock2/servlet/template/sherlock%2CAfficherDocumentInternet.vm/nodocument/22091>
