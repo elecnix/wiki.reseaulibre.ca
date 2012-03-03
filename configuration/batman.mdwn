@@ -116,12 +116,18 @@ todo
 
 todo
 
-## Diagnostiques
+# Diagnostiques
 
 En général, batman ou le mode ad-hoc affiche régulièrement des messages kernel, on peut y accéder par:
 
     dmesg | tail
+
+ou:
+
     tail -f /var/log/messages
+
+Voir aussi la page [[ad-hoc]] si vous avez des difficultés avec le
+lien physique.
 
 # Références
 
