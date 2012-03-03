@@ -10,7 +10,9 @@ Il existe des routeurs d'extérieur très bon marché, simples, flexibles, puiss
 
 Le réseau de Montréal préconise la bande de fréquence 2.4 GHz.
 
-# Ubiquiti
+# Routers and embeded devices
+
+## Ubiquiti
 
 La compagnie Ubiquiti produit du matériel excellent et bon marché. Pour un noeud placé à l'extérieur, l'option la moins coûteuse et la plus simple est la [[PicoStation M2HP|http://dl.ubnt.com/datasheets/picostationm/picom2hp_DS.pdf]]. Elle a une portée de 500 mètres maximum (dans toutes les directions), et vient avec un injecteur PoE qui évite d'avoir à passer un fil d'alimentation, le câble réseau servant à transporter le courant.
 
@@ -22,7 +24,7 @@ Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca Leur site (un peu 
 
 /!\ note that flashing your Ubiquity device with OpenWRT or similar may mean a significant reduction in signal quality - rene suggests using a different firmware instead, he is working on a firmware based on AirOS.
 
-## PicoStation (omni)
+### PicoStation (omni)
 
 * Émission à 29dBm ( 800mW )
  
@@ -36,7 +38,7 @@ when the accesspoint is on the 3rd floor). Compared to that you're
 kind of claiming that your service is benefitting 800 simultaneous
 users per such access point if you're radiating that power.
 
-### Specifications
+#### Specifications
 
 * Atheros MIPS 4KC, 180MHz
 * 32MB SDRAM, 8MB Flash
@@ -49,15 +51,15 @@ users per such access point if you're radiating that power.
 * Intérieur: 200 m et Extérieur (Ligne de vue): 400 m à 11Mbps
 * Omnidirectionnelle
 
-### Testing and configuration
+#### Testing and configuration
 
 Voir [[configuration/Robin]].
 
-## Bullet2 (sans antenne)
+### Bullet2 (sans antenne)
 
 Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une antenne externe. Pareil comme la pico station sinon.
 
-## Nanostation (directionnelle)
+### Nanostation (directionnelle)
 
 [Ubiquiti](http://www.ubnt.ca), modèles [Nanostation M2](http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=115&category_id=35&option=com_virtuemart&Itemid=1) (2.4gHz) / M5 (5gHz).
 
@@ -67,23 +69,23 @@ Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une ant
  * fait pour couvrir des grandes zones (directionnelle a 60°)
  * power over ethernet
 
-# Cisco/Linksys WRT* (omni)
+## Cisco/Linksys WRT* (omni)
 
 Those devices are everywhere, but they are cheap and may not be worth it.
 
-## Pros
+### Pros
 
  * readily available
  * cheap
 
-## Cons
+### Cons
 
  * uses [RP-TNC](https://en.wikipedia.org/wiki/TNC_connector) (reverse-polarity) connectors so that regular antenna equipment cannot be used to amplify the signal
  * known to overheat
  * very low power (~28mW by default)
  * low bandwidth (~2mbps)
 
-# TP-Link (omni)
+## TP-Link (omni)
 
 Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND), "cheap and nice". :)
 Another model is being looked at a lot by Elektra (the BatWomen) with Village-Telco group. TL-WR703N... on peux l'obtenir pour +- 20$ (B/G/N)
@@ -117,9 +119,33 @@ insert image naked
 
 <http://www.ferra.ru/images/298/298975.jpg>
 
+# Antennas
 
+# Cables and connectors
 
+## CONNECTORS ON ROUTERS
 
+There are 3 types of connectors used :
+
+ 1. The [[RP-SMA|https://en.wikipedia.org/wiki/SMA_connector]] (reverse polarity SMA) is the connector used on most indoor units. It is small, inexpensive, but cannot accommodate large cable. [[https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gniazdo_RPSMA.jpg/200px-Gniazdo_RPSMA.jpg]]
+ 2. The N connector is mostly used in the professional field. It is robust, and suitable for outdoor use.
+ 3. The RP-TNC is in the middle and was mostly only used on the Linksys WRT-54G.
+
+To install connectors to cables, you need a crimper.  Very seldom solder is used, it often cause corrosion in harsh environments.
+
+> I have tools and connectors if you need them. (Richard)
+
+## CABLES
+ 
+Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
+The attenuation of signal in the cable is more significant at higher frequencies.
+Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
+These cables cannot be sharply bent or squeezed. We have to be careful using gun tackers on them.
+
+ 1. RG174U: this cable is the smallest we use. It has 2.5mm diameter and is used for very short distances. It's a high loss cable (1.4db/m at 2.4Ghz) so we use it where we need a short and flexible cable. It fits very well on the RP-SMA connector.
+ 2. RG58 (or LMR195 high quality) varies between 4.7mm and 5.4mm in diameter. It loses .8db/m at 2.4Ghz, so it is suitable for medium distances (up to 10 feet is ok)
+ 3. RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
+this cable is not flexible at all and can only accept N connectors size.
 
 # Other stuff
 
