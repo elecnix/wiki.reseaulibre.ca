@@ -176,7 +176,7 @@ It is somehow between the SMA and N connectors.
 
 It is most notably used on the Linksys WRT-54G devices, but pretty much *only* there.
 
-It is not recommended to use this cable for new projects unless really necessary, as it is non-standard and harder to find. 
+It is not recommended to use this connector for new projects unless really necessary, as it is non-standard and harder to find. 
 
 ...
 *****
