@@ -30,6 +30,45 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
     modprobe batman-adv
 
+### Sur OpenWRT
+
+Pas d'images pré-compilées? Peut-on installer en module dans OpenWRT standard? Le package n'est pas dispo:
+
+    ipkg update
+    ipkg install batman-adv
+
+Instructions génériques pour compiler OpwnWRT: http://wiki.openwrt.org/doc/howto/build
+
+http://www.open-mesh.org/wiki/batman-adv/Building-with-openwrt
+
+Il faut choisir un noyau 2.6 (PAS 2.4) dans 'make menuconfig'.
+
+[[Flasher|flashing]] le fichier '.trx' compilé dans le répertoire bin de OpenWRT.
+
+Connecter câble ethernet.
+
+    telnet 192.168.1.1
+    passwd
+
+Reboot
+
+Tester 'batctl', et vérifier que l'interface wifi existe: 'iw'.
+
+    iw phy phy0 interface add wlan0 type adhoc
+    iwconfig wlan0 mode adhoc essid mesh-mtl
+    ifconfig wlan0 mtu 1528 up
+    batctl if add wlan0
+    ifconfig bat0 up
+    batctl tcpdump wlan0
+
+### Sur DD-WRT
+
+todo
+
+### Sur AirOS (Ubiquiti)
+
+todo
+
 # Configuration de Batman
 
 Configurer l'interface réseau, il faut augmenter le MTU car les "packets" de Batman ajoutent des données aux frames ethernet:
@@ -83,52 +122,6 @@ En général, batman ou le mode ad-hoc affiche régulièrement des messages kern
 
     dmesg | tail
     tail -f /var/log/messages
-
-# Installation sur OpenWRT
-
-[DRAFT]
-
-
-Pas d'images pré-compilées? Peut-on installer en module dans OpenWRT standard? Le package n'est pas dispo:
-
-    ipkg update
-    ipkg install batman-adv
-
-## Compiler OpenWRT avec batman
-
-(!) On pourrait migrer ça dans la page [[flashing]]? Ça semble être commun à tous les modes...
-
-Instructions génériques pour compiler OpwnWRT: http://wiki.openwrt.org/doc/howto/build
-
-http://www.open-mesh.org/wiki/batman-adv/Building-with-openwrt
-
-Il faut choisir un noyau 2.6 (PAS 2.4) dans 'make menuconfig'.
-
-Flasher le fichier '.trx' compilé dans le répertoire bin de OpenWRT.
-
-Connecter câble ethernet.
-
-    telnet 192.168.1.1
-    passwd
-
-Reboot
-
-Tester 'batctl', et vérifier que l'interface wifi existe: 'iw'.
-
-    iw phy phy0 interface add wlan0 type adhoc
-    iwconfig wlan0 mode adhoc essid mesh-mtl
-    ifconfig wlan0 mtu 1528 up
-    batctl if add wlan0
-    ifconfig bat0 up
-    batctl tcpdump wlan0
-
-# Installation sur DD-WRT
-
-todo
-
-# Installation sur AirOS (Ubiquiti)
-
-todo
 
 # Références
 
