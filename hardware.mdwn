@@ -127,7 +127,7 @@ insert image naked
 
 There are 3 types of connectors used :
 
- 1. The [[RP-SMA|https://en.wikipedia.org/wiki/SMA_connector]] (reverse polarity SMA) is the connector used on most indoor units. It is small, inexpensive, but cannot accommodate large cable. [[https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gniazdo_RPSMA.jpg/200px-Gniazdo_RPSMA.jpg]]
+ 1. The [[RP-SMA|https://en.wikipedia.org/wiki/SMA_connector]] (reverse polarity SMA) is the connector used on most indoor units. It is small, inexpensive, but cannot accommodate large cable. [[200px-Gniazdo_RPSMA.jpg]]
  2. The N connector is mostly used in the professional field. It is robust, and suitable for outdoor use.
  3. The RP-TNC is in the middle and was mostly only used on the Linksys WRT-54G.
 
