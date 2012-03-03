@@ -55,7 +55,7 @@ This project is inspired, guided and sometimes in communication with the followi
 * <http://fabfi.fabfolk.com/> - Afghanistan et Kénia
 * <http://www.funkfeuer.at/> - Austria  developping OLSR
 * <http://buenosaireslibre.org/> - Buenos Aires, Argentine, un des plus importants réseaux libres en Amérique latine
-* <http://www.awmn.net/> - Athens Wireless Metropolitan Network, Grèce, [1500 batman nodes WiND map](http://wind.awmn.net/?page=nodes)
+* <http://www.awmn.net/> - Athens Wireless Metropolitan Network, Grèce, [1500 batman/olsr nodes WiND map](http://wind.awmn.net/?page=nodes)
 * <http://twmn.net/> - Thessaloniki's Wireless Metropolitan Network, Grèce [450 olsrd? nodes WiND map](http://wind.twmn.net/?page=nodes)
 
 
