@@ -159,9 +159,15 @@ It is specifically used for [[Cantennas|https://en.wikipedia.org/wiki/Cantenna]]
 [[!img RP-TNC-female.jpg align="left" size="100x"]]
 [[!img RP-TNC-male.jpg align="left" size="100x"]]
 
-The RP-TNC is a threaded version of the venerable BNC connector (used in older wired networks) and sits between the SMA and N connectors.
+The RP-TNC is a threaded version of the venerable BNC connector (used in older wired networks).
 
-It is most notably used on the Linksys WRT-54G devices.
+It is somehow between the SMA and N connectors.
+
+It is most notably used on the Linksys WRT-54G devices, but pretty much *only* there.
+
+It is not recommended to use this cable for new projects unless really necessary, as it is non-standard and harder to find. 
+
+...
 
 ## CABLES
  
