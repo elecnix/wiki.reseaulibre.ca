@@ -87,7 +87,12 @@ Those devices are everywhere, but they are cheap and may not be worth it.
 
 ## TP-Link (omni)
 
-Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND), "cheap and nice". :)
+## TL-WR1043ND
+
+Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND), "cheap and nice". :) 54$ at DirectCanada
+
+## TL-WR703N
+
 Another model is being looked at a lot by Elektra (the BatWomen) with Village-Telco group. TL-WR703N... on peux l'obtenir pour +- 20$ (B/G/N)
 I just setup one with open-wrt / luci
 
@@ -95,7 +100,7 @@ Here is a link for the first time flashing
 BEWARE: there are two versions of the firmware, one is used only once to go from original firmware to openwrt
 <http://wiki.villagetelco.org/index.php?title=Flashing_the_TL_WR703n_for_the_first_time>
 
-TL-MR3220
+## TL-MR3220
 
 A small router b/g/n with one chain, compatible with openwrt, very cheap 31.06$ at directcanada.
 
@@ -112,7 +117,7 @@ insert image naked
 <http://2.bp.blogspot.com/-eRqqW1mfuTc/Tgwx57oswcI/AAAAAAAAAG4/SR0Kw04D8uc/s1600/IMG_20110628_172208.jpg>
 
 
-TL-MR3420
+## TL-MR3420
 
 Same as above with 2 chain (more speed) and 40.77$ at directcanada
 Comes with 2 3dbi omni antennas
