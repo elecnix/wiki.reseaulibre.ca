@@ -11,13 +11,15 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 ## Installer les logiciels nécessaires
 
+ATTENTION: toutes les nodes doivent utiliser la même version de batman-adv. Par conséquent, il faut la dernière version du module (2012.0) pour votre noyau Linux.
+
 ### Sur Debian
 
 Sous Debian/Ubuntu, installer le package Debian pour batctl (gestion des configurations)
 
     sudo apt-get install batctl
 
-Idéalement il faut aussi un noyau Linux qui est à jour. Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2011.0.0 ou 2012.0.0.
+Idéalement il faut aussi un noyau Linux qui est à jour. Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2012.0.0.
 Par exemple:
 
     uname -a
