@@ -61,6 +61,8 @@ Configurer le réseau [[ad-hoc]]:
 
 ... faire le reste de la configuration plus bas.
 
+TODO: Utiliser UCI (Unified Configuration Interface) pour que la configuration se conserve après un reboot. http://wiki.openwrt.org/doc/uci
+
 ### Sur DD-WRT
 
 todo
