@@ -15,7 +15,7 @@ Use this page to document potential utilizations. The goal is to answer "what wi
 * Faire du VOIP (avec d'autres gens du mesh)
 * Créer "hotspot" sur la ville de Montréal. Partager ses bon coups, endroits intéressants à ne pas manquer. Une sorte de mesh *plusvalue* touristique.
 * Déploiement de IPv6 (partage de connaissances, popularisation)
-* Installation d'un réseau de stations météorologiques, de surveillance de la qualité de l'air, pour par exemple analyser les ilôts de chaleur.
+* Installation d'un réseau de stations météorologiques, de surveillance de la qualité de l'air, pour par exemple analyser les ilôts de chaleur. Avec [[sonde de température USB|http://www.amazon.com/Powered-Thermometer-Temperature-Sensor-Data/dp/B0054U4YKI/ref=pd_cp_e_0]]?
 * Mesh-local Big Data processing: certains calculs distribués nécessitent une bande-passante plutôt élevée, comme la génération de tuiles pour OpenStreetMap.
 * Réseau de caméras de surveillance d'endroits publics, comme les parcs de quartier.
 * Sauvegarde de fichiers entre voisins (i.e. prêter un disque au voisins et y envoyer des sauvegardes encryptées)
