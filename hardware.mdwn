@@ -4,7 +4,7 @@ Les antennes à utiliser sont préférablement omnidirectionnelles, pour communi
 
 Le matériel préconisé consiste en une antenne fixée directement sur un routeur, car cela diminue les pertes de puissances et le bruit de réception. C'est aussi généralement la solution la moins onéreuse.
 
-Il est possible d'utiliser un routeur de maison, et de le laisser à l'intérieur. La portée de ce noeud sera cependant limitée à quelques appartements. On peut placer ces routeurs dans des boîtes à l'extérieur de la maison si on a une âme de bricoleur.
+Il est possible d'utiliser un routeur de maison, et de le laisser à l'intérieur. La portée de ce noeud sera cependant limitée à quelques appartements. On peut placer ces routeurs dans des boîtes à l'extérieur de la maison si on a une âme de bricoleur. Certains routeurs ont une antenne interne, et il est possible de leur en souder une.
 
 Il existe des routeurs d'extérieur très bon marché, simples, flexibles, puissants et durables, pour moins de 100$, que ce soit en omnidirectionnel ou en directionnel.
 
@@ -100,6 +100,8 @@ I just setup one with open-wrt / luci
 Here is a link for the first time flashing
 BEWARE: there are two versions of the firmware, one is used only once to go from original firmware to openwrt
 <http://wiki.villagetelco.org/index.php?title=Flashing_the_TL_WR703n_for_the_first_time>
+
+L'antenne est interne, mais il est peut-être possible de souder une antenne, avec une méthode semblable à ici: http://www.nathanlipscy.com/wireless_usb_hack/
 
 ### TL-MR3220
 
