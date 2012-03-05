@@ -9,7 +9,7 @@ Relationship between Watts and dBm
  * Therefore, everytime the power doubles, we add 3 dBm
  * By convention in wifi, the reference power at 0dBm is 1 mW (0dBm = 1mW)
 
-Maximum transmitter power versus largest antenna table for PTMP:
+Maximum transmitter power versus largest antenna table for PTMP (Point To MultiPoint):
       
      Radio Power            Antenna gain        EIRP in watts
 
