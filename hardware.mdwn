@@ -201,6 +201,9 @@ this cable is not flexible at all and can only accept N connectors size.
 
 ## POE
 
+* [[Glen Pitt-Pladdy's Passive PoE DIY|http://www.pitt-pladdy.com/blog/_20100530-083726_0100_DIY_Passive_PoE/]]
+* [[How to Make a Power Over Ethernet (PoE) Adapter|http://tech2.in.com/how-to/wifi-routers/how-to-make-a-power-over-ethernet-poe-adapter/223062]]
+
 ## Links
 
 * <http://wiki.daviddarts.com/PirateBox_DIY>
