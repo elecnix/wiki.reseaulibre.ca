@@ -480,3 +480,12 @@ See [[hardware]].
 Calculating RF links
 ====================
 *****
+A good place to learn about it is :
+
+<http://www.radiolabs.com/stations/wifi_calc.html>
+
+Also there is a great freeware developed here called Radio Mobile
+It works with land maps and calculate propagation in 3D
+The defacto reference in ham and wireless networking
+
+<http://www.cplus.org/rmw/rme.html>
