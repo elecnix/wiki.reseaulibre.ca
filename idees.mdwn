@@ -4,6 +4,7 @@ Utilisez cette page pour documenter les utilisations potentielles. Le but de cet
 
 Use this page to document potential utilizations. The goal is to answer "what will I be able to do with the MESH?".
 
+* Accéder à son ordinateur à la maison sans être limité par la vitesse d'upload d'une DSL ou du câble.
 * Partager des fichiers sur nos intérêts envers les films et la musique de façon anonyme
 * Partager des fichiers de notre création
 * Partager des torrents (légaux)
@@ -14,3 +15,6 @@ Use this page to document potential utilizations. The goal is to answer "what wi
 * Faire du VOIP (avec d'autres gens du mesh)
 * Créer "hotspot" sur la ville de Montréal. Partager ses bon coups, endroits intéressants à ne pas manquer. Une sorte de mesh *plusvalue* touristique.
 * Déploiement de IPv6 (partage de connaissances, popularisation)
+* Installation d'un réseau de stations météorologiques, de surveillance de la qualité de l'air, pour par exemple analyser les ilôts de chaleur.
+* Mesh-local Big Data processing: certains calculs distribués nécessitent une bande-passante plutôt élevée, comme la génération de tuiles pour OpenStreetMap.
+* Réseau de caméras de surveillance d'endroits publics, comme les parcs de quartier.
