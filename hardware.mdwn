@@ -101,7 +101,7 @@ Here is a link for the first time flashing
 BEWARE: there are two versions of the firmware, one is used only once to go from original firmware to openwrt
 <http://wiki.villagetelco.org/index.php?title=Flashing_the_TL_WR703n_for_the_first_time>
 
-Le 703N a un port USB, ce qui permet d'y ajouter un adapteur USB possédant une antenne détachable, comme le TL-WN422G ([[12.69$ chez hookbag.ca|http://www.hookbag.ca/product/H3C06HZHQ/]] et [[15$ chez newegg.ca|http://www.newegg.ca/Product/Product.aspx?Item=N82E16833704046&Tpk=WN422G]]). L'avantage de cette option, c'est que le routeur pourra fonctionner avec les deux antennes simultanément; l'antenne interne pourra être configuré en Access Point, et l'antenne externe communiquera avec les autres noeuds.
+Le 703N a un port USB, ce qui permet d'y ajouter un adapteur USB possédant une antenne détachable, comme le TL-WN422G ([[12.69$ chez hookbag.ca|http://www.hookbag.ca/product/H3C06HZHQ/]] et [[15$ chez newegg.ca|http://www.newegg.ca/Product/Product.aspx?Item=N82E16833704046&Tpk=WN422G]], et [[18$ chez Addison|http://www.addison-electronique.com/pdf/catalog_pdf/130000-N-INFORMATIQUE.pdf]]). L'avantage de cette option, c'est que le routeur pourra fonctionner avec les deux antennes simultanément; l'antenne interne pourra être configuré en Access Point, et l'antenne externe communiquera avec les autres noeuds.
 
 Il est peut-être possible de [[souder une antenne|http://www.nathanlipscy.com/wireless_usb_hack/]].
 
