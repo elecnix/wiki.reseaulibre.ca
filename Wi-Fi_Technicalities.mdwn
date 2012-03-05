@@ -485,6 +485,7 @@ A good place to learn about it is :
 <http://www.radiolabs.com/stations/wifi_calc.html>
 
 Also there is a great freeware developed here called Radio Mobile
+Developped by Roger Coudé, VE2DBE
 It works with land maps and calculate propagation in 3D
 The defacto reference in ham and wireless networking
 
