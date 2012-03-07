@@ -12,7 +12,7 @@ Planned node on top of long pole attached to balcony on 4th floor.
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth: Omnidirectional 9 dBi antenna
- * Panorama:
+ * Panorama: Est (nuit) http://minus.com/mHBBh4XNM
  * Operator: [[users/elecnix]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
