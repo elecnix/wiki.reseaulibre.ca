@@ -23,6 +23,11 @@ Une présentation sur les antennes et les ondes radios a été faite par Richard
 
 On a mentionné le wiki, et il a été demandé comment on pouvait pousser les changements effectués par git. Pour l'instant on demande d'envoyer les changements par courriel à anarcat, voir aussi [[meta/replication]].
 
-3 laptops ont été configurés avec [[configuration/batman]], sur Debian, Ubuntu et Arch Linux. Ils ont réussi à créer un réseau ad-hoc Layer 2 qui a résisté au test de distance, où le laptop entre les deux autres s'est mis à servir d'intermédiaire, les deux distants étant hors de portée. De la documentation sur la configuration a été ajoutée à la page [[configuration/batman]].
+3 laptops ont été configurés avec [[configuration/batman]], sur Debian, Ubuntu et Arch Linux. Ils ont réussi à créer un réseau ad-hoc Layer 2 qui a résisté au test de distance, où le laptop entre les deux autres s'est mis à servir d'intermédiaire, les deux distants étant hors de portée. De la documentation sur la configuration a été ajoutée à la page [[configuration/batman]], voici la trace:
+
+    [root@eeepc101 fredyrouge]# batctl traceroute  08:11:96:3e:ab:d0
+    traceroute to 08:11:96:3e:ab:d0 (08:11:96:3e:ab:d0), 50 hops max, 20 byte packets
+     1: 00:0c:f1:4e:ed:e2  5.365 ms  25.379 ms  3.499 ms
+     2: 08:11:96:3e:ab:d0  4.139 ms  6.459 ms  3.227 ms
 
 Des tests ont été faits avec [[configuration/olsrd]] mais un mesh n'a pu être créé. Le problème est que les IPs sont toutes dans le même réseau et OLSR n'ajoute pas des routes pour les adresses, car elles sont dans le réseau local, alors les machines utilisent des requêtes ARP pour trouver les hosts voisins au lieu de router leur paquets. Voir [[configuration/olsrd]] pour les notes sur l'expérience #2.
