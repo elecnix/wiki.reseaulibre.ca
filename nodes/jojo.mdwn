@@ -15,6 +15,14 @@ Planned node on top of long pole attached to balcony on 4th floor.
  * Panorama: Est (nuit) http://minus.com/mHBBh4XNM
  * Operator: [[users/elecnix]]
 
+Liens possibles
+
+ * [[nodes/gboudrias]] 680 m
+ * [[nodes/benoitg]] 825 m
+ * [[nodes/genb]] 1,16 km
+ * [[nodes/ouaibe]] 1,24 km
+
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
