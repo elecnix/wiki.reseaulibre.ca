@@ -12,7 +12,7 @@ Un noeud planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne.
  * Status: [[!taglink planned]]
  * Links: N/A
  * Azimuth: Sud-Ouest
- * Panorama: N/A
+ * Panorama: 
  * Operator: [[users/elecnix]]
 
 Liens possibles
@@ -29,3 +29,6 @@ any later version published by the Free Software Foundation; with no Invariant
 Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
+
+
+[[!img 2012-03-07_Panorama_nord.jpg align="right" size="" alt=""]]
