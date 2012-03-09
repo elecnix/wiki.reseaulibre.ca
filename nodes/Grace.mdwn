@@ -1,19 +1,24 @@
-[[!waypoint lat="45.52901" lon="-73.6004" embed hidden width="400px" height="400px" right desc="Planifié au 2e étage, orienté vers l'ouest"]]
+[[!waypoint lat="45.52901" lon="-73.6004" embed hidden width="400px" height="400px" right desc="Planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne"]]
 
-Un noeud planifié dans une fenêtre du 2e étage. Possibilité d'accès à une fenêtre du 3e étage ou au toit (bonne vue nord et ouest).
+Un noeud planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne.
 
  * MAC address: N/A
  * IP address: N/A
  * IPv6 address: N/A
- * Software: N/A
- * Hardware: N/A
+ * Software: OpenWRT
+ * Hardware: Ubiquiti Bullet M2HP
  * Power: N/A
- * Location: Fenêtre?
+ * Location: Pignon du toit, près du viaduc
  * Status: [[!taglink planned]]
  * Links: N/A
  * Azimuth: Sud-Ouest
  * Panorama: N/A
  * Operator: [[users/elecnix]]
+
+Liens possibles
+
+ * [[nodes/anarcat]] 490 m
+ * [[nodes/midnight]] 1,24 km
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
