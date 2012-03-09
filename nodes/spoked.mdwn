@@ -10,8 +10,8 @@ Node planifiee pour cet ete. Acces au toit, le range devrait etre bon si je peux
  * Hardware:
  * Power:
  * Location:45.5352,-73.584
- * Status: [[!taglink planned]] (can also be up, down, unknown)
- * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+ * Status: [[!taglink planned]]
+ * Links: 
  * Azimuth:
  * Panorama:
  * Operator: [[users/spoked]]
