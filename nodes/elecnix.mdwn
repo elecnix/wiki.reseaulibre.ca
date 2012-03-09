@@ -17,6 +17,10 @@ Un noeud à l'extérieur de ma fenêtre, actuellement à puissance minimale vers
  * Operator: [[users/elecnix]]
  * Links: [[besik]] ([[links/elecnix-besik/]])
 
+Autres liens possibles
+
+ * [[nodes/jojo]]: 2,8 km
+
 Pour me contacter, utiliser le courriel marchildon.net retourné par: 
 
     gpg --recv-keys 5E8410890036BB636997232C8FFB777D39D4B2D4
