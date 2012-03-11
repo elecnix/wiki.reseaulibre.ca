@@ -142,23 +142,32 @@ insert image naked
 
 La plupart des antennes et des routeurs/antennes sont munies de fixation pour tuyau de 1" à 2".
 Sur le toit, si la hauteur est suffisante. on peux installer un support en "J" qu'on utilise pour les antennes satellites.
+
 <http://www.streakwave.com/mmSWAVE1/Images/SMMB250.jpg>
+
 Ce type de support peux être facilement vissé sur une cheminée ou sur le rebord d'un toit.
 On peux même utiliser une installation déjà en place :) .
 
 Si on a accès à la cheminée et qu'on désire plus d'élévation, on peux installer un tuyau de 10' sans trop de problème.
 Il existe des supports qu'on fixe à la cheninée ou au mur.
+
 <http://www.streakwave.com/mmSWAVE1/Images/SW-WM12D50x50.jpg>
 
 Si on a pas accès à la cheminée, on doit se gosser un support qui se dépose sur le toit.
+
 <http://www.streakwave.com/mmSWAVE1/Images/FRM50x50.jpg>
+
 Celui-ci est tenu en place avec des dales de béton pour patio.
 On le dépose sur un toile de caoutchouc.
+
 <http://www.streakwave.com/mmSWAVE1/Images/99281_50x50.jpg>
+
 Celui-ci est plus complexe à gosser.
 
 Pour les toits en pente, c'est plus compliqué.
+
 <http://www.streakwave.com/mmSWAVE1/Images/pen_rf_mnt50x50.jpg>
+
 
 ******
 Câblage
