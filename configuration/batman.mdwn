@@ -34,34 +34,123 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
 ### Sur OpenWRT
 
-Pas d'images pré-compilées? Peut-on installer en module dans OpenWRT standard? Le package n'est pas dispo:
+Il y a un paquet nommé kmod-batman-adv pour OpenWRT. Dans la version stable de OpenWRT ('backfire'), on retrouve une ancienne version de batman: 2011.2.0. Les noeuds de Montréal sont installés avec la version 2012.0.0 de batman. Il faut donc installer la version 'trunk' de OpenWRT. Il existe heureusement des [[images trunk pré-compilées|http://downloads.openwrt.org/snapshots/trunk/]] pour chaque matériel supporté.
 
-    ipkg update
-    ipkg install batman-adv
+Il est aussi possible de [[compiler soi-même OpenWRT|http://wiki.openwrt.org/doc/howto/build]] et [[compiler batman en même temps|http://www.open-mesh.org/wiki/batman-adv/Building-with-openwrt]].
 
-Instructions génériques pour compiler OpwnWRT: http://wiki.openwrt.org/doc/howto/build
+Dans les deux cas, une fois l'image obtenue, vous devez "[[flasher|flashing]]" votre routeur.
 
-http://www.open-mesh.org/wiki/batman-adv/Building-with-openwrt
 
-Il faut choisir un noyau 2.6 (PAS 2.4) dans 'make menuconfig'.
-
-[[Flasher|flashing]] le fichier '.trx' compilé dans le répertoire bin de OpenWRT.
-
-Connecter câble ethernet.
+Connect a cable from the LAN to your PC.
+Set your PC to get an IP address automatically.
+Get into the router with its default IP address.
 
     telnet 192.168.1.1
-    passwd
 
-Reboot
+Configure the router LAN interface to match the network
+of the home router this will be plugged into eventually.
 
-Configurer le réseau [[ad-hoc]]:
+    uci set network.lan.ipaddr=192.168.3.88
+    uci set network.lan.gateway=192.168.3.1
+    uci set network.lan.dns=192.168.3.1
 
-    iw phy phy0 interface add wlan0 type adhoc
-    iwconfig wlan0 mode adhoc essid mesh-mtl
+Disable DHCP server on LAN, so as to not interfere with home router.
 
-... faire le reste de la configuration plus bas.
+    uci set dhcp.lan.ignore=1
 
-TODO: Utiliser UCI (Unified Configuration Interface) pour que la configuration se conserve après un reboot. http://wiki.openwrt.org/doc/uci Exemple avec Batman: http://pizza.hskflashcards.com/index.php?page=B.A.T.M.A.N.+Advanced+on+OpenWrt+How-To
+    uci commit
+    reboot & exit
+
+> Note: only restarting network will not update the DHCP server.
+
+Disconnect the PC from the router and now connect both the
+PC and the mesh router to the home router.
+Re-connect to the router using its new IP address.
+
+    telnet 192.168.3.88
+
+Install B.A.T.M.A.N (the home router provides access to internet)
+
+    opkg update
+    opkg install kmod-batman-adv
+
+> Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire). Il faut trouver l'URL du paquet et faire quelque chose comme:
+
+    cd /tmp
+    touch /tmp/opkg.conf
+    opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.9-1_brcm47xx.ipk \
+        http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.9+2012.0.0-1_brcm47xx.ipk
+
+Le module `batman_adv` devrait maintenant être chargé:
+
+    lsmod | grep batman
+
+You should see: batctl 2012.0.0
+
+    batctl -v
+
+Activer la radio
+
+    uci delete wireless.radio0.disabled
+
+Verify that the wifi interface is listed. If not, you
+must have flashed the wrong image!
+
+    /etc/init.d/network restart
+    iwconfig
+
+Wifi network no longer 'lan'
+
+    uci delete wireless.@wifi-iface[0].network
+
+Montreal mesh standards: channel 1, adhoc, named mesh-mtl
+
+    uci set wireless.radio0.channel=1
+    uci set wireless.@wifi-iface[0].mode=adhoc
+    uci set wireless.@wifi-iface[0].ssid=mesh-mtl
+
+Le MTU du LAN est standard:
+
+    uci set network.lan.mtu=1500
+
+Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
+
+    uci set network.wlan0=interface
+    uci set network.wlan0.ifname=wlan0
+    uci set network.wlan0.proto=none
+    uci set network.wlan0.mtu=1527
+
+Configuration de l'interface de batman. Ici, `192.168.8.100` a été choisi alléatoirement.
+
+    uci set network.bat0=interface
+    uci set network.bat0.ifname=bat0
+    uci set network.bat0.proto=none
+    uci set network.bat0.mtu=1500
+
+    uci set network.bat0.ipaddr=192.168.8.100
+
+> NOTE: What static IPv4 network do we standardize on?
+
+The 'lan' bridge should include bat0
+
+    uci set network.lan.ifname="eth0.0 bat0"
+
+> NOTE: Do we really want to bridge the mesh with the LAN?
+Won't that generate too much traffic if the packets
+received on the LAN are broadcasted in the mesh?
+
+Tell batman to use the wireless and the lan interfaces.
+
+    uci set batman-adv.bat0.interfaces="wlan0 br-lan"
+
+You're done! Commit the changes and reboot to test them.
+
+    uci commit
+    reboot & exit
+
+After a reboot, you should see `wlan0: active` with this:
+
+    batctl if
 
 ### Sur DD-WRT
 
