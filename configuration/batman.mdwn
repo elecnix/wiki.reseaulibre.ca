@@ -32,6 +32,12 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
     modprobe batman-adv
 
+### Sur Archlinux
+On besoin de l'[[AUR | https://aur.archlinux.org/]]
+
+    # modprobe batman_adv
+    $ yaourt -S batctl
+
 ### Sur OpenWRT
 
 Il y a un paquet nommé kmod-batman-adv pour OpenWRT. Dans la version stable de OpenWRT ('backfire'), on retrouve une ancienne version de batman: 2011.2.0. Les noeuds de Montréal sont installés avec la version 2012.0.0 de batman. Il faut donc installer la version 'trunk' de OpenWRT. Il existe heureusement des [[images trunk pré-compilées|http://downloads.openwrt.org/snapshots/trunk/]] pour chaque matériel supporté.
