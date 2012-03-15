@@ -1,0 +1,16 @@
+[[!waypoint lat="45.457746" lon="-73.564563" embed hidden width="400px" height="400px" right desc="A node"]]
+
+Possibilité de poser une antenne (3e étage). Je renommerai quand la personne m'aura confirmé. -bgm.
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware:
+ * Power:
+ * Location:
+ * Status: [[!taglink planned]]
+ * Links:
+ * Azimuth:
+ * Panorama:
+ * Operator: [[users/bgm]]
