@@ -118,7 +118,7 @@ Wifi network no longer 'lan'
 
     uci delete wireless.@wifi-iface[0].network
 
-Montreal mesh standards: channel 1, adhoc, named mesh-mtl
+Montreal mesh standards: channel 1, adhoc, named mesh-mtl. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
 
     uci set wireless.radio0.channel=1
     uci set wireless.@wifi-iface[0].mode=adhoc
