@@ -21,3 +21,4 @@ Use this page to document potential utilizations. The goal is to answer "what wi
 * Réseau de caméras de surveillance d'endroits publics, comme les parcs de quartier.
 * Sauvegarde de fichiers entre voisins (i.e. prêter un disque au voisins et y envoyer des sauvegardes encryptées)
 * Réseau de payement [[BitCoin | http://bitcoin.org/]]
+* Faire de l'exercise en installant des antennes !!
