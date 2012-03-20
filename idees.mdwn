@@ -7,6 +7,7 @@ Use this page to document potential utilizations. The goal is to answer "what wi
 * Accéder à son ordinateur à la maison sans être limité par la vitesse d'upload d'une DSL ou du câble.
 * Partager des fichiers sur nos intérêts envers les films et la musique de façon anonyme
 * Partager des fichiers de notre création
+* Sites miroir (Linux, open source, etc.)
 * Partager des torrents (légaux)
 * Avoir un forum (ou un chat IRC) qui répondrait aux questions et besoins des utilisateurs du mesh (pour tous champs d'intérêts)
 * Faire la promotion de services (aspect professionnel)
