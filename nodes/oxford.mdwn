@@ -7,7 +7,7 @@ Always on the TOP !!
  * IPv6 address:
  * Software:
  * Hardware:
- * Power:
+ * Power:..to the people !!
  * Location: 45.470313,-73.612186
  * Status:[[!taglink planned]] (can also be up, down, unknown)
  * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
