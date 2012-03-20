@@ -123,6 +123,7 @@ Montreal mesh standards: channel 1, adhoc, named mesh-mtl
     uci set wireless.radio0.channel=1
     uci set wireless.@wifi-iface[0].mode=adhoc
     uci set wireless.@wifi-iface[0].ssid=mesh-mtl
+    uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
 
 Le MTU du LAN est standard:
 
