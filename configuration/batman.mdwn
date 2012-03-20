@@ -32,6 +32,14 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
     modprobe batman-adv
 
+Configurer l'interface réseau, il faut augmenter le MTU car les "packets" de Batman ajoutent des données aux frames ethernet:
+
+    ifconfig wlan0 mtu 1528 up
+
+Ajouter l'interface à Batman:
+
+    batctl if add wlan0
+
 ### Sur Archlinux
 On besoin de l'[[AUR | https://aur.archlinux.org/]]
 
@@ -64,6 +72,12 @@ Disable DHCP server on LAN, so as to not interfere with home router.
 
     uci set dhcp.lan.ignore=1
 
+Activer la radio
+
+    uci delete wireless.radio0.disabled
+
+Écrire les changements et redémarrer
+
     uci commit
     reboot & exit
 
@@ -95,14 +109,9 @@ You should see: batctl 2012.0.0
 
     batctl -v
 
-Activer la radio
+We have enabled wireless previously. Now, verify that the wifi interface
+is listed. If not, you must have flashed the wrong image!
 
-    uci delete wireless.radio0.disabled
-
-Verify that the wifi interface is listed. If not, you
-must have flashed the wrong image!
-
-    /etc/init.d/network restart
     iwconfig
 
 Wifi network no longer 'lan'
@@ -167,14 +176,6 @@ todo
 todo
 
 # Configuration de Batman
-
-Configurer l'interface réseau, il faut augmenter le MTU car les "packets" de Batman ajoutent des données aux frames ethernet:
-
-    ifconfig wlan0 mtu 1528 up
-
-Ajouter l'interface à Batman:
-
-    batctl if add wlan0
 
 Afficher l'état:
 
