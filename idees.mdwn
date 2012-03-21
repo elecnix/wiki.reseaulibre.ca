@@ -14,6 +14,7 @@ Use this page to document potential utilizations. The goal is to answer "what wi
 * Avoir accès à Internet (si possible?)
 * Publier des pages web (serveurs HTML etc.)
 * Faire du VOIP (avec d'autres gens du mesh)
+* [[Communications en cas de sinistre|http://villagetelco.org/2011/11/guest-post-adapting-mps-for-emergency-work/]] (naturel, politique, économique)
 * Créer "hotspot" sur la ville de Montréal. Partager ses bon coups, endroits intéressants à ne pas manquer. Une sorte de mesh *plusvalue* touristique.
 * Déploiement de IPv6 (partage de connaissances, popularisation)
 * Installation d'un réseau de stations météorologiques, de surveillance de la qualité de l'air, pour par exemple analyser les ilôts de chaleur. Avec [[sonde de température USB|http://www.amazon.com/Powered-Thermometer-Temperature-Sensor-Data/dp/B0054U4YKI/ref=pd_cp_e_0]]?
