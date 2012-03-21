@@ -134,7 +134,7 @@ Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
     uci set network.wlan0=interface
     uci set network.wlan0.ifname=wlan0
     uci set network.wlan0.proto=none
-    uci set network.wlan0.mtu=1527
+    uci set network.wlan0.mtu=1528
 
 Configuration de l'interface de batman. Ici, `192.168.8.100` a été choisi alléatoirement.
 

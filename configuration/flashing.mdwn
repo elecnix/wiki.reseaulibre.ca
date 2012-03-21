@@ -16,6 +16,14 @@ site, each device page will list which firmware you should use.
 
 (!) Note: Si vous avez des problèmes inhabituel, essayez une autre version du bon firmware http://downloads.openwrt.org/backfire/
 
+Right after flashing, to ensure that tftp is available in case your router gets bricked, type these commands out in telnet/ssh:
+
+    nvram set boot_wait=on
+    nvram set boot_time=10
+    nvram commit && reboot
+    
+(!) Note: On WRT54GL (at least), you should probably use 'wait_time' instead of 'boot_time'.
+
 # Flashing methods
 
 ## Web interface
@@ -87,7 +95,7 @@ If you are lucky enough to have a [[OpenWRT]] device, you may be able
 to reset the password using this simpler procedure:
 
 1. Unplug the router's power cord.
-2. Connect the router's LAN1 port directly to your PC.
+2. Connect the router's WAN port directly to your PC.
 3. Configure your PC with a static IP address
 
         ifconfig eth0:flash 192.168.1.2
@@ -98,7 +106,7 @@ to reset the password using this simpler procedure:
 If done right the DMZ LED will quickly flash 3 times every second.
 
 You should be able to telnet to the router at 192.168.1.1 now (no
-username and password)
+username and password).
 
 ### Simple tips to recover the router in failsafe mode
 
