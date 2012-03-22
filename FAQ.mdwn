@@ -7,6 +7,7 @@ Comment je peux m'impliquer?
  * Configurez votre propre [[node|nodes]] et ajoutez-le à la [[carte|map]] (en créant une sous-page de [[nodes]])
  * Participez aux [[réunions|meetings]] de travail. Ils sont annoncés sur la liste de discussion.
  * Améliorez la [[documentation|configuration]]
+ * Joignez-nous sur irc.freenode.net #mesh-mtl
 
 Pourquoi un mesh?
 ============================
