@@ -30,6 +30,7 @@ This is a wiki, so we expect node operators to share their best practices here a
 We need volunteers! On parle français aussi!
 
 * [[Mailing list|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]] - mailing list de discussion de nodes enregistrés, destinée aux bénévoles - avant de demander sur la liste, voir la [[FAQ|foire aux questions]]
+* IRC chat: [[#mesh-mtl|http://webchat.freenode.net/?channels=mesh-mtl]] on freenode.net
 * [[Volunteers]] - register here and tell us what you can do
 * [[Todo]] - the tasks on hand
 * [[FAQ]] - frequently asked questions
