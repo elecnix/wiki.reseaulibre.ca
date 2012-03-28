@@ -1,4 +1,4 @@
-[[!waypoint lat="45.54155" lon="-73.60750" embed hidden width="400px" height="400px" right desc="À venir sur mon toit"]]
+[[waypoint lat="45.52392" lon="-73.58337" embed hidden width="400px" height="400px" right desc="À venir sur mon toit"]]
 
 Bientôt en ligne et bientôt déménagée.
 
@@ -8,7 +8,7 @@ Bientôt en ligne et bientôt déménagée.
  * Software:
  * Hardware: NanoStation M2
  * Power:
- * Location: 
+ * Location: 45.52392, -73.58337
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth:
