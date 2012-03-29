@@ -39,7 +39,28 @@ We need volunteers! On parle français aussi!
 
 ## Prochaine rencontre
 
-À déterminer!
+Montage d'antennes sur les liens suivants:
+
+ * [[nodes/grace]] - [[nodes/anarcat]] (500m)
+ * [[nodes/benoitg]] - [[nodes/jojo]] (800m)
+ * [[nodes/jojo]] - [[nodes/genb]]?
+ * [[nodes/genb]] - [[nodes/anarcat]]??
+
+Voir [[le doodle|http://www.doodle.com/ei7pyddk9wgerek8]] pour plus d'infos sur la date.
+
+Matériel:
+
+ * 2 bullet MP2 avec des omnis (richard)
+ * des nanostations M2 (XXX: combien?) (richard)
+ * un tplink mr3220 (richard)
+ * une radio CB / HAM (anarcat)
+
+Manque:
+
+ * câble réseau étanche (pour plugger mon toit - anarcat)
+ * une autre radio (pour parler librement - xsmurf?)
+ 
+
 
 ## Toutes les rencontres
 
