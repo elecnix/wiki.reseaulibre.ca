@@ -108,6 +108,10 @@ Développé par Wlan Slovenija:  Générateur de firmware openwrt + OLSR, pas ma
 
  * <http://dev.wlan-si.net/wiki/Nodewatcher>
 
+# References
+
+* [[The mesh guide from Battelmesh v4|http://battlemesh.org/BattleMeshV4/MeshGuide]]
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
