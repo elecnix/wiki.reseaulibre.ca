@@ -6,8 +6,8 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 # Prérequis
 
- 1. Configuration du mode [[ad-hoc]]
- 2. [[Flashing]] de votre routeur
+ 1. [[Flashing]] de votre routeur
+ 2. Configuration du mode [[ad-hoc]]
 
 ## Installer les logiciels nécessaires
 
