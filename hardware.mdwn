@@ -256,6 +256,7 @@ this cable is not flexible at all and can only accept N connectors size.
 
 * <http://wiki.daviddarts.com/PirateBox_DIY>
 * The Fun cube dongle can be useful for debugging
+* [[The mesh guide from Battelmesh v4|http://battlemesh.org/BattleMeshV4/MeshGuide]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
