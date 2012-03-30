@@ -1,4 +1,4 @@
-== Detection of original firmware ==
+# Detection of original firmware
 
     $ sudo nmap -P0 -O 192.168.0.1
     
