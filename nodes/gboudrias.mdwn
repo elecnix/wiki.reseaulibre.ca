@@ -1,4 +1,4 @@
-[[!waypoint lat="45.58349" lon="-73.52486" embed hidden width="400px" height="400px" right desc="À venir sur mon toit"]]
+[[!waypoint lat="45.52486" lon="-73.58349" embed hidden width="400px" height="400px" right desc="À venir sur mon toit"]]
 
 Bientôt en ligne et bientôt déménagée.
 
