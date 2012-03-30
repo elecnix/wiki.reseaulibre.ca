@@ -133,6 +133,11 @@ Connectors are on a cable to the pcb so easy to relocate
 insert image naked
 
 <http://www.ferra.ru/images/298/298975.jpg>
+
+## Bococom
+
+[[Bococom-DWR150]]
+
 *****
 # Antennes
 *****
