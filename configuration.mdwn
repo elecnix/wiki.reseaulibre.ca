@@ -9,11 +9,11 @@ the mesh.
 
 Those instructions attempt to be platform-independent or at least cover multiple platforms. This 4 step process should get you on the mesh, with full internet access if you are so privileged.
 
-1. [[configuration/flashing]] - flashing your device with the proper firmware (optional - if you already have the software on your machine, just go to step 2)
-2. [[configuration/ad-hoc]] - basic point to point configuration
-3. [[configuration/olsrd]] or [[batman]] - configuring mesh software for interconnexion
-4. [[configuration/ip]] - [[adress allocation]] on the network
-4. [[configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
+1. [[!traillink configuration/flashing]] - flashing your device with the proper firmware (optional - if you already have the software on your machine, just go to step 2)
+2. [[!traillink configuration/ad-hoc]] - basic point to point configuration
+3. [[!traillink configuration/olsrd]] or [[batman]] - configuring mesh software for interconnexion
+4. [[!traillink configuration/ip]] - [[adress allocation]] on the network
+4. [[!traillink configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
 
 ## Specific instructions
 
