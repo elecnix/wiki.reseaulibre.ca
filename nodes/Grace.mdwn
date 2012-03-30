@@ -12,7 +12,9 @@ Un noeud planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne.
  * Status: [[!taglink planned]]
  * Links: N/A
  * Azimuth: Sud-Ouest
- * Panorama: http://i.minus.com/dhwSidp3qNQt3.jpg (nord, 20 pieds sous l'antenne)
+ * Panorama:
+  * http://i.minus.com/dhwSidp3qNQt3.jpg (nord, 20 pieds sous l'antenne)
+  * Visibility map: http://www.heywhatsthat.com/?view=OTADQR0J
  * Operator: [[users/elecnix]]
 
 Liens possibles
