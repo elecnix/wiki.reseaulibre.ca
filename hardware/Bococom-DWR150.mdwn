@@ -1,3 +1,7 @@
+# Unboxing
+
+See pictures: http://www.flickr.com/photos/elecnix/sets/72157629696033799
+
 # Detection of original firmware
 
     $ sudo nmap -P0 -O 192.168.0.1
@@ -99,5 +103,3 @@ http://www.bococom.com/product.asp?ProdNum=134&zid=200909221828087028825
 There is no software available for download for this router on the Brococom web site:
 
 http://www.bococom.com/download.asp?type=DWR150
-
-
