@@ -6,7 +6,7 @@ The goal of this project is to create a community wireless network accessible fr
 
 # The map!
 
-The [[map]] page is a good starting point, showing where all the nodes are!
+The [[map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] page is a good starting point, showing where all the nodes are!
 
 Those pages also have more information:
 
