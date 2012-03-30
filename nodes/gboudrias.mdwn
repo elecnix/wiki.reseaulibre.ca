@@ -8,7 +8,7 @@ Bientôt en ligne et bientôt déménagée.
  * Software:
  * Hardware: NanoStation M2
  * Power:
- * Location: 45.58349, -73.52486
+ * Location: 45.52486, -73.58349
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth:
