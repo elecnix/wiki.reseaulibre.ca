@@ -1,0 +1,103 @@
+== Detection of original firmware ==
+
+    $ sudo nmap -P0 -O 192.168.0.1
+    
+    Starting Nmap 5.21 ( http://nmap.org ) at 2012-03-29 22:45 EDT
+    Nmap scan report for 192.168.0.1
+    Host is up (0.0016s latency).
+    Not shown: 996 closed ports
+    PORT     STATE SERVICE
+    23/tcp   open  telnet
+    53/tcp   open  domain
+    80/tcp   open  http
+    2869/tcp open  unknown
+    MAC Address: 00:B0:C0:01:8B:34 (Unknown)
+    Device type: media device|general purpose
+    Running: Chumby embedded, Linux 2.6.X
+    OS details: Chumby Internet radio, Linux 2.6.13 - 2.6.28
+    Network Distance: 1 hop
+    
+    OS detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+    Nmap done: 1 IP address (1 host up) scanned in 2.90 seconds
+
+So this appears to be running Linux, and mistaken to be a [[Chumby|http://en.wikipedia.org/wiki/Chumby]].
+
+$ nmap -P0 -sV 192.168.0.1
+
+    Starting Nmap 5.21 ( http://nmap.org ) at 2012-03-29 22:58 EDT
+    Nmap scan report for 192.168.0.1
+    Host is up (0.030s latency).
+    Not shown: 996 closed ports
+    PORT     STATE SERVICE    VERSION
+    23/tcp   open  telnet     Linksys WRT54G telnetd (Tomato firmware)
+    53/tcp   open  domain     dnsmasq 2.22
+    80/tcp   open  tcpwrapped
+    2869/tcp open  unknown
+    1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
+    SF-Port2869-TCP:V=5.21%I=7%D=3/29%Time=4F752165%P=i686-pc-linux-gnu%r(GetR
+    SF:equest,9F,"HTTP/1\.0\x20200\x20OK\r\nCONTENT-TYPE:\x20text/xml\r\nCONTE
+    SF:NT-LENGTH:\x200\r\nDATE:\x20Thu,\x2001\x20Jan\x201970\x2001:45:44\x20GM
+    SF:T\r\nSERVER:\x20Linux/2\.6\.21\x20UPnP/1\.0\x20myigd/1\.0\r\nCONNECTION
+    SF::\x20close\r\n\r\n");
+    Service Info: Device: WAP
+
+There's a telnet server, a DNS and web server, and something unknown on port 2869.
+
+Let's telnet into it!
+
+    $ telnet 192.168.0.1
+    Trying 192.168.0.1...
+    Connected to 192.168.0.1.
+    Escape character is '^]'.
+    Router login: admin
+    Password: 
+    Welcome to  Bococom Router Series
+      For detailed information, please check:
+            www.bococom.com
+    
+    
+    BusyBox v1.12.1 (2010-11-26 17:38:48 CST) built-in shell (msh)
+    Enter 'help' for a list of built-in commands.
+    
+    # 
+
+The C1291 or Top Link RT3-GWT is revealing its name! Bococom is a company in [[Shenzhen|http://en.wikipedia.org/wiki/Shenzhen]], China.
+
+A search for Bococom leads to a thread on the DD-WRT forum about some people flashing a very similar router, but based on the Ralink 3052, which is the 300Mbit/s version, with two antennas instead of one.
+
+http://www.dd-wrt.com/phpBB2/viewtopic.php?t=82160&postdays=0&postorder=asc&start=30
+
+It links to the OpenWRT forum with essentially the same flashing procedure, which involves using a serial cable.
+
+https://forum.openwrt.org/viewtopic.php?pid=158105#p158105
+
+The firmware they flash the router with is for the Aceex NR22/Y, and the same company also makes the NR11/Y which is 150 Mbit/s 1T1R, most likely using the same Ralink 3050 as our Bococom. There are still ongoing discussions as of today, march 28 2012. In the DD-WRT database, only the Aceex NR22/Y is listed.
+
+Back to Bococom, they list the DWR150
+
+http://www.bococom.com/product.asp?ProdNum=134&zid=200909221828087028825
+
+ * LAN sans fil: le IEEE802.11 b / g / n 
+ * LAN: IEEE802.3/802.3u exploitation bande
+ * LAN sans fil: 2400-2483.5M interfaces externes
+ * 1 port RJ45 port LAN 10/100Base-TX
+ * 1 de récupération La clé de paramètre par défaut
+ * 1 port USB (type A femelle)
+ * Power Interface indicateur
+ * 1 indicateur de puissance
+ * 1 indicateur de réseau WLAN
+ * 1 voyant d'état de puissance et le pouvoir
+ * DC12V/1A
+ * puissance < 6W
+ * 88mm × 65mm × 23mm, 108 g
+ * température de fonctionnement: -10 ° C à +60 ° C
+ * Température de stockage *: -20 ℃ à +70 ℃
+ * Humidité: 5% ~ 95% sans condensation
+ * certification CE
+ * RoHS certification
+
+There is no software available for download for this router on the Brococom web site:
+
+http://www.bococom.com/download.asp?type=DWR150
+
+
