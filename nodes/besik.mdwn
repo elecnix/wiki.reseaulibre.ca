@@ -10,7 +10,9 @@
  * Power: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
  * Location: 45.566779,-73.595172
  * Azimuth: South-East
- * Panorama: N/A
+ * Panorama:
+   * Sud: http://www.flickr.com/photos/elecnix/6887807504
+   * Est: http://www.flickr.com/photos/elecnix/7033901979
  * Status: [[!taglink up]]
  * Links: [[elecnix]] ([[links/elecnix-besik/]])
  
