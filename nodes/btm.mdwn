@@ -1,0 +1,26 @@
+[[!waypoint lat="45.53677" lon="-73.684122" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+
+Ballet Théatral de Montréal
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware:
+ * Power:
+ * Location:
+ * Status: [[!taglink unknown]]
+ * Links: 
+ * Azimuth:
+ * Panorama: http://www.flickr.com/photos/elecnix/7039715167/sizes/o (12202 x 1501)
+ * Operator: [[users/elecnix]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
