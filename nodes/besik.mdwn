@@ -11,8 +11,8 @@
  * Location: 45.566779,-73.595172
  * Azimuth: South-East
  * Panorama:
-   * Sud: http://www.flickr.com/photos/elecnix/6887807504
-   * Est: http://www.flickr.com/photos/elecnix/7033901979
+   * Sud: http://www.flickr.com/photos/elecnix/6887807504/sizes/o
+   * Est: http://www.flickr.com/photos/elecnix/7033901979/sizes/o
  * Status: [[!taglink up]]
  * Links: [[elecnix]] ([[links/elecnix-besik/]])
  
