@@ -6,6 +6,12 @@ The router is unbranded, but may has the following model names, depending on the
  * TopLink RT-3GWT Wireless N Access Point 3G Travel Size Mobile Router
  * Bococom DWR-150
 
+# Identification
+
+This is a small router with a single antenna, with the front and back covered with a blue strip. Some may have a logo on its top. It opens by removing 4 screws under the router, and reveals a Ralink RT3050F chip.
+
+See pictures: http://www.flickr.com/photos/elecnix/sets/72157629696033799
+
 # Specifications
 
  * Wireless LAN: IEEE802.11 b / g / n, 2400-2483.5 MHz
@@ -22,6 +28,7 @@ The router is unbranded, but may has the following model names, depending on the
  * Humidité: 5% ~ 95% non-condensing
  * CE Certified
  * RoHS certification
+ * Chipset: Ralink 3050
 
 # Unboxing
 
