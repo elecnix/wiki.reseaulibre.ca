@@ -30,10 +30,6 @@ See pictures: http://www.flickr.com/photos/elecnix/sets/72157629696033799
  * RoHS certification
  * Chipset: Ralink 3050
 
-# Unboxing
-
-See pictures: http://www.flickr.com/photos/elecnix/sets/72157629696033799
-
 # Detection of original firmware
 
     $ sudo nmap -P0 -O 192.168.0.1
@@ -79,7 +75,7 @@ $ nmap -P0 -sV 192.168.0.1
 
 There's a telnet server, a DNS and web server, and something unknown on port 2869.
 
-Let's telnet into it!
+Let's telnet into it, using the default `admin` username and `admin` password.
 
     $ telnet 192.168.0.1
     Trying 192.168.0.1...
