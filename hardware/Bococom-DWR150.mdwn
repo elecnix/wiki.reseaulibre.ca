@@ -1,3 +1,28 @@
+# Name
+
+The router is unbranded, but may has the following model names, depending on the seller:
+
+ * Portable Mini 150M 802.11n WiFi Wireless 3G Router, model C1291
+ * TopLink RT-3GWT Wireless N Access Point 3G Travel Size Mobile Router
+ * Bococom DWR-150
+
+# Specifications
+
+ * Wireless LAN: IEEE802.11 b / g / n, 2400-2483.5 MHz
+ * LAN: IEEE802.3/802.3u
+ * 1 RJ45 port LAN 10/100Base-TX
+ * 1 USB port (type A female)
+ * 1 indicateur de puissance
+ * 1 indicateur de réseau WLAN
+ * DC 12V @ 1A
+ * Power < 6W
+ * 88mm × 65mm × 23mm, 108 grams
+ * Working temperature: -10 ° C à +60 ° C
+ * Température de stockage: -20 ℃ à +70 ℃
+ * Humidité: 5% ~ 95% non-condensing
+ * CE Certified
+ * RoHS certification
+
 # Unboxing
 
 See pictures: http://www.flickr.com/photos/elecnix/sets/72157629696033799
@@ -80,25 +105,6 @@ The firmware they flash the router with is for the Aceex NR22/Y, and the same co
 Back to Bococom, they list the DWR150
 
 http://www.bococom.com/product.asp?ProdNum=134&zid=200909221828087028825
-
- * LAN sans fil: le IEEE802.11 b / g / n 
- * LAN: IEEE802.3/802.3u exploitation bande
- * LAN sans fil: 2400-2483.5M interfaces externes
- * 1 port RJ45 port LAN 10/100Base-TX
- * 1 de récupération La clé de paramètre par défaut
- * 1 port USB (type A femelle)
- * Power Interface indicateur
- * 1 indicateur de puissance
- * 1 indicateur de réseau WLAN
- * 1 voyant d'état de puissance et le pouvoir
- * DC12V/1A
- * puissance < 6W
- * 88mm × 65mm × 23mm, 108 g
- * température de fonctionnement: -10 ° C à +60 ° C
- * Température de stockage *: -20 ℃ à +70 ℃
- * Humidité: 5% ~ 95% sans condensation
- * certification CE
- * RoHS certification
 
 There is no software available for download for this router on the Brococom web site:
 
