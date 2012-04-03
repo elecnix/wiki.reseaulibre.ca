@@ -3,11 +3,11 @@
 # Overall configuration
 
 This wiki was created using the default [[!iki setup]]
-instructions. The [[resulting .setup file|meta/mtl-mesh-wiki.setup]] is available
-[[here|meta/mtl-mesh-wiki.setup]] in case this wiki needs to be
+instructions. The resulting .setup file is available
+through the setup branch of the git checkout in case this wiki needs to be
 reconstructed. 
 
-(!) By storing the setup file within the wiki, it ensures the wiki can more easily be rebuilt (see [[replication]] for this), but it also means that the [[!iki plugins/websetup]] interface will make uncommitted changes in the git checkout that will need to be manually checked in.
+See the branchable tab above to clone this wiki.
 
 ## Ikiwiki and extensions
 
