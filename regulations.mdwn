@@ -44,3 +44,146 @@ Par exemple:
 > [[source|http://www11.ville.montreal.qc.ca/sherlock2/servlet/template/sherlock%2CAfficherDocumentInternet.vm/nodocument/22105]]
 
 Translation: there are rules to avoid visual impact. A permit is required to do the work to install the antenna. The antenna needs to be grounded to a lightning rod, must not be visible from the street, and more.
+
+## Villeray–Saint-Michel–Parc-Extension
+
+Extrait du [[Chapitre IV du Règlement 01-283|http://ville.montreal.qc.ca/sel/sypre-consultation/afficherpdf?idDoc=22229&typeDoc=1]] de la Ville de Montréal, adopté le 17 décembre 2001:
+
+CHAPITRE IV - ANTENNE
+
+SECTION I - APPLICATION
+
+`354.` Le présent chapitre s'applique aux antennes accessoires et non accessoires.
+Aux fins du premier alinéa, est accessoire une antenne installée sur le même terrain que l'usage
+qu'elle dessert.
+
+`355.` Une antenne non accessoire ne peut être installée sans permis.
+
+SECTION II - CONSTRUCTION
+
+SOUS-SECTION 1 - DISPOSITIONS GÉNÉRALES
+
+`356.` La distance d'une antenne par rapport à un point doit être mesurée horizontalement à
+partir de l'axe de son support.
+
+`357.` Aux fins du présent chapitre, la hauteur d'un bâtiment ou d'une partie d'un bâtiment doit
+être mesurée verticalement à partir du niveau moyen au sol de la façade la plus rapprochée de
+l'antenne jusqu'au niveau de la base de cette antenne ou du toit où elle est fixée.
+
+`358.` Une antenne accessoire installée avant le 17 août 1991 peut déroger aux limites de
+hauteur prévues au présent règlement. Toutefois, une antenne accessoire dérogatoire non
+protégée par droits acquis doit être conforme aux autres dispositions du présent règlement et
+doit, en vue d'assurer sa mise en conformité, être déplacée sur le terrain ou sur le bâtiment, le
+cas échéant.
+
+SOUS-SECTION 2 - ANTENNE PARABOLIQUE
+
+`359.` Dans un secteur où est autorisée comme catégorie d'usages principale, une catégorie de
+la famille habitation, de la famille commerce ou de la famille équipements collectifs et
+institutionnels, à l'exception de la catégorie E.7, une antenne parabolique doit remplir les
+conditions suivantes :
+
+1. sur le sol, sa hauteur ne doit pas excéder 4 m;
+2. sur un bâtiment, elle doit être conforme aux limites de hauteur et de recul prescrites
+dans le tableau suivant, dans lequel « H » est la hauteur de l'antenne :
+
+[[!table class="pagecloud" data="""
+HAUTEUR D'UN BÂTIMENT OU D'UNE PARTIE DE BÂTIMENT | HAUTEUR MAXIMALE DE L'ANTENNE | RECUL MINIMAL PAR RAPPORT À UNE FAÇADE
+inférieure à 6 m | 3,5 m | 3 H
+de 6 à 12 m | 4 m | 2 H
+supérieure à 12 m | 4,5 m | 1 H
+"""]]
+
+`360.` Dans un secteur où est autorisée comme catégorie d'usages principale, une catégorie de
+la famille industrie ou la catégorie E.7, une antenne parabolique doit remplir les conditions
+suivantes :
+
+1. sur le sol, sa hauteur ne doit pas excéder 7 m;
+2. sur un bâtiment, sa hauteur ne doit pas excéder 7 m et elle doit respecter un retrait
+minimal par rapport à une façade équivalent à 1 fois sa hauteur.
+
+`361.` Sur un toit à versants, l'installation d'une antenne parabolique est interdite :
+1. sur un versant donnant sur une voie publique;
+2. à moins de 3 m d'un versant donnant sur une voie publique.
+
+`362.` Une antenne parabolique ne doit pas être située sur une façade ou dans une cour avant,
+sauf si elle respecte une distance minimale de 24 m de la limite d'emprise de la voie publique
+
+`363.` Une antenne parabolique sur le sol ne doit pas être située à moins de 2 m d'une limite
+de terrain.
+
+`364.` Une antenne parabolique doit être située de façon à ce qu'aucune de ses parties ne se
+trouve à moins de 2 m devant une fenêtre.
+
+`365.` Sur un terrain non bâti, une antenne parabolique doit être située à une distance minimale
+de 24 m de la limite d'emprise d'une voie publique et à une distance minimale de 2 m d'une
+limite de terrain.
+
+`366.` La présente sous-section ne s'applique pas :
+
+1. à une antenne parabolique accessoire exclusivement réceptrice, d'un diamètre d'au plus
+0,6 m et d'une hauteur d'au plus 1,2 m, située dans un secteur où est autorisée, comme
+catégorie d'usages principale, une catégorie des familles habitation, commerce ou
+équipements collectifs et institutionnels;
+
+2. à une antenne parabolique accessoire, d'un diamètre d'au plus 2 m et d'une hauteur d'au
+plus 3 m, située dans un secteur où est autorisée, comme catégorie d'usages principale,
+une catégorie de la famille industrie ou la catégorie E.7.
+
+SOUS-SECTION 3 - ANTENNE TERRESTRE
+
+(Ne s'applique pas aux antennes sur immeubles)
+
+SECTION III - ANTENNE NON ACCESSOIRE
+
+`375.` Une antenne qui n'est pas située sur le terrain de l'usage qu'elle dessert est autorisée dans
+une cour ou sur un terrain non bâti dans un secteur où est autorisée, comme catégorie d'usages
+principale, une catégorie de la famille industrie ou la catégorie E.7.
+
+`376.` Une antenne de téléphonie cellulaire ou de téléphonie sans fil ayant une superficie
+maximale de 50 cm² mesurée en plan et en élévation, pour laquelle aucun appareil accessoire
+n'est visible, peut être située en tout lieu.
+Le fil peut être visible sur une longueur maximale de 500 mm.
+
+`377.` Une antenne de téléphonie cellulaire ou de téléphonie sans fil peut être installée sur un
+mur, dans tout secteur, aux conditions suivantes :
+
+ * `1.` aucun appareil accessoire ne doit être visible;
+ * `2.` le fil ou le conduit de raccordement peut être visible sur une longueur maximale de 1 m;
+ * `3.` l’antenne, sa fixation, le fil et le conduit doivent être de la même couleur que celle du parement du mur où ils sont installés;
+ * `4.` l’antenne doit être installée conformément aux exigences du tableau suivant :
+
+[[!table class="pagecloud" data="""
+HAUTEUR DE L’INSTALLATION PAR RAPPORT AU SOL | SUPERFICIE MAXIMALE MESURÉE EN ÉLÉVATION | SAILLIE MAXIMALE | DISTANCE MINIMALE SOUS LE SOLIN DU TOIT OU DU PARAPET | DISTANCE MINIMALE D’UN COIN DU BÂTIMENT
+6 à 9 m | 0,1 m² | 20 cm | 20 cm | -
+supérieure à 9 m, inférieure à 15 m | 0,2 m² | 40 cm | 40 cm | 80 cm
+15 m et plus | 0,4 m² | 60 cm | 60 cm | 1,2 m
+sur une construction hors toit en retrait d’une façade, à plus de 30 m | 0,6 m² | 60 cm | 0 cm | 1,2 m
+"""]]
+
+ * `5.` une antenne sur une construction hors toit en retrait d’une façade peut être installée
+sans distance minimale sous le solin;
+ * `6.` lorsque plusieurs paires d’antennes sont installées sur une façade, l’espacement entre
+chaque paire d’antennes doit être d’au moins 18 m horizontalement ou 6 m
+verticalement. 
+
+`378.` Une antenne de téléphonie cellulaire ou de téléphonie sans fil non conforme aux
+dispositions du présent chapitre doit être approuvée conformément au titre VIII.
+La décision d'approuver ou de refuser cette antenne doit prendre en considération les critères
+d'évaluation suivants :
+
+1. une antenne installée sur une façade doit tendre à respecter une superficie maximale
+de 0,5 m² mesurée en plan et en élévation et elle doit, par ses dimensions, son
+emplacement, sa forme et sa couleur s'intégrer harmonieusement à la façade ou être
+aussi peu apparente que possible;
+2. une antenne installée sur le sol, sur un mur ou sur un toit doit, par ses dimensions, son
+emplacement, sa forme et sa couleur, être aussi peu apparente que possible;
+3. l'installation d'une antenne sur un bâtiment ou un monument prestigieux ou ayant une
+grande valeur patrimoniale doit être évitée à moins que l'antenne ne soit entièrement
+dissimulée;
+4. un fil ou un appareil accessoire doivent être aussi peu apparents que possible;
+5. sur une même construction, les antennes doivent être le plus homogène et du plus petit
+nombre possibles;
+6. l'équipement accessoire doit être installé à l'intérieur d'un bâtiment ou, s'il est installé
+dans un abri, cet abri doit être aussi peu apparent que possible sur un toit, dans une
+cour ou sur un terrain non bâti et son architecture doit s'intégrer au milieu.
