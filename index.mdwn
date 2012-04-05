@@ -41,6 +41,8 @@ We need volunteers! On parle français aussi!
 
 [[!inline pages="meetings/*" raw=yes show=1]]
 
+Voir ce lien pour les détails: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1]]
+
 ## Toutes les rencontres
 
 [[!inline pages="meetings" raw=yes]]
