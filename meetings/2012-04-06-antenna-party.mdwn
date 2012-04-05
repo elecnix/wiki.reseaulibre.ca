@@ -1,0 +1,26 @@
+Montage d'antennes sur les liens suivants:
+
+ * [[nodes/grace]] - [[nodes/anarcat]] (500m)
+ * [[nodes/benoitg]] - [[nodes/jojo]] (800m)
+ * [[nodes/jojo]] - [[nodes/genb]]?
+ * [[nodes/genb]] - [[nodes/anarcat]]??
+
+Voir [[le doodle|http://www.doodle.com/ei7pyddk9wgerek8]] pour plus d'infos sur la date.
+
+Matériel:
+
+ * 2 bullet MP2 avec des omnis (richard)
+ * des nanostations M2 (XXX: combien?) (richard)
+ * 2 Nano Station M5 (si nécessaire - elecnix)
+ * 1 TP-Link MR3220 (richard)
+ * 2 Linksys WRT54G (nicolas)
+ * 1 adaptateur USB avec antenne 8dBi RPSMA
+ * une radio CB / HAM (anarcat)
+ * Deux trépieds (elecnix)
+ * Un mât télescopique de ~20 pieds (elecnix)
+ * Un porte- appareil photo se fixant sur un tube (pour panoramas avec téléphone intelligent)
+
+Manque:
+
+ * câble réseau étanche (pour plugger mon toit - anarcat)
+ * une autre radio (pour parler librement - xsmurf?)
