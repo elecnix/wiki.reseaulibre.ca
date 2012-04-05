@@ -1,3 +1,3 @@
 Voici la liste des meetings documentés dans le wiki:
 
-[[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes rootpage=meetings template=titlepage postformtext="Record a new meeting: "]]
+[[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes rootpage=meetings template=titlepage postformtext="Record a new meeting: " feeds=no]]
