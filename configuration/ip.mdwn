@@ -1,10 +1,12 @@
-[[!toc]]
+[[!toc levels=3]]
 
 ## IPv4 configuration
 
 ### Static configuration
 
 Currently, IPs in the 192.168.3.x netblock are allocated statically to nodes as we go along.
+
+This will obviously not scale at all, so we need a better solution. A workaround would be to switch to the wider `172.16.0.0/12` private B class from [[!rfc 1918]], which is what is used in Rostock.
 
 ## IPv6 configuration
 
@@ -111,8 +113,7 @@ First, you need to determine the policy. Here is mine:
 The above rules can be done with the following patch to a pf.conf, for
 OpenBSD's PF (Packet Filter):
 
-[[!format """
-
+[[!format txt """
 diff --git a/pf.conf b/pf.conf
 index 8ecb84f..796d847 100644
 --- a/pf.conf
@@ -161,7 +162,7 @@ index 8ecb84f..796d847 100644
  # DMZ rules
  # block by default
  block in log on $dmz_if all
-"""]]
+""" ]]
 
 To allow access to the internet in general, I also throw in those
 rules:
