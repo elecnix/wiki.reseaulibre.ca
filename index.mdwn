@@ -39,9 +39,11 @@ We need volunteers! On parle français aussi!
 
 ## Prochaine rencontre
 
-[[!inline pages="meetings/*" raw=yes show=1 feeds=no]]
+Aucune rencontre prévue. 
 
-Voir ce lien pour les détails: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]]
+<!-- [[!inline pages="meetings/*" raw=yes show=1 feeds=no]] 
+
+Voir ce lien pour les détails: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]] -->
 
 ## Toutes les rencontres
 
