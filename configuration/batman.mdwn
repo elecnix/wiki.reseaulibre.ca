@@ -66,6 +66,11 @@ Get into the router with its default IP address.
 
     telnet 192.168.1.1
 
+This command can be used to backup or inspect your current
+configuration:
+
+    uci show
+
 Configure the router LAN interface to match the network
 of the home router this will be plugged into eventually.
 
