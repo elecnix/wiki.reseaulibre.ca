@@ -9,23 +9,27 @@ Voir [[le doodle|http://www.doodle.com/ei7pyddk9wgerek8]] pour voir comment la d
 
 Matériel:
 
- * 2 bullet M2 à flasher (richard)
- * 1 nanobridge M2 à flasher (richard)
- * 1 15dBi hyperlinktech (richard)
- * 1 12dBi tp-link (richard)
- * 2 8.5dBi hyperlinktech (richard)
- * 1 9dBi 120 degrées (richard)
- * 1 TP-Link MR3220 à flasher (richard)
- * 2 trépieds yorkville (richard)
- * 2 Nano Station M5 (si nécessaire - elecnix)
- * 2 Linksys WRT54G (nicolas)
- * 1 adaptateur USB avec antenne 8dBi RPSMA
- * 2 radio CB / HAM (anarcat/richard)
- * Deux trépieds (elecnix)
- * Un mât télescopique de ~20 pieds (elecnix)
- * Un porte- appareil photo se fixant sur un tube (pour panoramas avec téléphone intelligent)
- * Rallonge de 50 pieds (elecnix)
- * Powerbar (elecnix)
+ * stations
+  * 2 bullet M2 à flasher (richard)
+  * 1 nanobridge M2 à flasher (richard)
+  * 1 picostation M2 à flasher (richard)
+  * 1 nanostation M2 (richard)
+  * 1 TP-Link MR3220 à flasher (richard)
+  * 2 Linksys WRT54G (nicolas)
+ * antennes:
+  * 1 15dBi hyperlinktech (richard)
+  * 1 12dBi tp-link (richard)
+  * 2 8.5dBi hyperlinktech (richard)
+  * 1 9dBi 120 degrées (richard)
+  * 1 adaptateur USB avec antenne 8dBi RPSMA
+ * autres
+  * 2 trépieds yorkville (richard)
+  * 2 radio CB / HAM (anarcat/richard)
+  * Deux trépieds (elecnix)
+  * Un mât télescopique de ~20 pieds (elecnix)
+  * Un porte- appareil photo se fixant sur un tube (pour panoramas avec téléphone intelligent)
+  * Rallonge de 50 pieds (elecnix)
+  * Powerbar (elecnix)
 
 Manque:
 
@@ -36,3 +40,27 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
 Client: clef USB UR055G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mode adhoc. Transfert: 5.88 MB @ 4.82 Mbit/s. Distance: 60 centimètres.
 
 Client: Linsys WRT54G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mode Access Point. 6.50 MBytes @ 5.23 Mbits/sec. Distance: 2 mètres avec 2 murs.
+
+## Organisation
+
+ * équipe anarcat:
+   1. grace (./)
+ * équipe benoitg:
+   1. grace
+   2. jojo (remis)
+ * équipe grace:
+   1. anarcat (./)
+   2. benoitg (remis)
+ * équipe jojo:
+   1. benoitg (remis)
+
+## Résultats
+
+ * plusieurs machines flashées
+ * lien testé comme fonctionnel à 10mbps (1.2 MiByte/s) entre anarcat
+   et grace, avec la bullet M2 chez anarcat et ??? chez grace
+ * lien était temporaire, mais l'emplacement est parfait et le lien
+   sera remonté
+ * les nodes peuvent bien sûr router du traffic de leur interface
+   physique vers le mesh, sans problème, suffit d'ajouter le node
+   comme gateway de son laptop
