@@ -64,12 +64,19 @@ During the upload, pay attention to the following:
 
  with netkit-tftp:
  
-        $ tftp 192.168.1.1
+        $ tftp 192.168.1.20
         tftp> binary
         tftp> rexmt 1
-        tftp> timeout
+        tftp> timeout 1
         tftp> trace
         tftp> put openwrt.bin
+
+Then you wait until it reboots.
+
+IP may vary according to the hardware, here are the known IPs:
+
+Ubiquity Bullet M2
+: 192.168.1.20
 
 For other platforms (Mac, Windows, etc), see: <http://wiki.openwrt.org/doc/howto/generic.flashing.tftp>
 
