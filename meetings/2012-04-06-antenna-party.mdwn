@@ -5,7 +5,7 @@ Montage d'antennes sur les liens suivants:
  * [[nodes/jojo]] - [[nodes/genb]]?
  * [[nodes/genb]] - [[nodes/anarcat]]??
 
-Voir [[le doodle|http://www.doodle.com/ei7pyddk9wgerek8]] pour plus d'infos sur la date.
+Voir [[le doodle|http://www.doodle.com/ei7pyddk9wgerek8]] pour voir comment la date a été choisie. Noter que l'annonce par courriel a prévu 10hAM, non 14h, chez [[anarcat]].
 
 Matériel:
 
@@ -24,6 +24,8 @@ Matériel:
  * Deux trépieds (elecnix)
  * Un mât télescopique de ~20 pieds (elecnix)
  * Un porte- appareil photo se fixant sur un tube (pour panoramas avec téléphone intelligent)
+ * Rallonge de 50 pieds (elecnix)
+ * Powerbar (elecnix)
 
 Manque:
 
