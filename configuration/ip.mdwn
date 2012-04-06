@@ -1,0 +1,17 @@
+[[!toc]]
+
+## IPv4 configuration
+
+### Static configuration
+
+Currently, IPs in the 192.168.3.x netblock are allocated statically to nodes as we go along.
+
+## IPv6 configuration
+
+To do.
+
+## Connecting to an existing network
+
+A mesh is fun, but otherwise not very useful until services are plugged into it. This means plugging this open wireless into your machines, which may be a security issue.
+
+A good approach is to allocate a specific port on your firewall and allow it only some access to your internal network, and, maybe, the internet.
