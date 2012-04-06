@@ -42,6 +42,18 @@ We are also considering ad-hoc mode and OLSR, see [[todo/network_topology]].
 ## IP allocation
 
 `10.0.0.0/8` so far, see the [[nodes]] pages for allocation. [[configuration/ipv6]] considered, see [[todo/numbering_policy]] for details.
+
+[[!table class="pagecloud" data="""
+IP | Hardware | wifi MAC | Location
+192.168.3.88 | Linksys WRT54G | 00:25:9c:5e:44:59 | elecnix/grace
+192.168.3.89 | Linksys WRT54G | 00:13:10:1b:6d:dd | elecnix/pierre
+192.168.3.90 | Bullet M2 #2 | | Sur le toit chez anarcat
+192.168.3.91 | Bullet M2 #1 | 
+192.168.3.92 | PicoStation M2 | 00:15:6d:81:e0:5b
+192.168.3.93 | NanoStation M2 | 00:15:6d:fc:be:90
+192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
+"""]]
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
