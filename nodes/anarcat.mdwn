@@ -1,23 +1,30 @@
-[[!waypoint lat="45.5335122" lon="-73.6031785" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.5335122" lon="-73.6031785" embed hidden width="400px" height="400px" right desc="Omnidirectional antenna 15 dBi, 10' up 3rd floor"]]
 
-A node on my roof.
+15 dBI omnidirectional antenna connected to a Ubiquity Nanostation M2 router.
 
- * hostname: mesh0.anarcat.ath.cx
- * MAC address: 00:90:4c:5f:00:2a
- * IP address: 10.0.1.1
+ * hostname: 
+ * MAC address: 00:15:6d:db:d3:65
+ * IP address: 192.168.3.90
  * IPv6 address: N/A
  * Software: OpenWRT backfire
- * Hardware: Linksys WRT54G 1.1
+ * Hardware: Ubiquity Bullet M2 + 15 dBi Hyperlink Tech
+   omnidirectional antenna
  * Power: 15dBm/28mW (default)
- * Location:
- * Azimuth: N/A
+ * Location: 10 feet up on a pole, on top of the third floor
+ * Azimuth: 360 deg
  * Panorama: N/A
- * Status: [[!taglink planned]]
+ * Status: [[!taglink up]]
  * Operator: [[users/anarcat]]
 
 (!) Power can apparently be pushed up to 84mW (20dBm), see [seattlewireless](http://www.seattlewireless.net/LinksysWrt54g).
 
-# battle plan
+This node runs batman according to the [[configuration/batman]] howto.
+
+# old battle plan
+
+This was the battle plan to configure the OLSR routing and setup on
+the roof, but it was short-circuited during the
+[[2012-04-06-antenna-party]].
 
 ## Phase I: local tests
 
