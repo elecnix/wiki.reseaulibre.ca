@@ -152,11 +152,6 @@ Configuration de l'interface de batman. Ici, `192.168.8.100` a été choisi all�
     uci set network.bat0.proto=none
     uci set network.bat0.mtu=1500
 
-    uci set network.bat0.proto=static
-    uci set network.bat0.ipaddr=192.168.8.100
-
-> NOTE: What static IPv4 network do we standardize on?
-
 The 'lan' bridge should include bat0
 
     uci set network.lan.ifname="eth0.0 bat0"
@@ -174,9 +169,19 @@ You're done! Commit the changes and reboot to test them.
     uci commit
     reboot & exit
 
-After a reboot, you should see `wlan0: active` with this:
+After a reboot, you should see `wlan0: active` and `br-lan: active` with this:
 
     batctl if
+
+```
+root@batman-88:/# brctl show
+bridge name     bridge id               STP enabled     interfaces
+br-lan          8000.00259c5e4457       no              eth0.0
+                                                        bat0
+root@batman-88:/# batctl if
+wlan0: active
+br-lan: active
+```
 
 ### Sur DD-WRT
 
