@@ -4,6 +4,8 @@ Freifunk have been using unallocated IP space. Opennet has been using `192.168.0
 
 So far, i've been using `10.0.0.0/8`, but we should really look at [[configuration/ipv6]]. See also <http://wiki.freifunk.net/6mesh.freifunk.net>.
 
+Update: see [[configuration/ip]] for followup.
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
