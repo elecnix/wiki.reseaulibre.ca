@@ -1,0 +1,25 @@
+[[!waypoint  lat="45.5" lon="-73.666667" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+
+A node on the roof
+
+ * MAC address: c0:c1:c0:2d:a6:45
+ * IP address: 206.248.185.24
+ * IPv6 address: 2607:f2c0:f00f:6e00::1
+ * Software: Vivek tomato
+ * Hardware: Linksys E3000
+ * Power: 45.516746,-73.576014
+ * Location:
+ * Status: [[!taglink planned]] 
+ * Links: 
+ * Azimuth: N/A
+ * Panorama: N/A
+ * Operator: [[users/micah]]
+
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
