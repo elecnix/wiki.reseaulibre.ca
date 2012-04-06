@@ -29,7 +29,7 @@ Manque:
 
  * câble réseau étanche (pour plugger mon toit - anarcat)
 
-Test de vitesse préliminaire avec iperf.
+Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
 
 Client: clef USB UR055G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mode adhoc. Transfert: 5.88 MB @ 4.82 Mbit/s. Distance: 60 centimètres.
 
