@@ -154,7 +154,11 @@ Configuration de l'interface de batman. Ici, `192.168.8.100` a été choisi all�
 
 The 'lan' bridge should include bat0
 
-    uci set network.lan.ifname="eth0.0 bat0"
+    uci set network.lan.ifname="eth0 bat0"
+
+(!) The above may be eth0.0 instead of eth0. For linksys it's eth0.0,
+for ubiquity it's eth0. Look at the output of ifconfig to see what's
+the eth0 interface.
 
 > NOTE: Do we really want to bridge the mesh with the LAN?
 Won't that generate too much traffic if the packets
