@@ -2,19 +2,43 @@
 
 15 dBI omnidirectional antenna connected to a Ubiquity Nanostation M2 router.
 
- * hostname: 
- * MAC address: 00:15:6d:db:d3:65
- * IP address: 192.168.3.90
- * IPv6 address: N/A
- * Software: OpenWRT backfire
- * Hardware: Ubiquity Bullet M2 + 15 dBi Hyperlink Tech
+
+hostname
+: batman-90
+
+MAC address
+: 00:15:6d:db:d3:65
+
+IP address
+: 192.168.3.90
+
+IPv6 address
+: fd64:2c08:9fa7:0:215:6dff:fedb:d365/64
+
+Software
+: OpenWRT backfire
+
+Hardware
+: Ubiquity Bullet M2 + 15 dBi Hyperlink Tech
    omnidirectional antenna
- * Power: 15dBm/28mW (default)
- * Location: 10 feet up on a pole, on top of the third floor
- * Azimuth: 360 deg
- * Panorama: N/A
- * Status: [[!taglink up]]
- * Operator: [[users/anarcat]]
+
+Power
+: 15dBm/28mW (default)
+
+Location
+: 10 feet up on a pole, on top of the third floor
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[users/anarcat]]
 
 (!) Power can apparently be pushed up to 84mW (20dBm), see [seattlewireless](http://www.seattlewireless.net/LinksysWrt54g).
 
@@ -45,4 +69,3 @@ the roof, but it was short-circuited during the
  2. setup local test environment with martn with two antennas
  3. setup link between the two places
  4. at this point, [[todo/network topology]] should be clear and documented
-
