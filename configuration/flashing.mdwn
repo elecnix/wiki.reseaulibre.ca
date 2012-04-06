@@ -24,6 +24,14 @@ Right after flashing, to ensure that tftp is available in case your router gets 
     
 (!) Note: On WRT54GL (at least), you should probably use 'wait_time' instead of 'boot_time'.
 
+## Specific hardware:
+
+Bullet M2
+: http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin
+
+Nanostation M2
+: http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin
+
 # Flashing methods
 
 ## Web interface
