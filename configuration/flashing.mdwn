@@ -14,7 +14,7 @@ site, each device page will list which firmware you should use.
 
 (!) Hint: most Linksys WRT54 devices use the brcm47xx firmware.
 
-(!) Note: Si vous avez des problèmes inhabituel, essayez une autre version du bon firmware http://downloads.openwrt.org/backfire/
+(!) Note: Si vous avez des problèmes inhabituels, essayez une autre version du bon firmware http://downloads.openwrt.org/backfire/
 
 Right after flashing, to ensure that tftp is available in case your router gets bricked, type these commands out in telnet/ssh:
 
@@ -47,7 +47,7 @@ During the upload, pay attention to the following:
 1. connect the router with a wire to your computer
 2. configure an IP on your computer
 
-        ifconfig eth0:flash 192.168.1.2
+        ifconfig eth0:flash 192.168.1.2 up
 
 3. reboot the router with the reset button pressed until the leds flash like a christmas tree
 4. send the new firmware through tftp:

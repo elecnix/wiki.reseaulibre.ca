@@ -32,9 +32,14 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
     modprobe batman-adv
 
+Configurer l'interface physique wifi pour le mode adhoc du mesh. Il faut probablement désactiver network-manager.
+
+    sudo /etc/init.d/network-manager stop
+    iwconfig wlan0  mode ad-hoc  channel 1  essid mesh-mtl  ap 02:51:48:72:03:11
+
 Configurer l'interface réseau, il faut augmenter le MTU car les "packets" de Batman ajoutent des données aux frames ethernet:
 
-    ifconfig wlan0 mtu 1528 up
+    ifconfig wlan0 mtu 1528 192.168.8.2 up
 
 Ajouter l'interface à Batman:
 
@@ -76,6 +81,10 @@ Activer la radio
 
     uci delete wireless.radio0.disabled
 
+Set a custom name, in case you encouter other peers :-)
+
+    uci set system.@system[0].hostname=batman-88
+
 Écrire les changements et redémarrer
 
     uci commit
@@ -98,8 +107,8 @@ Install B.A.T.M.A.N (the home router provides access to internet)
 
     cd /tmp
     touch /tmp/opkg.conf
-    opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.9-1_brcm47xx.ipk \
-        http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.9+2012.0.0-1_brcm47xx.ipk
+    opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.13-1_brcm47xx.ipk \
+        http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.13+2012.0.0-1_brcm47xx.ipk
 
 Le module `batman_adv` devrait maintenant être chargé:
 
@@ -143,6 +152,7 @@ Configuration de l'interface de batman. Ici, `192.168.8.100` a été choisi all�
     uci set network.bat0.proto=none
     uci set network.bat0.mtu=1500
 
+    uci set network.bat0.proto=static
     uci set network.bat0.ipaddr=192.168.8.100
 
 > NOTE: What static IPv4 network do we standardize on?
