@@ -162,7 +162,7 @@ Configuration de l'interface de batman. Ici, `192.168.8.100` a été choisi all�
     uci set network.bat0.proto=none
     uci set network.bat0.mtu=1500
 
-The 'lan' bridge should include bat0
+The 'lan' bridge should include bat0 as well as eth0:
 
     uci set network.lan.ifname="eth0 bat0"
 
