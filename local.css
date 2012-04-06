@@ -66,3 +66,8 @@
   font-size: small;
 }
 
+/* definition lists look better with the term in bold */
+dt
+{
+    font-weight: bold;
+}
