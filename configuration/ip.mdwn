@@ -15,3 +15,12 @@ To do.
 A mesh is fun, but otherwise not very useful until services are plugged into it. This means plugging this open wireless into your machines, which may be a security issue.
 
 A good approach is to allocate a specific port on your firewall and allow it only some access to your internal network, and, maybe, the internet.
+
+First, you need to determine the policy. Here is mine:
+
+ * no DHCP on the interface - we do not want to pollute the LAN
+ * use up one IP in the IPv4 network
+ * publish an IPv6 /64 network (minimum size)
+ * block packets by default
+ * allow to everywhere: port SSH (22), HTTP (80), HTTPS (443), IMAPS (993), XMPP (5222), OpenVPN (1194), git (9418), SMTP submissions (587), outgoing ICMP
+ * allow to my server: port  SSH (22), HTTP (80), HTTPS (443), IMAPS (993), XMPP (5222), OpenVPN (1194), git (9418), streaming/icecast (8000), jukebox/MPD (6600), outgoing ICMP
