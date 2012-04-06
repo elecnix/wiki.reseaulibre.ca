@@ -24,7 +24,7 @@ This node runs batman according to the [[configuration/batman]] howto.
 
 This was the battle plan to configure the OLSR routing and setup on
 the roof, but it was short-circuited during the
-[[2012-04-06-antenna-party]].
+[[meetings/2012-04-06-antenna-party]].
 
 ## Phase I: local tests
 
