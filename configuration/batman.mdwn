@@ -108,12 +108,17 @@ Install B.A.T.M.A.N (the home router provides access to internet)
     opkg update
     opkg install kmod-batman-adv
 
-> Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire). Il faut trouver l'URL du paquet et faire quelque chose comme:
+> Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire). Il faut trouver l'URL du paquet et faire quelque chose comme ceci pour un Linksys WRT54g:
 
     cd /tmp
     touch /tmp/opkg.conf
     opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.13-1_brcm47xx.ipk \
         http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.13+2012.0.0-1_brcm47xx.ipk
+
+Pour un Ubiquiti Bullet, il faut plutôt utiliser les paquets pour ar71xx:
+
+    opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/kmod-batman-adv_3.2.9+2012.0.0-1_ar71xx.ipk \
+        http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/kmod-lib-crc16_3.2.9-1_ar71xx.ipk
 
 Le module `batman_adv` devrait maintenant être chargé:
 
