@@ -2,16 +2,6 @@
 
 ## IPv4 configuration
 
-### Static configuration
-
-Currently, IPs in the `192.168.3.0/24` netblock are allocated statically to nodes as we go along.
-
-This will obviously not scale at all, so we need a better solution. A workaround would be to switch to the wider `172.16.0.0/12` private B class from [[!rfc 1918]], which is what is used in Rostock.
-
-### Current IP allocations
-
-This is the result of the first formal allocation during the [[meetings/2012-04-06-antenna-party]]:
-
 [[!table class="pagecloud" data="""
 IP | Hardware | wifi MAC | Location
 192.168.3.88 | Linksys WRT54G | 00:25:9c:5e:44:59 | elecnix/grace
@@ -22,6 +12,16 @@ IP | Hardware | wifi MAC | Location
 192.168.3.93 | NanoStation M2 | 00:15:6d:fc:be:90
 192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
 """]]
+
+### Static configuration
+
+Currently, IPs in the `192.168.3.0/24` netblock are allocated statically to nodes as we go along.
+
+This will obviously not scale at all, so we need a better solution. A workaround would be to switch to the wider `172.16.0.0/12` private B class from [[!rfc 1918]], which is what is used in Rostock.
+
+### Current IP allocations
+
+This is the result of the first formal allocation during the [[meetings/2012-04-06-antenna-party]]:
 
 Note that some IPs may have been allocated without being marked
 here. See also the IPv6 allocations below.
