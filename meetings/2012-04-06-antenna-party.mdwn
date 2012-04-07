@@ -2,6 +2,24 @@
 
 Voir [[le doodle|http://www.doodle.com/ei7pyddk9wgerek8]] pour voir comment la date a été choisie. Noter que l'annonce par courriel a prévu 10hAM, non 14h, chez [[anarcat]].
 
+## Sommaire de la journée
+
+On a été très productif! On a réussi à établir un lien 10mbps sur 600
+mètres de distance, entre grace et anarcat, ce qui est un excellent
+accomplissement pour une première journée! Le lien a dû être démonté
+mais il sera de retour bientôt et pourra être la base d'un mesh local
+assez bien établi.
+
+Un autre point d'accès a été monté chez benoitg, et il y a également une
+excellente vue là-bas. Malheureusement, benoitg et anarcat ne se
+"voient" pas, probablement à cause de la tour de Bell qui est dans le chemin.
+
+On a beaucoup travaillé avec les Ubiquity Bullet, qui sont un charme à installer et configurer, pour vu bien sûr qu'on a les antennes qui vont avec.
+
+Il y a maintenant les deux premiers nodes en mode mesh de montés, et la documentation a été beaucoup améliorée, particulièrement au niveau [[configuration/ip]] et [[configuration/batman]].
+
+Lisez ci-bas pour les détails.
+
 ## Objectif
 
 Montage d'antennes sur les liens suivants:
