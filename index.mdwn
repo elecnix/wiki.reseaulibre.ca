@@ -19,9 +19,9 @@ There is no good step-by-step manual on how to setup a relay or connect to the m
 
 This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
 
+* [[Configuration]] - step by step config instructions to join the network
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured
 * [[Software]] - the software used in the project...
-* [[Configuration]] - step by step config instructions to join the network
 * [[Wi-Fi Technicalities]] - basics of the physical layer and mechanics. 
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
 
