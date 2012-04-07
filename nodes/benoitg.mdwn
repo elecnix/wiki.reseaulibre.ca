@@ -12,7 +12,7 @@ Mat d'antenne de 30 pieds sur le toit d'un triplex (~55pieds au dessus du niveau
  * Status: [[!taglink up]]
  * Links: 
  * Azimuth:
- * Panorama:
+ * Panorama: http://farm8.staticflickr.com/7191/6906062724_4f6f4c1bfd_o.jpg
  * Operator: [[users/benoitg]]
 
 [[!meta copyright="Copyright © 2012 Benoit Grégoire"]]
