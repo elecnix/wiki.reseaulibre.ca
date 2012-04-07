@@ -27,12 +27,18 @@ Right after flashing, to ensure that tftp is available in case your router gets 
 ## Specific hardware:
 
 Bullet M2
-: http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin
+: <http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin>
 
 Nanostation M2
-: http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin
+: <http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin>
 
 # Flashing methods
+
+(!) Important: after you flash your device, the password will be reset and the device will be wide open!!! You NEED TO CHANGE THE PASSWORD! Use `pwgen` or another tool to generate a random password and set one using:
+
+    passwd
+
+Keep the password in a safe place, your password manager or your head, if the latter: train using it regularly otherwise you *will* forget and will have to do a password reset (see below).
 
 ## Web interface
 
