@@ -20,7 +20,6 @@ Un noeud planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne.
 Liens possibles
 
  * [[nodes/anarcat]] 490 m, testé à 10mbps
- * [[nodes/midnight]] 1,24 km
  * [[nodes/benoitg]] 2,35 km
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
