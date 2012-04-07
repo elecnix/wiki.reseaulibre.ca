@@ -1,3 +1,9 @@
+[[!toc levels=2]]
+
+Voir [[le doodle|http://www.doodle.com/ei7pyddk9wgerek8]] pour voir comment la date a été choisie. Noter que l'annonce par courriel a prévu 10hAM, non 14h, chez [[anarcat]].
+
+## Objectif
+
 Montage d'antennes sur les liens suivants:
 
  * [[nodes/grace]] - [[nodes/anarcat]] (500m)
@@ -5,9 +11,7 @@ Montage d'antennes sur les liens suivants:
  * [[nodes/jojo]] - [[nodes/genb]]?
  * [[nodes/genb]] - [[nodes/anarcat]]??
 
-Voir [[le doodle|http://www.doodle.com/ei7pyddk9wgerek8]] pour voir comment la date a été choisie. Noter que l'annonce par courriel a prévu 10hAM, non 14h, chez [[anarcat]].
-
-Matériel:
+## Matériel
 
  * stations
   * 2 bullet M2 à flasher (richard)
@@ -35,11 +39,14 @@ Manque:
 
  * câble réseau étanche (pour plugger mon toit - anarcat)
 
+## Tests préliminaires
+
 Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
 
-Client: clef USB UR055G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mode adhoc. Transfert: 5.88 MB @ 4.82 Mbit/s. Distance: 60 centimètres.
+ * Client: clef USB UR055G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mode adhoc. Transfert: 5.88 MB @ 4.82 Mbit/s. Distance: 60 centimètres.
+ * Client: Linsys WRT54G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mode Access Point. 6.50 MBytes @ 5.23 Mbits/sec. Distance: 2 mètres avec 2 murs.
 
-Client: Linsys WRT54G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mode Access Point. 6.50 MBytes @ 5.23 Mbits/sec. Distance: 2 mètres avec 2 murs.
+[[users/elecnix]] a bien travaillé sur la [documentation batman](configuration/batman) et avait déjà deux points d'accès Linksys préconfigurés pour faire des tests.
 
 ## Organisation
 
@@ -56,11 +63,22 @@ Client: Linsys WRT54G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mo
 
 ## Résultats
 
- * plusieurs machines flashées
+ * plusieurs machines flashées avec notre procédure standard (4)
  * lien testé comme fonctionnel à 10mbps (1.2 MiByte/s) entre anarcat
-   et grace, avec la bullet M2 chez anarcat et ??? chez grace
+   et grace, avec la bullet M2 chez anarcat et chez grace
  * lien était temporaire, mais l'emplacement est parfait et le lien
    sera remonté
  * les nodes peuvent bien sûr router du traffic de leur interface
    physique vers le mesh, sans problème, suffit d'ajouter le node
    comme gateway de son laptop
+ * un Bullet M2 est maintenant en place et fonctionnel chez [[nodes/benoitg]] et [[nodes/anarcat]], mais ne se voient pas
+ * anarcat a travaillé à la [configuration IP](configuration/ip) de son node, avec des bonnes idées pour le IPv6
+
+## À retenir pour la prochaine fois
+
+ * on a utilisé des [radios FRS](https://en.wikipedia.org/wiki/Family_Radio_Service) (UHF) pour communiquer, c'est à refaire
+   * même si on avait pas de lien wifi, on pouvait établir un lien radio clair entre [[nodes/benoitg]] et [[nodes/anarcat]]
+   * très pratique pour communiquer entre le toit et le plancher des vaches, particulièrement pour demander de monter des trucs
+ * le kit d'outils de Richard est incroyablement utile, on sent l'expérience! on aurait pas su comment faire sans!
+ * avoir les nodes déjà flashées et en mesh avec BATMAN aurait sauvé beaucoup de temps
+ * le plus long est passer le filage et monter les antennes, bien que flasher prend aussi du temps, mais une fois que c'est monté, c'est fait: ça marche ou ça marche pas, il n'y pas grand chose à faire, parce qu'on est souvent en omnidirectionnel
