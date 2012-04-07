@@ -18,6 +18,8 @@ A faire:
  * Prendre un panorama a partir du toit.
  * 
 
+Details:
+
  * MAC address:
  * IP address:
  * IPv6 address:
