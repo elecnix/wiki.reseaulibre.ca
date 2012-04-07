@@ -184,7 +184,8 @@ Il doit aussi être blindé pour protéger les équipements.
 
 On peux toujours installer un câble pour l'intérieur, mais il sèchera après quelques années.
 
-
+Tableau de longueur de câble réseau vs. puissance et voltage:
+http://store.freenet-antennas.com.au/documents/UBNT_POE_Cable_Lengths.pdf
 
 
 
