@@ -106,3 +106,11 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
  * le kit d'outils de Richard est incroyablement utile, on sent l'expérience! on aurait pas su comment faire sans!
  * avoir les nodes déjà flashées et en mesh avec BATMAN aurait sauvé beaucoup de temps
  * le plus long est passer le filage et monter les antennes, bien que flasher prend aussi du temps, mais une fois que c'est monté, c'est fait: ça marche ou ça marche pas, il n'y pas grand chose à faire, parce qu'on est souvent en omnidirectionnel
+
+## Prochaines étapes
+
+ * finir le montage de [[grace]]
+ * montage de [[genb]]
+ * montage de [[btm]], [[spoked]]?
+ * montage de [[moreau]]? 
+ * montage du mesh de verdun?
