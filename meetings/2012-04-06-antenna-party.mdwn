@@ -83,7 +83,7 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
 
  * plusieurs machines flashées avec notre procédure standard (4)
  * lien testé comme fonctionnel à 10mbps (1.2 MiByte/s) entre anarcat
-   et grace, avec la bullet M2 chez anarcat et chez grace
+   et grace, avec la bullet M2 chez anarcat et une picostation avec antenne (14dbi?) chez grace
  * lien était temporaire, mais l'emplacement est parfait et le lien
    sera remonté
  * les nodes peuvent bien sûr router du traffic de leur interface
