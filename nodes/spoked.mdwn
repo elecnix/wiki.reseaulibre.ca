@@ -3,7 +3,7 @@
 
 Node planifiee pour ce printemps. Acces au toit, le range devrait etre bon si je peux monter une pole au dessus des arbres...
 
-L'equipement n'est pas encore achete, je voulais prendre le temps d'etre bien certain avant de commander.
+L'equipement est commande, mais les produits Ubiquiti sont backorder presentement chez Converbit. Je prefere quand meme attendre et faire affaire avec ce fournisseur local.
 Liste:
 
  * Ubiquiti Bullet M2HP
