@@ -73,6 +73,12 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
    comme gateway de son laptop
  * un Bullet M2 est maintenant en place et fonctionnel chez [[nodes/benoitg]] et [[nodes/anarcat]], mais ne se voient pas
  * anarcat a travaillé à la [configuration IP](configuration/ip) de son node, avec des bonnes idées pour le IPv6
+ * anarcat a appris à crimper et souder des câbles extérieurs pour le PoE
+
+À noter:
+
+ * anarcat doit un Bullet M2 à richard
+ * même chose pour Benoît?
 
 ## À retenir pour la prochaine fois
 
