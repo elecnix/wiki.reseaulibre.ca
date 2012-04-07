@@ -9,7 +9,7 @@ Mat d'antenne de 30 pieds sur le toit d'un triplex (~55pieds au dessus du niveau
  * Hardware: Bullet M2
  * Power:
  * Location: 45.542470, -73.623229
- * Status: [[!taglink up]]
+ * Status: [[!taglink up]] since April 6, 2012
  * Links: 
  * Azimuth:
  * Panorama: http://farm8.staticflickr.com/7191/6906062724_4f6f4c1bfd_o.jpg
