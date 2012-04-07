@@ -2,7 +2,7 @@
 
 Mat d'antenne de 30 pieds sur le toit d'un triplex (~55pieds au dessus du niveau de la rue)
 
- * MAC address: ??
+ * MAC address: 00:15:6D:DB:D3:DC
  * IP address: 192.168.3.91
  * IPv6 address:
  * Software: OpenWRT backfire
