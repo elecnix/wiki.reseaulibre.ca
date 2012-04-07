@@ -197,7 +197,7 @@ wlan0: active
 br-lan: active
 ```
 
-[!]Note: after reboot check
+[!] Note: after reboot check
 
     dmesg | tail
 
