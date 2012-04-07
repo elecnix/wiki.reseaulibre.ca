@@ -105,6 +105,7 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
    * même si on avait pas de lien wifi, on pouvait établir un lien radio clair entre [[nodes/benoitg]] et [[nodes/anarcat]]
    * très pratique pour communiquer entre le toit et le plancher des vaches, particulièrement pour demander de monter des trucs
  * le kit d'outils de Richard est incroyablement utile, on sent l'expérience! on aurait pas su comment faire sans!
+ * on aurait bien aimé faire une installation permanente à grace, au moins fixer l'antenne et entrer dans l'édifice. Mieux vaut faire du repérage *avant* les tests :)
  * avoir les nodes déjà flashées et en mesh avec BATMAN aurait sauvé beaucoup de temps
  * le plus long est passer le filage et monter les antennes, bien que flasher prend aussi du temps, mais une fois que c'est monté, c'est fait: ça marche ou ça marche pas, il n'y pas grand chose à faire, parce qu'on est souvent en omnidirectionnel
 
