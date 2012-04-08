@@ -197,18 +197,6 @@ wlan0: active
 br-lan: active
 ```
 
-[!] Note: after reboot check
-
-    dmesg | tail
-
-You might get an error from batman_adv stating the MTU of wlan0 interface is too small (1500), even if the wlan0 mtu was set above through uci. To confirm this check
-
-    ifconfig wlan0
-
-To fix this, change the MTU of interface with ifconfig
-
-    ifconfig wlan0 mtu 1528
-
 ### Sur DD-WRT
 
 todo
