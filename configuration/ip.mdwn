@@ -13,7 +13,7 @@ IP | Hardware | wifi MAC | Location
 192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
 """]]
 
-Note: the table on the left is manually maintained and may fall out of sync with the data in [[nodes]]. We are looking forward towards [support for aggregating definition lists in ikiwiki](http://ikiwiki.info/todo/internal_definition_list_support/) (and if people are interested on working on this it would be great), but in the meantime this is error-prone...
+Note: the table on the right is manually maintained and may fall out of sync with the data in [[nodes]]. We are looking forward towards [support for aggregating definition lists in ikiwiki](http://ikiwiki.info/todo/internal_definition_list_support/) (and if people are interested on working on this it would be great), but in the meantime this is error-prone...
 
 ### Static configuration
 
