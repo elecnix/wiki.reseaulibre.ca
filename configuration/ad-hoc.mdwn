@@ -101,6 +101,10 @@ On peut changer ceci sur la machine Debian, avec la commande
     iwconfig wlan0 key off
 
 
+### Firewall / Pare-feu
+
+Assez evident, mais facile a oublier: Avez-vous des regles de pare-feu qui bloquent les pings sur wlan0? Verifiez toujours l'etat et les regles de votre firewall!
+
 # OpenWRT configuration
 
 ## Through the luci web interface
