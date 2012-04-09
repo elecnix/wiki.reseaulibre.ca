@@ -11,7 +11,7 @@ Découvrir quelle est l'interface réseau (ex: wlan0) :
 
 This will bring up your network interface with an IP in the 10.0.0.0/8 range.
 
-    iwconfig wlan0 mode ad-hoc essid mesh-mtl
+    iwconfig wlan0 mode ad-hoc essid mesh-mtl ap 02:51:48:72:03:11
     ifconfig wlan0 10.0.1.42 netmask 255.0.0.0 up
 
 Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. Sinon, descendre l'interface réseau (voir même désactiver son module noyau) et la ré-activer.
@@ -110,7 +110,7 @@ The above yields the following configuration, in `/etc/config/wireless`:
             option 'encryption' 'none'
             option 'ssid' 'mesh-mtl'
             option 'mode' 'adhoc'
-            option 'bssid' '2A:96:BF:DD:8C:98'
+            option 'bssid' '02:51:48:72:03:11'
 
 And this chunk ends up in `/etc/config/network`:
 
