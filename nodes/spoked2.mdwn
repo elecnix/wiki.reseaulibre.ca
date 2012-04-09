@@ -1,4 +1,4 @@
-[[!waypoint lat="45.527712" lon="-73.590481" embed hidden width="400px" height="400px" right desc="Plans for a node on my roof"]]
+[[!waypoint lat="45.5277" lon="-73.5904" embed hidden width="400px" height="400px" right desc="Plans for a node on my roof"]]
 
 Placeholder for a rooftop node. Need confirmation with friend this will be possible.
 
