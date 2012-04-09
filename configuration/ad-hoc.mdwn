@@ -46,6 +46,16 @@ Désactiver puis ré-activer la carte réseau (malheureusement, il faut deviner 
     rmmod iwlwifi
     modprobe iwlwifi
 
+Il peut arriver que cette methode ne fonctionne pas. Avec une carte Intel Centrino sur un Thinkpad Lenovo, la commande
+
+    dmesg | tail
+
+Montre qu'il y a un probleme dans l'obtention, ou l'identification du firmware de la carte:
+
+    iwlwifi 0000:03:00.0: request for firmware file 'iwlwifi-6000-4.ucode' failed.
+
+Pourtant, ce fichier est disponible dans /lib/firmware, si la carte etait fonctionnelle auparavant. C'est un probleme qui semble etre documente de toute part sur le net. Dans ce cas, la solution simple est malheureusement de redemarrer la machine.
+
 Ça peut être utile d'assigner une adresse statique sur l'interface ad-hoc pour confirmer que la connexion fonctionner bien. Assigner une adresse unique par machine, par exemple:
 
     machine A: ifconfig wlan0 192.168.1.10
