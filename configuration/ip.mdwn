@@ -96,10 +96,10 @@ Known allocations:
 
  * `2c08:9fa7::1/64` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/anarcat]]
 
-> ''Note: the mesh prefix was chosen on
+> *Note: the mesh prefix was chosen on
 > [SixXS.net](https://www.sixxs.net/tools/grh/ula/), using the MAC
 > address of my router. It was also registered there under Anarcat's
-> email address.''
+> email address.*
 
 ## Connecting to an existing network
 
