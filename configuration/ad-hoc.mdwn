@@ -64,6 +64,43 @@ Pourtant, ce fichier est disponible dans /lib/firmware, si la carte etait foncti
 
 Puis utiliser la commande "ping" pour voir si on peut parler à une autre machine.
 
+### Key encryption
+
+Dans le cas d'un laptop qui n'est pas dedie au mesh, il se peut que la configuration de l'interface wlan0 traine des flags de ses configurations precedentes. 
+
+    iwconfig wlan0
+
+devrait montrer
+
+    wlan0     IEEE 802.11abgn  ESSID:"mesh-mtl"  
+              Mode:Ad-Hoc  Frequency:2.412 GHz  Cell: 02:51:48:72:03:11   
+              Tx-Power=15 dBm   
+              Retry  long limit:7   RTS thr:off   Fragment thr:off
+              Encryption key:off
+              Power Management:off
+
+Pourtant, il est possible que d'une autre machine, par exemple un routeur OpenWRT, la commande
+
+    iwlist wlan0 scan
+
+montre que notre cellule a son "Encryption key" a "on"
+
+    Cell 10 - Address: 02:51:48:72:03:11
+                Channel:1
+                Frequency:2.412 GHz (Channel 1)
+                Quality=70/70  Signal level=-25 dBm  
+                Encryption key:on
+                ESSID:"mesh-mtl"
+                Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 6 Mb/s
+                          9 Mb/s; 12 Mb/s; 18 Mb/s
+                Bit Rates:24 Mb/s; 36 Mb/s; 48 Mb/s; 54 Mb/s
+                Mode:Ad-Hoc
+                    
+On peut changer ceci sur la machine Debian, avec la commande
+
+    iwconfig wlan0 key off
+
+
 # OpenWRT configuration
 
 ## Through the luci web interface
