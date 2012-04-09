@@ -24,7 +24,7 @@ Par exemple:
 
     uname -a
     apt-cache search linux-image-3
-    sudo apt-get install linux-image-2.3.0-1-686-pae
+    sudo apt-get install linux-image-3.2.0-1-686-pae
 
 Si vous avez mis à jour votre noyau, il faut redémarrer la machine.
 
