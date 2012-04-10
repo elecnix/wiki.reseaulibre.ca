@@ -33,18 +33,9 @@ We need volunteers! On parle français aussi!
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
+* [[Meetings]] - nos rencontres en personne
 
-## Prochaine rencontre
-
-Aucune rencontre prévue. 
-
-<!-- [[!inline pages="meetings/*" raw=yes show=1 feeds=no]] 
-
-Voir ce lien pour les détails: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]] -->
-
-## Toutes les rencontres
-
-[[!inline pages="meetings" raw=yes]]
+<!-- * **Prochaine rencontre**: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]] -->
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
