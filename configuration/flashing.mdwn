@@ -1,8 +1,8 @@
-[[!toc levels=3]]
-
 This page is designed to give you quick howtos to flash common
 devices. It is not meant to be a complete directory of all esoteric
 devices, others have done this better.
+
+[[!toc levels=3]]
 
 # Firmware downloads
 
