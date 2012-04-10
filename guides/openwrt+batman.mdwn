@@ -20,7 +20,7 @@ Turn the radio on:
 
     uci delete wireless.radio0.disabled
 
-Set a custom name, in case you encouter other peers :-)
+Set a custom name, in case you encouter other peers...
 
     uci set system.@system[0].hostname=batman-88
 
@@ -40,7 +40,7 @@ Disable DHCP server on LAN, so as to not interfere with home router.
     uci commit
     reboot & exit
 
-> *Note: only restarting network will not update the DHCP server.*
+(!) Note: only restarting network will not update the DHCP server.
 
 Disconnect the PC from the router and now connect both the
 PC and the mesh router to the home router.
@@ -80,7 +80,7 @@ Install B.A.T.M.A.N (the home router provides access to internet)
     opkg update
     opkg install kmod-batman-adv
 
-> If your router has no internet access, or the operation freezes your router, or gives memory errors, you will have to install the `kmod-lib-crc16` and `kmod-batman-adv` modules by hand. See the [[Manual Package Installation|guides/openwrt+batman/manual-package-install]] help.
+(!) If your router has no internet access, or the operation freezes your router, or gives memory errors, you will have to install the `kmod-lib-crc16` and `kmod-batman-adv` modules by hand. See the [[Manual Package Installation|guides/openwrt+batman/manual-package-install]] help.
 
 Le module `batman_adv` devrait maintenant être chargé:
 
