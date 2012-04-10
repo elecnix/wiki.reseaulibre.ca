@@ -45,14 +45,6 @@ Nanostation M2
 
 # Flashing methods
 
-[!] Important: after you flash your device, the password will be reset and the device will be wide open!!! You NEED TO CHANGE THE PASSWORD! Use `pwgen` or another tool to generate a random password and set one using:
-
-    passwd
-
-Keep the password in a safe place, your password manager or your head, if the latter: train using it regularly otherwise you *will* forget and will have to do a password reset (see below).
-
-(!) Note that this will DISABLE telnet and you will have to use SSH instead.
-
 ## Web interface
 
 If your router is still functional, the easiest way is to flash the
@@ -79,7 +71,7 @@ During the upload, pay attention to the following:
 3. reboot the router with the reset button pressed until the leds flash like a christmas tree
 4. send the new firmware through tftp:
 
-        atftp --trace --option "timeout 1" --option "mode octet" --put --local-file openwrt-xxx-x.x-xxx.bin 192.168.1.1
+        atftp --trace --option "timeout 1" --tftp-timeout 1 --option "mode octet" --put --local-file openwrt-xxx-x.x-xxx.bin 192.168.1.1
 
  with netkit-tftp:
  
@@ -116,6 +108,21 @@ Puis vous spécifiez l'addresse de votre serveur sur votre PC connecté par ethe
 
    sysupgrade http://192.168.1.2/openwrt-blah-squashfs.trx
 
+# After flashing the device
+
+## Password reset
+
+[!] Important: after you flash your device, the password will be reset and the device will be wide open!!! You NEED TO CHANGE THE PASSWORD! Use `pwgen` or another tool to generate a random password and set one using:
+
+    passwd
+
+Keep the password in a safe place, your password manager or your head, if the latter: train using it regularly otherwise you *will* forget and will have to do a password reset (see below).
+
+(!) Note that this will DISABLE telnet and you will have to use SSH instead.
+
+## Other configuration
+
+See the next [[configuration]] pages for more instructions.
 
 # Password reset
 
