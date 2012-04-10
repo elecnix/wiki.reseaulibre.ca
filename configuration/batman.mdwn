@@ -149,6 +149,17 @@ Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes l
     batctl translocal
     batctl transglobal
 
+# Bugs
+
+## BATMAN network unreachable from others
+
+If you connect to the node in [[ad-hoc]] mode and are **not** part of the BATMAN mesh, you can never get into the mesh. For example, while I can reach the mesh IPs through a networked connexion, and only if I add `bat0` to the `br-lan` bridge with this:
+
+    uci set network.lan.ifname="eth0 bat0"
+
+... I cannot ping the IPs by configuring my laptop *only* in [[ad-hoc]] mode (no batman!). The way I test this is by setting up ad-hoc on my laptop, assigning an IP to the `wlan0` interface on the node and on my laptop (different netblock! `192.168.4.x/24`). I can then ping the IP of the node's side of the mesh (`192.168.3.42`) but not another node in the mesh (say `192.168.3.90`), I get `Destination port unreachable`, I assume because of that nasty firewall. --[[anarcat]]
+
+
 # Références
 
  * [Main project page open-mesh.org](http://www.open-mesh.org/)
