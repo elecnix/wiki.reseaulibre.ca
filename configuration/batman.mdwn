@@ -48,6 +48,10 @@ Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes l
     batctl translocal
     batctl transglobal
 
+Ajouter manuellement une interface à batman:
+
+    batctl if add wlan0
+
 # Étape suivante
 
 Voir [[la configuration IP|configuration/ip]].
