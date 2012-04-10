@@ -115,7 +115,7 @@ First, install necessary packages on OpenWRT:
 
 Then configure a static IP address:
 
-    uci set network.lan.ip6addr="fd64:2c08:9fa7::1/64"
+    uci set network.lan.ip6addr="fd64:2c08:9fa7::2/64"
 
 Finally the following will make sure that clients can autoconfigure:
 
@@ -163,13 +163,13 @@ mesh. This can be done with the following configurations:
 
 In `rc.conf`:
 
-    ipv6_ifconfig_vr2="fd64:2c08:9fa7::1/64"
+    ipv6_ifconfig_vr2="fd64:2c08:9fa7::1/48"
     rtadvd_enable="YES"
     rtadvd_interfaces="vr2"
 
 This can be implemented immediatly with:
 
-    ifconfig vr2 inet6 fd64:2c08:9fa7::1/64
+    ifconfig vr2 inet6 fd64:2c08:9fa7::1/48
     rtadvd vr2
 
 # Issues and todos
