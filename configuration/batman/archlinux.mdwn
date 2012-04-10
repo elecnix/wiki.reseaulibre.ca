@@ -1,0 +1,4 @@
+On besoin de l'[[AUR | https://aur.archlinux.org/]]
+
+    # modprobe batman_adv
+    $ yaourt -S batctl
