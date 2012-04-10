@@ -20,7 +20,14 @@ Right after flashing, to ensure that tftp is available in case your router gets 
     
 (!) Note: On WRT54GL (at least), you should probably use 'wait_time' instead of 'boot_time'.
 
-## Specific hardware:
+### Specific hardware
+
+OpenWRT comes in many versions. You will want to use the `backfire`
+unless you need cutting edge features (like [[BATMAN]]) in which case
+you should use the `trunk`.
+
+Since there are many devices, there are also different different
+architectures to choose from, depending on the hardware "in the box".
 
 Linksys WRT54G
 : [backfire](http://downloads.openwrt.org/backfire/10.03.1/brcm47xx/openwrt-wrt54g-squashfs.bin)
