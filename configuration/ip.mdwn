@@ -5,6 +5,8 @@
 IP addresses are allocated on a first come first serve basis. We
 strongly encourage clever use of IPv6 to avoid starvation.
 
+This section documents the strategy and the addresses already allocated. To configure your device, see the next section, but please update the information below when you allocate yourself an IP.
+
 ## IPv4
 
 [[!table class="pagecloud" data="""
