@@ -52,6 +52,10 @@ Ajouter manuellement une interface à batman:
 
     batctl if add wlan0
 
+# Use our bat-hosts
+
+You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|configuration/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
+
 # Étape suivante
 
 Voir [[la configuration IP|configuration/ip]].
