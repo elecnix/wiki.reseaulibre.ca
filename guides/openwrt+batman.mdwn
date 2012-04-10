@@ -40,6 +40,12 @@ Disable DHCP server on LAN, so as to not interfere with home router.
     uci commit
     reboot & exit
 
+Disconnect the PC from the router and now connect both the
+PC and the mesh router to the home router.
+Re-connect to the router using its new IP address.
+
+    telnet 192.168.3.88
+
 > *Note: only restarting network will not update the DHCP server.*
 
 # Wireless Configuration
@@ -68,12 +74,6 @@ Configure the wireless interface with a higher MTU to allow batman to decorate p
     uci set network.wlan0.mtu=1528
 
 # Batman Installation
-
-Disconnect the PC from the router and now connect both the
-PC and the mesh router to the home router.
-Re-connect to the router using its new IP address.
-
-    telnet 192.168.3.88
 
 Install B.A.T.M.A.N (the home router provides access to internet)
 
