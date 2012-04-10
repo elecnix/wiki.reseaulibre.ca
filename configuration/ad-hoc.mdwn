@@ -9,10 +9,10 @@ Découvrir quelle est l'interface réseau (ex: wlan0) :
 
 À partir d'ici, on assume que vous êtes "root" (sudo -s).
 
-This will bring up your network interface with an IP in the 10.0.0.0/8 range.
+This will bring up your network interface:
 
-    iwconfig wlan0 mode ad-hoc essid mesh-mtl ap 02:51:48:72:03:11
-    ifconfig wlan0 10.0.1.42 netmask 255.0.0.0 up
+    iwconfig wlan0 mode ad-hoc essid mesh-mtl ap 02:51:48:72:03:11 channel 6
+    ifconfig wlan0 up
 
 Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. 
 
@@ -24,6 +24,8 @@ Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la ca
               Power Management:on
 
 Sinon, descendre l'interface réseau (voir même désactiver son module noyau) et la ré-activer.
+
+Voir [[configuration/ip]] pour l'allocation de l'addresse.
 
 ## Problèmes communs
 
