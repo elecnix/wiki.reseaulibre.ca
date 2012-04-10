@@ -33,14 +33,18 @@ Pour installer batman-adv:
 
 > Voir [[flashing]] pour plus d'informations sur l'architecture à utiliser.
 
+Changement du MTU de l'interface wifi:
+
+    uci set network.wlan0.mtu=1528
+
+> [!] Il n'est pas clair que ceci est réellement nécessaire.
+
 Configuration de l'interface de batman.
 
     uci set network.bat0=interface
     uci set network.bat0.ifname=bat0
     uci set network.bat0.proto=none
     uci set network.bat0.mtu=1500
-
-<!-- necessary? i was able to make this work without this
 
 The 'lan' bridge can be configured to add bat0 as well as eth0:
 
@@ -50,15 +54,9 @@ The 'lan' bridge can be configured to add bat0 as well as eth0:
 for ubiquity it's eth0. Look at the output of ifconfig to see what's
 the eth0 interface.
 
--->
+Tell batman to use the wireless interface *and* the local bridge:
 
-Tell batman to use the wireless interface.
-
-    uci set batman-adv.bat0.interfaces="wlan0"
-
-> (!) Note that you could have multiple interfaces here,
-> space-seperated, if you would like BATMAN to be operating on (say)
-> wired interfaces.
+    uci set batman-adv.bat0.interfaces="wlan0 br-lan"
 
 Reboot the router
 
@@ -156,6 +154,8 @@ Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes l
 With the current configuration, I cannot ping the third hop in a three-hop relay. In my test setup, my laptop (angela, `192.168.3.44`) is connected through the mesh to a Linksys AP (carton, `192.168.3.99`), which is strong enough to reach the Bullet on my roof (boulette, `192.168.3.90`).
 
 carton can ping boulette, and angela can ping carton, but not boulette. I get `Destination port unreachable`, I assume because of that nasty firewall, because I see ARP requests go through fine. --[[anarcat]]
+
+> This works now, the problem was I was trying to live outside the main bridge: don't try, you will fail. --[[anarcat]]
 
 # Références
 
