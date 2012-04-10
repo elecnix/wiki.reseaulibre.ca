@@ -1,7 +1,7 @@
 This is my home router, which is not directly part of the mesh other than being connected to [[boulette]] and acting as its gateway.
 
  * MAC address: N/A
- * IP address: 172.16.0.1 / 72.0.72.144
+ * IP address: `72.0.72.144`, `172.16.0.1`
  * IPv6 address: `2001:1928:1:9::`, `fd64:2c08:9fa7::1`
  * Software: FreeBSD 8.2
  * Hardware: Soekris
