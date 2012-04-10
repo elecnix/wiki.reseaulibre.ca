@@ -2,19 +2,15 @@
 
 [[!toc levels=2]]
 
-This page is about installing B.A.T.M.A.N. on OpenWRT. For other target installations, see the [[Batman Configuration|configuration/batman]] page.
+This guide will take you from a fresh OpenWRT installation up to a fully functional B.A.T.M.A.N. node.
 
-# Requirements
+# Installing OpenWRT
 
-## Install OpenWRT
-
-To install OpenWRT, you must [[flash your router|configuration/flashing]] with a recent version. **The recommended version is _trunk_**. Il existe des [[images trunk pré-compilées|http://downloads.openwrt.org/snapshots/trunk/]] pour chaque matériel supporté.
+To install OpenWRT, you must [[flash your router|configuration/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**.
 
 Il y a un paquet nommé kmod-batman-adv pour OpenWRT. Dans la version stable de OpenWRT ('backfire'), on retrouve une ancienne version de batman: 2011.2.0. Les noeuds de Montréal sont installés avec la version 2012.0.0 de batman. Il faut donc installer la version 'trunk' de OpenWRT.
 
-Il est aussi possible de [[compiler soi-même OpenWRT|http://wiki.openwrt.org/doc/howto/build]] et [[compiler batman en même temps|http://www.open-mesh.org/wiki/batman-adv/Building-with-openwrt]].
-
-## Basic Network Configuration
+# Basic Network Configuration
 
 Connect a cable from the LAN to your PC.
 Set your PC to get an IP address automatically.
