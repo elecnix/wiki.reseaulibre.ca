@@ -14,7 +14,7 @@ Some more tests are required but so far i am thinking of:
 
  * [[configuration/olsrd]]
  * [[configuration/ad-hoc]] mode
- * [[configuration/vpn]] over that for global network access
+ * [[todo/vpn]] over that for global network access
 
 We also need to figure out how [[nodes]] are interconnected, at the physical level. Do we want a tree?
 
