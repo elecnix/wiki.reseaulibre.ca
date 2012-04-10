@@ -52,7 +52,7 @@ Actual results:
 
 So it looks like the firewall on carton is kicking in. Note that angela *can* ping boulette if it joins the mesh with a batman configuration. --[[anarcat]]
 
-> First test:
+## First test
 
 following the routedap guide in the openwrt wiki
 
@@ -115,3 +115,17 @@ uci commit
 """]]
 
 unfortunately, this breaks batman.
+
+## Second test
+
+Reverting the segregation of the lan/wifi interfaces:
+
+[[!format sh """
+root@carton:~# uci set wireless.@wifi-iface[0].network=lan
+root@carton:~# uci set batman-adv.bat0.interfaces="br-lan"
+root@carton:~# uci set network.lan.ifname="eth0.0"
+"""]]
+
+This basically bricks the device. I then can't reach it on either the
+wired or wireless port, with or without batman. batman pings don't even
+work. --[[anarcat]]
