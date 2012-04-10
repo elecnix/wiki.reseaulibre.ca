@@ -48,6 +48,7 @@ This node runs batman according to the [[configuration/batman]] howto.
  * test IPv6 autoconfiguration
  * install ganglia? or [[configuration/monitoring]]?
  * test ipv6 announcement
+ * aggregate above stats in a table, automatically ([[!iki todo/internal_definition_list_support/]])
 
 # Notes
 
