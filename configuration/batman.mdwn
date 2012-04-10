@@ -40,6 +40,8 @@ Configuration de l'interface de batman.
     uci set network.bat0.proto=none
     uci set network.bat0.mtu=1500
 
+<!-- necessary? i was able to make this work without this
+
 The 'lan' bridge can be configured to add bat0 as well as eth0:
 
     uci set network.lan.ifname="eth0 bat0"
@@ -48,10 +50,20 @@ The 'lan' bridge can be configured to add bat0 as well as eth0:
 for ubiquity it's eth0. Look at the output of ifconfig to see what's
 the eth0 interface.
 
-Tell batman to use the wireless and the lan interfaces.
+-->
 
-    uci set batman-adv.bat0.interfaces="wlan0 br-lan"
+Tell batman to use the wireless interface.
 
+    uci set batman-adv.bat0.interfaces="wlan0"
+
+> (!) Note that you could have multiple interfaces here,
+> space-seperated, if you would like BATMAN to be operating on (say)
+> wired interfaces.
+
+Reboot the router
+
+    uci commit
+    reboot & exit
 
 ## Debian
 
@@ -82,11 +94,13 @@ Suivre ensuite la configuration manuelle ci-bas.
 
 # Configuration manuelle
 
-Toutes les plateformes vont utiliser une configuration similaire:
+Toutes les plateformes peuvent être configurées manuellement avec ces
+instructions, qui devront être configurés dans un script de démarrage
+éventuellement.
 
 Ajouter une interface physique à batman:
 
-    ifconfig wlan0 mtu 1528 192.168.8.2 up
+    ifconfig wlan0 mtu 1528 up
     batctl if add wlan0
 
 > (!) Notez comment le MTU est augmenté à cause des messages de
@@ -96,13 +110,15 @@ Activer l'interface:
 
     ifconfig bat0 up
 
-# Use our bat-hosts
-
-You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|configuration/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
+L'interface doit ensuite être configurée
 
 # Étape suivante
 
 Voir [[la configuration IP|configuration/ip]].
+
+## Use our bat-hosts
+
+You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|configuration/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
 
 # Troubleshooting
 
@@ -132,10 +148,6 @@ Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes l
 
     batctl translocal
     batctl transglobal
-
-Ajouter manuellement une interface à batman:
-
-    batctl if add wlan0
 
 # Références
 
