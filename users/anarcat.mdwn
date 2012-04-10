@@ -27,8 +27,18 @@ Here is the list of nodes I operate.
 
  * make the mesh work in my home (./) done with [[nodes/carton]]
  * fix IPv4 allocation to use `172.16.0.0/12` (./) done, see [[configuration/ip]]
- * test IPv6 autoconfiguration [!] having problems with OpenWRT, seems like trunk packages are not in sync with the image i downloaded last week
- * test ipv6 announcement
+ * test IPv6 autoconfiguration (./) done
+ * test ipv6 announcement [!] somehow this doesn't work as expected:
+
+   * the /48 announcement was creating havoc:
+
+       [28187.091405] IPv6 addrconf: prefix with wrong length 48
+
+   * only the link-local prefix route gets added to the table, that's
+     kind of weird
+
+   * the packets don't actually go through to marcos
+
  * install ganglia? or [[configuration/monitoring]]?
  * aggregate above stats in a table, automatically ([[!iki todo/internal_definition_list_support/]])
 
