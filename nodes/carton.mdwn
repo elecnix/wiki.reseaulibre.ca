@@ -7,7 +7,7 @@ Test node for [[anarcat]], may be deployed below [[boulette]] to provide access 
  * Hardware: Links WRT54G
  * Power: N/A
  * Location: living room
- * Status: [[!taglink down]]
+ * Status: [[!taglink up]]
  * Links: [[boulette]]
  * Azimuth: 360°
  * Panorama: N/A
