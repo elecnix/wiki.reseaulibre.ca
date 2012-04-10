@@ -72,9 +72,9 @@ dt
     font-weight: bold;
 }
 
-h1 { border-bottom: 4px solid black; }
-h2 { border-bottom: 3px solid #333; }
-h3 { border-bottom: 2px solid #666; }
-h4 { border-bottom: 1px solid #aaa; }
-h5 { border-bottom: 1px solid #ccc; }
-h6 { border-bottom: 1px solid #fff; }
+h1 { border-bottom: 2px solid black; }
+h2 { border-bottom: 1px solid #666; }
+h3 { border-bottom: 1px solid #aaa; }
+h4 { border-bottom: 1px solid #ccc; }
+h5 { border-bottom: 1px solid #ddd; }
+h6 { border-bottom: 1px solid #eee; }
