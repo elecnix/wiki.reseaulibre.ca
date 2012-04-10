@@ -86,7 +86,11 @@ Toutes les plateformes vont utiliser une configuration similaire:
 
 Ajouter une interface physique à batman:
 
+    ifconfig wlan0 mtu 1528 192.168.8.2 up
     batctl if add wlan0
+
+> (!) Notez comment le MTU est augmenté à cause des messages de
+> protocole de BATMAN.
 
 Activer l'interface:
 
