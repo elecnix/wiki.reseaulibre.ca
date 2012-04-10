@@ -1,5 +1,7 @@
 [[!meta title="Batman on OpenWRT"]]
 
+[[!toc levels=2]]
+
 This page is about installing B.A.T.M.A.N. on OpenWRT. For other target installations, see the [[Batman Configuration|configuration/batman]] page.
 
 # Install OpenWRT
