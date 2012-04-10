@@ -11,7 +11,7 @@ strongly encourage clever use of IPv6 to avoid starvation.
 IP | Hardware | wifi MAC | Location
 192.168.3.88 | Linksys WRT54G | 00:25:9c:5e:44:59 | elecnix/grace
 192.168.3.89 | Linksys WRT54G | 00:13:10:1b:6d:dd | elecnix/pierre
-192.168.3.90 | Bullet M2 #2 | | [[nodes/boulette]]
+192.168.3.90 | Bullet M2 #2 | 00:15:6d:db:d3:65 | [[nodes/boulette]]
 192.168.3.91 | Bullet M2 #1 | 00:15:6D:DB:D3:DC | [[nodes/benoitg]]
 192.168.3.92 | PicoStation M2 | 00:15:6d:81:e0:5b
 192.168.3.93 | NanoStation M2 | 00:15:6d:fc:be:90
