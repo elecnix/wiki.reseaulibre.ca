@@ -6,6 +6,8 @@ Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gére
 
     sudo apt-get install batctl
 
+[!] Ceci demandera peut-être un backport pour votre version de Debian, voir [[!debbug 668237]] pour les détails.
+
 Idéalement il faut aussi un noyau Linux qui est à jour. Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2012.0.0.
 
 Par exemple:
