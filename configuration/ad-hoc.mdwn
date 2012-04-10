@@ -3,6 +3,63 @@
 
 This page is an attempt to help you configure and troubleshoot the Ad-Hoc mode on your network card. This type of configuration is useful when joining a B.A.T.M.A.N. mesh as a client without B.A.T.M.A.N., or as a fully-enabled mesh node, as per the [[B.A.T.M.A.N. Configuration|configuration/batman]].
 
+# Ad-hoc on OpenWRT
+
+Connect a cable from the LAN to your PC.
+Set your PC to get an IP address automatically.
+Get into the router with its default IP address.
+
+    telnet 192.168.1.1
+
+This command can be used to backup or inspect your current
+configuration:
+
+    uci show
+
+Configure the router LAN interface to match the network
+of the home router this will be plugged into eventually.
+
+    uci set network.lan.ipaddr=192.168.3.88
+    uci set network.lan.gateway=192.168.3.1
+    uci set network.lan.dns=192.168.3.1
+
+Disable DHCP server on LAN, so as to not interfere with home router.
+
+    uci set dhcp.lan.ignore=1
+
+Activer la radio
+
+    uci delete wireless.radio0.disabled
+
+Set a custom name, in case you encouter other peers :-)
+
+    uci set system.@system[0].hostname=batman-88
+
+Wifi network no longer 'lan'
+
+    uci delete wireless.@wifi-iface[0].network
+
+Montreal mesh standards: channel 1, adhoc, named mesh-mtl. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
+
+    uci set wireless.radio0.channel=1
+    uci set wireless.@wifi-iface[0].mode=adhoc
+    uci set wireless.@wifi-iface[0].ssid=mesh-mtl
+    uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
+
+Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
+
+    uci set network.wlan0=interface
+    uci set network.wlan0.ifname=wlan0
+    uci set network.wlan0.proto=none
+    uci set network.wlan0.mtu=1528
+
+Écrire les changements et redémarrer
+
+    uci commit
+    reboot & exit
+
+> *Note: only restarting network will not update the DHCP server.*
+
 # Ad-Hoc on Debian
 
 Découvrir quelle est l'interface réseau (ex: wlan0) :
