@@ -64,17 +64,29 @@ During the upload, pay attention to the following:
 
 ## TFTP upload
 
-1. connect the router with a wire to your computer
+This works by turning off the device and rebooting it while repeatedly
+sending it the file over the network.
+
+1. make sure network-manager is disabled: ''right click on the network
+icon and uncheck `Enable networking`'' or:
+
+        sudo service network-manager stop
+
+> *[!] Warning: this could disable your internet access, so download
+> the above images *before* you do this.*
+
+1. connect the router with a network wire to your computer
 2. configure an IP on your computer
 
-        ifconfig eth0:flash 192.168.1.2 up
+        ifconfig eth0 192.168.1.2 up
 
-3. reboot the router with the reset button pressed until the leds flash like a christmas tree
-4. send the new firmware through tftp (with [[!debpkg atftp]]):
+3. send the new firmware through tftp repeatedly
+
+ * with [[!debpkg atftp]] (prefered):
 
         atftp --trace --option "timeout 1" --tftp-timeout 1 --option "mode octet" --put --local-file openwrt-xxx-x.x-xxx.bin 192.168.1.1
 
- with [[!debpkg netkit-tftp]]:
+ * with [[!debpkg netkit-tftp]]:
  
         $ tftp 192.168.1.1x
         tftp> binary
@@ -83,12 +95,18 @@ During the upload, pay attention to the following:
         tftp> trace
         tftp> put openwrt.bin
 
-Then you wait until it reboots.
+4. reboot the router with the reset button pressed
+
+If everything goes well, the screen should scroll fast and the device
+should reboot.
 
 IP may vary according to the hardware, here are the known IPs:
 
 Ubiquity Bullet M2
 : 192.168.1.20
+
+Linksys WRT54G
+: 192.168.1.1
 
 For other platforms (Mac, Windows, etc), see: <http://wiki.openwrt.org/doc/howto/generic.flashing.tftp>
 
