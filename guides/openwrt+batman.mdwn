@@ -6,9 +6,7 @@ This guide will take you from a fresh OpenWRT installation up to a fully functio
 
 # Installing OpenWRT
 
-To install OpenWRT, you must [[flash your router|configuration/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**.
-
-Il y a un paquet nommé kmod-batman-adv pour OpenWRT. Dans la version stable de OpenWRT ('backfire'), on retrouve une ancienne version de batman: 2011.2.0. Les noeuds de Montréal sont installés avec la version 2012.0.0 de batman. Il faut donc installer la version 'trunk' de OpenWRT.
+To install OpenWRT, you must [[flash your router|configuration/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**, which provides batman version 2012.0.0. The stable version of OpenWRT, "backfire", provides an older version and is _not recommended_.
 
 # Basic Network Configuration
 
