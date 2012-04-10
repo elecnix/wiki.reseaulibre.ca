@@ -41,4 +41,7 @@ Status
 Operator
 : [[users/anarcat]]
 
-This node runs batman according to the [[configuration/batman]] howto. It is interconnected with [[carton]].
+Links
+: [[boulette]], [[roadkiller]]
+
+This node runs batman according to the [[configuration/batman]] howto.
