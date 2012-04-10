@@ -8,14 +8,15 @@ The goal of this project is to create a community wireless network accessible fr
 * [[Nodes]] - the list of deployed nodes
 * [[Links]] - the links between the nodes
 
-# Technical information
-
-There is no good step-by-step manual on how to setup a relay or connect to the mesh just yet, but the following documentation should provide you with some pointers.
-
-This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
+# Joining the mesh
 
 * [[Guides]] - step by step config instructions to join the network
 * [[Configuration]] - in depth documentation of the various steps
+
+# Technical documentation
+
+This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
+
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured
 * [[Software]] - the software used in the project...
 * [[Wi-Fi Technicalities]] - basics of the physical layer and mechanics. 
