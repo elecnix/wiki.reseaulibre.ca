@@ -1,1 +1,49 @@
 Mettons que je configure un nouveau node. La page dit d'assigner une IPv6 statique. Laquelle je mets? --elecnix
+
+> Comme boulette:
+> 
+> * `fd64:2c08:9fa7::2/64` - `boulette.anarcat.ath.cx` -
+> [[nodes/boulette]] itself, announcing a subnet of the above
+>
+> Donc par exemple:
+> 
+> * `fd64:2c08:9fa7::3/64` - `besik`
+>
+> --[[anarcat]]
+
+## Changements proposés à l'adressage IPv4.
+
+*Doh!* J'avais commencé à répondre ceci à ta question, parce que je
+pensais que tu demandais une IPv4. ;) Mais c'est quand même important,
+je pense, donc je le garde ici:
+
+> Ça serait une IP dans le range suggéré dans la page. On utilise
+> présentement `192.168.3.0/24`, alors ça serait quelquechose comme
+> `192.168.3.42`, s'il n'est pas déjà pris.
+>
+> Le problème avec ce range est qu'il est très petit (254 IPs
+> utilisables), et plutôt commun, ce qui rend les tests difficiles et
+> le déploiement à long terme presque impossible.
+>
+> Je suggèrerais plutôt utiliser `172.16.0.0/12` pour IPv4, qui permet
+> 1 million d'IPs. C'est toujours insuffisant pour Montréal, mais je
+> doute qu'on ait 1 million de nodes globalement routés, et anyways on
+> veut encourager IPv6 à la place.
+>
+> Un autre avantage est qu'on peut segmenter ce réseau en plusieurs
+> parties. Par exemple, on pourrait assigner `172.16.0.1` à boulette
+> et `172.16.1.1` à benoitg et chacun pourrait assigner localement 256
+> IPs sans trop briser le mesh.
+>
+> Donc short version:
+>
+> Utilisez `172.16.X.1/12` (netmask `255.250.0.0`) pour un gros
+> routeur, par exemple: `172.16.0.1/12` pour une omni sur un toit.
+>
+> Utilisez `172.16.1.X/12` pour un plus petit routeur, par exemple
+> `172.16.1.42` pour un 60° dans une fenêtre ou des interconnexions
+> directes.
+>
+> Si tout le monde est d'accord avec cette allocation, je change l'IP
+> de [[boulette]]. Il est important de faire ces configurations dès le
+> départ, et rapidement. :) --[[anarcat]]
