@@ -21,7 +21,7 @@ cell
 
 ## OpenWRT
 
-Voir [[guides/ubnt+openwrt]] pour l'instant.
+Voir [[guides/ubnt+batman]] pour l'instant.
 
 ## Debian
 
