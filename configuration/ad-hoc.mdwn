@@ -1,5 +1,7 @@
 [[!toc levels=3]]
-[[!meta title="Ad-hoc network configuration"]]
+[[!meta title="Ad-hoc Network Configuration"]]
+
+This page is an attempt to help you configure and troubleshoot the Ad-Hoc mode on your network card. This type of configuration is useful when joining a B.A.T.M.A.N. mesh as a client without B.A.T.M.A.N., or as a fully-enabled mesh node, as per the [[B.A.T.M.A.N. Configuration|configuration/batman]].
 
 # Debian configuration
 
@@ -115,74 +117,6 @@ On peut changer ceci sur la machine Debian, avec la commande
 ### Firewall / Pare-feu
 
 Assez evident, mais facile a oublier: Avez-vous des regles de pare-feu qui bloquent les pings sur wlan0? Verifiez toujours l'etat et les regles de votre firewall!
-
-# OpenWRT configuration
-
-## Through the luci web interface
-
- 1. enable the device by checking (./) the enable checkbox in the `Devices`
- 2. choose an appropriate channel
- 3. fill in the details
-
-        Network Name (ESSID): mesh-mtl
-        BSSID: <copy existing bssid>
-        Mode: Independent (Ad-Hoc)
-        Encryption: No Encryption
-        Network: wlan <new>
-
-Note the latter part is important: this segregates the wifi from the lan
-bridge, which allows to stay have diffent networks for the diagnostic
-wire and the wireless.
-
-Then head for the `Network -> Interfaces` configuration page, enable the
-wlan network and assign the following settings:
-
-    Protocol: static
-    IPv4-Address: 10.0.1.1
-    IPv4-Netmask: 255.0.0.0
-    Zone: lan
-    Interface: wlan0
-
-Leave the rest as is.
-
-## Configuration file
-
-The above yields the following configuration, in `/etc/config/wireless`:
-
-    config 'wifi-device' 'radio0'
-            option 'type' 'mac80211'
-            option 'channel' '5'
-            option 'macaddr' '00:90:4c:5f:00:2a'
-            option 'hwmode' '11g'
-            option 'disabled' '0'
-    
-    config 'wifi-iface'
-            option 'device' 'radio0'
-            option 'network' 'wlan0'
-            option 'encryption' 'none'
-            option 'ssid' 'mesh-mtl'
-            option 'mode' 'adhoc'
-            option 'bssid' '02:51:48:72:03:11'
-
-And this chunk ends up in `/etc/config/network`:
-
-    config 'interface' 'wlan0'
-            option 'proto' 'static'
-            option 'ifname' 'wlan0'
-            option 'ipaddr' '10.0.1.1'
-            option 'netmask' '255.0.0.0'
-            option 'defaultroute' '0'
-            option 'peerdns' '0'
-
-also note that in the `/etc/config/firewall` file, you'll see that the
-wlan0 interface is assigned to the lan zone:
-
-    config 'zone'
-            option 'name' 'lan'
-            option 'input' 'ACCEPT'
-            option 'output' 'ACCEPT'
-            option 'forward' 'REJECT'
-            option 'network' 'lan wlan0'
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
