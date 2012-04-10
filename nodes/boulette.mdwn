@@ -41,41 +41,4 @@ Status
 Operator
 : [[users/anarcat]]
 
-This node runs batman according to the [[configuration/batman]] howto.
-
-# Todo
-
- * test IPv6 autoconfiguration
- * install ganglia? or [[configuration/monitoring]]?
- * test ipv6 announcement
- * aggregate above stats in a table, automatically ([[!iki todo/internal_definition_list_support/]])
-
-# Notes
-
-(!) Power can apparently be pushed up to 84mW (20dBm), see [seattlewireless](http://www.seattlewireless.net/LinksysWrt54g).
-
-# old battle plan
-
-This was the battle plan to configure the OLSR routing and setup on
-the roof, but it was short-circuited during the
-[[meetings/2012-04-06-antenna-party]].
-
-## Phase I: local tests
-
- 1. setup [[configuration/ad-hoc]] mode between the laptop, the
- linksys and the n900
-   * [!] problem here - the laptop doesn't support ad-hoc mode!! see
-     [[!debbug 645055]]
-   * (!) next step: setup olsrd on the n900, see <http://wiki.funkfeuer.at/index.php/OLSR_am_Nokia_N900>
- 2. (./) setup [[configuration/olsrd]] between the nodes (OpenWRT and wired laptop configured)
- 3. hookup the linksys to `roadkill.anarcat.ath.cx`, setup [[todo/vpn_gateways]] for outgoing?
- 4. think about system-wide [[todo/numbering policy]] (and [[configuration/ipv6]]? - see <http://wiki.freifunk.net/6mesh.freifunk.net> for this)
- 5. think about [[configuration/dns]] within the mesh
-
-## Phase II: first link
-
- 1. make panorama of roof
- 1. test [opennet's firmware](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware_NG) ([for ubiquity devices](https://wiki.opennet-initiative.de/wiki/AirOS-opennet))
- 2. setup local test environment with martn with two antennas
- 3. setup link between the two places
- 4. at this point, [[todo/network topology]] should be clear and documented
+This node runs batman according to the [[configuration/batman]] howto. It is interconnected with [[carton]].
