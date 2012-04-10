@@ -55,6 +55,8 @@ Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
     uci commit
     reboot & exit
 
+> (!) Il est possible de garder le reboot pour la dernière étape de la configuration si vous avez d'autres configurations à faire.
+
 # Ad-Hoc on Debian
 
 Découvrir quelle est l'interface réseau (ex: wlan0) :
