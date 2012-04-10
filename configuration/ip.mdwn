@@ -120,6 +120,16 @@ Other howtos:
 
 ## FreeBSD
 
+In `rc.conf`:
+
+    ifconfig_vr0="inet 192.168.3.88"
+    defaultrouter="192.168.0.1"
+
+If this host is to be a router, use instead:
+
+    ifconfig_vr0="inet 192.168.3.88"
+    gateway_enable="YES"
+
 ### IPv6
 
 Here we assume that behind your mesh node, you have an "authoritative"
@@ -134,7 +144,7 @@ In `rc.conf`:
 
 This can be implemented immediatly with:
 
-    ifconfig vr2 inet6 d64:2c08:9fa7::1/64
+    ifconfig vr2 inet6 fd64:2c08:9fa7::1/64
     rtadvd vr2
 
 
