@@ -15,28 +15,7 @@ Those instructions attempt to be platform-independent or at least cover multiple
 2. [[!traillink configuration/ad-hoc]] - basic point to point configuration
 3. [[!traillink configuration/batman]] - configuring mesh software for interconnexion (see also [[configuration/olsrd]], which we are not using right now)
 4. [[!traillink configuration/ip]] - adress allocation on the network and connexion with the outside world
-4. [[!traillink configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
-
-# Architectural design
-
-## Network topology
-
-We need to decide of a topology. Opennet has an interesting concept, where public IPs are hidden behind VPN gateways:
-
-<https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png>
-
-This has a few advantages:
-
- 1. strong over-the-air encryption
- 2. no need to change gateway if network topology changes
- 3. access to the internet only to subscribers
-
-We are also considering ad-hoc mode and OLSR, see [[todo/network_topology]].
-
-## IP allocation
-
-See the [[configuration/ip]] page for this.
-
+5. [[!traillink configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
