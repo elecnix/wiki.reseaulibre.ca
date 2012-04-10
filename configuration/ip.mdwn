@@ -28,6 +28,24 @@ This is the result of the first formal allocation during the [[meetings/2012-04-
 Note that some IPs may have been allocated without being marked
 here. See also the IPv6 allocations below.
 
+### OpenWRT
+
+To configure the IP address on a OpenWRT device, use this:
+
+    uci set network.lan.ipaddr=192.168.3.88
+    uci set network.lan.gateway=192.168.3.1
+    uci set network.lan.dns=192.168.3.1
+
+You may also commonly disable the DHCP server on LAN, so as to not
+interfere with another router:
+
+    uci set dhcp.lan.ignore=1
+
+[!] Warning: the above will make it more difficult to reach the
+machine again after a reboot. You will need to statically configure
+your laptop if it is the only device connected to the device, for
+example.
+
 ## IPv6 configuration
 
 ### OpenWRT

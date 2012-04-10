@@ -59,21 +59,6 @@ Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
     uci set network.wlan0.proto=none
     uci set network.wlan0.mtu=1528
 
-Configure the router LAN interface to match the network
-of the home router this will be plugged into eventually.
-
-    uci set network.lan.ipaddr=192.168.3.88
-    uci set network.lan.gateway=192.168.3.1
-    uci set network.lan.dns=192.168.3.1
-
-Disable DHCP server on LAN, so as to not interfere with home router.
-
-    uci set dhcp.lan.ignore=1
-
-[!] Warning: the above will make it more difficult to reach the
-machine again after a reboot. You will need to statically configure
-your laptop if it is the only device connected to the device.
-
 Écrire les changements et redémarrer
 
     uci commit
