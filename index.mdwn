@@ -25,6 +25,7 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Software]] - the software used in the project...
 * [[Wi-Fi Technicalities]] - basics of the physical layer and mechanics. 
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
+* [[Similar Projects]]
 
 # Participating
 
@@ -49,22 +50,6 @@ Voir ce lien pour les détails: [[!inline pages="meetings/* and !*/*/* and !*/di
 ## Toutes les rencontres
 
 [[!inline pages="meetings" raw=yes]]
-
-# Similar projects
-
-This project is inspired, guided and sometimes in communication with the following projects:
-
-* <http://www.opennet-initiative.de/> - Rostock
-* <http://reseaucitoyen.be/> - Bruxelles - forké en <http://bombolong.net> (down?)
-* <http://freifunk.net/> - Berlin
-* <http://802x.fr/> - Dijon
-* <http://fabfi.fabfolk.com/> - Afghanistan et Kénia
-* <http://www.funkfeuer.at/> - Austria  developping OLSR
-* <http://buenosaireslibre.org/> - Buenos Aires, Argentine, un des plus importants réseaux libres en Amérique latine
-* <http://www.awmn.net/> - Athens Wireless Metropolitan Network, Grèce, [1500 batman/olsr nodes WiND map](http://wind.awmn.net/?page=nodes)
-* <http://twmn.net/> - Thessaloniki's Wireless Metropolitan Network, Grèce [450 olsrd? nodes WiND map](http://wind.twmn.net/?page=nodes)
-* <http://www.communifi.ca> - Mesh project in Toronto (in planning stage)
-* <http://freenetworkfoundation.org> The Free Network Foundation
 
 # Meta
 
