@@ -1,13 +1,9 @@
 [[!toc levels=3]]
 
-# Configuration instructions
-
 This page details how to configure your [[hardware]] for operation in
 the mesh.
 
 There are also specific recipes in the [[guides]] section.
-
-## General instructions
 
 Those instructions attempt to be platform-independent or at least cover multiple platforms. This 4 step process should get you on the mesh, with full internet access if you are so privileged.
 
