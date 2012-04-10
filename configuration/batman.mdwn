@@ -10,17 +10,22 @@ There is no single recipe, because it depends very much on your installation tar
 
 Our recipes all configure the network card in [[ad-hoc]] mode, with specific settings:
 
-* batman-adv version: 2012.0.0
-* channel: 6
-* cell: 02:51:48:72:03:11
+batman-adv version
+: 2012.0.0
+
+channel
+: 6
+
+cell
+: 02:51:48:72:03:11
 
 Pick your favorite:
 
-* [[OpenWRT|configuration/batman/openwrt]]
-* [[Debian|configuration/batman/debian]]
-* [[Archlinux|configuration/batman/archlinux]]
-* [[DD-WRT|configuration/batman/dd-wrt]]
-* [[AirOS|configuration/batman/air-os]]
+* [[OpenWRT]]
+* [[Debian]]
+* [[Archlinux]]
+* [[DD-WRT]]
+* [[AirOS]]
 
 # Operations
 
