@@ -58,7 +58,8 @@ Note: the table on the right is manually maintained and may fall out of sync wit
 Known allocations:
 
  * `fd64:2c08:9fa7::1/48` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
- * `fd64:2c08:9fa7::2/64` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself, announcing a subnet of the above
+ * `fd64:2c08:9fa7::2/64` - `carton.anarcat.ath.cx` - a static node on the above network (not configured yet)
+ * `fd64:2c08:9fa7:1::1/64` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself, announcing a subnet of the above `/48`
 
 ### Note on ULA prefixes
 
