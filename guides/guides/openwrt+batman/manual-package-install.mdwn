@@ -1,0 +1,28 @@
+[[!meta title="Installing Batman Packages Manually on OpenWRT"]]
+
+Normally, on a router with enough RAM and an internet connection, you should be able to install Batman with opkg directly like this:
+
+    opkg update
+    opkg install kmod-batman-adv
+
+Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire).
+
+La commande `opkg install` accepte aussi des URLs ou des fichiers locaux. Avec un accès à internet fonctionnel, il faut trouver l'URL des paquets et les passer à opkg. Sans accès internet, une option est d'installer un serveur web sur votre ordinateur branché dans le LAN du routeur, et d'utiliser l'URL de votre serveur. Sinon, il est possible de copier les fichiers dans `/tmp` sur le routeur, qui est un espace monté en RAM, donc qui n'utilisera pas la précieuse mémoire flash sur laquelle le paquet sera ensuite installé.
+
+Voici quelques exemples.
+
+# Linksys WRT54g
+
+    cd /tmp
+    touch /tmp/opkg.conf
+    opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.13-1_brcm47xx.ipk \
+        http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.13+2012.0.0-1_brcm47xx.ipk
+
+# Ubiquiti Bullet
+
+Il faut utiliser les paquets pour `ar71xx`:
+
+    cd /tmp
+    touch /tmp/opkg.conf
+    opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/kmod-batman-adv_3.2.9+2012.0.0-1_ar71xx.ipk \
+        http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/kmod-lib-crc16_3.2.9-1_ar71xx.ipk
