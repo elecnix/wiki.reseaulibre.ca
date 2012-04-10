@@ -6,16 +6,10 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 # Requirements
 
-This documentation assumes the network card in [[ad-hoc]] mode, with specific settings:
+By now you should have done the following steps:
 
-batman-adv version
-: 2012.0.0
-
-channel
-: 6
-
-cell
-: 02:51:48:72:03:11
+ * [[flashing]] your device with batman-adv version 2012.0 (see below)
+ * put the radio device in [[ad-hoc]] mode
 
 # OS-specific instructions
 
@@ -28,12 +22,12 @@ cell
 
 > Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire). Il faut trouver l'URL du paquet et faire quelque chose comme ceci pour un Linksys WRT54g:
 
-    cd /tmp
-    touch /tmp/opkg.conf
-    opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.13-1_brcm47xx.ipk \
-        http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.13+2012.0.0-1_brcm47xx.ipk
+        cd /tmp
+        touch /tmp/opkg.conf
+        opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.13-1_brcm47xx.ipk \
+            http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.13+2012.0.0-1_brcm47xx.ipk
 
- Voir [[flashing]] pour plus d'informations sur l'architecture à utiliser.
+> Voir [[flashing]] pour plus d'informations sur l'architecture à utiliser.
 
 ## Debian
 
