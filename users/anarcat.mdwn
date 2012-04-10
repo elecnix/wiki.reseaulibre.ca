@@ -1,16 +1,14 @@
 [[!img folipon.jpg align="right" size="" alt="picture of me"]]
 
-See <https://wiki.koumbit.net/TheAnarcat>. I can be easily contact on [identica](http://identi.ca/anarcat) and elsewhere (email @here works).
-
-Here is the list of nodes I operate.
-
-Here's a fortune cookie for you:
+See <https://wiki.koumbit.net/TheAnarcat>. I can be easily contact on [identica](http://identi.ca/anarcat) and elsewhere (email @here works). 
 
 [[!fortune]]
 
 [[!toc levels=2]]
 
 # My nodes
+
+Here is the list of nodes I operate.
 
 ## Operational nodes
 
