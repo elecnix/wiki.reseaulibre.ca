@@ -1,6 +1,11 @@
 [[!toc levels=3]]
 
-## IPv4 configuration
+# IP allocation strategy
+
+IP addresses are allocated on a first come first serve basis. We
+strongly encourage clever use of IPv6 to avoid starvation.
+
+## IPv4
 
 [[!table class="pagecloud" data="""
 IP | Hardware | wifi MAC | Location
@@ -13,22 +18,46 @@ IP | Hardware | wifi MAC | Location
 192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
 """]]
 
-Note: the table on the right is manually maintained and may fall out of sync with the data in [[nodes]]. We are looking forward towards [support for aggregating definition lists in ikiwiki](http://ikiwiki.info/todo/internal_definition_list_support/) (and if people are interested on working on this it would be great), but in the meantime this is error-prone...
-
-### Static configuration
-
 Currently, IPs in the `192.168.3.0/24` netblock are allocated statically to nodes as we go along.
-
-This will obviously not scale at all, so we need a better solution. A workaround would be to switch to the wider `172.16.0.0/12` private B class from [[!rfc 1918]], which is what is used in Rostock.
-
-### Current IP allocations
-
-This is the result of the first formal allocation during the [[meetings/2012-04-06-antenna-party]]:
+This is the result of the first informal allocation during the [[meetings/2012-04-06-antenna-party]].
 
 Note that some IPs may have been allocated without being marked
-here. See also the IPv6 allocations below.
+here.
 
-### OpenWRT
+This will obviously not scale at all, so we need a better solution. A workaround would be to switch to the wider `172.16.0.0/12` private B class from [[!rfc 1918]], which is what is used in Rostock.
+    
+Note: the table on the right is manually maintained and may fall out of sync with the data in [[nodes]]. We are looking forward towards [support for aggregating definition lists in ikiwiki](http://ikiwiki.info/todo/internal_definition_list_support/) (and if people are interested on working on this it would be great), but in the meantime this is error-prone...
+
+## IPv6
+
+Known allocations:
+
+ * `2c08:9fa7::1/48` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
+ * `2c08:9fa7::2/64` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself, announcing a subnet of the above
+
+### Note on ULA prefixes
+
+ULA prefixes are "local prefixes" (think like `192.168.0.1`) but that
+are unique across sites *and* can potentially be routed between
+sites. See [[!rfc 4193]] for more information about this. Freifunk
+[recommends we use the ULA prefixes](http://wiki.freifunk.net/6mesh.freifunk.net),
+and specifically the `fdca:ffee:babe:dada::/64`, but I don't see why
+we should stick with that prefix, which is bound to Freifunk
+(ie. Berlin), to which we are not interconnected.
+
+We are using `2c08:9fa7::/48` as our prefix. This prefix is advertised
+from the mesh, so you should be able to see some routes and your
+machine should autoconfigure itself. If you want to use a static IP in that network, document it here
+first.
+
+> *Note: the mesh prefix was chosen on
+> [SixXS.net](https://www.sixxs.net/tools/grh/ula/), using the MAC
+> address of my router. It was also registered there under Anarcat's
+> email address.*
+
+# Device configuration
+
+## OpenWRT
 
 To configure the IP address on a OpenWRT device, use this:
 
@@ -46,9 +75,7 @@ machine again after a reboot. You will need to statically configure
 your laptop if it is the only device connected to the device, for
 example.
 
-## IPv6 configuration
-
-### OpenWRT
+### IPv6
 
 Install necessary packages on OpenWRT:
 
@@ -84,7 +111,10 @@ Other howtos:
  * [OpenWRT config/network reference](http://wiki.openwrt.org/doc/uci/network)
  * [SixXS.net guide to OpenWRT and IPv6](https://www.sixxs.net/wiki/Configuring_OpenWRT_on_an_NSLU2)
 
-### FreeBSD
+
+## FreeBSD
+
+### IPv6
 
 Here we assume that behind your mesh node, you have an "authoritative"
 router which has an IPv6 netblock it wants to announce on the
@@ -101,29 +131,6 @@ This can be implemented immediatly with:
     ifconfig vr2 inet6 d64:2c08:9fa7::1/64
     rtadvd vr2
 
-### Note on IPv6 ULA prefixes
-
-ULA prefixes are "local prefixes" (think like `192.168.0.1`) but that
-are unique across sites *and* can potentially be routed between
-sites. See [[!rfc 4193]] for more information about this. Freifunk
-[recommends we use the ULA prefixes](http://wiki.freifunk.net/6mesh.freifunk.net),
-and specifically the `fdca:ffee:babe:dada::/64`, but I don't see why
-we should stick with that prefix, which is bound to Freifunk
-(ie. Berlin), to which we are not interconnected.
-
-We are using `2c08:9fa7::/48` as our prefix. This prefix is advertised
-from the mesh, so you should be able to see some routes and your
-machine should autoconfigure itself. If you want to use a static IP in that network, document it here
-first.
-
-Known allocations:
-
- * `2c08:9fa7::1/64` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
-
-> *Note: the mesh prefix was chosen on
-> [SixXS.net](https://www.sixxs.net/tools/grh/ula/), using the MAC
-> address of my router. It was also registered there under Anarcat's
-> email address.*
 
 ## Connecting to an existing network
 
