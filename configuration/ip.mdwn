@@ -22,10 +22,14 @@ IP | Hardware | wifi MAC | Location
 172.16.1.1 | Linksys WRT54G | 00:1C:10:22:02:AE | [[nodes/carton]]
 """]]
 
-Currently, IPs in the `192.168.3.0/24` netblock are allocated statically to nodes as we go along.
-This is the result of the first informal allocation during the [[meetings/2012-04-06-antenna-party]].
+The proper allocation for new IPs is in the `172.16.0.0/12` private B
+class (from [[!rfc 1918]]).
 
-> [!] This will obviously not scale at all, so we need a better solution. A workaround would be to switch to the wider `172.16.0.0/12` private B class from [[!rfc 1918]], which is what is used in Rostock.
+> (!) We are on the process of migrating away from the
+> `192.168.3.0/24` netblock, which was too small for our needs and
+> only used informally during the
+> [[first setup|meetings/2012-04-06-antenna-party]]. See also the
+> [[discussion]] page for a rationale.
   
 > (!) Note: the table on the right is manually maintained and may fall out of sync with the data in [[nodes]]. We are looking forward towards [support for aggregating definition lists in ikiwiki](http://ikiwiki.info/todo/internal_definition_list_support/) (and if people are interested on working on this it would be great), but in the meantime this is error-prone...
 
