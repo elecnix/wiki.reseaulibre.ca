@@ -140,4 +140,6 @@ br-lan: active
 
 # Other Readings
 
+For Batman operations and troubleshooting, see the general [[Batman Configuration|configuration/batman]] page.
+
 This guide being incomplete, you will most likely want to tweak the IP addresses of your router. For this, please read the [[IP Configuration|configuration/ip]] page. When things are settled and tested, this guide should be updated.
