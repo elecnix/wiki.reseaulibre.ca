@@ -155,7 +155,7 @@ Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes l
 
 With the current configuration, I cannot ping the third hop in a three-hop relay. In my test setup, my laptop (angela, `192.168.3.44`) is connected through the mesh to a Linksys AP (carton, `192.168.3.99`), which is strong enough to reach the Bullet on my roof (boulette, `192.168.3.90`).
 
-carton can ping boulette, and angela can ping carton, but not boulette. I get `Destination port unreachable`, I assume because of that nasty firewall. --[[anarcat]]
+carton can ping boulette, and angela can ping carton, but not boulette. I get `Destination port unreachable`, I assume because of that nasty firewall, because I see ARP requests go through fine. --[[anarcat]]
 
 # Références
 
