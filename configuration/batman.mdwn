@@ -6,7 +6,7 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 # OpenWRT
 
-See [[configuration/batman/openwrt|Batman on OpenWRT]]
+See [[Batman on OpenWRT|configuration/batman/openwrt]]
 
 # Prérequis
 
