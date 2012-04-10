@@ -1,0 +1,7 @@
+anarcat, je n'ai pas 3 noeuds pour faire des tests de pings avec 1 hop. Cependant, j'ai trouve ceci dans la doc batman-adv, qui parle de ICMP avec batman-adv:
+
+[[http://www.open-mesh.org/wiki/batman-adv/Understand-your-batman-adv-network/#ICMP]]
+
+Fais-tu tes tests avec un ping IP normal, ou avec batctl?
+
+--spoked
