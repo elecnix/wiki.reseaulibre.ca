@@ -1,8 +1,16 @@
-With the current configuration, I cannot ping the third hop in a three-hop relay. In my test setup, my laptop (angela, `192.168.3.44`) is connected through the mesh to a Linksys AP (carton, `192.168.3.99`), which is strong enough to reach the Bullet on my roof (boulette, `192.168.3.90`).
+# Bug with 3 hop setup and OpenWRT outside of main bridge
 
-carton can ping boulette, and angela can ping carton, but not boulette. I get `Destination port unreachable`, I assume because of that nasty firewall, because I see ARP requests go through fine. --[[anarcat]]
+With a previous configuration, I cannot ping the third hop in a three-hop relay. In my test setup, my laptop (angela, `192.168.3.44`) is connected through the mesh to a Linksys AP (carton, `192.168.3.99`), which is strong enough to reach the Bullet on my roof (boulette, `192.168.3.90`).
 
-> This works now, the problem was I was trying to live outside the main bridge: don't try, you will fail. --[[anarcat]]
+`carton` is configured to have batman outside of the main bridge,
+`br-lan`. In effect, I have skipped the following instructions:
+
+    uci set batman-adv.bat0.interfaces="wlan0 br-lan"
+    uci set network.lan.ifname="eth0 bat0"
+
+.. and I have assigned an IP to the bat0 interface.
+
+Then carton can ping boulette, and angela can ping carton, but not boulette. I get `Destination port unreachable`, I assume because of that nasty firewall, because I see ARP requests go through fine. --[[anarcat]]
 
 anarcat, je n'ai pas 3 noeuds pour faire des tests de pings avec 1 hop. Cependant, j'ai trouve ceci dans la doc batman-adv, qui parle de ICMP avec batman-adv:
 
@@ -13,3 +21,5 @@ Fais-tu tes tests avec un ping IP normal, ou avec batctl?
 Aussi interessant: [[http://www.open-mesh.org/wiki/batman-adv/Troubleshooting#Does-a-ping-to-the-other-node-via-the-mesh-work]]
 
 --[[spoked]]
+
+> This works now, the problem was I was trying to live outside the main bridge: don't try, you will fail. --[[anarcat]] 
