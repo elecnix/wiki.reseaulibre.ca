@@ -86,6 +86,10 @@ machine again after a reboot. You will need to statically configure
 your laptop if it is the only device connected to the device, for
 example.
 
+Commit changes and reboot:
+
+    uci commit ; reboot & exit
+
 ### IPv6
 
 IPv6 on OpenWRT requires a bit more effort.
@@ -112,6 +116,10 @@ Finally the following will make sure that clients can autoconfigure:
 Make sure the IPv6 firewall is enabled:
 
     uci set firewall.defaults.disable_ipv6=0
+
+Commit changes and reboot:
+
+    uci commit ; reboot & exit
 
 To enable routing, put this in your `/etc/sysctl.conf`:
 
