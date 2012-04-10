@@ -16,7 +16,7 @@ Here is the list of documented nodes:
 ## node ideas
 
  * Est: moreau + ontario
- * Nord: en face d'el motor machin, [[nodes/anarcat]]
+ * Nord: en face d'el motor machin, [[nodes/boulette]]
  * Centre: DIRA etc, maison notman?
  * Sud-ouest: [[nodes/bgm]], smurf, canix2??
 
