@@ -109,11 +109,11 @@ First, install necessary packages on OpenWRT:
 
 Then configure a static IP address:
 
-    uci set network.lan.ip6addr="fd64:2c08:9fa7::2/64"
+    uci set network.lan.ip6addr="fd64:2c08:9fa7:1::2/64"
 
 Finally the following will make sure that clients can autoconfigure:
 
-    uci set radvd.@prefix[0].ignore=0
+    uci set radvd.@interface[0].ignore=0
 
 > *You could also replace the above by the following to make the LAN
 > interface autoconfigure if there is another router present:*
