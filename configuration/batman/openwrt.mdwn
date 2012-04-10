@@ -12,45 +12,6 @@ Il y a un paquet nommé kmod-batman-adv pour OpenWRT. Dans la version stable de 
 
 Il est aussi possible de [[compiler soi-même OpenWRT|http://wiki.openwrt.org/doc/howto/build]] et [[compiler batman en même temps|http://www.open-mesh.org/wiki/batman-adv/Building-with-openwrt]].
 
-# Basic Network Configuration
-
-Connect a cable from the LAN to your PC.
-Set your PC to get an IP address automatically.
-Get into the router with its default IP address.
-
-    telnet 192.168.1.1
-
-This command can be used to backup or inspect your current
-configuration:
-
-    uci show
-
-Configure the router LAN interface to match the network
-of the home router this will be plugged into eventually.
-
-    uci set network.lan.ipaddr=192.168.3.88
-    uci set network.lan.gateway=192.168.3.1
-    uci set network.lan.dns=192.168.3.1
-
-Disable DHCP server on LAN, so as to not interfere with home router.
-
-    uci set dhcp.lan.ignore=1
-
-Activer la radio
-
-    uci delete wireless.radio0.disabled
-
-Set a custom name, in case you encouter other peers :-)
-
-    uci set system.@system[0].hostname=batman-88
-
-Écrire les changements et redémarrer
-
-    uci commit
-    reboot & exit
-
-> Note: only restarting network will not update the DHCP server.
-
 # Batman Installation
 
 Disconnect the PC from the router and now connect both the
@@ -86,28 +47,11 @@ You should see: batctl 2012.0.0
 
 # Wireless Configuration
 
-We have enabled wireless previously. Now, verify that the wifi interface
-is listed. If not, you must have flashed the wrong image!
+We have enabled wireless previously (see [[configuration/ad-hoc]] if you haven't). Now, verify that the wifi interface
+is listed. If not, you may have flashed the wrong image!
 
     iwconfig
 
-Wifi network no longer 'lan'
-
-    uci delete wireless.@wifi-iface[0].network
-
-Montreal mesh standards: channel 1, adhoc, named mesh-mtl. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
-
-    uci set wireless.radio0.channel=1
-    uci set wireless.@wifi-iface[0].mode=adhoc
-    uci set wireless.@wifi-iface[0].ssid=mesh-mtl
-    uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
-
-Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
-
-    uci set network.wlan0=interface
-    uci set network.wlan0.ifname=wlan0
-    uci set network.wlan0.proto=none
-    uci set network.wlan0.mtu=1528
 
 # Batman Configuration
 
