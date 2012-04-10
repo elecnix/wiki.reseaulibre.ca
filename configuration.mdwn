@@ -11,6 +11,7 @@ Those instructions attempt to be platform-independent or at least cover multiple
 2. [[!traillink configuration/ad-hoc]] - basic point to point configuration
 3. [[!traillink configuration/batman]] - configuring mesh software for interconnexion (see also [[configuration/olsrd]], which we are not using right now)
 4. [[!traillink configuration/ip]] - adress allocation on the network and connexion with the outside world
+4. [[!traillink configuration/services]] - configure services for the mesh
 5. [[!traillink configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
