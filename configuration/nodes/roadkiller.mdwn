@@ -1,0 +1,24 @@
+This is my home router, which is not directly part of the mesh other than being connected to [[boulette]] and acting as its gateway.
+
+ * MAC address: N/A
+ * IP address: 172.16.0.1 / 72.0.72.144
+ * IPv6 address: `2001:1928:1:9::`, `fd64:2c08:9fa7::1`
+ * Software: FreeBSD 8.2
+ * Hardware: Soekris
+ * Power: N/A
+ * Location: [[anarcat]]
+ * Status: [[!taglink up]]
+ * Links: [[boulette]]
+ * Azimuth: N/A
+ * Panorama: N/A
+ * Operator: [[users/anarcat]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
