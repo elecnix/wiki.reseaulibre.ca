@@ -1,0 +1,1 @@
+Can you reproduce the bug i have [[here|configuration/batman/#index8h2]]? I can't seem to reach *through IP pings* the third node in a three node mesh where the first and third node don't see each other reliably... --[[anarcat]]
