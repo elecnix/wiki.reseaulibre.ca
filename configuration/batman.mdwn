@@ -19,7 +19,7 @@ ATTENTION: toutes les nodes doivent utiliser la même version de batman-adv. Par
 
 ### Sur Debian
 
-See [[configuration/batman/debian]]
+See [[Batman on Debian|configuration/batman/debian]]
 
 ### Sur Archlinux
 On besoin de l'[[AUR | https://aur.archlinux.org/]]
