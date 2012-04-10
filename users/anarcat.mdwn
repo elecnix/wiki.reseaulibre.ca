@@ -28,6 +28,7 @@ Here's a fortune cookie for you:
 # Todo
 
  * make the mesh work in my home (./) done with [[nodes/carton]]
+ * fix IPv4 allocation to use `172.16.0.0/12`
  * test IPv6 autoconfiguration [!] having problems with OpenWRT, seems like trunk packages are not in sync with the image i downloaded last week
  * test ipv6 announcement
  * install ganglia? or [[configuration/monitoring]]?
