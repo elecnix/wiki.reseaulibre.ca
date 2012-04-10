@@ -57,6 +57,10 @@ first.
 
 # Device configuration
 
+This section documents how you can configure your device to use an IP
+above. When you do, please document in the above tables and in your
+[[nodes]] page, unless of course the adress is autoconfigured.
+
 ## OpenWRT
 
 To configure the IP address on a OpenWRT device, use this:
@@ -77,16 +81,18 @@ example.
 
 ### IPv6
 
-Install necessary packages on OpenWRT:
+IPv6 on OpenWRT requires a bit more effort.
+
+First, install necessary packages on OpenWRT:
 
     opkg update
     opkg install kmod-ipv6 radvd ip kmod-ip6tables ip6tables
 
-Then you need to configure a static IP address:
+Then configure a static IP address:
 
     uci set network.lan.ip6addr="fd64:2c08:9fa7::1/64"
 
-The following will make sure that clients can autoconfigure:
+Finally the following will make sure that clients can autoconfigure:
 
     uci set radvd.@prefix[0].ignore=0
 
