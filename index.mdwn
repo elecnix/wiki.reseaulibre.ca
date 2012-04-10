@@ -1,15 +1,10 @@
 While [Ile Sans Fil](http://ilesansfil.org) does incredible work in providing free wifi access to the community, the goal of creating an alternative network, independant from big corporate providers and decentralized, has remained elusive.
 
-The goal of this project is to create a community wireless network accessible from both fixed and mobile devices that can be used in day to day life by regular people as well as during emergencies.
+The goal of this project is to create a community wireless network accessible from both fixed and mobile devices that can be used in day to day life by regular people as well as during emergencies. We're building on the experience of [[similar projects|Similar Projects]].
 
-[[!toc levels=2]]
+# Status
 
-# The map!
-
-The [[map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] page is a good starting point, showing where all the nodes are!
-
-Those pages also have more information:
-
+* [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
 * [[Nodes]] - the list of deployed nodes
 * [[Links]] - the links between the nodes
 
@@ -25,7 +20,6 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Software]] - the software used in the project...
 * [[Wi-Fi Technicalities]] - basics of the physical layer and mechanics. 
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
-* [[Similar Projects]]
 
 # Participating
 
