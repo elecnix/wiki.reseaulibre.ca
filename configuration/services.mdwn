@@ -14,6 +14,30 @@ A mesh is fun, but otherwise not very useful until services are plugged into it.
  * http://anarcat.ath.cx/ - various services, also available through
    `marcos`
 
+# Naming your device
+
+Assigning a name to your device is important because it allows you to
+label it and identify it physically.
+
+You should use the name you have chosen when creating the [[nodes]]
+page here.
+
+## OpenWRT
+
+Set a custom name, in case you encouter other peers :-)
+
+    uci set system.@system[0].hostname=meshmtl42
+
+## Linux
+
+    hostname meshmtl42
+    hostname > /etc/hostname
+
+## Other systems
+
+In other systems, this can vary wildly, but there is usually a
+configuration file for this.
+
 # Providing your own services
 
 Any service that will not disrupt other services should be allowed, although individual nodes may do some filtering to control quality of service.

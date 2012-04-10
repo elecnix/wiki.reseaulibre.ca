@@ -1,29 +1,5 @@
 [[!toc levels=3]]
 
-# Naming your device
-
-Assigning a name to your device is important because it allows you to
-label it and identify it physically.
-
-You should use the name you have chosen when creating the [[nodes]]
-page here.
-
-## OpenWRT
-
-Set a custom name, in case you encouter other peers :-)
-
-    uci set system.@system[0].hostname=meshmtl42
-
-## Linux
-
-    hostname meshmtl42
-    hostname > /etc/hostname
-
-## Other systems
-
-In other systems, this can vary wildly, but there is usually a
-configuration file for this.
-
 # IP allocation strategy
 
 IP addresses are allocated on a first come first serve basis. We
