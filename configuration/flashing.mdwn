@@ -45,6 +45,10 @@ Nanostation M2
 
 # Flashing methods
 
+You can flash your devices in many ways. The most reliable, which
+should work in almost worst case scenario. The web interface is the
+easiest.
+
 ## Web interface
 
 If your router is still functional, the easiest way is to flash the
@@ -60,22 +64,19 @@ During the upload, pay attention to the following:
 
 ## TFTP upload
 
-(!) In general, use the [[!debpkg atftp]] package instead of plain
-"netkit" tftp, as it is more reliable.
-
 1. connect the router with a wire to your computer
 2. configure an IP on your computer
 
         ifconfig eth0:flash 192.168.1.2 up
 
 3. reboot the router with the reset button pressed until the leds flash like a christmas tree
-4. send the new firmware through tftp:
+4. send the new firmware through tftp (with [[!debpkg atftp]]):
 
         atftp --trace --option "timeout 1" --tftp-timeout 1 --option "mode octet" --put --local-file openwrt-xxx-x.x-xxx.bin 192.168.1.1
 
- with netkit-tftp:
+ with [[!debpkg netkit-tftp]]:
  
-        $ tftp 192.168.1.20
+        $ tftp 192.168.1.1x
         tftp> binary
         tftp> rexmt 1
         tftp> timeout 1
