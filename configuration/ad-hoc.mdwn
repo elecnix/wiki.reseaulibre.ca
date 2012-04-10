@@ -32,10 +32,6 @@ Activer la radio
 
     uci delete wireless.radio0.disabled
 
-Set a custom name, in case you encouter other peers :-)
-
-    uci set system.@system[0].hostname=meshmtl42
-
 Reboot for changes to take effect:
 
     uci commit
