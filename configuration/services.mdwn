@@ -1,6 +1,6 @@
 [[!meta title="Adding services to the mesh"]]
 
-[[!toc]]
+[[!toc levels=3]]
 
 A mesh is fun, but otherwise not very useful until services are plugged into it. This means plugging some other devices (*servers*) into our open wireless network.
 
