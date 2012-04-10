@@ -117,6 +117,7 @@ Finally the following will make sure that clients can autoconfigure:
     uci set radvd.@prefix[0].ignore=0
     uci set radvd.@prefix[0].AdvRouterAddr=1
     uci set radvd.@prefix[0].prefix=fd64:2c08:9fa7:1::2/64
+    /etc/init.d/radvd enable
 
 > *You could also replace the above by the following to make the LAN
 > interface autoconfigure if there is another router present:*
