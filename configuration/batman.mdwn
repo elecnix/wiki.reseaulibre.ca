@@ -19,10 +19,14 @@ ATTENTION: toutes les nodes doivent utiliser la même version de batman-adv. Par
 
 *Ceci est un résumé de l'excellent [[Guide d'installation de BATMAN sur OpenWRT|guides/openwrt+batman]].*
 
+[!] **Important**: il faut utiliser une *version récente* de OpenWRT  (`trunk` au moment d'écrire ces lignes) pour obtenir de bons résultats (BATMAN 2012). Voir [[flashing]] pour plus d'informations sur l'architecture à utiliser. `backfire` n'est *pas* compatible.
+
+Pour installer batman-adv:
+
     opkg update
     opkg install kmod-batman-adv
 
-> Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire). Il faut trouver l'URL du paquet et faire quelque chose comme ceci pour un Linksys WRT54g:
+> (!) Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire). Il faut trouver l'URL du paquet et faire quelque chose comme ceci pour un Linksys WRT54g:
 
         cd /tmp
         touch /tmp/opkg.conf
