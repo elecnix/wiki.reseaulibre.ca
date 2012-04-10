@@ -143,9 +143,7 @@ You're done! Commit the changes and reboot to test them.
 
 After a reboot, you should see `wlan0: active` and `br-lan: active` with this:
 
-    batctl if
-
-```
+[[!format """
 root@batman-88:/# brctl show
 bridge name     bridge id               STP enabled     interfaces
 br-lan          8000.00259c5e4457       no              eth0.0
@@ -153,4 +151,4 @@ br-lan          8000.00259c5e4457       no              eth0.0
 root@batman-88:/# batctl if
 wlan0: active
 br-lan: active
-```
+"""]]
