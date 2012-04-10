@@ -13,12 +13,12 @@ This section documents the strategy and the addresses already allocated. To conf
 IP | Hardware | wifi MAC | Location
 192.168.3.88 | Linksys WRT54G | 00:25:9c:5e:44:59 | elecnix/grace
 192.168.3.89 | Linksys WRT54G | 00:13:10:1b:6d:dd | elecnix/pierre
-192.168.3.90 | Bullet M2 #2 | 00:15:6d:db:d3:65 | [[nodes/boulette]]
+172.16.0.90 | Bullet M2 #2 | 00:15:6d:db:d3:65 | [[nodes/boulette]]
 192.168.3.91 | Bullet M2 #1 | 00:15:6D:DB:D3:DC | [[nodes/benoitg]]
 192.168.3.92 | PicoStation M2 | 00:15:6d:81:e0:5b
 192.168.3.93 | NanoStation M2 | 00:15:6d:fc:be:90
 192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
-192.168.3.99 | Linksys WRT54G | 00:1C:10:22:02:AE | [[nodes/carton]]
+172.16.0.99 | Linksys WRT54G | 00:1C:10:22:02:AE | [[nodes/carton]]
 """]]
 
 Currently, IPs in the `192.168.3.0/24` netblock are allocated statically to nodes as we go along.
@@ -72,9 +72,9 @@ above. When you do, please document in the above tables and in your
 
 To configure the IP address on a OpenWRT device, use this:
 
-    uci set network.lan.ipaddr=192.168.3.88
-    uci set network.lan.gateway=192.168.3.1
-    uci set network.lan.dns=192.168.3.1
+    uci set network.lan.ipaddr=172.16.0.123
+    uci set network.lan.gateway=172.16.0.1
+    uci set network.lan.dns=172.16.0.1
 
 You may also commonly disable the DHCP server on LAN, so as to not
 interfere with another router:
