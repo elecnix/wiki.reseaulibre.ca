@@ -84,9 +84,7 @@ You should see: batctl 2012.0.0
 
     batctl -v
 
-# The Rest
-
-(!) TODO: Rename/split the remaining of this section
+# Wireless Configuration
 
 We have enabled wireless previously. Now, verify that the wifi interface
 is listed. If not, you must have flashed the wrong image!
@@ -104,10 +102,6 @@ Montreal mesh standards: channel 1, adhoc, named mesh-mtl. Il faut specifier un 
     uci set wireless.@wifi-iface[0].ssid=mesh-mtl
     uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
 
-Le MTU du LAN est standard:
-
-    uci set network.lan.mtu=1500
-
 Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
 
     uci set network.wlan0=interface
@@ -115,7 +109,9 @@ Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
     uci set network.wlan0.proto=none
     uci set network.wlan0.mtu=1528
 
-Configuration de l'interface de batman. Ici, `192.168.8.100` a été choisi alléatoirement.
+# Batman Configuration
+
+Configuration de l'interface de batman. We're not assigning an IP address to `bat0` because we'll add it to the `lan` bridge.
 
     uci set network.bat0=interface
     uci set network.bat0.ifname=bat0
@@ -130,10 +126,6 @@ The 'lan' bridge should include bat0 as well as eth0:
 for ubiquity it's eth0. Look at the output of ifconfig to see what's
 the eth0 interface.
 
-> NOTE: Do we really want to bridge the mesh with the LAN?
-Won't that generate too much traffic if the packets
-received on the LAN are broadcasted in the mesh?
-
 Tell batman to use the wireless and the lan interfaces.
 
     uci set batman-adv.bat0.interfaces="wlan0 br-lan"
@@ -142,6 +134,8 @@ You're done! Commit the changes and reboot to test them.
 
     uci commit
     reboot & exit
+
+# Testing Configuration
 
 After a reboot, you should see `wlan0: active` and `br-lan: active` with this:
 
