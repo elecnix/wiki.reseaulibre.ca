@@ -1,0 +1,1 @@
+Mettons que je configure un nouveau node. La page dit d'assigner une IPv6 statique. Laquelle je mets? --elecnix
