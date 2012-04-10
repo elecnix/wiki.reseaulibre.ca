@@ -4,43 +4,25 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 [[!toc levels=3]]
 
-# OpenWRT
+# Installation and Configuration
 
-See [[Batman on OpenWRT|configuration/batman/openwrt]]
+There is no single recipe, because it depends very much on your installation target. There are many things in common however, just not done the same way.
 
-# Prérequis
+Our recipes all configure the network card in [[ad-hoc]] mode, with specific settings:
 
- 1. [[Flashing]] de votre routeur
- 2. Configuration du mode [[ad-hoc]]
+* batman-adv version: 2012.0.0
+* channel: 6
+* cell: 02:51:48:72:03:11
 
-## Installer les logiciels nécessaires
+[[!table  data="""
+Cible
+[[OpenWRT|configuration/batman/openwrt]]
+[[Debian|configuration/batman/debian]]
+[[Archlinux|configuration/batman/archlinux]]
+[[DD-WRT|configuration/batman/dd-wrt]]
+"""]]
 
-ATTENTION: toutes les nodes doivent utiliser la même version de batman-adv. Par conséquent, il faut la dernière version du module (2012.0) pour votre noyau Linux.
-
-### Sur Debian
-
-See [[Batman on Debian|configuration/batman/debian]]
-
-### Sur Archlinux
-On besoin de l'[[AUR | https://aur.archlinux.org/]]
-
-    # modprobe batman_adv
-    $ yaourt -S batctl
-
-### Sur OpenWRT
-
-See [[configuration/batman/openwrt]]
-
-
-### Sur DD-WRT
-
-TODO: [[configuration/batman/dd-wrt]]
-
-### Sur AirOS (Ubiquiti)
-
-TODO: [[configuration/batman/air-os]]
-
-# Configuration de Batman
+# Operations
 
 Afficher l'état:
 
