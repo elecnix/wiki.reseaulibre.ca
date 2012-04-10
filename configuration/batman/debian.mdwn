@@ -22,13 +22,4 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
     modprobe batman-adv
 
-Configurer l'interface physique wifi pour le mode adhoc du mesh. Il faut probablement désactiver network-manager.
-
-    sudo /etc/init.d/network-manager stop
-    iwconfig wlan0  mode ad-hoc  channel 1  essid mesh-mtl  ap 02:51:48:72:03:11
-
-Ajouter l'interface à Batman:
-
-    batctl if add wlan0
-
-Procéder ensuite à la configuration [[configuration/ip]].
+Procéder ensuite au reste de la configuration [[configuration/batman]].
