@@ -86,7 +86,7 @@ Install B.A.T.M.A.N (the home router provides access to internet)
     opkg update
     opkg install kmod-batman-adv
 
-(!) If your router has no internet access, or the operation freezes your router, or gives memory errors, you will have to install the `kmod-lib-crc16` and `kmod-batman-adv` modules by hand. See the [[Manual Package Installation|guides/openwrt+batman/manual-package-install]] help.
+(!) If your router has no internet access, or the operation freezes your router, or gives memory errors, you will have to install the `kmod-lib-crc16` and `kmod-batman-adv` modules by hand. See the [[manual-package-install]] help.
 
 Le module `batman_adv` devrait maintenant être chargé:
 
