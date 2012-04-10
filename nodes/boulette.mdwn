@@ -5,7 +5,7 @@
 # Technical details
 
 hostname
-: batman-90
+: boulette
 
 MAC address
 : 00:15:6d:db:d3:65
