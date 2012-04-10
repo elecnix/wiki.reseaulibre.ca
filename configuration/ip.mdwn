@@ -13,7 +13,7 @@ This section documents the strategy and the addresses already allocated. To conf
 IP | Hardware | wifi MAC | Location
 192.168.3.88 | Linksys WRT54G | 00:25:9c:5e:44:59 | elecnix/grace
 192.168.3.89 | Linksys WRT54G | 00:13:10:1b:6d:dd | elecnix/pierre
-172.16.0.1   | Soekris        | N/A | roadkiller, a wired gateway to the internet, connected to boulette
+172.16.0.1   | Soekris        | N/A | [[nodes/roadkiller]]
 172.16.0.2 | Bullet M2 #2 | 00:15:6d:db:d3:65 | [[nodes/boulette]]
 192.168.3.91 | Bullet M2 #1 | 00:15:6D:DB:D3:DC | [[nodes/benoitg]]
 192.168.3.92 | PicoStation M2 | 00:15:6d:81:e0:5b
