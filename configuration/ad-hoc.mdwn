@@ -34,7 +34,7 @@ Activer la radio
 
 Set a custom name, in case you encouter other peers :-)
 
-    uci set system.@system[0].hostname=batman-88
+    uci set system.@system[0].hostname=meshmtl42
 
 Reboot for changes to take effect:
 
