@@ -11,7 +11,7 @@ Those instructions attempt to be platform-independent or at least cover multiple
 
 1. [[!traillink configuration/flashing]] - flashing your device with the proper firmware (optional - if you already have the software on your machine, just go to step 2)
 2. [[!traillink configuration/ad-hoc]] - basic point to point configuration
-3. [[!traillink configuration/olsrd]] or [[batman]] - configuring mesh software for interconnexion
+3. [[!traillink configuration/batman]] - configuring mesh software for interconnexion (see also [[configuration/olsrd]], which we are not using right now)
 4. [[!traillink configuration/ip]] - adress allocation on the network and connexion with the outside world
 4. [[!traillink configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
 
