@@ -33,7 +33,7 @@ Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gére
 
 [!] Ceci demande peut-être un backport, qui est en cours de fabrication, voir [[!debbug 668237]] pour les détails.
 
-Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2012.0.0.
+Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2012.0.0. On a également noté que la version du module de noyau batman-adv est 2011.4.0 pour linux 3.2. Il semble y avoir une couche de compatibilité dans les versions futures ?? à voir...
 
 Si vous avez mis à jour votre noyau, il faut redémarrer la machine.
 
