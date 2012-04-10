@@ -1,16 +1,36 @@
-[[!img folipon.jpg align="left" size="" alt="picture of me"]]
+[[!img folipon.jpg align="right" size="" alt="picture of me"]]
 
-See <https://wiki.koumbit.net/TheAnarcat> and [[nodes/boulette]]. I can be easily contact on [identica](http://identi.ca/anarcat) and elsewhere (email @here works).
+See <https://wiki.koumbit.net/TheAnarcat>. I can be easily contact on [identica](http://identi.ca/anarcat) and elsewhere (email @here works).
+
+Here is the list of nodes I operate.
 
 Here's a fortune cookie for you:
 
 [[!fortune]]
 
+[[!toc levels=2]]
+
+# My nodes
+
+## Operational nodes
+
+[[!map pages="link(.) and nodes/* and tagged(up)"]]
+
+## Planned nodes
+
+[[!map pages="link(.) and nodes/* and tagged(planned)"]]
+
+## Nodes in maintenance
+
+[[!map pages="link(.) and nodes/* and tagged(down)"]]
+
+
 # Todo
- 
- * test IPv6 autoconfiguration
- * install ganglia? or [[configuration/monitoring]]?
+
+ * make the mesh work in my home (./) done with [[nodes/carton]]
+ * test IPv6 autoconfiguration [!] having problems with OpenWRT, seems like trunk packages are not in sync with the image i downloaded last week
  * test ipv6 announcement
+ * install ganglia? or [[configuration/monitoring]]?
  * aggregate above stats in a table, automatically ([[!iki todo/internal_definition_list_support/]])
 
 # Notes
