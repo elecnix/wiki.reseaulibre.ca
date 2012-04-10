@@ -1,3 +1,5 @@
+You may have noticed that batctl tcpdump and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our `bat-hosts` file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
+
 Here's a list of suggested MAC address to hostname translations for BATMAN.
 
     cat >> /etc/bat-hosts <<EOF
