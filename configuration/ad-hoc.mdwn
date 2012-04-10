@@ -36,14 +36,14 @@ Set a custom name, in case you encouter other peers :-)
 
     uci set system.@system[0].hostname=batman-88
 
-Wifi network no longer 'lan'
-
-    uci delete wireless.@wifi-iface[0].network
-
 Reboot for changes to take effect:
 
     uci commit
     reboot & exit
+
+Wifi network no longer 'lan'
+
+    uci delete wireless.@wifi-iface[0].network
 
 Montreal mesh standards: channel 6, adhoc, named mesh-mtl. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
 
