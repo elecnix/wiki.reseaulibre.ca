@@ -16,13 +16,31 @@ Get into the router with its default IP address.
 
     telnet 192.168.1.1
 
-Activer la radio
+Turn the radio on:
 
     uci delete wireless.radio0.disabled
 
 Set a custom name, in case you encouter other peers :-)
 
     uci set system.@system[0].hostname=batman-88
+
+Configure the router LAN interface to match the network
+of the home router this will be plugged into eventually. The IP address allocation hasn't been set in stone yet, and you'll want to add yours to the [[IP Allocation|configuration/ip]] page.
+
+    uci set network.lan.ipaddr=192.168.3.88
+    uci set network.lan.gateway=192.168.3.1
+    uci set network.lan.dns=192.168.3.1
+
+Disable DHCP server on LAN, so as to not interfere with home router.
+
+    uci set dhcp.lan.ignore=1
+
+Écrire les changements et redémarrer
+
+    uci commit
+    reboot & exit
+
+> *Note: only restarting network will not update the DHCP server.*
 
 # Wireless Configuration
 
@@ -43,24 +61,6 @@ Configure the wireless interface with a higher MTU to allow batman to decorate p
     uci set network.wlan0.ifname=wlan0
     uci set network.wlan0.proto=none
     uci set network.wlan0.mtu=1528
-
-Configure the router LAN interface to match the network
-of the home router this will be plugged into eventually.
-
-    uci set network.lan.ipaddr=192.168.3.88
-    uci set network.lan.gateway=192.168.3.1
-    uci set network.lan.dns=192.168.3.1
-
-Disable DHCP server on LAN, so as to not interfere with home router.
-
-    uci set dhcp.lan.ignore=1
-
-Écrire les changements et redémarrer
-
-    uci commit
-    reboot & exit
-
-> *Note: only restarting network will not update the DHCP server.*
 
 # Batman Installation
 
