@@ -4,4 +4,4 @@ anarcat, je n'ai pas 3 noeuds pour faire des tests de pings avec 1 hop. Cependan
 
 Fais-tu tes tests avec un ping IP normal, ou avec batctl?
 
---spoked
+--[[spoked]]
