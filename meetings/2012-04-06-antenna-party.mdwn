@@ -1,6 +1,6 @@
 [[!toc levels=2]]
 
-Voir [[le doodle|http://www.doodle.com/ei7pyddk9wgerek8]] pour voir comment la date a été choisie. Noter que l'annonce par courriel a prévu 10hAM, non 14h, chez [[anarcat]].
+Voir  pour voir comment la date a été choisie. Noter que l'annonce par courriel a prévu 10hAM, non 14h, chez [[anarcat]].
 
 ## Sommaire de la journée
 
@@ -24,10 +24,10 @@ Lisez ci-bas pour les détails.
 
 Montage d'antennes sur les liens suivants:
 
- * [[nodes/grace]] - [[nodes/anarcat]] (500m)
+ * [[nodes/grace]] - [[nodes/boulette]] (500m)
  * [[nodes/benoitg]] - [[nodes/jojo]] (800m)
  * [[nodes/jojo]] - [[nodes/genb]]?
- * [[nodes/genb]] - [[nodes/anarcat]]??
+ * [[nodes/genb]] - [[nodes/boulette]]??
 
 ## Matériel
 
@@ -89,7 +89,7 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
  * les nodes peuvent bien sûr router du traffic de leur interface
    physique vers le mesh, sans problème, suffit d'ajouter le node
    comme gateway de son laptop
- * un Bullet M2 est maintenant en place et fonctionnel chez [[nodes/benoitg]] et [[nodes/anarcat]], mais ne se voient pas
+ * un Bullet M2 est maintenant en place et fonctionnel chez [[nodes/benoitg]] et [[nodes/boulette]], mais ne se voient pas
  * anarcat a travaillé à la [configuration IP](configuration/ip) de son node, avec des bonnes idées pour le IPv6
  * anarcat a appris à crimper et souder des câbles extérieurs pour le PoE
  * Photos! http://www.flickr.com/photos/elecnix/sets/72157629757019923
@@ -102,7 +102,7 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
 ## À retenir pour la prochaine fois
 
  * on a utilisé des [radios FRS](https://en.wikipedia.org/wiki/Family_Radio_Service) (UHF) pour communiquer, c'est à refaire
-   * même si on avait pas de lien wifi, on pouvait établir un lien radio clair entre [[nodes/benoitg]] et [[nodes/anarcat]]
+   * même si on avait pas de lien wifi, on pouvait établir un lien radio clair entre [[nodes/benoitg]] et [[nodes/boulette]]
    * très pratique pour communiquer entre le toit et le plancher des vaches, particulièrement pour demander de monter des trucs
  * le kit d'outils de Richard est incroyablement utile, on sent l'expérience! on aurait pas su comment faire sans!
  * on aurait bien aimé faire une installation permanente à grace, au moins fixer l'antenne et entrer dans l'édifice. Mieux vaut faire du repérage *avant* les tests :)
