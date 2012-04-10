@@ -7,4 +7,5 @@ Here's a list of suggested MAC address to hostname translations for BATMAN.
     00:15:6d:81:e0:5b batman-92
     00:15:6d:fc:be:90 batman-93
     00:15:6d:5a:f7:27 batman-94
+    00:15:6d:db:d3:65 boulette
     EOF
