@@ -12,10 +12,6 @@ To choose the firmware, look into the
 [table of hardware](http://wiki.openwrt.org/toh/start) on the OpenWRT
 site, each device page will list which firmware you should use.
 
-(!) Hint: most Linksys WRT54 devices use the brcm47xx firmware.
-
-(!) Note: Si vous avez des problèmes inhabituels, essayez une autre version du bon firmware http://downloads.openwrt.org/backfire/
-
 Right after flashing, to ensure that tftp is available in case your router gets bricked, type these commands out in telnet/ssh:
 
     nvram set boot_wait=on
@@ -26,11 +22,19 @@ Right after flashing, to ensure that tftp is available in case your router gets 
 
 ## Specific hardware:
 
+Linksys WRT54G
+: [backfire](http://downloads.openwrt.org/backfire/10.03.1/brcm47xx/openwrt-wrt54g-squashfs.bin)
+: [trunk](http://downloads.openwrt.org/snapshots/trunk/brcm47xx/openwrt-wrt54g-squashfs.bin)
+: C'est un exemple! Il y a beaucoup d'autres images pour cette
+architecture dans la [cible brcm47xx](http://downloads.openwrt.org/backfire/10.03.1/brcm47xx/).
+
 Bullet M2
-: <http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin>
+: [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin)
+: [trunk](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin)
 
 Nanostation M2
-: <http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin>
+: [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
+: [trunk](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
 
 # Flashing methods
 
