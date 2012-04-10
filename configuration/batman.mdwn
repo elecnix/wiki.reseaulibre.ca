@@ -4,14 +4,16 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 [[!toc levels=3]]
 
-# Requirements
+# Prérequis
 
-By now you should have done the following steps:
+On assume que les étapes suivantes ont été faites avec succès:
 
- * [[flashing]] your device with batman-adv version 2012.0 (see below)
- * put the radio device in [[ad-hoc]] mode
+ 1. [[Flashing]] de votre routeur
+ 2. Configuration du mode [[ad-hoc]]
 
-# OS-specific instructions
+ATTENTION: toutes les nodes doivent utiliser la même version de batman-adv. Par conséquent, il faut la dernière version du module (2012.0) pour votre noyau Linux. Ceci peut vouloir dire réinstaller une version plus récente de votre routeur.
+
+# Installer les logiciels nécessaires
 
 ## OpenWRT
 
@@ -30,8 +32,6 @@ By now you should have done the following steps:
 > Voir [[flashing]] pour plus d'informations sur l'architecture à utiliser.
 
 ## Debian
-
-This page is about installing B.A.T.M.A.N. on Debian. For other operating systems, see the [[Batman|batman]] page.
 
 Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gérer le module kernel inclus dans Linux:
 
