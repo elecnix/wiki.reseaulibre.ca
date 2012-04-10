@@ -32,12 +32,7 @@ Activer la radio
 
     uci delete wireless.radio0.disabled
 
-Reboot for changes to take effect:
-
-    uci commit
-    reboot & exit
-
-Wifi network no longer 'lan'
+Separate wireless network from `lan`
 
     uci delete wireless.@wifi-iface[0].network
 
