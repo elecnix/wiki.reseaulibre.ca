@@ -40,13 +40,13 @@ Disable DHCP server on LAN, so as to not interfere with home router.
     uci commit
     reboot & exit
 
+> *Note: only restarting network will not update the DHCP server.*
+
 Disconnect the PC from the router and now connect both the
 PC and the mesh router to the home router.
 Re-connect to the router using its new IP address.
 
     telnet 192.168.3.88
-
-> *Note: only restarting network will not update the DHCP server.*
 
 # Wireless Configuration
 
