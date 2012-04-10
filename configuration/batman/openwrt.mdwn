@@ -135,7 +135,7 @@ You're done! Commit the changes and reboot to test them.
     uci commit
     reboot & exit
 
-# Testing Configuration
+# Testing
 
 After a reboot, you should see `wlan0: active` and `br-lan: active` with this:
 
