@@ -23,8 +23,10 @@ Then carton can ping boulette, and angela can ping carton, but not boulette. I g
 > --[[spoked]]
 > 
 > > This works now, the problem was I was trying to live outside the main bridge: don't try, you will fail. --[[anarcat]] 
-
+> >
 > > > Interesting. In my tests, I'm also "living outside the main bridge", but I don't have equipment to test another hop. Did you try batctl ping, before adding br-lan to batman interfaces? -- [[spoked]]
+> > > 
+> > > > Yes, I did: `batman ping` works. --[[anarcat]]
 
 # Bug with regular ad-hoc access mode
 
@@ -57,11 +59,11 @@ So it looks like the firewall on carton is kicking in. Note that angela *can* pi
 following the routedap guide in the openwrt wiki
 
 [[!format sh """
-root@carton:~# uci set network.wifi=interface
-root@carton:~# uci set network.wifi.proto=static
-root@carton:~# uci set network.wifi.ipaddr=192.168.2.1
-root@carton:~# uci set network.wifi.netmask=255.255.255.0
-root@carton:~# uci set wireless.@wifi-iface[0].network=wifi
+uci set network.wifi=interface
+uci set network.wifi.proto=static
+uci set network.wifi.ipaddr=192.168.2.1
+uci set network.wifi.netmask=255.255.255.0
+uci set wireless.@wifi-iface[0].network=wifi
 """]]
 
 make sure the IP is different from all the others
@@ -69,12 +71,12 @@ make sure the IP is different from all the others
 fix the firewall:
 
 [[!format sh """
-root@carton:~# uci add firewall zone
-root@carton:~# uci set firewall.@zone[2].name=wifi
-root@carton:~# uci set firewall.@zone[2].network=wifi
-root@carton:~# uci set firewall.@zone[2].input=ACCEPT
-root@carton:~# uci set firewall.@zone[2].output=ACCEPT
-root@carton:~# uci set firewall.@zone[2].forward=REJECT
+uci add firewall zone
+uci set firewall.@zone[2].name=wifi
+uci set firewall.@zone[2].network=wifi
+uci set firewall.@zone[2].input=ACCEPT
+uci set firewall.@zone[2].output=ACCEPT
+uci set firewall.@zone[2].forward=REJECT
 
 uci add firewall forwarding
 uci set firewall.@forwarding[1].src=wifi
@@ -105,11 +107,11 @@ the above yields some warnings:
 optional DHCP config:
 
 [[!format sh """
-root@carton:~# uci set dhcp.wifi=dhcp
-root@carton:~# uci set dhcp.wifi.interface=wifi
-root@carton:~# uci set dhcp.wifi.start=100
-root@carton:~# uci set dhcp.wifi.limit=150
-root@carton:~# uci set dhcp.wifi.leasetime=12h
+uci set dhcp.wifi=dhcp
+uci set dhcp.wifi.interface=wifi
+uci set dhcp.wifi.start=100
+uci set dhcp.wifi.limit=150
+uci set dhcp.wifi.leasetime=12h
 uci commit
 /etc/init.d/dnsmasq restart
 """]]
@@ -121,9 +123,9 @@ unfortunately, this breaks batman.
 Reverting the segregation of the lan/wifi interfaces:
 
 [[!format sh """
-root@carton:~# uci set wireless.@wifi-iface[0].network=lan
-root@carton:~# uci set batman-adv.bat0.interfaces="br-lan"
-root@carton:~# uci set network.lan.ifname="eth0.0"
+uci set wireless.@wifi-iface[0].network=lan
+uci set batman-adv.bat0.interfaces="br-lan"
+uci set network.lan.ifname="eth0.0"
 """]]
 
 This basically bricks the device. I then can't reach it on either the
