@@ -119,6 +119,8 @@ Si vous avez déjà OpenWRT, mais que vous voulez le flasher avec une autre vers
 
 [!] Attention!! Il est très important de prendre l'image marquée `-sysupgrade` ou, si elle n'est pas disponible, le `.trx`.
 
+[!] Attention! Ceci ne fonctionne pas bien sur les Linksys WRT54GLv1.1 (au moins).
+
 Si votre routeur n'a pas accès à internet, vous pouvez installer un petit serveur web sur votre ordinateur:
 
     sudo apt-get install nginx
