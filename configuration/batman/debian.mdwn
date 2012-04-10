@@ -1,8 +1,8 @@
 [[!meta title="Batman on Debian"]]
 
-This page is about installing B.A.T.M.A.N. on Debian. For other target installations, see the [[Batman|batman]] page.
+This page is about installing B.A.T.M.A.N. on Debian. For other operating systems, see the [[Batman|batman]] page.
 
-Sous Debian/Ubuntu, installer le package Debian pour batctl (gestion des configurations)
+Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gérer le module kernel inclus dans Linux:
 
     sudo apt-get install batctl
 
@@ -25,10 +25,8 @@ Configurer l'interface physique wifi pour le mode adhoc du mesh. Il faut probabl
     sudo /etc/init.d/network-manager stop
     iwconfig wlan0  mode ad-hoc  channel 1  essid mesh-mtl  ap 02:51:48:72:03:11
 
-Configurer l'interface réseau, il faut augmenter le MTU car les "packets" de Batman ajoutent des données aux frames ethernet:
-
-    ifconfig wlan0 mtu 1528 192.168.8.2 up
-
 Ajouter l'interface à Batman:
 
     batctl if add wlan0
+
+Procéder ensuite à la configuration [[configuration/ip]].
