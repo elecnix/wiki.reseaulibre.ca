@@ -8,13 +8,19 @@ This guide will take you from a fresh OpenWRT installation up to a fully functio
 
 To install OpenWRT, you must [[flash your router|configuration/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**, which provides batman version 2012.0.0. The stable version of OpenWRT, "backfire", provides an older version and is _not recommended_.
 
+# Set a Password
+
+    telnet 192.168.1.1
+    passwd
+    exit
+
 # Basic Network Configuration
 
 Connect a cable from the LAN to your PC.
 Set your PC to get an IP address automatically.
 Get into the router with its default IP address.
 
-    telnet 192.168.1.1
+    ssh root@192.168.1.1
 
 Turn the radio on:
 
@@ -46,7 +52,7 @@ Disconnect the PC from the router and now connect both the
 PC and the mesh router to the home router.
 Re-connect to the router using its new IP address.
 
-    telnet 192.168.3.88
+    ssh root@192.168.3.88
 
 # Wireless Configuration
 
