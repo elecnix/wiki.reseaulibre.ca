@@ -110,12 +110,14 @@ Linksys WRT54G
 
 For other platforms (Mac, Windows, etc), see: <http://wiki.openwrt.org/doc/howto/generic.flashing.tftp>
 
-## sysupgrade (OpenWRT)
+## Upgrade d'une version précédente de OpenWRT
 
 Si vous avez déjà OpenWRT, mais que vous voulez le flasher avec une autre version, vous pouvez utiliser la commande `sysupgrade`:
 
     ssh 192.168.1.1
     sysupgrade http:// ... /openwrt-blah-squashfs.trx
+
+[!] Attention!! Il est très important de prendre l'image marquée `-sysupgrade` ou, si elle n'est pas disponible, le `.trx`.
 
 Si votre routeur n'a pas accès à internet, vous pouvez installer un petit serveur web sur votre ordinateur:
 
@@ -126,6 +128,8 @@ Si votre routeur n'a pas accès à internet, vous pouvez installer un petit serv
 Puis vous spécifiez l'addresse de votre serveur sur votre PC connecté par ethernet sur un port LAN:
 
     sysupgrade http://192.168.1.2/openwrt-blah-squashfs.trx
+
+Voir aussi [le guide complet](http://wiki.openwrt.org/doc/howto/generic.sysupgrade).
 
 # After flashing the device
 
