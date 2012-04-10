@@ -40,7 +40,7 @@ IP | Hardware | wifi MAC | Location
 192.168.3.92 | PicoStation M2 | 00:15:6d:81:e0:5b
 192.168.3.93 | NanoStation M2 | 00:15:6d:fc:be:90
 192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
-192.168.3.99 | Linksys WRT54G | | [[nodes/carton]]
+192.168.3.99 | Linksys WRT54G | 00:1C:10:22:02:AE | [[nodes/carton]]
 """]]
 
 Currently, IPs in the `192.168.3.0/24` netblock are allocated statically to nodes as we go along.
