@@ -125,7 +125,7 @@ Si votre routeur n'a pas accès à internet, vous pouvez installer un petit serv
 
 Puis vous spécifiez l'addresse de votre serveur sur votre PC connecté par ethernet sur un port LAN:
 
-   sysupgrade http://192.168.1.2/openwrt-blah-squashfs.trx
+    sysupgrade http://192.168.1.2/openwrt-blah-squashfs.trx
 
 # After flashing the device
 
