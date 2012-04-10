@@ -4,17 +4,11 @@ This page is about installing B.A.T.M.A.N. on Debian. For other operating system
 
 Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gérer le module kernel inclus dans Linux:
 
-    sudo apt-get install batctl
+    sudo apt-get install -t squeeze-backports batctl linux-image
 
-[!] Ceci demandera peut-être un backport pour votre version de Debian, voir [[!debbug 668237]] pour les détails.
+[!] Ceci demande peut-être un backport, qui est en cours de fabrication, voir [[!debbug 668237]] pour les détails.
 
-Idéalement il faut aussi un noyau Linux qui est à jour. Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2012.0.0.
-
-Par exemple:
-
-    uname -a
-    apt-cache search linux-image-3
-    sudo apt-get install linux-image-3.2.0-1-686-pae
+Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2012.0.0.
 
 Si vous avez mis à jour votre noyau, il faut redémarrer la machine.
 
