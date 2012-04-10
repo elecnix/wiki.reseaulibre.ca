@@ -51,3 +51,67 @@ Actual results:
  * angela can't ping boulette [!] the carton returns `Destination port unreachable`
 
 So it looks like the firewall on carton is kicking in. Note that angela *can* ping boulette if it joins the mesh with a batman configuration. --[[anarcat]]
+
+> First test:
+
+following the routedap guide in the openwrt wiki
+
+[[!format sh """
+root@carton:~# uci set network.wifi=interface
+root@carton:~# uci set network.wifi.proto=static
+root@carton:~# uci set network.wifi.ipaddr=192.168.2.1
+root@carton:~# uci set network.wifi.netmask=255.255.255.0
+root@carton:~# uci set wireless.@wifi-iface[0].network=wifi
+"""]]
+
+make sure the IP is different from all the others
+
+fix the firewall:
+
+[[!format sh """
+root@carton:~# uci add firewall zone
+root@carton:~# uci set firewall.@zone[2].name=wifi
+root@carton:~# uci set firewall.@zone[2].network=wifi
+root@carton:~# uci set firewall.@zone[2].input=ACCEPT
+root@carton:~# uci set firewall.@zone[2].output=ACCEPT
+root@carton:~# uci set firewall.@zone[2].forward=REJECT
+
+uci add firewall forwarding
+uci set firewall.@forwarding[1].src=wifi
+uci set firewall.@forwarding[1].dest=lan
+uci commit
+ifup wifi
+wifi
+/etc/init.d/firewall restart
+"""]]
+
+the above yields some warnings:
+
+    iptables: No chain/target/match by that name.
+    iptables v1.4.10: Couldn't load target `zone_wifi':File not found
+
+    Try `iptables -h' or 'iptables --help' for more information.
+    iptables v1.4.10: Couldn't load target `zone_wifi_forward':File not found
+
+    Try `iptables -h' or 'iptables --help' for more information.
+    iptables v1.4.10: Couldn't load target `zone_wifi_prerouting':File not found
+
+    Try `iptables -h' or 'iptables --help' for more information.
+    iptables v1.4.10: Couldn't load target `zone_wifi_notrack':File not found
+
+    Try `iptables -h' or 'iptables --help' for more information.
+    iptables v1.4.10: Couldn't load target `zone_wifi_nat':File not found
+
+optional DHCP config:
+
+[[!format sh """
+root@carton:~# uci set dhcp.wifi=dhcp
+root@carton:~# uci set dhcp.wifi.interface=wifi
+root@carton:~# uci set dhcp.wifi.start=100
+root@carton:~# uci set dhcp.wifi.limit=150
+root@carton:~# uci set dhcp.wifi.leasetime=12h
+uci commit
+/etc/init.d/dnsmasq restart
+"""]]
+
+unfortunately, this breaks batman.
