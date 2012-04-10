@@ -136,7 +136,7 @@ Puis utiliser la commande "ping" pour voir si on peut parler à une autre machin
 
 ### Key encryption
 
-Dans le cas d'un laptop qui n'est pas dedie au mesh, il se peut que la configuration de l'interface wlan0 traine des flags de ses configurations precedentes. 
+Dans le cas d'un laptop qui n'est pas dedié au mesh, il se peut que la configuration de l'interface wlan0 traîne des flags de ses configurations précédentes. 
 
     iwconfig wlan0
 
@@ -153,7 +153,7 @@ Pourtant, il est possible que d'une autre machine, par exemple un routeur OpenWR
 
     iwlist wlan0 scan
 
-montre que notre cellule a son "Encryption key" a "on"
+montre que notre cellule a son "Encryption key" à "on"
 
     Cell 10 - Address: 02:51:48:72:03:11
                 Channel:1
@@ -166,14 +166,14 @@ montre que notre cellule a son "Encryption key" a "on"
                 Bit Rates:24 Mb/s; 36 Mb/s; 48 Mb/s; 54 Mb/s
                 Mode:Ad-Hoc
                     
-On peut changer ceci sur la machine Debian, avec la commande
+On peut changer ceci sur le laptop, avec la commande
 
     iwconfig wlan0 key off
 
 
 ### Firewall / Pare-feu
 
-Assez evident, mais facile a oublier: Avez-vous des regles de pare-feu qui bloquent les pings sur wlan0? Verifiez toujours l'etat et les regles de votre firewall!
+Assez évident, mais facile à oublier: Avez-vous des règles de pare-feu qui bloquent les pings sur votre interface? Vérifiez toujours l'état et les règles de votre firewall!
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
