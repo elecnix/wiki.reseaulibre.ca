@@ -8,12 +8,10 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 On assume que les étapes suivantes ont été faites avec succès:
 
- 1. [[Flashing]] de votre routeur
+ 1. [[Flashing]] de votre routeur (avec `trunk` pour OpenWRT, voir ci-bas)
  2. Configuration du mode [[ad-hoc]]
 
-ATTENTION: toutes les nodes doivent utiliser la même version de batman-adv. Par conséquent, il faut la dernière version du module (2012.0) pour votre noyau Linux. Ceci peut vouloir dire réinstaller une version plus récente de votre routeur.
-
-# Installer les logiciels nécessaires
+# Installer et configurer BATMAN
 
 ## OpenWRT
 
@@ -35,6 +33,26 @@ Pour installer batman-adv:
 
 > Voir [[flashing]] pour plus d'informations sur l'architecture à utiliser.
 
+Configuration de l'interface de batman.
+
+    uci set network.bat0=interface
+    uci set network.bat0.ifname=bat0
+    uci set network.bat0.proto=none
+    uci set network.bat0.mtu=1500
+
+The 'lan' bridge can be configured to add bat0 as well as eth0:
+
+    uci set network.lan.ifname="eth0 bat0"
+
+(!) The above may be eth0.0 instead of eth0. For linksys it's eth0.0,
+for ubiquity it's eth0. Look at the output of ifconfig to see what's
+the eth0 interface.
+
+Tell batman to use the wireless and the lan interfaces.
+
+    uci set batman-adv.bat0.interfaces="wlan0 br-lan"
+
+
 ## Debian
 
 Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gérer le module kernel inclus dans Linux:
@@ -51,6 +69,8 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
     modprobe batman-adv
 
+Suivre ensuite la configuration manuelle ci-bas.
+
 ## Arch linux
 
 On besoin de l'[[AUR | https://aur.archlinux.org/]]
@@ -58,7 +78,9 @@ On besoin de l'[[AUR | https://aur.archlinux.org/]]
     # modprobe batman_adv
     $ yaourt -S batctl
 
-# Configuration commune
+Suivre ensuite la configuration manuelle ci-bas.
+
+# Configuration manuelle
 
 Toutes les plateformes vont utiliser une configuration similaire:
 
