@@ -24,4 +24,4 @@ Then carton can ping boulette, and angela can ping carton, but not boulette. I g
 > 
 > > This works now, the problem was I was trying to live outside the main bridge: don't try, you will fail. --[[anarcat]] 
 
-> > > Interesting. In my tests, I'm also "living outside the main bridge", but I don't have equipment to test another hop. Did you try batctl ping, before adding br-lan to batman interfaces?
+> > > Interesting. In my tests, I'm also "living outside the main bridge", but I don't have equipment to test another hop. Did you try batctl ping, before adding br-lan to batman interfaces? -- [[spoked]]
