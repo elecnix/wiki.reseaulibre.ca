@@ -48,23 +48,9 @@ Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes l
     batctl translocal
     batctl transglobal
 
-## Assignation d'adresses IP
+# Étape suivante
 
-Si on veut faire une communication utile entre les machines, il faut assigner des adresses IP. On peut utiliser du DHCP, des adresses statiques ou IPv6.
-
-## IPv4 statique
-
-Assigner une adresse unique par machine. Par exemple:
-
-    ifconfig bat0 192.168.1.10
-
-## IPv6 avec les adresses locales
-
-todo
-
-## IPv6 avec routage et découverte "stateless"
-
-todo
+Voir [[la configuration IP|configuration/ip]].
 
 # Diagnostiques
 
