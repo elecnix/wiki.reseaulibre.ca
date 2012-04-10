@@ -28,11 +28,6 @@ Get into the router with its default IP address.
 
     telnet 192.168.1.1
 
-This command can be used to backup or inspect your current
-configuration:
-
-    uci show
-
 Activer la radio
 
     uci delete wireless.radio0.disabled
@@ -47,6 +42,7 @@ Wifi network no longer 'lan'
 
 Reboot for changes to take effect:
 
+    uci commit
     reboot & exit
 
 Montreal mesh standards: channel 6, adhoc, named mesh-mtl. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
@@ -68,7 +64,10 @@ Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
     uci commit
     reboot & exit
 
-> *Note: only restarting network will not update the DHCP server.*
+> *Note: this command can be used to backup or inspect your current
+> configuration:*
+
+        uci show
 
 # Ad-Hoc on Debian
 
