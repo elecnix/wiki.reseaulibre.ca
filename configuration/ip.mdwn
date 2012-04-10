@@ -30,11 +30,17 @@ This is the result of the first informal allocation during the [[meetings/2012-0
 
 ## IPv6
 
+We are using a huge IPv6 space (a `/48`, which allows for 65,536 `/64` networks) known as ULA (see below) for our mesh. The global prefix (`fd64:2c08:9fa7::/48`) is announced from some routers on the mesh, but is usually allocated in smaller `/64` networks, independent from one another, and that can be used to announce local networks.
+
+If you wish, however, to be on the global mesh, you should use a `/48` netmask to be able to reach all nodes in the vincinity.
+
 Known allocations:
 
  * `fd64:2c08:9fa7::1/48` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
- * `fd64:2c08:9fa7:1::1/64` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself, announcing a subnet of the above `/48`
- * `fd64:2c08:9fa7:1::2/64` - `carton.anarcat.ath.cx` - a static node on the above network (not configured yet)
+ * `fd64:2c08:9fa7:1::1/48` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself
+ * `fd64:2c08:9fa7:1::2/64` - `carton.anarcat.ath.cx` - a static node on the above network (not configured yet), announcing a subnet of the global `/48`
+
+Notice how I have a global router (`boulette`) which has a `/48` netmask while a local access node uses a small `/64` subnet.2
 
 ### Note on ULA prefixes
 
