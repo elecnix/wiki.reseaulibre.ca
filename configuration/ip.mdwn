@@ -148,7 +148,7 @@ This can be implemented immediatly with:
     rtadvd vr2
 
 
-## Connecting to an existing network
+# Adding services to the mesh
 
 A mesh is fun, but otherwise not very useful until services are plugged into it. This means plugging this open wireless into your machines, which may be a security issue.
 
@@ -249,7 +249,7 @@ Then those services can be advertised in different ways:
    Microsoft
  * by documenting it here
 
-### Available services
+## Available services
 
  * DNS server at `192.168.3.1` / `fd64:2c08:9fa7::1` (`roadkiller.anarcat.ath.cx`)
  * http://mesh.openisp.ca/ - this wiki, should be running on
