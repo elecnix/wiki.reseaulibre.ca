@@ -111,6 +111,8 @@ Tell batman to use the wireless and the lan interfaces.
 
     uci set batman-adv.bat0.interfaces="wlan0 br-lan"
 
+Optionally use our our [[bat-hosts|configuration/bat-hosts]] file.
+
 You're done! Commit the changes and reboot to test them.
 
     uci commit
@@ -129,3 +131,7 @@ root@batman-88:/# batctl if
 wlan0: active
 br-lan: active
 """]]
+
+# Other Readings
+
+This guide being incomplete, you will most likely want to tweak the IP addresses of your router. For this, please read the [[IP Configuration|configuration/ip]] page. When things are settled and tested, this guide should be updated.
