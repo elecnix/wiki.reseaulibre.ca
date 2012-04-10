@@ -44,11 +44,16 @@ Disable DHCP server on LAN, so as to not interfere with home router.
 
 # Wireless Configuration
 
+We have enabled wireless previously (see  if you haven't). Now, verify that the wifi interface
+is listed. If not, you may have flashed the wrong image!
+
+    iwconfig
+
 The wifi network should no longer belong in the 'lan' network bridge because that's not allowed in ad-hoc mode. We'll configure it later, so just remove it for now:
 
     uci delete wireless.@wifi-iface[0].network
 
-Configure the wireless radio with Montreal mesh standards:
+Configure the wireless radio with Montreal [[configuration/ad-hoc]] standards:
 
     uci set wireless.radio0.channel=6
     uci set wireless.@wifi-iface[0].mode=adhoc
@@ -84,14 +89,6 @@ Le module `batman_adv` devrait maintenant être chargé:
 You should see: batctl 2012.0.0
 
     batctl -v
-
-# Wireless Configuration
-
-We have enabled wireless previously (see [[configuration/ad-hoc]] if you haven't). Now, verify that the wifi interface
-is listed. If not, you may have flashed the wrong image!
-
-    iwconfig
-
 
 # Batman Configuration
 
