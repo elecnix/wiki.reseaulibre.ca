@@ -1,4 +1,16 @@
-We need to decide how the network is to be configured. Some more tests are required but so far i am thinking of:
+We need to decide of a topology. Opennet has an interesting concept, where public IPs are hidden behind VPN gateways:
+
+<https://wiki.opennet-initiative.de/w/images/3/3d/Opennet-Struktur-VPNGateways.png>
+
+This has a few advantages:
+
+ 1. strong over-the-air encryption
+ 2. no need to change gateway if network topology changes
+ 3. access to the internet only to subscribers
+
+We are also considering ad-hoc mode and OLSR, see [[todo/network_topology]].
+
+Some more tests are required but so far i am thinking of:
 
  * [[configuration/olsrd]]
  * [[configuration/ad-hoc]] mode
