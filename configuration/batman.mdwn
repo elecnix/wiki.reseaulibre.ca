@@ -37,7 +37,7 @@ Activer l'interface:
 
     ifconfig bat0 up
 
-Voilà, on n'a pas d'adresses IP de configurées (à moins d'utiliser IPv6, todo: à documenter), mais on peut faire des "pings" en utilisant les adresses MAC:
+Voilà, on n'a pas d'adresses IP de configurées à ce stade (prochaine étape!), mais on peut faire des "pings" en utilisant les adresses MAC:
 
     batctl tcpdump wlan0
     batctl ping 00:11:22:33:44:55
