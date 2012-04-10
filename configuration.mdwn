@@ -1,9 +1,11 @@
 [[!toc levels=3]]
 
-# Configuration guides
+# Configuration instructions
 
 This page details how to configure your [[hardware]] for operation in
 the mesh.
+
+There are also specific recipes in the [[guides]] section.
 
 ## General instructions
 
@@ -14,14 +16,6 @@ Those instructions attempt to be platform-independent or at least cover multiple
 3. [[!traillink configuration/batman]] - configuring mesh software for interconnexion (see also [[configuration/olsrd]], which we are not using right now)
 4. [[!traillink configuration/ip]] - adress allocation on the network and connexion with the outside world
 4. [[!traillink configuration/vpn]] - configuring OpenVPN to be able to access the gateways to the real internet
-
-## Specific instructions
-
-Those instructions are more specific to some platforms.
-
-* [[configuration/ubnt-ad-hoc]] - configuration ad-hoc de base, sans mesh, sur une station Ubiquiti
-* [[configuration/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
-* [[configuration/robin]] - configuration d'une machine avec [[robin]]
 
 # Architectural design
 

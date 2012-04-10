@@ -19,13 +19,34 @@ channel
 cell
 : 02:51:48:72:03:11
 
-Pick your favorite:
+# OS-specific instructions
 
-* [[OpenWRT]]
-* [[Debian]]
-* [[Archlinux]]
-* [[DD-WRT]]
-* [[AirOS]]
+## Debian
+
+This page is about installing B.A.T.M.A.N. on Debian. For other operating systems, see the [[Batman|batman]] page.
+
+Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gérer le module kernel inclus dans Linux:
+
+    sudo apt-get install -t squeeze-backports batctl linux-image
+
+[!] Ceci demande peut-être un backport, qui est en cours de fabrication, voir [[!debbug 668237]] pour les détails.
+
+Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2012.0.0.
+
+Si vous avez mis à jour votre noyau, il faut redémarrer la machine.
+
+Activer le module kernel (la majorité des distributions Linux ont ce module par défaut)
+
+    modprobe batman-adv
+
+Procéder ensuite au reste de la configuration [[configuration/batman]].
+
+## Arch linux
+
+On besoin de l'[[AUR | https://aur.archlinux.org/]]
+
+    # modprobe batman_adv
+    $ yaourt -S batctl
 
 # Operations
 
