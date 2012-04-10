@@ -21,7 +21,19 @@ cell
 
 ## OpenWRT
 
-Voir [[guides/openwrt+batman]] pour l'instant.
+*Ceci est un résumé de l'excellent [[Guide d'installation de BATMAN sur OpenWRT|guides/openwrt+batman]].*
+
+    opkg update
+    opkg install kmod-batman-adv
+
+> Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire). Il faut trouver l'URL du paquet et faire quelque chose comme ceci pour un Linksys WRT54g:
+
+    cd /tmp
+    touch /tmp/opkg.conf
+    opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.13-1_brcm47xx.ipk \
+        http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.13+2012.0.0-1_brcm47xx.ipk
+
+ Voir [[flashing]] pour plus d'informations sur l'architecture à utiliser.
 
 ## Debian
 
