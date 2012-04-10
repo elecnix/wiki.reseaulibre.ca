@@ -2,6 +2,7 @@
 
 15 dBI omnidirectional antenna connected to a Ubiquity Nanostation M2 router.
 
+# Technical details
 
 hostname
 : batman-90
@@ -40,9 +41,17 @@ Status
 Operator
 : [[users/anarcat]]
 
-(!) Power can apparently be pushed up to 84mW (20dBm), see [seattlewireless](http://www.seattlewireless.net/LinksysWrt54g).
-
 This node runs batman according to the [[configuration/batman]] howto.
+
+# Todo
+
+ * test IPv6 autoconfiguration
+ * install ganglia? or [[configuration/monitoring]]?
+ * test ipv6 announcement
+
+# Notes
+
+(!) Power can apparently be pushed up to 84mW (20dBm), see [seattlewireless](http://www.seattlewireless.net/LinksysWrt54g).
 
 # old battle plan
 
