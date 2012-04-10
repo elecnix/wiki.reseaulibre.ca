@@ -47,8 +47,6 @@ Activer le module kernel (la majorité des distributions Linux ont ce module par
 
     modprobe batman-adv
 
-Procéder ensuite au reste de la configuration [[configuration/batman]].
-
 ## Arch linux
 
 On besoin de l'[[AUR | https://aur.archlinux.org/]]
@@ -56,17 +54,45 @@ On besoin de l'[[AUR | https://aur.archlinux.org/]]
     # modprobe batman_adv
     $ yaourt -S batctl
 
-# Operations
+# Configuration commune
 
-Afficher l'état:
+Toutes les plateformes vont utiliser une configuration similaire:
 
-    batctl if
+Ajouter une interface physique à batman:
+
+    batctl if add wlan0
 
 Activer l'interface:
 
     ifconfig bat0 up
 
-Voilà, on n'a pas d'adresses IP de configurées à ce stade (prochaine étape!), mais on peut faire des "pings" en utilisant les adresses MAC:
+# Use our bat-hosts
+
+You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|configuration/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
+
+# Étape suivante
+
+Voir [[la configuration IP|configuration/ip]].
+
+# Troubleshooting
+
+## Informations générales
+
+En général, batman ou le mode ad-hoc affiche régulièrement des messages kernel, on peut y accéder par:
+
+    dmesg | tail
+
+ou:
+
+    tail -f /var/log/messages
+
+## Afficher l'état
+
+    batctl if
+
+## Diagnostiques
+
+Même si on a pas d'adresse IP configurée, on peut faire des "pings" en utilisant les adresses MAC:
 
     batctl tcpdump wlan0
     batctl ping 00:11:22:33:44:55
@@ -80,27 +106,6 @@ Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes l
 Ajouter manuellement une interface à batman:
 
     batctl if add wlan0
-
-# Use our bat-hosts
-
-You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|configuration/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
-
-# Étape suivante
-
-Voir [[la configuration IP|configuration/ip]].
-
-# Diagnostiques
-
-En général, batman ou le mode ad-hoc affiche régulièrement des messages kernel, on peut y accéder par:
-
-    dmesg | tail
-
-ou:
-
-    tail -f /var/log/messages
-
-Voir aussi la page [[ad-hoc]] si vous avez des difficultés avec le
-lien physique.
 
 # Références
 
