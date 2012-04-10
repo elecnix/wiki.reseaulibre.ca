@@ -1,5 +1,7 @@
-[[!meta title="VPN configuration"]]
+[[!meta title="VPN gateway configuration"]]
 [[!meta description="How to setup secure gateways to the internet"]]
+
+This is about having gateways to the "real internet" available in the mesh, but only behind a VPN, a service that could be paid to finance the mesh.
 
 Just a brainstorm for now:
 
