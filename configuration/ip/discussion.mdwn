@@ -1,13 +1,24 @@
 Mettons que je configure un nouveau node. La page dit d'assigner une IPv6 statique. Laquelle je mets? --elecnix
 
-> Comme boulette:
+> Normalement l'idée est que ça s'autoconfigure quand tu te connectes au mesh. À défaut de ça tu peux faire une configuration statique, comme carton:
 > 
-> * `fd64:2c08:9fa7::2/64` - `boulette.anarcat.ath.cx` -
-> [[nodes/boulette]] itself, announcing a subnet of the above
+> * `fd64:2c08:9fa7:1::2/64` - `carton`
 >
 > Donc par exemple:
 > 
-> * `fd64:2c08:9fa7::3/64` - `besik`
+> * `fd64:2c08:9fa7:1::3/64` - `besik`
+>
+> Ceci assume en quelque sorte que tu est interconnecté avec le netblock de [[boulette]], mais n'est pas absolument nécessaire.
+>
+> Au lieu de cela, tu peux annoncer ton propre netblock, dans lequel cas tu dois subnetter et prendre ton propre `/64` dans le `/48`, par exemple:
+>
+> * `fd64:2c08:9fa7:2::1/64` - `elecnix`
+>
+> ... ce qui est comme `boulette`:
+>
+> * `fd64:2c08:9fa7:1::1/64` - `boulette`
+>
+> À noter que j'y vais pas mal au pif là-dessus et je n'ai pas encore réussi une autoconfiguration.
 >
 > --[[anarcat]]
 
