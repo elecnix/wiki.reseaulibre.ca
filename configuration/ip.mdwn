@@ -37,17 +37,23 @@ Install necessary packages on OpenWRT:
     opkg update
     opkg install kmod-ipv6 radvd ip kmod-ip6tables ip6tables
 
-This should normally automagically configure your node with IPv6, at
-least when your node is configured with DHCP. Unfortunately we still
-use static IPs, so you should add this to your `/etc/config/network`:
+Then you need to configure a static IP address:
 
-    config interface 'lan'
-        option accept_ra 1
-        option send_rs 1
+    uci set network.lan.ip6addr="fd64:2c08:9fa7::1/64"
 
-Disable the IPv6 firewall by uncommenting this line in `/etc/config/firewall`:
+The following will make sure that clients can autoconfigure:
 
-    #	option disable_ipv6	1
+    uci set radvd.@prefix[0].ignore=0
+
+> *You could also replace the above by the following to make the LAN
+> interface autoconfigure if there is another router present:*
+    
+        uci set network.lan.accept_ra=1
+        uci set network.lan.send_rs=1
+
+Make sure the IPv6 firewall is enabled:
+
+    uci set firewall.defaults.disable_ipv6=0
 
 To enable routing, put this in your `/etc/sysctl.conf`:
 
