@@ -3,7 +3,7 @@
 
 This page is an attempt to help you configure and troubleshoot the Ad-Hoc mode on your network card. This type of configuration is useful when joining a B.A.T.M.A.N. mesh as a client without B.A.T.M.A.N., or as a fully-enabled mesh node, as per the [[B.A.T.M.A.N. Configuration|configuration/batman]].
 
-# Debian configuration
+# Ad-Hoc on Debian
 
 Découvrir quelle est l'interface réseau (ex: wlan0) :
 
