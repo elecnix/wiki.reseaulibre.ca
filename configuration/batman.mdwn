@@ -4,11 +4,9 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 [[!toc levels=3]]
 
-# Installation and Configuration
+# Requirements
 
-There is no single recipe, because it depends very much on your installation target. There are many things in common however, just not done the same way.
-
-Our recipes all configure the network card in [[ad-hoc]] mode, with specific settings:
+This documentation assumes the network card in [[ad-hoc]] mode, with specific settings:
 
 batman-adv version
 : 2012.0.0
@@ -20,6 +18,10 @@ cell
 : 02:51:48:72:03:11
 
 # OS-specific instructions
+
+## OpenWRT
+
+Voir [[guides/ubnt+openwrt]] pour l'instant.
 
 ## Debian
 
