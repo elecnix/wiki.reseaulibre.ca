@@ -25,3 +25,29 @@ Then carton can ping boulette, and angela can ping carton, but not boulette. I g
 > > This works now, the problem was I was trying to live outside the main bridge: don't try, you will fail. --[[anarcat]] 
 
 > > > Interesting. In my tests, I'm also "living outside the main bridge", but I don't have equipment to test another hop. Did you try batctl ping, before adding br-lan to batman interfaces? -- [[spoked]]
+
+# Bug with regular ad-hoc access mode
+
+So we can still reproduce the above bug with the complete configuration, probably even the [[howto|guides/openwrt+batman/]], by trying to connect to the AP with ad-hoc, without Batman. This could be useful for regular people or mobile devices, for example.
+
+Configuration:
+
+ 1. configure an AP far away, named `boulette` (`192.168.3.90`)
+ 2. configure a powerful AP that can reach boulette, named `carton` (`192.168.3.99`)
+ 3. do basic [[ad-hoc]] and [[ip]] configuration on a laptop, named `angela`, which *can't* reach boulette directly but can reach `carton`
+    * adhoc: `iwconfig wlan0 essid mesh-mtl channel 6 ap 02:51:48:72:03:11`
+    * ip: `192.168.3.42`
+
+Expected results:
+
+ * carton pings boulette
+ * angela pings carton
+ * angela pings boulette through carton
+
+Actual results:
+
+ * carton pings boulette (./)
+ * angela pings carton (./)
+ * angela can't ping boulette [!] the carton returns `Destination port unreachable`
+
+So it looks like the firewall on carton is kicking in. Note that angela *can* ping boulette if it joins the mesh with a batman configuration. --[[anarcat]]
