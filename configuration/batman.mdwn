@@ -63,6 +63,8 @@ Reboot the router
     uci commit
     reboot & exit
 
+> (!) Il est possible de garder le reboot pour la dernière étape de la configuration si vous avez d'autres configurations à faire.
+
 ## Debian
 
 Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gérer le module kernel inclus dans Linux:
