@@ -23,7 +23,9 @@ IP | Hardware | wifi MAC | Location
 """]]
 
 The proper allocation for new IPs is in the `172.16.0.0/12` private B
-class (from [[!rfc 1918]]).
+class (from [[!rfc 1918]]). `172.16.0.X/24` is reserved for big
+interconnects (like [[nodes/boulette]]), so if you have just a node in
+your window, using `172.16.1.X/24` for now (like [[nodes/carton]]).
 
 > (!) We are on the process of migrating away from the
 > `192.168.3.0/24` netblock, which was too small for our needs and
