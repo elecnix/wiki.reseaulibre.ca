@@ -3,6 +3,23 @@
 
 This page is an attempt to help you configure and troubleshoot the Ad-Hoc mode on your network card. This type of configuration is useful when joining a B.A.T.M.A.N. mesh as a client without B.A.T.M.A.N., or as a fully-enabled mesh node, as per the [[B.A.T.M.A.N. Configuration|configuration/batman]].
 
+# General configuration
+
+Our common ad-hoc configuration is the following:
+
+Channel
+: 6
+
+Session ID (ESSID):
+: `mesh-mtl`
+
+Cel (BSSID)
+: `02:51:48:72:03:11`
+
+The channel can be changed according to location and existing
+interference. It needs to be the same for all devices that
+interconnect.
+
 # Ad-hoc on OpenWRT
 
 Connect a cable from the LAN to your PC.
@@ -52,6 +69,10 @@ of the home router this will be plugged into eventually.
 Disable DHCP server on LAN, so as to not interfere with home router.
 
     uci set dhcp.lan.ignore=1
+
+[!] Warning: the above will make it more difficult to reach the
+machine again after a reboot. You will need to statically configure
+your laptop if it is the only device connected to the device.
 
 Écrire les changements et redémarrer
 
