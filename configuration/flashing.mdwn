@@ -119,7 +119,9 @@ Si vous avez déjà OpenWRT, mais que vous voulez le flasher avec une autre vers
 
 [!] Attention!! Il est très important de prendre l'image marquée `-sysupgrade` ou, si elle n'est pas disponible, le `.trx`.
 
-[!] Attention! Ceci ne fonctionne pas bien sur les Linksys WRT54GLv1.1 (au moins).
+[!] Attention! Ceci ne fonctionne pas bien sur les Linksys WRT54GLv1.1 (au moins). Essayer avec ceci la prochaine fois:
+
+    mtd write /tmp/openwrt-brcm47xx-squashfs.trx linux && reboot
 
 Si votre routeur n'a pas accès à internet, vous pouvez installer un petit serveur web sur votre ordinateur:
 
