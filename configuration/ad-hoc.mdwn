@@ -8,7 +8,7 @@ This page is an attempt to help you configure and troubleshoot the Ad-Hoc mode o
 Our common ad-hoc configuration is the following:
 
 Channel
-: 6
+: 1
 
 Session ID (ESSID):
 : `mesh-mtl`
@@ -38,7 +38,7 @@ Separate wireless network from `lan`
 
 Montreal mesh standards: channel 6, adhoc, named mesh-mtl. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
 
-    uci set wireless.radio0.channel=6
+    uci set wireless.radio0.channel=1
     uci set wireless.@wifi-iface[0].mode=adhoc
     uci set wireless.@wifi-iface[0].ssid=mesh-mtl
     uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
@@ -67,7 +67,7 @@ Découvrir quelle est l'interface réseau (ex: wlan0) :
 
 This will bring up your network interface:
 
-    iwconfig wlan0 mode ad-hoc essid mesh-mtl ap 02:51:48:72:03:11 channel 6
+    iwconfig wlan0 mode ad-hoc essid mesh-mtl ap 02:51:48:72:03:11 channel 1
     ifconfig wlan0 up
 
 Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. 
