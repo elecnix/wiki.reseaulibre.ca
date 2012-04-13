@@ -1,0 +1,83 @@
+[[!toc]]
+
+##C'est quoi un mesh ?  Comment ça marche ?##
+
+Un "mesh" est une topologie réseau dans laquelle tous les hôtes sont connectés de proche en proche formant ainsi une structure en forme de filet.  Chaque hôte ou point d'accès a un certain nombre de "voisins", de sorte qu'il existe plusieurs chemins pour se rendre à un même point.  L'avantage d'une telle topologie est qu'il n'y a pas d'hôte essentiel, en cas de panne, le réseau se répare et on peut facilement y ajouter ou enlever des points.
+
+Concrètement, les gens installent des routeurs chez eux sur lesquels roule une application de mesh qui automatiquement recherche des voisins, accessibles via les ondes wifi, qui roulent le même protocole et se connectent à eux.  Les utilisateurs se connectent à un point d'accès comme à n'importe quel autre point d'accès wifi et font alors partie du réseau mesh et accèdent à tout le contenu disponible depuis cet hôte.
+
+##Est-ce que ça marche ?##
+
+Bien sûr.  Mais tout dépend de ce que "ça" veut dire.
+
+Les protocoles de mesh sont utilisés [[partout dans le monde||Similar Projects]] et des communautés comme Mesh Montréal sont en opération un peu partout.  Ça fonctionne et ça demande pratiquement pas de maintenance.
+
+Par contre, il n'y a rien de garanti sur ce réseau.  Selon où l'on est connecté, la disponibilité des services, la vitesse de connexion et même la possibilité de naviguer sur le web dépendent des services disponibles sur le mesh, l'achalandage de certains liens du réseau et du nombre de "sauts" (liens) nécessaires pour se rendre à son profit.
+
+##Combien ça coûte ?##
+
+Se connecter au mesh en tant qu'utilisateur est gratuit.
+
+Pour ajouter son hôte au réseau, ça prend de l'équipement et il faut le configurer.  Le prix dépend de l'installation désirée.  
+
+Par exemple, pour installer un simple routeur dans une fenêtre, il suffit d'avoir un routeur sans fil de base, qui peut coûter autour de 40$.  Pour installer une antenne sur un toit, tout l'équipement et le filage peut coûter autour de 200$.
+
+##Est-ce que c'est sécuritaire ?##
+
+Le mesh n'est pas plus ni moins sécuritaire que d'autres réseaux sans fil publics tels celui d'[[île sans fil|http://www.ilesansfil.org]].
+
+Pour permettre l'accès à tous au mesh, les points d'accès sont non sécurisés.  De même, le protocole de communication entre les hôtes utilisent une connexion non sécurisée.  L'usager est donc responsable de la sécurité de sa navigation, en s'assurant d'être bien en https sur les sites demandant authentification.  Pour d'autres types d'utilisation du réseau, il faut s'assurer de la sécurité du protocole utilisé, par exemple, utiliser ssh au lieu de telnet, utiliser un remote desktop sécurisé pour le bureau à distance.
+
+##C'est légal ?##
+
+###Infrastructure###
+
+Voir la [[page de normes|regulations]] pour plus d'informations.
+
+Il y a des réglementations municipales quant à l'esthétique d'une installation d'antenne sur les toits.  Informez-vous auprès de votre municipalité ou arrondissement si ça prend un permis ou non.
+
+La puissance d'émission du routeur ne doit pas dépasser 1W (30 dBm) et la somme de la puissance de transmission et du gain d'antenne ne doit pas dépasser 4W (36 dBm).  Mais il est généralement admis de limiter la puissance de transmission au plus faible nécessaire.  Ainsi dans une fenêtre, il n'est pas utile ni même souhaitable d'avoir une puissance de 36 dBm.  Par contre, sur un toit c'est acceptable.
+
+###Services###
+
+Les services offerts sur le réseau sont soumis au code civil.  Il est du devoir de l'utilisateur et des propriétaires de points d'accès d'utiliser le mesh en toute légalité.  
+
+Par exemple, avant de partager votre connexion internet avec la ville au complet, assurez-vous que le contrat avec votre fournisseur vous le permet.
+
+De même pour le partage de fichier, soit par p2p ou autre moyen, si c'est illégal sur internet, ce l'est peut-être aussi sur le mesh.
+
+##Comment je me connecte au réseau ?##
+
+Pour vous connecter en tant qu'utilisateur, vous devez être à proximité d'un point d'accès (voir la [[carte|map]]) et vous vous y connectez comme à n'importe quel point d'accès wifi.  Attention, certains points d'accès sur la carte ne servent qu'à l'infrastructure et il est impossible de s'y connecter.  Le mieux est de voir les réseaux disponibles depuis votre appareil et chercher un réseau **Mesh Montréal**.  La connection ne demande aucun mot de passe, ni compte utilisateur.
+
+Pour brancher un routeur sur le réseau et ainsi avoir votre propre point d'accès, consultez la page [[participer]].
+
+##J'ai internet à la maison, pourquoi je me connecterais à ce réseau ?##
+
+Le réseau de Mesh Montréal est beaucoup plus qu'un simple fournisseur d'accès internet.  En fait, il n'y a peut-être même pas d'accès à internet!
+
+C'est un réseau totalement indépendant, dont chaque hôte appartient à la personne qui l'a mis en place.  La connectivité n'est donc pas dépendante d'un fournisseur d'accès internet.  Si demain matin, les fournisseurs décident de bloquer l'internet, les services sur le mesh ne seraient pas affectés et les citoyens montréalais pourraient continuer de communiquer entre eux.
+
+Ce sont les participants qui décident quels services offrir sur le réseau et comment les offrir.  Il y en a certainement pour tous les goûts.  Voici quelques [[idées de services|idees]] qui pourraient être offerts sur le réseau.  Au fur et à mesure que le mesh grossira, il sera possible de voir les services réellement offerts.  Pour l'instant ce n'est qu'expérimental.
+
+##Ça fonctionne bien de chez moi, je peux appeler mon fournisseur et annuler mon abonnement ?##
+
+Si vous le faites, c'est à vos risques!
+
+Quelqu'un sur le mesh a accepté de partager sa propre connexion internet, mais il peut à tout moment décider de ne plus offrir ce service ou mettre en place des quotas de bande passante.  Aussi, il n'y a aucune garantie sur le débit disponible à un moment ou à un autre ou même à l'accessibilité de cette connexion si le lien tombe en panne.
+
+##Je suis sur le réseau, pis là je fais quoi ?##
+
+Si un accès internet est disponible, vous pouvez faire tout ce qui peut se faire sur le web!
+
+Sinon, pas grand chose.  Le réseau est encore expérimental.  À terme, on devrait avoir une page de bienvenue sur le réseau avec une liste des services offerts.  Pour l'instant, suivez la [[liste de discussion|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]] pour vous tenir informés.
+
+##C'est pas comme vraiment geek ça ?##
+
+Mais non!  C'est peut-être des geeks qui ont développé les protocoles mesh.  Mais pour l'utiliser, se monter un réseau et y contribuer des projets, ça prend juste de l'imagination et de bons amis.  Plus on est de fous, plus on rit!
+
+##Ok je suis convaincu!  Comment j'installe mon point d'accès ?##
+
+Bienvenue sur le mesh!
+
+Consultez la page [[participer]] pour de l'information sur comment participer plus activement au projet.

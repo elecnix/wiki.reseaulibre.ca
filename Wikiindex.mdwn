@@ -1,0 +1,49 @@
+While [Ile Sans Fil](http://ilesansfil.org) does incredible work in providing free wifi access to the community, the goal of creating an alternative network, independant from big corporate providers and decentralized, has remained elusive.
+
+The goal of this project is to create a community wireless network accessible from both fixed and mobile devices that can be used in day to day life by regular people as well as during emergencies. We're building on the experience of [[similar projects|Similar Projects]].
+
+# Status
+
+* [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
+* [[Nodes]] - the list of deployed nodes
+* [[Links]] - the links between the nodes
+
+# Joining the mesh
+
+* [[Guides]] - step by step config instructions to join the network
+* [[Configuration]] - in depth documentation of the various steps
+
+# Technical documentation
+
+This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
+
+* [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured
+* [[Software]] - the software used in the project...
+* [[Wi-Fi Technicalities]] - basics of the physical layer and mechanics. 
+* [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
+
+# Participating
+
+We need volunteers! On parle français aussi!
+
+* [[Mailing list|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]] - mailing list de discussion de nodes enregistrés, destinée aux bénévoles - avant de demander sur la liste, voir la [[FAQ|foire aux questions]]
+* IRC chat: [[#mesh-mtl|http://webchat.freenode.net/?channels=mesh-mtl]] on freenode.net
+* [[Volunteers]] - register here and tell us what you can do
+* [[Todo]] - the tasks on hand
+* [[FAQ]] - frequently asked questions
+* [[Policy]] - what we agree on when opening a node on the mesh
+* [[Idees]] - possible uses for the mesh
+* [[Meta]] - gestion de ce wiki
+* [[Meetings]] - nos rencontres en personne
+
+<!-- * **Prochaine rencontre**: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]] -->
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
