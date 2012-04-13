@@ -3,6 +3,7 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 ----
 
 Mini map.  Pourquoi elle se tasse pas à droite?
+Save pour prendre en compte le dernier commit via git?
 [[!osm right]]
 
 Here's a paragraph.
