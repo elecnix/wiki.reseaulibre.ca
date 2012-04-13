@@ -2,7 +2,7 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
 ----
 
-Mini map
+Mini map.  Pourquoi elle se tasse pas à droite?
 [[!osm right]]
 
 Here's a paragraph.
