@@ -64,7 +64,7 @@ The wifi network should no longer belong in the 'lan' network bridge because tha
 
 Configure the wireless radio with Montreal [[configuration/ad-hoc]] standards:
 
-    uci set wireless.radio0.channel=6
+    uci set wireless.radio0.channel=1
     uci set wireless.@wifi-iface[0].mode=adhoc
     uci set wireless.@wifi-iface[0].ssid=mesh-mtl
     uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
