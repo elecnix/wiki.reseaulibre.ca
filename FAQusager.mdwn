@@ -10,7 +10,7 @@ Concrètement, les gens installent des routeurs chez eux sur lesquels roule une 
 
 Bien sûr.  Mais tout dépend de ce que "ça" veut dire.
 
-Les protocoles de mesh sont utilisés [[partout dans le monde||Similar Projects]] et des communautés comme Mesh Montréal sont en opération un peu partout.  Ça fonctionne et ça demande pratiquement pas de maintenance.
+Les protocoles de mesh sont utilisés [[partout dans le monde|Similar Projects]] et des communautés comme Mesh Montréal sont en opération un peu partout.  Ça fonctionne et ça demande pratiquement pas de maintenance.
 
 Par contre, il n'y a rien de garanti sur ce réseau.  Selon où l'on est connecté, la disponibilité des services, la vitesse de connexion et même la possibilité de naviguer sur le web dépendent des services disponibles sur le mesh, l'achalandage de certains liens du réseau et du nombre de "sauts" (liens) nécessaires pour se rendre à son profit.
 
