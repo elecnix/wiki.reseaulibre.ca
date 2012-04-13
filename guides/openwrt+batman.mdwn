@@ -26,7 +26,7 @@ Turn the radio on:
 
     uci delete wireless.radio0.disabled
 
-Set a custom name, in case you encouter other peers...
+Set the name of the router to the same you entered in the [[node database|nodes]].
 
     uci set system.@system[0].hostname=batman-88
 
