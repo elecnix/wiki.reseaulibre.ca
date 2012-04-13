@@ -1,1 +1,1 @@
-[[!osm width=800 height=600]]
+[[!osm width="800" height="600"]]
