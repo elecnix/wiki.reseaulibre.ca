@@ -21,6 +21,7 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Software]] - the software used/evaluated in the project...
  * [[Installation de OpenWRT|configuration/flashing/]]
  * [[OpenWRT avec Batman|guides/openwrt+batman]]
+  * Pour d'autres systèmes, voir: [[configuration/ad-hoc]] et [[configuration/batman]]
  * [[Plan d'allocation des adresses IP|configuration/ip]]
 * [[Wi-Fi Technicalities]] - basics of the physical layer and mechanics. 
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
