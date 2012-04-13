@@ -20,6 +20,7 @@ IP | Hardware | wifi MAC | Location
 192.168.3.93 | NanoStation M2 | 00:15:6d:fc:be:90
 192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
 172.16.1.1 | Linksys WRT54G | 00:1C:10:22:02:AE | [[nodes/carton]]
+172.16.1.2 | Linksys WRT54G | 00:15:6D:71:37:26 | [[nodes/ouaibe]]
 """]]
 
 The proper allocation for new IPs is in the `172.16.0.0/12` private B
