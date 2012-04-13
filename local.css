@@ -26,6 +26,18 @@
    height as needed (within limits, of course).  --tschwinge
 */
 
+/* gbastien:
+   J'ai choisi aléatoirement et sans signification une palette de couleur en utilisant
+   cet outil:  http://www.degraeve.com/color-palette/index.php
+   à partir de cette image: http://free.desktopwallpaper.org/EleganceMeter-833553.jpeg
+   Voici la liste pour un find & replace facile:
+	#eeeeee: background pâle
+	#221122: texte et action tabs
+	#775544: background header et footer, texte sidebar
+	#887733: hyperliens
+	#ee9911: hyperliens header/footer
+*/
+
 
 /* Put these elements side by side.  */
 .pagedate,
@@ -55,8 +67,8 @@
 .pagecopyright,
 .pagelicense
 {
-  background-color: #f0f0f0;
   font-size: small;
+  margin-bottom: 1em;
 }
 
 /* Used in `.templates/editpage.tmpl'.  */
@@ -78,3 +90,129 @@ h3 { border-bottom: 1px solid #aaa; }
 h4 { border-bottom: 1px solid #ccc; }
 h5 { border-bottom: 1px solid #ddd; }
 h6 { border-bottom: 1px solid #eee; }
+
+/** Page and page header styles **/
+
+body {
+    vertical-align: baseline;
+    padding: 0;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 100%;
+}
+
+.page {
+    max-width: 1008px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    color: #221122;
+}
+
+a {
+    color: #887733;
+}
+
+.pageheader {
+    background-color: #775544;
+   /* background: #775544 url('img/monbg.png') no-repeat right top; */
+    color: #eeeeee;
+    border-color: #221122;
+}
+
+.pageheader a {
+    color: #ee9911
+}
+
+.header {
+    text-shadow: 2px 3px 3px rgba(10, 10, 10, 0.4);
+}
+
+.pageheader .actions ul li {
+    background: none repeat scroll 0 0 #221122;
+    color: #eeeeee;
+    border-style: solid solid none;
+    border-width: 1px;
+    margin: 0;
+    padding: 0.1em 0.5em 0;
+    font-size: smaller;
+}
+
+.pageheader .actions ul li a{
+    color: #eeeeee;
+}
+
+input#searchbox {
+    background-color: #eeeeee;
+}
+
+
+
+
+
+/** Sidebar styles for the menu */
+
+.sidebar {
+    line-height: 40px;
+    width: 100%;
+    background-color: #eeeeee;
+    color: #775544 !important;
+    margin: 0 0 4px 0;
+    border: none;
+    border-bottom: 1px solid #221122;
+    padding: 0;
+    display: block;
+    float: none;
+    height: 43px;
+}
+
+.sidebar ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    float: left;
+    margin-right: 5px;
+    background-color: #EEEEEE;
+    padding: 0 2em 0 2em;
+    border: 3px none #221122;
+
+}
+
+.sidebar ul li:hover {
+    border-bottom: 3px solid #221122;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: #887733;
+}
+
+.sidebar ul li a:hover{
+    color: #775544;
+}
+
+#pagebody {
+    border: none;
+    padding: 0;
+    display: block;
+}
+
+/** Footer styles */
+#footer {
+    margin: 2em 0;
+    padding: 0 2em;
+    border-top: 1px solid #221122;
+    background-color: #775544 ;
+    color: #eeeeee;
+}
+
+#pageinfo {
+    border: none;
+}
+
+#footer a {
+    color: #ee9911
+}
+
+
