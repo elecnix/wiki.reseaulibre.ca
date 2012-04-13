@@ -9,6 +9,7 @@
  * Power: 27dBm
  * Location: 45.535894,-73.620778
  * Status: [[!taglink up]]
+ * Links: [[nodes/benoitg]]
  * Azimuth: North-North-West
  * Panorama: 60°(H-pol) / 60° (V-pol) / 60° (Elevation) 
 
