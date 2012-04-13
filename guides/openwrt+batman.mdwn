@@ -28,31 +28,28 @@ Turn the radio on:
 
 Set the name of the router to the same you entered in the [[node database|nodes]].
 
-    uci set system.@system[0].hostname=batman-88
+    uci set system.@system[0].hostname=ti-noeud
 
-Configure the router LAN interface to match the network
-of the home router this will be plugged into eventually. The IP address allocation hasn't been set in stone yet, and you'll want to add yours to the [[IP Allocation|configuration/ip]] page.
+Configure the router's IP address by picking a free slot from the [[IP Allocation|configuration/ip]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/24 network:
 
-    uci set network.lan.ipaddr=192.168.3.88
-    uci set network.lan.gateway=192.168.3.1
-    uci set network.lan.dns=192.168.3.1
+    uci set network.lan.ipaddr=172.16.1.1
+    uci set network.lan.gateway=172.16.0.1
+    uci set network.lan.dns=172.16.0.1
 
 Disable DHCP server on LAN, so as to not interfere with home router.
 
     uci set dhcp.lan.ignore=1
 
-Écrire les changements et redémarrer
+Write the changes and reboot to apply them:
 
     uci commit
     reboot & exit
-
-(!) Note: only restarting network will not update the DHCP server.
 
 Disconnect the PC from the router and now connect both the
 PC and the mesh router to the home router.
 Re-connect to the router using its new IP address.
 
-    ssh root@192.168.3.88
+    ssh root@172.16.1.1
 
 # Wireless Configuration
 
@@ -129,11 +126,11 @@ You're done! Commit the changes and reboot to test them.
 After a reboot, you should see `wlan0: active` and `br-lan: active` with this:
 
 [[!format txt """
-root@batman-88:/# brctl show
+root@ti-noeud:/# brctl show
 bridge name     bridge id               STP enabled     interfaces
 br-lan          8000.00259c5e4457       no              eth0.0
                                                         bat0
-root@batman-88:/# batctl if
+root@ti-noeud:/# batctl if
 wlan0: active
 br-lan: active
 """]]
