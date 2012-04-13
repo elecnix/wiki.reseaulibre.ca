@@ -2,6 +2,9 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
 ----
 
+Mini map
+[[!osm right]]
+
 Here's a paragraph.
 
 Here's another one with *emphasised* text.
@@ -36,6 +39,8 @@ Bulleted list
 
 * *item*
 * item
+
+
 
 [[ikiwiki/WikiLink]]
 
