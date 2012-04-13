@@ -2,9 +2,9 @@
 
  * Hostname: mesh-mtl2
  * MAC address: 00:15:6D:70:37:26
- * IP address: 10.0.x.x
+ * IP address: 172.16.1.2
  * IPv6 address:
- * Software: AirOS 5
+ * Software: [[OpenWRT + BATMAN|http://mesh.openisp.ca/guides/openwrt+batman/]]
  * Hardware: UBNT Nanostation M2
  * Power: 27dBm
  * Location: 45.535894,-73.620778
