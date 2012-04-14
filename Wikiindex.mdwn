@@ -18,7 +18,7 @@ The goal of this project is to create a community wireless network accessible fr
 This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
 
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured
-* [[Software]] - the software used/evaluated in the project...
+* [[Software]] - the software used/evaluated in the project
  * [[Installation de OpenWRT|configuration/flashing/]]
  * [[OpenWRT avec Batman|guides/openwrt+batman]]
   * Pour d'autres systèmes, voir: [[configuration/ad-hoc]] et [[configuration/batman]]
