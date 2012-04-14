@@ -1,0 +1,26 @@
+[[!waypoint  lat="45.53257" lon="-73.61991" embed hidden width="400px" height="400px" right desc="4th floor window view facing south-west"]]
+
+Possibility of a node here pointing south-west, on the 4th floor, with a good view all the way to the mountain, with a possibility of also having a small post facing north.
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware:
+ * Power:
+ * Location:
+ * Status: [[!taglink planned]]
+ * Links: 
+ * Azimuth:
+ * Panorama:
+ * Operator: [[users/anarcat]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
