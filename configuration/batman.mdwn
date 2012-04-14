@@ -92,6 +92,10 @@ On besoin de l'[[AUR | https://aur.archlinux.org/]]
 
 Suivre ensuite la configuration manuelle ci-bas.
 
+## DD-WRT
+
+Il semble possible d'installer batman-adv sur DD-WRT, mais c'est probablement juste une ancienne version, comme le montre la dernière version du [[CHANGELOG|http://svn.dd-wrt.com:8000/browser/src/router/batman-adv/CHANGELOG]]. À essayer!
+
 # Configuration manuelle
 
 Toutes les plateformes peuvent être configurées manuellement avec ces
