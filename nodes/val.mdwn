@@ -1,4 +1,4 @@
-[[!waypoint lat="45.543141" lon="-73.604225" embed width="400px" height="400px" right desc="Planned on roof"]]
+[[!waypoint lat="45.543141" lon="-73.604225" embed hidden width="400px" height="400px" right desc="Planned on roof"]]
 
 Maybe a node on the roof, two-story building.
 
