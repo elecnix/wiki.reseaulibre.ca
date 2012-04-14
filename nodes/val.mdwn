@@ -9,7 +9,7 @@ Maybe a node on the roof, two-story building.
  * Hardware:
  * Power:
  * Location:
- * Status: [[!taglink unknown]]
+ * Status: [[!taglink planned]]
  * Links:
  * Azimuth:
  * Panorama:
