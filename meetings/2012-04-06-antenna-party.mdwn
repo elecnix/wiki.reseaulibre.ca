@@ -92,7 +92,7 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
  * un Bullet M2 est maintenant en place et fonctionnel chez [[nodes/benoitg]] et [[nodes/boulette]], mais ne se voient pas
  * anarcat a travaillé à la [configuration IP](configuration/ip) de son node, avec des bonnes idées pour le IPv6
  * anarcat a appris à crimper et souder des câbles extérieurs pour le PoE
- * Photos! http://www.flickr.com/photos/elecnix/sets/72157629757019923
+ * [[Photos|http://www.flickr.com/photos/elecnix/sets/72157629757019923]]!
 
 À noter:
 
