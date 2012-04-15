@@ -1,4 +1,4 @@
-[[!waypoint lat="45.56569" lon="-73.6031785" embed hidden width="400px" height="400px" right desc="A node in my window"]]
+[[!waypoint lat="45.565838" lon="-73.594550" embed width="400px" height="400px" right desc="A node in my window"]]
 
 Un noeud à l'extérieur de ma fenêtre, actuellement à puissance minimale vers le nord géographique.
 
