@@ -1,3 +1,5 @@
+[[!toc]]
+
 # Bug with 3 hop setup and OpenWRT outside of main bridge
 
 With a previous configuration, I cannot ping the third hop in a three-hop relay. In my test setup, my laptop (angela, `192.168.3.44`) is connected through the mesh to a Linksys AP ([[carton]], `192.168.3.99`), which is strong enough to reach the Bullet on my roof ([[boulette]], `192.168.3.90`).
