@@ -1,3 +1,6 @@
+[[!meta title="Internet protocols configuration"]]
+[[!meta description="Includes information about IP addresses, IPv6 and routing"]]
+
 [[!toc levels=3]]
 
 # IP allocation strategy
