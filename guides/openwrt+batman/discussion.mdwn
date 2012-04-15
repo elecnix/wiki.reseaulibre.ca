@@ -3,3 +3,7 @@ Can you reproduce the bug i have [[here|configuration/batman/#index8h2]]? I can'
 > Update: this happens only in regular adhoc mode, see [[this|configuration/batman/discussion/#index2h1]].
 
 Pourquoi il faut utiliser le trunk?  Batman 2012 ne peut pas être installé sur backfire?  Et pourquoi c'est pas recommandé de l'utiliser?  Je n'aime pas trop l'idée d'avoir à flasher le trunk, par définition, pas stable... -- genb
+
+> J'ai l'impresion que la version batman du kernel de backfire est beaucoup trop vieille. Vu que le module est compilé sur l'image de backfire, il n'est donc pas non plus possible d'installer l'image du trunk sur les vieux backfire. Il faudrait recompiler nous-même la version 2012 de batman-adv pour backfire si on veut ça, ce qui revient plus ou moins à faire un "backport".
+>
+> J'espère pour ma part que le prochain release de OpenWRT règlera ce petit problème... Peut-être que de basculer vers [[robin]] pourrait régler notre problème? --[[anarcat]]
