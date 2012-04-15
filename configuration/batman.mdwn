@@ -71,13 +71,13 @@ Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gére
 
     sudo apt-get install -t squeeze-backports batctl linux-image
 
-[!] Ceci demande un [backport](http://backports-master.debian.org/Instructions/) uploadé récemment, voir [[!debbug 668237]] pour les détails.
+(!) Ceci demande un [backport](http://backports-master.debian.org/Instructions/) de batctl et un Kernel Linux 3.2 qui fournit le module kernel 2011.4, apparament compatible avec la version 2012 utilisée dans OpenWRT.
 
-Pour nos tests, ça fonctionnait très bien avec linux 3.2, avec batctl version 2012.0.0. On a également noté que la version du module de noyau batman-adv est 2011.4.0 pour linux 3.2. Il semble y avoir une couche de compatibilité dans les versions futures ?? à voir...
+Si la commande ci-haut met à jour votre noyau, il faut redémarrer la machine.
 
-Si vous avez mis à jour votre noyau, il faut redémarrer la machine.
+    reboot
 
-Activer le module kernel (la majorité des distributions Linux ont ce module par défaut)
+Activer le module kernel.
 
     modprobe batman-adv
 
