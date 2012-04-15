@@ -6,6 +6,5 @@ Mesh Montréal est un réseau ouvert.  Tout le monde peut s'impliquer et plus il
 * Discuter avec les membres sur le chat irc [[#mesh-mtl|http://webchat.freenode.net/?channels=mesh-mtl]] sur freenode.net
 * Ouvrir un point d'accès.  Consulter la [[documentation|Wikiindex]] pour savoir comment s'y prendre.
 * Voir la liste des [[tâches à faire|Todo]].
-* S'enregister comme [[bénévole|Volunteers]]
 
 <!-- * **Prochaine rencontre**: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]] -->
