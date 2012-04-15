@@ -114,7 +114,7 @@ Tell batman to use the wireless and the lan interfaces.
 
     uci set batman-adv.bat0.interfaces="wlan0 br-lan"
 
-Optionally use our our [[bat-hosts|configuration/bat-hosts]] file.
+Optionally use our our [[bat-hosts|configuration/batman/bat-hosts]] file.
 
 You're done! Commit the changes and reboot to test them.
 
