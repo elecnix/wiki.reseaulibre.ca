@@ -25,22 +25,9 @@ This is a wiki, so we expect node operators to share their best practices here a
  * [[Plan d'allocation des adresses IP|configuration/ip]]
 * [[Wi-Fi Technicalities]] - basics of the physical layer and mechanics. 
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
-
-# Participating
-
-We need volunteers! On parle français aussi!
-
-* [[Mailing list|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]] - mailing list de discussion de nodes enregistrés, destinée aux bénévoles - avant de demander sur la liste, voir la [[FAQ|foire aux questions]]
-* IRC chat: [[#mesh-mtl|http://webchat.freenode.net/?channels=mesh-mtl]] on freenode.net
-* [[Volunteers]] - register here and tell us what you can do
-* [[Todo]] - the tasks on hand
-* [[FAQ]] - frequently asked questions
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
-* [[Meetings]] - nos rencontres en personne
-
-<!-- * **Prochaine rencontre**: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]] -->
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
