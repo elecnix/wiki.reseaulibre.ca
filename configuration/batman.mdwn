@@ -85,7 +85,7 @@ Suivre ensuite la configuration manuelle ci-bas.
 
 ## Arch linux
 
-On besoin de l'[[AUR | https://aur.archlinux.org/]]
+On besoin de l'
 
     # modprobe batman_adv
     $ yaourt -S batctl
@@ -94,7 +94,7 @@ Suivre ensuite la configuration manuelle ci-bas.
 
 ## DD-WRT
 
-Il semble possible d'installer batman-adv sur DD-WRT, mais c'est probablement juste une ancienne version, comme le montre la dernière version du [[CHANGELOG|http://svn.dd-wrt.com:8000/browser/src/router/batman-adv/CHANGELOG]]. À essayer!
+Il semble possible d'installer batman-adv sur DD-WRT, mais c'est probablement juste une ancienne version, comme le montre la dernière version du . À essayer!
 
 # Configuration manuelle
 
@@ -122,7 +122,7 @@ Voir [[la configuration IP|configuration/ip]].
 
 ## Use our bat-hosts
 
-You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|configuration/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
+You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|configuration/batman/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
 
 # Troubleshooting
 
