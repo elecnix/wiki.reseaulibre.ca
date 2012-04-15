@@ -71,7 +71,7 @@ Sous Debian/Ubuntu, installer le package Debian pour batctl, qui permet de gére
 
     sudo apt-get install -t squeeze-backports batctl linux-image
 
-(!) Ceci demande un [backport](http://backports-master.debian.org/Instructions/) de batctl et un Kernel Linux 3.2 qui fournit le module kernel 2011.4, apparament compatible avec la version 2012 utilisée dans OpenWRT.
+(!) Ceci demande un [backport](http://backports-master.debian.org/Instructions/) de batctl et un kernel Linux 3.2 qui fournit le module kernel 2012.1 utilisée dans OpenWRT.
 
 Si la commande ci-haut met à jour votre noyau, il faut redémarrer la machine.
 
