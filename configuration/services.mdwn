@@ -42,9 +42,9 @@ configuration file for this.
 
 Any service that will not disrupt other services should be allowed, although individual nodes may do some filtering to control quality of service.
 
-## Disabling openwrt's firewall
+## Replace OpenWRT's firewall with an open NAT service
 
-Make sure the user firewall is loaded:
+Make sure the custom firewall ruleset is loaded:
 
     uci show | grep include
 
@@ -58,6 +58,9 @@ Then in `/etc/firewall.user`:
 [[!format txt """
 #! /bin/sh
 
+extif=br-lan
+intif=wlan0
+
 # get rid of the openwrt firewall
 iptables -F
 # set saneunsafe but open defaults
@@ -66,6 +69,49 @@ iptables -P OUTPUT  ACCEPT
 iptables -P FORWARD ACCEPT
 # empy NAT
 iptables -t nat -F
+iptables -t nat -A POSTROUTING -o $extif -j MASQUERADE
+iptables -A FORWARD -i $intif -o $extif -m state  --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i $extif -o $intif -j ACCEPT
+"""]]
+
+The above will clear all firewall rules, allowing all traffic through the node. It assumes you have another router doing some filtering downstream, if not you will need to customize that firewall according to your policy, below.
+
+## Providing DHCP and IPv6
+
+The following will enable DHCP and IPv6 on the router:
+
+[[!format txt """
+dhcp.wlan0=dhcp
+dhcp.wlan0.interface=wlan0
+dhcp.wlan0.start=100
+dhcp.wlan0.limit=150
+dhcp.wlan0.leasetime=1h
+"""]]
+
+[[!format txt """
+radvd.@prefix[1]=prefix
+radvd.@prefix[1].interface=wlan0
+radvd.@prefix[1].AdvOnLink=1
+radvd.@prefix[1].AdvAutonomous=1
+radvd.@prefix[1].ignore=0
+radvd.@prefix[1].prefix=fd64:2c08:9fa7:2::/64
+radvd.@prefix[1].AdvRouterAddr=1
+radvd.@interface[1]=interface
+radvd.@interface[1].interface=wlan0
+radvd.@interface[1].AdvSendAdvert=1
+radvd.@interface[1].AdvManagedFlag=0
+radvd.@interface[1].AdvOtherConfigFlag=0
+radvd.@interface[1].ignore=0
+"""]]
+
+Make sure you have configured an IP on wlan0, using the [[ip]] configuration rules. For example:
+
+[[!format """
+uci set network.wlan0.proto=static
+uci set network.wlan0.ipaddr=192.168.4.1
+uci set network.wlan0.netmask=255.255.255.0
+uci set network.wlan0.ip6addr=fd64:2c08:9fa7:2::1/64
+uci commit
 """]]
 
 ## Providing some services behind a firewall
