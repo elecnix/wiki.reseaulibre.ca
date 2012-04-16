@@ -8,7 +8,7 @@ hostname
 : boulette
 
 MAC address
-: 00:15:6d:db:d3:65
+: 00:15:6d:da:d3:65
 
 IP address
 : 192.168.3.90
