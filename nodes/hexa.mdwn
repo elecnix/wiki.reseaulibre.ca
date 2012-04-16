@@ -1,6 +1,6 @@
 [[!waypoint lat="45.463197" lon="-73.575734" embed hidden width="400px" height="400px" right desc="A node"]]
 
-Possibilité de poser une antenne. Je renommerai quand la personne m'aura confirmé. -bgm.
+Possibilité de poser une antenne.
 
  * MAC address:
  * IP address:
@@ -13,4 +13,4 @@ Possibilité de poser une antenne. Je renommerai quand la personne m'aura confir
  * Links:
  * Azimuth:
  * Panorama:
- * Operator: [[users/bgm]]
+ * Operator: [[users/hexa]]
