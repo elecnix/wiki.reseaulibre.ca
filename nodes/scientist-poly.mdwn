@@ -1,5 +1,5 @@
 [[!waypoint lat="45.504972" lon="-73.61479" embed hidden width="400px" height="400px" right desc="My office window"]]
-45.504972&lon=-73.614794
+
 Je pourrais tenter de "cacher" une antenne sur le bord de la fenêtre de mon bureau. Une belle vue vers le nord-est de Montréal.
 
  * MAC address:
