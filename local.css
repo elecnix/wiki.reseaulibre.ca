@@ -215,9 +215,7 @@ input#searchbox {
     color: #ee9911
 }
 
-/* make the code zones cooler and more obvious
- * using the Solarized primitives: http://ethanschoonover.com/solarized */
+/* make the code zones more obvious with a white background */
 code, pre {
-    color: #839496;
-    background: #002B36;
+    background: #FFF;
 }
