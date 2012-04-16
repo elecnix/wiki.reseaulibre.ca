@@ -1,0 +1,26 @@
+[[!waypoint lat="45.469037" lon="-73.567387" embed hidden width="400px" height="400px" right desc="A prospective node"]]
+
+Possibilité de placer initialement une antenne discrète sur la façade et éventuellement trouver une façon de l'installer sur la structure métallique sur le toit (les panneaux solaires que vous voyez quand vous passez dans le coin :-) )
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware: Peut-être une NanoStation M2
+ * Power:
+ * Location: Verdun
+ * Status: [[!taglink planned]]
+ * Links:
+ * Azimuth: West
+ * Panorama:
+ * Operator: [[users/deuxpi]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
