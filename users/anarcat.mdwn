@@ -28,7 +28,8 @@ Here is the list of nodes I operate.
  * make the mesh work in my home (./) done with [[nodes/carton]]
  * fix IPv4 allocation to use `172.16.0.0/12` (./) done, see [[configuration/ip]]
  * test IPv6 autoconfiguration (./) done
- * test ipv6 announcement [!] somehow this doesn't work as expected:
+ * setup a DHCP server and regular ad-hoc mode on [[carton]] (./) done!! i now use the mesh for my wifi access!
+ * test ipv6 announcements [!] somehow this doesn't work as expected:
 
    * the /48 announcement was creating havoc:
 
@@ -39,6 +40,7 @@ Here is the list of nodes I operate.
 
    * the packets don't actually go through to marcos
 
+ * so next step: [[configuration/olsrd]] to propagate those routes between routers.
  * install ganglia? or [[configuration/monitoring]]?
  * aggregate above stats in a table, automatically ([[!iki todo/internal_definition_list_support/]])
 
