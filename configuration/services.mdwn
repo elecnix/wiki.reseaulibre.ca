@@ -144,7 +144,7 @@ First, you need to determine the policy. Here is [[anarcat]]'s:
 The above rules can be done with the following patch to a pf.conf, for
 OpenBSD's PF (Packet Filter):
 
-[[!format txt """
+[[!format diff """
 diff --git a/pf.conf b/pf.conf
 index 8ecb84f..796d847 100644
 --- a/pf.conf
