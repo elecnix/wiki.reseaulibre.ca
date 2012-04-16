@@ -51,11 +51,11 @@ Make sure the custom firewall ruleset is loaded:
 If not, add this:
 
     uci add firewall include
-    uci set firewall.@include[0].path=/etc/firewall.user
+    uci set firewall.@include[0].path="/etc/firewall.user"
 
 Then in `/etc/firewall.user`:
 
-[[!format txt """
+[[!format sh """
 #! /bin/sh
 
 extif=br-lan
@@ -81,11 +81,11 @@ The above will clear all firewall rules, allowing all traffic through the node. 
 The following will enable DHCP and IPv6 on the router:
 
 [[!format txt """
-dhcp.wlan0=dhcp
-dhcp.wlan0.interface=wlan0
-dhcp.wlan0.start=100
-dhcp.wlan0.limit=150
-dhcp.wlan0.leasetime=1h
+uci set dhcp.wlan0=dhcp
+uci set dhcp.wlan0.interface=wlan0
+uci set dhcp.wlan0.start=100
+uci set dhcp.wlan0.limit=150
+uci set dhcp.wlan0.leasetime=1h
 """]]
 
 [[!format sh """
@@ -95,7 +95,7 @@ uci set radvd.@prefix[1].interface=wlan0
 uci set radvd.@prefix[1].AdvOnLink=1
 uci set radvd.@prefix[1].AdvAutonomous=1
 uci set radvd.@prefix[1].ignore=0
-uci set radvd.@prefix[1].prefix=fd64:2c08:9fa7:2::/64
+uci set radvd.@prefix[1].prefix="fd64:2c08:9fa7:2::/64"
 uci set radvd.@prefix[1].AdvRouterAddr=1
 uci add radvd interface
 uci set radvd.@interface[1]=interface
@@ -110,9 +110,9 @@ Make sure you have configured an IP on wlan0, using the [[ip]] configuration rul
 
 [[!format sh """
 uci set network.wlan0.proto=static
-uci set network.wlan0.ipaddr=192.168.4.1
-uci set network.wlan0.netmask=255.255.255.0
-uci set network.wlan0.ip6addr=fd64:2c08:9fa7:2::1/64
+uci set network.wlan0.ipaddr="192.168.4.1"
+uci set network.wlan0.netmask="255.255.255.0"
+uci set network.wlan0.ip6addr="fd64:2c08:9fa7:2::1/64"
 uci commit
 """]]
 
