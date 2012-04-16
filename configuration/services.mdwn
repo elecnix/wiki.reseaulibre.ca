@@ -88,25 +88,27 @@ dhcp.wlan0.limit=150
 dhcp.wlan0.leasetime=1h
 """]]
 
-[[!format txt """
-radvd.@prefix[1]=prefix
-radvd.@prefix[1].interface=wlan0
-radvd.@prefix[1].AdvOnLink=1
-radvd.@prefix[1].AdvAutonomous=1
-radvd.@prefix[1].ignore=0
-radvd.@prefix[1].prefix=fd64:2c08:9fa7:2::/64
-radvd.@prefix[1].AdvRouterAddr=1
-radvd.@interface[1]=interface
-radvd.@interface[1].interface=wlan0
-radvd.@interface[1].AdvSendAdvert=1
-radvd.@interface[1].AdvManagedFlag=0
-radvd.@interface[1].AdvOtherConfigFlag=0
-radvd.@interface[1].ignore=0
+[[!format sh """
+uci add radvd prefix
+uci set radvd.@prefix[1]=prefix
+uci set radvd.@prefix[1].interface=wlan0
+uci set radvd.@prefix[1].AdvOnLink=1
+uci set radvd.@prefix[1].AdvAutonomous=1
+uci set radvd.@prefix[1].ignore=0
+uci set radvd.@prefix[1].prefix=fd64:2c08:9fa7:2::/64
+uci set radvd.@prefix[1].AdvRouterAddr=1
+uci add radvd interface
+uci set radvd.@interface[1]=interface
+uci set radvd.@interface[1].interface=wlan0
+uci set radvd.@interface[1].AdvSendAdvert=1
+uci set radvd.@interface[1].AdvManagedFlag=0
+uci set radvd.@interface[1].AdvOtherConfigFlag=0
+uci set radvd.@interface[1].ignore=0
 """]]
 
 Make sure you have configured an IP on wlan0, using the [[ip]] configuration rules. For example:
 
-[[!format """
+[[!format sh """
 uci set network.wlan0.proto=static
 uci set network.wlan0.ipaddr=192.168.4.1
 uci set network.wlan0.netmask=255.255.255.0
