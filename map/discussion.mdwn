@@ -3,3 +3,5 @@ La map ne semble pas contenir les nodes. (Firefox et Chrome, 14 avril 2012) --[[
 > J'ai vu ça en arrivant aussi, j'ai fait reload et c'est revenu.. Un peu tannant ces bugs... Les curieux peuvent consulter le [code source du plugin ici](http://source.ikiwiki.branchable.com/?p=source.git;a=blob;f=IkiWiki/Plugin/osm.pm;hb=HEAD). Les motivés peuvent cloner le dépôt git (`git://git.ikiwiki.info/`) et fournir des patches [ici](http://ikiwiki.info/patch/). Il faudrait au moins rapporter le bug dans la [page de discussion du plugin](http://ikiwiki.info/plugins/osm/discussion).
 > 
 > À noter que plusieurs modifications ont été opérées au module depuis que j'ai fait la première passe de ré-écriture, ceci a probablement introduit des régressions, particulièrement au niveau de l'impossibilité de changer la taille de la map. --[[anarcat]]
+>
+> > J'ai [signalé un bug](http://ikiwiki.info/bugs/osm_linkto__40____41___usage_breaks_map_rendering/) à ce sujet et appliqué une patch qui retire l'utilisation de `urlto()`. --[[anarcat]]
