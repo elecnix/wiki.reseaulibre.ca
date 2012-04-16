@@ -181,13 +181,13 @@ mesh. This can be done with the following configurations:
 
 In `rc.conf`:
 
-    ipv6_ifconfig_vr2="fd64:2c08:9fa7::1/48"
+    ipv6_ifconfig_vr2="fd64:2c08:9fa7::1/64"
     rtadvd_enable="YES"
     rtadvd_interfaces="vr2"
 
 This can be implemented immediatly with:
 
-    ifconfig vr2 inet6 fd64:2c08:9fa7::1/48
+    ifconfig vr2 inet6 fd64:2c08:9fa7::1/64
     rtadvd vr2
 
 # Issues and todos
