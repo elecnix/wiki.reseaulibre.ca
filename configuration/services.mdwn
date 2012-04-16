@@ -6,7 +6,7 @@ A mesh is fun, but otherwise not very useful until services are plugged into it.
 
 # Currently available services
 
- * DNS server at `192.168.3.1` / `fd64:2c08:9fa7::1` (`roadkiller.anarcat.ath.cx`)
+ * DNS server at `172.16.0.1` / `fd64:2c08:9fa7:1::1` (`roadkiller.anarcat.ath.cx`)
  * http://mesh.openisp.ca/ - this wiki, should be running on
    `marcos.orangeseeds.org` (`2001:1928:1:9::1`), which should be
    routed by roadkiller, above
