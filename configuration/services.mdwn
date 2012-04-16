@@ -42,6 +42,32 @@ configuration file for this.
 
 Any service that will not disrupt other services should be allowed, although individual nodes may do some filtering to control quality of service.
 
+## Disabling openwrt's firewall
+
+Make sure the user firewall is loaded:
+
+    uci show | grep include
+
+If not, add this:
+
+    uci add firewall include
+    uci set firewall.@include[0].path=/etc/firewall.user
+
+Then in `/etc/firewall.user`:
+
+[[!format txt """
+#! /bin/sh
+
+# get rid of the openwrt firewall
+iptables -F
+# set saneunsafe but open defaults
+iptables -P INPUT   ACCEPT
+iptables -P OUTPUT  ACCEPT
+iptables -P FORWARD ACCEPT
+# empy NAT
+iptables -t nat -F
+"""]]
+
 ## Providing some services behind a firewall
 
 A good approach is to allocate a specific port on your firewall and allow it only some access to your internal network, and, maybe, the internet.
@@ -64,6 +90,8 @@ First, you need to determine the policy. Here is [[anarcat]]'s:
    * streaming/icecast (8000)
    * jukebox/MPD (6600)
    * outgoing ICMP
+
+### OpenBSD's pf implementation
 
 The above rules can be done with the following patch to a pf.conf, for
 OpenBSD's PF (Packet Filter):
