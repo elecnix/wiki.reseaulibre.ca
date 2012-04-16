@@ -216,10 +216,10 @@ input#searchbox {
 }
 
 /* make the code zones cooler and more obvious
- * using the Solarized primitives: http://ethanschoonover.com/solarized */
+ * using the Solarized light primitives: http://ethanschoonover.com/solarized */
 code, pre {
-    color: #839496;
-    background: #002B36;
+    color: #657b83;
+    background: #fdf6e3;
 }
 
 /* solarized color highlight theme
@@ -227,29 +227,29 @@ code, pre {
 Ideally this would be switchable from ikiwiki itself instead of
 fiddling around here.
 
-Description="Solarized Dark"
+Description="Solarized Light"
 
-Default        = { Colour="#839496" }
-Canvas         = { Colour="#002b36" }
+Default        = { Colour="#657b83" }
+Canvas         = { Colour="#fdf6e3" }
 Number         = { Colour="#dc322f" }
 Escape         = { Colour="#6c71c4" }
 String         = { Colour="#dc322f" }
 StringPreProc  = { Colour="#dc322f" }
-BlockComment   = { Colour="#586e75" }
+BlockComment   = { Colour="#93a1a1" }
 PreProcessor   = { Colour="#6c71c4" }
 LineNum        = { Colour="#268bd2" }
-Operator       = { Colour="#93a1a1" }
+Operator       = { Colour="#586e75" }
 LineComment = BlockComment
 
 Keywords = {
   { Colour= "#cb4b16" },
   { Colour= "#859900" },
   { Colour= "#cb4b16" },
-  { Colour= "#93a1a1" },
+  { Colour= "#586e75" },
 }
 */
 
-pre.hl { color:#839496; background-color:#002b36; }
+pre.hl { color:#657b83; background-color:#fdf6e3; }
 /* numbers */
 .hl.num { color:#dc322f; }
 /* escape sequences */
@@ -259,13 +259,13 @@ pre.hl { color:#839496; background-color:#002b36; }
 /* strings preproc */
 .hl.dstr { color:#dc322f; }
 /* line comment? */
-.hl.slc { color:#586e75; }
+.hl.slc { color:#93a1a1; }
 /* comment? */
-.hl.com { color:#586e75; }
+.hl.com { color:#93a1a1; }
 /* preproc */
 .hl.dir { color:#6c71c4; }
 /* operator */
-.hl.sym { color:#93a1a1; }
+.hl.sym { color:#586e75; }
 /* linenum */
 .hl.line { color:#268bd2; }
 /* background highlight? */
