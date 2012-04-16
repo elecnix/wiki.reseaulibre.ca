@@ -215,4 +215,8 @@ input#searchbox {
     color: #ee9911
 }
 
-
+/* make the code zones cooler and more obvious */
+code, pre {
+    color: #EEE;
+    background: #000;
+}
