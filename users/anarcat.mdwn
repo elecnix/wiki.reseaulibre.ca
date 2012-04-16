@@ -30,16 +30,10 @@ Here is the list of nodes I operate.
  * test IPv6 autoconfiguration (./) done
  * setup a DHCP server and regular ad-hoc mode on [[carton]] (./) done!! i now use the mesh for my wifi access!
  * test ipv6 announcements [!] somehow this doesn't work as expected:
-
-   * the /48 announcement was creating havoc:
-
-       [28187.091405] IPv6 addrconf: prefix with wrong length 48
-
+   * the /48 announcement was creating havoc: `[28187.091405] IPv6 addrconf: prefix with wrong length 48`
    * only the link-local prefix route gets added to the table, that's
      kind of weird
-
    * the packets don't actually go through to marcos
-
  * so next step: [[configuration/olsrd]] to propagate those routes between routers.
  * install ganglia? or [[configuration/monitoring]]?
  * aggregate above stats in a table, automatically ([[!iki todo/internal_definition_list_support/]])
