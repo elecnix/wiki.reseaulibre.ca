@@ -1,5 +1,4 @@
-[[!waypoint map=null  lat="45.5057" lon="-73.61486" embed hidden width="400px" height="400px" right desc="My office window"]]
-(remove map=null to display on the main map)
+[[!waypoint lat="45.50565" lon="-73.61486" embed hidden width="400px" height="400px" right desc="My office window"]]
 
 Je pourrais tenter de "cacher" une antenne sur le bord de la fenêtre de mon bureau. Une belle vue vers le nord-est de Montréal.
 
@@ -11,7 +10,7 @@ Je pourrais tenter de "cacher" une antenne sur le bord de la fenêtre de mon bur
  * Power:
  * Location: 4e étage du pavillon Lassonde, Polytechnique
  * Status: [[!taglink planned]] 
- * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+ * Links: 
  * Azimuth:
  * Panorama:
  * Operator: [[users/scientist]]
