@@ -50,9 +50,9 @@ If you wish, however, to be on the global mesh, you should use a `/48` netmask t
 
 Known allocations:
 
- * `fd64:2c08:9fa7::1/48` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
- * `fd64:2c08:9fa7:1::1/48` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself
- * `fd64:2c08:9fa7:1::2/64` - `carton.anarcat.ath.cx` - a static node on the above network (not configured yet), announcing a subnet of the global `/48`
+ * `fd64:2c08:9fa7::/48` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
+ * `fd64:2c08:9fa7:1::/64` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself
+ * `fd64:2c08:9fa7:2::/64` - `carton.anarcat.ath.cx` - [[nodes/carton]], a public access point
 
 Notice how I have a global router (`boulette`) which has a `/48` netmask while a local access node uses a small `/64` subnet.2
 
