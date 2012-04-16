@@ -1,4 +1,14 @@
 This is the SandBox, a page anyone can edit to learn how to use the wiki.
+[[!graph  src="a -> b -> c; a -> c;"]]
+
+[[!graph  src=""""
+google [ href="http://google.com/" ]
+sandbox [ href=[[sandbox]] ]
+help [ href=[[ikiwiki]] ]
+newpage [ href=[[configuration]] ]
+
+google -> sandbox -> help -> newpage -> help -> google;
+""""]]
 
 ----
 
