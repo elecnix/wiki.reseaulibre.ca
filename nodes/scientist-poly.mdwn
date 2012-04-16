@@ -1,4 +1,4 @@
-[[!waypoint lat="45.50565" lon="-73.61486" embed hidden width="400px" height="400px" right desc="My office window"]]
+[[!waypoint lat="45.50560" lon="-73.61486" embed hidden width="400px" height="400px" right desc="My office window"]]
 
 Je pourrais tenter de "cacher" une antenne sur le bord de la fenêtre de mon bureau. Une belle vue vers le nord-est de Montréal.
 
