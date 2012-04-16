@@ -35,9 +35,10 @@ Here is the list of nodes I operate.
      kind of weird
    * the packets don't actually go through to marcos
  * so next step: [[configuration/olsrd]] to propagate those routes between routers.
+ * merge DMZ and mesh zones in [[nodes/roadkiller]]
  * configure second linksys router to join the mesh
  * install ganglia? or [[configuration/monitoring]]?
- * aggregate above stats in a table, automatically ([[!iki todo/internal_definition_list_support/]])
+ * aggregate node parameters in a table automatically ([[!iki todo/internal_definition_list_support/]])
 
 # Notes
 
