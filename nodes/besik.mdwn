@@ -15,7 +15,13 @@
    * Est: http://www.flickr.com/photos/elecnix/7033901979/sizes/o
  * Status: [[!taglink up]]
  * Links: [[elecnix]] ([[links/elecnix-besik/]])
- 
+
+## Panorama
+
+[[!img 6887807504_b8dc42eddb_o.jpg size="950x"]]
+
+[[!img 7033901979_4923b4082b_o.jpg size="950x"]]
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
