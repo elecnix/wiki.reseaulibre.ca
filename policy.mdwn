@@ -1,4 +1,7 @@
-We need to agree on a policy. This is not yet done!
+(!) We need to agree on a policy. This is not yet done!
+
+Usage policy
+============
 
 [[Freifunk|http://www.funkfeuer.at/PicoPeeringAgreement.59.0.html?&L=1]] uses the [[Picopeer agreement|http://www.picopeer.net/]], which involve basically:
 
@@ -9,3 +12,12 @@ We need to agree on a policy. This is not yet done!
  5. Local Amendments
 
 Points 2 and 3 have been strongly supported during our [[first meeting|meetings/2012-02-15-intro/]], while point #1 was not necessarily supported, some having the idea of running VPN-based connectivity services on top of the mesh, like the Opennet initiative does. Terms of use were not discussed explicitly.
+
+Naming
+------
+
+A potential local amendment...
+
+Quel nom devrait-on utiliser pour le réseau mesh Ad-Hoc de Montréal? 
+
+[[!poll 0 mesh-mtl 0 mesh.openisp.ca 0 mesh-mtl.org 0 mesh-mtl.com 0 yul-mesh.org 0 Mesh Montreal 0 Mesh-Montreal 0 mesh-montreal.org 0 Wifi Mesh Montreal]]
