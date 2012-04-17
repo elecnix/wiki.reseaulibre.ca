@@ -1,6 +1,6 @@
-[[!waypoint lat="45.543141" lon="-73.604225" embed hidden width="400px" height="400px" right desc="Planned on roof"]]
+[[!waypoint lat="45.543141" lon="-73.604225" embed hidden width="400px" height="400px" right desc="Antenne planifiée sur le toit d'un édifice de deux étages."]]
 
-Maybe a node on the roof, two-story building.
+Antenne planifiée sur le toit d'un édifice de deux étages.
 
  * MAC address:
  * IP address:
@@ -14,6 +14,12 @@ Maybe a node on the roof, two-story building.
  * Azimuth:
  * Panorama:
  * Operator: [[users/elecnix]]
+
+## Liens possibles
+
+ * [[nodes/genb]]
+ * [[nodes/jojo]]
+
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
