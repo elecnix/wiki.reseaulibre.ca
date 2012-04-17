@@ -26,7 +26,7 @@ Par exemple, pour installer un simple routeur dans une fenêtre, il suffit d'avo
 
 ##Est-ce que c'est sécuritaire ?##
 
-Le mesh n'est pas plus ni moins sécuritaire que d'autres réseaux sans fil publics tels celui d'.
+Le mesh n'est pas plus ni moins sécuritaire que d'autres réseaux sans fil publics tels celui d'[[île sans fil|http://www.ilesansfil.org]].
 
 Pour permettre l'accès à tous au mesh, les points d'accès sont non sécurisés.  De même, le protocole de communication entre les hôtes utilisent une connexion non sécurisée.  L'usager est donc responsable de la sécurité de sa navigation, en s'assurant d'être bien en https sur les sites demandant authentification.  Pour d'autres types d'utilisation du réseau, il faut s'assurer de la sécurité du protocole utilisé, par exemple, utiliser ssh au lieu de telnet, utiliser un remote desktop sécurisé pour le bureau à distance.
 
@@ -72,7 +72,7 @@ Quelqu'un sur le mesh a accepté de partager sa propre connexion internet, mais 
 
 Si un accès internet est disponible, vous pouvez faire tout ce qui peut se faire sur le web!
 
-Sinon, pas grand chose.  Le réseau est encore expérimental.  À terme, on devrait avoir une page de bienvenue sur le réseau avec une liste des services offerts.  Pour l'instant, suivez la  pour vous tenir informés.
+Sinon, pas grand chose.  Le réseau est encore expérimental.  À terme, on devrait avoir une page de bienvenue sur le réseau avec une liste des services offerts.  Pour l'instant, suivez la [[liste de discussion|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]] pour vous tenir informés.
 
 ##C'est pas comme vraiment geek ça ?##
 
