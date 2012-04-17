@@ -139,7 +139,7 @@ Voir aussi [le guide complet](http://wiki.openwrt.org/doc/howto/generic.sysupgra
 
 # After flashing the device
 
-## Password reset
+## Set a password!!
 
 [!] Important: after you flash your device, the password will be reset and the device will be wide open!!! You NEED TO CHANGE THE PASSWORD! Use `pwgen` or another tool to generate a random password and set one using:
 
