@@ -1,0 +1,1 @@
+J'ai fusionné l'ancien FAQ ("FAQ") avec le nouveau FAQ (FAQusager) parce que ce dernier était devenu "orphelin", c'est à dire qu'il n'y avait plus de pages pointant vers le FAQ original. Je pense que c'est mieux comme ça, mais si vous voulez les séparer à nouveau, il est préférable de faire des sous-pages à mon avis. --[[anarcat]]
