@@ -1,4 +1,6 @@
-[[!toc]]
+[[!toc levels=2]]
+
+# Questions générales
 
 ##C'est quoi un mesh ?  Comment ça marche ?##
 
@@ -81,3 +83,21 @@ Mais non!  C'est peut-être des geeks qui ont développé les protocoles mesh.  
 Bienvenue sur le mesh!
 
 Consultez la page [[participer]] pour de l'information sur comment participer plus activement au projet.
+
+# Technique
+
+## Je n'ai pas accès à un toit, je peux aider quand même?
+
+Pour joindre le réseau, il faut généralement voir un autre noeud. Il est possible d'installer un point d'accès au réseau dans une fenêtre, et de le relier aux autres noeuds par votre connexion internet. Un voisin remarquera peut-être ce point d'accès et vous contactera pour établir un lien. En attendant vous aurez appris à configurer un noeud, et vous pourrez aider les autres. Sinon, vous pourriez peut-être aider à compléter la [[documentation|configuration]].
+
+## Est-ce que je dois avoir un "line of sight" entre deux noeuds pour faire une connexion?
+
+C'est préférable d'être capable de voir l'autre noeud. Il est /possible/ de faire des liens avec des obstacles, mais ceci réduit grandement le débit et la fiabilité du lien. Celle-ci dépend aussi de la fréquence utilisée. Le B et G, par exemple, fonctionnent en 2.4Ghz, qui est près de la fréquence de résonnance de l'eau, et est donc facilement bloqué par les feuilles d'arbre et le béton. Le A, par contre, est moins bloqué par les arbres. Des fréquences plus basses (par exemple le 900Mhz) peuvent également être utilisées pour faire de plus longues distances mais demandent du matériel spécial.
+
+## Comment je peux flasher mon router XYZ?
+
+Voir la page [[configuration/flashing]].
+
+## J'ai perdu mon password!
+
+Voir [[configuration/flashing]] (oui encore).
