@@ -15,13 +15,16 @@ Planned node on top of long pole attached to balcony on 4th floor.
  * Panorama: Est (nuit) http://minus.com/mHBBh4XNM
  * Operator: [[users/elecnix]]
 
-Liens possibles
+## Liens possibles
 
- * [[nodes/gboudrias]] 680 m
+ * [[nodes/val]] 710 m
  * [[nodes/benoitg]] 825 m
  * [[nodes/genb]] 1,16 km
  * [[nodes/ouaibe]] 1,24 km
 
+## Panorama nord (nuit)
+
+[[!img pano-arr-jojo-nuit.jpg size=950x]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
