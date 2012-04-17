@@ -80,9 +80,9 @@ Mais non!  C'est peut-être des geeks qui ont développé les protocoles mesh.  
 
 ##Ok je suis convaincu!  Comment j'installe mon point d'accès ?##
 
-Bienvenue sur le mesh!
-
 Consultez la page [[participer]] pour de l'information sur comment participer plus activement au projet.
+
+Bienvenue sur le mesh!
 
 # Technique
 
