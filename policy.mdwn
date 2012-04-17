@@ -16,7 +16,7 @@ Points 2 and 3 have been strongly supported during our [[first meeting|meetings/
 Naming
 ------
 
-A potential local amendment...
+A potential local amendment... Note: this is a dupe of the [official survey](http://www.surveymonkey.com/s/7Z2SHT2).
 
 Quel nom devrait-on utiliser pour le réseau mesh Ad-Hoc de Montréal? 
 
