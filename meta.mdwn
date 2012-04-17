@@ -17,7 +17,7 @@ In short, you can clone and push this wiki through git using this:
 Orphaned pages
 --------------
 
-[[!orphan]]
+[[!orphans pages="page(*) and !archives/* and !ikiwiki/* and !templates/*"]]
 
 Tests
 -----
