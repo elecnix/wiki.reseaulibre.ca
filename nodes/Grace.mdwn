@@ -17,6 +17,9 @@ Un noeud planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne.
   * http://farm6.staticflickr.com/5315/6906098540_70182d6840_o.jpg (nord, possible pour le futur)
  * Operator: [[users/elecnix]]
 
+[[!img 6906198308_b610be56d6_o.jpg align="right" size="300" alt="Richard et Gen en train de préparer l'antenne"]]
+
+
 Liens possibles
 
  * [[nodes/boulette]] 490 m, testé à 10mbps
@@ -31,3 +34,5 @@ any later version published by the Free Software Foundation; with no Invariant
 Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
+
+
