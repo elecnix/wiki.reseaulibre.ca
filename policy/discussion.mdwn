@@ -1,0 +1,11 @@
+
+Naming
+------
+
+A potential local amendment... Note: this is a dupe of the [official survey](http://www.surveymonkey.com/s/7Z2SHT2).
+
+Exemple de poll local qu'on aurait pu faire a la place:
+
+Quel nom devrait-on utiliser pour le réseau mesh Ad-Hoc de Montréal? 
+
+[[!poll 0 mesh-mtl 0 "mesh.openisp.ca" 0 "mesh-mtl.org" 0 mesh-mtl.com 0 yul-mesh.org 0 Mesh Montreal 0 Mesh-Montreal 0 mesh-montreal.org 0 Wifi Mesh Montreal]]
