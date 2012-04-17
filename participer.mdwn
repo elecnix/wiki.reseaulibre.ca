@@ -4,7 +4,7 @@ Mesh Montréal est un réseau ouvert.  Tout le monde peut s'impliquer et plus il
 * S'inscrire sur la [[liste de discussion|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]].
 * Participer aux [[rencontres techniques et sociales|meetings]].
 * Discuter avec les membres sur le chat irc [[#mesh-mtl|http://webchat.freenode.net/?channels=mesh-mtl]] sur freenode.net
-* Ouvrir un point d'accès.  Consulter la [[documentation]] pour savoir comment s'y prendre.
+* Ouvrir un point d'accès en suivant les [[guides d'introduction|guides]] ou les [[configurations avancés|configuration]].
 * Voir la liste des [[tâches à faire|Todo]].
 
 <!-- * **Prochaine rencontre**: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]] -->
