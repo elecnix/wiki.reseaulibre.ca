@@ -28,6 +28,7 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
+* [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
