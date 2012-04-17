@@ -1,5 +1,5 @@
 * [[Bienvenue|index]]
-* [[Qu'est-ce c'est?|FAQusager]]
+* [[Qu'est-ce c'est?|FAQ]]
 * [[Carte|map]]
 * [[Participer|Participer]]
 * [[Documentation|Documentation]]
