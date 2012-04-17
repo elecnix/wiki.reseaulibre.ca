@@ -1,4 +1,4 @@
-[[!waypoint lat="45.52901" lon="-73.6004" embed hidden width="400px" height="400px" right desc="Planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne"]]
+[[!waypoint lat="45.52901" lon="-73.6004" embed hidden width="400px" height="400px" right desc="Planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne, <a href='http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg'>avec panorama</a>"]]
 
 Un noeud planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne.
 
@@ -38,4 +38,3 @@ any later version published by the Free Software Foundation; with no Invariant
 Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
-
