@@ -95,6 +95,8 @@ Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.co
 Another model is being looked at a lot by Elektra (the BatWomen) with Village-Telco group. TL-WR703N... on peux l'obtenir pour +- 20$ (B/G/N)
 I just setup one with open-wrt / luci
 
+[[!img TL-WR703N_eth.jpg size="x200"]]
+
 Here is a link for the first time flashing
 BEWARE: there are two versions of the firmware, one is used only once to go from original firmware to openwrt
 <http://wiki.villagetelco.org/index.php?title=Flashing_the_TL_WR703n_for_the_first_time>
