@@ -25,6 +25,7 @@ http://www.airmagnet.com/assets/whitepaper/WP-802.11nPrimer.pdf
 RECOMMENDATIONS:
 
 La radio d'un node MESH devrait si possible n'être utilisée que pour transporter des paquets sur le MESH.
+Les radios du MESH devraient utiliser 802.11N en mode HT (Greenfield)à 20Mhz sur un canal edge (1 ou 11).
 Il ne faut pas oublier que l'on ralentit à chaque HOP vers la destination (reçoit-transmet avec la même radio)
 Pour donner accès aux clients, on devrait utiliser une autre radio. Alors si un problème se produit avec l'un d'eux, 
 on ne ralentit pas le trafic du MESH, mais seulement le segment relié à cette radio.
