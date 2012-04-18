@@ -16,7 +16,7 @@ Le réseau de Montréal préconise la bande de fréquence 2.4 GHz.
 
 La compagnie Ubiquiti produit du matériel excellent et bon marché. Pour un noeud placé à l'extérieur, l'option la moins coûteuse et la plus simple est la [[PicoStation M2HP|http://dl.ubnt.com/datasheets/picostationm/picom2hp_DS.pdf]]. Elle a une portée de 500 mètres maximum (dans toutes les directions), et vient avec un injecteur PoE qui évite d'avoir à passer un fil d'alimentation, le câble réseau servant à transporter le courant.
 
-[[!img pico_station.jpg]
+[[!img pico_station.jpg]]
 
 Pour des liens à plus grande distance, le [[Bullet-M2HP|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]] est plus flexible, car vous choisissez quelle antenne vous branchez dessus, et obtenir ainsi plusieurs kilomètres de portée.
 
