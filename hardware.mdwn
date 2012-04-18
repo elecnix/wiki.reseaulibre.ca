@@ -16,7 +16,11 @@ Le réseau de Montréal préconise la bande de fréquence 2.4 GHz.
 
 La compagnie Ubiquiti produit du matériel excellent et bon marché. Pour un noeud placé à l'extérieur, l'option la moins coûteuse et la plus simple est la [[PicoStation M2HP|http://dl.ubnt.com/datasheets/picostationm/picom2hp_DS.pdf]]. Elle a une portée de 500 mètres maximum (dans toutes les directions), et vient avec un injecteur PoE qui évite d'avoir à passer un fil d'alimentation, le câble réseau servant à transporter le courant.
 
+[[!img pico_station.jpg]
+
 Pour des liens à plus grande distance, le [[Bullet-M2HP|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]] est plus flexible, car vous choisissez quelle antenne vous branchez dessus, et obtenir ainsi plusieurs kilomètres de portée.
+
+[[!img bullet-m2hp.jpg]]
 
 Le revendeur [[Converbit|http://www.converbit.ca/magasin/]] à Boucherville, Richard Marquis, offre la [[PicoStation M2HP pour 71$|http://www.converbit.ca/magasin/products.php?product=PicoStation-M2HP]]. Le Bullet M2HP est offert [[tout nu à 75$|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]] (pas d'injecteur PoE ni d'antenne), mais le [[kit omnidirectionnel avec injecteur PoE est 130$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-Antenne-Omni--8DBI-%252b-POE-15V]], et le [[kit à antenne parabolique avec injecteur PoE est 115$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-GRid-24DBI-%252b-POE-15V]].
 
