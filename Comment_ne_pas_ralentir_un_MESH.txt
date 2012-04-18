@@ -29,3 +29,4 @@ Les radios du MESH devraient utiliser 802.11N en mode HT (Greenfield)à 20Mhz su
 Il ne faut pas oublier que l'on ralentit à chaque HOP vers la destination (reçoit-transmet avec la même radio)
 Pour donner accès aux clients, on devrait utiliser une autre radio. Alors si un problème se produit avec l'un d'eux, 
 on ne ralentit pas le trafic du MESH, mais seulement le segment relié à cette radio.
+Ces radios peuvent utiliser le mode HT mixed, ou le mode B/G qui n'ont pas le standard N (WRT54 genre)
