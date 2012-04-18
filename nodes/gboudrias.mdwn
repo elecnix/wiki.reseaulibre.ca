@@ -3,7 +3,7 @@
 Bientôt en ligne et bientôt déménagée.
 
  * MAC address:
- * IP address:
+ * IP address: 172.16.0.15
  * IPv6 address:
  * Software:
  * Hardware: NanoStation M2
@@ -11,7 +11,7 @@ Bientôt en ligne et bientôt déménagée.
  * Location: 45.52486, -73.58349
  * Status: [[!taglink planned]]
  * Links: 
- * Azimuth:
+ * Azimuth: Nord-Nord-Est
  * Panorama:
  * Operator: [[users/gboudrias]]
 
