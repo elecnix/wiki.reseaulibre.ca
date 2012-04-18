@@ -167,11 +167,6 @@ On peut changer ceci sur le laptop, avec la commande
 
     iwconfig wlan0 key off
 
-
-### Firewall / Pare-feu
-
-Assez évident, mais facile à oublier: Avez-vous des règles de pare-feu qui bloquent les pings sur votre interface? Vérifiez toujours l'état et les règles de votre firewall!
-
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
