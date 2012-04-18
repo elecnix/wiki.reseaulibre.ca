@@ -1,11 +1,22 @@
-
 Naming
 ------
 
-A potential local amendment... Note: this is a dupe of the [official survey](http://www.surveymonkey.com/s/7Z2SHT2).
+[[!table class="pagecloud" data="""
+option          | %     | votes
+mesh-mtl        | 11.8% | 2
+mesh.openisp.ca | 17.6% | 3 
+mesh-mtl.org    | 64.7% | 11
+mesh-mtl.com    | 5.9%  | 1
+yul-mesh.org    | 17.6% | 3
+Mesh Montreal   | 5.9%  | 1
+Mesh-Montreal   | 17.6% | 3
+mesh-montreal.org | 76.5% | 13
+Wifi Mesh Montreal | 5.9% | 1
+Nombre de votants | 100% | 17
+"""]]
 
-Exemple de poll local qu'on aurait pu faire a la place:
+À la question "Quel nom devrait-on utiliser pour le réseau mesh Ad-Hoc de Montréal?" les gens ont répondu sur [surveymonkey](http://www.surveymonkey.com/s/7Z2SHT2):
 
-Quel nom devrait-on utiliser pour le réseau mesh Ad-Hoc de Montréal? 
+[[!poll open="no" 2 mesh-mtl 3 "mesh.openisp.ca" 11 "mesh-mtl.org" 1 mesh-mtl.com 3 yul-mesh.org 1 Mesh Montreal 3 Mesh-Montreal 13 mesh-montreal.org 1 Wifi Mesh Montreal]]
 
-[[!poll 0 mesh-mtl 0 "mesh.openisp.ca" 0 "mesh-mtl.org" 0 mesh-mtl.com 0 yul-mesh.org 0 Mesh Montreal 0 Mesh-Montreal 0 mesh-montreal.org 0 Wifi Mesh Montreal]]
+À noter qu'il s'agit "d'approval voting" dans Survey Monkey et donc le nombre de "votants" entre la version graphique et le tableau ne concordent pas...
