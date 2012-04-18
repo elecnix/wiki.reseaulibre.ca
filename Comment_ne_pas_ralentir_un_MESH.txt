@@ -15,11 +15,11 @@ surtout si le node est sur un toit et qu'il désert une grande superficie.
 
 3- Les mauvais clients ralentissent le réseau
 Lorsqu'un client est branché à la limite du possible, en plus d'avoir un mauvais service il peux nuire au réseau.
-Si il perds des paquets, il va constamment les reprendre. S'il crée de l'interférence, il va nuire au CSMA.
+S'il perd des paquets, il va constamment les reprendre. S'il crée de l'interférence, il va nuire au CSMA.
 
 4- En mode N, il y a 3 modes HT d'interopérabilité avec les autres protocoles.
 Lorsqu'on désert des clients non-compatibles N, on doit faire des compromis sur l'efficacité du réseau.
-Un excellent document explique ceci à la page 10. Le reste du document est extrèmement intéressant aussiu :-)
+Un excellent document explique ceci à la page 10. Le reste du document est extrèmement intéressant aussi :-)
 http://www.airmagnet.com/assets/whitepaper/WP-802.11nPrimer.pdf
 
 RECOMMENDATIONS:
@@ -30,4 +30,4 @@ Il ne faut pas oublier que l'on ralentit à chaque HOP vers la destination (reç
 
 Pour donner accès aux clients, on devrait utiliser une autre radio. Alors si un problème se produit avec l'un d'eux, 
 on ne ralentit pas le trafic du MESH, mais seulement le segment relié à cette radio.
-Ces radios peuvent utiliser le mode HT mixed, ou le mode B/G qui n'ont pas le standard N (WRT54 genre)
+Ces radios peuvent utiliser le mode HT mixed, ou le mode B/G s'ils n'ont pas le standard N (WRT54 genre)
