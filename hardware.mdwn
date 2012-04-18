@@ -51,10 +51,6 @@ users per such access point if you're radiating that power.
 * Intérieur: 200 m et Extérieur (Ligne de vue): 400 m à 11Mbps
 * Omnidirectionnelle
 
-#### Testing and configuration
-
-Voir [[configuration/Robin]].
-
 ### Bullet2 (sans antenne)
 
 Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une antenne externe. Pareil comme la pico station sinon.
