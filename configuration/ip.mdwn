@@ -18,14 +18,14 @@ IP | Hardware | wifi MAC | Location
 172.16.0.2 | Bullet M2 #2 | 00:15:6d:db:d3:65 | [[nodes/boulette]]
 172.16.0.3 | Server | N/A  | nexus.coeus.ca
 172.16.0.4 | Bullet M2 #1 | 00:15:6D:DB:D3:DC | [[nodes/benoitg]]
-172.16.0.5 | Bullet M2 #2 | TBD | TBD]
+172.16.0.5 | Bullet M2 #2 | TBD | TBD
+172.16.0.42| Lenovo laptop | 42:ca:5a:01:56:15 | anarcat's laptop (angela)
 172.16.1.1 | Linksys WRT54G | 00:1C:10:22:02:AE | [[nodes/carton]]
 172.16.1.2 | NanoStation M2 | 00:15:6D:71:37:26 | [[nodes/ouaibe]]
 172.16.1.3 | Linksys WRT54G | 00:25:9c:5e:44:59 | elecnix/grace
 172.16.1.4 | Linksys WRT54G | 00:13:10:1b:6d:dd | elecnix/pierre
-
-192.168.3.92 | PicoStation M2 | 00:15:6d:81:e0:5b
-192.168.3.93 | NanoStation M2 | 00:15:6d:fc:be:90
+172.16.1.5 | PicoStation M2 | 00:15:6d:81:e0:5b | au foulab (voir richard)
+172.16.1.6 | NanoStation M2 | 00:15:6d:fc:be:90 | au foulab (voir richard)
 192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
 """]]
 
@@ -87,8 +87,8 @@ above. When you do, please document in the above tables and in your
 To configure the IP address on a OpenWRT device, use this:
 
     uci set network.lan.ipaddr=172.16.0.123
-    uci set network.lan.gateway=172.16.0.1
     uci set network.lan.netmask=255.240.0.0
+    uci set network.lan.gateway=172.16.0.1
     uci set network.lan.dns=172.16.0.1
 
 You may also commonly disable the DHCP server on LAN, so as to not
