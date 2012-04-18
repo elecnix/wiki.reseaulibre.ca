@@ -88,6 +88,8 @@ Those devices are everywhere, but they are cheap and may not be worth it.
 
 Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND), "cheap and nice". :) 54$ at DirectCanada
 
+[[!img TL-WR1043ND-04.jpg size="300x"]]
+
 ### TL-WR703N
 
 Another model is being looked at a lot by Elektra (the BatWomen) with Village-Telco group. TL-WR703N... on peux l'obtenir pour +- 20$ (B/G/N)
