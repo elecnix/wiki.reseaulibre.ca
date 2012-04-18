@@ -24,6 +24,7 @@ This is a wiki, so we expect node operators to share their best practices here a
   * Pour d'autres systèmes, voir: [[configuration/ad-hoc]] et [[configuration/batman]]
  * [[Plan d'allocation des adresses IP|configuration/ip]]
 * [[Wi-Fi Technicalities]] - basics of the physical layer and mechanics. 
+* [[Comment ne pas ralentir un MESH]]
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Idees]] - possible uses for the mesh
