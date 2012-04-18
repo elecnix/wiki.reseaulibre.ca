@@ -19,6 +19,7 @@ IP | Hardware | wifi MAC | Location
 172.16.0.3 | Server | N/A  | nexus.coeus.ca
 172.16.0.4 | Bullet M2 #1 | 00:15:6D:DB:D3:DC | [[nodes/benoitg]]
 172.16.0.5 | Bullet M2 #2 | TBD | TBD
+172.16.0.15 | NanoStation M2 | TBD | [[nodes/gboudrias]]
 172.16.0.42| Lenovo laptop | ec:55:f9:c5:f2:55 | anarcat's laptop (angela)
 172.16.1.1 | Linksys WRT54G | 00:1C:10:22:02:AE | [[nodes/carton]]
 172.16.1.2 | NanoStation M2 | 00:15:6D:71:37:26 | [[nodes/ouaibe]]
