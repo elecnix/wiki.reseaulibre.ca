@@ -21,3 +21,10 @@ Si il perds des paquets, il va constamment les reprendre. S'il crée de l'interf
 Lorsqu'on désert des clients non-compatibles N, on doit faire des compromis sur l'efficacité du réseau.
 Un excellent document explique ceci à la page 10. Le reste du document est extrèmement intéressant aussiu :-)
 http://www.airmagnet.com/assets/whitepaper/WP-802.11nPrimer.pdf
+
+RECOMMENDATIONS:
+
+La radio d'un node MESH devrait si possible n'être utilisée que pour transporter des paquets sur le MESH.
+Il ne faut pas oublier que l'on ralentit à chaque HOP vers la destination (reçoit-transmet avec la même radio)
+Pour donner accès aux clients, on devrait utiliser une autre radio. Alors si un problème se produit avec l'un d'eux, 
+on ne ralentit pas le trafic du MESH, mais seulement le segment relié à cette radio.
