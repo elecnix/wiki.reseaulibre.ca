@@ -22,9 +22,9 @@ le MESH va ralentir. La même radio va communiquer chaque paquet avec le client 
 
  4. En mode N, il y a 3 modes HT d'interopérabilité avec les autres protocoles.
 
- Lorsqu'on désert des clients non-compatibles N, on doit faire des compromis sur l'efficacité du réseau.
+ Lorsqu'on déssert des clients non-compatibles N, on doit faire des compromis sur l'efficacité du réseau.
  Un excellent document explique ceci à la page 10. Le reste du document est extrèmement intéressant aussi :-)
- http://www.airmagnet.com/assets/whitepaper/WP-802.11nPrimer.pdf
+ <http://www.airmagnet.com/assets/whitepaper/WP-802.11nPrimer.pdf>
 
 RECOMMENDATIONS
 ===============
