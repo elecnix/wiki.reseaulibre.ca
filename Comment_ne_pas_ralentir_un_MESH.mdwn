@@ -2,27 +2,32 @@ Un node MESH à une seule radio a beaucoup de limitations.
 
 Des Faits :
 
-1-Une antenne ne fait pas 2 choses à la fois: elle reçoit ou elle transmet.
-Si on utilise cette antenne pour maintenir la communication au MESH, et aussi pour servir des clients,
+ 1. Une antenne ne fait pas 2 choses à la fois: elle reçoit ou elle transmet.
+
+  Si on utilise cette antenne pour maintenir la communication au MESH, et aussi pour servir des clients,
 le MESH va ralentir. La même radio va communiquer chaque paquet avec le client et aussi vers le MESH.
 
-2-Le protocole utilisé est le CSMA (Carrier Sense Multiple Access.
-Donc, la station écoute, et si elle n'entends rien, elle transmet.
-Un problème survient lorsque les utilisateurs du même AP ne se voient pas. Ça s'appelle le "Hidden Node".
-Il se produit alors des collisions à répétition, ce qui ralentit énormément le réseau.
-Si le node MESH est utilisé par des clients disposés n'importe ou autour, ça risque de se produire, 
-surtout si le node est sur un toit et qu'il désert une grande superficie.
+ 2. Le protocole utilisé est le CSMA (Carrier Sense Multiple Access)
 
-3- Les mauvais clients ralentissent le réseau
-Lorsqu'un client est branché à la limite du possible, en plus d'avoir un mauvais service il peux nuire au réseau.
-S'il perd des paquets, il va constamment les reprendre. S'il crée de l'interférence, il va nuire au CSMA.
+  Donc, la station écoute, et si elle n'entends rien, elle transmet.
+  Un problème survient lorsque les utilisateurs du même AP ne se voient pas. Ça s'appelle le "Hidden Node".
+  Il se produit alors des collisions à répétition, ce qui ralentit énormément le réseau.
+  Si le node MESH est utilisé par des clients disposés n'importe ou autour, ça risque de se produire, 
+  surtout si le node est sur un toit et qu'il désert une grande superficie.
 
-4- En mode N, il y a 3 modes HT d'interopérabilité avec les autres protocoles.
-Lorsqu'on désert des clients non-compatibles N, on doit faire des compromis sur l'efficacité du réseau.
-Un excellent document explique ceci à la page 10. Le reste du document est extrèmement intéressant aussi :-)
-http://www.airmagnet.com/assets/whitepaper/WP-802.11nPrimer.pdf
+ 3. Les mauvais clients ralentissent le réseau
 
-RECOMMENDATIONS:
+  Lorsqu'un client est branché à la limite du possible, en plus d'avoir un mauvais service il peux nuire au réseau.
+  S'il perd des paquets, il va constamment les reprendre. S'il crée de l'interférence, il va nuire au CSMA.
+
+ 4. En mode N, il y a 3 modes HT d'interopérabilité avec les autres protocoles.
+
+ Lorsqu'on désert des clients non-compatibles N, on doit faire des compromis sur l'efficacité du réseau.
+ Un excellent document explique ceci à la page 10. Le reste du document est extrèmement intéressant aussi :-)
+ http://www.airmagnet.com/assets/whitepaper/WP-802.11nPrimer.pdf
+
+RECOMMENDATIONS
+===============
 
 La radio d'un node MESH devrait si possible n'être utilisée que pour transporter des paquets sur le MESH.
 Les radios du MESH devraient utiliser 802.11N en mode HT (Greenfield)à 20Mhz sur un canal edge (1 ou 11).
