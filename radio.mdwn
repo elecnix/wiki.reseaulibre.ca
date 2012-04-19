@@ -1,8 +1,8 @@
 [[!toc levels=3]]
-*****
+
 Relationship between Watts and dBm
 ==================================
-*****
+
  * The watt is a measure of power.
  * The dBm is a logaritmic representation of gain.
  * The difference in dBm between two power levels is `10(log p1/p2)`
@@ -471,15 +471,15 @@ dBm to Watt Conversion Table
                 </tbody>
               </table>
 </html>
-*****
+
 Antenna Connectors and Cable
 ============================
-*****
+
 See [[hardware]].
-*****
+
 Calculating RF links
 ====================
-*****
+
 A good place to learn about it is :
 
 <http://www.radiolabs.com/stations/wifi_calc.html>
