@@ -4,7 +4,7 @@ The goal of this project is to create a community wireless network accessible fr
 
 # Status
 
-* [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
+*  - shows where all the nodes are!
 * [[Nodes]] - the list of deployed nodes
 * [[Links]] - the links between the nodes
 
@@ -25,7 +25,7 @@ This is a wiki, so we expect node operators to share their best practices here a
 
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured
 * [[Software]] - the software used/evaluated in the project
-* [[Wi-Fi Technicalities]] - basics of the physical layer and mechanics. 
+* [[Radio]] - basics of the physical layer and mechanics. 
 * [[Comment ne pas ralentir un MESH]]
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
 * [[Policy]] - what we agree on when opening a node on the mesh
