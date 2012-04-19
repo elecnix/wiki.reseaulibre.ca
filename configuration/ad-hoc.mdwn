@@ -20,6 +20,8 @@ The channel can be changed according to location and existing
 interference. It needs to be the same for all devices that
 interconnect.
 
+Voir aussi [[policy/naming]] pour la convention de noms.
+
 # Ad-hoc on OpenWRT
 
 Connect a cable from the LAN to your PC.
@@ -81,7 +83,7 @@ Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la ca
 
 Sinon, descendre l'interface réseau (voir même désactiver son module noyau) et la ré-activer.
 
-Voir [[configuration/ip]] pour l'allocation de l'addresse.
+Voir [[configuration/ip]] pour configurer l'interface et [[policy/numbering]] pour l'allocation de l'addresse.
 
 ## Problèmes communs
 
