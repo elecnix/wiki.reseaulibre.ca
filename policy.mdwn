@@ -13,10 +13,11 @@ Usage policy
 
 Points 2 and 3 have been strongly supported during our [[first meeting|meetings/2012-02-15-intro/]], while point #1 was not necessarily supported, some having the idea of running VPN-based connectivity services on top of the mesh, like the Opennet initiative does. Terms of use were not discussed explicitly.
 
-Addressage et numérotation
-==========================
+Politiques techniques
+=====================
 
-Voir ces sous-pages:
+On s'attend à ce que les nodes qui joignent le réseau respectent ces conventions d'utilisation générales.
 
- * [[numbering]]
- * [[policy/naming]]
+ * [[numbering]] - comment les addresses IPs sont allouées dans le mesh, liste des IPs allouées
+ * [[naming]] - comment les réseaux, machines et services sont nommés dans le mesh
+ * [[topology]] - l'architecture générale du réseau
