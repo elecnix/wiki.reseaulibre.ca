@@ -1,4 +1,4 @@
-[[!toc]]
+[[!toc levels=3]]
 
 # Bug with 3 hop setup and OpenWRT outside of main bridge
 
@@ -56,7 +56,7 @@ Actual results:
 
 So it looks like the firewall on carton is kicking in. Note that angela *can* ping boulette if it joins the mesh with a batman configuration. --[[anarcat]]
 
-## First test
+## First test: trying to fix the firewall
 
 following the routedap guide in the openwrt wiki
 
@@ -120,7 +120,7 @@ uci commit
 
 unfortunately, this breaks batman.
 
-## Second test
+## Second test: trying to fix the bridge
 
 Reverting the segregation of the lan/wifi interfaces:
 
@@ -133,3 +133,7 @@ uci set network.lan.ifname="eth0.0"
 This basically bricks the device. I then can't reach it on either the
 wired or wireless port, with or without batman. batman pings don't even
 work. --[[anarcat]]
+
+## Third test: dropping the firewall
+
+This is the way to do it, apparently: see the [[services]] page.
