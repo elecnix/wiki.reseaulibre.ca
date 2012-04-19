@@ -26,7 +26,7 @@ le MESH va ralentir. La même radio va communiquer chaque paquet avec le client 
  Un excellent document explique ceci à la page 10. Le reste du document est extrèmement intéressant aussi :-)
  <http://www.airmagnet.com/assets/whitepaper/WP-802.11nPrimer.pdf>
 
-RECOMMENDATIONS
+RECOMMANDATIONS
 ===============
 
 La radio d'un node MESH devrait si possible n'être utilisée que pour transporter des paquets sur le MESH.
