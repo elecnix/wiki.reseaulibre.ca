@@ -20,4 +20,4 @@ On s'attend à ce que les nodes qui joignent le réseau respectent ces conventio
 
  * [[numbering]] - comment les addresses IPs sont allouées dans le mesh, liste des IPs allouées
  * [[naming]] - comment les réseaux, machines et services sont nommés dans le mesh
- * [[topology]] - l'architecture générale du réseau
+ * [[topology]] - l'architecture générale du réseau ([[todo|todo/network_topology]])
