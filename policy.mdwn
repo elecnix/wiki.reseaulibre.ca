@@ -3,7 +3,7 @@
 Usage policy
 ============
 
-[[Freifunk|http://www.funkfeuer.at/PicoPeeringAgreement.59.0.html?&L=1]] uses the [[Picopeer agreement|http://www.picopeer.net/]], which involve basically:
+ uses the , which involve basically:
 
  1. Free Transit
  2. Open Communication
@@ -19,4 +19,4 @@ Addressage et numérotation
 Voir ces sous-pages:
 
  * [[numbering]]
- * [[naming]]
+ * [[policy/naming]]
