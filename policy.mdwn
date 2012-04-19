@@ -3,7 +3,7 @@
 Usage policy
 ============
 
- uses the , which involve basically:
+[[Freifunk|http://www.funkfeuer.at/PicoPeeringAgreement.59.0.html?&L=1]] uses the [[Picopeer agreement|http://www.picopeer.net/]], which involve basically:
 
  1. Free Transit
  2. Open Communication
