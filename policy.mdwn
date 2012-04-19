@@ -1,7 +1,7 @@
-(!) We need to agree on a policy. This is not yet done!
-
 Usage policy
 ============
+
+Ces politiques d'utilisation n'ont pas été formellement adoptées et sont des recommendations. Cependant, on s'attend généralement à ce que ces principes soient respectés.
 
 [[Freifunk|http://www.funkfeuer.at/PicoPeeringAgreement.59.0.html?&L=1]] uses the [[Picopeer agreement|http://www.picopeer.net/]], which involve basically:
 
@@ -16,7 +16,7 @@ Points 2 and 3 have been strongly supported during our [[first meeting|meetings/
 Politiques techniques
 =====================
 
-On s'attend à ce que les nodes qui joignent le réseau respectent ces conventions d'utilisation générales.
+On s'attend à ce que les nodes qui joignent le réseau respectent ces conventions générales.
 
  * [[numbering]] - comment les addresses IPs sont allouées dans le mesh, liste des IPs allouées
  * [[naming]] - comment les réseaux, machines et services sont nommés dans le mesh
