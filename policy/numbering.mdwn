@@ -1,0 +1,75 @@
+# IP allocation strategy
+
+IP addresses are allocated on a first come first serve basis. We
+strongly encourage clever use of IPv6 to avoid starvation.
+
+This section documents the strategy and the addresses already allocated. To configure your device, see the next section, but please update the information below when you allocate yourself an IP.
+
+## IPv4
+
+[[!table class="pagecloud" data="""
+IP | Hardware | wifi MAC | Location
+172.16.0.1   | Soekris        | N/A | [[nodes/roadkiller]]
+172.16.0.2 | Bullet M2 #2 | 00:15:6d:db:d3:65 | [[nodes/boulette]]
+172.16.0.3 | Server | N/A  | nexus.coeus.ca
+172.16.0.4 | Bullet M2 #1 | 00:15:6D:DB:D3:DC | [[nodes/benoitg]]
+172.16.0.5 | Bullet M2 #2 | TBD | TBD
+172.16.0.15 | NanoStation M2 | TBD | [[nodes/gboudrias]]
+172.16.0.42| Lenovo laptop | ec:55:f9:c5:f2:55 | anarcat's laptop (angela)
+172.16.1.1 | Linksys WRT54G | 00:1C:10:22:02:AE | [[nodes/carton]]
+172.16.1.2 | NanoStation M2 | 00:15:6D:71:37:26 | [[nodes/ouaibe]]
+172.16.1.3 | Linksys WRT54G | 00:25:9c:5e:44:59 | elecnix/grace
+172.16.1.4 | Linksys WRT54G | 00:13:10:1b:6d:dd | elecnix/pierre
+172.16.1.5 | PicoStation M2 | 00:15:6d:81:e0:5b | [[nodes/pico]] (voir richard)
+172.16.1.6 | NanoStation M2 | 00:15:6d:fc:be:90 | au foulab (voir richard)
+192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
+"""]]
+
+The proper allocation for new IPs is in the `172.16.0.0/12` private B
+class (from [[!rfc 1918]]). `172.16.0.X/24` is reserved for big
+interconnects (like [[nodes/boulette]]), so if you have just a node in
+your window, using `172.16.1.X/24` for now (like [[nodes/carton]]).
+
+> (!) We are on the process of migrating away from the
+> `192.168.3.0/24` netblock, which was too small for our needs and
+> only used informally during the
+> [[first setup|meetings/2012-04-06-antenna-party]]. See also the
+> [[discussion]] page for a rationale.
+  
+> (!) Note: the table on the right is manually maintained and may fall out of sync with the data in [[nodes]]. We are looking forward towards [support for aggregating definition lists in ikiwiki](http://ikiwiki.info/todo/internal_definition_list_support/) (and if people are interested on working on this it would be great), but in the meantime this is error-prone...
+
+## IPv6
+
+We are using a huge IPv6 space (a `/48`, which allows for 65,536 `/64` networks) known as ULA (see below) for our mesh. The global prefix (`fd64:2c08:9fa7::/48`) is announced from some routers on the mesh, but is usually allocated in smaller `/64` networks, independent from one another, and that can be used to announce local networks.
+
+If you wish, however, to be on the global mesh, you should use a `/48` netmask to be able to reach all nodes in the vincinity.
+
+Known allocations:
+
+ * `fd64:2c08:9fa7::/48` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
+ * `fd64:2c08:9fa7:1::/64` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself
+ * `fd64:2c08:9fa7:2::/64` - `carton.anarcat.ath.cx` - [[nodes/carton]], a public access point
+ * `fd64:2c08:9fa7:3::/64` - `pico.mesh.openisp.ca` - [[nodes/pic]], a
+   public access point at foulab
+
+Notice how I have a global router (`boulette`) which has a `/48` netmask while a local access node uses a small `/64` subnet.2
+
+### Note on ULA prefixes
+
+ULA prefixes are "local prefixes" (think like `192.168.0.1`) but that
+are unique across sites *and* can potentially be routed between
+sites. See [[!rfc 4193]] for more information about this. Freifunk
+[recommends we use the ULA prefixes](http://wiki.freifunk.net/6mesh.freifunk.net),
+and specifically the `fdca:ffee:babe:dada::/64`, but I don't see why
+we should stick with that prefix, which is bound to Freifunk
+(ie. Berlin), to which we are not interconnected.
+
+We are using `fd64:2c08:9fa7::/48` as our prefix. This prefix is advertised
+from the mesh, so you should be able to see some routes and your
+machine should autoconfigure itself. If you want to use a static IP in that network, document it here
+first.
+
+> *Note: the mesh prefix was chosen on
+> [SixXS.net](https://www.sixxs.net/tools/grh/ula/), using the MAC
+> address of my router. It was also registered there under Anarcat's
+> email address.*
