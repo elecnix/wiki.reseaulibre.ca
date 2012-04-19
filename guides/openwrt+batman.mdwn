@@ -30,7 +30,7 @@ Set the name of the router to the same you entered in the [[node database|nodes]
 
     uci set system.@system[0].hostname=ti-noeud
 
-Configure the router's IP address by picking a free slot from the [[IP Allocation|configuration/ip]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/24 network:
+Configure the router's IP address by picking a free slot from the [[IP Allocation|policy/numbering]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/24 network:
 
     uci set network.lan.ipaddr=172.16.1.1
     uci set network.lan.gateway=172.16.0.1
