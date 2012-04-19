@@ -5,9 +5,9 @@
 
 # Device configuration
 
-This section documents how you can configure your device to use an IP
-above. When you do, please document in the [[policy/numbering]] page and in your
-[[nodes]] page, unless of course the adress is autoconfigured.
+Before configuring your device, you need to choose an IP. To do this, head for the [[policy/numbering]] page and choose an IP address. Document it in the [[policy/numbering]] page and in your [[nodes]] page, unless of course the adress is autoconfigured.
+
+This section documents how you can configure your device to use the IP chosen.
 
 ## OpenWRT
 
