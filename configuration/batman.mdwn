@@ -118,7 +118,7 @@ L'interface doit ensuite être configurée
 
 # Étape suivante
 
-Voir [[la configuration IP|configuration/ip]].
+Faire la [[configuration IP|configuration/ip]].
 
 ## Use our bat-hosts
 
