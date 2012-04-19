@@ -136,22 +136,42 @@ ou:
 
     tail -f /var/log/messages
 
-## Afficher l'état
+## Afficher l'état des interfaces
+
+Ceci doit indiquer qu'une interface est up, par exemple:
 
     batctl if
 
-## Diagnostiques
+Doit produire quelquchose comme:
+
+    wlan0: active
+
+## Afficher les nodes voisins
+
+Un autre outil important est la liste des "originators":
+
+    batctl o
+
+Ceci doit lister d'autres nodes, par exemple:
+
+    [B.A.T.M.A.N. adv 2012.0.0, MainIF/MAC: wlan0/00:15:6d:da:d3:65 (bat0)]
+      Originator      last-seen (#/255)           Nexthop [outgoingIF]:   Potential nexthops ...
+    00:1c:10:22:02:ae    0.930s   (215) 00:1c:10:22:02:ae [     wlan0]: 00:1c:10:22:02:ae (215)
+
+exemple, ci-haut, de boulette qui voit carton...
+
+Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes les nodes accessibles via le mesh (global):
+
+    batctl translocal
+    batctl transglobal
+
+## Tester la connectivité
 
 Même si on a pas d'adresse IP configurée, on peut faire des "pings" en utilisant les adresses MAC:
 
     batctl tcpdump wlan0
     batctl ping 00:11:22:33:44:55
     batctl traceroute 00:11:22:33:44:55
-
-Autres commandes utiles pour voir les nodes locales (mesh seulement) ou toutes les nodes accessibles via le mesh (global):
-
-    batctl translocal
-    batctl transglobal
 
 # Références
 
