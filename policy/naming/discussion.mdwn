@@ -15,8 +15,10 @@ Wifi Mesh Montreal | 5.9% | 1
 Nombre de votants | 100% | 17
 """]]
 
+Il y a présentement un débat sur la mailing list au sujet du nom du réseau ad-hoc. Le email de départ est [ici](https://listes.koumbit.net/cgi-bin/mailman/private/nodes-lists.openisp.ca/2012-April/000166.html). Un sondage a été appelé sur la liste et est copié ici.
+
 À la question "Quel nom devrait-on utiliser pour le réseau mesh Ad-Hoc de Montréal?" les gens ont répondu sur [surveymonkey](http://www.surveymonkey.com/s/7Z2SHT2):
 
-[[!poll open="no" 2 mesh-mtl 3 "mesh.openisp.ca" 11 "mesh-mtl.org" 1 mesh-mtl.com 3 yul-mesh.org 1 Mesh Montreal 3 Mesh-Montreal 13 mesh-montreal.org 1 Wifi Mesh Montreal]]
-
 À noter qu'il s'agit "d'approval voting" dans Survey Monkey et donc le nombre de "votants" entre la version graphique et le tableau ne concordent pas...
+
+[[!poll open="no" 2 mesh-mtl 3 "mesh.openisp.ca" 11 "mesh-mtl.org" 1 mesh-mtl.com 3 yul-mesh.org 1 Mesh Montreal 3 Mesh-Montreal 13 mesh-montreal.org 1 Wifi Mesh Montreal]]
