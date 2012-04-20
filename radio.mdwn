@@ -531,7 +531,7 @@ La propagation des ondes à 2.4 GHz est très sensible aux conditions environnem
 
 L'ellipsoïde de Fresnel (Fresnel zone) est utilisé pour mesurer le volume de propagation des ondes radios dans l'espace. Ce volume grandit plus la distance reliant 2 points s'allonge. La zone la plus large se situe au milieu de la distance entre les 2 points. En ayant la mesure de cette distance, et la hauteur des antennes, on peut calculer la largeur de la zone Fresnel et sa hauteur par rapport au sol. Avec le 2.4 GHz, les recommandations sont, pour qu'une connexion soit fiable, de ne pas trouver d'obstacles dans 60% de cette zone calculée. Si l'on retrouve des obstacles, la qualite de la connexion va diminuer de manière significative. 
 
-* Pour s'assurer qu'une connexion soit fiable, il faut essentiellement être en "ligne de vue" (LoS: line of sight) entre 2 points qu'on désire relier. *
+**Pour s'assurer qu'une connexion soit fiable, il faut essentiellement être en "ligne de vue" (LoS: line of sight) entre 2 points qu'on désire relier. **
 
 ####Références
 
