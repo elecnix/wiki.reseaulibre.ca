@@ -1,5 +1,12 @@
-Moi: http://yannickbrosseau.com
+##Moi
 
+http://yannickbrosseau.com
+
+##Mes nodes
+
+* [[nodes/scientist]]
+* [[nodes/scientist-poly]]
+* [[nodes/scientist-jardin]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
