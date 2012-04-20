@@ -22,6 +22,7 @@ IP | Hardware | wifi MAC | Location
 172.16.1.4 | Linksys WRT54G | 00:13:10:1b:6d:dd | elecnix/pierre
 172.16.1.5 | PicoStation M2 | 00:15:6d:81:e0:5b | [[nodes/pico]] (voir richard)
 172.16.1.6 | NanoStation M2 | 00:15:6d:fc:be:90 | au foulab (voir richard)
+172.16.1.7 | Linksys WRT54G |  | [[nodes/scientist]]-jardin
 192.168.3.94 | NanoBridge | 00:15:6d:5a:f7:27
 """]]
 
