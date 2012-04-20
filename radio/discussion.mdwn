@@ -6,6 +6,6 @@ Le document "802.11n Primer" parle d'utiliser des radios 5 GHz comme backbone:
 
 Est-ce que l'avantage du 5 GHz moins utilisé compenserait le désavantage que le 5 GHz a pour les obstacles? -- elecnix, 19 avril 2012
 
->Le 5.8 GHz reagit differemment aux obstacles, il y a plus de diffraction qu'en 2.4GHz, donc oui ca passe "mieux" les obstacles. C'est aussi moins attenue par l'eau. La bande passante potentielle est aussi meilleure. Il a aussi surement moins d'interference avec des reseaux existants a cette frequence. (juste en terme de nombre) Cependant, la perte de signal est plus importante en relation avec la distance. Document interessant au sujet: http://www.solwise.co.uk/downloads/files/intheuk5ghz.pdf (references a la puissance specifiques au UK)
+>Le 5.8 GHz reagit differemment aux obstacles, il y a plus de diffraction qu'en 2.4GHz, donc en fait ca passe "mieux" les obstacles. Ca reagit differemment a l'eau. La bande passante potentielle est aussi meilleure. Il a aussi surement moins d'interference avec des reseaux existants a cette frequence. (juste en terme de nombre vs 2.4) Cependant, la perte de signal est plus importante en relation avec la distance. Document interessant au sujet: http://www.solwise.co.uk/downloads/files/intheuk5ghz.pdf (references a la puissance specifiques au UK), une recherche Google donne aussi plusieurs reponses.
 
 >--spoked
