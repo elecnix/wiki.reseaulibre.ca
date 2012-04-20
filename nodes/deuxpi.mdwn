@@ -1,17 +1,25 @@
 [[!waypoint lat="45.469037" lon="-73.567387" embed hidden width="400px" height="400px" right desc="Sous les panneaux solaires"]]
 
-Possibilité de placer initialement une antenne discrète sur la façade et éventuellement trouver une façon de l'installer sur la structure métallique sur le toit (les panneaux solaires que vous voyez quand vous passez dans le coin :-) )
+À faire:
 
- * MAC address:
+ * Déterminer une IPv4, IPv6 pour le mesh
+ * Réaligner l'antenne pour optimiser le signal vers [[nodes/bgm]] et [[nodes/scientist]]
+ * Vérifier de la nécessité de AirMax/TDMA, sinon installer OpenWrt
+ * Installer BATMAN sur le point d'accès
+ * Profit?!!?
+
+Détails:
+
+ * MAC address: 00:27:22:4E:16:B7
  * IP address:
  * IPv6 address:
- * Software:
+ * Software: AirOS
  * Hardware: NanoStation M2
- * Power:
- * Location: Verdun
+ * Power: 30 dBm, 11 dBi (probablement trop)
+ * Location: Verdun, coin LaSalle et Rushbrooke
  * Status: [[!taglink planned]]
  * Links:
- * Azimuth: Nord-ouest à sud-ouest
+ * Azimuth: Ouest-sud-ouest
  * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]]
  * Operator: [[users/deuxpi]]
 
