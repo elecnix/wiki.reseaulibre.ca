@@ -520,6 +520,28 @@ Antenna Connectors and Cable
 
 See [[hardware]].
 
+Propagation des ondes radios
+============================
+
+Les ondes radios se propagent dans l'atmosphère à la vitesse de la lumière, soit 300000 km/sec. On mesure une onde radio selon sa fréquence, qui est directement proportionnelle à sa longueur d'ondes. Dans notre cas, la fréquence d'intérêt est de 2.4 GHz, soit une longueur d'ondes d'environ 12 cm. On pourrait aussi considérer de l'équipement opérant dans des bandes à 5.8 GHz, ou avec de l'équipement plus spécialisé, 900 MHz.
+
+L'intensité d'un signal radio, mesuré par son amplitude, diminue tout comme la lumière, de manière inversement proportionnelle au carré de la distance. Un signal est 2 fois moins intense que sa source après 1 mètres, 4 fois plus après 2 mètres, 9 fois après 3 mètres, et ainsi de suite.
+
+La propagation des ondes à 2.4 GHz est très sensible aux conditions environnementales, soit aux obstacles, à la végétation, à l'humidité. Les ondes réagiront à la présence d'édifices, d'arbres, de fenêtres, etc. par réflection, réfraction et diffraction. Dans certains cas, ces comportements peuvent rendre possible une visibilité entre 2 points légèrement obstrués, mais vont également diminué considérabelement la qualité, jusqu'à le rendre inutilisable. Il ne faut pas se fier sur ces comportements pour établir un lien permanent (ie. "Je vais faire "bouncer" le signal sur cet édifice." "Je vais "crinquer" la puissance de ma radio pour "blaster" à travers des arbres.")
+
+L'ellipsoïde de Fresnel (Fresnel zone) est utilisé pour mesurer le volume de propagation des ondes radios dans l'espace. Ce volume grandit plus la distance reliant 2 points s'allonge. La zone la plus large se situe au milieu de la distance entre les 2 points. En ayant la mesure de cette distance, et la hauteur des antennes, on peut calculer la largeur de la zone Fresnel et sa hauteur par rapport au sol. Avec le 2.4 GHz, les recommandations sont, pour qu'une connexion soit fiable, de ne pas trouver d'obstacles dans 60% de cette zone calculée. Si l'on retrouve des obstacles, la qualite de la connexion va diminuer de manière significative. 
+
+**Pour s'assurer qu'une connexion soit fiable, il faut essentiellement être en "ligne de vue" (LoS: line of sight) entre 2 points qu'on désire relier. **
+
+####Références
+
+* [Propagation des ondes radio](https://fr.wikipedia.org/wiki/Propagation_des_ondes_radio)
+* [Diffraction de Fresnel](https://fr.wikipedia.org/wiki/Diffraction_de_Fresnel)
+* [Diffraction de Fraunhofer](https://fr.wikipedia.org/wiki/Diffraction_de_Fraunhofer)
+* [Ellipsoide de Fresnel](https://fr.wikipedia.org/wiki/Ellipso%C3%AFde_de_Fresnel)
+
+####Outils : TODO
+
 Calculating RF links
 ====================
 
