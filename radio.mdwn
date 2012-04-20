@@ -35,7 +35,7 @@ RECOMMANDATIONS
 ---------------
 
 La radio d'un node MESH devrait si possible n'être utilisée que pour transporter des paquets sur le MESH.
-Les radios du MESH devraient utiliser 802.11N en mode HT (Greenfield) à 20Mhz sur un canal edge (1 ou 11).
+Les radios du MESH devraient utiliser 802.11N en [[mode HT (Greenfield)|http://searchcio.techtarget.com.au/news/2240101850/What-is-80211n-Greenfield-mode]] à 20Mhz sur un canal edge (1 ou 11).
 Il ne faut pas oublier que l'on ralentit à chaque HOP vers la destination (reçoit-transmet avec la même radio)
 
 Pour donner accès aux clients, on devrait utiliser une autre radio. Alors si un problème se produit avec l'un d'eux, 
