@@ -1,15 +1,15 @@
-[[!waypoint  lat="45.539759" lon="-73.601008" embed hidden width="400px" height="400px" right desc="ile sans fil access point"]]
+[[!waypoint  lat="45.539759" lon="-73.601008" embed hidden width="400px" height="400px" right desc="En attente de permission de la proprio"]]
 
-Pour l'instant mon node est un point d'accès île sans fil, mais quand j'aurai le temps, j'en ferai un point mesh.
+Ce sera si possible le node sur mon toit
 
  * MAC address:
  * IP address:
  * IPv6 address:
- * Software: Openwrt Kamikaze
- * Hardware: Linksys wrtsl54gs
+ * Software: 
+ * Hardware:
  * Power:
  * Location:
- * Status: [[!taglink up]] (can also be up, down, unknown)
+ * Status: [[!taglink down]] (can also be up, down, unknown)
  * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
  * Azimuth:
  * Panorama:
