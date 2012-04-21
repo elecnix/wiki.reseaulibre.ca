@@ -259,3 +259,30 @@ Turning off the router, then holding the '4' key, I get:
     loopback   - Ralink eth loopback test !!                                        
     version - print monitor version                                                 
     RT3052 # 
+
+    RT3052 # printenv                                                               
+    bootcmd=tftp                                                                    
+    bootdelay=5                                                                     
+    baudrate=57600                                                                  
+    ethaddr="00:AA:BB:CC:DD:10"                                                     
+    ipaddr=10.10.10.123                                                             
+    serverip=10.10.10.3                                                             
+    preboot=echo;echo                                                               
+    ramargs=setenv bootargs root=/dev/ram rw                                        
+    addip=setenv bootargs $(bootargs) ip=$(ipaddr):$(serverip):$(gatewayip):$(netmaf
+    addmisc=setenv bootargs $(bootargs) console=ttyS0,$(baudrate) ethaddr=$(ethaddr1
+    flash_self=run ramargs addip addmisc;bootm $(kernel_addr) $(ramdisk_addr)       
+    kernel_addr=BFC40000                                                            
+    u-boot=u-boot.bin                                                               
+    load=tftp 8A100000 $(u-boot)                                                    
+    u_b=protect off 1:0-1;era 1:0-1;cp.b 8A100000 BC400000 $(filesize)              
+    loadfs=tftp 8A100000 root.cramfs                                                
+    u_fs=era bc540000 bc83ffff;cp.b 8A100000 BC540000 $(filesize)                   
+    test_tftp=tftp 8A100000 root.cramfs;run test_tftp                               
+    stdin=serial                                                                    
+    stdout=serial                                                                   
+    stderr=serial                                                                   
+    ethact=Eth0 (10/100-M)                                                          
+                                                                                    
+    Environment size: 783/65532 bytes                                               
+    RT3052
