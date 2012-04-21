@@ -10,7 +10,9 @@ The router is unbranded, but may has the following model names, depending on the
 
 This is a small router with a single antenna, with the front and back covered with a blue strip. Some may have a logo on its top. It opens by removing 4 screws under the router, and reveals a Ralink RT3050F chip. The board is identified as `XDX-RN502R V2.0`.
 
-See pictures: http://www.flickr.com/photos/elecnix/sets/72157629696033799
+[[!img RT-3GWT_2.jpg size="300x"]]
+
+More pictures: http://www.flickr.com/photos/elecnix/sets/72157629696033799
 
 # Specifications
 
