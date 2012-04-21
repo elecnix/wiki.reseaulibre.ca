@@ -98,7 +98,7 @@ Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.co
 
 Minuscule routeur alimenté par un connecteur mini USB, possédant un port un connecteur USB accessoire, mais pas d'antenne extérieure. Peut servir comme point d'accès (AP) dans la maison, et pour tester des configurations. On peut l'obtenir pour [[24$ chez Deal Extreme|https://www.dealextreme.com/p/tp-link-703n-ultra-mini-portable-3g-802-11b-g-n-150mbps-wifi-wireless-router-light-blue-white-102903]].
 
-Il existe ce qui semble être un clone, le fast-fwr171 qu'on peut acheter pour aussi peu que [15$ plus shipping sur volumerates.com|http://www.volumerates.com/product/fast-fwr171-3g-pocketable-11n-150m-3g-mobile-wireless-broadband-router--black-101761].
+Il existe ce qui semble être un clone, le fast-fwr171 qu'on peut acheter pour aussi peu que [[15$ plus shipping sur volumerates.com|http://www.volumerates.com/product/fast-fwr171-3g-pocketable-11n-150m-3g-mobile-wireless-broadband-router--black-101761].
 
 [[!img TL-WR703N_eth.jpg size="200x"]]
 
