@@ -197,3 +197,69 @@ The output:
     3G Router Start!                                                                
 
 Then the console goes silent and does not echo back what I type.
+
+Turning off the router, then holding the '4' key, I get:
+
+
+Please choose the operation:                                                    
+       1: Load system code to SDRAM via TFTP.                                       
+       2: Load system code then write to Flash via TFTP.                            
+       3: Boot system code via Flash (default).                                     
+       4: Entr boot command line interface.                                         
+       9: Load Boot Loader code then write to Flash via TFTP.                       
+                                                                                    
+    You choosed 4                                                                   
+                                                                                    
+     0                                                                              
+                                                                                    
+     eth_register                                                                   
+    Eth0 (10/100-M)                                                                 
+     enetvar=ethaddr,Eth addr:00:AA:BB:CC:DD:10                                     
+     00:AA:BB:CC:DD:10:                                                             
+                                                                                    
+     eth_current->name = Eth0 (10/100-M)                                            
+                                                                                    
+                                                                                    
+    4: System Enter Boot Command Line Interface.                                    
+                                                                                    
+    U-Boot 1.1.3 (Apr  7 2010 - 09:43:57)                                           
+                                                                                    
+     main_loop !!                                                                   
+                                                                                    
+     In main_loop !!                                                                
+                                                                                    
+                                                                                    
+                                                                                    
+     CONFIG_BOOTDELAY                                                               
+    ### main_loop entered: bootdelay=5                                              
+                                                                                    
+    ### main_loop: bootcmd="tftp"                                                   
+    RT3052 #                                    
+    RT3052 # help                                                                   
+    ?       - alias for 'help'                                                      
+    boot    - boot default, i.e., run 'bootcmd'                                     
+    bootd   - boot default, i.e., run 'bootcmd'                                     
+    bootm   - boot application image from memory                                    
+    bootp   - boot image via network using BootP/TFTP protocol                      
+    cp      - memory copy                                                           
+    echo    - echo args to console                                                  
+    erase   - erase FLASH memory                                                    
+    go      - start application at address 'addr'                                   
+    help    - print online help                                                     
+    loadb   - load binary file over serial line (kermit mode)                       
+    md      - memory display                                                        
+    mdio   - Ralink PHY register R/W command !!                                     
+    mm      - memory modify (auto-incrementing)                                     
+    mw      - memory write (fill)                                                   
+    nm      - memory modify (constant address)                                      
+    printenv- print environment variables                                           
+    protect - enable or disable FLASH write protection                              
+    reset   - Perform RESET of the CPU                                              
+    run     - run commands in an environment variable                               
+    saveenv - save environment variables to persistent storage                      
+    setenv  - set environment variables                                             
+    spicmd  - read/write data from/to eeprom or vtss                                
+    tftpboot- boot image via network using TFTP protocol                            
+    loopback   - Ralink eth loopback test !!                                        
+    version - print monitor version                                                 
+    RT3052 # 
