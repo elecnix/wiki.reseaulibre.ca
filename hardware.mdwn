@@ -129,14 +129,9 @@ insert image naked
 
 ### TP-Link TL-MR3420
 
-Same as above with 2 chain (more speed) and 40.77$ at directcanada
-Comes with 2 3dbi omni antennas
-It has a rp-sma connector for the antennas.
-Connectors are on a cable to the pcb so easy to relocate
+Same as above with 2 chain (more speed) and [[40.77$ at DirectCanada|http://www.directcanada.com/search/?kw=TL-MR3420]]. Comes with two 3dbi omni antennas, with RP-SMA connectors. Connectors are on a cable to the PCB, so they are easy to relocate.
 
-insert image naked
-
-<http://www.ferra.ru/images/298/298975.jpg>
+[[!img MR3420-inside.jpg size="400x"]]
 
 ## Unbranded XDX-RN502J
 
@@ -144,7 +139,7 @@ Semblable au TP-Link TL-MR3220, mais plus rapide, et basé sur le Ralink RT3052 
 
 [[!img XDX-RN502J.jpg size="200x"]]
 
-## Bococom
+## Bococom XDX-RN502R
 
 Petit frère du XDX-RN502J, le Bococom porte l'inscription XDX-RN502R, et fonctionne avec un Ralink RT3050 à une seule antenne, donc 150 mbit/s. On peut le trouver à 20,50$ l'unité en [[paquets de 10 sur aliexpress.com|http://www.aliexpress.com/product-fm/541496604-Portable-Mini-150M-802-11n-WiFi-Wireless-3G-Router-White-Color-UMTS-HSPA-EVDO-USB-modems-wholesalers.html]]. [[users/elecnix]] en a commandé un et va bientôt tenter de flasher avec OpenWRT. Voir la page [[Bococom-DWR150]] pour les détails.
 
