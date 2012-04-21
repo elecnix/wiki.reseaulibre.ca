@@ -114,3 +114,86 @@ http://www.bococom.com/product.asp?ProdNum=134&zid=200909221828087028825
 There is no software available for download for this router on the Brococom web site:
 
 http://www.bococom.com/download.asp?type=DWR150
+
+## Serial Console Boot
+
+I used an old cellphone serial communication cable to connect to the TTL-level serial port on the PCB and connected with minicom using these settings:
+
+ * 57600 8N1
+
+The output:
+
+    U-Boot 1.1.3 (Apr  7 2010 - 09:43:57)                                           
+                                                                                    
+    Board: Ralink APSoC DRAM:  32 MB                                                
+    relocate_code Pointer at: 81fac000                                              
+    ======= config usb otg =====                                                    
+    flash_protect ON: from 0xBF000000 to 0xBF0205C3                                 
+    protect on 0                                                                    
+    protect on 1                                                                    
+    protect on 2                                                                    
+    protect on 3                                                                    
+    protect on 4                                                                    
+    protect on 5
+    protect on 6                                                                    
+    protect on 7                                                                    
+    protect on 8                                                                    
+    protect on 9                                                                    
+    flash_protect ON: from 0xBF030000 to 0xBF03FFFF                                 
+    protect on 10                                                                   
+    *** Warning - bad CRC, using default environment                                
+                                                                                    
+    ============================================                                    
+    Ralink UBoot Version: 3.2                                                       
+    --------------------------------------------                                    
+    ASIC 3052_MP2 (Port5<->None)                                                    
+    DRAM COMPONENT: 256Mbits                                                        
+    DRAM BUS: 16BIT                                                                 
+    Total memory: 32 MBytes                                                         
+    Date:Apr  7 2010  Time:09:43:57                                                 
+    ============================================                                    
+    icache: sets:128, ways:4, linesz:32 ,total:16384                                
+    dcache: sets:128, ways:4, linesz:32 ,total:16384                                
+                                                                                    
+     ##### The CPU freq = 320 MHZ ####                                              
+                                                                                    
+    SDRAM bus set to 16 bit                                                         
+     SDRAM size =32 Mbytes                                                          
+                                                                                    
+    Please choose the operation:                                                    
+       1: Load system code to SDRAM via TFTP.                                       
+       2: Load system code then write to Flash via TFTP.                            
+       3: Boot system code via Flash (default).                                     
+       4: Entr boot command line interface.                                         
+       9: Load Boot Loader code then write to Flash via TFTP.                       
+                                                                                    
+    You choosed 3                                                                   
+                                                                                    
+     0                                                                              
+                                                                                    
+    3: System Boot system code via Flash.                                           
+    ## Booting image at bf050000 ...                                                
+       Image Name:   Linux Kernel Image                                             
+       Created:      2011-05-25   7:38:47 UTC                                       
+                                                                                    
+     System Control Status = 0x00400000                                             
+       Image Type:   MIPS Linux Kernel Image (lzma compressed)                      
+       Data Size:    3502016 Bytes =  3.3 MB                                        
+       Load Address: 80000000                                                       
+       Entry Point:  802d2000                                                       
+       Verifying Checksum ... OK                                                    
+       Uncompressing Kernel Image ... OK                                            
+    No initrd                                                                       
+    ## Transferring control to Linux (at address 802d2000) ...                      
+    ## Giving linux memsize in MB, 32                                               
+                                                                                    
+    Starting kernel ...                                                             
+                                                                                    
+                                                                                    
+    LINUX started...                                                                
+                                                                                    
+     THIS IS ASIC                                                                   
+                                                                                    
+    3G Router Start!                                                                
+
+Then the console goes silent and does not echo back what I type.
