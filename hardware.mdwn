@@ -281,6 +281,10 @@ this cable is not flexible at all and can only accept N connectors size.
 * The Fun cube dongle can be useful for debugging
 * [[The mesh guide from Battelmesh v4|http://battlemesh.org/BattleMeshV4/MeshGuide]]
 
+## Drones
+
+Il est prévu que certains noeuds du mesh seront déployés sur des drones, au-dessus des zones qui ont une faible couverture par antennes fixes. Deux drones vont se relayer, pour recharger tout à tour leur batteries. Des tests sont à faire pour déterminer si les drones devront cesser de voler en cas de pluie.
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
