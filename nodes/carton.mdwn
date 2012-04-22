@@ -1,7 +1,7 @@
 Test node for [[anarcat]], may be deployed below [[boulette]] to provide access to the local community.
 
  * MAC address: 00:1C:10:22:02:AE
- * IP address: 192.168.3.99
+ * IP address: 172.16.1.1
  * IPv6 address: fd64:2c08:9fa7:1::2/64 [!] not operational yet
  * Software: OpenWRT trunk
  * Hardware: Links WRT54G
