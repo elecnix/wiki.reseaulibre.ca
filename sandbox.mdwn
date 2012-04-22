@@ -1,4 +1,24 @@
 This is the SandBox, a page anyone can edit to learn how to use the wiki.
+
+# field template tests
+
+---
+title: Foo does not work
+Urgency: High
+Status: Assigned
+AssignedTo: Fred Nurk
+Version: 1.2.3
+---
+
+title
+: {{$title}}
+
+version
+: {{$Version}}
+
+
+# graph tests
+
 [[!graph  src="a -> b -> c; a -> c;"]]
 
 [[!graph  src=""""
