@@ -1,0 +1,35 @@
+[[!waypoint lat="45.5275" lon="-73.5904" embed hidden width="400px" height="400px" right desc="Local Access Point"]]
+
+[[!ymlfront data="""
+MAC: N/A
+IP: 172.16.1.11
+IPv6: N/A
+"""]]
+
+Point d'acces prevu pour redistribuer le mesh localement.
+
+Details:
+
+ * hostname: spoked-AP
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
+ * IPv6 address: {{$IPv6}}
+ * Software: OpenWRT + batman-adv
+ * Hardware: TP-Link MR3220
+ * Power:
+ * Location:45.5275,-73.5904
+ * Status: [[!taglink planned]]
+ * Links: 
+ * Azimuth:
+ * Panorama:
+ * Operator: [[users/spoked]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
