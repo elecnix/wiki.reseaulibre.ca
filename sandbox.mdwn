@@ -4,7 +4,7 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
 <table>
 <tr><th>#</th><th>hostname</th><th>IP</th><th>IPv6</th><th>MAC</th></tr>
-[[!report pages="nodes/*" template="iptable" headers="Known nodes IPs"]]
+[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="iptable" headers="Known nodes IPs"]]
 </table>
 
 # field template tests
