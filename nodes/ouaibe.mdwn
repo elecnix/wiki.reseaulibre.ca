@@ -1,9 +1,15 @@
 [[!waypoint lat="45.535894" lon="-73.620778" embed hidden width="400px" height="400px" right desc="A node in a window"]]
 
+[[!ymlfront data="""
+MAC: 00:15:6D:70:37:26
+IP: 172.16.1.2
+IPv6: n/a
+"""]]
+
  * Hostname: mesh-mtl2
- * MAC address: 00:15:6D:70:37:26
- * IP address: 172.16.1.2
- * IPv6 address:
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
+ * IPv6 address: {{$IPv6}}
  * Software: [[OpenWRT + BATMAN|http://mesh.openisp.ca/guides/openwrt+batman/]]
  * Hardware: UBNT Nanostation M2
  * Power: 27dBm
