@@ -2,7 +2,9 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
 # report plugin test
 
+<table>
 [[!report pages="nodes/*" template="iptable" headers="Known nodes IPs"]]
+</table>
 
 # field template tests
 
