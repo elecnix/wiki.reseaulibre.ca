@@ -2,10 +2,11 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
 # field template tests
 
----
+--YAML--
 IP: 1.2.3.4
 hostname: baz
----
+--YAML--
+
 
 hostname
 : {{$hostname}}
