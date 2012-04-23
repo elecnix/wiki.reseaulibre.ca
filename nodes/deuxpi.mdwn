@@ -3,7 +3,7 @@
 [[!ymlfront data="""
 MAC: 00:27:22:4E:16:B7
 IP: 172.16.1.7
-IPv6: fd64:2c08:9fa7:3::/64
+IPv6: fd64:2c08:9fa7:4::/64
 """]]
 
 À faire:
@@ -18,7 +18,7 @@ Détails:
 
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
- * IPv6 address: {{$IPV6}}
+ * IPv6 address: {{$IPv6}}
  * Software: AirOS
  * Hardware: NanoStation M2
  * Power: 30 dBm, 11 dBi (probablement trop)
