@@ -1,10 +1,17 @@
 [[!waypoint lat="45.5275" lon="-73.5904" embed hidden width="400px" height="400px" right desc="Plans for a node on my roof"]]
 
+
+[[!ymlfront data="""
+MAC: TBD
+IP: 172.16.0.9
+IPv6: fd64:2c08:9fa7:9::/64
+"""]]
+
 Placeholder for a rooftop node. Need confirmation with friend this will be possible.
 
- * MAC address:
- * IP address:
- * IPv6 address:
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
+ * IPv6 address: {{$IPv6}}
  * Software:
  * Hardware:
  * Power:
