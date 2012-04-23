@@ -3,7 +3,7 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 # report plugin test
 
 <table>
-<th><td>#</td><td>hostname</td><td>IP</td><td>IPv6</td><td>MAC</td></th>
+<tr><th>#</th><th>hostname</th><th>IP</th><th>IPv6</th><th>MAC</th></tr>
 [[!report pages="nodes/*" template="iptable" headers="Known nodes IPs"]]
 </table>
 
