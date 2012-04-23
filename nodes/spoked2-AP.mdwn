@@ -3,7 +3,7 @@
 [[!ymlfront data="""
 MAC: N/A
 IP: 172.16.1.11
-IPv6: N/A
+IPv6: fd64:2c08:9fa7:11::2/64
 """]]
 
 Point d'acces prevu pour redistribuer le mesh localement.
