@@ -1,5 +1,9 @@
 This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
+# report plugin test
+
+[[!report pages="nodes/*" template="iptable.tmpl"]]
+
 # field template tests
 
 --YAML--
