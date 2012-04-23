@@ -1,6 +1,6 @@
-[[!waypoint lat="45.52486" lon="-73.58349" embed hidden width="400px" height="400px" right desc="À venir sur mon toit"]]
+[[!waypoint lat="45.52486" lon="-73.58349" embed hidden width="400px" height="400px" right desc="Très bientôt dans ma fenêtre!"]]
 
-Bientôt en ligne et bientôt déménagée.
+En ligne le prochain jour de soleil!
 
  * MAC address:
  * IP address: 172.16.0.15
