@@ -4,7 +4,7 @@
 
     MAC: TBD
     IP: 172.16.0.8
-    IPv6: fd64:2c08:9fa7:1::8/64
+    IPv6: fd64:2c08:9fa7:8::/64
 
 ---
 
@@ -27,9 +27,10 @@ A faire:
 
 Details:
 
- * MAC address:
- * IP address:
- * IPv6 address:
+ * hostname: spoked
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
+ * IPv6 address: {{$IPv6}}
  * Software: OpenWRT + batman-adv
  * Hardware: Ubiquiti Bullet M2HP + omni 15dbi
  * Power:
