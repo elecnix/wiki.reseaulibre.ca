@@ -1,23 +1,56 @@
 [[!waypoint lat="45.542470" lon="-73.623229" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 
-Mat d'antenne de 30 pieds sur le toit d'un triplex (~55pieds au dessus du niveau de la rue)
 
- * MAC address: 00:15:6D:DB:D3:DC
- * IP address: 192.168.3.91
- * IPv6 address:
- * Software: OpenWRT backfire
- * Hardware: Bullet M2
- * Power:
- * Location: 45.542470, -73.623229
- * Status: [[!taglink up]] since April 6, 2012
- * Links:  [[ouaibe]]
- * Azimuth: Omnidirectional
- * Panorama: http://farm8.staticflickr.com/7191/6906062724_4f6f4c1bfd_o.jpg
- * Operator: [[users/benoitg]]
 
-## Panorama
+[[!ymlfront data="""
+MAC: 00:15:6D:DB:D3:DC
+IP: 172.16.0.4
+IPv6: 
+"""]]
 
-[[!img 6906062724_4f6f4c1bfd_o.jpg size="950x"]]
+hostname
+: benoitg
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+
+Software
+: OpenWRT backfire
+
+Hardware
+: Ubiquity Bullet M2 + 15 dBi Hyperlink Tech
+   omnidirectional antenna
+
+Power
+: 15dBm/28mW (default)
+
+Location
+: Mat d'antenne de 30 pieds sur le toit d'un triplex (~55pieds au dessus du niveau de la rue)
+
+Azimuth
+: 360°
+
+Panorama
+: [[!img 6906062724_4f6f4c1bfd_o.jpg size="950x"]]
+
+Status
+: [[!taglink up]] since April 6, 2012
+
+Operator
+: [[users/benoitg]]
+
+Links
+: [[ouaibe]]
+
+This node runs batman according to the [[configuration/batman]] howto.
+
 
 ## Liens possibles
 
