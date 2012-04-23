@@ -13,6 +13,15 @@ IPv6: fd64:2c08:9fa7:1::/64
 hostname
 : boulette
 
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
 Software
 : OpenWRT backfire
 
