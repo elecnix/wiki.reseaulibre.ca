@@ -2,14 +2,10 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
 # field template tests
 
-[[!ymlfront]]
-
-[[!ymlfront  data="""
-
+---
  IP: 1.2.3.4
  hostname: baz
-
- """]]
+---
 
 hostname
 : {{$hostname}}
