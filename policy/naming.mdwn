@@ -12,4 +12,13 @@ Il y a eu une proposition de renommer le réseau, voir la page de [[discussion]]
 Noms de domaines (DNS)
 ======================
 
-à clarifier.
+Le DNS sur le mesh est décentralisé, c'est à dire qu'il n'y a pas de serveur DNS central. Les opérateurs sont libres d'opérer des serveurs DNS sur le réseau et les annoncer ici.
+
+Serveurs DNS connus:
+
+ * [[nodes/roadkiller]] - {{$roadkiller#IP}} / {{$roadkiller#IPv6}}
+
+Noms des nodes
+==============
+
+Les opérateurs doivent enregistrer leurs nodes sur le wiki, dans la page [[nodes]]. Il est recommandé de suivre les conventions de nommage habituelles, par exemple [[!rfc 1178]]. Mais vu que le mesh est décentralisé, la seule restriction véritable est de ne pas réutiliser le nom d'un node existant, c'est à dire que le nom du node doit être unique.
