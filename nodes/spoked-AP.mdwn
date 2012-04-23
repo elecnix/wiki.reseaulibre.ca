@@ -1,4 +1,4 @@
-[[!waypoint lat="45.5352" lon="-73.584" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.5352" lon="-73.584" embed hidden width="400px" height="400px" right desc="Local Access Point"]]
 
 [[!ymlfront data="""
 MAC: N/A
