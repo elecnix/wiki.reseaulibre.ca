@@ -11,7 +11,7 @@ This section documents the strategy and the addresses already allocated. To conf
 
 <table>
 <tr><th>#</th><th>hostname</th><th>IP</th><th>IPv6</th><th>MAC</th></tr>
-[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="iptable" headers="Known nodes IPs"]]
+[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="iptable"]]
 </table>
 
 ## IPv4
