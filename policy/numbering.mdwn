@@ -3,7 +3,7 @@
 IP addresses are allocated on a first come first serve basis. We
 strongly encourage clever use of IPv6 to avoid starvation.
 
-This section documents the strategy and the addresses already allocated. To configure your device, see the next section, but please update the information below when you allocate yourself an IP.
+This section documents the strategy and the addresses already allocated. To configure your device, see the next section, but please update your node page when you allocate yourself an IP.
 
 ## New! Dynamic table of IP addresses
 
@@ -45,8 +45,6 @@ your window, using `172.16.1.X/24` for now (like [[nodes/carton]]).
 > only used informally during the
 > [[first setup|meetings/2012-04-06-antenna-party]]. See also the
 > [[discussion]] page for a rationale.
-  
-> (!) Note: the table on the right is manually maintained and may fall out of sync with the data in [[nodes]]. We are looking forward towards [support for aggregating definition lists in ikiwiki](http://ikiwiki.info/todo/internal_definition_list_support/) (and if people are interested on working on this it would be great), but in the meantime this is error-prone...
 
 ## IPv6
 
