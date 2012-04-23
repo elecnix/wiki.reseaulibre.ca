@@ -8,9 +8,6 @@ Test node for [[anarcat]], may be deployed below [[boulette]] to provide access 
 
 ---
 
- * MAC address: {{$MAC}}
- * IPv6 address: {{$IPv6}}
- * IP address: {{$IP}}
  * Software: OpenWRT trunk
  * Hardware: Links WRT54G
  * Power: N/A
