@@ -6,6 +6,9 @@ IP: 172.16.1.1
 IPv6: fd64:2c08:9fa7:1::2/64
 """]]
 
+ * MAC address: {{$MAC}}
+ * IPv6 address: {{$IPv6}}
+ * IP address: {{$IP}}
  * Software: OpenWRT trunk
  * Hardware: Links WRT54G
  * Power: N/A
