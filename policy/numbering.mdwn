@@ -14,7 +14,6 @@ This section documents the strategy and the addresses already allocated. To conf
 [[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="iptable" headers="Known nodes IPs"]]
 </table>
 
-
 ## IPv4
 
 [[!table class="pagecloud" data="""
