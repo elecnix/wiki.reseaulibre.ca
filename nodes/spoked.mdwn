@@ -1,12 +1,10 @@
 [[!waypoint lat="45.5352" lon="-73.584" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 
----
-
-    MAC: TBD
-    IP: 172.16.0.8
-    IPv6: fd64:2c08:9fa7:8::/64
-
----
+[[!ymlfront data="""
+MAC: TBD
+IP: 172.16.0.8
+IPv6: fd64:2c08:9fa7:8::/64
+"""]]
 
 Node planifiee pour ce printemps. Acces au toit, le range devrait etre bon si je peux monter une pole au dessus des arbres...
 
