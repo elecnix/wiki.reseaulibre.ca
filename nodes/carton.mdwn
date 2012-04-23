@@ -2,9 +2,9 @@ Test node for [[anarcat]], may be deployed below [[boulette]] to provide access 
 
 ---
 
-MAC: 00:1C:10:22:02:AE
-IP: 172.16.1.1
-IPv6: fd64:2c08:9fa7:1::2/64
+    MAC: 00:1C:10:22:02:AE
+    IP: 172.16.1.1
+    IPv6: fd64:2c08:9fa7:1::2/64
 
 ---
 
