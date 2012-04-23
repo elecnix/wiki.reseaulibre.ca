@@ -3,8 +3,8 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 # field template tests
 
 ---
- IP: 1.2.3.4
- hostname: baz
+IP: 1.2.3.4
+hostname: baz
 ---
 
 hostname
