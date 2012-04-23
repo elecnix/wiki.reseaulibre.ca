@@ -10,6 +10,9 @@ IPv6:
 - 2001:1928:1:9::1
 """]]
 
+ * MAC address: {{$MAC}}
+ * IPv6 address: {{$IPv6}}
+ * IP address: {{$IP}}
  * Software: FreeBSD 8.2
  * Hardware: Soekris
  * Power: N/A
