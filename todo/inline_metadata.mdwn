@@ -1,3 +1,5 @@
 So we have now made clever use of the `report` plugin to aggregate metadata from different pages, but it's still not enough.
 
 We would like metadata to be displayed properly without having to copy it around. We believe the right way to do this is to [parse definition lists metadata in ikiwiki](http://ikiwiki.info/todo/internal_definition_list_support/). It shouldn't be too complicated...
+
+(!) Nevermind that, we can just use the --- delimiters and indented code. --[[anarcat]]
