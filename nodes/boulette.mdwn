@@ -8,7 +8,7 @@
 MAC address: 00:15:6d:da:d3:65
 IP address: 172.16.0.2
 IPv6 address: fd64:2c08:9fa7:0:215:6dff:fedb:d365/64
-"""]
+"""]]
 
 hostname
 : boulette
