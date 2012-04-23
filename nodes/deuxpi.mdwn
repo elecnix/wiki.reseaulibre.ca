@@ -1,8 +1,14 @@
 [[!waypoint lat="45.469037" lon="-73.567387" embed hidden width="400px" height="400px" right desc="Sous les panneaux solaires"]]
 
+[[!ymlfront data="""
+MAC: 00:27:22:4E:16:B7
+IP: 172.16.1.7
+IPv6: fd64:2c08:9fa7:3::/64
+"""]]
+
 À faire:
 
- * Déterminer une IPv4, IPv6 pour le mesh
+ * <s>Déterminer une IPv4, IPv6 pour le mesh</s>
  * Réaligner l'antenne pour optimiser le signal vers [[nodes/bgm]] et [[nodes/scientist]]
  * Vérifier de la nécessité de AirMax/TDMA, sinon installer OpenWrt
  * Installer BATMAN sur le point d'accès
@@ -10,15 +16,15 @@
 
 Détails:
 
- * MAC address: 00:27:22:4E:16:B7
- * IP address:
- * IPv6 address:
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
+ * IPv6 address: {{$IPV6}}
  * Software: AirOS
  * Hardware: NanoStation M2
  * Power: 30 dBm, 11 dBi (probablement trop)
  * Location: Verdun, coin LaSalle et Rushbrooke
- * Status: [[!taglink planned]]
- * Links:
+ * Status: [[!taglink down]]
+ * Links: [[nodes/scientist]] (down) [[nodes/bgm]] (down)
  * Azimuth: Ouest-sud-ouest
  * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]]
  * Operator: [[users/deuxpi]]
