@@ -2,9 +2,10 @@ This is my home router, which is not directly part of the mesh other than being 
 
 [[!ymlfront data="""
 MAC: N/A
-IP: `72.0.72.144`, `172.16.0.1`
-IPv6: `2001:1928:1:9::`, `fd64:2c08:9fa7::1`
+IP: 172.16.0.1
+IPv6: fd64:2c08:9fa7::1
 """]]
+
  * Software: FreeBSD 8.2
  * Hardware: Soekris
  * Power: N/A
