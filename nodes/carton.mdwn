@@ -1,10 +1,12 @@
 Test node for [[anarcat]], may be deployed below [[boulette]] to provide access to the local community.
 
-[[!ymlfront data="""
+---
+
 MAC: 00:1C:10:22:02:AE
 IP: 172.16.1.1
 IPv6: fd64:2c08:9fa7:1::2/64
-"""]]
+
+---
 
  * MAC address: {{$MAC}}
  * IPv6 address: {{$IPv6}}
