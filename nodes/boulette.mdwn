@@ -4,16 +4,23 @@
 
 # Technical details
 
-----
-
-    MAC: 00:15:6d:da:d3:65
-    IP: 172.16.0.2
-    IPv6: fd64:2c08:9fa7:1::/64
-
-----
+[[!ymlfront data="""
+MAC: 00:15:6d:da:d3:65
+IP: 172.16.0.2
+IPv6: fd64:2c08:9fa7:1::/64
+"""]]
 
 hostname
 : boulette
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
 
 Software
 : OpenWRT backfire
