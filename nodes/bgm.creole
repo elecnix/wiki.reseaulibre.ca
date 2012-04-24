@@ -1,5 +1,7 @@
 [[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Node dans ma fenêtre au 3e étage."]]
 
+# Détails techniques
+
 [[!ymlfront data="""
 MAC: 00:15:6D:72:94:2F
 IP: 172.16.1.42
