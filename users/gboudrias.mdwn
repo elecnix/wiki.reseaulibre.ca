@@ -1,3 +1,19 @@
 Programmeur, philosophe, pacifiste, poète.
 
 https://wiki.koumbit.net/GuillaumeBoudrias
+
+# My nodes
+
+Here is the list of nodes I operate.
+
+## Operational nodes
+
+[[!map pages="link(.) and nodes/* and tagged(up)"]]
+
+## Planned nodes
+
+[[!map pages="link(.) and nodes/* and tagged(planned)"]]
+
+## Nodes in maintenance
+
+[[!map pages="link(.) and nodes/* and tagged(down)"]]
