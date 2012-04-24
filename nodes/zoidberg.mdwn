@@ -1,6 +1,4 @@
-[[!waypoint lat="45.52486" lon="-73.58349" embed hidden width="400px" height="400px" right desc="Très bientôt dans ma fenêtre!"]]
-
-En ligne le prochain jour de soleil!
+[[!waypoint lat="45.52486" lon="-73.58349" embed hidden width="400px" height="400px" right desc="Un node dans dans ma fenêtre!"]]
 
  * MAC address:
  * IP address: 172.16.0.15
@@ -9,7 +7,7 @@ En ligne le prochain jour de soleil!
  * Hardware: NanoStation M2
  * Power:
  * Location: 45.52486, -73.58349
- * Status: [[!taglink planned]]
+ * Status: [[!taglink up]]
  * Links: 
  * Azimuth: Nord-Nord-Est
  * Panorama:
