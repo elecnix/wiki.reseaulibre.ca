@@ -119,6 +119,8 @@ http://www.bococom.com/download.asp?type=DWR150
 
 I used an old [[Siemens IP-40 cellphone serial communication cable|http://pinouts.ru/CellularPhones-P-W/siemens_c55_pinout.shtml]] to connect to the TTL-level serial port on the PCB, inspired by the [[unbricking of a TP-Link MR3420|https://forum.openwrt.org/viewtopic.php?pid=158464]] and connected to the Bococom with minicom on Linux with the `57600 8N1` settings. Here's the output:
 
+### Booting the Original Firmware
+
     U-Boot 1.1.3 (Apr  7 2010 - 09:43:57)                                           
                                                                                     
     Board: Ralink APSoC DRAM:  32 MB                                                
@@ -194,6 +196,8 @@ I used an old [[Siemens IP-40 cellphone serial communication cable|http://pinout
 
 Then the console goes silent and does not echo back what I type.
 
+### Boot command-line interface
+
 Turning off the router, then holding the '4' key, I get:
 
 
@@ -231,6 +235,39 @@ Turning off the router, then holding the '4' key, I get:
                                                                                     
     ### main_loop: bootcmd="tftp"                                                   
     RT3052 #                                    
+
+### Environment Variables
+
+
+    RT3052 # printenv                                                               
+    bootcmd=tftp                                                                    
+    bootdelay=5                                                                     
+    baudrate=57600                                                                  
+    ethaddr="00:AA:BB:CC:DD:10"                                                     
+    ipaddr=10.10.10.123                                                             
+    serverip=10.10.10.3                                                             
+    preboot=echo;echo                                                               
+    ramargs=setenv bootargs root=/dev/ram rw                                        
+    addip=setenv bootargs $(bootargs) ip=$(ipaddr):$(serverip):$(gatewayip):$(netmaf
+    addmisc=setenv bootargs $(bootargs) console=ttyS0,$(baudrate) ethaddr=$(ethaddr1
+    flash_self=run ramargs addip addmisc;bootm $(kernel_addr) $(ramdisk_addr)       
+    kernel_addr=BFC40000                                                            
+    u-boot=u-boot.bin                                                               
+    load=tftp 8A100000 $(u-boot)                                                    
+    u_b=protect off 1:0-1;era 1:0-1;cp.b 8A100000 BC400000 $(filesize)              
+    loadfs=tftp 8A100000 root.cramfs                                                
+    u_fs=era bc540000 bc83ffff;cp.b 8A100000 BC540000 $(filesize)                   
+    test_tftp=tftp 8A100000 root.cramfs;run test_tftp                               
+    stdin=serial                                                                    
+    stdout=serial                                                                   
+    stderr=serial                                                                   
+    ethact=Eth0 (10/100-M)                                                          
+                                                                                    
+    Environment size: 783/65532 bytes                                               
+    RT3052
+
+### Command-line Help
+
     RT3052 # help                                                                   
     ?       - alias for 'help'                                                      
     boot    - boot default, i.e., run 'bootcmd'                                     
@@ -260,29 +297,164 @@ Turning off the router, then holding the '4' key, I get:
     version - print monitor version                                                 
     RT3052 # 
 
-    RT3052 # printenv                                                               
-    bootcmd=tftp                                                                    
-    bootdelay=5                                                                     
-    baudrate=57600                                                                  
-    ethaddr="00:AA:BB:CC:DD:10"                                                     
-    ipaddr=10.10.10.123                                                             
-    serverip=10.10.10.3                                                             
-    preboot=echo;echo                                                               
-    ramargs=setenv bootargs root=/dev/ram rw                                        
-    addip=setenv bootargs $(bootargs) ip=$(ipaddr):$(serverip):$(gatewayip):$(netmaf
-    addmisc=setenv bootargs $(bootargs) console=ttyS0,$(baudrate) ethaddr=$(ethaddr1
-    flash_self=run ramargs addip addmisc;bootm $(kernel_addr) $(ramdisk_addr)       
-    kernel_addr=BFC40000                                                            
-    u-boot=u-boot.bin                                                               
-    load=tftp 8A100000 $(u-boot)                                                    
-    u_b=protect off 1:0-1;era 1:0-1;cp.b 8A100000 BC400000 $(filesize)              
-    loadfs=tftp 8A100000 root.cramfs                                                
-    u_fs=era bc540000 bc83ffff;cp.b 8A100000 BC540000 $(filesize)                   
-    test_tftp=tftp 8A100000 root.cramfs;run test_tftp                               
-    stdin=serial                                                                    
-    stdout=serial                                                                   
-    stderr=serial                                                                   
-    ethact=Eth0 (10/100-M)                                                          
-                                                                                    
-    Environment size: 783/65532 bytes                                               
-    RT3052
+#### help bootm
+
+    RT3052 # help bootm
+    bootm [addr [arg ...]]
+        - boot application image stored in memory
+            passing arguments 'arg ...'; when booting a Linux kernel,
+            'arg' can be the address of an initrd image
+#### help bootd
+
+    RT3052 # help bootd
+    bootd - No help available.
+
+#### help bootp
+
+    RT3052 # help bootp
+    bootp [loadAddress] [bootfilename]
+
+#### help cp
+
+    RT3052 # help cp
+    cp [.b, .w, .l] source target count
+        - copy memory
+
+#### help echo
+
+    RT3052 # help echo
+    echo [args..]
+        - echo args to console; \c suppresses newline
+
+#### help erase
+
+    RT3052 # help erase
+    erase start end
+        - erase FLASH from addr 'start' to addr 'end'
+    erase N:SF[-SL]
+        - erase sectors SF-SL in FLASH bank # N
+    erase bank N
+        - erase FLASH bank # N
+    erase all
+        - erase all FLASH banks
+    erase linux
+        - erase linux kernel block
+
+#### help go
+
+    RT3052 # help go
+    go addr [arg ...]
+        - start application at address 'addr'
+          passing 'arg' as arguments
+
+#### help loadb
+
+    RT3052 # help loadb
+    loadb [ off ] [ baud ]
+        - load binary file over serial line with offset 'off' and baudrate 'baud'
+
+#### help md
+
+    RT3052 # help md
+    md [.b, .w, .l] address [# of objects]
+        - memory display
+
+#### help mdio
+
+    RT3052 # help mdio
+    mdio mdio.r [phy_addr(dec)] [reg_addr(dec)] 
+    mdio.w [phy_addr(dec)] [reg_addr(dec)] [data(HEX)] 
+    mdio.anoff GMAC1 Force link status enable !!  
+    mdio.anon GMAC1 Force link status disable !!  
+    mdio.wb [phy register(dec)] [bit offset(Dec)] [Value(0/1)]  
+
+#### help mm
+
+    RT3052 # help mm
+    mm [.b, .w, .l] address
+        - memory modify, auto increment address
+
+#### help mw
+
+    RT3052 # help mw
+    mw [.b, .w, .l] address value [count]
+        - write memory
+
+#### help nm
+
+    RT3052 # help nm
+    nm [.b, .w, .l] address
+        - memory modify, read and keep address
+
+#### help printenv
+
+    RT3052 # help printenv 
+    printenv 
+        - print values of all environment variables
+    printenv name ...
+        - print value of environment variable 'name'
+
+#### help protect
+
+    RT3052 # help protect
+    protect on  start end
+        - protect FLASH from addr 'start' to addr 'end'
+    protect on  N:SF[-SL]
+        - protect sectors SF-SL in FLASH bank # N
+    protect on  bank N
+        - protect FLASH bank # N
+    protect on  all
+        - protect all FLASH banks
+    protect off start end
+        - make FLASH from addr 'start' to addr 'end' writable
+    protect off N:SF[-SL]
+        - make sectors SF-SL writable in FLASH bank # N
+    protect off bank N
+        - make FLASH bank # N writable
+    protect off all
+        - make all FLASH banks writable
+
+#### help reset
+
+    RT3052 # help reset
+    reset - No help available.
+
+#### help run
+
+    RT3052 # help run
+    run var [...]
+        - run the commands in the environment variable(s) 'var'
+
+#### help saveenv
+
+    RT3052 # help saveenv
+    saveenv - No help available.
+
+#### help setenv
+
+    RT3052 # help setenv
+    setenv name value ...
+        - set environment variable 'name' to 'value ...'
+    setenv name
+        - delete environment variable 'name'
+
+#### help spicmd
+
+    RT3052 # help spicmd
+    spicmd spicmd usage:
+      spicmd eeprom read [address]
+      spicmd eeprom write [size] [address] [value]
+      spicmd eeprom dump
+      spicmd vtss read [block] [sub-block] [address]
+      spicmd vtss write [block] [sub-block] [address] [value]
+        NOTE: size is 1, 2, 4 bytes only, address and value are in hex
+
+#### help tftpboot
+
+    RT3052 # help tftpboot 
+    tftpboot [loadAddress] [bootfilename]
+
+#### help version
+
+    RT3052 # help version
+    version - No help available
