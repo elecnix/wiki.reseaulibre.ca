@@ -238,6 +238,8 @@ Turning off the router, then holding the '4' key, I get:
     ### main_loop: bootcmd="tftp"                                                   
     RT3052 #                                    
 
+You may also press the Reset button while powering the router, and you will get 5 seconds to pick an option from the menu.
+
 ## Environment Variables
 
 
