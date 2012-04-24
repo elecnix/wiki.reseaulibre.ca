@@ -6,9 +6,46 @@ IP: 172.16.1.42
 IPv6: fd64:2c08:9fa7:42::1
 """]]
 
- * Status: [[!taglink up]]
- * Operator: [[users/bgm]]
- * Links: [[nodes/deuxpi]] (expérimental)
+hostname
+: homs
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: AirOS
+
+Hardware
+: Ubiquity NanoStation M2
+
+Power
+: 28dBm
+
+Location
+: dans une fenêtre au 3e étage
+
+Azimuth
+: 120°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[users/bgm]]
+
+Links
+: [[deuxpi]]
+
+Temporairement configuré avec AirOS en mode station-client pour tester la connexion et orienter les antennes.
 
 = Services =
 
