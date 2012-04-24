@@ -1,0 +1,26 @@
+[[!waypoint lat="45.52486" lon="-73.58349" embed hidden width="400px" height="400px" right desc="Très bientôt dans ma fenêtre!"]]
+
+En ligne le prochain jour de soleil!
+
+ * MAC address:
+ * IP address: 172.16.0.15
+ * IPv6 address:
+ * Software:
+ * Hardware: NanoStation M2
+ * Power:
+ * Location: 45.52486, -73.58349
+ * Status: [[!taglink planned]]
+ * Links: 
+ * Azimuth: Nord-Nord-Est
+ * Panorama:
+ * Operator: [[users/gboudrias]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
