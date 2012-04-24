@@ -9,7 +9,7 @@ IPv6: Not yet
 """]]
 
 hostname
-: boulette
+: zoidberg
 
 MAC address
 : {{$MAC}}
