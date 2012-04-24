@@ -17,6 +17,9 @@ MAC address
 IPv6 address
 : {{$IPv6}}
 
+Link-local IPv6 address
+: fe80::215:6dff:fe72:942f
+
 IP address
 : {{$IP}}
 
