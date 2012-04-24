@@ -550,3 +550,19 @@ Here is the output when booting with option 1, with image from http://necromant.
     NET: Registered protocol family 17
     802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
     All bugs added by David S. Miller <davem@redhat.com>
+[...]
+
+    jffs2_scan_eraseblock(): Magic bitmask 0x1985 not found at 0x00290020: 0x4f10 instead
+    jffs2_scan_eraseblock(): Magic bitmask 0x1985 not found at 0x00290024: 0x0781 instead
+    Further such events for this erase block will not be printed
+    Cowardly refusing to erase blocks on filesystem with no valid JFFS2 nodes
+    empty_blocks 2, bad_blocks 0, c->nr_blocks 44
+    VFS: Cannot open root device "(null)" or unknown-block(31,4)
+    Please append a correct "root=" boot option; here are the available partitions:
+    1f00             192 mtdblock0  (driver?)
+    1f01              64 mtdblock1  (driver?)
+    1f02              64 mtdblock2  (driver?)
+    1f03             960 mtdblock3  (driver?)
+    1f04            2816 mtdblock4  (driver?)
+    1f05            3776 mtdblock5  (driver?)
+    Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(31,4)
