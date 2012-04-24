@@ -1,17 +1,53 @@
 [[!waypoint lat="45.52486" lon="-73.58349" embed hidden width="400px" height="400px" right desc="Un node dans dans ma fenêtre!"]]
 
- * MAC address:
- * IP address: 172.16.0.15
- * IPv6 address:
- * Software:
- * Hardware: NanoStation M2
- * Power:
- * Location: 45.52486, -73.58349
- * Status: [[!taglink up]]
- * Links: 
- * Azimuth: Nord-Nord-Est
- * Panorama:
- * Operator: [[users/gboudrias]]
+# Technical details
+
+[[!ymlfront data="""
+MAC: TBD
+IP: 172.16.0.15
+IPv6: Not yet
+"""]]
+
+hostname
+: boulette
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk (I think)
+
+Hardware
+: Nanostation M2
+
+Power
+: default
+
+Location
+: Dans ma fenêtre.
+
+Azimuth
+: 60° nord-nord-est
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[users/gboudrias]]
+
+Links
+: None yet :(
+
+This node runs batman according to the [[configuration/batman]] howto.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
