@@ -1,41 +1,15 @@
-[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Deux nodes chez moi."]]
+[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Node dans ma fenêtre au 3e étage."]]
 
-Topologie réseau chez bgm.
-
- * Réseau interne IPv4: 192.168.42.0/24
- * Réseau interne IPv6: 2001:470:b1e2::/48
+[[!ymlfront data="""
+MAC: 00:15:6D:72:94:2F
+IP: 172.16.1.42
+IPv6: fd64:2c08:9fa7:42::1
+"""]]
 
  * Status: [[!taglink up]]
  * Operator: [[users/bgm]]
+ * Links: [[nodes/deuxpi]] (expérimental)
 
+= Services =
 
-= m2-nord.net4.bidon.ca =
-
- * hostname: m2-nord.net4.bidon.ca
- * MAC address: 00:15:6D:70:37:EA
- * IPv4 address: 192.168.50.1
- * IPv6 address: 2001:470:b1e2:50::1
- * Software: OpenWRT backfire
- * Hardware: NanoStation M2
- * Power: N/A
- * Location: 45.465676,-73.572185
- * Azimuth: nord-ouest
- * Panorama: N/A
-
-= m2-sud.net4.bidon.ca =
-
- * hostname: m2-sud.net4.bidon.ca
- * MAC address: 00:15:6D:72:94:2F
- * IPv4 address: 192.168.51.1
- * IPv6 address: 2001:470:b1e2:51::1
- * Software: OpenWRT backfire
- * Hardware: NanoStation M2
- * Power: N/A
- * Location: 45.465676,-73.572185
- * Azimuth: sud-est
- * Panorama: N/A
-
-= Tests =
-
- * J'expérimente avec batman-adv (http://www.open-mesh.org/wiki/open-mesh/UserDocs) pour créer un réseau mesh
- * Sinon le reste du temps les antennes fonctionnent en mode AP normal et ont un écran captif (nodogsplash) pour informer les gens des services disponibles. Seul le traffic IPv6 est routé vers Internet (http://partage.bidon.ca).
+ * Point d'accès "Librenet-m2" qui permet de se connecter à http://partage.bidon.ca en IPv6.
