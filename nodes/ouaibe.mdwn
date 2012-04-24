@@ -6,7 +6,7 @@ IP: 172.16.1.2
 IPv6: n/a
 """]]
 
- * Hostname: mesh-mtl2
+ * Hostname: Mesh Montreal
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
