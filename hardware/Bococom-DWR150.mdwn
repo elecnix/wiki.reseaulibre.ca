@@ -252,9 +252,9 @@ You may also press the Reset button while powering the router, and you will get 
     serverip=10.10.10.3                                                             
     preboot=echo;echo                                                               
     ramargs=setenv bootargs root=/dev/ram rw                                        
-    addip=setenv bootargs $(bootargs) ip=$(ipaddr):$(serverip):$(gatewayip):$(netmaf
-    addmisc=setenv bootargs $(bootargs) console=ttyS0,$(baudrate) ethaddr=$(ethaddr1
-    flash_self=run ramargs addip addmisc;bootm $(kernel_addr) $(ramdisk_addr)       
+    addip=setenv bootargs $(bootargs) ip=$(ipaddr):$(serverip):$(gatewayip):$(netmask):$(hostname):$(netdev):off
+    addmisc=setenv bootargs $(bootargs) console=ttyS0,$(baudrate) ethaddr=$(ethaddr) panic=1
+    flash_self=run ramargs addip addmisc;bootm $(kernel_addr) $(ramdisk_addr)
     kernel_addr=BFC40000                                                            
     u-boot=u-boot.bin                                                               
     load=tftp 8A100000 $(u-boot)                                                    
