@@ -49,6 +49,6 @@ Links
 
 Temporairement configuré avec AirOS en mode station-client pour tester la connexion et orienter les antennes.
 
-= Services =
+# Services
 
  * Point d'accès "Librenet-m2" qui permet de se connecter à http://partage.bidon.ca en IPv6.
