@@ -16,7 +16,7 @@ IPv6: n/a
  * Location: 45.535894,-73.620778
  * Status: [[!taglink up]]
  * Links: [[nodes/benoitg]] (800 mètres)
- * Azimuth: North-North-West (ciblant/targetting Parc Jarry)
+ * Azimuth: North-North-West (ciblant/targeting Parc Jarry)
  * Panorama: 60°(H-pol) / 60° (V-pol) / 60° (Elevation) 
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
