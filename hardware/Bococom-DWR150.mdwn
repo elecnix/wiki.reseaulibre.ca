@@ -567,6 +567,17 @@ Here is the output when booting with option 1, with image from http://necromant.
     1f05            3776 mtdblock5  (driver?)
     Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(31,4)
 
+A custom build with ramdisk as the target image actually boots and gives a shell prompt.
+
+Type `make menuconfig` in the OpenWRT source, and pick:
+
+ * Target System: Ralink RT288x/RT3xxx
+ * Subtarget: RT305x based boards
+ * Target Profile Default Profile
+ * Target images: ramdisk
+
+You should also [[compile batman-adv|http://wiki.openwrt.org/inbox/mesh.batman]] too if you plan to use this for a mesh node.
+
 Original MTD flash backup:
 
     root@OpenWrt:/tmp# dd if=/dev/mtd0 of=/tmp/mtd0
@@ -588,3 +599,13 @@ Original MTD flash backup:
     root@OpenWrt:/tmp# dd if=/dev/mtd5 of=/tmp/mtd5
     7552+0 records in
     7552+0 records out
+
+# À faire
+
+ * Configurer l'image pour n'avoir qu'un seul eth0, pas deux: eth0.1 et eth0.2.
+ * Activer l'interface wifi par défaut
+ * Tester batman-adv
+ * Tester carte wifi USB
+ * Flash original firmware over itself using the web interface, for testing the web interface
+ * Flash custom OpenWRT image using the web interface, to allow flashing without soldering a serial port
+ * Document serial header pinout
