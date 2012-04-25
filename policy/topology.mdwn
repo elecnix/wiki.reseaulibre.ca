@@ -8,7 +8,7 @@ le wiki, et un autre niveau de nodes (les "AP"s) qui donnent accès internet gé
 
 Ceci pourrait avoir l'air de ceci dans le cas le plus simple:
 
-[[!graph type="graph" src="""
+[[!graph align="right" type="graph" src="""
 relaiA -- relaiB; relaiB -- relaiC; relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB;
 relaiA -- APh;
 relaiC -- APf; relaiC -- APg;
