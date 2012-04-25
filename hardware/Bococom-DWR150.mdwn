@@ -576,7 +576,9 @@ Type `make menuconfig` in the OpenWRT source, and pick:
  * Target Profile Default Profile
  * Target images: ramdisk
 
-You should also [[compile batman-adv|http://wiki.openwrt.org/inbox/mesh.batman]] too if you plan to use this for a mesh node.
+You should also [[compile batman-adv|http://wiki.openwrt.org/inbox/mesh.batman]] too if you plan to use this for a mesh node, and do not forget `debugfs`, which is used by `batctl`:
+
+ * Global build settings / Compile the kernel with Debug FileSystem enabled
 
 Original MTD flash backup:
 
