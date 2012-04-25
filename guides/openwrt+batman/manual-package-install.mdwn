@@ -16,7 +16,7 @@ Voici quelques exemples.
     cd /tmp
     touch /tmp/opkg.conf
     opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.15-1_brcm47xx.ipk \
-        http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.15+2012.0.0-1_brcm47xx.ipk
+        http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.15+2012.1.0-1_brcm47xx.ipk
 
 # Ubiquiti Bullet
 
