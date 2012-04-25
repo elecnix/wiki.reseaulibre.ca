@@ -1,4 +1,4 @@
-[[!waypoint lat="45.469037" lon="-73.567387" embed hidden width="400px" height="400px" right desc="Sous les panneaux solaires"]]
+[[!waypoint lat="45.46919" lon="-73.56716" embed hidden width="400px" height="400px" right desc="Sous les panneaux solaires"]]
 
 [[!ymlfront data="""
 MAC: 00:27:22:4E:16:B7
@@ -12,8 +12,9 @@ IPv6:
 
  * <s>Déterminer une IPv4, IPv6 pour le mesh</s>
  * Réaligner l'antenne pour optimiser le signal vers [[nodes/bgm]] et [[nodes/scientist]]
- * Vérifier de la nécessité de AirMax/TDMA, sinon installer OpenWrt
- * Installer BATMAN sur le point d'accès
+ * <s>Vérifier de la nécessité de AirMax/TDMA, sinon installer OpenWrt</s>
+ * <s>Installer BATMAN sur le point d'accès</s>
+ * Configurer la deuxième radio pour avoir un accès pour administration + IPv6
  * Profit?!!?
 
 Détails:
@@ -21,7 +22,7 @@ Détails:
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
- * Software: AirOS
+ * Software: OpenWRT (backfire)
  * Hardware: NanoStation M2
  * Power: 30 dBm, 11 dBi (probablement trop)
  * Location: Verdun, coin LaSalle et Rushbrooke
