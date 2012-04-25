@@ -566,3 +566,25 @@ Here is the output when booting with option 1, with image from http://necromant.
     1f04            2816 mtdblock4  (driver?)
     1f05            3776 mtdblock5  (driver?)
     Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(31,4)
+
+Original MTD flash backup:
+
+    root@OpenWrt:/tmp# dd if=/dev/mtd0 of=/tmp/mtd0
+    384+0 records in
+    384+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd1 of=/tmp/mtd1
+    128+0 records in
+    128+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd2 of=/tmp/mtd2
+    128+0 records in
+    128+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd3 of=/tmp/mtd3
+    1792+0 records in
+    1792+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd4 of=/tmp/mtd4
+    5760+0 records in
+    5760+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd5 of=/tmp/mtd4
+    root@OpenWrt:/tmp# dd if=/dev/mtd5 of=/tmp/mtd5
+    7552+0 records in
+    7552+0 records out
