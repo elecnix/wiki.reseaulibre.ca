@@ -52,4 +52,4 @@ Links
 
 This node runs batman according to the [[configuration/batman]] howto.
 
-[[!img nodes/boulette/20111101_004.jpg alt="Cheminée"]]
+[[!img nodes/boulette/20111101_004.jpg alt="Cheminée" align="right"]]
