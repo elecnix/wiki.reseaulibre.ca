@@ -1,5 +1,32 @@
-Une idée est d'avoir le réseau en deux niveaux: un niveau "global" où on a des "relais" interconnectés par BATMAN ou autre, mais qui est globalement routable et accessible seulement aux nodes documentés dans le wiki, et un autre niveau de nodes qui donnent accès internet général à n'importe qui qui a un ordinateur, sans configuration spéciale.
+Idée de politique à deux niveaux
+================================
+
+Une idée est d'avoir le réseau en deux niveaux: un niveau "global" où on
+a des "relais" interconnectés par BATMAN ou autre, mais qui est
+globalement routable et accessible seulement aux nodes documentés dans
+le wiki, et un autre niveau de nodes (les "AP"s) qui donnent accès internet général à n'importe qui qui a un ordinateur, sans configuration spéciale.
 
 Ceci pourrait avoir l'air de ceci dans le cas le plus simple:
 
-[[!graph type="graph" src="meshA -- meshB; meshB -- meshC; meshC -- meshA; meshC -- meshD; meshD -- meshB; meshD -- APe; meshC -- APf"]]
+[[!graph type="graph" src="relaiA -- relaiB; relaiB -- relaiC; relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB; relaiD -- APe; relaiC -- APf"]]
+
+On note que les nodes nommés `relai` sont toutes (ou presque)
+interconnectées, alors que les `AP` sont connectés seulement à un relai. 
+
+Différentes politiques...
+-------------------------
+
+Les relais doivent suivre la politique suivante:
+
+ * configuration mesh ([[configuration/batman]] ou
+   [[configuration/olsr]], selon le voisinage)
+ * assignation IP statique, selon [[numbering]]
+ * pas de serveur DHCP sur le mesh
+ * enregistrement sur le wiki, dans la section [[nodes]]
+ * respect de la [[policy]] générale
+
+Les APs, en plus de la politique ci-haut, peuvent offrir des services
+supplémentaires à leur clients (mais pas au mesh!!):
+
+ * serveur DHCP *local*
+ * allocation d'un bloc du mesh pour le DHCP local
