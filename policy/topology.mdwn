@@ -33,7 +33,7 @@ On voit, ci-contre, un exemple d'un mesh simple avec des relais qui roulent le m
 On note que les nodes nommés `relai` sont toutes (ou presque)
 interconnectées, alors que les `AP` sont connectés seulement à un relai. 
 
-Dans l'exemple ci-contre, on pourrait dire que [[nodes/boulette]] est comme `relaiA` et que [[nodes/carton]] est comme `APh`.
+Dans l'exemple ci-contre, on pourrait dire que [[nodes/boulette]] serait comme `relaiA`, [[nodes/carton]] serait  `APh` et [[nodes/benoitg]] serait `relaiB`, en date du 25 avril 2012.
 
 Différentes politiques...
 -------------------------
