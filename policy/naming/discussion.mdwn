@@ -14,6 +14,8 @@ Il semblerait y avoir 3 questions à résoudre:
 Nom du réseau = nom de domaine
 ------------------------------
 
+La question ici est *est-ce que le nom du réseau, le `ESSID`, doit être un nom de domaine fonctionnel ou doit-il être autre chose?*
+
 Arguments pour:
 
  * permet de faire connaître le réseau directement...
@@ -28,6 +30,8 @@ Arguments contre:
 
 Nom du réseau
 -------------
+
+La question ici, pertinente seulement si le nom du réseau n'est pas le nom de domaine, est *quel doit être le nom du réseau (`ESSID`)?*
 
 Guides pour choisir un bon ssid:
 
@@ -45,6 +49,12 @@ En plus des noms de domaines ci-bas, les réseaux suivants ont été proposés:
 
 Nom de domaines
 ---------------
+
+La question ici est *quel doit être le nom de domaine du projet?*
+
+À noter que les guides ci-haut sur le nom du réseau s'appliquent si le nom de domaine est le même que le nom du réseau!
+
+Voici les alternatives proposées durant la discussion:
 
  * mesh.openisp.ca (*statu quo*)
    * pour: va avec l'idée d'un fournisseur libre et non-commercial, déjà acheté et payé, nom déjà établi (depuis octobre 2011) dans google et autres, permet d'étendre le projet à d'autres villes au québec ou au canada
