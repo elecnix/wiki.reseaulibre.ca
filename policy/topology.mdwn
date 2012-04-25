@@ -1,3 +1,5 @@
-[[!graph type="graph" src="meshA -- meshB -- meshC -- meshA -- meshD -- meshB; meshD -- meshC; meshA -- APe; meshC -- APf"]]
+Une idée est d'avoir le réseau en deux niveaux: un niveau "global" où on a des "relais" interconnectés par BATMAN ou autre, mais qui est globalement routable et accessible seulement aux nodes documentés dans le wiki, et un autre niveau de nodes qui donnent accès internet général à n'importe qui qui a un ordinateur, sans configuration spéciale.
 
-[[!graph  type="digraph" src="a -> b; b-> c; c-> a; c-> d; d -> b; c -> e; d -> f"]]
+Ceci pourrait avoir l'air de ceci dans le cas le plus simple:
+
+[[!graph type="graph" src="meshA -- meshB; meshB -- meshC; meshC -- meshA; meshC -- meshD; meshD -- meshB; meshD -- APe; meshC -- APf"]]
