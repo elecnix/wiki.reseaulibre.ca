@@ -1,5 +1,68 @@
-Débat sur le changement du ESSID du mesh
-========================================
+[[!toc levels=2]]
+
+Débat sur le nom du projet
+==========================
+
+Il y a présentement un débat sur la mailing list au sujet du nom du réseau ad-hoc. Le email de départ est [ici](https://listes.koumbit.net/cgi-bin/mailman/private/nodes-lists.openisp.ca/2012-April/000166.html).
+
+Il semblerait y avoir 3 questions à résoudre:
+
+ 1. le nom du réseau (ESSID) doit-il être un nom de domaine
+ 2. si non, quel doit-être le nom du réseau?
+ 3. dans les deux cas, quel doit être le nom de domaine du projet (voire le nom du projet)
+
+Nom du réseau = nom de domaine
+------------------------------
+
+Arguments pour:
+
+ * permet de faire connaître le réseau directement...
+ * ... sans passer par Google, qui pourrait ne pas être accessible du mesh ;)
+ * ... et sans même avoir à se connecter au réseau!
+
+Arguments contre:
+
+ * un nom de domaine est un point de contrôle centralisé
+ * un nom de domaine n'est pas la même chose qu'un nom de réseau SSID
+ * les gens peuvent présumer qu'ils vont avoir accès à internet parce que c'est un nom de domaine
+
+Nom du réseau
+-------------
+
+Guides pour choisir un bon ssid:
+
+ * pas trop geek (e.g. pas "mesh-mtl")
+ * pas d'espace (e.g. pas "mesh montreal")
+ * parlant
+ * doit permettre plusieurs niveau pour la [[policy/topology]]
+
+En plus des noms de domaines ci-bas, les réseaux suivants ont été proposés:
+
+ * mesh-mtl (*statu quo*)
+ * Mesh Montreal
+ * Mesh-Montreal
+ * Wifi Mesh Montreal
+
+Nom de domaines
+---------------
+
+ * mesh.openisp.ca (*statu quo*)
+   * pour: va avec l'idée d'un fournisseur libre et non-commercial, déjà acheté et payé, nom déjà établi (depuis octobre 2011) dans google et autres, permet d'étendre le projet à d'autres villes au québec ou au canada
+   * contre: nébuleux, il faut payer?, en anglais
+ * mesh-mtl.org
+   * pour: facile à retenir
+   * contre: pas très parlant, obscur, gouvernance américaine
+ * mesh-mtl.com
+   * contre: gouvernance américaine
+ * yul-mesh.org
+   * pour: international
+ * mesh-montreal.org
+   * pour: compromis entre mesh-mtl et mesh montreal
+ * reseaucitoyen.ca
+   * pour: français, reflète bien la nature du réseau
+
+Sondage sur le changement du ESSID du mesh
+==========================================
 
 [[!table class="pagecloud" data="""
 option          | %     | votes
@@ -15,7 +78,7 @@ Wifi Mesh Montreal | 5.9% | 1
 Nombre de votants | 100% | 17
 """]]
 
-Il y a présentement un débat sur la mailing list au sujet du nom du réseau ad-hoc. Le email de départ est [ici](https://listes.koumbit.net/cgi-bin/mailman/private/nodes-lists.openisp.ca/2012-April/000166.html). Un sondage a été appelé sur la liste et est copié ici.
+Un sondage a été appelé sur la liste et est copié ici.
 
 À la question "Quel nom devrait-on utiliser pour le réseau mesh Ad-Hoc de Montréal?" les gens ont répondu sur [surveymonkey](http://www.surveymonkey.com/s/7Z2SHT2):
 
