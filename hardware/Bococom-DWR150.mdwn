@@ -605,9 +605,6 @@ Original MTD flash backup:
 # À faire
 
  * Configurer l'image pour n'avoir qu'un seul eth0, pas deux: eth0.1 et eth0.2.
- * Activer l'interface wifi par défaut
- * Tester batman-adv
-  * Comprendre pourquoi `batctl ping some-host` gives "Error - can't mount or find debugfs"
  * Tester carte wifi USB
  * Flash original firmware over itself using the web interface, for testing the web interface
  * Flash custom OpenWRT image using the web interface, to allow flashing without soldering a serial port
