@@ -1,4 +1,4 @@
-[[!waypoint  lat="45.4717" lon="-73.570640" embed hidden width="400px" height="400px" right desc="A node"]]
+[[!waypoint  lat="45.4717" lon="-73.570040" embed hidden width="400px" height="400px" right desc="A node"]]
 
 Noeud de test pointant vers mon jardin
 
