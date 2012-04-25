@@ -22,6 +22,8 @@ Les inquiétudes suivantes ont été soulevées:
  * un système de vote adéquat est une infrastructure difficile à établir
  * un système qui force des rencontres physiques va être difficile à supporter
  * un système de vote à majorité n'assure pas que la minorité va accepter la décision et risque la balkanisation du projet
+ * un système de vote n'est pas nécessairement fondamentalement valide. Pour prendre un exemple extrême: "Un vote par internet d'une personne X qui s'occuppe de loin au projet et n'a jamais édité le wiki devrait-il être équivalent au vote d'une personne qui maintient, par exemple, 6 nodes?". Un peut être fondamentalement inéquitable.
+ * le dialogue est fondamental et un système de vote peut être "abusé" pour éviter le dialogue.
 
 Quelques points fondamentaux qui semblent faire consensus:
 
