@@ -187,3 +187,15 @@ nombre possibles;
 6. l'équipement accessoire doit être installé à l'intérieur d'un bâtiment ou, s'il est installé
 dans un abri, cet abri doit être aussi peu apparent que possible sur un toit, dans une
 cour ou sur un terrain non bâti et son architecture doit s'intégrer au milieu.
+
+## Verdun
+Source: [[http://www1.ville.montreal.qc.ca/banque311/content/verdun-antennes-de-radio-ou-de-t%C3%A9l%C3%A9vision]]
+Aucun permis n'est exigé pour l'installation d'une antenne de radio ou de télévision, mais l'installation doit être conforme aux normes édictées au Règlement de zonage (1700).
+
+Quantité
+Une seule antenne servant à la réception des signaux de radio ou de télévision est autorisée et une seule antenne de type bande publique (citizen's band ou CB) et radio amateur pour l'émission de signaux est autorisée par terrain.
+
+Installation
+• l'antenne doit être installée sur la partie ou la moitié arrière du toit d'un bâtiment principal
+• la hauteur maximale de l'antenne est de cinq mètres
+• l'antenne doit être érigée sur un support approprié sur le toit et ayant la résistance requise
