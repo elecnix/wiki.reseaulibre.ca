@@ -71,6 +71,31 @@ Voici les alternatives proposées durant la discussion:
  * reseaucitoyen.ca
    * pour: français, reflète bien la nature du réseau
 
+--------
+Notes supplémentaires:
+
+> À bien y repenser, je trouve l'idée d'un nom qui peut s'étendre très bonne (donc ne doit pas contenir le nom de Montréal).  J'argumente pour qqc de pas geek, qui accroche, pique la curiosité (?), sonne bien (genre 2 syllabes max)  -- genb (aka tahini)
+
+Brainstorm
+----------
+
+Ici, on peut entrer les noms qui nous passent par la tête, même si ce n'est pas satisfaisant, au moins, ça peut inspirer d'autres personnes à trouver d'autres noms plus intéressants.
+
+  * L'autre réseau  
+    * pour: on se positionne comme réseau alternatif, ça sonne bien
+    * contre: bof...
+  * L'autréseau
+    * contre: ça fait l'aut' journal
+  * Réseau LOCA (Libre Ouvert Communautaire Alternatif)
+    * Ou toute autre permutation de ces lettres ou autres lettres, etc
+  * Librenet
+    * http://www.librenet.net/ est déjà le réseau des serveurs irc
+  * Réseau libre
+  * Voisinet
+    * Proposé à la blague sur irc, c'est un brainstorming!
+
+
+
 Sondage sur le changement du ESSID du mesh
 ==========================================
 
