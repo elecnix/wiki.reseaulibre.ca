@@ -8,7 +8,12 @@ le wiki, et un autre niveau de nodes (les "AP"s) qui donnent accès internet gé
 
 Ceci pourrait avoir l'air de ceci dans le cas le plus simple:
 
-[[!graph type="graph" src="relaiA -- relaiB; relaiB -- relaiC; relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB; relaiD -- APe; relaiC -- APf"]]
+[[!graph type="graph" src="""
+relaiA -- relaiB; relaiB -- relaiC; relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB;
+relaiD -- APe; relaiC -- APf;
+APe -- client1; APe -- client2; APe -- client3;
+APf -- client4; APf -- client5
+"""]]
 
 On note que les nodes nommés `relai` sont toutes (ou presque)
 interconnectées, alors que les `AP` sont connectés seulement à un relai. 
@@ -29,4 +34,5 @@ Les APs, en plus de la politique ci-haut, peuvent offrir des services
 supplémentaires à leur clients (mais pas au mesh!!):
 
  * serveur DHCP *local*
- * allocation d'un bloc du mesh pour le DHCP local
+ * allocation d'un bloc d'IPv6 du mesh pour le réseau local, donc globalement routable dans le mesh, sinon:
+ * utilisation d'un bloc privé [[!rfc 1918]] pour le IPv4 local (suggestion: `192.168.3.x/24`), donc non globalement routable dans le mesh, donc NAT
