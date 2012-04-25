@@ -1,3 +1,3 @@
-[[!graph type="graph" src="meshA -- meshb -- meshc -- mesha -- meshd -- meshb; meshd -- meshc; mesha -- APe; meshc -- APf"]]
+[[!graph type="graph" src="meshA -- meshB -- meshC -- meshA -- meshD -- meshB; meshD -- meshC; meshA -- APe; meshC -- APf"]]
 
 [[!graph  type="digraph" src="a -> b; b-> c; c-> a; c-> d; d -> b; c -> e; d -> f"]]
