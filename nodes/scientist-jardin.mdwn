@@ -1,0 +1,19 @@
+[[!waypoint  lat="45.4717" lon="-73.570628" embed hidden width="400px" height="400px" right desc="A node"]]
+
+Noeud de test pointant vers mon jardin
+
+Noeud point vers l'est, présentement au premier étage. Surtout utile pour faire des tests à partir de la ruelle. Pourrait être monter au 2e étage si besoin. 
+
+
+ * MAC address: 00:12:17:d9:0f:7b
+ * IP address: 176.16.1.7
+ * IPv6 address:
+ * Software: Openwrt Trunk (2012-04-24) 
+ * Hardware: Linksys WRT54G (v2.2)
+ * Power:
+ * Location:
+ * Status: [[!taglink up]]
+ * Links: 
+ * Azimuth:
+ * Panorama:
+ * Operator: [[users/scientist]]
