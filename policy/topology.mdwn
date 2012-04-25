@@ -1,10 +1,20 @@
 [[!graph class="align-right" type="graph" prog="neato" src="""
-relaiA -- relaiB; relaiB -- relaiC; relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB;
+subgraph mesh {
+    node [color="#EE9911"];
+    label="Relay layer";
+    relaiA -- relaiB -- relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB
+}
+subgraph AP {
+    node [color="#887733"];
 relaiA -- APh;
 relaiC -- APf; relaiC -- APg;
 relaiD -- APe;
-APe -- client1; APe -- client2; APe -- client3;
-APf -- client4; APf -- client5
+}
+subgraph clients {
+    node [color="#775544"];
+    APe -- client1; APe -- client2; APe -- client3;
+    APf -- client4; APf -- client5
+}
 """]]
 
 Idée de politique à deux niveaux
