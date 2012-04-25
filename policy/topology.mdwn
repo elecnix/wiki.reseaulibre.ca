@@ -43,7 +43,7 @@ Différentes politiques...
 Les relais doivent suivre la politique suivante:
 
  * configuration mesh ([[configuration/batman]] ou
-   [[configuration/olsr]], selon le voisinage)
+   [[configuration/olsrd]], selon le voisinage)
  * assignation IP statique, selon [[numbering]]
  * pas de serveur DHCP sur le mesh
  * enregistrement sur le wiki, dans la section [[nodes]]
