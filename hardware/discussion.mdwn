@@ -1,0 +1,6 @@
+A propos du XDX-RN502J, est-ce que c'est pas un peu de mauvaise foi de dire: "Semblable au TP-Link TL-MR3220, mais plus rapide" alors que,
+
+1. En terme de clockrate, le Atheros est plus rapide que le Ralink (400MHz vs 384MHz)
+2. Le MR-3220 n'a qu'une seule antenne, le XDX-RN502J, deux. On peut aussi bien le comparer au MR-3420, qui a 2 antennes et fait du MIMO 2x2, donc a le meme potentiel de bande passante (300Mbps)
+
+Je suggere: "Semblable au TP-Link TL-MR3420, mais base sur Ralink..."
