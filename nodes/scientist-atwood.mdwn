@@ -1,0 +1,18 @@
+
+[[!ymlfront data="""
+MAC: 00:24:d7:73:ac:70
+IP: 172.16.1.14
+"""]]
+
+Mon laptop
+
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
+ * IPv6 address:
+ * Software: Debian sid
+ * Hardware: Lenovo Thinkpad
+
+ * Location: Où je suis
+ * Status: [[!taglink up]]
+
+ * Operator: [[users/scientist]]
