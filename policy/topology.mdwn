@@ -17,6 +17,7 @@ subgraph clients {
     APe -- client1; APe -- client2; APe -- client3;
     APf -- client4; APf -- client5
 }
+bgcolor="#EEEEEE";
 """]]
 
 Idée de politique à deux niveaux
