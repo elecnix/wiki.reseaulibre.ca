@@ -1,4 +1,5 @@
-[[!graph class="align-right" type="graph" prog="neato" src="""
+<div class="align-right">
+[[!graph type="graph" prog="neato" src="""
 subgraph mesh {
     node [color="#EE9911"];
     label="Relay layer";
@@ -19,6 +20,7 @@ subgraph clients {
 }
 bgcolor="#EEEEEE";
 """]]
+</div>
 
 Idée de politique à deux niveaux
 ================================
