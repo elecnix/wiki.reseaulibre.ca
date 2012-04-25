@@ -10,13 +10,17 @@ Ceci pourrait avoir l'air de ceci dans le cas le plus simple:
 
 [[!graph type="graph" src="""
 relaiA -- relaiB; relaiB -- relaiC; relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB;
-relaiD -- APe; relaiC -- APf;
+relaiA -- APh;
+relaiC -- APf; relaiC -- APg;
+relaiD -- APe;
 APe -- client1; APe -- client2; APe -- client3;
 APf -- client4; APf -- client5
 """]]
 
 On note que les nodes nommés `relai` sont toutes (ou presque)
 interconnectées, alors que les `AP` sont connectés seulement à un relai. 
+
+Dans l'exemple ci-haut, on pourrait dire que [[nodes/boulette]] est comme `relaiA` et que [[nodes/carton]] est comme `APh`.
 
 Différentes politiques...
 -------------------------
