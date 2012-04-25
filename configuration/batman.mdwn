@@ -24,7 +24,7 @@ Pour installer batman-adv:
     opkg update
     opkg install kmod-batman-adv
 
-> (!) Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire). Il faut trouver l'URL du paquet et faire quelque chose comme ceci pour un Linksys WRT54g:
+> (!) Si l'installation cause problème (prend trop de temps, donne erreur de mémoire insuffisante), alors il faut télécharger "à la main" le paquet et sa dépendance (kmod-lib-crc16 dans trunk et kmod-crc16 dans backfire). Il faut trouver l'URL du paquet et faire quelque chose comme ceci pour un Linksys WRT54g: (Les URLs de cet exemple ne sont plus valide, voir la page [[guides/openwrt+batman/manual-package-install]] pour une version plus à jour.)
 
         cd /tmp
         touch /tmp/opkg.conf
