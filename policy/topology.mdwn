@@ -1,6 +1,3 @@
-Idée de politique à deux niveaux
-================================
-
 [[!graph class="align-right" type="graph" src="""
 relaiA -- relaiB; relaiB -- relaiC; relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB;
 relaiA -- APh;
@@ -9,6 +6,9 @@ relaiD -- APe;
 APe -- client1; APe -- client2; APe -- client3;
 APf -- client4; APf -- client5
 """]]
+
+Idée de politique à deux niveaux
+================================
 
 Une idée est d'avoir le réseau en deux niveaux: un niveau "global" où on
 a des "relais" interconnectés par BATMAN ou autre, mais qui est
