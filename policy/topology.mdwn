@@ -1,4 +1,4 @@
-[[!graph class="align-right" type="graph" src="""
+[[!graph class="align-right" type="graph" prog="neato" src="""
 relaiA -- relaiB; relaiB -- relaiC; relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB;
 relaiA -- APh;
 relaiC -- APf; relaiC -- APg;
@@ -15,7 +15,7 @@ a des "relais" interconnectés par BATMAN ou autre, mais qui est
 globalement routable et accessible seulement aux nodes documentés dans
 le wiki, et un autre niveau de nodes (les "AP"s) qui donnent accès internet général à n'importe qui qui a un ordinateur, sans configuration spéciale.
 
-Ceci pourrait avoir l'air de ceci dans le cas le plus simple:
+On voit, ci-contre, un exemple d'un mesh simple avec des relais qui roulent le mesh (BATMAN, par exemple), des APs qui sont connectés au relais (pas nécessairement en mesh) et des clients connectés aux APs, nécessairement sans mesh.
 
 On note que les nodes nommés `relai` sont toutes (ou presque)
 interconnectées, alors que les `AP` sont connectés seulement à un relai. 
