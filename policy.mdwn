@@ -3,7 +3,7 @@ Usage policy
 
 Ces politiques d'utilisation n'ont pas été formellement adoptées et sont des recommendations. Cependant, on s'attend généralement à ce que ces principes soient respectés.
 
-[[Freifunk|http://www.funkfeuer.at/PicoPeeringAgreement.59.0.html?&L=1]] uses the [[Picopeer agreement|http://www.picopeer.net/]], which involve basically:
+ uses the , which involve basically:
 
  1. Free Transit
  2. Open Communication
@@ -20,4 +20,4 @@ On s'attend à ce que les nodes qui joignent le réseau respectent ces conventio
 
  * [[numbering]] - comment les addresses IPs sont allouées dans le mesh, liste des IPs allouées
  * [[naming]] - comment les réseaux, machines et services sont nommés dans le mesh
- * [[topology]] - l'architecture générale du réseau ([[todo|todo/network_topology]])
+ * [[policy/topology]] - l'architecture générale du réseau ([[todo|todo/network_topology]])
