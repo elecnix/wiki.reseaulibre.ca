@@ -13,7 +13,7 @@ IPv6: fd64:2c08:9fa7:42::1
  * IPv6 address: {{$IPv6}}
  * Link-local IPv6 address: fe80::215:6dff:fe72:942f (wlan0), fe80::215:6dff:fe73:942f (eth0), fe80::21b:21ff:fe40:3aab (carte réseau sur mon routeur principal / serveur de fichiers)
  * IP address: {{$IP}}
- * Software: AirOS (temporaire)
+ * Software: OpenWRT Backfire
  * Hardware: Ubiquity NanoStation M2
  * Power: 28dBm
  * Location: dans une fenêtre au 3e étage
