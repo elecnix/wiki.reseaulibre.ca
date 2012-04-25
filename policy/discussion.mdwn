@@ -1,0 +1,34 @@
+Débat sur le mode de décision du projet
+=======================================
+
+Durant la [[policy/naming/discussion]] sur le nom du réseau, il est apparu évident que nous n'avions pas de processus clair pour prendre des décisions. Ceci a, paradoxalement, amené à un débat sur comment prendre des décisions. :)
+
+Ceci se veut un résumé des différentes positions:
+
+ * on doit chercher le consensus, n'importe qui peut bloquer une décision ce qui force une discussion
+ * une décision peut être prise après une proposition explicitement envoyée sur la liste et un délai (48h? 7 jours?)
+ * si quelqu'un bloque la décision avant le délai écoulé, le *statu quo* reste et la décision doit être amenée en réunion
+  * alternative: si quelqu'un bloque, on passe on vote à majorité simple, 2/3 ou 90%
+  * si la majorité nécessaire n'est pas atteinte, on fait un deuxième tour en éliminant la proposition avec le  moins de votes, on permet les amendements et on revote
+    * alternative: si la majorité n'est pas atteinte, on demeure avec le *statu quo*
+
+Les inquiétudes suivantes ont été soulevées:
+
+ * une minorité pourrait bloquer les décisions et forcer le *statu quo*
+ * le membership de "l'organisation" n'est pas clairement défini
+   * si c'est la liste, seuls les admins de la liste ont accès à la liste des membres
+   * alternative: les proportions sont calculées sur les votes exprimés
+ * le sondage n'était pas un vote et a été précipité
+ * un système de vote adéquat est une infrastructure difficile à établir
+ * un système qui force des rencontres physiques va être difficile à supporter
+ * un système de vote à majorité n'assure pas que la minorité va accepter la décision et risque la balkanisation du projet
+
+Quelques points fondamentaux qui semblent faire consensus:
+
+ * tout système ne pourra probablement pas résoudre des questions sur lesquelles le groupe est divisé dès qu'il franchit une certaine masse critique
+   * on pense avoir déjà franchi cette masse critique
+ * un sondage n'est pas un mode de décision
+ * il faut avoir le temps de discuter des grandes questions
+ * beaucoup de décisions techniques peuvent se prendre sans objection
+
+Le statu quo semble être que *une décision peut être prise sur la liste de discussion en amenant une proposition non-controversée et en attendant un certain délai indéterminé. le résultat est indéterminé s'il y a une objection (*statu quo *ou la proposition est reportée à une rencontre en personne?)*.
