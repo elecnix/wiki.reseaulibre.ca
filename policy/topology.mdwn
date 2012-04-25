@@ -2,7 +2,9 @@
 subgraph mesh {
     node [color="#EE9911"];
     label="Relay layer";
-    relaiA -- relaiB -- relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB
+    relaiA -- relaiB;
+    relaiB -- relaiC [len=2]; /* push those appart otherwise they collapse */
+    relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB;
 }
 subgraph AP {
     node [color="#887733"];
