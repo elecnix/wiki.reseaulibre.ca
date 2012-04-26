@@ -121,7 +121,11 @@ http://www.bococom.com/download.asp?type=DWR150
 
 # Serial Console Boot
 
-I used an old [[Siemens IP-40 cellphone serial communication cable|http://pinouts.ru/CellularPhones-P-W/siemens_c55_pinout.shtml]] to connect to the TTL-level serial port on the PCB, inspired by the [[unbricking of a TP-Link MR3420|https://forum.openwrt.org/viewtopic.php?pid=158464]] and connected to the Bococom with minicom on Linux with the `57600 8N1` settings. Here's the output:
+I used an old [[Siemens IP-40 cellphone serial communication cable|http://pinouts.ru/CellularPhones-P-W/siemens_c55_pinout.shtml]] to connect to the TTL-level serial port on the PCB, inspired by the [[unbricking of a TP-Link MR3420|https://forum.openwrt.org/viewtopic.php?pid=158464]] and connected to the Bococom with minicom on Linux with the `57600 8N1` settings.
+
+[[!img bococom-serial.jpg]]
+
+Here's the output:
 
 ## Booting the Original Firmware
 
