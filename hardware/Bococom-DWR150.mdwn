@@ -14,6 +14,8 @@ This is a small router with a single antenna, with the front and back covered wi
 
 [[!img RT-3GWT_2.jpg size="300x"]]
 
+[[!img bococom-bare.jpg]]
+
 More pictures: http://www.flickr.com/photos/elecnix/sets/72157629696033799
 
 # Specifications
