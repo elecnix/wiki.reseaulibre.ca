@@ -604,6 +604,8 @@ Original MTD flash backup:
     7552+0 records in
     7552+0 records out
 
+I'm asking for help on the OpenWRT forum: https://forum.openwrt.org/viewtopic.php?pid=165814
+
 # À faire
 
  * Configurer l'image pour n'avoir qu'un seul eth0, pas deux: eth0.1 et eth0.2.
