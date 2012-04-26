@@ -85,7 +85,7 @@ Suivre ensuite la configuration manuelle ci-bas.
 
 ## Arch linux
 
-On besoin de l'[[AUR | https://aur.archlinux.org/]]
+On besoin de l'[[AUR |https://aur.archlinux.org/]]  (pour des instructions pour l'installation d'un AUR, voir [[https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages]])
 
     # modprobe batman_adv
     $ yaourt -S batctl
