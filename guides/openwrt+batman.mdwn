@@ -30,6 +30,10 @@ Set the name of the router to the same you entered in the [[node database|nodes]
 
     uci set system.@system[0].hostname=ti-noeud
 
+By default, OpenWRT will create a network bridge called 'lan', and it includes one of the wired ethernet ports. If you have only one port, this will be eth0, but it may be labeled WAN instead of LAN. For Linksys it's eth0.0, for Ubiquity it's eth0. Look at the output of ifconfig to see what's the eth0 interface. To set which interfaces should be part of the bridge, use something like `uci set network.lan.ifname="eth0"` (space-separated).
+
+(!) From now on, this guide assumes the 'lan' bridge includes the ethernet port you will use to manage the router.
+
 Configure the router's IP address by picking a free slot from the [[IP Allocation|policy/numbering]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/24 network:
 
     uci set network.lan.ipaddr=172.16.1.1
@@ -102,17 +106,9 @@ Configuration de l'interface de batman. We're not assigning an IP address to `ba
     uci set network.bat0.proto=none
     uci set network.bat0.mtu=1500
 
-The 'lan' bridge should include bat0 as well as eth0:
+Tell batman to use the wireless interface:
 
-    uci set network.lan.ifname="eth0 bat0"
-
-(!) The above may be eth0.0 instead of eth0. For linksys it's eth0.0,
-for ubiquity it's eth0. Look at the output of ifconfig to see what's
-the eth0 interface.
-
-Tell batman to use the wireless and the lan interfaces.
-
-    uci set batman-adv.bat0.interfaces="wlan0 br-lan"
+    uci set batman-adv.bat0.interfaces="wlan0"
 
 Optionally use our our [[bat-hosts|configuration/batman/bat-hosts]] file.
 
