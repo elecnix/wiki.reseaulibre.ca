@@ -1,5 +1,6 @@
 Those guides should help you getting started on some platforms.
 
+* [[Questions pour débuter|guides/debuter]] - Ce que ça prend pour se joindre au mesh autrement que comme utilisateur
 * [[guides/openwrt+batman]] - configuration d'un noeud BATMAN sur les OpenWRT
 * [[guides/ubnt-ad-hoc]] - configuration ad-hoc de base, sans mesh, sur une station Ubiquiti
 * [[guides/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
