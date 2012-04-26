@@ -1,0 +1,42 @@
+L'idée du mesh vous plaît et vous voulez vous joindre au groupe?  Voici les étapes à suivre pour ajouter un noeud au réseau.
+
+À tout moment, de l'aide est disponible sur la mailing list ou le canal irc.  Voir la page [[participer]] pour contacter les autres membres du réseau.
+
+Déterminer quoi offrir
+======================
+
+Voir la description de la [[topologie du réseau|policy/topology]] pour les détails de l'infrastructure.
+
+Relais
+------
+
+Un relais est un appareil configuré pour se connecter sur le mesh avec B.A.T.M.A.N., le protocole de mesh utilisé.  L'appareil, une fois bien configuré, devrait se connecter automatiquement aux autres relais disponibles aux alentours.  Même si aucun noeud n'est disponible, vous pouvez laisser votre relais en place.  Un jour, quelqu'un s'y connectera!
+
+L'appareil qui servira de relais devrait idéalement être dédié au mesh et ne pas servir de point d'accès, à moins d'avoir 2 radios, afin de ne pas ralentir le mesh.
+
+Pour participer au mesh, avoir un relais est obligatoire!
+
+
+Points d'accès
+--------------
+
+Un point d'accès est un appareil sur lequel les utilisateurs peuvent se connecter pour naviguer sur le mesh et/ou le web.  L'installation d'un point d'accès n'est pas obligatoire.  Il est possible d'opérer simplement un relais.
+
+
+Acheter le matériel
+===================
+
+Voir la page [[hardware]] pour des idées.  L'équipement à se procurer dépendra des besoins et du type d'installation (fenêtre ou toit)
+
+Configurer et installer le matériel
+===================================
+
+Voir la page des [[guides]] et la [[documentation]] pour plus d'infos
+
+*Peut-être faire des guides pour différents scénarios: relais+point d'accès sans internet, relais+point d'accès+internet*
+
+
+Ajouter le noeud à la liste
+===========================
+
+Ajouter son noeud à la [[page des nodes|nodes]] en suivant les instructions au bas de cette page.
