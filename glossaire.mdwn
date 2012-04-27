@@ -12,7 +12,7 @@ Voir aussi l'article de Wikipédia: [[!wikipedia adhoc]]
 
 # BATMAN
 
-Protocole/logiciel de [[glossaire#routing]] qui vise à remplacer [[glossaire#OLSR|OLSR]]. C'est un protocole de Layer 2 ("en-dessous" de IPv4/IPv6).
+Protocole/logiciel de [[glossaire#routing]] qui vise à remplacer [[glossaire#OLSR|OLSR]]. C'est un protocole de Layer 2 ("en-dessous" de IPv4/IPv6). Implémenter comme un module de noyau, batman-adv.
 
 Vise à décentraliser l'information sur les routes possibles des [[glossaire#packet|packets]].
 
@@ -20,7 +20,7 @@ Voir aussi [[configuration/batman]] et l'article de Wikipédia: [[!wikipedia B.A
 
 # Bullet
 
-Modèle de routeur sans fil auquel une antenne peut être ajouté. Voir [[Hardware]].
+Modèle de routeur sans fil fabriqué par Ubiquiti, auquel une antenne peut être directement connecté à l'aide d'un connecteur de type N. Alimenté par PoE, et compte un seul port ethernet, il n'est donc pas possible d'en brancher plusieurs en série. Voir [[Hardware]].
 
 # Flashing
 
@@ -84,7 +84,7 @@ La différence entre le mesh et l'Internet est qu'au lieu d'avoir 2 ou 3 fournis
 
 # Nanostation
 
-Modèle de routeur sans fil directionnel avec antenne intégrée. Voir [[Hardware]].
+Modèle de routeur sans fil fabriqué par Ubiquiti. Une antenne sectorielle de 60 degrés est intégrée. Voir [[Hardware]].
 
 # Node
 
@@ -118,8 +118,9 @@ Sélectionner le chemin à prendre dans un réseau. Dans notre cas, les [[glossa
 
 # TP-Link
 
-Type de routeur sans fil. Voir [[Hardware]].
+Manufacturier de routeur sans fil. Voir [[Hardware]].
 
 # Wi-Fi
 
-Sans fil (réseau).
+Technologie de communication sans fil (réseau). Différents protocoles sont standardisés sous l'appellation 802.11
+Généralement, on utilise des bandes sans license dans les fréquences 2.4 GHz et 5.8 GHz 
