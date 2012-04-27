@@ -1,3 +1,5 @@
+[[!toc]]
+
 Voici un résumé des concepts récurrents dans la [[documentation]] et les [[guides]] et durant les [[meetings|réunions]].
 
 # Access Point / Point d'accès:
