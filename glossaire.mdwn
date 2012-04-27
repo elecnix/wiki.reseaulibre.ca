@@ -1,0 +1,123 @@
+Voici un résumé des concepts récurrents dans la [[documentation]] et les [[guides]] et durant les [[meetings|réunions]].
+
+# Access Point / Point d'accès:
+
+Une machine physique, généralement un routeur sans fil. Strictement parlant, les nodes sont des access points, mais on utilise surtout l'acronyme pour désigner les routeurs connectés au mesh et qui permettent la connexion en mode infrastructure (voir plus bas).
+
+# Ad-Hoc (mode):
+
+Voir aussi l'article de Wikipédia: [[!wikipedia adhoc]]
+
+# BATMAN
+
+Protocole/logiciel de [[glossaire#routing]] qui vise à remplacer [[glossaire#OLSR|OLSR]]. C'est un protocole de Layer 2 ("en-dessous" de IPv4/IPv6).
+
+Vise à décentraliser l'information sur les routes possibles des [[glossaire#packet|packets]].
+
+Voir aussi [[configuration/batman]] et l'article de Wikipédia: [[!wikipedia B.A.T.M.A.N.]].
+
+# Bullet
+
+Modèle de routeur sans fil auquel une antenne peut être ajouté. Voir [[Hardware]].
+
+# Flashing
+
+Processus qui consiste à remplacer le logiciel (firmware) d'une machine informatique, dans notre cas des routeurs sans fil.
+
+# Infrastructure (mode):
+
+# Internet
+
+Voir aussi [[http://www.web1901.org/article105.html]] :
+
+> La plupart (mais pas tous) des services de l'Internet fonctionnent en mode client-serveur. Cela veut simplement dire qu'un des ordinateurs possède les informations, celles-ci sont stockées sur ses disques, et que l'autre va les lui demander. Le serveur est celui qui possède les informations. Il attend des clients et, comme ceux-ci peuvent arriver n'importe quand, le serveur est typiquement une machine allumée 24 heures sur 24. Le client est couramment votre machine de bureau : au moment où vous le décidez, votre ordinateur va aller chercher des informations sur le serveur. Notez que, dans le cas du web, une même machine serveuse peut héberger de très nombreux sites.
+
+Du point de vue du service, très peu d'utilisateurs sont aussi des fournisseurs de service (une des choses que le [[glossaire#Mesh|Mesh]] tente de résoudre).
+
+L'internet fonctionne actuellement majoritairement en [[IPv4]].
+
+# IP (protocole)
+
+Voir aussi l'article de Wikipédia: [[!wikipedia Internet_Protocol]]
+
+# IP (adresse)
+
+Adresse (virtuelle et artificielle) d'un ordinateur sur un réseau.
+
+# IPv4 (protocole)
+
+Version 4 du protocole IP. Utilise des adresses de 32 bits (4 [[!wikipedia bytes]]), exprimées sous forme d'entiers séparées de points.
+
+Exemples:
+
+* 172.16.0.1
+* 192.168.0.20
+* 127.0.0.1
+
+Les adresses IPv4 seront ammenées à manquer un jour. C'est pourquoi le monde prépare le changement vers [[glossaire#IPv6|IPv6]].
+
+Voir aussi l'article de Wikipédia: [[!wikipedia IPv4]]
+
+# IPv6
+
+Version 6 du protocole IP. Utilise des adresses de 128 bits (16 [[!wikipedia bytes]]), exprimées sous forme de chiffres hexadécimaux ([[!wikipedia base 16]]) séparés de ":". Les adresses IPv6 sont extrêmement abondantes comparées à IPv4 (parce qu'elles nécéssitent plus d'information à communiquer), et donc on suppose qu'on n'en manquera "jamais".
+
+Exemples:
+
+* 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+Voir aussi l'article de Wikipédia: [[!wikipedia IPv6]]
+
+# MAC (adresse) / MAC address
+
+Adresse physique, permanente du composant matérielle qui se connecte à un réseau (généralement une carte réseau). On assume qu'elle est unique au monde.
+
+NOTE: L'adresse MAC peut être virtuelle (simulée), mais on assume de toute façon qu'elle est unique au monde. Deux adresses virtuelles peuvent par contre entrer en conflit (c'est improbable).
+
+# Mesh
+
+Type de réseau (topologie) informatique dans lequel les hôtes sont connectés les uns aux autres, formant ainsi une structure en forme de filet ("mesh" en anglais).
+
+La différence entre le mesh et l'Internet est qu'au lieu d'avoir 2 ou 3 fournisseurs de service géants (Bell, Vidéotron, Rogers), sur le mesh chaque fournisseur (node) ne déssert qu'un mince partie du réseau (grâce à l'interconnexion), et les fournisseurs sont des gens (VS des entreprises). Il y a aussi des différences techniques qui visent la décentralisation du service (pour ne pas avoir de dépendance sur une ou deux personnes/entreprises).
+
+# Nanostation
+
+Modèle de routeur sans fil directionnel avec antenne intégrée. Voir [[Hardware]].
+
+# Node
+
+Une machine physique, généralement un routeur sans fil, qui se connecte aux autres nodes (aussi des routeurs sans fil). Le node peut aussi permettre à des usagers de se connecter au mesh sans être eux-mêmes des nodes (par exemple, des laptops), mais le mesh tend actuellement à avoir des points d'accès séparés pour cette utilisation. (Pour une question d'efficacité).
+
+Voir aussi [[nodes]]
+
+# OLSR / OLSRD
+
+Protocole de routing optimisé pour les réseaux mesh. Tend à être remplacé par [[glossaire#batman|BATMAN]]
+
+Voir aussi [[configuration/olsrd]].
+
+# Packet
+
+(Editme) Unitée de données qui sont transférées dans un réseau.
+
+Voir aussi l'article de Wikipédia: [[!wikipedia Network_Packet]]
+
+# Protocole
+
+Standard, consensus.
+
+# Routing / routage
+
+Sélectionner le chemin à prendre dans un réseau. Dans notre cas, les [[glossaire#packet|packets]] sont les entitées qui sont routés, et les protocoles tels que [[glossaire#batman|BATMAN]] et [[glossaire#OLSR|OLSR]] visent à optimiser le routing pour le cas relativement spécial d'un réseau mesh.
+
+# Subnet
+
+(Editme) Sous-section d'un réseau.
+
+# TP-Link
+
+Type de routeur sans fil. Voir [[Hardware]].
+
+# Wi-Fi
+
+Sans fil (réseau).
