@@ -14,7 +14,7 @@ Un noeud à l'extérieur de ma fenêtre, actuellement à puissance minimale vers
  * Azimuth: North-East
  * Panorama: N/A
  * Status: [[!taglink up]]
- * Operator: [[users/elecnix]]
+ * Operator: [[/users/elecnix]]
  * Links: [[besik]] ([[links/elecnix-besik/]])
 
 Autres liens possibles
