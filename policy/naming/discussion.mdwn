@@ -70,6 +70,7 @@ Voici les alternatives proposées durant la discussion:
    * pour: compromis entre mesh-mtl et mesh montreal
  * reseaucitoyen.ca
    * pour: français, reflète bien la nature du réseau
+ * reseaulibre.ca
 
 --------
 Notes supplémentaires:
