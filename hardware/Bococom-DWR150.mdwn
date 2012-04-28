@@ -7,6 +7,7 @@ The router is unbranded, but may has the following model names, depending on the
  * Portable Mini 150M 802.11n WiFi Wireless 3G Router, model C1291
  * TopLink RT-3GWT Wireless N Access Point 3G Travel Size Mobile Router
  * Bococom DWR-150
+ * CW-G3 (CDR-King)
 
 # Identification
 
