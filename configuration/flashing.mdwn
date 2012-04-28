@@ -43,7 +43,7 @@ Bullet M2
 
 Nanostation M2
 : [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin)
-: [trunk](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin)
+: [trunk](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
 
 # Flashing methods
 
