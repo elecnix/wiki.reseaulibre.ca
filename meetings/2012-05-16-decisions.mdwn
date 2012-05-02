@@ -18,5 +18,5 @@ Présentation de la réunion, de l'ordre du jour et des personnes présentes.
 Ordre du jour
 =============
 
- 1. modes de décision
- 2. différents noms de projets
+ 1. modes de décision ([discussion préalable](policy/discussion/))
+ 2. différents noms de projets ([discussion préalable](policy/naming/discussion))
