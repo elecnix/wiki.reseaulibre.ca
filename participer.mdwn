@@ -7,4 +7,5 @@ Mesh Montréal est un réseau ouvert.  Tout le monde peut s'impliquer et plus il
 * Ouvrir un point d'accès en suivant les [[guides d'introduction|guides]] ou les [[configurations avancés|configuration]].
 * Voir la liste des [[tâches à faire|Todo]].
 
-<!-- * **Prochaine rencontre**: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]] -->
+Prochaine rencontre!
+: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]]
