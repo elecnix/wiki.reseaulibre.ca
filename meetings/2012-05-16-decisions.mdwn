@@ -2,7 +2,7 @@ Meta
 ====
 
 Doodle
-: http://www.doodle.com/4mh5ghq2k572eb8k
+: <http://www.doodle.com/4mh5ghq2k572eb8k>
 
 Lieu
 : Foulab
