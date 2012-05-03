@@ -18,7 +18,9 @@ Le revendeur [[Converbit|http://www.converbit.ca/magasin/]] à Boucherville, Ric
 
 Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez directement pour faire une commande ils peuvent vous la charger en $CAN et tout le monde sauve au bout du compte (Paypal sont assez chers pour les taux de change). La vente d'AP est un ''side-business'' pour eux (l'addresse qui pointe à un magasin d'article de pèche/camping) mais le service est excellent: vous pouvez donner le nom de Pierre-david en référence et vous aurez du service VIP ;)
 
-/!\ note that flashing your Ubiquity device with OpenWRT or similar may mean a significant reduction in signal quality - rene suggests using a different firmware instead, he is working on a firmware based on AirOS.
+/!\ Note that flashing your Ubiquity device with OpenWRT or similar may mean a significant reduction in signal quality - rene suggests using a different firmware instead, he is working on a firmware based on AirOS.
+
+Il sera peut-être possible de compiler batman-adv pour AirOS. Suivre les développements sur la [[mailing list batman-adv|https://lists.open-mesh.org/pipermail/b.a.t.m.a.n/2012-April/006893.html]] (self-signed cert)
 
 ### PicoStation (omni)
 
