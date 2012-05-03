@@ -189,6 +189,21 @@ Pour les toits en pente, c'est plus compliqué. [[Environ 38$|http://www.streakw
 
 [[!img toit_en_pente.jpg]]
 
+*****
+## Mise à terre / Ground
+*****
+
+Il est impératif que tout système radio ait une bonne mise à terre pour assurer la qualité de son signal. Il en est de même pour l'antenne, d'autant plus que nous en installons sur nos toits, et quelles sont exposées au risque d'éclairs. L'antenne emmagasine également de l'énergie statique, et une décharge peut subvenir à tout moment. Règle d'or, assurez-vous que votre équipement radio est toujours bien "groundé".
+
+Dans notre cas, l'antenne est alimentée par le routeur, qui lui est alimenté, la plupart du temps, en PoE. Ceci signifie qu'une décharge électrique peut remonter par le câble ethernet jusqu'à votre switch, et tout autre équipement relié par fil. La première précaution sera donc d'utiliser un protecteur de surcharge pour PoE, tel que le ESP-100-POE. Faites la recherche sur votre moteur de recherche favori, il est très facile à trouver, et disponible, entre autres, chez ubnt.ca
+
+Il faut ensuite s'assurer de la qualité de la mise à terre du panneau électrique de la maison, ainsi que des fiches électriques auxquelles sont relié notre équipement. Si un ground n'est pas présent, on peut utiliser le tuyau d'eau FROIDE de la plomberie de la maison, ou installer un "ground rod". Le tuyau d'eau chaude, d'une ligne de gaz, ou tout autre structure métallique avec laquelle on pourrait rentrer en contact sont DÉCONSEILLÉS.
+
+Liens:
+
+* [[Grounding and Lightning Protection | https://code.commotionwireless.net/projects/commotion-manual/wiki/Grounding_and_Lightning_Protection]]
+* [[Datasheet ESP-100-POE (pdf) | http://www.lairdtech.com/WorkArea/DownloadAsset.aspx?id=2222]]
+
 ******
 Câblage
 ******
