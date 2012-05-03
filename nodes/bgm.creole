@@ -28,3 +28,4 @@ Temporairement configuré avec AirOS en mode station-client pour tester la conne
 = Services =
 
  * Point d'accès "Librenet-m2" qui permet de se connecter à http://partage.bidon.ca en IPv6.
+
