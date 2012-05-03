@@ -68,7 +68,7 @@ Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une ant
  * Roule Linux par défaut
  * De nombreux modèles supportent ROBIN (pour faire du mesh), c.f. <http://robin.forumup.it/forum-103-robin.html>
  * Wifi atheros, supporte 802.11n
- * fait pour couvrir des grandes zones (directionnelle a 60°)
+ * fait pour couvrir de plus grandes distances, sur une zone plus restreinte (directionnelle a 60°)
  * power over ethernet
 
 ## Cisco/Linksys WRT* (omni)
