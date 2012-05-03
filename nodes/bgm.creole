@@ -29,3 +29,16 @@ Temporairement configuré avec AirOS en mode station-client pour tester la conne
 
  * Point d'accès "Librenet-m2" qui permet de se connecter à http://partage.bidon.ca en IPv6.
 
+= Photos =
+
+Attention, les photos font plus de 4 Mo chaque (et c'est hébergé chez moi).
+
+ * Mat d'antenne de mon voisin: http://www.bidon.ca/files/toit/IMG_3913a.JPG (et le gros édifice rouge entre hexa et moi)
+ * Vers de l'Église/Banantyne: http://www.bidon.ca/files/toit/IMG_3913b.JPG
+ * Vers la rue Claude (nord montréalais): http://www.bidon.ca/files/toit/IMG_3914.JPG
+ * Vers la rue Claude (zoom sur l'échangeur Turcot): http://www.bidon.ca/files/toit/IMG_3915.JPG
+ * Vers la rue Dupuis: http://www.bidon.ca/files/toit/IMG_3917.JPG
+ * Vers le métro LaSalle (on peut voir les panneaux solaires de deuxpi): http://www.bidon.ca/files/toit/IMG_3918.JPG
+ * Vers l'avenue Verdun (sud montréalais): http://www.bidon.ca/files/toit/IMG_3919.JPG
+ * Vers de l'Église/Wellington (métro de l'Église): http://www.bidon.ca/files/toit/IMG_3921.JPG
+ * Vers Hickson (ouest montréalais): http://www.bidon.ca/files/toit/IMG_3922.JPG
