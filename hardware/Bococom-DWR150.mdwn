@@ -611,10 +611,250 @@ Original MTD flash backup:
 
 I'm asking for help on the OpenWRT forum: https://forum.openwrt.org/viewtopic.php?pid=165814
 
+# Flashing
+
+    2: System Load Linux Kernel then write to Flash via TFTP.                       
+     Warning!! Erase Linux in Flash then burn new one. Are you sure?(Y/N)           
+     Please Input new ones /or Ctrl-C to discard                                    
+            Input device IP (192.168.1.1) ==:                                       
+                                                                                    
+            Input server IP (192.168.1.2) ==:                                       
+                                                                                    
+            Input Linux Kernel filename (xdxrn502r.bin) ==:xdxrn502r-f.bin          
+                                                                                    
+     netboot_common, argc= 3                                                        
+     *************buf = 0x81fcc740                                                  
+     **********NexTxPacket = 81fe4840                                               
+                                                                                    
+     NetTxPacket = 0x81FE4840                                                       
+                                                                                    
+     NetRxPackets[0] = 0x81FE4E40                                                   
+                                                                                    
+     NetRxPackets[1] = 0x81FE5440                                                   
+                                                                                    
+     NetRxPackets[2] = 0x81FE5A40                                                   
+                                                                                    
+     NetRxPackets[3] = 0x81FE6040                                                   
+                                                                                    
+     NetRxPackets[4] = 0x81FE6640                                                   
+                                                                                    
+     NetRxPackets[5] = 0x81FE6C40                                                   
+                                                                                    
+     NetRxPackets[6] = 0x81FE7240                                                   
+                                                                                    
+     NetRxPackets[7] = 0x81FE7840                                                   
+                                                                                    
+     NetRxPackets[8] = 0x81FE7E40                                                   
+                                                                                    
+     NetRxPackets[9] = 0x81FE8440                                                   
+                                                                                    
+     NetRxPackets[10] = 0x81FE8A40                                                  
+                                                                                    
+     NetRxPackets[11] = 0x81FE9040                                                  
+                                                                                    
+     NetRxPackets[12] = 0x81FE9640                                                  
+                                                                                    
+     NetRxPackets[13] = 0x81FE9C40                                                  
+                                                                                    
+     NetRxPackets[14] = 0x81FEA240                                                  
+                                                                                    
+     NetRxPackets[15] = 0x81FEA840                                                  
+                                                                                    
+     NetRxPackets[16] = 0x81FEAE40                                                  
+                                                                                    
+     NetRxPackets[17] = 0x81FEB440                                                  
+                                                                                    
+     NetRxPackets[18] = 0x81FEBA40                                                  
+                                                                                    
+     NetRxPackets[19] = 0x81FEC040                                                  
+                                                                                    
+     KSEG1ADDR(NetTxPacket) = 0xA1FE4840                                            
+                                                                                    
+     NetLoop,call eth_halt !                                                        
+                                                                                    
+     NetLoop,call eth_init !                                                        
+    Trying Eth0 (10/100-M)                                                          
+                                                                                    
+     Waitting for RX_DMA_BUSY status Start... done                                  
+                                                                                    
+     Header Payload scatter function is Disable !!                                  
+                                                                                    
+     ETH_STATE_ACTIVE!!                                                             
+    Using Eth0 (10/100-M) device                                                    
+    TFTP from server 192.168.1.2; our IP address is 192.168.1.1                     
+    Filename 'xdxrn502r-f.bin'.                                                     
+                                                                                    
+     TIMEOUT_COUNT=10,Load address: 0x80100000                                      
+    Loading: Got ARP REPLY, set server/gtwy eth addr (00:50:ba:0d:35:9e)            
+    Got it                                                                          
+    T #                                                                             
+     first block received                                                           
+    ################################################################                
+             #################################################################      
+             #################################################################      
+             #################################################################      
+             #################################################################      
+             #################################################################      
+             #################################################################      
+             ################################                                       
+    done                                                                            
+    Bytes transferred = 2490372 (260004 hex)                                        
+    NetBootFileXferSize= 00260004                                                   
+    Erase linux kernel block !!                                                     
+    From 0xBF050000 To 0xBF2BFFFF                                                   
+                                                                                    
+     b_end =BF3FFFFF                                                                
+    Erase Flash from 0xbf050000 to 0xbf2bffff in Bank # 1                           
+                                                                                    
+     erase sector  = 12                                                             
+    sect = 12,s_last = 50,erase poll = 862490                                       
+                                                                                    
+     erase sector  = 13                                                             
+    sect = 13,s_last = 50,erase poll = 887050                                       
+                                                                                    
+     erase sector  = 14                                                             
+    *sect = 14,s_last = 50,erase poll = 876172                                      
+                                                                                    
+     erase sector  = 15                                                             
+    sect = 15,s_last = 50,erase poll = 887384                                       
+                                                                                    
+     erase sector  = 16                                                             
+    *sect = 16,s_last = 50,erase poll = 863202                                      
+                                                                                    
+     erase sector  = 17                                                             
+    sect = 17,s_last = 50,erase poll = 864672                                       
+                                                                                    
+     erase sector  = 18                                                             
+    sect = 18,s_last = 50,erase poll = 890738                                       
+                                                                                    
+     erase sector  = 19                                                             
+    *sect = 19,s_last = 50,erase poll = 863479                                      
+                                                                                    
+     erase sector  = 20                                                             
+    sect = 20,s_last = 50,erase poll = 874541                                       
+                                                                                    
+     erase sector  = 21                                                             
+    *sect = 21,s_last = 50,erase poll = 898728                                      
+                                                                                    
+     erase sector  = 22                                                             
+    sect = 22,s_last = 50,erase poll = 887842                                       
+                                                                                    
+     erase sector  = 23                                                             
+    *sect = 23,s_last = 50,erase poll = 864332                                      
+                                                                                    
+     erase sector  = 24                                                             
+    sect = 24,s_last = 50,erase poll = 900177                                       
+                                                                                    
+     erase sector  = 25                                                             
+    sect = 25,s_last = 50,erase poll = 887867                                       
+                                                                                    
+     erase sector  = 26                                                             
+    *sect = 26,s_last = 50,erase poll = 894720                                      
+                                                                                    
+     erase sector  = 27                                                             
+    sect = 27,s_last = 50,erase poll = 864177                                       
+                                                                                    
+     erase sector  = 28                                                             
+    *sect = 28,s_last = 50,erase poll = 884890                                      
+                                                                                    
+     erase sector  = 29                                                             
+    sect = 29,s_last = 50,erase poll = 879023                                       
+                                                                                    
+     erase sector  = 30                                                             
+    *sect = 30,s_last = 50,erase poll = 863664                                      
+                                                                                    
+     erase sector  = 31                                                             
+    sect = 31,s_last = 50,erase poll = 901956                                       
+                                                                                    
+     erase sector  = 32                                                             
+    sect = 32,s_last = 50,erase poll = 882317                                       
+                                                                                    
+     erase sector  = 33                                                             
+    *sect = 33,s_last = 50,erase poll = 863698                                      
+                                                                                    
+     erase sector  = 34                                                             
+    sect = 34,s_last = 50,erase poll = 863779                                       
+                                                                                    
+     erase sector  = 35                                                             
+    *sect = 35,s_last = 50,erase poll = 876729                                      
+                                                                                    
+     erase sector  = 36                                                             
+    sect = 36,s_last = 50,erase poll = 874723                                       
+                                                                                    
+     erase sector  = 37                                                             
+    sect = 37,s_last = 50,erase poll = 867728                                       
+                                                                                    
+     erase sector  = 38                                                             
+    *sect = 38,s_last = 50,erase poll = 878086                                      
+                                                                                    
+     erase sector  = 39                                                             
+    sect = 39,s_last = 50,erase poll = 884085                                       
+                                                                                    
+     erase sector  = 40                                                             
+    *sect = 40,s_last = 50,erase poll = 890798                                      
+                                                                                    
+     erase sector  = 41                                                             
+    sect = 41,s_last = 50,erase poll = 888390                                       
+                                                                                    
+     erase sector  = 42                                                             
+    *sect = 42,s_last = 50,erase poll = 864276                                      
+                                                                                    
+     erase sector  = 43                                                             
+    sect = 43,s_last = 50,erase poll = 874877                                       
+                                                                                    
+     erase sector  = 44                                                             
+    sect = 44,s_last = 50,erase poll = 882002                                       
+                                                                                    
+     erase sector  = 45                                                             
+    *sect = 45,s_last = 50,erase poll = 868414                                      
+                                                                                    
+     erase sector  = 46                                                             
+    sect = 46,s_last = 50,erase poll = 898189                                       
+                                                                                    
+     erase sector  = 47                                                             
+    *sect = 47,s_last = 50,erase poll = 889159                                      
+                                                                                    
+     erase sector  = 48                                                             
+    sect = 48,s_last = 50,erase poll = 888447                                       
+                                                                                    
+     erase sector  = 49                                                             
+    *sect = 49,s_last = 50,erase poll = 884581                                      
+                                                                                    
+     erase sector  = 50                                                             
+    sect = 50,s_last = 50,erase poll = 872685                                       
+     done                                                                           
+    Erased 39 sectors                                                               
+                                                                                    
+     Copy linux image[2490372 byte] to Flash[0xBF050000]....                        
+    Copy to Flash...                                                                
+     Copy 2490372 byte to Flash...                                                  
+     addr = 0xBF0B1182 ,cnt=2092674                                                 
+     addr = 0xBF1122F2 ,cnt=1694994                                                 
+     addr = 0xBF17316A ,cnt=1298074                                                 
+     addr = 0xBF1D430A ,cnt=900346                                                  
+     addr = 0xBF235480 ,cnt=502660                                                  
+     addr = 0xBF296A60 ,cnt=103844 done                                             
+    ## Booting image at bf050000 ...                                                
+       Image Name:   MIPS OpenWrt Linux-3.3.3                                       
+       Created:      2012-04-28   2:50:47 UTC                                       
+                                                                                    
+     System Control Status = 0x00400000                                             
+       Image Type:   MIPS Linux Kernel Image (lzma compressed)                      
+       Data Size:    832013 Bytes = 812.5 kB                                        
+       Load Address: 80000000                                                       
+       Entry Point:  80000000                                                       
+       Verifying Checksum ... OK                                                    
+       Uncompressing Kernel Image ... OK                                            
+    No initrd                                                                       
+    ## Transferring control to Linux (at address 80000000) ...                      
+    ## Giving linux memsize in MB, 32                                               
+                                                                                    
+    Starting kernel ...                                                             
+                                                                                    
+    [    0.000000] Linux version 3.3.3 (nicolas@cortex) (gcc version 4.6.3 201202012
+
+
 # À faire
 
- * Configurer l'image pour n'avoir qu'un seul eth0, pas deux: eth0.1 et eth0.2.
  * Tester carte wifi USB
- * Flash original firmware over itself using the web interface, for testing the web interface
- * Flash custom OpenWRT image using the web interface, to allow flashing without soldering a serial port
  * Document serial header pinout
