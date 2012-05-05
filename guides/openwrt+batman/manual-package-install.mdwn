@@ -31,5 +31,5 @@ Il faut utiliser les paquets pour `ar71xx`:
 
     cd /tmp
     touch /tmp/opkg.conf
-    opkg -f /tmp/opkg.conf install http://marchildon.net/openwrt/xdx-rn502r/packages/kmod-batman-adv_3.2.9+2012.0.0-1_ar71xx.ipk \
-        http://marchildon.net/openwrt/xdx-rn502r/packages/kmod-lib-crc16_3.2.9-1_ar71xx.ipk
+    opkg -f /tmp/opkg.conf install http://marchildon.net/openwrt/xdx-rn502r/packages/kmod-batman-adv_3.3.3+2012.1.0-1_ramips.ipk \
+        http://marchildon.net/openwrt/xdx-rn502r/packages/kmod-lib-crc16_3.3.3-1_ramips.ipk
