@@ -859,4 +859,5 @@ I'm asking for help on the OpenWRT forum: https://forum.openwrt.org/viewtopic.ph
  * Tester carte wifi USB
  * Document serial header pinout
  * Faire fonctionner eth0 (?)
- * Ajouter support pour sysupgrade
+ * Ajouter support pour sysupgrade (target/linux/ramips/base-files/lib/upgrade/platform.sh)
+ * Soumettre patch à OpenWRT
