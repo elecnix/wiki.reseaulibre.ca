@@ -1,0 +1,29 @@
+The first [[Bococom|/hardware/Bococom-DWR150]] to be flashed with OpenWRT.
+
+---
+
+    MAC: 00:B0:C0:01:8B:34
+    IP: 172.16.1.17
+    IPv6: 
+
+---
+
+ * Software: OpenWRT trunk (april 2012)
+ * Hardware: [[Bococom|/hardware/Bococom-DWR150]]
+ * Power: N/A
+ * Location: on my desk
+ * Status: [[!taglink up]]
+ * Links: 
+ * Azimuth: 360°
+ * Panorama: N/A
+ * Operator: [[users/elecnix]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
