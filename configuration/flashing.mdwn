@@ -38,7 +38,7 @@ Linksys WRT54G
 architecture dans la [cible brcm47xx](http://downloads.openwrt.org/backfire/10.03.1/brcm47xx/).
 
 Bullet M2
-: [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-bullet-m-squashfs-factory.bin)
+: [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-bullet-m-squashfs-factory.bin) (non-recommandé pour B.A.T.M.A.N)
 : trunk: [factory](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-jffs2-factory.bin) pour la première fois, [sysupgrade](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin) ensuite.
 
 Nanostation M2
