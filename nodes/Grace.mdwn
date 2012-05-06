@@ -47,21 +47,6 @@ Operator
 Links
 : none
 
- * MAC address: 00:27:22:2F:BC:13
- * IP address: N/A
- * IPv6 address: N/A
- * Software: OpenWRT (trunk, jffs2)
- * Hardware: Ubiquiti Bullet M2HP
- * Power: N/A
- * Location: Pignon du toit, près du viaduc
- * Status: [[!taglink planned]]
- * Links: N/A
- * Azimuth: Sud-Ouest
- * Panorama:
-  * http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg (sud, emplacement choisi)
-  * http://farm6.staticflickr.com/5315/6906098540_70182d6840_o.jpg (nord, possible pour le futur)
- * Operator: [[users/elecnix]]
-
 Liens possibles
 
  * [[nodes/boulette]] 490 m, testé à 10mbps
