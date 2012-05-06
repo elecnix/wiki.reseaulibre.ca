@@ -125,10 +125,9 @@ After a reboot, you should see `wlan0: active` and `br-lan: active` with this:
 root@ti-noeud:/# brctl show
 bridge name     bridge id               STP enabled     interfaces
 br-lan          8000.00259c5e4457       no              eth0
-                                                        bat0
+
 root@ti-noeud:/# batctl if
 wlan0: active
-br-lan: active
 """]]
 
 # Other Readings
