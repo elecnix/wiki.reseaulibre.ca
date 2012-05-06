@@ -4,7 +4,7 @@ Planned node on top of long pole attached to balcony on 4th floor.
 
 
 [[!ymlfront data="""
-MAC: 
+MAC: 00:27:22:2E:BC:37
 IP: 172.16.0.17
 IPv6: 
 """]]
