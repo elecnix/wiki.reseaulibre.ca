@@ -34,11 +34,11 @@ By default, OpenWRT will create a network bridge called 'lan', and it includes o
 
 (!) From now on, this guide assumes the 'lan' bridge includes the ethernet port you will use to manage the router.
 
-Configure the router's IP address by picking a free slot from the [[IP Allocation|policy/numbering]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/24 network:
+Configure the router's IP address for your internal network. Here we assume you have an other router with the address 192.168.1.1 so we assign a different address.
 
-    uci set network.lan.ipaddr=172.16.1.1
-    uci set network.lan.gateway=172.16.0.1
-    uci set network.lan.dns=172.16.0.1
+    uci set network.lan.ipaddr=192.168.1.10
+    uci set network.lan.gateway=192.168.1.1
+    uci set network.lan.dns=192.168.1.1
 
 Disable DHCP server on LAN, so as to not interfere with home router.
 
@@ -105,6 +105,10 @@ Configuration de l'interface de batman. We're not assigning an IP address to `ba
     uci set network.bat0.ifname=bat0
     uci set network.bat0.proto=none
     uci set network.bat0.mtu=1500
+
+Configure your node by picking a free slot from the [[IP Allocation|policy/numbering]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/24 network:
+
+    uci set network.bat0.ipaddr=172.16.1.1
 
 Tell batman to use the wireless interface:
 
