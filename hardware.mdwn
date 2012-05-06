@@ -129,6 +129,8 @@ insert image naked
 
 Same as above with 2 chain (more speed) and [[40.77$ at DirectCanada|http://www.directcanada.com/search/?kw=TL-MR3420]]. Comes with two 3dbi omni antennas, with RP-SMA connectors. Connectors are on a cable to the PCB, so they are easy to relocate.
 
+<http://wiki.openwrt.org/toh/tp-link/tl-mr3420>
+
 [[!img MR3420-inside.jpg size="400x"]]
 
 ## Unbranded XDX-RN502J
