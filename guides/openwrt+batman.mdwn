@@ -93,7 +93,7 @@ Le module `batman_adv` devrait maintenant être chargé:
 
     lsmod | grep batman
 
-You should see: batctl 2012.0.0
+You should see: batctl 2012.1.0
 
     batctl -v
 
