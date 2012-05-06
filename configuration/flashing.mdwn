@@ -39,7 +39,7 @@ architecture dans la [cible brcm47xx](http://downloads.openwrt.org/backfire/10.0
 
 Bullet M2
 : [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-bullet-m-squashfs-factory.bin)
-: [trunk](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-ubnt-bullet-m-squashfs-factory.bin)
+: trunk: [factory](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-jffs2-factory.bin) pour la première fois, [sysupgrade](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin) ensuite.
 
 Nanostation M2
 : [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin)
