@@ -613,6 +613,44 @@ I'm asking for help on the OpenWRT forum: https://forum.openwrt.org/viewtopic.ph
 
 # Flashing
 
+## Configuration of TFTP Server: dnsmasq
+
+Install dnsmasq:
+
+    sudo apt-get install dnsmasq
+
+Edit `/etc/dnsmasq.conf`:
+
+    # Enable dnsmasq's built-in TFTP server
+    enable-tftp
+
+    # Set the root directory for files available via FTP.
+    tftp-root=/var/ftpd
+
+Apply the changes by restarting dnsmasq:
+
+    sudo /etc/init.d/dnsmasq restart
+
+Create the folder where you'll put the image:
+
+    sudo mkdir /var/ftpd
+
+Download the image:
+
+    wget http://marchildon.net/openwrt/xdx-rn502r/openwrt-ramips-rt305x-xdxrn502r-squashfs-sysupgrade.bin
+
+Copy the images to the server's folder, and give it a shorter name:
+
+    sudo cp openwrt-ramips-rt305x-xdxrn502r-squashfs-sysupgrade.bin /var/ftpd/bococom.bin
+
+## Testing OpenWRT from Serial Console
+
+At boot, select option 1, then provide the IP address the router should have for flashing (192.168.1.1), the IP address of your computer plugged into the router (192.168.1.2) and the file you want to boot: bococom-test.bin
+
+## Flashing OpenWRT from Serial Console
+
+Choose option 2 at boot, specify the IP addresses just like when testing, but provide the squashfs image: bococom-flash.bin
+
     2: System Load Linux Kernel then write to Flash via TFTP.                       
      Warning!! Erase Linux in Flash then burn new one. Are you sure?(Y/N)           
      Please Input new ones /or Ctrl-C to discard                                    
@@ -620,7 +658,7 @@ I'm asking for help on the OpenWRT forum: https://forum.openwrt.org/viewtopic.ph
                                                                                     
             Input server IP (192.168.1.2) ==:                                       
                                                                                     
-            Input Linux Kernel filename (xdxrn502r.bin) ==:xdxrn502r-f.bin          
+            Input Linux Kernel filename (xdxrn502r.bin) ==:bococom.bin        
                                                                                     
      netboot_common, argc= 3                                                        
      *************buf = 0x81fcc740                                                  
@@ -853,6 +891,9 @@ I'm asking for help on the OpenWRT forum: https://forum.openwrt.org/viewtopic.ph
                                                                                     
     [    0.000000] Linux version 3.3.3 (nicolas@cortex) (gcc version 4.6.3 201202012
 
+## Install B.A.T.M.A.N.
+
+No need to. It's already compiled in the kernel and batctl is in the image :)
 
 # À faire
 
