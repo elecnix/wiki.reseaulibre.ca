@@ -1,22 +1,49 @@
 The first [[Bococom|/hardware/Bococom-DWR150]] to be flashed with OpenWRT.
 
----
+[[!ymlfront data="""
+MAC: 00:B0:C0:01:8B:34
+IP: 172.16.1.17
+IPv6: 
+"""]]
 
-    MAC: 00:B0:C0:01:8B:34
-    IP: 172.16.1.17
-    IPv6: 
+hostname
+: bococom1
 
----
+MAC address
+: {{$MAC}}
 
- * Software: OpenWRT trunk (april 2012)
- * Hardware: [[Bococom|/hardware/Bococom-DWR150]]
- * Power: N/A
- * Location: on my desk
- * Status: [[!taglink up]]
- * Links: 
- * Azimuth: 360°
- * Panorama: N/A
- * Operator: [[users/elecnix]]
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk (custom xdxrn502r branch, april 2012)
+
+Hardware
+: [[Bococom DWR150|/hardware/Bococom-DWR150]] + 3 dBi omnidirectional antenna
+
+Power
+: 15dBm/28mW (default)
+
+Location
+: on my desk
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: linksys-grace
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
