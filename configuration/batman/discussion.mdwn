@@ -137,3 +137,7 @@ work. --[[anarcat]]
 ## Third test: dropping the firewall
 
 This is the way to do it, apparently: see the [[services]] page.
+
+# Problèmes sur Debian
+
+J'essaie d'installer BATMAN sur mon laptop Debian (pour les tests), il y a une étape qui manque, clairement dans la configuration IP. Il y a un lien pour configurer ça, mais c'est sur OpenWRT (uci). Ça serait bien d'avoir un guide plus complet là-dessus, j'ai cherché longtemps, rien trouvé.
