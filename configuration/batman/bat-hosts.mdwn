@@ -12,3 +12,14 @@ Here's a list of suggested MAC address to hostname translations for BATMAN.
     00:15:6d:db:d3:65 boulette
     00:15:6D:71:37:26 ouaibe
     EOF
+
+## New! Dynamic table of MAC addresses
+
+(!) This table should supplant the manually maintained tables above.
+
+cat >> /etc/bat-hosts <<EOF
+[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="bat-hosts"]]
+
+TODO: create `template/bat-hosts.tmpl` with this line:
+
+    <TMPL_VAR NAME="MAC"> <TMPL_VAR NAME="TITLE">
