@@ -893,7 +893,7 @@ Choose option 2 at boot, specify the IP addresses just like when testing, but pr
 
 ## Install B.A.T.M.A.N.
 
-No need to. It's already compiled in the kernel and batctl is in the image :)
+No need to. It's already compiled in the kernel and batctl is in the image :) See the [Batman on OpenWRT Guide](/guides/openwrt+batman/), but skip the BATMAN installation.
 
 # À faire
 
