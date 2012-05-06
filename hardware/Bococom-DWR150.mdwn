@@ -891,6 +891,13 @@ Choose option 2 at boot, specify the IP addresses just like when testing, but pr
                                                                                     
     [    0.000000] Linux version 3.3.3 (nicolas@cortex) (gcc version 4.6.3 201202012
 
+## After Flashing
+
+For some reason, a wrong MAC address for the wireless interface is specified in the image. To let OpenWRT figure the MAC correctly, remove the bad config:
+
+    uci delete wireless.radio0.macaddr
+    uci commit && reboot
+
 ## Install B.A.T.M.A.N.
 
 No need to. It's already compiled in the kernel and batctl is in the image :) See the [Batman on OpenWRT Guide](/guides/openwrt+batman/), but skip the BATMAN installation.
@@ -898,7 +905,7 @@ No need to. It's already compiled in the kernel and batctl is in the image :) Se
 # À faire
 
  * (?) Pourquoi l'interface eth0 ne communique pas?
- * (?) Pourquoi l'adresse MAC est encore à 00:11:22:33:44:55 après flashing?
+ * (?) Pourquoi l'adresse MAC est à 00:11:22:33:44:55 après flashing?
  * Ajouter support pour sysupgrade (target/linux/ramips/base-files/lib/upgrade/platform.sh)
  * Soumettre patch à OpenWRT
  * Tester carte wifi USB
