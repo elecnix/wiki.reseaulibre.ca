@@ -897,8 +897,9 @@ No need to. It's already compiled in the kernel and batctl is in the image :) Se
 
 # À faire
 
- * Tester carte wifi USB
- * Document serial header pinout
- * Faire fonctionner eth0 (?)
+ * (?) Pourquoi l'interface eth0 ne communique pas?
+ * (?) Pourquoi l'adresse MAC est encore à 00:11:22:33:44:55 après flashing?
  * Ajouter support pour sysupgrade (target/linux/ramips/base-files/lib/upgrade/platform.sh)
  * Soumettre patch à OpenWRT
+ * Tester carte wifi USB
+ * Document serial header pinout
