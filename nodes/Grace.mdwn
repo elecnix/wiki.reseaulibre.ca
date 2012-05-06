@@ -2,10 +2,55 @@
 
 Un noeud planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne.
 
- * MAC address: N/A
+[[!ymlfront data="""
+MAC: 00:27:22:2F:BC:13
+IP: 172.16.0.16
+IPv6: 
+"""]]
+
+hostname
+: boulette
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk
+
+Hardware
+: Ubiquity Bullet M2 + 15 dBi omnidirectional antenna
+
+Power
+: 15dBm/28mW (default)
+
+Location
+: Pignon du toit
+
+Azimuth
+: 360°
+
+Panorama
+: [sud, emplacement choisi](http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg), [nord, possible pour le futur](http://farm6.staticflickr.com/5315/6906098540_70182d6840_o.jpg)
+
+Status
+: [[!taglink planned]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: none
+
+ * MAC address: 00:27:22:2F:BC:13
  * IP address: N/A
  * IPv6 address: N/A
- * Software: OpenWRT
+ * Software: OpenWRT (trunk, jffs2)
  * Hardware: Ubiquiti Bullet M2HP
  * Power: N/A
  * Location: Pignon du toit, près du viaduc
