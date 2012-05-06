@@ -2,18 +2,51 @@
 
 Planned node on top of long pole attached to balcony on 4th floor.
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software:
- * Hardware: Ubiquiti Bullet M2HP
- * Power:
- * Location: Over roof, attached to balcony
- * Status: [[!taglink planned]]
- * Links: 
- * Azimuth: Omnidirectional 9 dBi antenna
- * Panorama: Est (nuit) http://minus.com/mHBBh4XNM
- * Operator: [[users/elecnix]]
+
+[[!ymlfront data="""
+MAC: 
+IP: 172.16.0.17
+IPv6: 
+"""]]
+
+hostname
+: jojo
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk, batman 2012.1.0, jffs2
+
+Hardware
+: Ubiquity Bullet M2 + 15 dBi omnidirectional antenna
+
+Power
+: 15dBm/28mW (default)
+
+Location
+: Au-dessus du toit
+
+Azimuth
+: 360°
+
+Panorama
+: Est (nuit) http://minus.com/mHBBh4XNM
+
+Status
+: [[!taglink planned]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: none
 
 ## Liens possibles
 
