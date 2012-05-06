@@ -9,7 +9,7 @@ IPv6:
 """]]
 
 hostname
-: boulette
+: grace
 
 MAC address
 : {{$MAC}}
