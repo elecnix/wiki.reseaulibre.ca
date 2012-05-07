@@ -18,10 +18,6 @@ Liste:
  * Cable cat 5e shielde, de minimum 25 pieds
  * Support pour l'antenne, j'ai un ok pour fixer apres le mur a la hauteur du toit. C'est possible de monter l'antenne a partir de ce genre d'ancrage. J'ai pas trop le budget pour un trepied. Qu'est-ce que ca implique d'eriger une antenne plus haut? Paratonnerre?
 
-A faire:
-
- * Prendre un panorama a partir du toit.
- * 
 
 Details:
 
@@ -36,7 +32,7 @@ Details:
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth:
- * Panorama: [[Panorama (5,4Mo) | http://i.imgur.com/jVPiV.jpg]]
+ * Panorama: (5,4Mo) : http://i.imgur.com/jVPiV.jpg
  * Operator: [[users/spoked]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
