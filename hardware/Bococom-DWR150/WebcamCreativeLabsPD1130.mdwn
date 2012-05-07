@@ -13,3 +13,11 @@ make menuconfig
 Kernel modules  ---> Video Support  ---> kmod-video-gspca-core ---> kmod-video-gspca-zc3xx
 
 make -j8
+
+sysupgrade -v openwrt-ramips-rt305x-xdxrn502r-squashfs-sysupgrade.bin
+
+Plugging webcam in router now gives:
+
+    usb 1-1: new full-speed USB device number 2 using dwc_otg
+    gspca_main: zc3xx-2.14.0 probing 041e:403a
+    input: zc3xx as /devices/platform/dwc_otg.0/usb1/1-1/input/input1
