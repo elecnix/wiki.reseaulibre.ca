@@ -36,7 +36,7 @@ Details:
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth:
- * Panorama:
+ * Panorama: [[Panorama (5,4Mo) | http://i.imgur.com/jVPiV.jpg]]
  * Operator: [[users/spoked]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
