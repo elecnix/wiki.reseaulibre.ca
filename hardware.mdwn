@@ -61,6 +61,8 @@ Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une ant
 
 [[!img bullet-m2hp.jpg size="200x"]]
 
+[[!img kit-bullet-m2.jpg size="500x"]]
+
 ### Nanostation (directionnelle)
 
 [Ubiquiti](http://www.ubnt.ca), modèles [Nanostation M2](http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=115&category_id=35&option=com_virtuemart&Itemid=1) (2.4gHz) / M5 (5gHz).
