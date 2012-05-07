@@ -6,17 +6,7 @@ IP: 172.16.0.10
 IPv6: fd64:2c08:9fa7:10::/64
 """]]
 
-Node planifiee pour ce printemps. Acces au toit, le range devrait etre bon si je peux monter une pole au dessus des arbres...
-
-L'equipement est commande, mais les produits Ubiquiti sont backorder presentement chez Converbit. Je prefere quand meme attendre et faire affaire avec ce fournisseur local.
-Liste:
-
- * Ubiquiti Bullet M2HP
- * Antenne omni 15dbi
- * Cable/connecteur antenne? Est-ce plus simple de plugger Bullet direct dans l'antenne?
- * Injecteur de courant PoE 15v? 18v?
- * Cable cat 5e shielde, de minimum 25 pieds
- * Support pour l'antenne, j'ai un ok pour fixer apres le mur a la hauteur du toit. C'est possible de monter l'antenne a partir de ce genre d'ancrage. J'ai pas trop le budget pour un trepied. Qu'est-ce que ca implique d'eriger une antenne plus haut? Paratonnerre?
+Node planifiee pour ce printemps. Acces au toit, le range devrait etre bon si je peux monter une pole au dessus des arbres... J'ai une cheminee!
 
 
 Details:
@@ -27,8 +17,8 @@ Details:
  * IPv6 address: {{$IPv6}}
  * Software: OpenWRT + batman-adv
  * Hardware: Ubiquiti Bullet M2HP + omni 15dbi
- * Power:
- * Location:45.5352,-73.584
+ * Power: 30dbm :D
+ * Location: 45.5352,-73.584
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth:
