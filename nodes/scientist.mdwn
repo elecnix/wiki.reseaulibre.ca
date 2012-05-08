@@ -14,7 +14,7 @@ Je ne sais pas encore si l'accès au toit est possible. A la limite, je peux pos
  * Power:
  * Location:
  * Status: [[!taglink planned]]
- * Links: 
+ * Links: [[nodes/deuxpi]] (down)
  * Azimuth:
  * Panorama:
  * Operator: [[users/scientist]]
