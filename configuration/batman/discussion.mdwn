@@ -10,9 +10,7 @@ With a previous configuration, I cannot ping the third hop in a three-hop relay.
     uci set batman-adv.bat0.interfaces="wlan0 br-lan"
     uci set network.lan.ifname="eth0 bat0"
 
-.. and I have assigned an IP to the bat0 interface.
-
-Then carton can ping boulette, and angela can ping carton, but not boulette. I get `Destination port unreachable`, I assume because of that nasty firewall, because I see ARP requests go through fine. --[[anarcat]]
+.. and I have assigned an IP to the bat0 interface. carton can ping boulette, and angela can ping carton, but not boulette. I get `Destination port unreachable`, I assume because of that nasty firewall, because I see ARP requests go through fine. --[[anarcat]]
 
 > anarcat, je n'ai pas 3 noeuds pour faire des tests de pings avec plusieurs hop. Cependant, j'ai trouve ceci dans la doc batman-adv, qui parle de ICMP avec batman-adv:
 > 
@@ -141,3 +139,5 @@ This is the way to do it, apparently: see the [[services]] page.
 # Problèmes sur Debian
 
 J'essaie d'installer BATMAN sur mon laptop Debian (pour les tests), il y a une étape qui manque, clairement dans la configuration IP. Il y a un lien pour configurer ça, mais c'est sur OpenWRT (uci). Ça serait bien d'avoir un guide plus complet là-dessus, j'ai cherché longtemps, rien trouvé.
+
+> C'est quoi le problème avec la config qui manque? Est-ce que tu as fait la configuration manuelle indiquée plus bas? Si oui, il suffit ensuite de suivre [[/configuration/ip]]... [[anarcat]]
