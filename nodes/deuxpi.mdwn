@@ -14,25 +14,24 @@ IPv6:
  * Réaligner l'antenne pour optimiser le signal vers [[nodes/bgm]] et [[nodes/scientist]]
  * <s>Vérifier de la nécessité de AirMax/TDMA, sinon installer OpenWrt</s>
  * <s>Installer BATMAN sur le point d'accès</s>
- * Configurer la deuxième radio pour avoir un accès pour administration + IPv6
- * Profit?!!?
+ * Configurer le port Ethernet pour avoir un accès pour Internet via IPv6
 
 Détails:
 
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
- * Software: OpenWRT (backfire)
+ * Software: OpenWRT (trunk)
  * Hardware: NanoStation M2
- * Power: 30 dBm, 11 dBi (probablement trop)
+ * Power: 28 dBm, 11 dBi
  * Location: Verdun, coin LaSalle et Rushbrooke
- * Status: [[!taglink down]]
- * Links: [[nodes/scientist]] (down) [[nodes/bgm]] (down)
+ * Status: [[!taglink up]]
+ * Links: [[nodes/scientist]] (en cours), [[nodes/bgm]] (à tester)
  * Azimuth: Ouest-sud-ouest
  * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]]
  * Operator: [[users/deuxpi]]
 
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+[[!meta copyright="Copyright © 2012 Philippe Gauthier"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
