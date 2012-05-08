@@ -1,6 +1,6 @@
 [[!waypoint  lat="45.539759" lon="-73.601008" embed width="400px" height="400px" right desc="Routeur local dans la maison"]]
 
-Pour l'instant mon node est un point d'accès île sans fil, mais quand j'aurai le temps, j'en ferai un point mesh.
+Pour l'instant mon node est un point d'accès ordinaire, mais quand j'aurai le temps, j'en ferai un point mesh.
 
 Ce routeur est mon super routeur de test avec serial et JTAG pour avoir du fun sans crainte de briquer :D
 
@@ -16,6 +16,11 @@ Ce routeur est mon super routeur de test avec serial et JTAG pour avoir du fun s
  * Azimuth:
  * Panorama:
  * Operator: [[users/genb]]
+
+
+Pour les intéressés, voici une petite photo de leon avec port série et jtag.
+
+[[!img leon-modde.jpg]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
