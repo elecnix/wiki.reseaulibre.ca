@@ -12,7 +12,7 @@ My friends at mandragore may be able to put up a node.
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth:
- * Panorama:
+ * Panorama: 
  * Operator: [[users/anarcat]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
