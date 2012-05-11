@@ -1,6 +1,5 @@
 * [[Bienvenue|index]]
 * [[Qu'est-ce c'est?|FAQ]]
-* [[Carte|map]]
+* [[Carte|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&do=osm&zoom=12&lat=45.5227&lon=-73.59554&layers=BT]]
 * [[Participer|Participer]]
 * [[Documentation|Documentation]]
-
