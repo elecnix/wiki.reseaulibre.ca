@@ -921,9 +921,7 @@ Then proceed as usual, as per the OpenWRT [[readme|https://github.com/mirrors/op
 
 # TO DO / À faire
 
- * (?) Pourquoi l'interface eth0 ne communique pas?
+ * Pourquoi l'interface eth0 ne communique pas? Parce qu'il faut utiliser eth0.2!
  * (?) Pourquoi l'adresse MAC est à 00:11:22:33:44:55 après flashing?
- * Ajouter support pour sysupgrade (target/linux/ramips/base-files/lib/upgrade/platform.sh)
  * Soumettre patch à OpenWRT
  * Tester carte wifi USB
- * Document serial header pinout
