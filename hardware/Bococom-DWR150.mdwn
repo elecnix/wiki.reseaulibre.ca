@@ -908,7 +908,7 @@ No need to. It's already compiled in the kernel and batctl is in the image :) Se
 
 # Building your own image
 
-If you have used the `openwrt-ramips-rt305x-xdxrn502r-squashfs-sysupgrade.bin` image, you may wonder what it is. This Bococom is not officially supported by OpenWRT just yet; we have a patch that we're working on, in a branch on Github.
+If you have used the `openwrt-ramips-rt305x-xdxrn502r-squashfs-sysupgrade.bin` image, you may wonder what it is. This Bococom is not officially supported by OpenWRT just yet; we have a patch that we're working on, in a [[branch on Github|https://github.com/elecnix/openwrt/tree/xdx-rn502r]].
 
 Here's how to get the source:
 
