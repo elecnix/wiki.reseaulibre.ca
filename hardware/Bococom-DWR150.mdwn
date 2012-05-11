@@ -120,11 +120,15 @@ There is no software available for download for this router on the Brococom web 
 
 http://www.bococom.com/download.asp?type=DWR150
 
-# Serial Console Boot
+# Getting access to the serial port
 
 I used an old [[Siemens IP-40 cellphone serial communication cable|http://pinouts.ru/CellularPhones-P-W/siemens_c55_pinout.shtml]] to connect to the TTL-level serial port on the PCB, inspired by the [[unbricking of a TP-Link MR3420|https://forum.openwrt.org/viewtopic.php?pid=158464]] and connected to the Bococom with minicom on Linux with the `57600 8N1` settings.
 
+If you want to do the same, we suggest to have a look at the [[Serial Console Documentation|http://wiki.openwrt.org/doc/hardware/port.serial]] on the OpenWRT wiki.
+
 [[!img bococom-serial.jpg]]
+
+# Serial Console Boot
 
 Here's the output:
 
@@ -902,7 +906,19 @@ For some reason, a wrong MAC address for the wireless interface is specified in 
 
 No need to. It's already compiled in the kernel and batctl is in the image :) See the [Batman on OpenWRT Guide](/guides/openwrt+batman/), but skip the BATMAN installation.
 
-# À faire
+# Building your own image
+
+If you have used the `openwrt-ramips-rt305x-xdxrn502r-squashfs-sysupgrade.bin` image, you may wonder what it is. This Bococom is not officially supported by OpenWRT just yet; we have a patch that we're working on, in a branch on Github.
+
+Here's how to get the source:
+
+    git clone git://github.com/mirrors/openwrt.git
+    git remote add elecnix git://github.com/elecnix/openwrt.git
+    git checkout -b xdx-rn502r elecnix/xdx-rn502r
+
+Then proceed as usual, as per the OpenWRT [[readme|https://github.com/mirrors/openwrt#readme]] and the [[build howto|http://wiki.openwrt.org/doc/howto/build]]. Don't forget to add [[BATMAN|http://wiki.openwrt.org/inbox/mesh.batman]]!
+
+# TO DO / À faire
 
  * (?) Pourquoi l'interface eth0 ne communique pas?
  * (?) Pourquoi l'adresse MAC est à 00:11:22:33:44:55 après flashing?
