@@ -1,0 +1,4 @@
+[[!meta title="pages tagged refused"]]
+
+[[!inline pages="tagged(refused)" actions="no" archive="yes"
+feedshow=10]]
