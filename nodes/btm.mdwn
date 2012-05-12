@@ -9,7 +9,7 @@ Maybe in the window, facing south.
  * Hardware:
  * Power:
  * Location:
- * Status: [[!taglink refused]]
+ * Status: [[!taglink unknown]]
  * Links: 
  * Azimuth:
  * Panorama: http://www.flickr.com/photos/elecnix/7039715167/sizes/o (12202 x 1501)
