@@ -54,8 +54,10 @@ If you wish, however, to be on the global mesh, you should use a `/48` netmask t
 
 Known allocations:
 
- * `fd64:2c08:9fa7::/48` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
- * `fd64:2c08:9fa7:1::/64` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself
+ * `fd64:2c08:9fa7:1::1/64` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
+ * `fd64:2c08:9fa7::/64` - `roadkiller.anarcat.ath.cx` - network behind
+   roadkiller
+ * `fd64:2c08:9fa7:1::2/64` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself, announcing his netblock
  * `fd64:2c08:9fa7:2::/64` - `carton.anarcat.ath.cx` - [[nodes/carton]], a public access point
  * `fd64:2c08:9fa7:3::/64` - `pico.mesh.openisp.ca` - [[nodes/pic]], a
    public access point at foulab
