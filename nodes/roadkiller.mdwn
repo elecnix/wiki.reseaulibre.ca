@@ -1,13 +1,17 @@
-This is my home router, which is not directly part of the mesh other than being connected to [[boulette]] and acting as its gateway.
+This is my home router, which is not part of the BATMAN mesh but is
+still in the mesh at the IP level because it is connected to [[boulette]]
+
+This is a public internet gateway. The access is severly firewalled, and
+access will be completely removed if abused.
 
 [[!ymlfront data="""
 MAC: N/A
 IP: 
-- 172.16.0.1
-- 72.0.72.144
+- 172.16.0.1/48
+- 72.0.72.144/32
 IPv6: 
-- fd64:2c08:9fa7::1
-- 2001:1928:1:9::1
+- fd64:2c08:9fa7::1/48
+- 2001:1928:1:9::1/64
 """]]
 
  * MAC address: {{$MAC}}
