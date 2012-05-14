@@ -48,7 +48,7 @@ Operator
 : [[users/anarcat]]
 
 Links
-: [[carton]], [[roadkiller]]
+: [[carton]], [[roadkiller]], [[Grace]]
 
 This node runs batman according to the [[configuration/batman]] howto.
 
