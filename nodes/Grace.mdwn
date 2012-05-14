@@ -1,4 +1,4 @@
-[[!waypoint lat="45.52901" lon="-73.6004" embed hidden width="400px" height="400px" right desc="Sur le toit, au-dessus du viaduc Rosemont-Van Horne, <a href='http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg'>avec panorama</a>"]]
+[[!waypoint lat="45.529170" lon="-73.599558" embed hidden width="400px" height="400px" right desc="Sur le toit, au-dessus du viaduc Rosemont-Van Horne, <a href='http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg'>avec panorama</a>"]]
 
 Un noeud sur le toit, au-dessus du viaduc Rosemont-Van Horne.
 
