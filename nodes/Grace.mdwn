@@ -1,6 +1,6 @@
-[[!waypoint lat="45.52901" lon="-73.6004" embed hidden width="400px" height="400px" right desc="Planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne, <a href='http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg'>avec panorama</a>"]]
+[[!waypoint lat="45.52901" lon="-73.6004" embed hidden width="400px" height="400px" right desc="Sur le toit, au-dessus du viaduc Rosemont-Van Horne, <a href='http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg'>avec panorama</a>"]]
 
-Un noeud planifié sur le toit, au-dessus du viaduc Rosemont-Van Horne.
+Un noeud sur le toit, au-dessus du viaduc Rosemont-Van Horne.
 
 [[!ymlfront data="""
 MAC: 00:27:22:2F:BC:13
@@ -39,7 +39,7 @@ Panorama
 : [sud, emplacement choisi](http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg), [nord, possible pour le futur](http://farm6.staticflickr.com/5315/6906098540_70182d6840_o.jpg)
 
 Status
-: [[!taglink planned]]
+: [[!taglink up]]
 
 Operator
 : [[users/elecnix]]
