@@ -14,7 +14,11 @@ IPv6:
  * Réaligner l'antenne pour optimiser le signal vers [[nodes/bgm]] et [[nodes/scientist]]
  * <s>Vérifier de la nécessité de AirMax/TDMA, sinon installer OpenWrt</s>
  * <s>Installer BATMAN sur le point d'accès</s>
- * Configurer le port Ethernet pour avoir un accès pour Internet via IPv6
+ * <s>Configurer le port Ethernet pour avoir un accès pour Internet via IPv6</s>
+
+Pour tester l'interface Wi-fi, il est possible de pinger l'adresse IPv6 link-local, par exemple:
+
+    ping6 fe80::227:22ff:fe4e:16b7
 
 Détails:
 
@@ -26,9 +30,9 @@ Détails:
  * Power: 28 dBm, 11 dBi
  * Location: Verdun, coin LaSalle et Rushbrooke
  * Status: [[!taglink up]]
- * Links: [[nodes/scientist]] (en cours), [[nodes/bgm]] (à tester)
- * Azimuth: Ouest-sud-ouest
- * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]]
+ * Links: [[nodes/bgm]], [[nodes/scientist]]
+ * Azimuth: Sud-ouest
+ * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]], [[Vue du site de l'installation|https://farm6.staticflickr.com/5223/5881898216_6198d24176.jpg]]
  * Operator: [[users/deuxpi]]
 
 [[!meta copyright="Copyright © 2012 Philippe Gauthier"]]
