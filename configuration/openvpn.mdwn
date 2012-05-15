@@ -1,0 +1,67 @@
+FreeBSD
+-------
+
+(server conf)
+
+    pkg_add -r openvpn
+
+# NAME_enable="NO"      # set to YES to enable openvpn
+# NAME_if=""            # driver(s) to load, set to "tun", "tap" or "tun tap"
+
+
+kldload if_tap
+roadkiller# cat >> /boot/loader.conf
+if_tap_load="YES"
+
+create the `/usr/local/etc/openvpn/openvpn.conf` file: see [the FreeBSD
+diary howto][openvpn] for a sample file.
+
+using the easy-rsa package, here are my changes to the `vars` as
+suggested in the [SSL howto][ca-howto].
+
+[[!format diff """
+--- vars.org    2012-05-15 00:54:05.000000000 -0400
++++ vars        2012-05-15 00:54:07.000000000 -0400
+@@ -50,7 +50,7 @@
+ # down TLS negotiation performance
+ # as well as the one-time DH parms
+ # generation process.
+-export KEY_SIZE=1024
++export KEY_SIZE=2048
+
+ # In how many days should the root CA key expire?
+ export CA_EXPIRE=3650
+@@ -61,8 +61,8 @@
+ # These are the default values for fields
+ # which will be placed in the certificate.
+ # Don't leave any of these fields blank.
+-export KEY_COUNTRY="US"
+-export KEY_PROVINCE="CA"
+-export KEY_CITY="SanFrancisco"
+-export KEY_ORG="Fort-Funston"
+-export KEY_EMAIL="me@myhost.mydomain"
++export KEY_COUNTRY="CA"
++export KEY_PROVINCE="QC"
++export KEY_CITY="Montreal"
++export KEY_ORG="Anarcat"
++export KEY_EMAIL="anarcat@orangeseeds.org"
+"""]]
+
+Then this series of easy commands:
+
+    ./clean-all
+    ./build-ca
+    ./build-key-server myserver.example.com
+    ./build-dh
+    ./build-key client.example.com
+        
+[openvpn-routed]: http://www.freebsddiary.org/openvpn-routed.php
+[openvpn]: http://www.freebsddiary.org/openvpn.php
+[ca-howto]: http://www.freebsddiary.org/openvpn-easy-rsa.php
+
+Debian
+------
+
+(client conf)
+
+    apt-get install openvpn
