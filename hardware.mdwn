@@ -135,13 +135,15 @@ Same as above with 2 chain (more speed) and [[40.77$ at DirectCanada|http://www.
 
 [[!img MR3420-inside.jpg size="400x"]]
 
-## Unbranded XDX-RN502J
+## Unbranded XDX-RN502J / SL-R7205
 
 Semblable au TP-Link TL-MR3420, mais basé sur le Ralink RT3052. Il possède deux antennes, donc débit théorique de 300 mbit/s. Il [[peut être flashé avec OpenWRT|http://wiki.openwrt.org/toh/unbranded/xdx-rn502j]] en se connectant par le port série et avec un serveur TFTP. Trouvé plusieurs à [[32$ sur eBay|http://www.ebay.ca/itm/120830233185?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1439.l2649]].
 
 [[!img XDX-RN502J.jpg size="200x"]]
 
-## Bococom XDX-RN502R
+[[!img SL-R7205_V5.0_opened.jpg size="200x"]]
+
+## Bococom XDX-RN502R / SL-R7206
 
 Petit frère du XDX-RN502J, le Bococom porte l'inscription XDX-RN502R, et fonctionne avec un Ralink RT3050 à une seule antenne, donc 150 mbit/s. On peut le trouver à 20,50$ l'unité en [[paquets de 10 sur aliexpress.com|http://www.aliexpress.com/product-fm/541496604-Portable-Mini-150M-802-11n-WiFi-Wireless-3G-Router-White-Color-UMTS-HSPA-EVDO-USB-modems-wholesalers.html]]. [[users/elecnix]] en a commandé un et va bientôt tenter de flasher avec OpenWRT. Voir la page [[Bococom-DWR150]] pour les détails.
 
