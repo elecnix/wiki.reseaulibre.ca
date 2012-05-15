@@ -5,13 +5,19 @@ FreeBSD
 
     pkg_add -r openvpn
 
-# NAME_enable="NO"      # set to YES to enable openvpn
-# NAME_if=""            # driver(s) to load, set to "tun", "tap" or "tun tap"
+Then add this to `/etc/rc.conf` to make sure the daemon is started on
+boot:
 
+    openvpn_enable="YES"      # set to YES to enable openvpn
+    openvpn_if="tap"          # driver(s) to load, set to "tun", "tap" or "tun tap"
 
-kldload if_tap
-roadkiller# cat >> /boot/loader.conf
-if_tap_load="YES"
+Load the tap device:
+
+    kldload if_tap
+
+You also need to add this to `/boot/loader.conf`:
+
+    if_tap_load="YES"
 
 create the `/usr/local/etc/openvpn/openvpn.conf` file: see [the FreeBSD
 diary howto][openvpn] for a sample file.
@@ -54,7 +60,10 @@ Then this series of easy commands:
     ./build-key-server myserver.example.com
     ./build-dh
     ./build-key client.example.com
-        
+
+(To be continued: the build-dh step is still generating that 2048 bit
+prime - maybe a bad idea to be paranoid about that bit...)
+
 [openvpn-routed]: http://www.freebsddiary.org/openvpn-routed.php
 [openvpn]: http://www.freebsddiary.org/openvpn.php
 [ca-howto]: http://www.freebsddiary.org/openvpn-easy-rsa.php
@@ -65,3 +74,12 @@ Debian
 (client conf)
 
     apt-get install openvpn
+
+I use pretty much the stock config in [the client part of the OpenVPN
+howto][openvpn], but note that you can use ifup/down (and Network
+Manager) to automatically start/stop OpenVPN instances depending on
+network conditions, which is especially relevant on laptops, for
+example.
+
+I transfer the client certificate created in the last step of the above
+FreeBSD config to the Debian client.
