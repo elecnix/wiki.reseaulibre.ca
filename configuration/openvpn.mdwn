@@ -83,3 +83,21 @@ example.
 
 I transfer the client certificate created in the last step of the above
 FreeBSD config to the Debian client.
+
+To consider
+-----------
+
+The above configuration basically hardcodes routes and netblocks. This
+means that the clients are necessarily on a different subnet than the
+server, although routes are magically added to make sure this still
+works.
+
+A better option would be to use the bridge mode:
+
+http://openvpn.net/index.php/open-source/documentation/miscellaneous/76-ethernet-bridging.html
+
+... in which clients are directly on the local network, which requires
+OS-level bridge configuration outside of OpenVPN.
+
+Another option would be to add tap0, the openvpn interface, to the mesh
+itself, so that the BATMAN mesh would run on top of the VPN.
