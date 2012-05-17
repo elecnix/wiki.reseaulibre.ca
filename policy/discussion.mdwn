@@ -1,4 +1,4 @@
-[[!toc]]
+[[!toc levels=2]]
 
 Débat sur le mode de décision du projet
 =======================================
