@@ -1,0 +1,54 @@
+### Pourquoi
+
+IPv6 permet, entre autres, d'avoir une adresse « link-local », c'est à dire que l'adresse est non routable et spécifique à un réseau local. Ces adresses sont auto-configurées par le système d'exploitation. La majorité des distributions Linux, BSD, Mac et Windows activent cette fonctionnalité par défaut. Ça permet de découvrir et parler avec les autres machines connectées sur le réseau.
+
+### Pré-requis
+
+Installer les modules et utilitaires IPv6:
+
+    opkg update
+    opkg install kmod-ipv6 ip kmod-ip6tables ip6tables
+
+Il n'est pas nécessaire de redémarrer. Les interfaces physiques (eth0, wlan0, etc) devraient déjà afficher une adresse « link-local ».
+
+### Adresses link-local
+
+Les adresses link-local sont automatiquement configurées par le système d'exploitation. Elles permettent aux machines sur le même lien physique (ethernet, wifi, batman) de se parler, sans avoir besoin de mécanisme d'assignation des adresses.
+
+    ifconfig
+
+<pre>
+wlan0     Link encap:Ethernet  HWaddr 00:15:12:34:56:78  
+          inet6 addr: fe80::215:6dff:fe72:1234/64 Scope:Link
+</pre>
+
+Les adresses link-local sont toujours préfixées de fe80. On dit fe80::/64, car les premiers 64 bits servent à désigner le réseau (fe80, suivi de zéros, sur 64 bits), auquel un suffixe est auto-assigné par le système d'exploitation, en se basant sur l'adresse MAC de la carte (« stateless configuration »). https://en.wikipedia.org/wiki/Link-local_address
+
+Pour découvrir les autres machines sur le réseau local:
+
+Envoyer un ping multicast:
+
+    ping6 -I wlan0 ff02::1
+
+Puis afficher les voisins:
+
+    ip -6 neigh show
+
+<pre>
+fe80::215:6dff:fe71:1234 dev wlan0 lladdr 00:15:6d:71:37:ea DELAY
+fe80::f66d:4ff:fe54:2345 dev wlan0 lladdr f4:6d:04:54:3e:28 DELAY
+</pre>
+
+On peut maintenant faire un ping directement à une de ces machines:
+
+    ping6 -I wlan0 fe80::f66d:4ff:fe54:2345
+
+Se connecter par ssh:
+
+    ssh foo@fe80::f66d:4ff:fe54:2345%wlan0
+
+Ou les transfers scp:
+
+    scp test.txt foo@\[fe80::f66d:4ff:fe54:2345%wlan0\]:
+
+Dans les exemples ci-dessus on a spécifié l'interface réseau (wlan0). Les adresses sont locales (non-routables), donc le système d'exploitation ne saura pas nécessairement par quelle interface envoyer les données. Cependant, si on vient de faire un ping multicast et que l'adresse est encore dans la cache du système, on n'a pas besoin de spécifier l'interface.
