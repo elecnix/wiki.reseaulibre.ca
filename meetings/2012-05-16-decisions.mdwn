@@ -202,7 +202,10 @@ Notes
 * c'est bien d'avoir à expliquer "pourquoi libre", et on devrait l'Expliquer sur le site web
 * citoyen est plus compréhensible par les gens dans la rue
 
+Un dernier vote ultime suite à la discussion:
+
 * réseaucitoyen.ca: 1
 * réseaulibre.ca: 11
 
-Le vote n'est pas bloquant. Consensus!
+Le vote pour reseaucitoyen.ca n'est pas bloquant et on atteint donc le
+consensus sur reseaulibre.ca!
