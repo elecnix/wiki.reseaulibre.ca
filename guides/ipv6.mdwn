@@ -2,7 +2,7 @@
 
 IPv6 permet, entre autres, d'avoir une adresse « link-local », c'est à dire que l'adresse est non routable et spécifique à un réseau local. Ces adresses sont auto-configurées par le système d'exploitation. La majorité des distributions Linux, BSD, Mac et Windows activent cette fonctionnalité par défaut. Ça permet de découvrir et parler avec les autres machines connectées sur le réseau.
 
-Un autre avantge d'IPv6 est qu'on n'a plus besoin de soit faire du « NAT sur NAT » si vous avez un point d'accès wifi (AP) sur votre réseau qui est déjà derrière un autre routeur qui fait du NAT (pour le réseau local). En IPv6, on assigne un sous-réseau au point d'accès wifi et le routage est beaucoup plus simple.
+Un autre avantage d'IPv6 est qu'on n'a plus besoin de soit faire du « NAT sur NAT » si vous avez un point d'accès wifi (AP) sur votre réseau qui est déjà derrière un autre routeur qui fait du NAT (pour le réseau local). En IPv6, on assigne un sous-réseau au point d'accès wifi et le routage est beaucoup plus simple.
 
 ### Pré-requis
 
