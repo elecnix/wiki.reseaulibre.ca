@@ -1,10 +1,12 @@
-### Pourquoi
+[[!toc  ]]
+
+# Pourquoi
 
 IPv6 permet, entre autres, d'avoir une adresse « link-local », c'est à dire que l'adresse est non routable et spécifique à un réseau local. Ces adresses sont auto-configurées par le système d'exploitation. La majorité des distributions Linux, BSD, Mac et Windows activent cette fonctionnalité par défaut. Ça permet de découvrir et parler avec les autres machines connectées sur le réseau.
 
 Un autre avantage d'IPv6 est qu'on n'a plus besoin de soit faire du « NAT sur NAT » si vous avez un point d'accès wifi (AP) sur votre réseau qui est déjà derrière un autre routeur qui fait du NAT (pour le réseau local). En IPv6, on assigne un sous-réseau au point d'accès wifi et le routage est beaucoup plus simple.
 
-### Pré-requis
+# Pré-requis
 
 Installer les modules et utilitaires IPv6:
 
@@ -13,7 +15,7 @@ Installer les modules et utilitaires IPv6:
 
 Il n'est pas nécessaire de redémarrer. Les interfaces physiques (eth0, wlan0, etc) devraient déjà afficher une adresse « link-local ».
 
-### Adresses link-local
+# Adresses link-local
 
 Les adresses link-local sont automatiquement configurées par le système d'exploitation. Elles permettent aux machines sur le même lien physique (ethernet, wifi, batman) de se parler, sans avoir besoin de mécanisme d'assignation des adresses.
 
@@ -54,3 +56,9 @@ Ou les transfers scp:
     scp test.txt foo@\[fe80::f66d:4ff:fe54:2345%wlan0\]:
 
 Dans les exemples ci-dessus on a spécifié l'interface réseau (wlan0). Les adresses sont locales (non-routables), donc le système d'exploitation ne saura pas nécessairement par quelle interface envoyer les données. Cependant, si on vient de faire un ping multicast et que l'adresse est encore dans la cache du système, on n'a pas besoin de spécifier l'interface.
+
+# Références
+
+* [[http://tunnelbroker.net/]] - excellent service de tunnels IPv6 gratuits par Hurricane Electric (HE). Ils ont aussi des petits jeux de "certification" pour expérimenter avec IPv6.
+* [[http://www.bidon.ca/fr/random/2010-05-13-reseau-local-en-ipv6-et-tunnel-ipv4]] - Howto pour les tunnels de HE
+* [[http://www.bidon.ca/fr/random/2012-03-12-teksavvy-ipv6-pppoe-debian]] - activer l'IPv6 natif avec TekSavvy (DSL seulement, QC et Ontario)
