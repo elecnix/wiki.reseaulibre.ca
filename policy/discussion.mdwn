@@ -1,7 +1,12 @@
+[[!toc]]
+
 Débat sur le mode de décision du projet
 =======================================
 
 Durant la [[policy/naming/discussion]] sur le nom du réseau, il est apparu évident que nous n'avions pas de processus clair pour prendre des décisions. Ceci a, paradoxalement, amené à un débat sur comment prendre des décisions. :)
+
+Propositions
+------------
 
 Ceci se veut un résumé des différentes positions:
 
@@ -11,6 +16,9 @@ Ceci se veut un résumé des différentes positions:
   * alternative: si quelqu'un bloque, on passe on vote à majorité simple, 2/3 ou 90%
   * si la majorité nécessaire n'est pas atteinte, on fait un deuxième tour en éliminant la proposition avec le  moins de votes, on permet les amendements et on revote
     * alternative: si la majorité n'est pas atteinte, on demeure avec le *statu quo*
+
+Inquiétudes
+-----------
 
 Les inquiétudes suivantes ont été soulevées:
 
@@ -25,6 +33,9 @@ Les inquiétudes suivantes ont été soulevées:
  * un système de vote n'est pas nécessairement fondamentalement valide. Pour prendre un exemple extrême: "Un vote par internet d'une personne X qui s'occuppe de loin au projet et n'a jamais édité le wiki devrait-il être équivalent au vote d'une personne qui maintient, par exemple, 6 nodes?". Un peut être fondamentalement inéquitable.
  * le dialogue est fondamental et un système de vote peut être "abusé" pour éviter le dialogue.
 
+Consensus
+---------
+
 Quelques points fondamentaux qui semblent faire consensus:
 
  * tout système ne pourra probablement pas résoudre des questions sur lesquelles le groupe est divisé dès qu'il franchit une certaine masse critique
@@ -33,4 +44,37 @@ Quelques points fondamentaux qui semblent faire consensus:
  * il faut avoir le temps de discuter des grandes questions
  * beaucoup de décisions techniques peuvent se prendre sans objection
 
+Statu quo
+---------
+
 Le statu quo semble être que *une décision peut être prise sur la liste de discussion en amenant une proposition non-controversée et en attendant un certain délai indéterminé. le résultat est indéterminé s'il y a une objection (*statu quo *ou la proposition est reportée à une rencontre en personne?)*.
+
+Nouvelle proposition
+--------------------
+
+La proposition suivante a été élaborée en réunion et y faisait consensus, mais reste à être approuvée sur la liste avant d'être ajoutée à la page wiki ici.
+
+
+Où se prennent les décisions?
+: Sur la mailing list
+
+Qui prend les décisions?
+: Les inscrits sur la mailing list (nous)
+
+Comment se prennent les décisions?
+: Le processus:
+
+> 1. un proposition (comme celle-ci) est fait
+> 2. une discussion (ou aucune) suit, avec un délai d'une semaine
+> 3. un résumé est opéré
+> 4. on atteint le consensus ou retour au point 1
+
+Quelques précisions importantes sur le mécanisme:
+: On a noté plusieurs autres choses essentiels au processus
+
+> * On veut un nombre limité d'itérations (2?)
+> * À défaut d'avoir pris une décision, on passe à un vote à majorité 75%
+> * Un consensus ne veut pas dire l'unanimité, mais que personne ne bloque la décision
+> * Bloquer une décision, c'est inciter à plus de discussion en soulevant une objection précise.
+> * On verra plus tard pour le quorum.
+> * On voit ceci comme un essai, qu'on pourra réviser
