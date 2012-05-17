@@ -2,9 +2,15 @@
 
 # Pourquoi
 
-IPv6 permet, entre autres, d'avoir une adresse « link-local », c'est à dire que l'adresse est non routable et spécifique à un réseau local. Ces adresses sont auto-configurées par le système d'exploitation. La majorité des distributions Linux, BSD, Mac et Windows activent cette fonctionnalité par défaut. Ça permet de découvrir et parler avec les autres machines connectées sur le réseau.
+IPv6 est un protocole réseau destiné à remplacer le protocole IPv4. Les deux protocoles peuvent cohabiter sur le même lien.
 
-Un autre avantage d'IPv6 est qu'on n'a plus besoin de soit faire du « NAT sur NAT » si vous avez un point d'accès wifi (AP) sur votre réseau qui est déjà derrière un autre routeur qui fait du NAT (pour le réseau local). En IPv6, on assigne un sous-réseau au point d'accès wifi et le routage est beaucoup plus simple.
+Selon Wikipedia: « Grâce à des adresses de 128 bits au lieu de 32 bits, IPv6 dispose d'un espace d'adressage bien plus important qu'IPv4. Cette quantité d'adresses considérable permet une plus grande flexibilité dans l'attribution des adresses et une meilleure agrégation des routes dans la table de routage d'Internet. La traduction d'adresse (NAT), qui a été rendue populaire par le manque d'adresses IPv4, n'est plus nécessaire. » https://fr.wikipedia.org/wiki/IPv6
+
+De nombreux avantages pratiques: IPv6 permet, entre autres, d'avoir une adresse « link-local », c'est à dire que l'adresse est non routable et spécifique à un réseau local. Ces adresses sont auto-configurées par le système d'exploitation. La majorité des distributions Linux, BSD, Mac OSX et Windows activent cette fonctionnalité par défaut. Ça permet de découvrir et parler avec les autres machines connectées sur le réseau.
+
+Techniquement, un autre avantage d'IPv6 est qu'on n'a plus besoin de soit faire du « NAT sur NAT » (traduction d'adresses) si vous avez un point d'accès wifi (AP) sur votre réseau qui est déjà derrière un autre routeur qui fait du NAT (pour le réseau local). En IPv6, on assigne un sous-réseau au point d'accès wifi et le routage est beaucoup plus simple.
+
+Politiquement, IPv6 augmente considérablement le nombre de machines pouvant être connectées directement à Internet, tel que le réseau a été conçu initialement: point à point (sans NAT). Avec l'épuisement des adresses IPv4, les coûts d'hébergement de serveurs vont augmenter, et de plus en plus d'utilisateurs seront placés derrière des services en NAT par leur fournisseur (c'est déjà le cas avec la majorité des connexions par cellulaire).
 
 # Pré-requis
 
