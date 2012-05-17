@@ -14,6 +14,7 @@ Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre cha
 
 1. [[Installation de OpenWRT|configuration/flashing/]]
 2. [[Configurer OpenWRT avec Batman|guides/openwrt+batman]]
+3. [[Configurer IPv6|guides/ipv6]] (optionnel)
 
 Les pages de [[configuration]] examinent chaque étape en détail et permettent aussi de configurer des systèmes non-basés sur OpenWRT.
 
