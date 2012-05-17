@@ -169,6 +169,7 @@ domaines:
 * pas nom de domaine américain +++++
 
 Les noms:
+
 * reseaucitoyen.ca +++++
 * reseaulibre.ca   +++++++++
 * reseaucitoyen.org ++
@@ -187,8 +188,10 @@ Notes
 * mesh-mtl ne veut pas dire grand chose pour la majorité du monde
 * openisp pas bon pour le côté visibilité/marketing
 
-Wifi = ssid
-Mesh = bssid
+* autre proposition:
+
+ * Wifi = ssid
+ * Mesh = bssid
 
 * liberté de ne pas être lié à un ISP, liberté d'utilisation
 * libre comme dans logiciel libre
