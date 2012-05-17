@@ -155,7 +155,7 @@ Noms du projet
 * Nom de domaine
 * Est-ce que le SSID doit être un nom de domaine fonctionnel?
 
-Les détails sur [[naming/discussion/]]
+Les détails sur [[policy/naming/discussion/]]
 
 domaines:
 
