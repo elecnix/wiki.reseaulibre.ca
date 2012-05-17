@@ -4,7 +4,7 @@
 
 IPv6 est un protocole réseau destiné à remplacer le protocole IPv4. Les deux protocoles peuvent cohabiter sur le même lien.
 
-Selon Wikipedia: « Grâce à des adresses de 128 bits au lieu de 32 bits, IPv6 dispose d'un espace d'adressage bien plus important qu'IPv4. Cette quantité d'adresses considérable permet une plus grande flexibilité dans l'attribution des adresses et une meilleure agrégation des routes dans la table de routage d'Internet. La traduction d'adresse (NAT), qui a été rendue populaire par le manque d'adresses IPv4, n'est plus nécessaire. » https://fr.wikipedia.org/wiki/IPv6
+Selon Wikipedia: « Grâce à des adresses de 128 bits au lieu de 32 bits, IPv6 dispose d'un espace d'adressage bien plus important qu'IPv4. Cette quantité d'adresses considérable permet une plus grande flexibilité dans l'attribution des adresses et une meilleure agrégation des routes dans la table de routage d'Internet. La traduction d'adresse (NAT), qui a été rendue populaire par le manque d'adresses IPv4, n'est plus nécessaire. » [[https://fr.wikipedia.org/wiki/IPv6]]
 
 De nombreux avantages pratiques: IPv6 permet, entre autres, d'avoir une adresse « link-local », c'est à dire que l'adresse est non routable et spécifique à un réseau local. Ces adresses sont auto-configurées par le système d'exploitation. La majorité des distributions Linux, BSD, Mac OSX et Windows activent cette fonctionnalité par défaut. Ça permet de découvrir et parler avec les autres machines connectées sur le réseau.
 
