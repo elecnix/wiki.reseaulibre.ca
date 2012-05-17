@@ -16,7 +16,7 @@ Le DNS sur le mesh est décentralisé, c'est à dire qu'il n'y a pas de serveur 
 
 Serveurs DNS connus:
 
- * [[nodes/roadkiller]] - 172.16.0.1 / fd64:2c08:9fa7::1 - serveur DNS récursif
+ * [[nodes/roadkiller]] - `172.16.0.1` / `fd64:2c08:9fa7::1` - serveur DNS récursif
 
 Noms des nodes
 ==============
