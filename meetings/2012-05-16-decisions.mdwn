@@ -1,3 +1,5 @@
+[[!toc levels=2]]
+
 Meta
 ====
 
@@ -18,101 +20,100 @@ Présentation de la réunion, de l'ordre du jour et des personnes présentes.
 Ordre du jour
 =============
 
- 1. modes de décision ([discussion préalable](/policy/discussion))
- 2. différents noms de projets ([discussion préalable](/policy/naming/discussion))
- 3  Geeking!
+1. modes de décision ([discussion préalable](/policy/discussion))
+2. différents noms de projets ([discussion préalable](/policy/naming/discussion))
+3. Geeking!
 
 Présentations
 =============
 
- * Antoine/anarcat - un node sur son toit (boulette)
- * Mathieu/spoked - un node à venir
- * Matthieu/xsmurf
- * Derek
- * Yannick/scientist
- * Mathieu/bgm - un node sur son toit 50% packet loss avec deuxpi!
- * Guillaume/gboudrias - node mesh avec personne
- * Genevieve/tahini
- * Richard/opa
- * Pierre/gapzap
- * Philippe/deuxpi
+* Antoine/anarcat - un node sur son toit (boulette)
+* Mathieu/spoked - un node à venir
+* Matthieu/xsmurf
+* Derek
+* Yannick/scientist
+* Mathieu/bgm - un node sur son toit 50% packet loss avec deuxpi!
+* Guillaume/gboudrias - node mesh avec personne
+* Genevieve/tahini
+* Richard/opa
+* Pierre/gapzap
+* Philippe/deuxpi
 
 Modes de décision
 =================
 
 Résumé:
- -On a pas de processus clair de prise de décision
- -Ça a soulevé un débat sur la prise de décision.
 
-Modes de décisions suggérés
-Inquiétudes
+*On a pas de processus clair de prise de décision
+*Ça a soulevé un débat sur la prise de décision.
 
-Voir http://mesh.openisp.ca/policy/discussion/
+Plus de détails sur [[policy/discussion/]]
 
 On fait quoi?
- * À noter que plusieurs gens ne sont pas là, les décisions devraient pouvoir se faire en ligne
- * Ça devrait se faire sur plusieurs jours
- * Qui devrait participer au processus décisionnel?
- * On a besoin de plusieurs jours avant de déclarer une décision comme étant prise
- * Peut-on prendre des petites décisions par email sans trop se faire chier? Je crois que oui
- * Il y a plusieurs décisions qu'on n'a pas besoin de prendre pour l'instant. Il faut expérimenter.
- * On a jamais eu de problème dans les autres groupes à changer de règles en cours de route.
- * Plus vite on aura un système fonctionnel, plus ça sera encourageant.
- * Les décisions n'ont pas toutes besoin d'être définitives
- * Je pense que c'est bon de regarder les autres organisations comme Mozilla. Celui-ci fait la division en modules et donne une responsabilité à une personne par module.
- * Un système de rotation est problématique parce qu'on est sous la dictature d'un responsable temporaire.
- * Je pense qu'on ne devrait pas *tous* voter sur des décisions, on devrait considérer l'expérience technique dans le poids de décisions.
- * Est-ce qu'on veut une structure légale? [Peut-on remettre ça à plus tard?]
+
+* À noter que plusieurs gens ne sont pas là, les décisions devraient pouvoir se faire en ligne
+* Ça devrait se faire sur plusieurs jours
+* Qui devrait participer au processus décisionnel?
+* On a besoin de plusieurs jours avant de déclarer une décision comme étant prise
+* Peut-on prendre des petites décisions par email sans trop se faire chier? Je crois que oui
+* Il y a plusieurs décisions qu'on n'a pas besoin de prendre pour l'instant. Il faut expérimenter.
+* On a jamais eu de problème dans les autres groupes à changer de règles en cours de route.
+* Plus vite on aura un système fonctionnel, plus ça sera encourageant.
+* Les décisions n'ont pas toutes besoin d'être définitives
+* Je pense que c'est bon de regarder les autres organisations comme Mozilla. Celui-ci fait la division en modules et donne une responsabilité à une personne par module.
+* Un système de rotation est problématique parce qu'on est sous la dictature d'un responsable temporaire.
+* Je pense qu'on ne devrait pas *tous* voter sur des décisions, on devrait considérer l'expérience technique dans le poids de décisions.
+* Est-ce qu'on veut une structure légale? [Peut-on remettre ça à plus tard?]
 
 Deux grandes questions a resoudre:
 
- * qui peut prendre les decisions? (Le groupe peut grandir très rapidement)
- * où on prend les décisions?
+* qui peut prendre les decisions? (Le groupe peut grandir très rapidement)
+* où on prend les décisions?
 
 Qui prend les décidions
 -----------------------
 
- * tout le monde qui ont des nodes ou tout le monde qui sont membres? Autre?
- * Sur node, opérateurs, pas sur nodes, tout le monde?
+* tout le monde qui ont des nodes ou tout le monde qui sont membres? Autre?
+* Sur node, opérateurs, pas sur nodes, tout le monde?
 
 Proposition: Permettre aux gens qui ont un node de bloquer une décisions et inciter à plus de discussion en soulevant une objection précise.
 
 Note: Certaines questions ne touchent pas seulement les opérateurs, elles touchent tout le réseau.
 
 
- * Tout le monde est libre de faire ce qu'il veut. Mais il faut s'entendre pour coopérer.
- * Impossible d'avoir un système de "membership" formel
- * Si on doit prendre une décision technique, il faut faire marcher les choses avant d'entrer dans un processus démocratique. On ne trouve pas la solution en parlant mais en travaillant.
- * Par exemple github, si ça marche, ça va être intégré
- * Si on veut un membership "formel", les membres existants pourraient voter pour ajouter quelqu'un
- * C'est important de se mettre d'accord sur des choses pour qu'un projet comme ça fonctionne. Il y a un risque de "balkanisation" si les gens ne sont pas contents des décisions.
- * Tout le monde qui est impliqué techniquement dans le projet doit prendre une décisions.
- * Il devrait y avoir une horizontalité pour que tout le monde ait une voix.
- * Il est important de ne pas nier les dynamiques de pouvoir existantes. Ni être asservi, mais l'utiliser à bon escient.
- * Les gens qui opèrent des nodes devraient avoir un pouvoir technique. Ils l'ont en fait, sur leur ensemble, leurs implémentations.
- * Quelqu'un qui n'opère pas de node peut contribuer d'autres façons. Il peut être impliqué et devrait avoir une voix.
- * On devrait plus avoir peur du manque d'implication que de l'incompétence.
- * Si quelqu'un n'a pas de node, il devrait pouvoir parler mais pas décider.
- * Les gens qui ont intérêt dans la décision vont la prendre ensemble.
- * Il y a une volonté d'un certain consensus. Il faut un mécanisme pour quand on n'arrive pas à s'entendre. La majorité des décisions se prennent de façon organique.
- * Suggestion de non participation plutôt que interdire carrément
- * On ne veut pas empêcher les gens de participer aux discussions
+* Tout le monde est libre de faire ce qu'il veut. Mais il faut s'entendre pour coopérer.
+* Impossible d'avoir un système de "membership" formel
+* Si on doit prendre une décision technique, il faut faire marcher les choses avant d'entrer dans un processus démocratique. On ne trouve pas la solution en parlant mais en travaillant.
+* Par exemple github, si ça marche, ça va être intégré
+* Si on veut un membership "formel", les membres existants pourraient voter pour ajouter quelqu'un
+* C'est important de se mettre d'accord sur des choses pour qu'un projet comme ça fonctionne. Il y a un risque de "balkanisation" si les gens ne sont pas contents des décisions.
+* Tout le monde qui est impliqué techniquement dans le projet doit prendre une décisions.
+* Il devrait y avoir une horizontalité pour que tout le monde ait une voix.
+* Il est important de ne pas nier les dynamiques de pouvoir existantes. Ni être asservi, mais l'utiliser à bon escient.
+* Les gens qui opèrent des nodes devraient avoir un pouvoir technique. Ils l'ont en fait, sur leur ensemble, leurs implémentations.
+* Quelqu'un qui n'opère pas de node peut contribuer d'autres façons. Il peut être impliqué et devrait avoir une voix.
+* On devrait plus avoir peur du manque d'implication que de l'incompétence.
+* Si quelqu'un n'a pas de node, il devrait pouvoir parler mais pas décider.
+* Les gens qui ont intérêt dans la décision vont la prendre ensemble.
+* Il y a une volonté d'un certain consensus. Il faut un mécanisme pour quand on n'arrive pas à s'entendre. La majorité des décisions se prennent de façon organique.
+* Suggestion de non participation plutôt que interdire carrément
+* On ne veut pas empêcher les gens de participer aux discussions
 
 Comment on prend les décisions
 ------------------------------
 
- * Tout le monde a son mot à dire s'il n'y a pas de controverse
- * Est-ce qu'on veut que la décision bloque pour un opérateur sur 200?
- * Si quelqu'un a des oppositions, il devrait les exprimer et on devrait arriver à un consensus. Il doit le dire et les autres doivent écouter.
- * Il est différent d'être contre et bloquer une idée. Bloquer ne devrait pas être "ultime". Attention à l'abus du bloque.
- * Parfois il est nécessaire de prendre des décisions, parfois il faut être capable de voter.
- * Parfois il y a de la mauvaise fois. On devrait pouvoir "retirer" leur bloque.
- * Tous les gens qui ont un node ont réellement le pouvoir, indépendamment des votes.
- * Il peut y avoir des différences idéologiques sans mauvaise foi.
- * Suggestion:  Chercher le consensus pour deux tours, puis faire un vote.
- * Toutes les décisions auront-elles leur propre processus
- * On peut faire plusieurs votes. Un vote sur "A-t-on assez discuté?"
- * Si un opérateur s'en va, c'est l'imagine de tout le réseau qui est affectée, tout le service citoyen.
+* Tout le monde a son mot à dire s'il n'y a pas de controverse
+* Est-ce qu'on veut que la décision bloque pour un opérateur sur 200?
+* Si quelqu'un a des oppositions, il devrait les exprimer et on devrait arriver à un consensus. Il doit le dire et les autres doivent écouter.
+* Il est différent d'être contre et bloquer une idée. Bloquer ne devrait pas être "ultime". Attention à l'abus du bloque.
+* Parfois il est nécessaire de prendre des décisions, parfois il faut être capable de voter.
+* Parfois il y a de la mauvaise fois. On devrait pouvoir "retirer" leur bloque.
+* Tous les gens qui ont un node ont réellement le pouvoir, indépendamment des votes.
+* Il peut y avoir des différences idéologiques sans mauvaise foi.
+* Suggestion:  Chercher le consensus pour deux tours, puis faire un vote.
+* Toutes les décisions auront-elles leur propre processus
+* On peut faire plusieurs votes. Un vote sur "A-t-on assez discuté?"
+* Si un opérateur s'en va, c'est l'imagine de tout le réseau qui est affectée, tout le service citoyen.
 
 
 Qui prend les décidions
@@ -128,11 +129,11 @@ La mailing list.
 Comment on prend les décisions
 ------------------------------
 
- 1. une proposition avec un delai d'une semaine
- 2. discussion
- 3. résumé
- 4. discussion
- 5. consensus ou retour au point 1.
+1. une proposition avec un delai d'une semaine
+2. discussion
+3. résumé
+4. discussion
+5. consensus ou retour au point 1.
 
 Nombre limité d'itération, puis un vote, avec un choix "plus de discussions".
 
@@ -149,52 +150,54 @@ Noms du projet
 ==============
 
 3 questions:
- * Nom du réseau
- * Nom de domaine
- * Est-ce que le SSID doit être un nom de domaine fonctionnel?
 
-Voir http://mesh.openisp.ca/policy/naming/discussion/
+* Nom du réseau
+* Nom de domaine
+* Est-ce que le SSID doit être un nom de domaine fonctionnel?
+
+Les détails sur [[naming/discussion/]]
 
 domaines:
-   * mesh.openisp.ca +
-   * reseaucitoyen ++
-   * reseaulibre.ca ++++
+
+* mesh.openisp.ca +
+* reseaucitoyen ++
+* reseaulibre.ca ++++
 
 à valider:
 
- * nom de domaine = essid +++++++++++ (unanimité)
- * pas nom de domaine américain +++++
+* nom de domaine = essid +++++++++++ (unanimité)
+* pas nom de domaine américain +++++
 
 Les noms:
- - reseaucitoyen.ca +++++
- - reseaulibre.ca   +++++++++
- - reseaucitoyen.org ++
- - reseauparticipatif +
+* reseaucitoyen.ca +++++
+* reseaulibre.ca   +++++++++
+* reseaucitoyen.org ++
+* reseauparticipatif +
 
 Notes
 -----
 
- * openisp: l'idée était de documenter les ISPs existants ou comment en partir un, mais le projet mesh est arrivé après et ça fittait
- * reseaucitoyen est un nom qui parle beaucoup
- * .org n'est pas sous juridiction américaine (?)
- * openisp ne correspond pas au projet, si les investissements ne sont pas "officiels", ça reste un réseau citoyen, et non un ISP
- * reseaulibre.ca est proposé
- * mesh est plus descriptif, peut-être juste dans le SSID? e.g. mesh.reseaulibre.ca
- * c'est important de pouvoir publiciser le réseau par le mode ad-hoc
- * mesh-mtl ne veut pas dire grand chose pour la majorité du monde
- * openisp pas bon pour le côté visibilité/marketing
+* openisp: l'idée était de documenter les ISPs existants ou comment en partir un, mais le projet mesh est arrivé après et ça fittait
+* reseaucitoyen est un nom qui parle beaucoup
+* .org n'est pas sous juridiction américaine (?)
+* openisp ne correspond pas au projet, si les investissements ne sont pas "officiels", ça reste un réseau citoyen, et non un ISP
+* reseaulibre.ca est proposé
+* mesh est plus descriptif, peut-être juste dans le SSID? e.g. mesh.reseaulibre.ca
+* c'est important de pouvoir publiciser le réseau par le mode ad-hoc
+* mesh-mtl ne veut pas dire grand chose pour la majorité du monde
+* openisp pas bon pour le côté visibilité/marketing
 
 Wifi = ssid
 Mesh = bssid
 
- * liberté de ne pas être lié à un ISP, liberté d'utilisation
- * libre comme dans logiciel libre
- * citoyen implique une implication des gens, plus que la liberté individuelle
- * citoyen est un mot valise, la citoyenneté est une attache politique, alors que je suis un citoyen de la terre
- * l'internet n'est pas libre présentement parce que tu ne peux pas rouler de serveur
- * libre attire les deux côtés de l'éventail politique
- * c'est bien d'avoir à expliquer "pourquoi libre", et on devrait l'Expliquer sur le site web
- * citoyen est plus compréhensible par les gens dans la rue
+* liberté de ne pas être lié à un ISP, liberté d'utilisation
+* libre comme dans logiciel libre
+* citoyen implique une implication des gens, plus que la liberté individuelle
+* citoyen est un mot valise, la citoyenneté est une attache politique, alors que je suis un citoyen de la terre
+* l'internet n'est pas libre présentement parce que tu ne peux pas rouler de serveur
+* libre attire les deux côtés de l'éventail politique
+* c'est bien d'avoir à expliquer "pourquoi libre", et on devrait l'Expliquer sur le site web
+* citoyen est plus compréhensible par les gens dans la rue
 
 réseaucitoyen.ca: 1
 réseaulibre.ca: 11
