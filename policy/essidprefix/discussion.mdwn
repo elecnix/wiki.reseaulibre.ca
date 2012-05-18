@@ -1,0 +1,17 @@
+Différentes proposition pour les préfixes
+
+
+## AP Publics
+
+* www.DOMAINE
+* ap.DOMAINE
+* DOMAINE (no prefix)
+* public.DOMAINE
+
+
+## Mesh
+
+* mesh.DOMAINE
+* maille.DOMAINE
+* noeud.DOMAINE
+* ad-hoc.DOMAINE
