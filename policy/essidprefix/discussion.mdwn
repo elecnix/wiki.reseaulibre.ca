@@ -7,6 +7,7 @@ Différentes proposition pour les préfixes
 * ap.DOMAINE
 * DOMAINE (no prefix)
 * public.DOMAINE
+* access.DDOMAINE
 
 
 ## Mesh
@@ -15,3 +16,6 @@ Différentes proposition pour les préfixes
 * maille.DOMAINE
 * noeud.DOMAINE
 * ad-hoc.DOMAINE
+* batman.DOMAINE
+* cloud.DOMAINE
+* ether.
