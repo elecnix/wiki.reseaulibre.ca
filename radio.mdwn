@@ -533,6 +533,15 @@ L'ellipsoïde de Fresnel (Fresnel zone) est utilisé pour mesurer le volume de p
 
 **Pour s'assurer qu'une connexion soit fiable, il faut essentiellement être en "ligne de vue" (LoS: line of sight) entre 2 points qu'on désire relier. **
 
+####Site survey
+
+On OpenWRT / Linux:
+
+    /etc/init.d/network stop
+    iwconfig wlan0 mode ad-hoc
+    ifconfig wlan0 up
+    iwlist scanning
+
 ####Références
 
 * [Propagation des ondes radio](https://fr.wikipedia.org/wiki/Propagation_des_ondes_radio)
