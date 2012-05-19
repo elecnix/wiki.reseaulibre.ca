@@ -3,7 +3,7 @@
 Maybe in the window, facing south.
 
  * MAC address:
- * IP address:
+ * IP address: 172.16.1.18
  * IPv6 address:
  * Software:
  * Hardware:
