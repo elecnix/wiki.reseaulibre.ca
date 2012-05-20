@@ -22,7 +22,7 @@ Software
 : OpenWRT trunk
 
 Hardware
-: [[Bococom-DWR150]] + 16 dBi directional antenna (yagi)
+: [[/hardware/Bococom-DWR150]] + 16 dBi directional antenna (yagi)
 
 Power
 : unknown
