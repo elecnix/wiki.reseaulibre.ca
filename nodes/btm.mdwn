@@ -1,19 +1,50 @@
-[[!waypoint lat="45.532364" lon="-73.620812" embed hidden width="400px" height="400px" right desc="Maybe in the window, facing south"]]
+[[!waypoint lat="45.532364" lon="-73.620812" embed hidden width="400px" height="400px" right desc="Dans la fenêtre, vers le sud-est"]]
 
-Maybe in the window, facing south.
+[[!ymlfront data="""
+MAC: 00:B0:C0:02:1D:1F
+IP: 172.16.1.18
+IPv6: 
+"""]]
 
- * MAC address: 00:B0:C0:02:1D:1F
- * IP address: 172.16.1.18
- * IPv6 address:
- * Software:
- * Hardware:
- * Power:
- * Location:
- * Status: [[!taglink unknown]]
- * Links: 
- * Azimuth:
- * Panorama: http://www.flickr.com/photos/elecnix/7039715167/sizes/o (12202 x 1501)
- * Operator: [[users/elecnix]]
+hostname
+: btm
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk
+
+Hardware
+: [[Bococom-DWR150]] + 16 dBi directional antenna (yagi)
+
+Power
+: unknown
+
+Location
+: Dans la fenêtre, 4e étage, vers le sud-est. Possiblement une autre dans la fenêtre nord.
+
+Azimuth
+: 360°
+
+Panorama
+: http://www.flickr.com/photos/elecnix/7039715167/sizes/o (12202 x 1501)
+
+Status
+: [[!taglink planned]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: [[nodes/benoitg]]
+
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
