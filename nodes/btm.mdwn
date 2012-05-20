@@ -43,7 +43,7 @@ Operator
 : [[users/elecnix]]
 
 Links
-: [[benoitg]], [[val]]
+: [[Grace]], [[benoitg]]?
 
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
