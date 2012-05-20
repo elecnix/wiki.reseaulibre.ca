@@ -40,13 +40,13 @@ Panorama
 : Est (nuit) http://minus.com/mHBBh4XNM
 
 Status
-: [[!taglink planned]]
+: [[!taglink up]]
 
 Operator
 : [[users/elecnix]]
 
 Links
-: none
+: [[nodes/benoitg]]
 
 ## Liens possibles
 
