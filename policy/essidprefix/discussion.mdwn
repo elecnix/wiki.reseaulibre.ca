@@ -20,3 +20,4 @@ Différentes proposition pour les préfixes
 * batman.DOMAINE
 * cloud.DOMAINE
 * ether.
+* www.DOMAINE
