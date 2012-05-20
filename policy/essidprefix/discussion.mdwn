@@ -8,6 +8,7 @@ Différentes proposition pour les préfixes
 * DOMAINE (no prefix)
 * public.DOMAINE
 * access.DDOMAINE
+* bienvenue.DDOMAINE
 
 
 ## Mesh
