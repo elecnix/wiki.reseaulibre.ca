@@ -46,7 +46,7 @@ Links
 : aucun
 
 Liens possibles
-: [[Grace]], [[benoitg]]
+: Grace, benoitg
 
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
