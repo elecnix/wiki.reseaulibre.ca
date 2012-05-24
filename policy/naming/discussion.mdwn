@@ -1,5 +1,30 @@
 [[!toc levels=2]]
 
+ESSID exacts
+============
+
+Bien que nous sommes maintenant d'accords que le SSID soit un nom de domaine, et que nous avons choisi ce nom de domaine, il reste encore à choisir exactement quel sera le SSID, qui pourra varier en fonction de la [[topology]].
+
+Pour résumer la [[topology]], on pense avoir deux niveaux: 
+
+ * un réseau "mesh", basé sur BATMAN, OLSRd ou autre, et qui est accessible seulement aux opérateurs de nodes dûment configurés
+ * un réseau "accès", qui permet à des non-membres du projet d'accéder au réseau mesh sans avoir à faire de configuration spéciale
+
+Brainstorm:
+
+Niveau mesh
+: 
+ * mesh.reseaulibre.ca
+ * noeud.reseaulibre.ca
+
+Niveau accès
+: 
+ * ap.reseaulibre.ca
+ * acces.reseaulibre.ca
+ * bienvenue.reseaulibre.ca
+
+Note: une liste de critères pour un bon nom de réseau est établie plus bas...
+
 Débat sur le nom du projet
 ==========================
 
