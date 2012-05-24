@@ -16,26 +16,29 @@ Points 2 and 3 have been strongly supported during our [[first meeting|meetings/
 Décisions
 =========
 
-Les décisions du groupe se font sur la liste de discussion, et les inscrits sur la listes sont ceux qui ont le droit de participer aux décisions.
+Où se prennent les décisions?
+: Sur la mailing list
+
+Qui prend les décisions?
+: Les inscrits sur la mailing list (nous)
 
 Comment se prennent les décisions?
+: Le processus:
 
-  1. un proposition est faite (avec "PROPOSITION" clairement énoncé dans le sujet)
-  2. une discussion (ou aucune) suit, avec un délai d'une semaine
-  3. un résumé est opéré
-  4. on atteint le consensus ou retour au point 1
+> 1. un proposition (comme celle-ci) est fait
+> 2. une discussion (ou aucune) suit, avec un délai d'une semaine
+> 3. un résumé est opéré
+> 4. on atteint le consensus ou retour au point 1
 
 Quelques précisions importantes sur le mécanisme:
+: On a noté plusieurs autres choses essentiels au processus
 
-  * On veut un nombre limité d'itérations (2?)
-  * À défaut d'avoir pris une décision, on passe à un vote à majorité
-    75%
-  * Un consensus ne veut pas dire l'unanimité, mais que personne ne
-    bloque la décision
-  * Bloquer une décision, c'est inciter à plus de discussion en
-    soulevant une objection précise.
-  * On verra plus tard pour le quorum.
-  * On voit ceci comme un essai, qu'on pourra réviser
+> * On veut un nombre limité d'itérations (2?)
+> * À défaut d'avoir pris une décision, on passe à un vote à majorité 75%
+> * Un consensus ne veut pas dire l'unanimité, mais que personne ne bloque la décision
+> * Bloquer une décision, c'est inciter à plus de discussion en soulevant une objection précise.
+> * On verra plus tard pour le quorum.
+> * On voit ceci comme un essai, qu'on pourra réviser
 
 Voir la page [[discussion]] pour plus d'informations sur comment nous sommes arrivés à ce processus.
 
