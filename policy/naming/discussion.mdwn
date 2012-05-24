@@ -125,6 +125,7 @@ domaines, mais ceci fera l'objet d'une autre proposition, qui n'a pas
 l'avantage d'avoir atteint le consensus dans notre meeting à 12
 personnes hier. :)
 
+Note: cette proposition a été adoptée après un délai de 7 jours sur la liste.
 
 Sondage sur le changement du ESSID du mesh
 ==========================================
