@@ -1,4 +1,0 @@
-# Prefix du essid
-
-Il a été proposé d'utiliser différent essid pour annoncer différents types de connections (AP public, noeuds du mesh, etc)
-
