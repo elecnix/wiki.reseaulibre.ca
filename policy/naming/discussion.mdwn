@@ -18,12 +18,22 @@ Niveau mesh
  * mesh.reseaulibre.ca
  * noeud.reseaulibre.ca
  * relais.reseaulibre.ca
+ * maille.DOMAINE
+ * ad-hoc.DOMAINE
+ * batman.DOMAINE
+ * cloud.DOMAINE
+ * ether.
+ * www.DOMAINE
 
 Niveau accès
 : 
  * ap.reseaulibre.ca
  * acces.reseaulibre.ca
  * bienvenue.reseaulibre.ca
+ * www.DOMAINE
+ * DOMAINE (no prefix)
+ * public.DOMAINE
+ * access.DDOMAINE
 
 Note: une liste de critères pour un bon nom de réseau est établie plus bas...
 
