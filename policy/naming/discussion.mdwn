@@ -17,6 +17,7 @@ Niveau mesh
 : 
  * mesh.reseaulibre.ca
  * noeud.reseaulibre.ca
+ * relais.reseaulibre.ca
 
 Niveau accès
 : 
