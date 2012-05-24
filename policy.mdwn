@@ -37,6 +37,7 @@ Quelques précisions importantes sur le mécanisme:
   * On verra plus tard pour le quorum.
   * On voit ceci comme un essai, qu'on pourra réviser
 
+Voir la page [[discussion]] pour plus d'informations sur comment nous sommes arrivés à ce processus.
 
 Politiques techniques
 =====================
