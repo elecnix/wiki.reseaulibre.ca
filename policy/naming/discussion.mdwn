@@ -10,7 +10,8 @@ Pour résumer la [[topology]], on pense avoir deux niveaux:
  * un réseau "mesh", basé sur BATMAN, OLSRd ou autre, et qui est accessible seulement aux opérateurs de nodes dûment configurés
  * un réseau "accès", qui permet à des non-membres du projet d'accéder au réseau mesh sans avoir à faire de configuration spéciale
 
-Brainstorm:
+Brainstorm de noms
+------------------
 
 Niveau mesh
 : 
@@ -24,6 +25,45 @@ Niveau accès
  * bienvenue.reseaulibre.ca
 
 Note: une liste de critères pour un bon nom de réseau est établie plus bas...
+
+Rappel sur les BSSID, ESSID, etc
+--------------------------------
+
+Selon [wikipedia](https://en.wikipedia.org/wiki/Service_set_(802.11_network)), le BSSID est une adresse MAC:
+
+> A related field is the basic service set identification (BSSID)[4],
+> which uniquely identifies each BSS (the SSID however, can be used in
+> multiple, possibly overlapping, BSSs). In an infrastructure BSS, the
+> BSSID is the MAC address of the wireless access point (WAP). In an
+> IBSS, the BSSID is a locally administered MAC address generated from a
+> 46-bit random number. The individual/group bit of the address is set
+> to 0 (individual). The universal/local bit of the address is set to 1
+> (local).
+
+Pour du contexte, un BSS, c'est:
+
+> The basic service set (BSS) is the basic building block of an 802.11
+> wireless LAN. In infrastructure mode, a single access point (AP)
+> together with all associated stations (STAs) is called a BSS.[1] This
+> is not to be confused with the coverage of an access point, which is
+> called basic service area (BSA). [2] An access point acts as a master
+> to control the stations within that BSS. In ad hoc mode a set of
+> synchronized stations, one of which acts as master, forms a BSS. Each
+> BSS is identified by a BSSID. The simplest BSS consists of one access
+> point and one station.
+
+Donc à mon avis, on reste avec un seul "nom" pour le réseau adhoc, et
+c'est le ESSID:
+
+> An extended service set (ESS) is a set of one or more interconnected
+> BSSs and integrated local area networks that appear as a single BSS to
+> the logical link control layer at any station associated with one of
+> those BSSs.
+>
+> The set of interconnected BSSs must have a common service set
+> identifier (SSID). They can work on the same channel, or work on
+> different channels to boost aggregate throughput.
+
 
 Débat sur le nom du projet
 ==========================
