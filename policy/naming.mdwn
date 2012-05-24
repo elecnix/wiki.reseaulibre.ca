@@ -5,7 +5,7 @@
 SSID du réseau
 ==============
 
-Le SSID du réseau est une `reseaulibre.ca`, tel que documenté dans [[configuration/ad-hoc]]. Il reste à déterminer exactement quel sera
+Le SSID du réseau est `reseaulibre.ca`, tel que documenté dans [[configuration/ad-hoc]]. Il reste à déterminer exactement quel sera
 le ESSID ou le BSSID, mais on s'entendait tous et toutes pour que
 cela soit le nom de domaine (e.g. example.com) ou une variation du
 nom de domaine (e.g. mesh.example.com). Voir la page [[discussion]] pour voir comment ceci a été établi.
