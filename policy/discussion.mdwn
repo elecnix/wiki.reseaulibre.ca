@@ -78,3 +78,5 @@ Quelques précisions importantes sur le mécanisme:
 > * Bloquer une décision, c'est inciter à plus de discussion en soulevant une objection précise.
 > * On verra plus tard pour le quorum.
 > * On voit ceci comme un essai, qu'on pourra réviser
+
+Note: cette proposition a été adoptée après 7 jours sur la liste.
