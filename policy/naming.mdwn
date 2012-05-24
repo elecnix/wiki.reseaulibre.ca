@@ -5,12 +5,17 @@
 SSID du réseau
 ==============
 
-Le SSID du réseau est `mesh-mtl`, tel que documenté dans [[configuration/ad-hoc]].
+Le SSID du réseau est une `reseaulibre.ca`, tel que documenté dans [[configuration/ad-hoc]]. Il reste à déterminer exactement quel sera
+le ESSID ou le BSSID, mais on s'entendait tous et toutes pour que
+cela soit le nom de domaine (e.g. example.com) ou une variation du
+nom de domaine (e.g. mesh.example.com). Voir la page [[discussion]] pour voir comment ceci a été établi.
 
-Il y a eu une proposition de renommer le réseau, voir la page de [[discussion]] pour les détails.
+À noter que le nom précédent du réseau était `mesh-mtl`.
 
 Noms de domaines (DNS)
 ======================
+
+Le nom du projet est "reseaulibre.ca", et donc c'est un nom de domaine qu'on peut utiliser, par exemple pour ce wiki.
 
 Le DNS sur le mesh est décentralisé, c'est à dire qu'il n'y a pas de serveur DNS central. Les opérateurs sont libres d'opérer des serveurs DNS sur le réseau et les annoncer ici.
 
