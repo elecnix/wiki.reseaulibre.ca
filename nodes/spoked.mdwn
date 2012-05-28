@@ -22,7 +22,8 @@ Details:
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth:
- * Panorama: (5,4Mo) : http://i.imgur.com/jVPiV.jpg
+ * Panorama: [[!img spoked_pano_web.jpg align="right" size="800x101" alt=""]] <br/><br/><br/><br/>
+ * Panorama hi-res 5,4Mo : http://i.imgur.com/jVPiV.jpg
  * Operator: [[users/spoked]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
@@ -34,3 +35,5 @@ any later version published by the Free Software Foundation; with no Invariant
 Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
+
+
