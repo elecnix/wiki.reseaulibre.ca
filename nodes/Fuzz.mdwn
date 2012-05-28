@@ -1,0 +1,28 @@
+[[!waypoint   lat="45.608716" lon="-73.515444" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+
+Currently in planning stage.
+Probably will use a 1w Alfa AWUS036H adapter with a TP-LINK TL-ANT2415D Antenna, might add an extra adapter with a directional antenna to link with other nodes(If any eventually shows up around it).
+Router model to be decided but will probably run OpenWRT.
+
+ * MAC address:N/A
+ * IP address:N/A
+ * IPv6 address:N/A
+ * Software:N/A
+ * Hardware:N/A
+ * Power:N/A
+ * Location:Hochelaga-Maisonneuve
+ * Status: [[!taglink planned]]
+ * Links:N/A
+ * Azimuth:N/A
+ * Panorama:N/A
+ * Operator: Ruska
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
