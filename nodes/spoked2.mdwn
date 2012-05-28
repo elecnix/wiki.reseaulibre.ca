@@ -19,7 +19,7 @@ Placeholder for a rooftop node. Need confirmation with friend this will be possi
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth: 45.5275,-73.5904
- * Panorama:
+ * Panorama: [[!img spoked2_pano_web.jpg align="right" size="800x64" alt=""]]
  * Operator: [[users/spoked]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
@@ -31,3 +31,4 @@ any later version published by the Free Software Foundation; with no Invariant
 Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
+
