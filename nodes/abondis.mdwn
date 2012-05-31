@@ -1,0 +1,14 @@
+[[!waypoint  lat="45.44" lon="-73.61" embed hidden width="400px" height="400px" right desc="a node"]]
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware:
+ * Power:
+ * Location:
+ * Status: [[!taglink planned]] (can also be up, down, unknown)
+ * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+ * Azimuth:
+ * Panorama:
+ * Operator: [[users/abondis]]
