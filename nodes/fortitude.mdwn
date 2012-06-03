@@ -1,0 +1,26 @@
+[[!waypoint lat="45.4918" lon="-73.5809" embed hidden width="400px" height="400px" right desc="A node in my south-facing window"]]
+
+AP/antenna in window approx. 180 ft above ground level. Clear SW to SSE view, SW to W completely obstructed, SSE to E partially obstructed ("Montreal" directions, E parallel to the river).
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware: TBD
+ * Power:
+ * Location:
+ * Status: [[!taglink planned]]
+ * Links: n/a
+ * Azimuth:
+ * Panorama:
+ * Operator: 
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
