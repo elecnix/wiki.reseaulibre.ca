@@ -3,7 +3,7 @@
 
 
 [[!ymlfront data="""
-MAC: 00:15:6D:DB:D3:DC
+MAC: 00:27:22:2E:BC:31
 IP: 172.16.0.4
 IPv6: 
 """]]
@@ -22,7 +22,7 @@ IP address
 
 
 Software
-: OpenWRT backfire
+: OpenWRT trunk
 
 Hardware
 : Ubiquity Bullet M2 + 15 dBi Hyperlink Tech
