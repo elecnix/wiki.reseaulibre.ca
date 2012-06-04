@@ -101,3 +101,7 @@ Voir la page [[configuration/flashing]].
 ## J'ai perdu mon password!
 
 Voir [[configuration/flashing]] (oui encore).
+
+## Je suis perdu parmi le jargon technique!
+
+Consultez le [[glossaire]].
