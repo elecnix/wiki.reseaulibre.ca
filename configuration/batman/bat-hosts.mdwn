@@ -5,7 +5,7 @@ Here's a list of suggested MAC address to hostname translations for BATMAN.
     cat >> /etc/bat-hosts <<EOF
     00:25:9c:5e:44:59 linksys-grace
     00:13:10:1b:6d:dd linksys-pierre
-    00:15:6D:DB:D3:DC benoitg
+    00:27:22:2E:BC:31 benoitg
     00:15:6d:81:e0:5b batman-92
     00:15:6d:fc:be:90 batman-93
     00:15:6d:5a:f7:27 batman-94
