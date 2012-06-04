@@ -2,11 +2,11 @@
 
 Voici un résumé des concepts récurrents dans la [[documentation]] et les [[guides]] et durant les [[meetings|réunions]].
 
-# Access Point / Point d'accès:
+# Access Point / Point d'accès
 
 Une machine physique, généralement un routeur sans fil. Strictement parlant, les nodes sont des access points, mais on utilise surtout l'acronyme pour désigner les routeurs connectés au mesh et qui permettent la connexion en mode infrastructure (voir plus bas).
 
-# Ad-Hoc (mode):
+# Ad-Hoc (mode)
 
 Voir aussi l'article de Wikipédia: [[!wikipedia adhoc]]
 
