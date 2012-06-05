@@ -12,9 +12,9 @@ Voir aussi l'article de Wikipédia: [[!wikipedia adhoc]]
 
 # BATMAN
 
-Protocole/logiciel de [[glossaire#routing]] qui vise à remplacer [[glossaire#OLSR|OLSR]]. C'est un protocole de Layer 2 ("en-dessous" de IPv4/IPv6). Implémenter comme un module de noyau, batman-adv.
+Protocole/logiciel de routing qui vise à remplacer OLSR. C'est un protocole de Layer 2 ("en-dessous" de IPv4/IPv6). Implémenter comme un module de noyau, batman-adv.
 
-Vise à décentraliser l'information sur les routes possibles des [[glossaire#packet|packets]].
+Vise à décentraliser l'information sur les routes possibles des packets.
 
 Voir aussi [[configuration/batman]] et l'article de Wikipédia: [[!wikipedia B.A.T.M.A.N.]].
 
@@ -34,9 +34,9 @@ Voir aussi [[http://www.web1901.org/article105.html]] :
 
 > La plupart (mais pas tous) des services de l'Internet fonctionnent en mode client-serveur. Cela veut simplement dire qu'un des ordinateurs possède les informations, celles-ci sont stockées sur ses disques, et que l'autre va les lui demander. Le serveur est celui qui possède les informations. Il attend des clients et, comme ceux-ci peuvent arriver n'importe quand, le serveur est typiquement une machine allumée 24 heures sur 24. Le client est couramment votre machine de bureau : au moment où vous le décidez, votre ordinateur va aller chercher des informations sur le serveur. Notez que, dans le cas du web, une même machine serveuse peut héberger de très nombreux sites.
 
-Du point de vue du service, très peu d'utilisateurs sont aussi des fournisseurs de service (une des choses que le [[glossaire#Mesh|Mesh]] tente de résoudre).
+Du point de vue du service, très peu d'utilisateurs sont aussi des fournisseurs de service (une des choses que le mesh tente de résoudre).
 
-L'internet fonctionne actuellement majoritairement en [[IPv4]].
+L'internet fonctionne actuellement majoritairement en IPv4.
 
 # IP (protocole)
 
@@ -56,7 +56,7 @@ Exemples:
 * 192.168.0.20
 * 127.0.0.1
 
-Les adresses IPv4 seront ammenées à manquer un jour. C'est pourquoi le monde prépare le changement vers [[glossaire#IPv6|IPv6]].
+Les adresses IPv4 seront ammenées à manquer un jour. C'est pourquoi le monde prépare le changement vers IPv6.
 
 Voir aussi l'article de Wikipédia: [[!wikipedia IPv4]]
 
@@ -94,7 +94,7 @@ Voir aussi [[nodes]]
 
 # OLSR / OLSRD
 
-Protocole de routing optimisé pour les réseaux mesh. Tend à être remplacé par [[glossaire#batman|BATMAN]]
+Protocole de routing optimisé pour les réseaux mesh. Tend à être remplacé par BATMAN.
 
 Voir aussi [[configuration/olsrd]].
 
@@ -110,7 +110,7 @@ Standard, consensus.
 
 # Routing / routage
 
-Sélectionner le chemin à prendre dans un réseau. Dans notre cas, les [[glossaire#packet|packets]] sont les entitées qui sont routés, et les protocoles tels que [[glossaire#batman|BATMAN]] et [[glossaire#OLSR|OLSR]] visent à optimiser le routing pour le cas relativement spécial d'un réseau mesh.
+Sélectionner le chemin à prendre dans un réseau. Dans notre cas, les packets sont les entités qui sont routés, et les protocoles tels que BATMAN et OLSR visent à optimiser le routing pour le cas relativement spécial d'un réseau mesh.
 
 # Subnet
 
