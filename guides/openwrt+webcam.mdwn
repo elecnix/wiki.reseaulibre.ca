@@ -1,0 +1,68 @@
+# Guide de configuration d'une caméra web sur OpenWrt
+
+## Installation de OpenWrt
+
+To install OpenWrt, you must [[flash your router|configuration/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**.
+
+## Installation des logiciels
+
+Vérifiez que votre configuration est bonne en faisant:
+
+    opkg update
+
+Si ça donne une erreur, vérifiez la première ligne de votre fichier `/etc/opkg.conf`, ainsi que votre connexion à internet en faisant un `ping reseaulibre.ca` par exemple.
+
+Installez les paquets nécessaires:
+
+    opkg install mjpg-streamer kmod-video-uvc
+
+## Connexion de la caméra
+
+Vous pouvez brancher la caméra web sur le port USB de votre routeur maintenant. Vérifiez qu'elle est bien reconnue en vérifiant l'existence du fichier `/dev/video0`:
+
+    ls -l /dev/video*
+
+Si rien n'apparaît, la commande `dmesg | tail -n 20` vous donnera des informations utiles.
+
+La caméra Logitech C270 a été testée.
+
+## Test du vidéo
+
+Lancez le serveur web installé par le paquet `mjpg-streamer`:
+
+    mjpg_streamer -i "input_uvc.so -r 640x480 -f 6" -o "output_http.so -p 8080"
+
+Vérifiez que vous obtenez une image en ouvrant cette page dans votre navigateur, en utilisant l'adresse de votre routeur, ici `192.168.1.1`:
+
+[[http://192.168.1.1/?action=stream]]
+
+Terminez le test par CTRL-C.
+
+## Activation permanente du serveur
+
+Activez le serveur pour qu'il démarre automatiquement:
+
+    /etc/init.d/mjpg-streamer enable
+
+Démarrez le serveur ou faites un `reboot`:
+
+    /etc/init.d/mjpg-streamer start
+
+Vérifiez que le vidéo est à nouveau disponible à la même adresse dans un navigateur web.
+
+## Changement de port
+
+Il est possible de changer le numéro de port utilisé par le serveur en modifiant le fichier `/etc/config/mjpg-streamer`. Attention de ne pas utiliser le même port que l'interface web LUCI, si elle est installée.
+
+Voici un exemple de configuration:
+
+    config mjpg-streamer core
+        option enabled          "1"
+        option device           "/dev/video0"
+        option resolution       "640x480"
+        option fps              "5"
+        option port             "80"
+
+## Visualisation sur téléphone intelligent
+
+L'application [tinyCam Monitor FREE](https://play.google.com/store/apps/details?id=com.alexvas.dvr) fonctionne très bien. Il faut entrer l'adresse IP du routeur suivie de `?action=stream` dans le champ "IP address".
