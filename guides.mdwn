@@ -5,4 +5,4 @@ Those guides should help you getting started on some platforms.
 * [[guides/ubnt-ad-hoc]] - configuration ad-hoc de base, sans mesh, sur une station Ubiquiti
 * [[guides/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
 * [[guides/robin]] - configuration d'une machine avec [[robin]]
-
+* [[guides/openwrt+webcam]] - connexion d'une webcam sur un routeur
