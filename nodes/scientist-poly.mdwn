@@ -15,7 +15,7 @@ Je "cache" une antenne sur le bord de la fenêtre de mon bureau. Une belle vue v
  * Hardware: Bococom 
  * Power:
  * Location: 4e étage du pavillon Lassonde, Polytechnique
- * Status: [[!taglink planned]] 
+ * Status: [[!taglink up]] 
  * Links: 
  * Azimuth:
  * Panorama:
