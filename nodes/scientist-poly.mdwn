@@ -1,12 +1,18 @@
 [[!waypoint lat="45.504972" lon="-73.61479" embed hidden width="400px" height="400px" right desc="My office window"]]
 
-Je pourrais tenter de "cacher" une antenne sur le bord de la fenêtre de mon bureau. Une belle vue vers le nord-est de Montréal.
+[[!ymlfront data="""
+MAC: 00:12:17:d9:0f:7b
+IP: 172.16.1.21
+"""]]
 
- * MAC address:
- * IP address:
+
+Je "cache" une antenne sur le bord de la fenêtre de mon bureau. Une belle vue vers le nord-est de Montréal.
+
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
  * IPv6 address:
- * Software:
- * Hardware:
+ * Software: OpenWRT trunk
+ * Hardware: Bococom 
  * Power:
  * Location: 4e étage du pavillon Lassonde, Polytechnique
  * Status: [[!taglink planned]] 
@@ -28,3 +34,33 @@ License|meta/gfdl]]."]]"""]]
 
 Vue à partir de la fenêtre.
 [[!img vuefenetre-poly.jpg align="right" size="" alt=""]]
+
+
+	#basic stuff
+	uci delete wireless.radio0.disabled
+	uci set system.@system[0].hostname=scientist-poly
+	uci set network.lan.ipaddr=192.168.2.32
+	uci set network.lan.gateway=192.168.2.1
+	uci set network.lan.dns=192.168.2.1
+	uci set dhcp.lan.ignore=1
+	uci delete wireless.@wifi-iface[0].network
+	uci set wireless.radio0.channel=1
+	uci set wireless.@wifi-iface[0].mode=adhoc
+	uci set wireless.@wifi-iface[0].ssid=mesh-mtl
+	uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
+	uci set network.wlan0=interface
+	uci set network.wlan0.ifname=wlan0
+	uci set network.wlan0.proto=none
+	uci set network.wlan0.mtu=1528
+
+	#batman
+	uci set network.bat0=interface
+	uci set network.bat0.ifname=bat0
+	uci set network.bat0.proto=none
+	uci set network.bat0.mtu=1500
+
+	uci set network.bat0.ipaddr=172.16.1.21
+	uci set network.bat0.proto=static
+	uci set network.bat0.netmask=255.255.0.0
+
+	uci set batman-adv.bat0.interfaces="wlan0"
