@@ -51,4 +51,4 @@ Mes commandes UCI:
 	uci set network.bat0.proto=static
 	uci set network.bat0.netmask=255.255.0.0
 
-	uci set batman-adv.bat0.interfaces="wlan0"
+	uci set batman-adv.bat0.interfaces="wlan0 br-lan"
