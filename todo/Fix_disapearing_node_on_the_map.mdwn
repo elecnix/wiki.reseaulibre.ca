@@ -1,4 +1,5 @@
-
 bgm (and maybe other) keep disappearing from the map. 
 
 The generation of the kml file need to be fixed
+
+On dirait que ca fonctionne une modification sur 2. 
