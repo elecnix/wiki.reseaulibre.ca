@@ -1,4 +1,4 @@
-[[!waypoint lat="45.504973" lon="-73.61471" embed hidden width="400px" height="400px" right desc=""]]
+[[!waypoint lat="45.5087" lon="-73.614128" embed hidden width="400px" height="400px" right desc=""]]
 
 
 
