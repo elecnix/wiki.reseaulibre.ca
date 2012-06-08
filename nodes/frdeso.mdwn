@@ -1,4 +1,4 @@
-[[!waypoint lat="45.5087" lon="-73.614128" embed hidden width="400px" height="400px" right desc="Mon noeud"]]
+[[!waypoint lat="45.5087" lon="-73.614128" embed hidden width="400px" height="400px" right desc=""]]
 
 
 
