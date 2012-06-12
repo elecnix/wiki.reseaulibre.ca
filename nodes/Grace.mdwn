@@ -39,7 +39,7 @@ Panorama
 : [sud, emplacement choisi](http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg), [nord, possible pour le futur](http://farm6.staticflickr.com/5315/6906098540_70182d6840_o.jpg)
 
 Status
-: [[!taglink up]]
+: [[!taglink down]]
 
 Operator
 : [[users/elecnix]]
