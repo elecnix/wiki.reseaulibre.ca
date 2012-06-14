@@ -1,16 +1,20 @@
 [[!waypoint  lat="45.4717" lon="-73.570128" embed hidden width="400px" height="400px" right desc="A future node"]]
 
+[[!ymlfront data="""
+MAC: 
+IP: 172.16.1.28
+"""]]
 Possibilité de poser une antenne. 
 
 Je ne sais pas encore si l'accès au toit est possible. A la limite, je peux poser une antenne à l'arrière au 3e étage
 
 
 
- * MAC address:
- * IP address:
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
  * IPv6 address:
  * Software:
- * Hardware:
+ * Hardware: Ubiquiti Bullet M2HP + Ombi 8dbi
  * Power:
  * Location:
  * Status: [[!taglink planned]]
