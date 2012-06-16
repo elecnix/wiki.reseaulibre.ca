@@ -66,7 +66,9 @@ Ce sont les participants qui décident quels services offrir sur le réseau et c
 
 Si vous le faites, c'est à vos risques!
 
-Quelqu'un sur le mesh a accepté de partager sa propre connexion internet, mais il peut à tout moment décider de ne plus offrir ce service ou mettre en place des quotas de bande passante.  Aussi, il n'y a aucune garantie sur le débit disponible à un moment ou à un autre ou même à l'accessibilité de cette connexion si le lien tombe en panne.
+Même si vous avez une entente avec un autre participant pour utiliser sa connexion internet, si le lien n'est pas direct, un noeud intermédiaire qui tombe en panne peut rester plusieurs semaines dans cet état et vous priver de cet accès.
+
+Si l'accès est fourni par quelqu'un que vous ne connaissez pas, celui-ci peut à tout moment décider de ne plus offrir ce service ou mettre en place des quotas de bande passante.  Il n'y a donc aucune garantie de débit disponible ou même à d'accessibilité de cette connexion.
 
 ##Je suis sur le réseau, pis là je fais quoi ?##
 
