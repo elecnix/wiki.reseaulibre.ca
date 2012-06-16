@@ -3,20 +3,20 @@
 subgraph mesh {
     node [color="#EE9911"];
     label="Relay layer";
-    relaiA -- relaiB;
-    relaiB -- relaiC [len=2]; /* push those appart otherwise they collapse */
-    relaiC -- relaiA; relaiC -- relaiD; relaiD -- relaiB;
+    "relai A" -- "relai B";
+    "relai B" -- "relai C" [len=2]; /* push those appart otherwise they collapse */
+    "relai C" -- "relai A"; "relai C" -- "relai D"; "relai D" -- "relai B";
 }
 subgraph AP {
     node [color="#887733"];
-relaiA -- APh;
-relaiC -- APf; relaiC -- APg;
-relaiD -- APe;
+"relai A" -- "AP h";
+"relai C" -- "AP f"; "relai C" -- "AP g";
+"relai D" -- "AP e";
 }
 subgraph clients {
     node [color="#775544"];
-    APe -- client1; APe -- client2; APe -- client3;
-    APf -- client4; APf -- client5
+    "AP e" -- "client 1"; "AP e" -- "client 2"; "AP e" -- "client 3";
+    "AP f" -- "client 4"; "AP f" -- "client 5"
 }
 bgcolor="#EEEEEE";
 """]]
