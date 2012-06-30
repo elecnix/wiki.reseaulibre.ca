@@ -6,7 +6,7 @@ Possibilité de poser une antenne.
 MAC: 00:15:6D:70:36:EA
 IP: 172.16.1.51
 IPv6:
-"""]
+"""]]
 
  * Software:OpenWRT + BATMAN
  * Hardware:NanoStation M2
