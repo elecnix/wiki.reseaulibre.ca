@@ -2,11 +2,11 @@
 
 Possibilité de poser une antenne.
 
- * MAC address:
- * IP address:
+ * MAC address:00:15:6D:70:36:EA
+ * IP address: 172.16.1.51
  * IPv6 address:
- * Software:
- * Hardware:
+ * Software:OpenWRT + BATMAN
+ * Hardware:NanoStation M2
  * Power:
  * Location:
  * Status: [[!taglink planned]]
