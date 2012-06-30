@@ -7,7 +7,9 @@ MAC: 00:15:6D:70:36:EA
 IP: 172.16.1.51
 IPv6:
 """]]
-
+ * MAC address: {{$MAC}}
+ * IPv6 address: {{$IPv6}}
+ * IP address: {{$IP}}
  * Software:OpenWRT + BATMAN
  * Hardware:NanoStation M2
  * Power:
