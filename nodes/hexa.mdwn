@@ -9,6 +9,7 @@ IPv6:
 """]]
  * MAC address: {{$MAC}}
  * IPv6 address: {{$IPv6}}
+ * Link-local IPv6 address: fe80::eca4:2fff:fe7b:ecf7 (bat0)
  * IP address: {{$IP}}
  * Software:OpenWRT + BATMAN
  * Hardware:NanoStation M2
