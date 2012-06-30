@@ -5,7 +5,7 @@ Possibilité de poser une antenne.
 [[!ymlfront data="""
 MAC: 00:15:6D:70:36:EA
 IP: 172.16.1.51
-IPv6:
+IPv6: fd64:2c08:9fa7:51::1/64
 """]]
  * MAC address: {{$MAC}}
  * IPv6 address: {{$IPv6}}
