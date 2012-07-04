@@ -15,7 +15,7 @@ IPv6: fd64:2c08:9fa7:51::1/64
  * Hardware:NanoStation M2
  * Power:
  * Location:
- * Status: [[!taglink planned]]
+ * Status: [[!taglink up]]
  * Links:
  * Azimuth:
  * Panorama:
