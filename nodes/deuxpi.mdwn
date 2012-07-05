@@ -32,7 +32,7 @@ Détails:
  * Power: 28 dBm, 11 dBi
  * Location: Verdun, coin LaSalle et Rushbrooke
  * Status: [[!taglink up]]
- * Links: [[nodes/bgm]], [[nodes/scientist]]
+ * Links: [[nodes/bgm]], [[nodes/hexa]], [[nodes/scientist]]
  * Azimuth: Sud-ouest
  * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]], [[Vue du site de l'installation|https://farm6.staticflickr.com/5223/5881898216_6198d24176.jpg]]
  * Operator: [[users/deuxpi]]
