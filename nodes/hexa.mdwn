@@ -16,7 +16,7 @@ IPv6: fd64:2c08:9fa7:51::1/64
  * Power: 28 dbm
  * Location: Sur le toit d'un 3ieme etage
  * Status: [[!taglink up]]
- * Links:
+ * Links: [[nodes/deuxpi]]
  * Azimuth:
  * Panorama:
  * Operator: [[users/hexa]]
