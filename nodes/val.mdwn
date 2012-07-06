@@ -1,6 +1,6 @@
 [[!waypoint lat="45.543141" lon="-73.604225" embed hidden width="400px" height="400px" right desc="Antenne planifiée sur le toit d'un édifice de deux étages."]]
 
-Antenne planifiée sur le toit d'un édifice de deux étages.
+Antenne planifiée sur le toit d'un édifice de deux étages, à la fin de septembre 2012.
 
  * MAC address:
  * IP address:
