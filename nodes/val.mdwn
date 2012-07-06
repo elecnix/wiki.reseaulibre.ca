@@ -20,6 +20,7 @@ Antenne planifiée sur le toit d'un édifice de deux étages, à la fin de septe
  * [[nodes/genb]]
  * [[nodes/jojo]]
 
+[[!img pano-val.jpg size=950x]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
