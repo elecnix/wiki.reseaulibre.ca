@@ -2,6 +2,8 @@
 
 Un noeud sur le toit, au-dessus du viaduc Rosemont-Van Horne.
 
+Actuellement hors-fonction. Réparation prévue pour la fin de juillet 2012.
+
 [[!ymlfront data="""
 MAC: 00:27:22:2F:BC:13
 IP: 172.16.0.16
