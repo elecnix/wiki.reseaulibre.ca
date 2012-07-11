@@ -19,7 +19,7 @@ Placeholder for a rooftop node. Need confirmation with friend this will be possi
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth: 45.5275,-73.5904
- * Panorama: [[!img spoked2_pano_web.jpg align="right" size="800x64" alt=""]]
+ * Panorama: [[!img spoked2_pano_web.jpg align="right" size="950x" alt=""]]
  * Operator: [[users/spoked]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
