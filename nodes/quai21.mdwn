@@ -1,17 +1,49 @@
 Test node.
 
- * MAC address: 00:B0:C0:02:1C:53
- * IP address: 172.16.0.21
- * IPv6 address:
- * Software: OpenWRT
- * Hardware: [[hardware/Bococom-DWR150]]
- * Power:
- * Location: moving
- * Status: [[!taglink planned]] (can also be up, down, unknown)
- * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
- * Azimuth:
- * Panorama:
- * Operator: [[users/elecnix]]
+[[!ymlfront data="""
+MAC: 00:B0:C0:02:1C:53
+IP: 172.16.0.21
+IPv6: 
+"""]]
+
+hostname
+: quai21
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk (attitude adjustment)
+
+Hardware
+: [[hardware/Bococom-DWR150]]
+
+Power
+: (default)
+
+Location
+: undecided
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink unknown]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: 
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
