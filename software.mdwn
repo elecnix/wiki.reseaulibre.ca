@@ -48,7 +48,7 @@ The main developper of BATMAN, Elektra, is working heavily on the project.
 See also our [[configuration/batman]] page.
 
 ## CJDNS
-* [[CJDNS | https://wiki.projectmeshnet.org/FAQ#What_is_CJDNS.3F]]
+[CJDNS](http://en.wikipedia.org/wiki/Cjdns)
 
 # Distributions
 
