@@ -2,6 +2,7 @@ This project is inspired, guided and sometimes in communication with the followi
 
 #Global
 * <http://freenetworkfoundation.org> The Free Network Foundation
+* <https://projectmeshnet.org/> The Project Meshnet
 
 #Europe
 * <http://www.opennet-initiative.de/> - Rostock
