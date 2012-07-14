@@ -47,8 +47,24 @@ The main developper of BATMAN, Elektra, is working heavily on the project.
 
 See also our [[configuration/batman]] page.
 
+## Babel
+
+"*[Babel](http://www.pps.univ-paris-diderot.fr/~jch/software/babel/) is
+a loop-avoiding distance-vector routing protocol for IPv6 and IPv4
+with fast convergence properties. It is based on the ideas in DSDV,
+AODV and Cisco's EIGRP, but is designed to work well not only in wired
+networks but also in wireless mesh networks.*"
+
+Babel runs as a userland daemon, either standalone or part of the
+Quagga daemon.
+
 ## CJDNS
-[CJDNS](http://en.wikipedia.org/wiki/Cjdns)
+
+[CJDNS](http://en.wikipedia.org/wiki/Cjdns) is a decentralised routing
+protocol that depends on a IPv6 and shared hash table, aimed at
+"security, scalability, speed and ease of use."
+
+It is the backend of [Project meshnet](https://projectmeshnet.org/).
 
 # Distributions
 
