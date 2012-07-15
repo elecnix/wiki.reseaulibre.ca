@@ -10,10 +10,12 @@ Also used by commotionwireless.
 http://wiki.hacdc.org/index.php/Babel_Setup
 
 1. stop network manager
-2. `ifconfig wlan0 down`
-3. `iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9`
-4. `ifconfig wlan0 up 172.16.0.42/32`
-5. `babeld -D wlan0`
+2. setup [[ad-hoc]] and babeld
+
+    ifconfig wlan0 down
+    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9
+    ifconfig wlan0 up 172.16.0.42/32
+    babeld -D wlan0
 
 See [[policy/numbering]] to choose the proper IP above, but note the netmask (`255.255.255.255` or `/32`) that needs to be defined for babel to work.
 
