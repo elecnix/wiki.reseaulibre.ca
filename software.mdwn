@@ -56,7 +56,13 @@ AODV and Cisco's EIGRP, but is designed to work well not only in wired
 networks but also in wireless mesh networks.*"
 
 Babel runs as a userland daemon, either standalone or part of the
-Quagga daemon.
+Quagga daemon. It is used by the
+[Byzantium project](http://wiki.hacdc.org/index.php/Byzantium) and the
+[Commotion Wireless project](http://commotionwireless.net/).
+
+And it's an RFC ([[!rfc 6126]]).
+
+Our configuation notes are in [[configuration/babel]].
 
 ## CJDNS
 
@@ -64,7 +70,8 @@ Quagga daemon.
 protocol that depends on a IPv6 and shared hash table, aimed at
 "security, scalability, speed and ease of use."
 
-It is the backend of [Project meshnet](https://projectmeshnet.org/).
+It is the backend of [Project meshnet](https://projectmeshnet.org/)
+also known as the [Hyperboria network](http://hyperboria.net).
 
 # Distributions
 
