@@ -24,9 +24,9 @@ From the
 
 You can ask Babel to dump its internal tables. With the standalone daemon, send a HUP1 signal to the daemon to get it to dump its tables to the log file. With the quagga version, type
 
-show babel interface
-show babel neighbour
-show babel route
+    show babel interface
+    show babel neighbour
+    show babel route
 
 Tcpdump groks Babel starting with version 4.2.1. Wireshark has support since version 1.6.0.
 
