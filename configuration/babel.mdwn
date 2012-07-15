@@ -1,0 +1,32 @@
+Babel configuration notes
+=========================
+
+(!) Those are not official instructions to join the Montreal mesh. We
+are only experimenting with this technology at this point, so to join
+the mesh you should rather look at [[batman]] for now.
+
+Also used by commotionwireless.
+
+http://wiki.hacdc.org/index.php/Babel_Setup
+
+1. stop network manager
+2. `ifconfig wlan0 down`
+3. `iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9`
+4. `ifconfig wlan0 up`
+5. `babeld -D wlan0`
+6. `ahcpd -D wlan0`
+
+Debug
+-----
+
+From the
+[FAQ](http://www.pps.univ-paris-diderot.fr/~jch/software/babel/faq.html):
+
+You can ask Babel to dump its internal tables. With the standalone daemon, send a HUP1 signal to the daemon to get it to dump its tables to the log file. With the quagga version, type
+
+show babel interface
+show babel neighbour
+show babel route
+
+Tcpdump groks Babel starting with version 4.2.1. Wireshark has support since version 1.6.0.
+
