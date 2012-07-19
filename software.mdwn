@@ -14,7 +14,7 @@
 * [wmolsr](http://sourceforge.net/projects/wmolsr/)
 * <http://tldp.org/HOWTO/OLSR-IPv6-HOWTO/>
 
-Part of the Robin firmware (see below).
+Part of the Robin firmware (see below) and the [Commotion Wireless project](http://commotionwireless.net/).
 
 ### Deployments
 
@@ -57,8 +57,7 @@ networks but also in wireless mesh networks.*"
 
 Babel runs as a userland daemon, either standalone or part of the
 Quagga daemon. It is used by the
-[Byzantium project](http://wiki.hacdc.org/index.php/Byzantium) and the
-[Commotion Wireless project](http://commotionwireless.net/).
+[Byzantium project](http://wiki.hacdc.org/index.php/Byzantium).
 
 And it's an RFC ([[!rfc 6126]]).
 
