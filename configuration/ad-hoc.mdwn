@@ -18,7 +18,7 @@ Cel (BSSID)
 
 The channel can be changed according to location and existing
 interference. It needs to be the same for all devices that
-interconnect.
+interconnect. We have chosen channel 1 as it is the one with the less chance of seeing interference from other channels (see [this wikipedia page for more information](https://en.wikipedia.org/wiki/List_of_WLAN_channels)).
 
 Voir aussi [[policy/naming]] pour la convention de noms.
 
