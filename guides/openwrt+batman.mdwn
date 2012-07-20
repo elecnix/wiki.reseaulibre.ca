@@ -14,13 +14,83 @@ To install OpenWRT, you must [[flash your router|configuration/flashing]] with a
     passwd
     exit
 
-# Basic Network Configuration
+# Know your network interfaces and what you want to do with them
 
 Connect a cable from the LAN to your PC.
 Set your PC to get an IP address automatically.
 Get into the router with its default IP address.
 
     ssh root@192.168.1.1
+
+Depending on the device, you may have one or many ethernet ports, configured either for WAN (internet port) or LAN (local network port(s)) or VLAN (one virtual port: for example on a linksys router, the 4 lan ports are configured as a VLAN), and a wireless interface.
+
+To get to know your interfaces and how they are called type
+
+    ifconfig
+
+The output on a linksys wrtsl54gs (4 lan ports, one wan port and one wireless interface) looks like this
+
+    br-lan Link encap:Ethernet  HWaddr 00:0C:41:14:E0:8F  
+           inet addr:172.16.11.1  Bcast:172.16.255.255  Mask:255.255.0.0
+           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+           RX packets:1441 errors:0 dropped:10 overruns:0 frame:0
+           TX packets:2375 errors:0 dropped:0 overruns:0 carrier:0
+           collisions:0 txqueuelen:0 
+           RX bytes:188140 (183.7 KiB)  TX bytes:162059 (158.2 KiB)
+
+
+    eth0   Link encap:Ethernet  HWaddr 00:0C:41:14:E0:8F  
+           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+           RX packets:176730 errors:0 dropped:39 overruns:0 frame:0
+           TX packets:177867 errors:0 dropped:0 overruns:0 carrier:0
+           collisions:0 txqueuelen:1000 
+           RX bytes:12202170 (11.6 MiB)  TX bytes:11512610 (10.9 MiB)
+           Interrupt:4 
+
+    eth1   Link encap:Ethernet  HWaddr 00:0C:41:14:E0:90  
+           inet addr:192.168.1.111  Bcast:192.168.69.255  Mask:255.255.255.0
+           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+           RX packets:26818 errors:0 dropped:0 overruns:0 frame:0
+           TX packets:26335 errors:0 dropped:0 overruns:0 carrier:0
+           collisions:0 txqueuelen:1000 
+           RX bytes:6060674 (5.7 MiB)  TX bytes:4681282 (4.4 MiB)
+           Interrupt:5 
+
+    lo     Link encap:Local Loopback  
+           inet addr:127.0.0.1  Mask:255.0.0.0
+           UP LOOPBACK RUNNING  MTU:16436  Metric:1
+           RX packets:842 errors:0 dropped:0 overruns:0 frame:0
+           TX packets:842 errors:0 dropped:0 overruns:0 carrier:0
+           collisions:0 txqueuelen:0 
+           RX bytes:99165 (96.8 KiB)  TX bytes:99165 (96.8 KiB) 
+
+    wlan0  Link encap:Ethernet  HWaddr 00:10:18:90:20:DB  
+           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+           RX packets:17858 errors:0 dropped:876 overruns:0 frame:0
+           TX packets:16124 errors:0 dropped:0 overruns:0 carrier:0
+           collisions:0 txqueuelen:32 
+           RX bytes:2029972 (1.9 MiB)  TX bytes:3249399 (3.0 MiB)
+
+eth1 is the WAN interface, eth0 are the 4 lan ports, wlan0 is the wireless interface and br-lan is the lan bridge.  By default, OpenWRT will create a network bridge called 'lan', and it includes one of the wired ethernet ports. To see what interfaces compose the lan bridge, type the following
+
+    root@Openwrt:/# brctl show
+    bridge name	    bridge id           STP enabled     interfaces
+    br-lan          8000.000c4114e08f   no              eth0
+                                                        wlan0
+
+
+From this information and depending on what you intend to do, you have to determine:
+
+* which interface(s) will be on the mesh (later referred to as mesh interfaces)
+* which interface(s) will be on the LAN (to serve local users)  (later referred to as LAN interfaces)
+
+For example, a simple relay on a roof will have the wlan0 interface on the mesh and its eth0 interface as LAN.  A relay on the roof connected to an access point may want to have both wlan0 and eth0 on the mesh and if available an eth1 on the LAN.  The access point will have its eth0 interface on the mesh and its wlan0 will be a LAN interface to server wireless clients.
+
+(!) For an access point with access to the internet "WAN" and "LAN" are tricky concepts because both lead *outside* the local network, one to the mesh, the other to the internet.  Interfaces should be thought more in terms of what they do and where they lead to.  For instance, the firewall may need to be modified if the WAN port is connected to your home network, so that you can access the router by ssh or web interface through that interface (incoming connections are rejected by default on that port for security reason, but you do not want that if the only connections to that port will come from your home network).  *Need a link to a guide on security*
+
+*Need link to more specific configuration pages for different scenarios*
+
+# Basic Network Configuration
 
 Turn the radio on:
 
@@ -30,15 +100,20 @@ Set the name of the router to the same you entered in the [[node database|nodes]
 
     uci set system.@system[0].hostname=ti-noeud
 
-By default, OpenWRT will create a network bridge called 'lan', and it includes one of the wired ethernet ports. If you have only one port, this will be eth0, but it may be labeled WAN instead of LAN. For Linksys it's eth0.0, for Ubiquity it's eth0. Look at the output of ifconfig to see what's the eth0 interface. To set which interfaces should be part of the bridge, use something like `uci set network.lan.ifname="eth0"` (space-separated).
 
-(!) From now on, this guide assumes the 'lan' bridge includes the ethernet port you will use to manage the router.
+Now set the interface(s) that should be part of the LAN bridge like this
+    uci set network.lan.ifname="<space-separated LAN interfaces>" (space-separated)
 
 Configure the router's IP address for your internal network. Here we assume you have an other router with the address 192.168.1.1 so we assign a different address.
 
+    # For static ip
     uci set network.lan.ipaddr=192.168.1.10
     uci set network.lan.gateway=192.168.1.1
     uci set network.lan.dns=192.168.1.1
+    
+    # Or to get dhcp from your home router and reach your router using name ti-noeud
+    uci set network.lan.proto=dhcp
+    uci set network.lan.hostname=ti-noeud
 
 Disable DHCP server on LAN, so as to not interfere with home router.
 
@@ -53,9 +128,13 @@ Disconnect the PC from the router and now connect both the
 PC and the mesh router to the home router.
 Re-connect to the router using its new IP address.
 
-    ssh root@172.16.1.1
+    ssh root@192.168.1.10
+    or
+    ssh root@ti-noeud
 
 # Wireless Configuration
+
+(!) This section applies only to nodes where the wifi interface will be on the mesh.  Otherwise, configure the wifi interface as usual.
 
 We have enabled wireless previously (see  if you haven't). Now, verify that the wifi interface
 is listed. If not, you may have flashed the wrong image!
@@ -111,9 +190,9 @@ Configure your node by picking a free slot from the [[IP Allocation|policy/numbe
     uci set network.bat0.ipaddr=172.16.1.1
     uci set network.bat0.netmask=255.255.255.0
 
-Tell batman to use the wireless interface:
+Tell batman to use the mesh interfaces:
 
-    uci set batman-adv.bat0.interfaces="wlan0"
+    uci set batman-adv.bat0.interfaces="<space separated mesh interfaces>"
 
 Optionally use our our [[bat-hosts|configuration/batman/bat-hosts]] file.
 
@@ -124,14 +203,16 @@ You're done! Commit the changes and reboot to test them.
 
 # Testing
 
-After a reboot, you should see `wlan0: active` and `br-lan: active` with this:
+After a reboot, check that the configuration worked
 
 [[!format txt """
 root@ti-noeud:/# brctl show
+# Should list the LAN interfaces
 bridge name     bridge id               STP enabled     interfaces
 br-lan          8000.00259c5e4457       no              eth0
 
 root@ti-noeud:/# batctl if
+# Should be a line like that for each mesh interface
 wlan0: active
 """]]
 
