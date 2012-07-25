@@ -1,0 +1,26 @@
+Réseau libre devrait être présent à la MakerFaire de Montréal les 25 et 26 août prochains 
+[[http://www.makerfairemontreal.ca/]]
+
+**À confirmer**  Est-ce qu'on aura de la place au kiosque du foulab ou devrait-on s'inscrire nous-mêmes?  
+
+## Préparation du MakerFaire
+
+On devrait faire une rencontre ou deux rencontres (soirées ou un Hack-BBQ) pour planifier ce qui sera présenté, question de montrer qqc de cool
+
+Matériel
+
+* Quel matériel va-t-on utiliser?
+* Nombre de noeuds?
+
+Logiciel (suggestions)
+
+* Page portail avec nodogsplash ou nocatsplash ou wifidog
+* Gestion du mesh avec nodewatcher? [[http://dev.wlan-si.net/wiki/Nodewatcher]]
+* Logiciels de communauté avec genre [[http://www.tidepools.co/]]
+
+
+## Sur place
+
+Noter si l'on sera présent et quand
+
+* Geneviève - samedi OU dimanche
