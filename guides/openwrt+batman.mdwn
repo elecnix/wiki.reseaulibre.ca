@@ -185,10 +185,10 @@ Configuration de l'interface de batman. We're not assigning an IP address to `ba
     uci set network.bat0.proto=static
     uci set network.bat0.mtu=1500
 
-Configure your node by picking a free slot from the [[IP Allocation|policy/numbering]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/24 network:
+Configure your node by picking a free slot from the [[IP Allocation|policy/numbering]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/12 network:
 
     uci set network.bat0.ipaddr=172.16.1.1
-    uci set network.bat0.netmask=255.255.255.0
+    uci set network.bat0.netmask=255.240.0.0
 
 Tell batman to use the mesh interfaces:
 
