@@ -24,6 +24,7 @@ Here's a list of suggested MAC address to hostname translations for BATMAN.
     00:15:6D:F8:5C:9B clarence
     00:27:22:2F:BC:13 grace
     00:24:d7:73:ac:70 scientist-atwood
+    00:15:6d:70:36:ea hexa
     EOF
 
 ## New! Dynamic table of MAC addresses
