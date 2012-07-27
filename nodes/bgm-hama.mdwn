@@ -1,0 +1,28 @@
+[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Node dans ma fenêtre au 3e étage."]]
+
+= Détails techniques =
+
+[[!ymlfront data="""
+MAC: 00:15:6D:70:37:EA
+IP: 172.16.1.43
+IPv6: fd64:2c08:9fa7:43::1
+"""]]
+
+ * hostname: homs
+ * MAC address: {{$MAC}}
+ * IPv6 address: {{$IPv6}}
+ * Link-local IPv6 address: n/a (wlan0), fe80::215:6dff:fe71:37ea (eth0)
+ * IP address: {{$IP}}
+ * Software: OpenWRT (Backfire) Trunk 2012-07-26
+ * Hardware: Ubiquity NanoStation M2
+ * Power: 28dBm
+ * Location: dans une fenêtre au 3e étage
+ * Azimuth: 120°
+ * Panorama: N/A
+ * Status: [[!taglink up]]
+ * Operator: [[users/bgm]]
+ * Links: [[bgm-homs]]
+
+= Services =
+
+ * Point d'accès "Librenet-m2" qui permet de se connecter à http://partage.bidon.ca en IPv6.
