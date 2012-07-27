@@ -190,7 +190,7 @@ Configure your node by picking a free slot from the [[IP Allocation|policy/numbe
     uci set network.bat0.ipaddr=172.16.1.1
     uci set network.bat0.netmask=255.240.0.0
 
-Tell batman to use the mesh interfaces:
+Tell batman to use the mesh interfaces: (normally: "wlan0 br-lan")
 
     uci set batman-adv.bat0.interfaces="<space separated mesh interfaces>"
 
