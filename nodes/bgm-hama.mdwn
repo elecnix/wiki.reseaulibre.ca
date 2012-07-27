@@ -1,6 +1,6 @@
-[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Node dans ma fenêtre au 3e étage."]]
+[[!waypoint lat="45.465677" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Node dans ma fenêtre au 3e étage."]]
 
-= Détails techniques =
+# Détails techniques
 
 [[!ymlfront data="""
 MAC: 00:15:6D:70:37:EA
@@ -23,6 +23,6 @@ IPv6: fd64:2c08:9fa7:43::1
  * Operator: [[users/bgm]]
  * Links: [[bgm-homs]]
 
-= Services =
+# Services
 
  * Point d'accès "Librenet-m2" qui permet de se connecter à http://partage.bidon.ca en IPv6.
