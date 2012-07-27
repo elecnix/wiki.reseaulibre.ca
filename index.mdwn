@@ -1,6 +1,6 @@
 [[!osm right]]
 
-Réseau Libre vise à créer un réseau sans fil communautaire et de voisinage, indépendant et décentralisé.  Le réseau se construit de façon organique et évolutive à mesure que de nouveaux membres s'y joignent.  Chaque personne participant au réseau ajoute son noeud et choisit [[les services qu'il désire partager|Idees]] avec la communauté, connexion internet ou non. 
+Réseau Libre vise à créer un réseau sans fil communautaire et de voisinage, indépendant et décentralisé.  Le réseau se construit de façon organique et évolutive à mesure que de nouveaux membres s'y joignent.  Chaque personne participant au réseau ajoute son [[noeud|nodes]] et choisit [[les services qu'il désire partager|Idees]] avec la communauté, connexion internet ou non. 
 
 Réseau libre inclut 
 
