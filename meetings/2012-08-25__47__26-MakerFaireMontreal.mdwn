@@ -19,6 +19,24 @@ Logiciel (suggestions)
 * Logiciels de communauté avec genre [[http://www.tidepools.co/]]
 
 
+## Description pour le site de MakerFaire
+
+Proposition de description du projet et de la démo:
+
+### Francais
+
+Réseau Libre vise à créer un réseau sans fil communautaire et de voisinage, indépendant et décentralisé. Le réseau se construit de façon organique et évolutive à mesure que de nouveaux membres s'y joignent. Chaque personne participant au réseau ajoute son noeud et choisit les services qu'il désire partager avec la communauté, connexion internet ou non.
+
+Joignez-vous à nous pour voir des exemples d'applications rendues possibles par les réseaux maillés. Si le projet vous intéresse, présentez-vous avec un routeur compatible à OpenWRT et nous pourrons vous aider à installer la distribution et la configurer pour la rendre compatible au mesh.
+
+
+### English
+
+Réseau Libre aims to create a wireless community mesh network, independent and decentralized. The network is built organically and evolves as new members join. Each person participating in the network adds a node and chooses the services he or she wishes to share with the community, internet connection or not.
+
+Join us for examples of applications enabled by mesh networks. If you are interested by this project, come to our booth with an OpenWRT compatible router and we can help you install and configure the distribution to make it compatible to the mesh.
+
+
 ## Sur place
 
 Doodle pour les disponibilités pendant l'événement: [[http://doodle.com/zacgaugbq8bufsga]]
