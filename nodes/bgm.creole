@@ -23,8 +23,6 @@ IPv6: fd64:2c08:9fa7:42::1
  * Operator: [[users/bgm]]
  * Links: [[deuxpi]]
 
-Temporairement configuré avec AirOS en mode station-client pour tester la connexion et orienter les antennes.
-
 = Services =
 
  * Point d'accès "Librenet-m2" qui permet de se connecter à http://partage.bidon.ca en IPv6.
