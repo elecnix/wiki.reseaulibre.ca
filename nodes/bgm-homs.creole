@@ -1,4 +1,4 @@
-[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Node dans ma fenêtre au 3e étage."]]
+[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Node dans ma fenetre au 3e etage."]]
 
 = Détails techniques =
 
