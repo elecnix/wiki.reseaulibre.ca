@@ -11,7 +11,7 @@ IPv6:
 À faire:
 
  * <s>Déterminer une IPv4, IPv6 pour le mesh</s>
- * Réaligner l'antenne pour optimiser le signal vers [[nodes/bgm]] et [[nodes/scientist]]
+ * Réaligner l'antenne pour optimiser le signal vers [[nodes/bgm-homs]] et [[nodes/scientist]]
  * <s>Vérifier de la nécessité de AirMax/TDMA, sinon installer OpenWrt</s>
  * <s>Installer BATMAN sur le point d'accès</s>
  * <s>Configurer le port Ethernet pour avoir un accès pour Internet via IPv6</s>
@@ -32,7 +32,7 @@ Détails:
  * Power: 28 dBm, 11 dBi
  * Location: Verdun, coin LaSalle et Rushbrooke
  * Status: [[!taglink up]]
- * Links: [[nodes/bgm]], [[nodes/hexa]], [[nodes/scientist]]
+ * Links: [[nodes/bgm-homs]], [[nodes/hexa]], [[nodes/scientist]]
  * Azimuth: Sud-ouest
  * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]], [[Vue du site de l'installation|https://farm6.staticflickr.com/5223/5881898216_6198d24176.jpg]]
  * Operator: [[users/deuxpi]]
