@@ -22,7 +22,7 @@ Visualiser les nodes sur la [[map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp
  * Est: moreau + ontario
  * Nord: en face d'el motor machin, [[nodes/boulette]]
  * Centre: DIRA etc, maison notman?
- * Sud-ouest: [[nodes/bgm]], smurf, canix2??
+ * Sud-ouest: [[nodes/bgm-homs]], smurf, canix2??
 
 ## meta
 
