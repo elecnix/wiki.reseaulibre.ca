@@ -90,13 +90,6 @@ Those devices are everywhere, but they are cheap and may not be worth it.
 
 ## TP-Link (omni)
 
-
-### TP-Link TL-WR1043ND
-
-Rene suggested we take a look at the [TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND), "cheap and nice". :) 54$ at DirectCanada
-
-[[!img TL-WR1043ND-04.jpg size="300x"]]
-
 ### TP-Link TL-MR3220
 
 A small router b/g/n with one chain, compatible with openwrt, very cheap 31.06$ at directcanada.
@@ -109,10 +102,7 @@ Comes with a 5dbi omni antenna.
 It has a rp-sma connector for the antenna.
 Connectors are on a cable to the pcb so easy to relocate
 
-insert image naked
-
-<http://2.bp.blogspot.com/-eRqqW1mfuTc/Tgwx57oswcI/AAAAAAAAAG4/SR0Kw04D8uc/s1600/IMG_20110628_172208.jpg>
-
+[[!img TL-MR3220-naked.JPG size="400x"]]
 
 ### TP-Link TL-MR3420
 
@@ -121,6 +111,16 @@ Same as above with 2 chain (more speed) and [[40.77$ at DirectCanada|http://www.
 <http://wiki.openwrt.org/toh/tp-link/tl-mr3420>
 
 [[!img MR3420-inside.jpg size="400x"]]
+
+### TP-Link TL-WR1043ND
+
+The
+[TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND),
+"cheap and nice" according to our friends in Rostock. :) Same as the
+above but with 3 antennas and gigabit ports. [54$ at DirectCanada](http://www.directcanada.com/search/?kw=TL-WR1043ND).
+
+[[!img TL-WR1043ND-04.jpg size="300x"]]
+
 
 ### TP-Link TL-WR703N
 
