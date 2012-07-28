@@ -30,7 +30,7 @@ On devrait faire une rencontre ou deux rencontres (soirées ou un Hack-BBQ) pour
  * spoked
  * frdeso
 
-Doodle de dispatch pour la permanence de la page: http://doodle.com/zacgaugbq8bufsga
+Doodle de dispatch pour la permanence de la page: <http://doodle.com/zacgaugbq8bufsga>
 
 ## Proposition de description du projet pour le site de MakerFaire
 
@@ -47,13 +47,3 @@ Joignez-vous à nous pour voir des exemples d'applications rendues possibles par
 Réseau Libre aims to create a wireless community mesh network, independent and decentralized. The network is built organically and evolves as new members join. Each person participating in the network adds a node and chooses the services he or she wishes to share with the community, internet connection or not.
 
 Join us for examples of applications enabled by mesh networks. If you are interested by this project, come to our booth with an OpenWRT compatible router and we can help you install and configure the distribution to make it compatible to the mesh.
-
-
-## Sur place
-
-Doodle pour les disponibilités pendant l'événement: [[http://doodle.com/zacgaugbq8bufsga]]
-
-Noter si l'on sera présent et quand
-
-* Geneviève - samedi OU dimanche
-* Yannick - ??
