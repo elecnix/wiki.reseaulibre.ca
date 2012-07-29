@@ -1,5 +1,4 @@
-Babel configuration notes
-=========================
+[[!meta title="Babel configuration notes"]]
 
 (!) Those are not official instructions to join the Montreal mesh. We
 are only experimenting with this technology at this point, so to join
@@ -7,34 +6,93 @@ the mesh you should rather look at [[batman]] for now.
 
 Also used by commotionwireless.
 
-http://wiki.hacdc.org/index.php/Babel_Setup
+Configuration
+=============
 
+Regardless of the install method or platform, you need a
+`babeld.conf`. This will decide which routes you will announce and
+accept and so on, so it is rather important.
+
+For testing (and for open relays), the base configuration is:
+
+    redistribute allow
+
+A more common configuration is to assign a non-zero metric to babel
+routes so they do not override your default configuration:
+
+    redistribute metric 128
+
+Debian
+------
+
+0. install package: `apt-get install babeld`
 1. stop network manager
 2. setup [[ad-hoc]] and babeld
 
     ifconfig wlan0 down
     iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9
-    ifconfig wlan0 up 172.16.0.42/32
-    babeld -D wlan0
+    ifconfig wlan0 up
+    avahi-autoipd wlan0
+    ifconfig wlan0:avahi netmask 255.255.255.255
+    babeld -D wlan0:avahi wlan0
 
 See [[policy/numbering]] to choose the proper IP above, but note the netmask (`255.255.255.255` or `/32`) that needs to be defined for babel to work.
+
+OpenWRT
+-------
+
+    opkg install babeld
+    ifconfig wlan0 up 169.254.11.7/32
+    babeld -D wlan0
+
+If you had previously installed Batman, you will need to remove the
+wireless interface from the batman bridge:
+
+    batctl if del wlan0
+
+/!\ Warning: this may break your existing connexion and require a
+reboot.
+
+If you want to operate on both batman and babel, you simply need to
+add batman to the list of interfaces babel works on:
+
+    babeld -D wlan0 bat0
 
 Optional
 --------
 
 `ahcpd -D wlan0` can be used to distribute IPs over the network (without announcing a gateway).
 
+Troubleshooting
+===============
 
-Debug
------
+Basic operation of Babel involves talking with the regular kernel
+routing table. If Babel sees a neighbor, it will add a route like this
+to the routing tables:
+
+    169.254.11.8 via 169.254.11.8 dev wlan0  proto 42 onlink
+
+This basically means: *"I see neighbor 169.254.11.8 and it's on the
+interface wlan0"*.
+
 
 From the
 [FAQ](http://www.pps.univ-paris-diderot.fr/~jch/software/babel/faq.html):
 
-You can ask Babel to dump its internal tables. With the standalone daemon, send a HUP1 signal to the daemon to get it to dump its tables to the log file. With the quagga version, type
+You can ask Babel to dump its internal tables. With the standalone daemon, send a USR1 signal to the daemon to get it to dump its tables to the log file. With the quagga version, type
 
     show babel interface
     show babel neighbour
     show babel route
 
 Tcpdump groks Babel starting with version 4.2.1. Wireshark has support since version 1.6.0.
+
+Also, during your tests, give some time for Babel to
+synchronise. Things can take a few seconds (count to 10) to
+synchronise.
+
+References
+==========
+
+ * [HacDC setup notes](http://wiki.hacdc.org/index.php/Babel_Setup)
+ * RFC [[!rfc 6126]]
