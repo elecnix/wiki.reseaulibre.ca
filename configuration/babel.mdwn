@@ -45,6 +45,14 @@ OpenWRT
     ifconfig wlan0 up 169.254.11.7/32
     babeld -D wlan0
 
+To make sure that babel starts on boot:
+
+    uci delete babeld.wlan.ignore
+
+To announce routes on the wired intefaces too:
+
+    uci delete babeld.lan.ignore
+
 If you had previously installed Batman, you will need to remove the
 wireless interface from the batman bridge:
 
@@ -57,6 +65,9 @@ If you want to operate on both batman and babel, you simply need to
 add batman to the list of interfaces babel works on:
 
     babeld -D wlan0 bat0
+
+Note that in our current [[batman]] configuration, the above is not
+necessary as the `br-lan` interface includes `bat0`.
 
 Optional
 --------
