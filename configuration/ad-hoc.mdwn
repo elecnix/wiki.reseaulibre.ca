@@ -10,17 +10,19 @@ Our common ad-hoc configuration is the following:
 Channel
 : 1
 
-Session ID (ESSID):
+Session ID (ESSID, suggéré):
 : `mesh-mtl`
 
-Cel (BSSID)
+Cell (BSSID)
 : `02:51:48:72:03:11`
 
 The channel can be changed according to location and existing
 interference. It needs to be the same for all devices that
 interconnect. We have chosen channel 1 as it is the one with the less chance of seeing interference from other channels (see [this wikipedia page for more information](https://en.wikipedia.org/wiki/List_of_WLAN_channels)).
 
-Voir aussi [[policy/naming]] pour la convention de noms.
+Voir aussi [[policy/naming]] pour la convention de noms. En
+particulier, une proposition est en cours pour changer le BSSID et le
+ESSID.
 
 # Ad-hoc on OpenWRT
 

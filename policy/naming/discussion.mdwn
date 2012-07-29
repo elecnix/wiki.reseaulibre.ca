@@ -10,6 +10,18 @@ facile à se rappeler.
 Il y a `02:CA:FF:EE:BA:BE`, utilisé par plusieurs autres projets mesh,
 mais il est un peu péjoratif.
 
+Arguments pour:
+
+ * c'est le BSSID utilisé par Byzantium, une distribution linux live
+   qui rend le mesh "plug and play"
+ * c'est le BSSID utilisé par tous les autres mesh qu'on a pu réviser
+ * c'est facile à se rappeler
+
+Argument contre:
+
+ * le BSSID se lit comme "2 cafe babes", qui peut être considéré comme
+   portant préjudice aux femmes
+
 Un alternative serait `02:CA:FF:EE:DA:DE`.
 
 ESSID exacts
