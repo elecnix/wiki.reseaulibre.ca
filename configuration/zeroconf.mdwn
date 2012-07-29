@@ -1,0 +1,37 @@
+Zeroconf is a IETF standard protocol that allows stateless IP
+autoconfiguration on a network without a DHCP server. RFC
+[[!rfc 3927]] allocates the netblock 169.254/16 for this purposes and
+RFC [[!rfc 5227]] details how the automatic configuration is
+performed.
+
+This, in turn, can be used to automatically assign IPs in the mesh and
+could be considered instead of our current [policy](policy/numbering).
+
+Zeroconf also allows servers to announce services to a local network
+to alleviate the need for clients to lookup into DNS, search engines
+or similar directories to find services. For example, Zeroconf can be
+used to announce a local webserver or chat server on a LAN.
+
+Usage
+=====
+
+This fairly new protocol (in Internet history) is well implemented
+under different platforms.
+
+Avahi automatic IP allocation
+-----------------------------
+
+(!) This should work on Linux and FreeBSD.
+
+To automatically configure an IP on your interface:
+
+    # sudo avahi-autoipd eth0
+    Found user 'avahi-autoipd' (UID 103) and group 'avahi-autoipd' (GID 111).
+    Successfully called chroot().
+    Successfully dropped root privileges.
+    Starting with address 169.254.6.31
+    Callout BIND, address 169.254.6.31 on interface eth0
+    Successfully claimed IP address 169.254.6.31
+
+Above, the Avahi process tried a random IP adress, and tested if it
+was allocated before assigning it to the interface.
