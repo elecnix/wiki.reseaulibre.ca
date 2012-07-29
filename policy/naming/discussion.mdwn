@@ -1,5 +1,17 @@
 [[!toc levels=2]]
 
+BSSID
+=====
+
+Le BSSID actuel est problématique parce que complètement aléatoire. Vu
+qu'on peut choisir ce qu'on veut, il serait pratique d'avoir un nom
+facile à se rappeler.
+
+Il y a `02:CA:FF:EE:BA:BE`, utilisé par plusieurs autres projets mesh,
+mais il est un peu péjoratif.
+
+Un alternative serait `02:CA:FF:EE:DA:DE`.
+
 ESSID exacts
 ============
 
