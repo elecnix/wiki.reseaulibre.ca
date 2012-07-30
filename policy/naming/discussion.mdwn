@@ -99,6 +99,31 @@ c'est le ESSID:
 > identifier (SSID). They can work on the same channel, or work on
 > different channels to boost aggregate throughput.
 
+Sommaire du 29 juillet 2012
+---------------------------
+
+Suite aux discussions et à un judicieux délais, je soumets une
+proposition au groupe pour un changement au ESSID.
+
+Suite à des discussions avec les gens du projet Byzantium, il m'est
+apparu qu'il était parfaitement possible d'avoir des ESSID différents
+mais d'être quand même sur le même réseau ad-hoc, tant que le BSSID
+était différent. J'ai testé cette théorie ici, et c'est confirmé: j'ai
+pu choisir un ESSID random et quand même joindre mon mesh maison avec
+mon laptop.
+
+Donc, ceci est une *suggestion*, on a pas besoin de changer tous les
+ESSID partout, mais seulement recommender au gens d'en choisir un bon.
+
+Reste: lequel! Après avoir examiné les différentes idées, j'ai décidé
+d'amener une proposition qui est mon goût personnel, mais aussi
+reflète les idées amenées par le passé (français, friendly,
+etc). Donc:
+
+Proposition: que le ESSID des "relais" soit "relais.reseaulibre.ca" et
+que le ESSID des points "d'accès" (qui donnent du DHCP) soit
+"acces.reseaulibre.ca". Ces noms sont des suggestions et les
+opérateurs peuvent choisir d'autres noms.
 
 Débat sur le nom du projet
 ==========================
