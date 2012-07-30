@@ -80,6 +80,15 @@ Optional
 
 `ahcpd -D wlan0` can be used to distribute IPs over the network (without announcing a gateway).
 
+Advantages of Babel over BATMAN
+===============================
+
+ 1. no kernel module necessary, which means:
+ 2. no need to chase the OpenWRT trunk, and:
+ 3. multi-platform support (e.g. FreeBSD)
+ 4. uses real routing tables (easier to debug)
+ 5. tcpdump parses babel packets properly
+
 Troubleshooting
 ===============
 
