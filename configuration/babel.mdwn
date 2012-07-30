@@ -48,15 +48,21 @@ OpenWRT
 To make sure that babel starts on boot:
 
     uci delete babeld.wlan.ignore
+    /etc/init.d/babeld enable
+
+(!) Do not forget to save your changes!
+
+    uci commit
 
 To announce routes on the wired intefaces too:
 
     uci delete babeld.lan.ignore
 
 If you had previously installed Batman, you will need to remove the
-wireless interface from the batman bridge:
+wireless interface from the batman bridge, and add it to babel:
 
     batctl if del wlan0
+    uci set babeld.wlan0=interface
 
 /!\ Warning: this may break your existing connexion and require a
 reboot.
