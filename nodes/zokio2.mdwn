@@ -2,7 +2,7 @@
 
 Standard mesh node with an Access Point
 
-http://node2.zokio.net
+[[http://node2.zokio.net]]
 
  * MAC address:
  * IP address:
