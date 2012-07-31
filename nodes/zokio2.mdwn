@@ -1,0 +1,18 @@
+[[!waypoint lat="45.612409" lon="-73.449367" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+
+Standard mesh node with an Access Point
+
+http://node2.zokio.net
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware:
+ * Power:
+ * Location:
+ * Status: [[!taglink planned]]
+ * Links: No link yet
+ * Azimuth:
+ * Panorama:
+ * Operator: [[users/nitrix]]
