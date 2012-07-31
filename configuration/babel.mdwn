@@ -76,12 +76,12 @@ Debian
 1. stop network manager
 2. setup [[ad-hoc]] and babeld
 
-    ifconfig wlan0 down
-    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9
-    ifconfig wlan0 up
-    avahi-autoipd wlan0
-    ifconfig wlan0:avahi netmask 255.255.255.255
-    babeld -D wlan0:avahi wlan0
+        ifconfig wlan0 down
+        iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9
+        ifconfig wlan0 up
+        avahi-autoipd wlan0
+        ifconfig wlan0:avahi netmask 255.255.255.255
+        babeld -D wlan0:avahi wlan0
 
 See [[policy/numbering]] to choose the proper IP above, but note the netmask (`255.255.255.255` or `/32`) that needs to be defined for babel to work.
 
