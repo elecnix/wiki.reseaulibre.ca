@@ -147,6 +147,25 @@ To allow users to push to the repository, use:
 
     adduser anarcat mtl-mesh
 
+# CIA.vc notifications
+
+I am using the
+[Koumbit git-hooks](https://redmine.koumbit.net/projects/git-hooks) to
+do CIA.vc notifications. To deploy the script, install both the
+`ciabot.pl` and `ciabot-post-receive` hooks in the `source.git/hooks`
+directory. It is important that both script be in the same
+directory. Symlink the `post-receive` hook in place:
+
+    ln -s ciabot-post-receive post-receive
+
+.. and configure the script according to your preference:
+
+    git config hooks.ciaproject reseaulibre
+    git config hooks.ciafrom ciabot@marcos.reseaulibre.ca
+
+We use email notifications because the potentially disconnected nature
+of the mesh.
+
 # Other tools
 
 * [[!iki tips/inside_dot_ikiwiki]] - good tips on how to interact with ikiwiki's metadata
