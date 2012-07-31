@@ -1,7 +1,4 @@
 [[!waypoint map=null  lat="45.474522" lon="-73.584563" embed hidden width="400px" height="400px" right desc="Par la fenêtre"]]
-(remove map=null to display on the main map)
-
-(Description of the node here, with a link to your homepage.)
 
  * MAC address:
  * IP address:
@@ -14,7 +11,7 @@
  * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
  * Azimuth:
  * Panorama:
- * Operator: [[users/alice]]
+ * Operator: [[users/dmongeau]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
