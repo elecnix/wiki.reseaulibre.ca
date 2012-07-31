@@ -1,4 +1,4 @@
-[[!waypoint lat="45.612409" lon="-73.449367" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.612409" lon="-73.449367" embed hidden width="400px" height="400px" right desc="Standard mesh node with an Access Point"]]
 
 Standard mesh node with an Access Point
 
@@ -10,7 +10,7 @@ Standard mesh node with an Access Point
  * Software:
  * Hardware:
  * Power:
- * Location:
+ * Location: 88 du Puits, Boucherville, QC
  * Status: [[!taglink planned]]
  * Links: No link yet
  * Azimuth:
