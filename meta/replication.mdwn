@@ -32,7 +32,11 @@ The following steps should get you going:
     edit ikiwiki.setup # fix paths
     ikiwiki --setup ikiwiki.setup
 
-See also [[meta/Maintenance]] for the plugins to enable and the hooks
+Another guide is the [[!iki tips/laptop_wiki_with_git]] guide. To get a
+better understanding of how ikiwiki works, see [[!iki rcs/git]].
+
+Once the wiki can generate pages, you may need to go over the
+[[meta/Maintenance]] guide for the plugins to enable and the hooks
 configuration.
 
 (!) Oh, and [this](http://piny.be/jrayhawk/notes/ikiwiki_creation/)
