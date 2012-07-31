@@ -166,6 +166,8 @@ directory. Symlink the `post-receive` hook in place:
 We use email notifications because the potentially disconnected nature
 of the mesh.
 
+Note that the scripts are available in the `setup` branch.
+
 # Other tools
 
 * [[!iki tips/inside_dot_ikiwiki]] - good tips on how to interact with ikiwiki's metadata
