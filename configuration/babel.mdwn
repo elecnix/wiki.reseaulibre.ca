@@ -6,6 +6,8 @@ the mesh you should rather look at [[batman]] for now.
 
 Also used by commotionwireless.
 
+[[!toc]]
+
 Configuration
 =============
 
