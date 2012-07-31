@@ -15,12 +15,11 @@ accept and so on, so it is rather important.
 
 For testing (and for open relays), the base configuration is:
 
-    redistribute allow
-
-A more common configuration is to assign a non-zero metric to babel
-routes so they do not override your default configuration:
-
     redistribute metric 128
+
+This will redistribute all your routes with a non-zero metric so they
+do not override your default configuration. You can also announce
+specific routes
 
 Another common configuration is to refuse the default route, which is:
 
@@ -28,23 +27,8 @@ Another common configuration is to refuse the default route, which is:
 
 This is especially important on routers that *do* have network access,
 as babel will happily override existing routes in certain
-configurations.
-
-Debian
-------
-
-0. install package: `apt-get install babeld`
-1. stop network manager
-2. setup [[ad-hoc]] and babeld
-
-    ifconfig wlan0 down
-    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9
-    ifconfig wlan0 up
-    avahi-autoipd wlan0
-    ifconfig wlan0:avahi netmask 255.255.255.255
-    babeld -D wlan0:avahi wlan0
-
-See [[policy/numbering]] to choose the proper IP above, but note the netmask (`255.255.255.255` or `/32`) that needs to be defined for babel to work.
+configurations. See the babeld manpage for more information on those
+rules.
 
 OpenWRT
 -------
@@ -82,6 +66,35 @@ add batman to the list of interfaces babel works on:
 
 Note that in our current [[batman]] configuration, the above is not
 necessary as the `br-lan` interface includes `bat0`.
+
+Debian
+------
+
+0. install package: `apt-get install babeld`
+1. stop network manager
+2. setup [[ad-hoc]] and babeld
+
+    ifconfig wlan0 down
+    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9
+    ifconfig wlan0 up
+    avahi-autoipd wlan0
+    ifconfig wlan0:avahi netmask 255.255.255.255
+    babeld -D wlan0:avahi wlan0
+
+See [[policy/numbering]] to choose the proper IP above, but note the netmask (`255.255.255.255` or `/32`) that needs to be defined for babel to work.
+
+FreeBSD
+-------
+
+The FreeBSD port needs to be updated, as it is running an old version
+of the software (1.2, 1.3.3 is current as of this writing).
+
+Updating the port is pretty trivial. And I have submitted it in the
+"GNATS" bug tracking system.
+
+There are no startup scripts so you need to do that on your own. Also,
+contrary to usual BSD practices, the port's configuration file is in
+`/etc/babeld.conf` (instead of `/usr/local/etc`).
 
 Optional
 --------
