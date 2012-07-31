@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.474522" lon="-73.584563" embed hidden width="400px" height="400px" right desc="Par la fenêtre"]]
+[[!waypoint lat="45.474522" lon="-73.584563" embed hidden width="400px" height="400px" right desc="Par la fenêtre"]]
 
  * MAC address:
  * IP address:
