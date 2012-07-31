@@ -1,0 +1,16 @@
+[[!waypoint lat="45.616458" lon="-73.454887" embed hidden width="400px" height="400px" right desc="Long-range link Montreal-Boucherville"]]
+
+[[http://node1.zokio.net]]
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software:
+ * Hardware:
+ * Power:
+ * Location: 34 de Muy, Boucherville, QC
+ * Status: [[!taglink planned]]
+ * Links:
+ * Azimuth:
+ * Panorama:
+ * Operator: [[users/nitrix]]
