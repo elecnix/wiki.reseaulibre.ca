@@ -1,5 +1,7 @@
 [[!waypoint lat="45.616458" lon="-73.454887" embed hidden width="400px" height="400px" right desc="Long-range link Montreal-Boucherville"]]
 
+Long-range link Montreal-Boucherville
+
 [[http://node1.zokio.net]]
 
  * MAC address:
