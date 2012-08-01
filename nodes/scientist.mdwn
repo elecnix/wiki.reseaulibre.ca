@@ -1,7 +1,7 @@
 [[!waypoint  lat="45.4717" lon="-73.570128" embed hidden width="400px" height="400px" right desc="A future node"]]
 
 [[!ymlfront data="""
-MAC: 
+MAC: 00:27:22:72:CF:9F
 IP: 172.16.1.28
 """]]
 Possibilité de poser une antenne. 
