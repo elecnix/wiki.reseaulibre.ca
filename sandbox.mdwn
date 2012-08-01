@@ -1,9 +1,5 @@
 This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
-# ceci est un test
-
-pour voir si le mirroir de deuxpi recoit les push
-
 # report plugin test
 
 <table>
