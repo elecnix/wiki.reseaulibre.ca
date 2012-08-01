@@ -28,7 +28,7 @@ Mes commandes UCI:
 
 	#basic stuff
 	uci delete wireless.radio0.disabled
-	uci set system.@system[0].hostname=scientist-jardin
+	uci set system.@system[0].hostname=scientist-batman
 	uci set network.lan.ipaddr=192.168.2.33
 	uci set network.lan.gateway=192.168.2.1
 	uci set network.lan.dns=192.168.2.1
