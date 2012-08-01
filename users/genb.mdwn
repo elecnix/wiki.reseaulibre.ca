@@ -1,0 +1,27 @@
+Geneviève Bastien
+
+* courriel: gbastien+mesh@versatic.net
+* identi.ca: @gbastien
+* irc: tahini
+
+
+# À faire
+
+* Avoir un terrain de jeu pour tester le mesh 
+    {OK} Ok: chez moi, un relais mesh, un point d'accès qui sert des clients et qui se connecte au mesh et à internet, un laptop qui se connecte au relais en ad-hoc
+
+* Créer des images d'Openwrt pré-configurées pour le mesh et offrir un répertoire de packages qui pré-configurent certains scénarios
+    {i} En cours: J'ai compilé les images, reste à les tester et essayer de couvrir le plus de scénarios possibles avec le moins d'images...
+
+* Explorer des applications de gestion de mesh
+
+* Documenter comment sécuriser son réseau interne lorsqu'on offre le mesh et/ou l'accès à internet
+
+* Documenter comment configurer le routeur pour les nuls (sans les commandes uci)
+
+* Mettre le mesh sur une clé usb à partager: une distro linux avec desktop pré-connectée en mode ad-hoc sur le mesh
+    {i} En cours: simple arch linux avec gnome
+
+* Monter un petit serveur pour offrir des services sur le mesh, sans dépendre de mon lan (entre autres, miroir du wiki)
+
+* Avoir une carte offline pour ikiwiki (sur un serveur local)
