@@ -11,7 +11,7 @@ need to. See [[meta/Replication]] for more information. There is also the [[meta
 
 In short, you can clone and push this wiki through git using this:
 
-    git clone git://mesh.openisp.ca/
+    git clone git://wiki.reseaulibre.ca/
     git push
 
 Orphaned pages
