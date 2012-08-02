@@ -15,7 +15,7 @@ Présentement à l'arrière au 3e étage. En attente d'accéder au toit pour l'i
  * Power:
  * Location:
  * Status: [[!taglink up]]
- * Links: [[nodes/scientist-jardin]], [[nodes/deuxpi]]
+ * Links: [[scientist-jardin]], [[deuxpi]]
  * Azimuth:
  * Panorama:
  * Operator: [[users/scientist]]
