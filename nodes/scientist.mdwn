@@ -17,7 +17,7 @@ Je ne sais pas encore si l'accès au toit est possible. A la limite, je peux pos
  * Hardware: Ubiquiti Bullet M2HP + Ombi 8dbi
  * Power:
  * Location:
- * Status: [[!taglink down]]
+ * Status: [[!taglink up]]
  * Links: [[nodes/scientist-jardin]], [[nodes/deuxpi]]
  * Azimuth:
  * Panorama:
