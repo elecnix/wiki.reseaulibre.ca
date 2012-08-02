@@ -16,7 +16,7 @@ Noeud pointant vers l'est, présentement au premier étage. Surtout utile pour f
  * Power:
  * Location:
  * Status: [[!taglink up]]
- * Links: [[nodes/scientist]]
+ * Links: [[scientist]]
  * Azimuth:
  * Panorama:
  * Operator: [[users/scientist]]
