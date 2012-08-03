@@ -26,19 +26,6 @@
    height as needed (within limits, of course).  --tschwinge
 */
 
-/* gbastien:
-   J'ai choisi aléatoirement et sans signification une palette de couleur en utilisant
-   cet outil:  http://www.degraeve.com/color-palette/index.php
-   à partir de cette image: http://free.desktopwallpaper.org/EleganceMeter-833553.jpeg
-   Voici la liste pour un find & replace facile:
-	#eeeeee: background pâle
-	#221122: texte et action tabs
-	#775544: background header et footer, texte sidebar
-	#887733: hyperliens
-	#ee9911: hyperliens header/footer
-*/
-
-
 /* Put these elements side by side.  */
 .pagedate,
 .pagecopyright,
@@ -70,6 +57,19 @@
   font-size: small;
   margin-bottom: 1em;
 }
+
+
+/* gbastien:
+   J'ai choisi aléatoirement et sans signification une palette de couleur en utilisant
+   cet outil:  http://www.degraeve.com/color-palette/index.php
+   à partir de cette image: http://free.desktopwallpaper.org/EleganceMeter-833553.jpeg
+   Voici la liste pour un find & replace facile:
+	#eeeeee: background pâle
+	#221122: texte et action tabs
+	#775544: background header et footer, texte sidebar
+	#887733: hyperliens
+	#ee9911: hyperliens header/footer
+*/
 
 /* Used in `.templates/editpage.tmpl'.  */
 .copyright_assignment_notice
