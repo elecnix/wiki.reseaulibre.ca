@@ -1,3 +1,5 @@
+[[!toc]]
+
 # IP allocation strategy
 
 IP addresses are allocated on a first come first serve basis. We
