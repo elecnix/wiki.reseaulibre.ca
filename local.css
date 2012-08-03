@@ -9,6 +9,9 @@
    license is included in the section entitled ``GNU Free Documentation
    License''.  */
 
+/**********************************************************************/
+/* theming of the license and page metadata stuff down there */
+
 /*
  * Someone else please work on this stuff -- someone who knows to make it
  * actually look good...  Some examples are available at
@@ -49,7 +52,6 @@
   padding-left: 1em;
 }
 
-
 .pagedate,
 .pagecopyright,
 .pagelicense
@@ -58,6 +60,9 @@
   margin-bottom: 1em;
 }
 
+
+/**********************************************************************/
+/* reseaulibre "brown" theme from gbastien */
 
 /* gbastien:
    J'ai choisi aléatoirement et sans signification une palette de couleur en utilisant
