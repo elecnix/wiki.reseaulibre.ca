@@ -9,6 +9,9 @@
    license is included in the section entitled ``GNU Free Documentation
    License''.  */
 
+/**********************************************************************/
+/* theming of the license and page metadata stuff down there */
+
 /*
  * Someone else please work on this stuff -- someone who knows to make it
  * actually look good...  Some examples are available at
@@ -25,19 +28,6 @@
    having to scroll.  This means that the text editing box should be resized in
    height as needed (within limits, of course).  --tschwinge
 */
-
-/* gbastien:
-   J'ai choisi aléatoirement et sans signification une palette de couleur en utilisant
-   cet outil:  http://www.degraeve.com/color-palette/index.php
-   à partir de cette image: http://free.desktopwallpaper.org/EleganceMeter-833553.jpeg
-   Voici la liste pour un find & replace facile:
-	#eeeeee: background pâle
-	#221122: texte et action tabs
-	#775544: background header et footer, texte sidebar
-	#887733: hyperliens
-	#ee9911: hyperliens header/footer
-*/
-
 
 /* Put these elements side by side.  */
 .pagedate,
@@ -62,7 +52,6 @@
   padding-left: 1em;
 }
 
-
 .pagedate,
 .pagecopyright,
 .pagelicense
@@ -70,6 +59,22 @@
   font-size: small;
   margin-bottom: 1em;
 }
+
+
+/**********************************************************************/
+/* reseaulibre "brown" theme from gbastien */
+
+/* gbastien:
+   J'ai choisi aléatoirement et sans signification une palette de couleur en utilisant
+   cet outil:  http://www.degraeve.com/color-palette/index.php
+   à partir de cette image: http://free.desktopwallpaper.org/EleganceMeter-833553.jpeg
+   Voici la liste pour un find & replace facile:
+	#eeeeee: background pâle
+	#221122: texte et action tabs
+	#775544: background header et footer, texte sidebar
+	#887733: hyperliens
+	#ee9911: hyperliens header/footer
+*/
 
 /* Used in `.templates/editpage.tmpl'.  */
 .copyright_assignment_notice
