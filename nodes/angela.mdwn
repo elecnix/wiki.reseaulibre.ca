@@ -3,7 +3,7 @@ My laptop, not physically geolocated.
 [[!ymlfront data="""
 MAC: ec:55:f9:c5:f2:55
 IP: 172.16.0.42
-IPv6: 
+IPv6: fd64:2c08:9fa7:1::2/64
 """]]
 
 hostname
