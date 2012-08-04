@@ -1,0 +1,53 @@
+My laptop, not physically geolocated.
+
+[[!ymlfront data="""
+MAC: ec:55:f9:c5:f2:55
+IP: 172.16.0.42
+IPv6: fd64:2c08:9fa7:1::2/64
+"""]]
+
+hostname
+: angela
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: Debian Wheezy
+
+Hardware
+: Lenovo X120e
+
+Location
+: variable
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink unknown]]
+
+Operator
+: [[users/anarcat]]
+
+Links
+: 
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
