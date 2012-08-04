@@ -71,12 +71,12 @@ Découvrir quelle est l'interface réseau (ex: wlan0) :
 
 This will bring up your network interface:
 
-    iwconfig wlan0 mode ad-hoc essid mesh-mtl ap 02:51:48:72:03:11 channel 1
+    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:51:48:72:03:11 channel 1
     ifconfig wlan0 up
 
 Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. 
 
-    wlan0     IEEE 802.11bgn  ESSID:"mesh-mtl"  
+    wlan0     IEEE 802.11bgn  ESSID:"reseaulibre.ca"  
               Mode:Ad-Hoc  Frequency:2.412 GHz  Cell: 02:51:48:72:03:11   
               Tx-Power=17 dBm   
               RTS thr:off   Fragment thr:off
@@ -102,7 +102,7 @@ for your hardware:
 
 Si Network Manager est actif, vous pourriez voir:
 
-    iwconfig wlan0 mode ad-hoc essid mesh-mtl
+    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca
     Error for wireless request "Set Mode" (8B06) :
         SET failed on device wlan0 ; Device or resource busy.
 
