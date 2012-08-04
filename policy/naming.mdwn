@@ -7,7 +7,13 @@ SSID du réseau
 
 Le SSID du réseau est `reseaulibre.ca`. À noter que le nom précédent du réseau était `mesh-mtl`.
 
-LE BSSID du réseau est `02:CA:FF:EE:BA:BE`.
+LE BSSID du réseau est `02:CA:FF:EE:BA:BE`. C'est le BSSID réservé
+pour l'utilisation de tous les canaux par le Freifunk de Berlin, voir
+leur
+[schema d'allocation](http://wiki.freifunk.net/Kamikaze/Meshwizard/BSSID-Schema)
+et
+[les options de configuration](http://wiki.freifunk.net/Kamikaze/Profile#BSSID_Schema)
+de leur wizard.
 
 Voir la page [[discussion]] pour voir comment ceci a été établi.
 
