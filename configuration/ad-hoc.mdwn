@@ -63,6 +63,8 @@ Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
 
 # Ad-Hoc on Debian
 
+(!) Désactiver Network Manager.
+
 Découvrir quelle est l'interface réseau (ex: wlan0) :
 
     /sbin/iwconfig
@@ -87,9 +89,20 @@ Sinon, descendre l'interface réseau (voir même désactiver son module noyau) e
 
 Voir [[configuration/ip]] pour configurer l'interface et [[policy/numbering]] pour l'allocation de l'addresse.
 
-## Problèmes communs
+## Network manager
 
-### Interface non-supportée par iwconfig
+Il est possible de configurer le réseau avec Network Manager. Il
+suffit d'éditer le réseau et ne pas utiliser le mode "DHCP" mais
+"link-local", suivre:
+
+ * tab Wireless
+ * choisir le nom du réseau, cliquer "Edit..."
+ * Choisir l'onglet "IPv4 Settings"
+ * Choisir Method: "Link-Local Only"
+
+# Problèmes communs
+
+## Interface non-supportée par iwconfig
 
 <http://linuxwireless.org/en/developers/Documentation/nl80211> -
 it seems the proper way to configure interfaces is not through
@@ -98,7 +111,7 @@ for your hardware:
 
     iw dev wlan0 interface add wlan1 type adhoc
 
-### Device or resource busy
+## Device or resource busy
 
 Si Network Manager est actif, vous pourriez voir:
 
@@ -108,7 +121,7 @@ Si Network Manager est actif, vous pourriez voir:
 
 Il faut alors désactiver le réseau, avec l'icône dans Gnome.
 
-### Problèmes à créer une connexion ad-hoc
+## Problèmes à créer une connexion ad-hoc
 
 Désactiver puis ré-activer la carte réseau (malheureusement, il faut deviner le module de la carte, pas toujours évident). Au pire, redémarrer.
 
@@ -135,7 +148,7 @@ Pourtant, ce fichier est disponible dans /lib/firmware, si la carte etait foncti
 
 Puis utiliser la commande "ping" pour voir si on peut parler à une autre machine.
 
-### Key encryption
+## Key encryption
 
 Dans le cas d'un laptop qui n'est pas dedié au mesh, il se peut que la configuration de l'interface wlan0 traîne des flags de ses configurations précédentes. 
 
