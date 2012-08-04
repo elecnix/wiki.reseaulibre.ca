@@ -22,7 +22,7 @@ ifconfig eth0:ap 192.168.1.21
 
  * Configurer l'interface sans fil:
  ** Wireless mode: Station [!] pas sûr ..
- ** Choisir un ESSID, exemple: `mesh-mtl`
+ ** Choisir un ESSID, exemple: `reseaulibre.ca`
  ** Optionnel: choisir un mode d'encryption
  ** [!] Utiliser un channel width de 20MHz: certaines cartes réseau sans-fil ne supportent pas le 40MHz
  ** [!] Ne pas activer le channel shifting: non-supporté par la plupart des cartes réseau sans-fil
