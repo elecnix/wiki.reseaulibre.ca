@@ -1,4 +1,4 @@
-[[!waypoint lat="45.48513" lon="-73.58582" embed hidden width="400px" height="400px" right desc="Planifié sur le toit"]]
+[[!waypoint lat="45.48513" lon="-73.58582" embed hidden width="400px" height="400px" right desc="Planifié sur le toit, en haut de la côte"]]
 
 [[!ymlfront data="""
 MAC: 
