@@ -6,8 +6,8 @@
  * MAC address:
  * IP address:
  * IPv6 address:
- * Software:
- * Hardware:
+ * Software: on va bien voir!
+ * Hardware: ubiquity Bullet
  * Power:
  * Location:
  * Status: [[!taglink planned]]
