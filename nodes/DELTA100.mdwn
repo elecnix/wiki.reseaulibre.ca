@@ -1,8 +1,6 @@
 [[!waypoint lat="45.54171" lon="-73.60399" embed hidden width="400px" height="400px" right desc="futur bullet+15dbi sur mon toi"]]
 
 
-(Description of the node here, with a link to your homepage.)
-
  * MAC address:
  * IP address:
  * IPv6 address:
