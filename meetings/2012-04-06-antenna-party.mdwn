@@ -26,8 +26,8 @@ Montage d'antennes sur les liens suivants:
 
  * [[nodes/grace]] - [[nodes/boulette]] (500m)
  * [[nodes/benoitg]] - [[nodes/jojo]] (800m)
- * [[nodes/jojo]] - [[nodes/genb]]?
- * [[nodes/genb]] - [[nodes/boulette]]??
+ * [[nodes/jojo]] - [[nodes/theodore]]?
+ * [[nodes/theodore]] - [[nodes/boulette]]??
 
 ## Matériel
 
