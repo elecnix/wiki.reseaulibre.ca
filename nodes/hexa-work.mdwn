@@ -1,6 +1,6 @@
-[[!waypoint lat="45.32440" lon="-73.34853" embed hidden width="400px" height="400px" right desc="Sur le toit de ma job.. j'espere"]]
+[[!waypoint lat="45.540894" lon="-73.580525" embed hidden width="400px" height="400px" right desc="Sur le toit de ma job.. j'espere"]]
 
-(Description of the node here, with a link to your homepage.)
+Bientot  a la job...
 
  * MAC address:
  * IP address:
