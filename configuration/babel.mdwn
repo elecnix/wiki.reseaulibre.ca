@@ -111,6 +111,9 @@ Advantages of Babel over BATMAN
  3. multi-platform support (e.g. FreeBSD)
  4. uses real routing tables (easier to debug)
  5. tcpdump parses babel packets properly
+ 6. No need to change the MTU of some network interface to 1528, which means:
+ 7. Network interfaces can be edited with the web interface luci (mtu field does not accept values > 1500), which means:
+ 8. People afraid of command line and ssh could now configure their device
 
 Troubleshooting
 ===============
