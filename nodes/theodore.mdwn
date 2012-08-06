@@ -47,3 +47,5 @@ Operator
 Links
 : [[clarence]]
 
+## Panorama
+[[!img panorama_theodore.jpg align="left" size="950x" alt="Panorama"]]
