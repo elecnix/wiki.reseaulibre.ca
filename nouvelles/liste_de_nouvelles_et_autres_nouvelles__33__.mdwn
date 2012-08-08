@@ -73,5 +73,3 @@ Un bon travail a également été fait afin de s'assurer que la [carte des point
 Réseau Libre sera présent au [Mini Maker Faire de Montréal][8] (25-26 août). Plusieurs routeurs seront installés sur le site, en mesh. Au moins un d'eux possédera une caméra web qui diffusera en continu et nous prévoyons avoir le wiki complètement opérationnel sur le mesh local sur place, même si ledit mesh ne sera pas connecté au reste du réseau.
 
  [8]: http://www.makerfairemontreal.ca
-
-[[!tag draft]]
