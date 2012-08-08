@@ -9,7 +9,7 @@ A node on the roof
  * Hardware: Linksys E3000
  * Power: 45.516746,-73.576014
  * Location:
- * Status: [[!taglink planned]] 
+ * Status: [[!taglink prospect]] 
  * Links: 
  * Azimuth: N/A
  * Panorama: N/A
