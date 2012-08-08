@@ -34,7 +34,7 @@ Panorama
 : N/A
 
 Status
-: [[!taglink unknown]]
+: [[!taglink test]]
 
 Operator
 : [[users/elecnix]]
