@@ -168,6 +168,10 @@ of the mesh.
 
 Note that the scripts are available in the `setup` branch.
 
+# Hosting your own maps
+
+If you want to host your own map tiles instead of using the openstreetmap server (for instance, if you run without internet access), see [[Hosting your own maps]]
+
 # Other tools
 
 * [[!iki tips/inside_dot_ikiwiki]] - good tips on how to interact with ikiwiki's metadata
