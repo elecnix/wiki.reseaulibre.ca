@@ -1,9 +1,17 @@
-Ceci est la première lettre de nouvelles du Réseau Libre, destinée aux utilisateurs, participants et autres personnes intéressées au projet.
+Ceci est la première lettre de nouvelles du Réseau Libre, destinée aux utilisateurs, participants et autres personnes intéressées au projet. Elle est désormais publiée sur la [[section nouvelles du wiki|nouvelles]] et sera envoyée sur une nouvelle liste de diffusion aussi régulièrement que nos bénévoles en trouveront l'énergie.
+
+Sommaire:
+
+[[!toc]]
 
 Nouvelle liste de diffusion
 ---------------------------
 
-Elle est désormais publiée sur <http://wiki.reseaulibre.ca/nouvelles> et sera envoyée sur la liste de discussion.
+Une nouvelle liste de diffusion sera utilisée pour communiquer les développements importants du projet. Les annonces seront basées sur les brouillons rédigés dans la section [[nouvelles]] du wiki, et donc les contributions de tous et toutes les participantEs du projet sont bienvenues.
+
+La liste est à bas volume (~1-2 courriels par mois) et vise à tenir les gens intéressés par le projet au courant des activités, sans être complètement engagés comme bénévoles. Par exemple, un opérateur d'un seul noeud peut utiliser cette liste pour être certain d'être au courant des changements de configuration nécessaires, ou un utilisateur peut surveiller la liste pour savoir quand un node ouvre dans son quartier.
+
+On peut s'inscrire sur la liste sur cette page: <https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca>. Les opérateurs peuvent envoyer un courriel à nouvelles@reseaulibre.ca afin de publier une nouvelle. Une modération sera peut-être nécessaire pour les premiers envois.
 
 Nouveaux noeuds
 --------------
@@ -15,19 +23,32 @@ Le réseau du sud, pour sa part, en est maintenant à 4 noeuds interconnectés, 
 Noeuds à venir
 -------------
 
-Août: [[nodes/DELTA100]]
+On espère monter des dizaines de nouveaux nodes avant la venue de l'hiver. Un achat collectif de 10 kits "bullet + antenne omnidirectionnelle" est en cours de planification. Ce kit, d'ailleurs, devient rapidement le standard de-facto des relais installés dans le mesh.
 
-Septembre: [[nodes/val]], [[nodes/lacou]], [[nodes/btm]]
+Un financement extérieur supplémentaire rendra peut-être possible la création d'une banque de 10 kits supplémentaires (donc 20 au total), un financement du projet [UQBM](http://uqbm.com/) qui reste à confirmer.
 
-Wiki
-----
+Concrètement, on vise la mise en ligne des nodes suivants:
 
-Le wiki a maintenant un miroir! 
+ * Août: [[nodes/DELTA100]]
+ * Septembre: [[nodes/val]], [[nodes/lacou]], [[nodes/btm]]
+
+Améliorations au wiki: miroirs et OSM
+-------------------------------------
+
+Un ensemble d'améliorations ont été apportées au wiki. Tout d'abord, le wiki a maintenant un miroir, et nous prévoyons en déployer d'autres. Les miroirs sont des répliques complètes du wiki principal, permettant même l'édition, et sont automatiquement synchronisés avec le wiki central (grâce à la technologie "git" sous-jacente à l'engin ikiwiki, voir [[meta]] pour plus d'information.
+
+Le wiki peut donc être utilisés à deux adresses:
+
+ * <http://wiki.reseaulibre.ca/> - site principal
+ * <https://reseaulibre.deuxpi.ca/> - miroir synchronisé
+
+L'adresse des miroirs peut changer sans préavis, consulter le bas des pages pour voir la liste des miroirs actifs.
+
 
 meta/Hosting_your_own_maps/
 
-Événements
-----------
+Événements et rencontres à venir
+--------------------------------
 
 *Mini Maker Faire de Montréal* Une première rencontre d'organisation a eu lieu le 4 août 2012 en vue de notre présence à l'événement. Plusieurs routeurs seront installés sur le site, en mesh. Au moins un d'eux possédera une caméra web qui diffusera en continu. Une seconde réunion aura lieu le ... à ... http://www.makerfairemontreal.ca
 
