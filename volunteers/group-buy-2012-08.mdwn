@@ -1,4 +1,4 @@
-* [[/users/elecnix]] 6
+* [[/users/elecnix]] 6 ([[/nodes/bb]], [[/nodes/val]], [[/nodes/lacou]], [[/nodes/capitaine]], [[/nodes/btm2]], [[/nodes/greene]])
 * [[/users/gapzap]] 3
 * [[/users/tahini]] 3
 * [[/users/deuxpi]] 3
