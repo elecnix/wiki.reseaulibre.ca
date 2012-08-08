@@ -9,4 +9,4 @@ Les nouvelles en rédaction sont marqués par le [[tag/draft]]. Il est préféra
 
 Voici la liste des nouvelles en rédaction:
 
-[[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and tagged(draft)" rootpage="nouvelles" archive=yes]]
+[[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and tagged(draft)" archive=yes]]
