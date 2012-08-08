@@ -2,6 +2,6 @@ Bonjour!
 
 Vous visitez probablement cette page car vous avez rencontré le nom de réseau sans fil `acces.reseaulibre.ca`, très bien! Cette page vise à expliquer brièvement le réseau que vous avez découvert.
 
-Ceci est un point d'accès au "réseau libre", un projet d'internet citoyen décentralisé. Vous avez ici accès au réseau selon les [[politiques d'utilisation|policy]] en vigueur et aussi selon les politiques de l'opérateur du point d'accès que vous utilisez. Il est possible que vous ayez accès à internet, mais sinon, n'ayez crainte, le réseau libre recèle d'autre resources pour vous sans même avoir accès à internet!
+Ceci est un point d'accès au "réseau libre", un projet d'internet citoyen décentralisé. Vous avez ici accès au réseau selon les [[politiques d'utilisation|policy]] en vigueur et aussi selon les politiques de l'opérateur du point d'accès que vous utilisez. Il est possible que vous ayez accès à internet, mais sinon, n'ayez crainte, le réseau libre recèle d'autres ressources pour vous sans même avoir accès à internet!
 
 Pour plus d'information sur le réseau, consultez [[la page d'accueil|index]].
