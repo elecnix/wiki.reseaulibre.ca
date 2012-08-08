@@ -37,7 +37,9 @@ Le réseau du sud, pour sa part, en est maintenant à 4 noeuds interconnectés, 
 Noeuds à venir
 -------------
 
-On espère monter des dizaines de nouveaux nodes avant la venue de l'hiver. Un achat collectif de 10 kits "bullet + antenne omnidirectionnelle" est en cours de planification. Ce kit, d'ailleurs, devient rapidement le standard de-facto des relais installés dans le mesh.
+On espère monter des dizaines de nouveaux nodes avant la venue de l'hiver. Un achat collectif de plusieurs kits "bullet + antenne omnidirectionnelle" est planifié [sur le wiki][9]. Ce kit, d'ailleurs, devient rapidement le standard de-facto des relais installés dans le mesh.
+
+ [9]: [[/volunteers/group-buy-2012-08]]
 
 Un financement extérieur supplémentaire rendra peut-être possible la création d'une banque de 10 kits supplémentaires (donc 20 au total), un financement du projet [UQBM][4] qui reste à confirmer.
 
