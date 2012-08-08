@@ -1,3 +1,5 @@
+Achat de bullet + antenne 15 dbi + injecteur POE
+
 * [[/users/elecnix]] 6 ([[/nodes/bb]], [[/nodes/val]], [[/nodes/lacou]], [[/nodes/capitaine]], [[/nodes/btm2]], [[/nodes/greene]])
 * [[/users/gapzap]] 3
 * [[/users/tahini]] 3
