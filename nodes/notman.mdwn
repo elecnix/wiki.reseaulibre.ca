@@ -9,7 +9,7 @@ Notman house is a geeky place that may be open to hosting a node.
  * Hardware:
  * Power:
  * Location:
- * Status: [[!taglink planned]]
+ * Status: [[!taglink prospect]]
  * Links: 
  * Azimuth:
  * Panorama:

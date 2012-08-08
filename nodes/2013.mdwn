@@ -9,7 +9,7 @@ Need to ask first.
  * Hardware:
  * Power:
  * Location:
- * Status: [[!taglink planned]]
+ * Status: [[!taglink prospect]]
  * Links: 
  * Azimuth:
  * Panorama:
