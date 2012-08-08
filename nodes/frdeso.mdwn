@@ -6,7 +6,7 @@
  * IP address:
  * IPv6 address:
  * Software:
- * Hardware:
+ * Hardware: Ubiquiti Nanostation LOCO M2
  * Power:
  * Location:
  * Status: [[!taglink planned]] 
