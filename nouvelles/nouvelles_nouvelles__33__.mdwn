@@ -20,6 +20,10 @@ Important: changement au BSSID
 
 Le `BSSID`, l'identifiant unique qui permet aux appareils de se connecter au réseau, a été modifié. C'est maintenant l'identifiant "standard" utilisé par plusieurs autres projets de mesh ailleurs au monde ([Byzantium][2], [Freifunk][3], etc).
 
+Le nouveau BSSID est: `02:CA:FF:EE:BA:BE`.
+
+À noter que le ESSID est maintenant "suggéré", c'est à dire que les opérateurs sont libres de choisir celui qui leur convient mais on encourage l'utilisation des ESSID `relais.reseaulibre.ca` ou `acces.reseaulibre.ca` selon le rôle du noeud.
+
  [2]: http://project-byzantium.org/
  [3]: http://freifunk.net/
 
