@@ -1,5 +1,7 @@
 [[!waypoint lat="45.532364" lon="-73.620812" embed hidden width="400px" height="400px" right desc="Dans la fenêtre, vers le sud-est"]]
 
+Planifié en septembre 2012.
+
 [[!ymlfront data="""
 MAC: 00:B0:C0:02:1D:1F
 IP: 172.16.1.18
