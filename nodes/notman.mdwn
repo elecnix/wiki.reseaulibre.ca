@@ -1,4 +1,4 @@
-[[!waypoint lat="45.511802" lon="-73.569764" embed hidden width="400px" height="400px" right desc="Potential node in notman house? Third floor?"]]
+[[!waypoint lat="45.5118" lon="-73.5697" embed hidden width="400px" height="400px" right desc="Potential node in notman house? Third floor?"]]
 
 Notman house is a geeky place that may be open to hosting a node.
 
