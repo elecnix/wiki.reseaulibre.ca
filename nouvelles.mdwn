@@ -1,9 +1,9 @@
 Les dernières nouvelles du réseau envoyées sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca) sont archivés ici.
 
-[[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and !tagged(draft)" show="30"]]
+[[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and !tagged(draft)" archive=yes]]
 
 En rédaction
-------------
+============
 
 Les nouvelles en rédaction sont marqués par le [[tag/draft]]. Il est préférable d'avoir un seul draft à la fois. 
 
