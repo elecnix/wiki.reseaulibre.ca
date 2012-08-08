@@ -2,3 +2,8 @@ Pierre Gaudet
 
 * Courriel: [[mailto:gaudet.pierre@gmail.com]]
 * Freenode: gapzap
+
+##Ma futur node
+
+* [[nodes/DELTA100]]
+
