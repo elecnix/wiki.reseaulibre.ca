@@ -43,7 +43,7 @@ Un financement extérieur supplémentaire rendra peut-être possible la créatio
 
 Concrètement, on vise la mise en ligne des nodes suivants:
 
- * Août: [[nodes/DELTA100]], [[nodes/koumbit-outremont]]
+ * Août: [[nodes/DELTA100]], [[nodes/koumbit-outremont]], [[nodes/frdeso]]
  * Septembre: [[nodes/val]], [[nodes/lacou]], [[nodes/btm]], [[nodes/atlas]], [[nodes/comtik]], [[nodes/moreau]]
 
  [4]: http://uqbm.com/
