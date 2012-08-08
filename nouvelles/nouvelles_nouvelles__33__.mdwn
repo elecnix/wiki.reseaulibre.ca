@@ -1,4 +1,6 @@
-Ceci est la première lettre de nouvelles du Réseau Libre, destinée aux utilisateurs, participants et autres personnes intéressées au projet. Elle est désormais publiée sur la [[section nouvelles du wiki|nouvelles]] et sera envoyée sur une nouvelle liste de diffusion aussi régulièrement que nos bénévoles en trouveront l'énergie.
+Ceci est la première lettre de nouvelles du Réseau Libre, destinée aux utilisateurs, participants et autres personnes intéressées au projet. Elle est désormais publiée sur la [section nouvelles du wiki][1] et sera envoyée sur une nouvelle liste de diffusion aussi régulièrement que nos bénévoles en trouveront l'énergie.
+
+ [1]: http://wiki.reseaulibre.ca/nouvelles
 
 Sommaire:
 
@@ -13,6 +15,14 @@ La liste est à bas volume (~1-2 courriels par mois) et vise à tenir les gens i
 
 On peut s'inscrire sur la liste sur cette page: <https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca>. Les opérateurs peuvent envoyer un courriel à nouvelles@reseaulibre.ca afin de publier une nouvelle. Une modération sera peut-être nécessaire pour les premiers envois.
 
+Important: changement au BSSID
+------------------------------
+
+Le `BSSID`, l'identifiant unique qui permet aux appareils de se connecter au réseau, a été modifié. C'est maintenant l'identifiant "standard" utilisé par plusieurs autres projets de mesh ailleurs au monde ([Byzantium][2], [Freifunk][3], etc).
+
+ [2]: http://project-byzantium.org/
+ [3]: http://freifunk.net/
+
 Nouveaux noeuds
 --------------
 
@@ -25,12 +35,14 @@ Noeuds à venir
 
 On espère monter des dizaines de nouveaux nodes avant la venue de l'hiver. Un achat collectif de 10 kits "bullet + antenne omnidirectionnelle" est en cours de planification. Ce kit, d'ailleurs, devient rapidement le standard de-facto des relais installés dans le mesh.
 
-Un financement extérieur supplémentaire rendra peut-être possible la création d'une banque de 10 kits supplémentaires (donc 20 au total), un financement du projet [UQBM](http://uqbm.com/) qui reste à confirmer.
+Un financement extérieur supplémentaire rendra peut-être possible la création d'une banque de 10 kits supplémentaires (donc 20 au total), un financement du projet [UQBM][4] qui reste à confirmer.
 
 Concrètement, on vise la mise en ligne des nodes suivants:
 
  * Août: [[nodes/DELTA100]], [[nodes/koumbit-outremont]]
  * Septembre: [[nodes/val]], [[nodes/lacou]], [[nodes/btm]], [[nodes/atlas]], [[nodes/comtik]], [[nodes/moreau]]
+
+ [4]: http://uqbm.com/
 
 Améliorations au wiki: miroirs et OSM
 -------------------------------------
@@ -44,11 +56,17 @@ Le wiki peut donc être utilisés à deux adresses:
 
 L'adresse des miroirs peut changer sans préavis, consulter le bas des pages pour voir la liste des miroirs actifs.
 
-Un bon travail a également été fait afin de s'assurer que la [carte des points du réseau](/ikiwiki.cgi?map=map&do=osm&zoom=12&lat=45.5227&lon=-73.59554&layers=BT) fonctionne directement sur le mesh sans accès internet extérieur. Ceci implique le rendu local, sur le mesh, des cartes de [[OpenStreetMaps|http://osm.org/]]. Les opérateurs du réseau sont invités à contribuer leur serveur de carte en consultant la [[documentation|meta/Hosting_your_own_maps]].
+Un bon travail a également été fait afin de s'assurer que la [carte des points du réseau][5] fonctionne directement sur le mesh sans accès internet extérieur. Ceci implique le rendu local, sur le mesh, des cartes de [OpenStreetMaps][6]. Les opérateurs du réseau sont invités à contribuer leur serveur de carte en consultant la [documentation][7].
+
+ [5]: http://wiki.reseaulibre.ca/ikiwiki.cgi?map=map&do=osm&zoom=12&lat=45.5227&lon=-73.59554&layers=BT
+ [6]: http://osm.org/
+ [7]: http://wiki.reseaulibre.ca/meta/Hosting_your_own_maps
 
 Événements et rencontres à venir
 --------------------------------
 
-Réseau Libre sera présent au [[Mini Maker Fair de Montréal|http://www.makerfairemontreal.ca]]. Plusieurs routeurs seront installés sur le site, en mesh. Au moins un d'eux possédera une caméra web qui diffusera en continu et nous prévoyons avoir le wiki complètement opérationnel sur le mesh local sur place, même si ledit mesh ne sera pas connecté au reste du réseau.
+Réseau Libre sera présent au [Mini Maker Fair de Montréal][8]. Plusieurs routeurs seront installés sur le site, en mesh. Au moins un d'eux possédera une caméra web qui diffusera en continu et nous prévoyons avoir le wiki complètement opérationnel sur le mesh local sur place, même si ledit mesh ne sera pas connecté au reste du réseau.
+
+ [8]: http://www.makerfairemontreal.ca
 
 [[!tag draft]]
