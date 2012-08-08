@@ -11,9 +11,11 @@ Nouvelle liste de diffusion
 
 Une nouvelle liste de diffusion sera utilisée pour communiquer les développements importants du projet. Les annonces seront basées sur les brouillons rédigés dans la section [[nouvelles]] du wiki, et donc les contributions de tous et toutes les participantEs du projet sont bienvenues.
 
-La liste est à bas volume (~1-2 courriels par mois) et vise à tenir les gens intéressés par le projet au courant des activités, sans être complètement engagés comme bénévoles. Par exemple, un opérateur d'un seul noeud peut utiliser cette liste pour être certain d'être au courant des changements de configuration nécessaires, ou un utilisateur peut surveiller la liste pour savoir quand un node ouvre dans son quartier.
+La liste est à bas volume (~1-2 courriels par mois) et vise à tenir les gens intéressés par le projet au courant des activités, sans être complètement engagés comme bénévoles. Par exemple, l'opérateur d'un seul noeud peut utiliser cette liste pour être au courant des changements de configuration nécessaires. Ou encore: un utilisateur peut surveiller la liste pour savoir quand un service est développé dans son quartier.
 
-On peut s'inscrire sur la liste sur cette page: <https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca>. Les opérateurs peuvent envoyer un courriel à nouvelles@reseaulibre.ca afin de publier une nouvelle. Une modération sera peut-être nécessaire pour les premiers envois.
+On peut s'inscrire sur la liste sur cette page: <https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca>. Les opérateurs peuvent envoyer un courriel à nouvelles@reseaulibre.ca afin de publier une nouvelle. Une modération sera nécessaire pour les premiers envois, et seulement les envois rédigés sur le wiki préalablement seront approuvés.
+
+La liste de discussion `nodes@lists.openisp.ca` demeure l'endroit privilégié pour les conversations régulières de opérateurs.
 
 Important: changement au BSSID
 ------------------------------
