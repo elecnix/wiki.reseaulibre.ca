@@ -44,7 +44,6 @@ Mes commandes UCI:
 	#batman
 	uci set network.bat0=interface
 	uci set network.bat0.ifname=bat0
-	uci set network.bat0.proto=none
 	uci set network.bat0.mtu=1500
 
 	uci set network.bat0.ipaddr=172.16.1.7
