@@ -18,7 +18,7 @@
    sodipodi:docname="icon.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
-   inkscape:export-filename="/home/anarcat/wikis/mesh.openisp.ca/tag/prospect/icon.png"
+   inkscape:export-filename="/home/anarcat/wikis/mesh.openisp.ca/tag/planned/icon.png"
    inkscape:export-xdpi="7.3000002"
    inkscape:export-ydpi="7.3000002">
   <defs
@@ -92,54 +92,21 @@
     <g
        id="g6728"
        transform="matrix(4.9858681,0,0,4.9858681,-1552.7644,-1873.0817)">
-      <g
-         id="g3762">
-        <g
-           style="stroke:#00008f;stroke-opacity:1"
-           id="g5114"
-           transform="translate(14.50819,-2.7766074)">
-          <path
-             id="path5112"
-             d="M 335.96898,451.5699 C 326.75404,446.57609 320.49181,436.81905 320.49181,425.60827 C 320.49182,414.75498 326.36103,405.26419 335.09656,400.13879"
-             style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#00008f;stroke-width:0.98360658000000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1" />
-          <path
-             id="path5107"
-             d="M 365.4672,400.47806 C 373.89057,405.6761 379.50821,414.99014 379.50821,425.60827 L 379.50822,425.60828 C 379.50821,436.5839 373.50594,446.16614 364.60697,451.24941"
-             style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#00008f;stroke-width:0.98360658000000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1" />
-        </g>
-        <use
-           style="stroke:#00008f;stroke-opacity:1"
-           x="0"
-           y="0"
-           xlink:href="#g5114"
-           id="use5733"
-           transform="matrix(1.32,0,0,1.32,-116.64263,-135.38488)"
-           width="744.09448"
-           height="1052.3622" />
-        <use
-           style="stroke:#00008f;stroke-opacity:1;fill:url(#linearGradient3764);fill-opacity:1"
-           x="0"
-           y="0"
-           xlink:href="#g5114"
-           id="use5735"
-           transform="matrix(1.6479232,0,0,1.6479232,-236.17337,-274.12185)"
-           width="744.09448"
-           height="1052.3622" />
-        <path
-           style="fill:none;fill-rule:evenodd;stroke:#00008f;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="M 365,422.36218 L 365,502.36218"
-           id="path5737" />
-        <path
-           sodipodi:type="arc"
-           style="opacity:1;fill:#00008f;fill-opacity:1;fill-rule:evenodd;stroke:#00008f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1"
-           id="path5739"
-           sodipodi:cx="372.5"
-           sodipodi:cy="429.86218"
-           sodipodi:rx="7.5"
-           sodipodi:ry="7.5"
-           d="M 380 429.86218 A 7.5 7.5 0 1 1  365,429.86218 A 7.5 7.5 0 1 1  380 429.86218 z"
-           transform="translate(-7.5,-7.5000026)" />
-      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path5737"
+         d="m 365,422.36218 0,80"
+         style="fill:none;stroke:#00008f;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         transform="translate(-7.5,-7.5000026)"
+         d="m 380,429.86218 a 7.5,7.5 0 1 1 -15,0 7.5,7.5 0 1 1 15,0 z"
+         sodipodi:ry="7.5"
+         sodipodi:rx="7.5"
+         sodipodi:cy="429.86218"
+         sodipodi:cx="372.5"
+         id="path5739"
+         style="fill:#00008f;fill-opacity:1;fill-rule:evenodd;stroke:#00008f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:5"
+         sodipodi:type="arc" />
     </g>
   </g>
 </svg>
