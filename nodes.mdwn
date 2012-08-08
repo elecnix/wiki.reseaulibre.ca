@@ -1,4 +1,7 @@
-## Comment créer un node
+[[!toc levels=2]]
+
+Comment créer un node
+=====================
 
  1. Créer une page ci-bas avec le nom de votre node
  2. Remplissez les champ, et en particulier:
@@ -6,40 +9,42 @@
   * le champ `status` (réglé à `planned`, `up` ou `down` selon le statut)
  3. Si vous avez un lien avec un autre node, faites un lien wiki vers le node dans la page, il va être affiché dans la carte. Vous pouvez également ajouter des méta-données sur le lien dans la page [[links]]
 
+[[!inline pages="nonexistent" archive=yes sort=title rootpage=nodes template=titlepage postformtext="Add a new node named:"]]
+
+Node list
+=========
+
 Here is the list of documented nodes ([[!pagecount pages="nodes/* and !*/*/* and !*/discussion"]] found, including [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(up)"]] up, [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(down)"]] down, [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(planned)"]] planned and [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(prospect)"]] prospect).
 
+[[!pagestat pages="tag/*" among="nodes/*"]]
+
 Operational nodes
-=================
+-----------------
 
 Those are the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(up)"]] nodes marked as "up".
 
 [[!inline pages="nodes/* and !*/*/* and !*/discussion and tagged(up)" archive=yes sort=title template=titlepage]]
 
 Nodes in maintenance
-====================
+--------------------
 
 Those are the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(down)"]] nodes marked as "down".
 
 [[!inline pages="nodes/* and !*/*/* and !*/discussion and tagged(down)" archive=yes sort=title template=titlepage]]
 
 Planned nodes
-=============
+-------------
 
 Those are the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(planned)"]] nodes marked as "planned".
 
 [[!inline pages="nodes/* and !*/*/* and !*/discussion and tagged(planned)" archive=yes sort=title template=titlepage]]
 
 Prospects
-=========
+---------
 
 Those are the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(prospect)"]] nodes marked as "prospect".
 
 [[!inline pages="nodes/* and !*/*/* and !*/discussion and tagged(prospect)" archive=yes sort=title template=titlepage]]
-
-All nodes
-=========
-
-[[!inline pages="nodes/* and !*/*/* and !*/discussion" archive=yes sort=title rootpage=nodes template=titlepage postformtext="Add a new node named:"]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
