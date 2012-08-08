@@ -1,4 +1,3 @@
-[[!meta title="pages tagged unknown"]]
+[[!meta title="test nodes"]]
 
-[[!inline pages="tagged(unknown)" actions="no" archive="yes"
-feedshow=10]]
+[[!inline pages="tagged(test)" actions="no" archive="yes" feedshow=10]]
