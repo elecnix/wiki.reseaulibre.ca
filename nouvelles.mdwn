@@ -1,0 +1,3 @@
+On encourage les gens à poster les annonces importantes pour le mesh ici.
+
+[[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion" rootpage="nouvelles" show="30"]]
