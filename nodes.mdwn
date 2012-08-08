@@ -14,9 +14,11 @@ Comment créer un node
 Node list
 =========
 
-Here is the list of documented nodes ([[!pagecount pages="nodes/* and !*/*/* and !*/discussion"]] found, including [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(up)"]] up, [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(down)"]] down, [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(planned)"]] planned and [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(prospect)"]] prospect).
+[[!pagestats pages="tag/* and backlink(nodes/*)" among="nodes/*"]]
 
-[[!pagestat pages="tag/*" among="nodes/*"]]
+Here is the list of the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion"]] documented nodes.
+
+[[!pagestats pages="tag/* and !tag/*/*" among="nodes/*" style="table"]]
 
 Operational nodes
 -----------------
