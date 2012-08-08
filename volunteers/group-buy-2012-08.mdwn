@@ -3,7 +3,7 @@
 * [[/users/tahini]] 3
 * [[/users/deuxpi]] 3
 * [[/users/scientist]] 2
-* [[/users/anarcat]] 1
+* [[/users/anarcat]] 1 ([[nodes/magicfab]])
 * [[/users/bgm]] 1
 
 total: 19
