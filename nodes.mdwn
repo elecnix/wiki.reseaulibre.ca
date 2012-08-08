@@ -14,7 +14,7 @@ Comment créer un node
 Node list
 =========
 
-[[!pagestats pages="tag/* and link(nodes/*)" among="nodes/*"]]
+[[!pagestats pages="tag/*" among="nodes/*"]]
 
 Here is the list of the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion"]] documented nodes.
 
