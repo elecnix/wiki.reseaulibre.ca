@@ -29,13 +29,13 @@ Un financement extérieur supplémentaire rendra peut-être possible la créatio
 
 Concrètement, on vise la mise en ligne des nodes suivants:
 
- * Août: [[nodes/DELTA100]]
- * Septembre: [[nodes/val]], [[nodes/lacou]], [[nodes/btm]]
+ * Août: [[nodes/DELTA100]], [[nodes/koumbit]]
+ * Septembre: [[nodes/val]], [[nodes/lacou]], [[nodes/btm]], [[nodes/atlas]], [[nodes/comtik]], [[nodes/moreau]]
 
 Améliorations au wiki: miroirs et OSM
 -------------------------------------
 
-Un ensemble d'améliorations ont été apportées au wiki. Tout d'abord, le wiki a maintenant un miroir, et nous prévoyons en déployer d'autres. Les miroirs sont des répliques complètes du wiki principal, permettant même l'édition, et sont automatiquement synchronisés avec le wiki central (grâce à la technologie "git" sous-jacente à l'engin ikiwiki, voir [[meta]] pour plus d'information.
+Un ensemble d'améliorations ont été apportées au wiki. Tout d'abord, le wiki a maintenant un miroir, et nous prévoyons en déployer d'autres. Les miroirs sont des répliques complètes du wiki principal, permettant même l'édition, et sont automatiquement synchronisés avec le wiki central, grâce à la technologie "git" sous-jacente à l'engin ikiwiki, voir [[meta]] pour plus d'information.
 
 Le wiki peut donc être utilisés à deux adresses:
 
@@ -44,8 +44,7 @@ Le wiki peut donc être utilisés à deux adresses:
 
 L'adresse des miroirs peut changer sans préavis, consulter le bas des pages pour voir la liste des miroirs actifs.
 
-
-meta/Hosting_your_own_maps/
+Un bon travail a également été fait afin de s'assurer que la [carte des points du réseau](/ikiwiki.cgi?map=map&do=osm&zoom=12&lat=45.5227&lon=-73.59554&layers=BT) fonctionne directement sur le mesh sans accès internet extérieur. Ceci implique le rendu local, sur le mesh, des cartes de [[OpenStreetMaps|http://osm.org/]]. Les opérateurs du réseau sont invités à contribuer leur serveur de carte en consultant la [[documentation|meta/Hosting_your_own_maps]].
 
 Événements et rencontres à venir
 --------------------------------
