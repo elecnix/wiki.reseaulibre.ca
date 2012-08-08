@@ -47,7 +47,7 @@ Concrètement, on vise la mise en ligne des nodes suivants:
  * Septembre: [[nodes/val]], [[nodes/lacou]], [[nodes/btm]], [[nodes/atlas]], [[nodes/comtik]], [[nodes/moreau]]
 
  [4]: http://uqbm.com/
- [9]: http://wiki.reseaulibre.ca/volunteers/group-buy-2012-08
+ [9]: http://wiki.reseaulibre.ca/hardware/group-buy-2012-08
 
 Améliorations au wiki: miroirs et OSM
 -------------------------------------
