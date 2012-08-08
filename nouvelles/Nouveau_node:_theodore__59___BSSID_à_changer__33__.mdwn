@@ -1,0 +1,28 @@
+Ceci est la première lettre de nouvelles du Réseau Libre, destinée aux utilisateurs, participants et autres personnes intéressées au projet.
+
+Nouvelle liste de diffusion
+---------------------------
+
+Elle est désormais publiée sur <http://wiki.reseaulibre.ca/nouvelles> et sera envoyée sur la nouvelle liste de discussion 
+
+Nouveaux nodes
+--------------
+
+Grâce aux efforts des bénévoles du réseau libre, nous avons maintenant un nouveau node en ligne dans Rosemont: [[nodes/theodore]]! Le node est malheureusement isolé des autres voisins, mais on espère que le montage de [[nodes/DELTA100]] étendra le réseau pour l'instant limité du nord. 
+
+Le réseau du sud, pour sa part, en est maintenant à 4 nodes interconnectés, principalement autour de [[nodes/bgm]], ce qui semble être un record en amérique du nord (!!), selon nos recherches.
+
+Nodes à venir
+-------------
+
+
+
+Wiki
+----
+
+Le wiki a maintenant un miroir! 
+
+meta/Hosting_your_own_maps/
+
+
+[[!tag draft]]
