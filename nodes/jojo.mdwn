@@ -6,6 +6,8 @@ Antenne omnidirectionnelle sur le toit.
 [[!ymlfront data="""
 MAC: 00:27:22:2E:BC:37
 IP: 172.16.0.17
+LAN IP: 192.168.3.17
+BSSID: 02:CA:FF:EE:BA:BE
 IPv6: 
 """]]
 
