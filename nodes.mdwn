@@ -1,13 +1,8 @@
-[[!if test="(enabled(template) or enabled(edittemplate))
-and enabled(inline)" then="""
-Here is the list of documented nodes:
-
-[[!inline pages="nodes/* and !*/*/* and !*/discussion" archive=yes sort=title rootpage=nodes template=titlepage postformtext="Add a new node named:"]]
-"""]]
+[[!toc]]
 
 ## Comment créer un node
 
- 1. Créer une page ci-haut avec le nom de votre node
+ 1. Créer une page ci-bas avec le nom de votre node
  2. Remplissez les champ, et en particulier:
   * la directive `waypoint` avec les coordonnées du point, pour que le node soit affiché dans la carte (*attention: si l'icône du node n'apparait pas, essayer d'enlever le dernier chiffre de votre latitude, il est peut-être de trop !*)
   * le champ `status` (réglé à `planned`, `up` ou `down` selon le statut)
@@ -27,6 +22,15 @@ Visualiser les nodes sur la [[map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp
 ## meta
 
 [[todo/numbering_policy]] currently says to dig into each of the pages above to get the IPs, which is sub-optimal of course.
+
+## Listing
+
+[[!if test="(enabled(template) or enabled(edittemplate))
+and enabled(inline)" then="""
+Here is the list of documented nodes:
+
+[[!inline pages="nodes/* and !*/*/* and !*/discussion" archive=yes sort=title rootpage=nodes template=titlepage postformtext="Add a new node named:"]]
+"""]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
