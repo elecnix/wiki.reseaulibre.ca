@@ -1,3 +1,12 @@
 On encourage les gens à poster les annonces importantes pour le mesh ici.
 
 [[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and !tagged(draft)" rootpage="nouvelles" show="30"]]
+
+En rédaction
+------------
+
+Les nouvelles en rédaction sont marqués par le [[tag/draft]]. Il est préférable d'avoir un seul draft à la fois. 
+
+Voici la liste des nouvelles en rédaction:
+
+[[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and tagged(draft)" rootpage="nouvelles" archive=yes]]
