@@ -1,5 +1,3 @@
-[[!toc]]
-
 ## Comment créer un node
 
  1. Créer une page ci-bas avec le nom de votre node
@@ -7,15 +5,6 @@
   * la directive `waypoint` avec les coordonnées du point, pour que le node soit affiché dans la carte (*attention: si l'icône du node n'apparait pas, essayer d'enlever le dernier chiffre de votre latitude, il est peut-être de trop !*)
   * le champ `status` (réglé à `planned`, `up` ou `down` selon le statut)
  3. Si vous avez un lien avec un autre node, faites un lien wiki vers le node dans la page, il va être affiché dans la carte. vous pouvez également ajouter des méta-données sur le lien dans la page [[links]]
-
-## node ideas
-
- * Est: moreau + ontario
- * Nord: en face d'el motor machin, [[nodes/boulette]]
- * Centre: DIRA etc, maison notman?
- * Sud-ouest: [[nodes/bgm-homs]], smurf, canix2??
-
-## Node listing and creation
 
 [[!if test="(enabled(template) or enabled(edittemplate))
 and enabled(inline)" then="""
