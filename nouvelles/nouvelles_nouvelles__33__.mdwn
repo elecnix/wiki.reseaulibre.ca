@@ -49,7 +49,6 @@ Un bon travail a également été fait afin de s'assurer que la [carte des point
 Événements et rencontres à venir
 --------------------------------
 
-*Mini Maker Faire de Montréal* Une première rencontre d'organisation a eu lieu le 4 août 2012 en vue de notre présence à l'événement. Plusieurs routeurs seront installés sur le site, en mesh. Au moins un d'eux possédera une caméra web qui diffusera en continu. Une seconde réunion aura lieu le ... à ... http://www.makerfairemontreal.ca
-
+Réseau Libre sera présent au [[Mini Maker Fair de Montréal|http://www.makerfairemontreal.ca]]. Plusieurs routeurs seront installés sur le site, en mesh. Au moins un d'eux possédera une caméra web qui diffusera en continu et nous prévoyons avoir le wiki complètement opérationnel sur le mesh local sur place, même si ledit mesh ne sera pas connecté au reste du réseau.
 
 [[!tag draft]]
