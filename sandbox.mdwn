@@ -86,8 +86,6 @@ Bulleted list
 * *item*
 * item
 
-TEST
-
 [[ikiwiki/WikiLink]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
