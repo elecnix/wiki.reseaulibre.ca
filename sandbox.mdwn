@@ -4,10 +4,6 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
 ceci est un test du bot avec du utf8
 
-# test clones
-
-pong
-
 # report plugin test
 
 this lists the IP fields on the nodes pages.
