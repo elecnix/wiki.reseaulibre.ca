@@ -3,7 +3,7 @@
 
 
  * MAC address:
- * IP address:
+ * IP address: 172.16.1.97
  * IPv6 address:
  * Software:
  * Hardware: Ubiquiti Nanostation LOCO M2
