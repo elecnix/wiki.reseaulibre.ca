@@ -5,9 +5,9 @@ Achat de bullet + antenne 15 dbi + injecteur POE
 * [[/users/tahini]] 3
 * [[/users/deuxpi]] 3
 * [[/users/scientist]] 2
-* [[/users/anarcat]] 1 ([[nodes/magicfab]])
+* [[/users/anarcat]] 2 ([[nodes/magicfab]], spare)
 * [[/users/bgm]] 1
 
-total: 19
+total: 20
 
 9-août/gapzap: prix pour **20 kits**: 120$/kit --> 137.97$ tx in
