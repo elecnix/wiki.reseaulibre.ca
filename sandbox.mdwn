@@ -6,7 +6,7 @@ ceci est un test du bot avec du utf8
 
 # test clones
 
-ping
+pong
 
 # report plugin test
 
