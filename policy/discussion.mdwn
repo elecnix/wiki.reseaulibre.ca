@@ -1,5 +1,10 @@
 [[!toc levels=2]]
 
+5 libertées
+===========
+
+Il a été proposé sur la liste d'adopter les [5 libertés du Free Network Foundation](http://www.commons.freenetworkfoundation.org/index.php?title=Free_network_definition) le 9 août. Selon nos politiques, la proposition sera adoptée après un délai de 7 jours.
+
 Débat sur le mode de décision du projet
 =======================================
 
