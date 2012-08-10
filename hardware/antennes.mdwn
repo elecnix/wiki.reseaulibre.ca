@@ -1,6 +1,8 @@
+[[!meta title="Supports d'antennes"]]
+
 [[!toc levels=3]]
 
-## Supports d'antenne
+## Supports
 
 La plupart des antennes et des routeurs/antennes sont munies de fixation pour tuyau de 1" à 2".
 
@@ -40,6 +42,14 @@ Celui-ci est plus complexe à gosser, et [[cher|http://www.streakwave.com/itemde
 Pour les toits en pente, c'est plus compliqué. [[Environ 38$|http://www.streakwave.com/itemdesc.asp?ic=SW-TM60&eq=&Tp=]].
 
 [[!img toit_en_pente.jpg]]
+
+## Nanobracket
+
+Le [NanoBracket](http://www.nanobracket.info/) est bien zoli. [8$ chez converbit](http://www.converbit.ca/magasin/products.php?product=NanoBracket). Permet d'orienter la station dans un angle de 90° dans toutes les directions.
+
+## Nanostation mount
+
+Spécialement fait pour le Nanostation, le [Nanstation mount](http://www.ubnt.com/mount) permet de se coller dans une fenêtre ou sur un mur. Par contre, on a eu des mauvaises expériences avec la "suce" pour les fenêtres, qui colle mal.
 
 ## Mise à terre / Ground
 
