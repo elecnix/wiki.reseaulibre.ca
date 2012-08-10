@@ -1,3 +1,8 @@
  * Nous acceptons maintenant les [[dons en matériel|donate]]
+ * Un benevole a packagé l'outil "horst" pour Debian..
+ * FNF 5 freedoms
+ * google map + new tag
+ * achat collectif?
+ * status des nodes up/down, stats dans la page nodes
 
 [[!tag draft]]
