@@ -54,11 +54,10 @@ Dans notre cas, l'antenne est alimentée par le routeur, qui lui est alimenté, 
 
 Il faut ensuite s'assurer de la qualité de la mise à terre du panneau électrique de la maison, ainsi que des fiches électriques auxquelles sont relié notre équipement. Si un ground n'est pas présent, on peut utiliser le tuyau d'eau FROIDE de la plomberie de la maison, ou installer un "ground rod". Le tuyau d'eau chaude, d'une ligne de gaz, ou tout autre structure métallique avec laquelle on pourrait rentrer en contact sont DÉCONSEILLÉS.
 
-* À vérifier: est-ce que l'injecteur PoE d'Ubnt est groundé, et si oui, il faut [[vérifier si une prise électrique est correctement groundée|http://electrical.about.com/od/receptaclesandoutlets/tp/ReceptacleAndOutletGroundTest.htm]].
-* Alternative possible: utiliser une prise GFCI, avec une fuse qui saute dans le cas d'une surcharge (?)
+* L'injecteur PoE de la compagnie Ubiquiti possède une mise à la terre et une protection anti-statique. Il faut par contre [[vérifier si la prise électrique possède une mise à la terre fonctionnelle|http://electrical.about.com/od/receptaclesandoutlets/tp/ReceptacleAndOutletGroundTest.htm]].
+* Alternative possible: utiliser une prise GFCI, avec disjoncteur qui déclenche en cas de surcharge (?)
 
 Liens:
 
 * [[Grounding and Lightning Protection|https://code.commotionwireless.net/projects/commotion-manual/wiki/Grounding_and_Lightning_Protection]]
 * [[Datasheet ESP-100-POE (pdf)|http://www.lairdtech.com/WorkArea/DownloadAsset.aspx?id=2222]]
-
