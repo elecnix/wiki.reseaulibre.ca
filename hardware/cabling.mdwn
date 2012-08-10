@@ -4,12 +4,42 @@
 
 # Câblage
 
-Normalement on veux installer un câble réseau avec PoE.
+Normalement on veux installer un câble réseau ([[!wikipedia RJ-45]] standard) avec [[!wikipedia PoE]].
 Alors un seul câble suffit si le routeur est sur le toit.
 Ce type de câble doit être conçu pour l'extérieur.
-Il doit aussi être blindé pour protéger les équipements.
+Il doit aussi être groundé pour protéger les équipements des surcharges électriques ([[!wikipedia Electro-Static Discharches]]). Un blindage aide à augmenter la longueur maximale du câble.
 
 On peux toujours installer un câble pour l'intérieur, mais il sèchera après quelques années.
+
+## Ubiquity tough cable
+
+Exemple de câble: [[Ubiquity Tough Cable|http://www.ubnt.ca/index.php?page=shop.product_details&product_id=136]] and [[Touch cable connector|http://www.ubnt.ca/index.php?page=shop.product_details&product_id=138]].
+
+Disponible chez [[Converbit]]:
+
+ * [[1000' cable|http://www.converbit.ca/magasin/products.php?product=Tough-Cable-Pro]]: 160$
+ * [[100 connecteurs|http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces]]: 48$
+
+## Cablek
+
+Ils ont du [[câble outdoor|http://www.cablek.com/catalog/advanced_search_result.php?search_from=menu&keywords=outdoor&x=0&y=0]], mais assez dispendieux:
+
+ * 150$ unshielded, indoor
+ * 390$ direct burial, unshield
+ * 900$ gel-coated, shielded
+
+Mais au moins c'est à Montréal.
+
+## Monoprice
+
+Chez monoprice, ça se passe soit dans le:
+
+ * [[Cat 5e|https://www.monoprice.com/products/subdepartment.asp?c_id=102&cp_id=10233#1023305]]: 120$
+ * [[Cat 6e|https://www.monoprice.com/products/subdepartment.asp?c_id=102&cp_id=10234#1023405]]: 150$
+
+Le câble outdoor est assez curieux, avec un "riser" externe qui semble être un ground (ou est-ce juste pour que le fil soit plus solide?). Viennent sur des spools en bois. Ils ont aussi du "in-wall rated" qui est curieusement plus cher que le "outdoor", ce qui me fait douter de la qualité de leur "outdoor".
+
+## Puissance vs voltage et distance
 
 Tableau de longueur de câble réseau vs. puissance et voltage:
 
@@ -29,20 +59,7 @@ These cables cannot be sharply bent or squeezed. We have to be careful using gun
  3. RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
 this cable is not flexible at all and can only accept N connectors size.
 
-# Connectors
-
-## Network link connectors
-
-We use the standard [[!wikipedia RJ-45]] connectors to connect routers to a physical network, although we use special cables and metal connectors that can carry a ground for PoE connections.
-
-To avoid ESD ([[!wikipedia Electro-Static Discharches]]), we try to use shielded cables that carry a ground wire, like the [[Ubiquity Tough Cable|http://www.ubnt.ca/index.php?page=shop.product_details&product_id=136]] and [[Touch cable connector|http://www.ubnt.ca/index.php?page=shop.product_details&product_id=138]].
-
-Disponible chez [[Converbit]]:
-
- * [[1000' cable|http://www.converbit.ca/magasin/products.php?product=Tough-Cable-Pro]]: 160$
- * [[100 connecteurs|http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces]]: 48$
-
-## Antenna connectors
+# Antenna connectors
 
 There are 3 types of connectors used :
 
