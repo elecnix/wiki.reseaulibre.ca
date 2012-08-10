@@ -8,7 +8,7 @@ Il existe des routeurs d'extérieur très bon marché, simples, flexibles, puiss
 
 Le réseau de Montréal préconise la bande de fréquence 2.4 GHz.
 
- * [[Routeurs]]
+ * [[Routers]]
  * [[Antennes]]
  * [[Câblage et connecteurs|cabling]]
 
