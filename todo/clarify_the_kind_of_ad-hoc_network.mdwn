@@ -1,10 +1,12 @@
 [[!wikipedia Ad-hoc_network desc="Wikipedia"]] has a good description of the different [[!wikipedia Ad-hoc_network]] we can deploy. They mention:
 
-* [[!wikipedia MANET]] - Mobile Ad-hoc NETworks
-* [[!wikipedia WMN]] - Wireless Mesh Networks
-* [[!wikipedia WSN]] - Wireless Sensor Networks
+* [[!wikipedia MANET]] - Mobile Ad-hoc NETworks - *Each device in a MANET is free to move independently in any direction, and will therefore change its links to other devices frequently. Each must forward traffic unrelated to its own use, and therefore be a router. The primary challenge in building a MANET is equipping each device to continuously maintain the information required to properly route traffic. Such networks may operate by themselves or may be connected to the larger Internet.*
+* [[!wikipedia WMN]] - Wireless Mesh Networks - a general case of all of those
+* [[!wikipedia WSN]] - Wireless Sensor Networks - those are for sensors
 
 So which one is it? The idea here is to read up on this documentation too.
+
+[[done]] - i read summaries of the articles, and we are basically a Wireless Mesh Network. While some nodes can be mobile, they are not yet well deployed or supported because of insufficient coverage. And while there can be sensors on the network, it is not the primary purpose of the network. --[[anarcat]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
