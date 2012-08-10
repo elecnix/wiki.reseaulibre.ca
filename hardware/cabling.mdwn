@@ -47,6 +47,12 @@ Tableau de longueur de câble réseau vs. puissance et voltage:
 
 Source: http://store.freenet-antennas.com.au/documents/UBNT_POE_Cable_Lengths.pdf
 
+## POE links
+
+* [[Glen Pitt-Pladdy's Passive PoE DIY|http://www.pitt-pladdy.com/blog/_20100530-083726_0100_DIY_Passive_PoE/]]
+* [[How to Make a Power Over Ethernet (PoE) Adapter|http://tech2.in.com/how-to/wifi-routers/how-to-make-a-power-over-ethernet-poe-adapter/223062]]
+
+
 # Antenna cables
 
 Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
