@@ -25,9 +25,8 @@ Les [[guides]] documentent également d'autres configurations utilisées.
 This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
 
 * [[Policy]] - what we agree on when opening a node on the mesh
-* [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured
+* [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
 * [[Software]] - the software used/evaluated in the project
-* [[hardware/Radio]] - radio theory and practice, channels, protocols to use
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
