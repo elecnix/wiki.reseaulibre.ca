@@ -1,7 +1,7 @@
 Achat de bullet + antenne 15 dbi + injecteur POE
 
 * [[/users/elecnix]] 6 ([[/nodes/bb]], [[/nodes/val]], [[/nodes/lacou]], [[/nodes/capitaine]], [[/nodes/btm2]], [[/nodes/greene]])
-* [[/users/gapzap]] 3
+* [[/users/gapzap]] 2 
 * [[/users/tahini]] 3
 * [[/users/deuxpi]] 3
 * [[/users/scientist]] 2
@@ -9,6 +9,7 @@ Achat de bullet + antenne 15 dbi + injecteur POE
 * [[/users/bgm]] 1
 * [[/users/iwayMan]] 1
 
-total: 21
+total: 20
 
 9-août/gapzap: prix pour **20 kits**: 120$/kit --> 137.97$ tx in
+10-août/gapzap: Command passée pour 20, Converbit prépare tout ça!
