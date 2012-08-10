@@ -2,7 +2,7 @@
 
 [[!toc levels=2]]
 
-# Câblage
+# Câblage réseau / PoE
 
 Normalement on veux installer un câble réseau ([[!wikipedia RJ-45]] standard) avec [[!wikipedia PoE]].
 Alors un seul câble suffit si le routeur est sur le toit.
@@ -47,7 +47,7 @@ Tableau de longueur de câble réseau vs. puissance et voltage:
 
 Source: http://store.freenet-antennas.com.au/documents/UBNT_POE_Cable_Lengths.pdf
 
-## Antenna cables
+# Antenna cables
 
 Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
 The attenuation of signal in the cable is more significant at higher frequencies.N_Connector.jpg
