@@ -47,14 +47,17 @@ Pour les toits en pente, c'est plus compliqué.
 
 Il faut un support particulier, [[environ 38$|http://www.streakwave.com/itemdesc.asp?ic=SW-TM60&eq=&Tp=]] et l'installer sur un toit.. en pente, ce qui peut être plus dangereux qu'un toit plat.
 
-### Nanobracket
-
-Le [NanoBracket](http://www.nanobracket.info/) est bien zoli. [8$ chez converbit](http://www.converbit.ca/magasin/products.php?product=NanoBracket). Permet d'orienter la station dans un angle de 90° dans toutes les directions.
-
 [[!img nanomount.jpg align="left" size="100x" alt="Nanomount articulation"]]
 ### Nanostation mount
 
 Spécialement fait pour le Nanostation, le [Nanstation mount](http://www.ubnt.com/mount) permet de se coller dans une fenêtre ou sur un mur. Par contre, on a eu des mauvaises expériences avec la "suce" pour les fenêtres, qui colle mal.
+
+Le mount a l'avantage de pouvoir s'orienter plus ou moins dans toutes les directions. [18$ chez converbit](http://www.converbit.ca/magasin/products.php?product=Mount-pour-NanoStation-pour-Fenetre-ou-Mur).
+
+[[!img RFE-NanoBracket_View.jpg align="right" size="100x" alt="Nanobracket"]]
+### Nanobracket
+
+Le [NanoBracket](http://www.nanobracket.info/) est bien zoli. [8$ chez converbit](http://www.converbit.ca/magasin/products.php?product=NanoBracket). Permet d'orienter la station dans un angle de 90° dans toutes les directions.
 
 ## Mise à terre / Ground
 
