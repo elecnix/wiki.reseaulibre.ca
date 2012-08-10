@@ -1,5 +1,7 @@
 [[!meta title="Câblage et conncteurs"]]
 
+[[!toc levels=2]]
+
 ******
 # Câblage
 ******
