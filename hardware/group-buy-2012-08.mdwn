@@ -11,5 +11,6 @@ Achat de bullet + antenne 15 dbi + injecteur POE
 
 total: 20
 
-9-août/gapzap: prix pour **20 kits**: 120$/kit --> 137.97$ tx in
+9-août/gapzap: prix pour **20 kits**: 120$/kit --> 137.97$ tx in.
+
 10-août/gapzap: Command passée pour 20, Converbit prépare tout ça!
