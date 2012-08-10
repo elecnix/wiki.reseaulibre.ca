@@ -564,3 +564,8 @@ It works with land maps and calculate propagation in 3D
 The defacto reference in ham and wireless networking
 
 <http://www.cplus.org/rmw/rme.html>
+
+Other references
+================
+
+A good reference on radio is also the [[Battlemesh Meshguide|http://battlemesh.org/BattleMeshV4/MeshGuide]]
