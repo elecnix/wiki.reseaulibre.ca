@@ -144,4 +144,4 @@ See <http://wiki.daviddarts.com/PirateBox_DIY>
 
 # Drones?
 
-Il est prévu que certains noeuds du mesh seront déployés sur des drones, au-dessus des zones qui ont une faible couverture par antennes fixes. Deux drones vont se relayer, pour recharger tout à tour leur batteries. Des tests sont à faire pour déterminer si les drones devront cesser de voler en cas de pluie.
+Il est possible que certains noeuds du mesh soient déployés sur des drones, au-dessus des zones qui ont une faible couverture par antennes fixes. Deux drones pourraient se relayer, pour recharger tout à tour leur batteries. Des tests sont à faire pour déterminer si les drones devront cesser de voler en cas de pluie et si la possibilité de charger les drones automatiquement est faisable.
