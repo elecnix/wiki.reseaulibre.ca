@@ -36,11 +36,18 @@ this cable is not flexible at all and can only accept N connectors size.
 # Connectors
 *****
 
-## Antenna connectors on routers
+## Network link connectors
 
-To install connectors to cables, you need a crimper.  Very seldom solder is used, it often cause corrosion in harsh environments.
+We use the standard [[!wikipedia RJ-45]] connectors to connect routers to a physical network, although we use special cables and metal connectors that can carry a ground for PoE connections.
 
-> I have tools and connectors if you need them. (Richard)
+To avoid ESD ([[!wikipedia Electro-Static Discharches]]), we try to use shielded cables that carry a ground wire, like the [[Ubiquity Tough Cable|http://www.ubnt.ca/index.php?page=shop.product_details&product_id=136]] and [[Touch cable connector|http://www.ubnt.ca/index.php?page=shop.product_details&product_id=138]].
+
+Disponible chez [[Converbit]]:
+
+ * [[1000' cable|http://www.converbit.ca/magasin/products.php?product=Tough-Cable-Pro]]: 160$
+ * [[100 connecteurs|http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces]]: 48$
+
+## Antenna connectors
 
 There are 3 types of connectors used :
 
