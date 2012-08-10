@@ -2,9 +2,8 @@
 
 [[!toc levels=2]]
 
-******
 # Câblage
-******
+
 Normalement on veux installer un câble réseau avec PoE.
 Alors un seul câble suffit si le routeur est sur le toit.
 Ce type de câble doit être conçu pour l'extérieur.
@@ -18,9 +17,8 @@ Tableau de longueur de câble réseau vs. puissance et voltage:
 
 Source: http://store.freenet-antennas.com.au/documents/UBNT_POE_Cable_Lengths.pdf
 
-*****
 ## Antenna cables
-*****
+
 Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
 The attenuation of signal in the cable is more significant at higher frequencies.N_Connector.jpg
 Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
@@ -31,10 +29,7 @@ These cables cannot be sharply bent or squeezed. We have to be careful using gun
  3. RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
 this cable is not flexible at all and can only accept N connectors size.
 
-
-*****
 # Connectors
-*****
 
 ## Network link connectors
 
