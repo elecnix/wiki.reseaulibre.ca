@@ -1,4 +1,4 @@
-[[!meta title="Routers and embeded devices]]
+[[!meta title="Routers and embeded devices"]]
 
 [[!toc levels=3]]
 
