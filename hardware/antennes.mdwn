@@ -57,7 +57,9 @@ Le mount a l'avantage de pouvoir s'orienter plus ou moins dans toutes les direct
 [[!img RFE-NanoBracket_View.jpg align="right" size="100x" alt="Nanobracket"]]
 ### Nanobracket
 
-Le [NanoBracket](http://www.nanobracket.info/) est bien zoli. [8$ chez converbit](http://www.converbit.ca/magasin/products.php?product=NanoBracket). Permet d'orienter la station dans un angle de 90° dans toutes les directions.
+Le [NanoBracket](http://www.nanobracket.info/) est bien zoli. Permet d'orienter la station dans un angle de 90° dans toutes les directions. Peut s'installer sur un mur ou une pole.
+
+[8$ chez converbit](http://www.converbit.ca/magasin/products.php?product=NanoBracket).
 
 ## Mise à terre / Ground
 
