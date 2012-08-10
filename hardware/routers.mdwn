@@ -109,6 +109,8 @@ The
 "cheap and nice" according to our friends in Rostock. :) Same as the
 above but with 3 antennas and gigabit ports. [54$ at DirectCanada](http://www.directcanada.com/search/?kw=TL-WR1043ND).
 
+8MB flash, 32MB ram, 400mhz
+
 [[!img TL-WR1043ND-04.jpg size="300x"]]
 
 
