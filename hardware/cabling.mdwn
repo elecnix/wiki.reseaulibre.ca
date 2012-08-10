@@ -1,0 +1,81 @@
+[[!meta title="Câblage et conncteurs"]]
+
+******
+# Câblage
+******
+Normalement on veux installer un câble réseau avec PoE.
+Alors un seul câble suffit si le routeur est sur le toit.
+Ce type de câble doit être conçu pour l'extérieur.
+Il doit aussi être blindé pour protéger les équipements.
+
+On peux toujours installer un câble pour l'intérieur, mais il sèchera après quelques années.
+
+Tableau de longueur de câble réseau vs. puissance et voltage:
+
+[[!img UBNT_POE_Cable_Lengths.pdf.png size="950x"]]
+
+Source: http://store.freenet-antennas.com.au/documents/UBNT_POE_Cable_Lengths.pdf
+
+
+
+*****
+# Connectors
+*****
+
+## Antenna connectors on routers
+
+To install connectors to cables, you need a crimper.  Very seldom solder is used, it often cause corrosion in harsh environments.
+
+> I have tools and connectors if you need them. (Richard)
+
+There are 3 types of connectors used :
+
+### RP-SMA
+
+[[!img Gniazdo_RPSMA.jpg align="left" size="100x"]]
+
+The [[RP-SMA|https://en.wikipedia.org/wiki/SMA_connector]] (reverse polarity SMA) is the connector used on most indoor units. It is small, inexpensive, but cannot accommodate large cable. 
+
+It is often found on:
+
+ * wireless cards
+ * wireless routers
+
+The RP-SMA connector is "reversed polarity" to keep people from connecting high-gain antennas (for example used by ham radio operators) to commodity hardware.
+
+### N connectors
+
+[[!img N_Connector.jpg align="left" size="100x"]]
+
+The [[N connector|https://en.wikipedia.org/wiki/N_connector]] is mostly used in the professional field and ham radio operators.
+
+It is robust, and suitable for outdoor use.
+
+It is specifically used for [[Cantennas|https://en.wikipedia.org/wiki/Cantenna]] and ham radio UHF  transceivers.
+
+### RP-TNC
+
+[[!img RP-TNC-female.jpg align="left" size="100x"]]
+[[!img RP-TNC-male.jpg align="left" size="100x"]]
+
+The RP-TNC is a threaded version of the venerable BNC connector (used in older wired networks).
+
+It is somehow between the SMA and N connectors.
+
+It is most notably used on the Linksys WRT-54G devices, but pretty much *only* there.
+
+It is not recommended to use this connector for new projects unless really necessary, as it is non-standard and harder to find. 
+
+...
+*****
+## Antenna cables
+*****
+Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
+The attenuation of signal in the cable is more significant at higher frequencies.N_Connector.jpg
+Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
+These cables cannot be sharply bent or squeezed. We have to be careful using gun tackers on them.
+
+ 1. RG174U: this cable is the smallest we use. It has 2.5mm diameter and is used for very short distances. It's a high loss cable (1.4db/m at 2.4Ghz) so we use it where we need a short and flexible cable. It fits very well on the RP-SMA connector.
+ 2. RG58 (or LMR195 high quality) varies between 4.7mm and 5.4mm in diameter. It loses .8db/m at 2.4Ghz, so it is suitable for medium distances (up to 10 feet is ok)
+ 3. RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
+this cable is not flexible at all and can only accept N connectors size.

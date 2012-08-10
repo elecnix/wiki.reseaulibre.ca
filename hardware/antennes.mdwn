@@ -1,0 +1,64 @@
+[[!toc levels=3]]
+
+*****
+## Supports d'antenne
+*****
+
+La plupart des antennes et des routeurs/antennes sont munies de fixation pour tuyau de 1" à 2".
+
+### Support en J
+
+Sur le toit, si la hauteur est suffisante, on peut installer un support en "J" qu'on utilise pour les antennes satellites pour [[environ 12$|http://www.streakwave.com/itemdesc.asp?ic=UM&eq=&Tp=]].
+
+[[!img sat-mount.jpg]]
+
+Ce type de support peux être facilement vissé sur une cheminée ou sur le rebord d'un toit.
+On peux même utiliser une installation déjà en place :) .
+
+### Tuyau sur mur ou cheminée
+
+Si on a accès à la cheminée et qu'on désire plus d'élévation, on peux installer un tuyau de 10' sans problème. Il existe des supports qu'on fixe à la cheminée ou au mur. [[Environ 26$|http://www.streakwave.com/itemdesc.asp?ic=SW-WM12D&eq=&Tp=]].
+
+[[!img wall_mount.jpg]]
+
+On peut trouver un [[mât de 10 pieds pour 13$ chez Addison|https://www.addison-electronique.com/catalog/product_info.php?products_id=206065&osCsid=hm2ukugbl2gs42dlkesph4dt16]] et un [[support de 8"|https://www.addison-electronique.com/catalog/product_info.php?cPath=4_4001&products_id=206064&osCsid=hm2ukugbl2gs42dlkesph4dt16]] pour 20$.
+
+Pour une cheminée uniquement, il existe des supports qui ne nécessitent pas de perçage, [[comme ceci|http://www.dennysantennaservice.com/chimney_mount_photo_gallery.html]]:
+
+[[!img cheminee_sans_percage.jpg]]
+
+### Support pour toit plat
+
+Si on a pas accès à la cheminée, on doit se gosser un support qui se dépose sur le toit. [[Environ 125$|http://www.streakwave.com/itemdesc.asp?ic=SW-FRM-125]]. Celui-ci est tenu en place avec des dales de béton pour patio. On le dépose sur un toile de caoutchouc.
+
+[[!img toit_plat.jpg]]
+
+Celui-ci est plus complexe à gosser, et [[cher|http://www.streakwave.com/itemdesc.asp?ic=SW-JRM23810]].
+
+[[!img toit_plat_grand.jpg]]
+
+### Support pour toit en pente
+
+Pour les toits en pente, c'est plus compliqué. [[Environ 38$|http://www.streakwave.com/itemdesc.asp?ic=SW-TM60&eq=&Tp=]].
+
+[[!img toit_en_pente.jpg]]
+
+
+*****
+## Mise à terre / Ground
+*****
+
+Il est impératif que tout système radio ait une bonne mise à terre pour assurer la qualité de son signal. Il en est de même pour l'antenne, d'autant plus que nous en installons sur nos toits, et quelles sont exposées au risque d'éclairs. L'antenne emmagasine également de l'énergie statique, et une décharge peut subvenir à tout moment. Règle d'or, assurez-vous que votre équipement radio est toujours bien "groundé".
+
+Dans notre cas, l'antenne est alimentée par le routeur, qui lui est alimenté, la plupart du temps, en PoE. Ceci signifie qu'une décharge électrique peut remonter par le câble ethernet jusqu'à votre switch, et tout autre équipement relié par fil. La première précaution sera donc d'utiliser un protecteur de surcharge pour PoE, tel que le ESP-100-POE. Faites la recherche sur votre moteur de recherche favori, il est très facile à trouver, et disponible, entre autres, chez ubnt.ca
+
+Il faut ensuite s'assurer de la qualité de la mise à terre du panneau électrique de la maison, ainsi que des fiches électriques auxquelles sont relié notre équipement. Si un ground n'est pas présent, on peut utiliser le tuyau d'eau FROIDE de la plomberie de la maison, ou installer un "ground rod". Le tuyau d'eau chaude, d'une ligne de gaz, ou tout autre structure métallique avec laquelle on pourrait rentrer en contact sont DÉCONSEILLÉS.
+
+* À vérifier: est-ce que l'injecteur PoE d'Ubnt est groundé, et si oui, il faut [[vérifier si une prise électrique est correctement groundée|http://electrical.about.com/od/receptaclesandoutlets/tp/ReceptacleAndOutletGroundTest.htm]].
+* Alternative possible: utiliser une prise GFCI, avec une fuse qui saute dans le cas d'une surcharge (?)
+
+Liens:
+
+* [[Grounding and Lightning Protection|https://code.commotionwireless.net/projects/commotion-manual/wiki/Grounding_and_Lightning_Protection]]
+* [[Datasheet ESP-100-POE (pdf)|http://www.lairdtech.com/WorkArea/DownloadAsset.aspx?id=2222]]
+
