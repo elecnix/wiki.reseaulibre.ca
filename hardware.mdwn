@@ -12,25 +12,6 @@ Le réseau de Montréal préconise la bande de fréquence 2.4 GHz.
  * [[Antennes]]
  * [[Câblage et connecteurs|cabling]]
 
-*****
-# Other stuff
-*****
-
-## POE
-
-* [[Glen Pitt-Pladdy's Passive PoE DIY|http://www.pitt-pladdy.com/blog/_20100530-083726_0100_DIY_Passive_PoE/]]
-* [[How to Make a Power Over Ethernet (PoE) Adapter|http://tech2.in.com/how-to/wifi-routers/how-to-make-a-power-over-ethernet-poe-adapter/223062]]
-
-## Links
-
-* <http://wiki.daviddarts.com/PirateBox_DIY>
-* The Fun cube dongle can be useful for debugging
-* [[The mesh guide from Battelmesh v4|http://battlemesh.org/BattleMeshV4/MeshGuide]]
-
-## Drones
-
-Il est prévu que certains noeuds du mesh seront déployés sur des drones, au-dessus des zones qui ont une faible couverture par antennes fixes. Deux drones vont se relayer, pour recharger tout à tour leur batteries. Des tests sont à faire pour déterminer si les drones devront cesser de voler en cas de pluie.
-
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
