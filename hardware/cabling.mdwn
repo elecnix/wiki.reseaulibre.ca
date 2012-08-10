@@ -18,6 +18,18 @@ Tableau de longueur de câble réseau vs. puissance et voltage:
 
 Source: http://store.freenet-antennas.com.au/documents/UBNT_POE_Cable_Lengths.pdf
 
+*****
+## Antenna cables
+*****
+Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
+The attenuation of signal in the cable is more significant at higher frequencies.N_Connector.jpg
+Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
+These cables cannot be sharply bent or squeezed. We have to be careful using gun tackers on them.
+
+ 1. RG174U: this cable is the smallest we use. It has 2.5mm diameter and is used for very short distances. It's a high loss cable (1.4db/m at 2.4Ghz) so we use it where we need a short and flexible cable. It fits very well on the RP-SMA connector.
+ 2. RG58 (or LMR195 high quality) varies between 4.7mm and 5.4mm in diameter. It loses .8db/m at 2.4Ghz, so it is suitable for medium distances (up to 10 feet is ok)
+ 3. RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
+this cable is not flexible at all and can only accept N connectors size.
 
 
 *****
@@ -69,15 +81,3 @@ It is most notably used on the Linksys WRT-54G devices, but pretty much *only* t
 It is not recommended to use this connector for new projects unless really necessary, as it is non-standard and harder to find. 
 
 ...
-*****
-## Antenna cables
-*****
-Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
-The attenuation of signal in the cable is more significant at higher frequencies.N_Connector.jpg
-Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
-These cables cannot be sharply bent or squeezed. We have to be careful using gun tackers on them.
-
- 1. RG174U: this cable is the smallest we use. It has 2.5mm diameter and is used for very short distances. It's a high loss cable (1.4db/m at 2.4Ghz) so we use it where we need a short and flexible cable. It fits very well on the RP-SMA connector.
- 2. RG58 (or LMR195 high quality) varies between 4.7mm and 5.4mm in diameter. It loses .8db/m at 2.4Ghz, so it is suitable for medium distances (up to 10 feet is ok)
- 3. RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
-this cable is not flexible at all and can only accept N connectors size.
