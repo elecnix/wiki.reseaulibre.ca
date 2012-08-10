@@ -18,6 +18,8 @@ Some more tests are required but so far i am thinking of:
 
 We also need to figure out how [[nodes]] are interconnected, at the physical level. Do we want a tree?
 
+Update: we should consider this mostly [[done]] - we are using [[configuration/ad-hoc]] mode with [[configuration/BATMAN]] or [[configuration/babeld]] on top. the [[todo/vpn_gateways]] todo remains for the VPN part, but we are still thinking of using vpns to connect disconnected segments. --[[anarcat]]
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
