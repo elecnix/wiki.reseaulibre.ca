@@ -6,48 +6,53 @@
 
 La plupart des antennes et des routeurs/antennes sont munies de fixation pour tuyau de 1" à 2".
 
+[[!img sat-mount.jpg align="left" size="100x" alt="support en J"]]
 ### Support en J
 
 Sur le toit, si la hauteur est suffisante, on peut installer un support en "J" qu'on utilise pour les antennes satellites pour [[environ 12$|http://www.streakwave.com/itemdesc.asp?ic=UM&eq=&Tp=]].
 
-[[!img sat-mount.jpg]]
-
 Ce type de support peux être facilement vissé sur une cheminée ou sur le rebord d'un toit.
 On peux même utiliser une installation déjà en place :) .
 
+[[!img wall_mount.jpg align="left" size="100x" alt="Tuyau sur mur"]]
 ### Tuyau sur mur ou cheminée
 
-Si on a accès à la cheminée et qu'on désire plus d'élévation, on peux installer un tuyau de 10' sans problème. Il existe des supports qu'on fixe à la cheminée ou au mur. [[Environ 26$|http://www.streakwave.com/itemdesc.asp?ic=SW-WM12D&eq=&Tp=]].
+Si on a accès à la cheminée et qu'on désire plus d'élévation, on peux installer un tuyau de 10' sans problème. Il existe des supports qu'on fixe à la cheminée ou au mur. Environ 26$ chez [[Streakwave.com|http://www.streakwave.com/itemdesc.asp?ic=SW-WM12D&eq=&Tp=]] pour un kit complet.
 
-[[!img wall_mount.jpg]]
+On peut aussi trouver un [[mât de 10 pieds pour 13$ chez Addison|https://www.addison-electronique.com/catalog/product_info.php?products_id=206065&osCsid=hm2ukugbl2gs42dlkesph4dt16]] et un [[support de 8"|https://www.addison-electronique.com/catalog/product_info.php?cPath=4_4001&products_id=206064&osCsid=hm2ukugbl2gs42dlkesph4dt16]] pour 20$.
 
-On peut trouver un [[mât de 10 pieds pour 13$ chez Addison|https://www.addison-electronique.com/catalog/product_info.php?products_id=206065&osCsid=hm2ukugbl2gs42dlkesph4dt16]] et un [[support de 8"|https://www.addison-electronique.com/catalog/product_info.php?cPath=4_4001&products_id=206064&osCsid=hm2ukugbl2gs42dlkesph4dt16]] pour 20$.
+Donc compter de 20 à 30$, mais ceci demande une cheminée solide car l'ancrage est directement dans la cheminée et peut être assez élevé pour faire un effet levier significatif.
 
-Pour une cheminée uniquement, il existe des supports qui ne nécessitent pas de perçage, [[comme ceci|http://www.dennysantennaservice.com/chimney_mount_photo_gallery.html]]:
+[[!img cheminee_sans_percage.jpg align="left" size="100x" alt="Cheminée sans perçage, détail"]]
+### Cheminée, sans perçage
 
-[[!img cheminee_sans_percage.jpg]]
+Pour une cheminée uniquement, il existe des supports qui ne nécessitent pas de perçage, [[comme ceci|http://www.dennysantennaservice.com/chimney_mount_photo_gallery.html]].
 
+L'idée ici est d'entourer la cheminée au complet avec les attaches. Ceci est parfois plus solide que de visser dans la brique, qui peut casser et ne supporte généralement pas bien la traction.
+
+[[!img toit_plat.jpg align="left" size="100x" alt="Toit plat"]]
+[[!img toit_plat_grand.jpg align="right" size="100x" alt="Toit plat"]]
 ### Support pour toit plat
 
 Si on a pas accès à la cheminée, on doit se gosser un support qui se dépose sur le toit. [[Environ 125$|http://www.streakwave.com/itemdesc.asp?ic=SW-FRM-125]]. Celui-ci est tenu en place avec des dales de béton pour patio. On le dépose sur un toile de caoutchouc.
 
-[[!img toit_plat.jpg]]
+Celui-ci est plus complexe à gosser, et [[cher|http://www.streakwave.com/itemdesc.asp?ic=SW-JRM23810]]. Un autre modèle plus élaboré est montré sur la droite.
 
-Celui-ci est plus complexe à gosser, et [[cher|http://www.streakwave.com/itemdesc.asp?ic=SW-JRM23810]].
+Dans les deux cas, s'assurer que le toit peut supporter le poids. Mais avec une telle installation, on peut atteindre des hauteurs considérables.
 
-[[!img toit_plat_grand.jpg]]
-
+[[!img toit_en_pente.jpg align="left" size="100x" alt="Toit plat"]]
 ### Support pour toit en pente
 
-Pour les toits en pente, c'est plus compliqué. [[Environ 38$|http://www.streakwave.com/itemdesc.asp?ic=SW-TM60&eq=&Tp=]].
+Pour les toits en pente, c'est plus compliqué. 
 
-[[!img toit_en_pente.jpg]]
+Il faut un support particulier, [[environ 38$|http://www.streakwave.com/itemdesc.asp?ic=SW-TM60&eq=&Tp=]] et l'installer sur un toit.. en pente, ce qui peut être plus dangereux qu'un toit plat.
 
-## Nanobracket
+### Nanobracket
 
 Le [NanoBracket](http://www.nanobracket.info/) est bien zoli. [8$ chez converbit](http://www.converbit.ca/magasin/products.php?product=NanoBracket). Permet d'orienter la station dans un angle de 90° dans toutes les directions.
 
-## Nanostation mount
+[[!img nanomount.jpg align="left" size="100x" alt="Nanomount articulation"]]
+### Nanostation mount
 
 Spécialement fait pour le Nanostation, le [Nanstation mount](http://www.ubnt.com/mount) permet de se coller dans une fenêtre ou sur un mur. Par contre, on a eu des mauvaises expériences avec la "suce" pour les fenêtres, qui colle mal.
 
