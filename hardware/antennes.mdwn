@@ -1,8 +1,6 @@
 [[!toc levels=3]]
 
-*****
 ## Supports d'antenne
-*****
 
 La plupart des antennes et des routeurs/antennes sont munies de fixation pour tuyau de 1" à 2".
 
@@ -43,10 +41,7 @@ Pour les toits en pente, c'est plus compliqué. [[Environ 38$|http://www.streakw
 
 [[!img toit_en_pente.jpg]]
 
-
-*****
 ## Mise à terre / Ground
-*****
 
 Il est impératif que tout système radio ait une bonne mise à terre pour assurer la qualité de son signal. Il en est de même pour l'antenne, d'autant plus que nous en installons sur nos toits, et quelles sont exposées au risque d'éclairs. L'antenne emmagasine également de l'énergie statique, et une décharge peut subvenir à tout moment. Règle d'or, assurez-vous que votre équipement radio est toujours bien "groundé".
 
@@ -57,7 +52,7 @@ Il faut ensuite s'assurer de la qualité de la mise à terre du panneau électri
 * L'injecteur PoE de la compagnie Ubiquiti possède une mise à la terre et une protection anti-statique. Il faut par contre [[vérifier si la prise électrique possède une mise à la terre fonctionnelle|http://electrical.about.com/od/receptaclesandoutlets/tp/ReceptacleAndOutletGroundTest.htm]].
 * Alternative possible: utiliser une prise GFCI, avec disjoncteur qui déclenche en cas de surcharge (?)
 
-Liens:
+### Liens
 
 * [[Grounding and Lightning Protection|https://code.commotionwireless.net/projects/commotion-manual/wiki/Grounding_and_Lightning_Protection]]
 * [[Datasheet ESP-100-POE (pdf)|http://www.lairdtech.com/WorkArea/DownloadAsset.aspx?id=2222]]
