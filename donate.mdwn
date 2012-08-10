@@ -3,6 +3,7 @@
 Comme nous n'avons pas d'existence légale, le groupe ne peut rien posséder collectivement. Voici une liste de personnes qui acceptent de recevoir les dons en matériel, en échange de quoi ils s'engageront à l'utiliser pour le réseau.
 
  * Nicolas Marchildon ([[users/elecnix]]) - 514 394-7847 - Nord-est de Montréal: Saint-Michel, Saint-Léonard, Montréal-Nord, Anjou, Villeray, Parc-Extension, Outremont, Rosemont, Plateau Mont-Royal
+ * Antoine Beaupré ([[users/anarcat]]) - [[twitter|http://twitter.com/theanarcat]], [[identi.ca|http://status.orangeseeds.org]] ou écrivez moi dans ma [[page personnelle|users/anarcat]] - zone: Rosemont, Plateau Mt-Royal, Centre-ville, sud-ouest (verdun max), est (pie-IX max), ahuntsic
 
 ## Règles
 
@@ -14,7 +15,7 @@ Comme nous n'avons pas d'existence légale, le groupe ne peut rien posséder col
 
 ## Besoins particuliers
 
- * Routeurs sans-fil, pour servir de points d'accès au réseau
- * Câble réseau de grade extérieur, avec mise à la terre
- * Tubes en métal galvanisé, pour supporter les antennes
- * Bases d'antennes, comme des supports de soucoupe satellite
+ * Routeurs sans-fil, pour servir de points d'accès au réseau - voir [[hardware/routers]]
+ * Câble réseau de grade extérieur, avec mise à la terre - voir [[hardware/cabling]]
+ * Tubes en métal galvanisé, pour supporter les antennes - voir [[hardware/antennes]]
+ * Bases d'antennes, comme des supports de soucoupe satellite - idem
