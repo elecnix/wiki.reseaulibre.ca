@@ -3,6 +3,7 @@
  * FNF 5 freedoms
  * google map + new tag
  * achat collectif?
+ * Maker Faire
  * status des nodes up/down, stats dans la page nodes
 
 [[!tag draft]]
