@@ -12,7 +12,7 @@ Le réseau de Montréal préconise la bande de fréquence 2.4 GHz.
  * [[Support et grounds|Antennes]]
  * [[Câblage et connecteurs|cabling]]
  * [[Radio]] - radio theory and practice, channels, protocols to use
- * [[group-buy-2012-08]] - first collective buying spree
+ * [[hardware/achats/2012-08-bullets]] - first collective buying spree
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
