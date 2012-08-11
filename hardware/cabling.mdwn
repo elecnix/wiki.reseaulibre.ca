@@ -6,10 +6,10 @@
 
 Normalement on veux installer un câble réseau ([[!wikipedia RJ-45]] standard) avec [[!wikipedia PoE]].
 Alors un seul câble suffit si le routeur est sur le toit.
-Ce type de câble doit être conçu pour l'extérieur.
-Il doit aussi être groundé pour protéger les équipements des surcharges électriques ([[!wikipedia Electro-Static Discharches]]). Un blindage aide à augmenter la longueur maximale du câble.
 
-On peux toujours installer un câble pour l'intérieur, mais il sèchera après quelques années.
+Ce type de câble doit être conçu pour l'extérieur. Il doit aussi avoir une mise à la terre ("ground") pour protéger les équipements des décharges électrostatiques ([[!wikipedia Electro-Static Discharches]]). Un blindage aide à augmenter la longueur maximale du câble. On peux toujours installer un câble pour l'intérieur, mais il sèchera après quelques années.
+
+Il faut éviter le [[cat6|http://fr.wikipedia.org/wiki/C%C3%A2ble_cat%C3%A9gorie_6]]. C'est inutile considérant la vitesse de transmission en Wifi, et difficile de faire les connecteurs aux extrémités.
 
 ## Ubiquity tough cable
 
