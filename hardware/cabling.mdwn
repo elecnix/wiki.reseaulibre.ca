@@ -20,15 +20,16 @@ Disponible chez [[Converbit]]:
  * [[1000' cable|http://www.converbit.ca/magasin/products.php?product=Tough-Cable-Pro]]: 160$
  * [[100 connecteurs|http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces]]: 48$
 
-## Cablek
+## Shireen
 
-Ils ont du [[câble outdoor|http://www.cablek.com/catalog/advanced_search_result.php?search_from=menu&keywords=outdoor&x=0&y=0]], mais assez dispendieux:
+[Shireen](https://www.shireeninc.com/) ont du [câble 5e outdoor shielded grounded](https://www.shireeninc.com/outdoor-shielded-cat5e-ftp-cable-messenger-wire-2/), en vente chez Converbit pour [170$ pour une boîte de 1000'](http://www.converbit.ca/magasin/products.php?product=Shireen-Cable-Exterieur-Cat-5E-avec-Shield). 
 
- * 150$ unshielded, indoor
- * 390$ direct burial, unshield
- * 900$ gel-coated, shielded
+## CMXT
 
-Mais au moins c'est à Montréal.
+[Ce thread sur les forums de Ubiquity](http://forum.ubnt.com/showthread.php?t=47242) recommande également le CMXT, Outdoor, shielded, grounded itou:
+
+ * [119.99$ chez directron.com](http://directron.com/k5ecmxt52mmod.html)
+ * [165$ chez mikrotik](https://www.wlan1.com/product_p/c5cmxt-416bk.htm)
 
 ## Monoprice
 
@@ -38,6 +39,16 @@ Chez monoprice, ça se passe soit dans le:
  * [[Cat 6e|https://www.monoprice.com/products/subdepartment.asp?c_id=102&cp_id=10234#1023405]]: 150$
 
 Le câble outdoor est assez curieux, avec un "riser" externe qui semble être un ground (ou est-ce juste pour que le fil soit plus solide?). Viennent sur des spools en bois. Ils ont aussi du "in-wall rated" qui est curieusement plus cher que le "outdoor", ce qui me fait douter de la qualité de leur "outdoor".
+
+## Cablek
+
+Ils ont du [[câble outdoor|http://www.cablek.com/catalog/advanced_search_result.php?search_from=menu&keywords=outdoor&x=0&y=0]], mais assez dispendieux:
+
+ * 150$ unshielded, indoor
+ * 390$ direct burial, unshield
+ * 900$ gel-coated, shielded
+
+Mais au moins c'est à Montréal.
 
 # Un peu de théorie
 
