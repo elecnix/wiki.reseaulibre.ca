@@ -1,10 +1,10 @@
 Les achats collectifs.
 
-[[!inline pages="achats/* and !achats/*/* and !achats/discussion and !tagged(done)" archive=yes rootpage="achats" archive=yes]]
+[[!inline pages="hardware/achats/* and !hardware/achats/*/* and !hardware/achats/discussion and !tagged(done)" archive=yes rootpage="achats" archive=yes]]
 
 Terminés
 ========
 
 Marquer l'achat comme [[done]] lorsque terminé.
 
-[[!inline pages="achats/* and !achats/*/* and !achats/discussion and tagged(done)" feeds=no]]
+[[!inline pages="hardware/achats/* and !hardware/achats/*/* and !hardware/achats/discussion and tagged(done)" feeds=no]]
