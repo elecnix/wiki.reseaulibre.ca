@@ -1,0 +1,22 @@
+[[!meta title="Achat de câblage et de points de montage chez Converbit."]]
+
+Liste des pièces
+----------------
+
+ * [Ubiquity Tough Cable](http://www.converbit.ca/magasin/products.php?product=Tough-Cable-Pro) ou [Shireen](http://www.converbit.ca/magasin/products.php?product=Shireen-Cable-Exterieur-Cat-5E-avec-Shield) selon disponibilité (160 - 170$): 1 ([[users/anarcat]])
+ * [100 shielded connectors](http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces) (48$): 1 [[users/anarcat]]
+ * [Nanostation mount](http://www.converbit.ca/magasin/products.php?product=Mount-pour-NanoStation-pour-Fenetre-ou-Mur) (18$): 1 [[users/anarcat]]
+
+Gestion
+-------
+
+Responsable
+: [[users/anarcat]]
+
+Date limite
+: 2012-08-14 (mardi)
+
+Mises à jour
+------------
+
+ * 2012-08-11: début de la commande
