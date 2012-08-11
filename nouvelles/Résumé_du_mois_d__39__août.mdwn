@@ -4,6 +4,9 @@
  * google map + new tag
  * achat collectif?
  * Maker Faire
- * status des nodes up/down, stats dans la page nodes
+ * stats:
+   * nombre de nodes up/down/etc ([[nodes]])
+   * nombre d'inscrits sur les mailing lists
+   * rouler gitstats sur le depot git
 
 [[!tag draft]]
