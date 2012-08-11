@@ -4,7 +4,12 @@ Liste des pièces
 ----------------
 
  * [Ubiquity Tough Cable](http://www.converbit.ca/magasin/products.php?product=Tough-Cable-Pro) ou [Shireen](http://www.converbit.ca/magasin/products.php?product=Shireen-Cable-Exterieur-Cat-5E-avec-Shield) selon disponibilité (160 - 170$): 4 ([[users/anarcat]], [[users/gapzap]], [[users/elecnix]], [[users/scientist]]/[[users/bgm]])
- * [100 shielded connectors](http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces) (48$): 2 (split: [[users/anarcat]], [[users/gapzap]], [[users/elecnix]], [[users/scientist]], [[users/bgm]])
+ * [100 shielded connectors](http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces) (48$): 2
+   * [[users/anarcat]]: 50-100
+   * [[users/gapzap]]: 50
+   * [[users/elecnix]]: 50
+   * [[users/scientist]]: 25
+   * [[users/bgm]]: 25
  * [Nanostation mount](http://www.converbit.ca/magasin/products.php?product=Mount-pour-NanoStation-pour-Fenetre-ou-Mur) (18$): 1 [[users/anarcat]]
 
 Gestion
