@@ -62,9 +62,12 @@ Source: http://store.freenet-antennas.com.au/documents/UBNT_POE_Cable_Lengths.pd
 
 ## POE links
 
+Les routeurs de Ubiquiti fournissent un injecteur de même marque, mais si vous installez un routeur ordinaire, vous voudrez sûrement l'alimenter par le fil réseau. Voici quelques liens qui montrent comment s'en fabriquer un:
+
 * [[Glen Pitt-Pladdy's Passive PoE DIY|http://www.pitt-pladdy.com/blog/_20100530-083726_0100_DIY_Passive_PoE/]]
 * [[How to Make a Power Over Ethernet (PoE) Adapter|http://tech2.in.com/how-to/wifi-routers/how-to-make-a-power-over-ethernet-poe-adapter/223062]]
 
+Il est aussi possible d'en acheter pour 10$ (plus livraison) de Solimedia: [[Passive PoE™ Set 5,5x2,5|http://solimedia.ca/wireless-accessories/44-poe-injector-splitter-set.html]].
 
 # Antenna cables
 
