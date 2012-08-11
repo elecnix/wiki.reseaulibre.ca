@@ -39,6 +39,8 @@ Chez monoprice, ça se passe soit dans le:
 
 Le câble outdoor est assez curieux, avec un "riser" externe qui semble être un ground (ou est-ce juste pour que le fil soit plus solide?). Viennent sur des spools en bois. Ils ont aussi du "in-wall rated" qui est curieusement plus cher que le "outdoor", ce qui me fait douter de la qualité de leur "outdoor".
 
+# Un peu de théorie
+
 ## Puissance vs voltage et distance
 
 Tableau de longueur de câble réseau vs. puissance et voltage:
