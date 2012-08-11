@@ -7,6 +7,6 @@
  * stats:
    * nombre de nodes up/down/etc ([[nodes]])
    * nombre d'inscrits sur les mailing lists
-   * rouler gitstats sur le depot git
+   * rouler gitstats ou pepper sur le depot git
 
 [[!tag draft]]
