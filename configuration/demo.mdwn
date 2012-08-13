@@ -1,0 +1,20 @@
+<div class="align-right">
+[[!graph type="graph" prog="neato" src="""
+subgraph mesh {
+
+    node [color="#EE9911"];
+    "relais-1" -- "relais-2";
+
+    node [color="#00EE00"];
+    "acces-1" -- "relais-1";
+    "acces-2" -- "relais-2";
+
+    node [color="#000000"];
+    "acces-1" -- "isp-1";
+
+    node [color="#6666FF"];
+    "acces-2" -- "webcam-1";
+}
+bgcolor="#EEEEEE";
+"""]]
+</div>
