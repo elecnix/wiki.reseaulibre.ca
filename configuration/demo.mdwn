@@ -3,18 +3,25 @@
 subgraph mesh {
 
     node [color="#EE9911"];
-    "relais-1" -- "relais-2";
+    "relais-1" -- "relais-2" [len=2,style=dashed];
+    "relais-1" -- "relais-3" [len=2];
+    "relais-2" -- "relais-3" [len=2];
 
     node [color="#00EE00"];
-    "acces-1" -- "relais-1";
-    "acces-2" -- "relais-2";
+    "acces-1" -- "relais-1" [style=bold];
+    "acces-2" -- "relais-2" [style=bold];
 
     node [color="#000000"];
     "acces-1" -- "isp-1";
 
-    node [color="#6666FF"];
-    "acces-2" -- "webcam-1";
+    node [color="#6666FF", shape=rectangle] "acces-2" -- "webcam-1" [style=bold];
 }
 bgcolor="#EEEEEE";
 """]]
 </div>
+
+Le relais-3 sert à compenser pour un mauvais lien entre relais-1 et relais-2. La webcam-1 peut donc être placée loin de acces-1.
+
+Les point d'accès (AP) acces-1 et acces-2 sont connectés par fil à leur relais (lien par fil en gras).
+
+Dans un cas où le kiosque de démonstration possède un fil pour l'accès à internet, c'est relais-1 et acces-1 qui seraient déployés au kiosque. Un client (laptop) connecté en wifi au point d'accès afficherait la webcam située ailleurs sur le site de l'événement.
