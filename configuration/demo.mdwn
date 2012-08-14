@@ -28,6 +28,6 @@ Dans un cas où le kiosque de démonstration possède un fil pour l'accès à in
 
 Configurations utilisées:
 
-* [[openwrt+batman]]
-* [[openwrt+webcam]]
-* [[ikiwiki+openwrt]]
+* [[guides/openwrt+batman]]
+* [[guides/openwrt+webcam]]
+* [[meta/ikiwiki+openwrt]]
