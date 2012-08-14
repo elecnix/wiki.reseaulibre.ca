@@ -6,5 +6,6 @@ opkg install uhttpd
 </pre>
 
 TODO:
+
 * install required perl packages
 * document how to install on USB key with overlay filesystem
