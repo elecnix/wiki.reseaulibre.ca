@@ -25,3 +25,9 @@ Le relais-3 sert à compenser pour un mauvais lien entre relais-1 et relais-2. L
 Les point d'accès (AP) acces-1 et acces-2 sont connectés par fil à leur relais (lien par fil en gras).
 
 Dans un cas où le kiosque de démonstration possède un fil pour l'accès à internet, c'est relais-1 et acces-1 qui seraient déployés au kiosque. Un client (laptop) connecté en wifi au point d'accès afficherait la webcam située ailleurs sur le site de l'événement.
+
+Configurations utilisées:
+
+* [[openwrt+batman]]
+* [[openwrt+webcam]]
+* [[ikiwiki+openwrt]]
