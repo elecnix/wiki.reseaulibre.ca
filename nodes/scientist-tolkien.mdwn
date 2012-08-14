@@ -1,0 +1,18 @@
+
+[[!ymlfront data="""
+MAC: 00:1f:d0:5b:b9:0f
+IP: 172.16.1.35
+"""]]
+
+Mon desktop/serveur. Pour offrir quelques services sur le mesh
+
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
+ * IPv6 address:
+ * Software: Debian sid
+ * Hardware: 4 core Athlon64
+
+ * Location: Sur le mesh
+ * Status: [[!taglink up]]
+
+ * Operator: [[users/scientist]]
