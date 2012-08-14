@@ -44,6 +44,8 @@ configuration.
 (!) Oh, and [this](http://piny.be/jrayhawk/notes/ikiwiki_creation/)
 may also be of use if the above doesn't work.
 
+There is some work being done to host copies of this wiki on OpenWrt nodes. See [[meta/ikiwiki+openwrt]].
+
 # Keeping the mirror up to date
 
 There are two options here. One is to regularly pull from the master (less reliable, klunky, but doesn't require cooperation from the master), the other is to make the master push to the mirror. For this, the master needs to enable the [[!iki plugins/gitpush]] plugin and add the following to the setup file:
