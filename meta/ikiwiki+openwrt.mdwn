@@ -1,0 +1,10 @@
+<pre>
+opkg install git
+opkg install perl
+opkg install uhttpd
+/etc/init.d/uhttpd start
+</pre>
+
+TODO:
+* install required perl packages
+* document how to install on USB key with overlay filesystem
