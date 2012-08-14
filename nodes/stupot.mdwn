@@ -1,5 +1,7 @@
 Stu-pot, aka 2D, est un membre du groupe Gorillaz, et la représentation décimale de 2D est 45. C'est aussi le suffixe de l'adresse MAC de la carte sans-fil de cet énorme routeur ASUS WL-500W.
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gorillaz_live_2010.jpg/640px-Gorillaz_live_2010.jpg"/>
+
 # Technical details
 
 [[!ymlfront data="""
