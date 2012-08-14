@@ -2,19 +2,52 @@
 (remove map=null to display on the main map)
 
 (Description of the node here, with a link to your homepage.)
+# Technical details
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software:
- * Hardware:
- * Power:
- * Location:
- * Status: [[!taglink prospect]] (can also be up, down, planned, unknown)
- * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
- * Azimuth:
- * Panorama:
- * Operator: [[users/alice]]
+[[!ymlfront data="""
+MAC: (mac address here)
+IP: (IP address here)
+IPv6: 
+"""]]
+
+hostname
+: (node hostname here)
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: 
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: (where is this node physically installed?)
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink prospect]] (can also be up, down, planned, unknown)
+
+Operator
+: [[users/alice]]
+
+Links
+: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
