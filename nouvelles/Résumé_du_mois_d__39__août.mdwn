@@ -62,7 +62,7 @@ Si tout se passe comme prévu, le Réseau Libre devrait adopter vendredi les [5 
  * Freedom 3) The freedom to transmit bits to one's peers without the prospect of interference, interception or censorship.
  * Freedom 4) The freedom to maintain anonymity, or to present a unique, trusted identity.
 
-Une fois adoptée, cette politique sera ajouté à notre [liste de politiques existantes](17).
+Une fois adoptée, cette politique sera ajouté à notre [liste de politiques existantes][17].
 
  [14]: http://www.commons.freenetworkfoundation.org/index.php?title=Free_network_definition
  [15]: http://freenetworkfoundation.org/
