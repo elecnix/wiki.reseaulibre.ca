@@ -102,13 +102,19 @@ nodes
 nouvelles
 : 13
 
+Tout le monde est encouragé à joindre la nouvelle liste de nouvelles
+pour être au courant des derniers évènements et éviter le traffic de la
+liste principale:
+
+https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca
+
 Wiki
 ----
 
 fichiers
 : 261
 
-nombre de lignes
+lignes
 : 12350 (23108 added, 10758 removed)
 
 commits
@@ -117,4 +123,4 @@ commits
 authors
 : 57 (average 38.7 commits per author)
 
-[[!tag draft]]
+PS: le wiki approche de son premier anniversaire, le 10 octobre!
