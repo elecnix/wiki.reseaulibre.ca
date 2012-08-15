@@ -76,7 +76,7 @@ We need special metal connectors. They are more solid (while harder to crimp) an
 Packs of 100:
 
  * [Infinite cables](http://www.infinitecables.com/pop/pr_cn-rj45s.htm): 29.50$ (toronto)
- * [Converbit)(http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces): 48$
+ * [Converbit](http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces): 48$
 
 
 # Antenna cables
