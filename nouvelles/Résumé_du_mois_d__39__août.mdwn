@@ -2,8 +2,8 @@ Une petite lettre express pour vous livrer les dernières nouvelles du mois d'ao
 
 [[!toc]]
 
-Festival d'installation dimanche!
-=================================
+Festival d'installation dimanche
+================================
 
 [Koumbit][1] va vous accueillir dimanche pour un festival d'installation! Nous allons recevoir notre première [commande de groupe][2] et probablement configurer certaines de ces magnifiques machines. 
 
@@ -14,8 +14,8 @@ Si vous avez des machines que vous voulez installer pour joindre le mesh, c'est 
  [3]: http://openwrt.org/
  [4]: http://wiki.openwrt.org/toh/start
 
-23 noeuds en ligne et bientôt plus!
-===================================
+23 noeuds en ligne et bientôt plus
+==================================
 
 Nous avons établi quelques statistiques sur les noeuds déployés. Nous avons maintenant 23 stations en ligne, tout type confondus. 36 sont planifiés et nous avons 10 autres emplacements sur lesquels nos bénévoles gardent un oeil comme des bonnes possibilités. La [liste des nodes][5] a été mise à jour afin de montrer ces statistiques.
 
@@ -35,8 +35,8 @@ Nous cherchons en particulier des [routeurs sans-fil][8], pour servir de points 
  [9]: http://wiki.reseaulibre.ca/hardware/cabling/
  [10]: http://wiki.reseaulibre.ca/hardware/antennes/
 
-Rappel: Maker faire!
-====================
+Rappel: Maker faire
+===================
 
 On vous rappel qu'on sera au [Mini Maker Faire de Montréal][6], tout comme plein d'autres projets palpitants! Joignez-vous à nous du 25 au 26 août au stade olympique!
 
