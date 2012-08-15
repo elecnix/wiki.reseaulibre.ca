@@ -18,7 +18,6 @@ Exemple de câble: [[Ubiquity Tough Cable|http://www.ubnt.ca/index.php?page=shop
 Disponible chez [[Converbit]]:
 
  * [[1000' cable|http://www.converbit.ca/magasin/products.php?product=Tough-Cable-Pro]]: 160$
- * [[100 connecteurs|http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces]]: 48$
 
 ## Shireen
 
@@ -28,6 +27,7 @@ Disponible chez [[Converbit]]:
 
 [Ce thread sur les forums de Ubiquity](http://forum.ubnt.com/showthread.php?t=47242) recommande également le CMXT, Outdoor, shielded, grounded itou:
 
+ * [127$ chez inifitecables.com](http://www.infinitecables.com/pop/bk-c5esl-4dbs.htm) (toronto, 15$ shipping)
  * [119.99$ chez directron.com](http://directron.com/k5ecmxt52mmod.html)
  * [165$ chez mikrotik](https://www.wlan1.com/product_p/c5cmxt-416bk.htm)
 
@@ -68,6 +68,16 @@ Les routeurs de Ubiquiti fournissent un injecteur de même marque, mais si vous 
 * [[How to Make a Power Over Ethernet (PoE) Adapter|http://tech2.in.com/how-to/wifi-routers/how-to-make-a-power-over-ethernet-poe-adapter/223062]]
 
 Il est aussi possible d'en acheter pour 10$ (plus livraison) de Solimedia: [[Passive PoE™ Set 5,5x2,5|http://solimedia.ca/wireless-accessories/44-poe-injector-splitter-set.html]].
+
+# Cable connectors
+
+We need special metal connectors. They are more solid (while harder to crimp) and allow for grounding the devices, as you solder the cable's ground to the connector.
+
+Packs of 100:
+
+ * [Infinite cables](http://www.infinitecables.com/pop/pr_cn-rj45s.htm): 29.50$ (toronto)
+ * [Converbit)(http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces): 48$
+
 
 # Antenna cables
 
