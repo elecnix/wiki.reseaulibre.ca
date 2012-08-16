@@ -1,4 +1,4 @@
-Sujet: Réseau Libre: Invitation à participer à un réseau wifi libre en "maille"
+Sujet: Réseau Libre: Invitation à participer à un réseau sans fil libre en "maille"
 
 Réseau Libre est un réseau en "maille" (mesh) est une topologie réseau dans laquelle les hôtes sont connectés de proche en proche formant ainsi une structure en forme de filet. Chaque hôte a un certain nombre de "voisins", de sorte qu'il existe plusieurs chemins pour se rendre à un même point. L'avantage d'une telle topologie est qu'il n'y a pas d'hôte essentiel, en cas de panne, le réseau se répare et on peut facilement y ajouter ou enlever des points.
 
