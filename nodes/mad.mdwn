@@ -1,4 +1,4 @@
-[[!waypoint   lat="45.45951" lon="-73.56765" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.4595" lon="-73.5676" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 Possibilité d'un noeud, sur toit au 3e étage. La vue vers l'est est bloquée. 
 # Technical details
 
@@ -9,16 +9,16 @@ IPv6:
 """]]
 
 hostname
-: (node hostname here)
+: tbd
 
 MAC address
-: {{$MAC}}
+: tbd
 
 IPv6 address
-: {{$IPv6}}
+: tbd
 
 IP address
-: {{$IP}}
+: tbd
 
 Software
 : 
@@ -30,11 +30,10 @@ Power
 : 
 
 Location
-: (where is this node physically installed?)
+: 3e étage
 
 Azimuth
-: 360°
-
+: 
 Panorama
 : N/A
 
@@ -45,7 +44,7 @@ Operator
 : [[users/mad]]
 
 Links
-: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+: 
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
