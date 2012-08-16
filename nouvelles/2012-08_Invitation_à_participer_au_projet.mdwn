@@ -1,0 +1,13 @@
+Sujet: Réseau Libre: Invitation à participer à un réseau wifi libre en "maille"
+
+Réseau Libre est un réseau en "maille" (mesh) est une topologie réseau dans laquelle les hôtes sont connectés de proche en proche formant ainsi une structure en forme de filet. Chaque hôte a un certain nombre de "voisins", de sorte qu'il existe plusieurs chemins pour se rendre à un même point. L'avantage d'une telle topologie est qu'il n'y a pas d'hôte essentiel, en cas de panne, le réseau se répare et on peut facilement y ajouter ou enlever des points.
+
+Concrètement, les gens installent des routeurs chez eux sur lesquels roule une application qui automatiquement recherche des voisins, accessibles via les ondes wifi, qui roulent le même protocole et se connectent à eux. Les utilisateurs se connectent à un point d'accès comme à n'importe quel autre point d'accès wifi et font alors partie du réseau mesh et accèdent à tout le contenu disponible depuis cet hôte.
+
+Notre réseau grandit! Nous avons déjà des réseaux en ligne dans les quartiers de Rosemont, Verdun et Saint-Michel à Montréal, avec plusieurs autres "noeuds" qui seront bientôt en ligne. Peut-être y a-t-il déjà un noeud près de chez vous?
+
+Que vous soyez simplement curieux des nouveaux usages possibles par un tel réseau, ou si vous souhaitez en apprendre plus sur l'installation d'antennes sans-fil et de réseautique, Réseau Libre est un espace d'entraide "ad hoc" ouvert à tous et toutes.
+
+Pour plus d'information: http://www.reseaulibre.ca
+
+Vous pourrez également nous rencontrer au Maker Faire Montréal, les 25-26 août http://www.makerfairemontreal.ca/.
