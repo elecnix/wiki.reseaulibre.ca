@@ -1,4 +1,4 @@
-[[!waypoint lat="45.4595" lon="-73.5676" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.4595" lon="-73.5676" embed hidden width="400px" height="400px" right desc="Noeud potentiel"]]
 Possibilité d'un noeud, sur toit au 3e étage. La vue vers l'est est bloquée. 
 # Technical details
 
