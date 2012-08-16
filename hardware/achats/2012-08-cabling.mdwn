@@ -22,9 +22,22 @@ Date limite
 : 2012-08-14 (mardi)
 
 Montant total
-: 236$ + tx
+: 912.91$ tx inc
+
+Détails
+-------
+
+| Item                                      | Qtee | Prix unit | Total | En stock |
+------------------------------------------- | :--: | --------: | ----: | -------: |
+Shireen Cable Exterieur Cat 5E avec Shield  | 4	| $170.00 | $680.00 | 19 |
+Connecteur Tough Cable 100 pieces           | 2	| $48.00  | $96.00  | 30 |
+Mount pour NanoStation pour Fenetre ou Mur  | 1	| $18.00  | $18.00  | 26 |
+TPS                                         |               $39.70||||
+TVQ                                         |               $79.20||||
+Grand Total                                 |              $912.91||||
 
 Mises à jour
 ------------
 
+ * 2012-08-16: commande passée à converbit, Grand Total:	$912.91 tx inc
  * 2012-08-11: début de la commande
