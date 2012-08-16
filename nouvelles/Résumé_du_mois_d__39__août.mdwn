@@ -9,6 +9,8 @@ Festival d'installation dimanche
 
 Si vous avez des machines que vous voulez installer pour joindre le mesh, c'est un bon moment pour venir nous voir et essayer de vous joindre au projet! Que vous ayez un laptop ou un petit routeur de maison, il est fort probablement que vous puissiez vous joindre à nous. Nous utilisons principalement le projet [OpenWRT][3] donc consultez la [liste du matériel supporté][4] pour voir si votre routeur maison fonctionne.
 
+Donc rendez-vous 13h, dimanche le 19 août au 6833 de l'Épée bureau #308.
+
  [1]: http://koumbit.org/
  [2]: http://wiki.reseaulibre.ca/hardware/achats/2012-08-bullets/
  [3]: http://openwrt.org/
