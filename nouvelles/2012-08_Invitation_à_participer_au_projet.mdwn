@@ -11,3 +11,5 @@ Que vous soyez simplement curieux des nouveaux usages possibles par un tel rése
 Pour plus d'information: http://www.reseaulibre.ca
 
 Vous pourrez également nous rencontrer au Maker Faire Montréal, les 25-26 août http://www.makerfairemontreal.ca/.
+
+[[!tag draft]]
