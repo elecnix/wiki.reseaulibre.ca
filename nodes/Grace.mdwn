@@ -1,4 +1,4 @@
-[[!waypoint lat="45.529170" lon="-73.599558" embed hidden width="400px" height="400px" right desc="Sur le toit, au-dessus du viaduc Rosemont-Van Horne, <a href='http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg'>avec panorama</a>.<br/><img src='http://farm6.staticflickr.com/5468/6906283982_e0dd288d25_m.jpg'/>"]]
+[[!waypoint lat="45.529170" lon="-73.599558" embed hidden width="400px" height="400px" right desc="Sur le toit, au-dessus du viaduc Rosemont-Van Horne, <a href='http://farm8.staticflickr.com/7133/6906119462_365c57fccf_o.jpg'>avec panorama</a>.<br/><a href='http://wiki.reseaulibre.ca/nodes/Grace/'><img src='http://farm6.staticflickr.com/5468/6906283982_e0dd288d25_m.jpg'/></a>"]]
 
 Un noeud sur le toit, au-dessus du viaduc Rosemont-Van Horne.
 
@@ -56,8 +56,8 @@ Liens possibles
 ## Panorama
 [[!img 6906119462_365c57fccf_o.jpg align="left" size="950x" alt="Panorama de l'emplacement choisi"]]
 
-## Test sur trépied
-[[!img 6906198308_b610be56d6_o.jpg align="left" size="500x" alt="Richard et Gen en train de préparer l'antenne"]]
+## Test
+<img src="http://farm6.staticflickr.com/5468/6906283982_e0dd288d25_z.jpg">
 
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
