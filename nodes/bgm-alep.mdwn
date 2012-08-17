@@ -1,0 +1,51 @@
+[[!waypoint lat="45.465677" lon="-73.572597" embed hidden width="400px" height="400px" right desc="AP au 3e etage."]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: (mac address here)
+IP: (pick one from [[policy/numbering]])
+IPv6: 
+"""]]
+
+hostname
+: (node hostname here)
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: 
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: (where is this node physically installed?)
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]] (can also be up, down, planned, unknown)
+
+Operator
+: [[users/bgm]]
+
+Links
+: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+
+# Commandes UCI
+
