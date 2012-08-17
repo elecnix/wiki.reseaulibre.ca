@@ -1,0 +1,17 @@
+# Accès à internet
+
+## Fournisseurs
+
+Fournisseurs permettant la revente:
+
+(ça existe?)
+
+Fournisseurs qui n'interdisent pas: (à vos risques!)
+
+* [[Electronic Box|http://www.electronicbox.net/fr/pua.html]]
+
+Fournisseurs interdisant la revente:
+
+* [[ColbaNet|http://www.colba.net/main.php?lang=fr&cont=cont]]
+* [[TekSavvy|http://www.teksavvy.com/fr/legal/aup.asp]]
+* [[Primus|http://www.primustel.ca/en/residential/legal/termsofuse.html]]
