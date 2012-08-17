@@ -1,7 +1,7 @@
 Geneviève Bastien
 
 * courriel: gbastien+mesh@versatic.net
-* identi.ca: @gbastien
+* identi.ca: [[@gbastien|http://identi.ca/gbastien]]
 * irc: tahini
 
 
@@ -11,7 +11,7 @@ Geneviève Bastien
     {OK} Ok: chez moi, un relais mesh, un point d'accès qui sert des clients et qui se connecte au mesh et à internet, un laptop qui se connecte au relais en ad-hoc
 
 * Créer des images d'Openwrt pré-configurées pour le mesh et offrir un répertoire de packages qui pré-configurent certains scénarios
-    {i} En cours: J'ai compilé les images, reste à les tester et essayer de couvrir le plus de scénarios possibles avec le moins d'images...
+    {i} En cours: J'ai compilé les images, reste à les tester et essayer de couvrir le plus de scénarios possibles avec le moins d'images...  Les images seront disponibles au [[http://packages.reseaulibre.ca:8080/Routeurs]]
 
 * Explorer des applications de gestion de mesh
 
@@ -24,4 +24,4 @@ Geneviève Bastien
 
 * Monter un petit serveur pour offrir des services sur le mesh, sans dépendre de mon lan (entre autres, miroir du wiki)
 
-* Avoir une carte offline pour ikiwiki (sur un serveur local)
+* Avoir une carte offline pour ikiwiki (sur un serveur local) {OK}  C'est fait. Mais pour être forward compatible avec la domination de la province :D, j'ai fait des bons zooms sur tout le territoire du Québec et le fichier compressé fait 1.4 GB... Si vous voulez les cartes, contactez-moi.
