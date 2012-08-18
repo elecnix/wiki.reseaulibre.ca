@@ -1,6 +1,6 @@
-[[!waypoint  lat="45.529245" lon="-73.579667" embed hidden width="400px" height="400px" right desc="Confirmed node on roof."]]
+[[!waypoint  lat="45.529245" lon="-73.579667" embed hidden width="400px" height="400px" right desc="Antenne au-dessus du toit installée. Branchement prévu à la fin août 2012.<br><a href='http://wiki.reseaulibre.ca/nodes/bb/250x-2012-08-18-bb-sud.jpg'><br>http://wiki.reseaulibre.ca/nodes/bb/250x-2012-08-18-bb-nord.jpg>"]]
 
-Confirmed node on roof.
+Antenne au-dessus du toit installée. Branchement prévu à la fin août 2012.
 
 # Technical details
 
