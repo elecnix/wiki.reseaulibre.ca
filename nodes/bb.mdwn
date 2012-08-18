@@ -38,7 +38,7 @@ Azimuth
 : 360°
 
 Status
-: [[!taglink planned]]
+: [[!taglink planned]] (antenne installée, branchement prévu bientôt)
 
 Operator
 : [[users/elecnix]]
