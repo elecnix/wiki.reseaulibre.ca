@@ -16,6 +16,10 @@ Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre cha
 2. [[Configurer OpenWRT avec Batman|guides/openwrt+batman]]
 3. [[Configurer IPv6|guides/ipv6]] (optionnel)
 
+ou
+
+1. [[Installation et configuration d'un noeud|guides/install+node+facile]] (avec web gui, plus simple)
+
 Les pages de [[configuration]] examinent chaque étape en détail et permettent aussi de configurer des systèmes non-basés sur OpenWRT.
 
 Les [[guides]] documentent également d'autres configurations utilisées.
