@@ -37,9 +37,6 @@ Location
 Azimuth
 : 360°
 
-Panorama
-: N/A
-
 Status
 : [[!taglink planned]]
 
@@ -48,6 +45,18 @@ Operator
 
 Links
 : (none)
+
+## Panorama
+
+### Vue vers le sud (montréalais)
+
+[[!img 2012-08-18-bb-sud.jpg size=950x]]
+
+### Vue vers le nord
+
+[[!img 2012-08-18-bb-nord.jpg size=950x]]
+
+## Configuration
 
 <pre>
 uci delete wireless.radio0.disabled
