@@ -1,15 +1,16 @@
-Sujet: Réseau Libre: Invitation à participer à un réseau sans fil libre en "maille"
+Sujet
+: Réseau Libre: Invitation à participer à un réseau sans fil libre en "maille"
 
-Réseau Libre est un réseau en "maille" (en anglais, mesh), qui est une topologie réseau dans laquelle les hôtes sont connectés de proche en proche formant ainsi une structure en forme de filet. Chaque hôte a un certain nombre de "voisins", de sorte qu'il existe plusieurs chemins pour se rendre à un même point. L'avantage d'une telle topologie est qu'il n'y a pas d'hôte essentiel donc, en cas de panne, le réseau se répare et on peut facilement y ajouter ou enlever des points.
+Réseau Libre est un réseau en "maille" (en anglais, "mesh"), qui est une topologie réseau dans laquelle les hôtes sont connectés à ses voisins, formant une structure en forme de filet. Chaque maille est aussi appelée "noeud". Chaque noeud a un certain nombre de "voisins", de sorte qu'il existe plusieurs chemins pour se rendre à un même point. L'avantage d'une telle topologie est qu'il n'y a pas de noeud essentiel, donc en cas de panne d'un ou plusieurs noeuds, le réseau peut continuer à fonctionner, et on peut facilement y ajouter ou enlever des noeuds.
 
-Concrètement, le réseau a besoin de gens qui installent des routeurs chez eux sur lesquels roule une application qui automatiquement recherche des voisins, accessibles via une fréquence sans fil commune, et qui roulent le même protocole et se connectent à eux. Les utilisateurs se connectent à un point d'accès semblable à n'importe quel autre point d'accès sans fil et font alors partie du réseau mesh et accèdent à tout le contenu disponible depuis cet hôte.
+Concrètement, le réseau a besoin de gens qui installent des routeurs chez eux, pour constituer un noeud. On y installe une application (à code source libre) qui trouve automatiquement les voisins. Les utilisateurs se connectent à un point d'accès sans-fil ordinaire connecté à ce noeud, et peuvent alors accéder à tout le contenu disponible depuis ce noeud.
 
-Notre réseau grandit! Nous avons déjà des réseaux en ligne dans les quartiers de Rosemont, Verdun et Saint-Michel à Montréal, avec plusieurs autres "noeuds" qui seront bientôt en ligne. Peut-être y a-t-il déjà un noeud près de chez vous?
+Notre réseau grandit! Nous avons déjà des réseaux en ligne dans les quartiers de Rosemont, Verdun et Saint-Michel à Montréal, avec plusieurs autres noeuds qui seront bientôt en ligne. Peut-être y a-t-il déjà un noeud près de chez vous? Consultez notre carte interactive!
 
-Que vous soyez simplement curieux des nouveaux usages rendus possibles par un tel réseau ou que vous souhaitez en apprendre plus sur l'installation d'antennes sans-fil et la réseautique, Réseau Libre est un espace d'entraide "ad hoc" ouvert à tous et toutes.
+Que vous soyez simplement curieux des nouveaux usages rendus possibles par un tel réseau ou que vous souhaitez en apprendre plus sur l'installation d'antennes sans-fil et la réseautique, le Réseau Libre est un espace d'entraide "ad hoc" ouvert à tous et toutes.
 
 Pour plus d'information: http://www.reseaulibre.ca
 
-Venez nous rencontrer au Maker Faire Montréal, les 25 et 26 août: http://www.makerfairemontreal.ca/
+Venez nous rencontrer au Maker Faire Montréal, les 25 et 26 août, sur l'esplanade du Stade Olympique: http://www.makerfairemontreal.ca/
 
 [[!tag draft]]
