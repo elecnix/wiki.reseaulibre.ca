@@ -16,6 +16,12 @@ Mon desktop/serveur. Pour offrir quelques services sur le mesh
 
  * Operator: [[users/scientist]]
 
+# Services
+
+ * Wikipedia Francophone:
+  * http://172.16.1.35/mediawiki  (L'URL va éventuellement changer)
+  * Au 18 aout, 10% des pages sont importés
+
 
 # Configuration debian
 
