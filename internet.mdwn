@@ -4,7 +4,7 @@
 
 Fournisseurs permettant la revente:
 
-(ça existe?)
+* [[EI Catalyst|http://eicat.ca/]] (offrent aussi de [[l'internet redondant|http://failsafe.ca/]])
 
 Fournisseurs qui n'interdisent pas: (à vos risques!)
 
@@ -15,3 +15,4 @@ Fournisseurs interdisant la revente:
 * [[ColbaNet|http://www.colba.net/main.php?lang=fr&cont=cont]]
 * [[TekSavvy|http://www.teksavvy.com/fr/legal/aup.asp]]
 * [[Primus|http://www.primustel.ca/en/residential/legal/termsofuse.html]]
+* Bell et Vidéotron interdisent également non seulement le partage de votre connexion mais aussi l'hébergement de serveurs
