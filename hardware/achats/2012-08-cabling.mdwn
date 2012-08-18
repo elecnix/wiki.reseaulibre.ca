@@ -44,7 +44,7 @@ Par personne
 | Personne | Total avant taxes | Total avec taxes |
 ---------- | ----------------: | ---------------: |
 Gapzap     | 170+24 = 194$     |   223.05$        |
-elecnic    |          194$     |   223.05$        |
+elecnix    |          194$     |   223.05$        |
 scientist  | 194/2  = 97$      |   111.53$        |
 bgm        |          97$      |   111.53$        |
 anarcat    | 194 + 18 = 212$   |   243.75$        |
