@@ -10,7 +10,7 @@ IPv6:
 """]]
 
 hostname
-: laplante
+: plantpeople
 
 MAC address
 : {{$MAC}}
