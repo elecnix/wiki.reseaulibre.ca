@@ -94,5 +94,5 @@ Your device should now be part of the mesh.  Once rebooted, its mesh interfaces 
 
 # Secure your device
 
-Read the guide on [[Securing your device|guides/securing+device]] to know how to setup the firewall, protect the web gui and ssh console, etc.
+Read the guide on [[Securing your device|securing+device]] to know how to setup the firewall, protect the web gui and ssh console, etc.
 
