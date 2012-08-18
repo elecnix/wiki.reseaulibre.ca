@@ -1,19 +1,53 @@
-[[!waypoint  lat="45.529245" lon="-73.579667" embed width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint  lat="45.529245" lon="-73.579667" embed hidden width="400px" height="400px" right desc="Confirmed node on roof."]]
 
-Confirmed node on roof. L'échelle doit avoir au moins 11' pour atteindre le bord.
+Confirmed node on roof.
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software:
- * Hardware:
- * Power:
- * Location:
- * Status: [[!taglink planned]]
- * Links: 
- * Azimuth:
- * Panorama:
- * Operator: [[users/elecnix]]
+# Technical details
+
+[[!ymlfront data="""
+MAC: DC:9F:DB:00:13:76
+IP: 172.16.0.18
+IPv6: 
+"""]]
+
+hostname
+: bb
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: 
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: roof
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink planned]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: (none)
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
