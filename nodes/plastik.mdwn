@@ -1,0 +1,120 @@
+Access point in my living room, same location as boulette or carton...
+
+The wifi here is in managed mode, but the LAN ports run mesh
+software (babel and batman). The uplink port is simply a DHCP client
+that would get announced on babel.
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: F8:D1:11:B7:5A:62
+IP: 172.16.1.2/12
+IPv6: fd64:2c08:9fa7:1::3/64
+"""]]
+
+hostname
+: plastik
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT attitude ajustment
+
+Hardware
+: TP-Link 1043D
+
+Power
+: ?
+
+Location
+: my dining room
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[users/anarcat]]
+
+Links
+: [[nodes/carton]] [[nodes/boulette]]
+
+Config dump
+
+[[!format txt """
+babeld.@general[0]=general
+babeld.wlan=interface
+babeld.wlan.ignore=true
+babeld.lan=interface
+babeld.@filter[0]=filter
+babeld.@filter[0].ignore=true
+babeld.@filter[0].type=redistribute
+babeld.@filter[0].ip=0.0.0.0/0
+babeld.@filter[0].le=0
+babeld.@filter[0].proto=3
+babeld.@filter[0].action=metric 128
+babeld.mesh=interface
+batman-adv.bat0=mesh
+batman-adv.bat0.interfaces=wlan0 br-mesh
+[...]
+network.lan=interface
+network.lan.proto=static
+network.lan.ipaddr=192.168.1.1
+network.lan.netmask=255.255.255.0
+network.lan._orig_ifname=eth0.1
+network.lan._orig_bridge=true
+network.wan=interface
+network.wan.ifname=eth0.2
+network.wan.proto=dhcp
+[..]
+network.mesh=interface
+network.mesh.proto=static
+network.mesh.ipaddr=172.16.0.5
+network.mesh.netmask=255.240.0.0
+network.mesh.ip6addr=fd64:2c08:9fa7:1::3/64
+network.mesh.type=bridge
+network.mesh._orig_ifname=eth0.1
+network.mesh._orig_bridge=true
+network.mesh.ifname=bat0 eth0.1
+network.bat0=interface
+network.bat0.ifname=bat0
+network.bat0.auto=1
+[..]
+wireless.radio0=wifi-device
+wireless.radio0.type=mac80211
+wireless.radio0.macaddr=f8:d1:11:b7:5a:62
+wireless.radio0.hwmode=11ng
+wireless.radio0.htmode=HT20
+wireless.radio0.ht_capab=SHORT-GI-40 DSSS_CCK-40
+wireless.radio0.channel=1
+wireless.radio0.txpower=27
+wireless.radio0.country=US
+wireless.@wifi-iface[0]=wifi-iface
+wireless.@wifi-iface[0].device=radio0
+wireless.@wifi-iface[0].encryption=none
+wireless.@wifi-iface[0].ssid=acces.reseaulibre.ca
+wireless.@wifi-iface[0].mode=ap
+wireless.@wifi-iface[0].network=lan
+"""]]
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
