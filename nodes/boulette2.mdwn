@@ -6,8 +6,8 @@ Spare boulette node.
 
 [[!ymlfront data="""
 MAC:  DC:9F:DB:1:13:56
-IP: (pick one from [[policy/numbering]])
-IPv6: 
+IP: 172.16.1.19
+IPv6: fd64:2c08:9fa7:1::4/64
 """]]
 
 hostname
