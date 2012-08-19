@@ -55,3 +55,6 @@ Mises à jour
 
  * 2012-08-16: commande passée à converbit, Grand Total:	$912.91 tx inc
  * 2012-08-11: début de la commande
+ * 2012-08-19: livrée à koumbit, première distribution presque
+   terminée, mais on dirait que la gang de verdun a oublié de prendre
+   une boîte de câble!
