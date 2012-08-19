@@ -8,7 +8,7 @@ that would get announced on babel.
 
 [[!ymlfront data="""
 MAC: F8:D1:11:B7:5A:62
-IP: 172.16.1.2/12
+IP: 172.16.1.20/12
 IPv6: fd64:2c08:9fa7:1::3/64
 """]]
 
