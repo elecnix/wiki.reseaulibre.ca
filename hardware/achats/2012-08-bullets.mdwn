@@ -1,13 +1,15 @@
 Achat de bullet + antenne 15 dbi + injecteur POE
 
-* [[/users/elecnix]] 6 ([[/nodes/bb]], [[/nodes/val]], [[/nodes/lacou]], [[/nodes/capitaine]], [[/nodes/btm2]], [[/nodes/greene]])
-* [[/users/gapzap]] 2 
-* [[/users/tahini]] 3
-* [[/users/deuxpi]] 3
-* [[/users/scientist]] 2
-* [[/users/anarcat]] 2 ([[nodes/magicfab]], spare)
-* [[/users/bgm]] 1
-* [[/users/iwayMan]] 1
+* [[/users/elecnix]] 6 ([[/nodes/bb]], [[/nodes/val]],
+  [[/nodes/lacou]], [[/nodes/capitaine]], [[/nodes/btm2]],
+  [[/nodes/greene]]) - à ramasser
+* [[/users/gapzap]] 2 - à ramasser?
+* [[/users/tahini]] 3 - ramassé, à payer
+* [[/users/deuxpi]] 3 - ramassé, à payer
+* [[/users/scientist]] 2 - ramassé, à payer
+* [[/users/anarcat]] 2 ([[nodes/magicfab]], spare) - ramassé, à payer
+* [[/users/bgm]] 1 - ramassé, à payer
+* [[/users/iwayMan]] 1 (payé à anarcat)
 
 total: 20
 
@@ -18,3 +20,5 @@ total: 20
 15-août/gapzap: notre commande est prête pour le pick-up!
 
 16-août/gapzap: Richard a testé sa SMART en allant chercher tout ça!! - tout sera au RDV dimanche chez Koumbit - 
+
+[[done]] - livré au bureau de Koumbit.
