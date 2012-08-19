@@ -2,19 +2,25 @@
 
 # Questions générales
 
+##Qu'est-ce qu'un réseau libre?
+
+Un réseau libre est un réseau qui appartient aux personnes qui l'utilisent, permet aux gens d'être propriétaires de leurs propres données et dont le développement est mené par les participants.  Ceci par opposition au modèle client, où un individu paie une corporation pour utiliser ses infrastructures de télécommunications et doit respecter les règles imposées par celle-ci.
+
+Le groupe adopte la définition et les 5 libertés de la [[Free Network Foundation|http://freenetworkfoundation.org/?p=898]]
+
 ##C'est quoi un mesh ?  Comment ça marche ?##
 
 Un "mesh" est une topologie réseau dans laquelle tous les hôtes sont connectés de proche en proche formant ainsi une structure en forme de filet.  Chaque hôte ou point d'accès a un certain nombre de "voisins", de sorte qu'il existe plusieurs chemins pour se rendre à un même point.  L'avantage d'une telle topologie est qu'il n'y a pas d'hôte essentiel, en cas de panne, le réseau se répare et on peut facilement y ajouter ou enlever des points.
 
-Concrètement, les gens installent des routeurs chez eux sur lesquels roule une application de mesh qui automatiquement recherche des voisins, accessibles via les ondes wifi, qui roulent le même protocole et se connectent à eux.  Les utilisateurs se connectent à un point d'accès comme à n'importe quel autre point d'accès wifi et font alors partie du réseau mesh et accèdent à tout le contenu disponible depuis cet hôte.
+Concrètement, les gens installent des routeurs chez eux sur lesquels roule une application de routage via mesh qui automatiquement recherche des voisins, accessibles via les ondes wifi, qui roulent le même protocole et se connectent à eux.  Les utilisateurs se connectent à un point d'accès comme à n'importe quel autre point d'accès wifi et font alors partie du réseau mesh et accèdent à tout le contenu disponible depuis cet hôte.
 
 ##Est-ce que ça marche ?##
 
 Bien sûr.  Mais tout dépend de ce que "ça" veut dire.
 
-Les protocoles de mesh sont utilisés [[partout dans le monde|Similar]] et des communautés comme Mesh Montréal sont en opération un peu partout.  Ça fonctionne et ça demande pratiquement pas de maintenance.
+Les protocoles de mesh sont utilisés [[partout dans le monde|Similar]] et des communautés comme Réseau Libre sont en opération un peu partout.  Ça fonctionne et ça demande pratiquement pas de maintenance.
 
-Par contre, il n'y a rien de garanti sur ce réseau.  Selon où l'on est connecté, la disponibilité des services, la vitesse de connexion et même la possibilité de naviguer sur le web dépendent des services disponibles sur le mesh, l'achalandage de certains liens du réseau et du nombre de "sauts" (liens) nécessaires pour se rendre à son profit.
+Par contre, il n'y a rien de garanti sur ce réseau.  Selon où l'on est connecté, la disponibilité des services, la vitesse de connexion et même la possibilité de naviguer sur le web dépendent des services disponibles à cet endroit, de l'achalandage de certains liens du réseau et du nombre de "sauts" (liens) nécessaires pour se rendre à destination.
 
 ##Combien ça coûte ?##
 
@@ -50,13 +56,15 @@ De même pour le partage de fichier, soit par p2p ou autre moyen, si c'est illé
 
 ##Comment je me connecte au réseau ?##
 
-Pour vous connecter en tant qu'utilisateur, vous devez être à proximité d'un point d'accès (voir la [[carte|map]]) et vous vous y connectez comme à n'importe quel point d'accès wifi.  Attention, certains points d'accès sur la carte ne servent qu'à l'infrastructure et il est impossible de s'y connecter.  Le mieux est de voir les réseaux disponibles depuis votre appareil et chercher un réseau **Mesh Montréal**.  La connection ne demande aucun mot de passe, ni compte utilisateur.
+Pour vous connecter en tant qu'utilisateur, vous devez être à proximité d'un point d'accès (voir la [[carte|map]]) et vous vous y connectez comme à n'importe quel point d'accès wifi.  Attention, certains points d'accès sur la carte ne servent qu'à l'infrastructure et il est impossible de s'y connecter (ils s'appelleront généralement *relais.reseaulibre.ca*).  Le mieux est de voir les réseaux disponibles depuis votre appareil et chercher un réseau **reseaulibre.ca**.  
+
+On encourage la mise en place de points d'accès publics, donc sans encryption, pour se joindre au réseau.  Mais comme chaque participant décide de ce qu'il souhaite offrir, certains points d'accès peuvent être encryptés.  Si un réseau de votre quartier demande une clé, essayez de contacter la personne responsable pour avoir plus d'information.
 
 Pour brancher un routeur sur le réseau et ainsi avoir votre propre point d'accès, consultez la page [[participer]].
 
 ##J'ai internet à la maison, pourquoi je me connecterais à ce réseau ?##
 
-Le réseau de Mesh Montréal est beaucoup plus qu'un simple fournisseur d'accès internet.  En fait, il n'y a peut-être même pas d'accès à internet!
+Réseau Libre est beaucoup plus qu'un simple fournisseur d'accès internet.  En fait, il n'y a peut-être même pas d'accès à internet!
 
 C'est un réseau totalement indépendant, dont chaque hôte appartient à la personne qui l'a mis en place.  La connectivité n'est donc pas dépendante d'un fournisseur d'accès internet.  Si demain matin, les fournisseurs décident de bloquer l'internet, les services sur le mesh ne seraient pas affectés et les citoyens montréalais pourraient continuer de communiquer entre eux.
 
