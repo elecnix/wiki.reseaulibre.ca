@@ -2,18 +2,50 @@
 
 we are thinking of putting up a node in our window, which sees the mountain and outremont very well, third floor.
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software:
- * Hardware:
- * Power:
- * Location:
- * Status: [[!taglink planned]]
- * Links: 
- * Azimuth:
- * Panorama:
- * Operator: [[users/anarcat]] [[users/gboudrias]]
+[[!ymlfront data="""
+MAC: 00:27:22:8a:cb:c4
+IP: 172.16.0.5/12
+IPv6: Not yet
+"""]]
+
+hostname
+: koumbit-outremont
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk
+
+Hardware
+: Nanostation M2
+
+Power
+: default
+
+Location
+: Dans la fenêtre
+
+Azimuth
+: 60° sud
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[users/anarcat]] [[users/gboudrias]]
+
+Links
+: None yet, possible with scientist-poly
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
