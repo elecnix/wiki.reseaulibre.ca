@@ -2,14 +2,14 @@ Achat de bullet + antenne 15 dbi + injecteur POE
 
 * [[/users/elecnix]] 6 ([[/nodes/bb]], [[/nodes/val]],
   [[/nodes/lacou]], [[/nodes/capitaine]], [[/nodes/btm2]],
-  [[/nodes/greene]]) - à ramasser
-* [[/users/gapzap]] 2 - à ramasser?
+  [[/nodes/greene]]) - 6 antennes à ramasser, le reste ramassé et payé.
+* [[/users/gapzap]] 2 - à ramasser, à payer?
 * [[/users/tahini]] 3 - ramassé, à payer
 * [[/users/deuxpi]] 3 - ramassé, à payer
 * [[/users/scientist]] 2 - ramassé, à payer
 * [[/users/anarcat]] 2 ([[nodes/magicfab]], spare) - ramassé, à payer
 * [[/users/bgm]] 1 - ramassé, à payer
-* [[/users/iwayMan]] 1 (payé à anarcat)
+* [[/users/iwayMan]] 1 ramassé, payé à anarcat
 
 total: 20
 
