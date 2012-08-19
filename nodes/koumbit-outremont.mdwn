@@ -1,6 +1,6 @@
 [[!waypoint lat="45.52661" lon="-73.61886" embed hidden width="400px" height="400px" right desc="A node in our 3rd floor window pointing towards Outremont and Université de montréal"]]
 
-we are thinking of putting up a node in our window, which sees the mountain and outremont very well, third floor.
+A node in our window, done with gboudrias's hardware (ex-zoidberg).
 
 [[!ymlfront data="""
 MAC: 00:27:22:8a:cb:c4
