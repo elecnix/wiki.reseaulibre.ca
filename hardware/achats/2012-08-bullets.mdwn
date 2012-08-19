@@ -7,9 +7,10 @@ Achat de bullet + antenne 15 dbi + injecteur POE
 * [[/users/tahini]] 3 - ramassé, à payer
 * [[/users/deuxpi]] 3 - ramassé, à payer
 * [[/users/scientist]] 2 - ramassé, à payer
-* [[/users/anarcat]] 2 ([[nodes/magicfab]], spare) - ramassé, à payer
+* [[/users/anarcat]] 2 ([[nodes/magicfab]], spare) - ramassé, payé 55$
+  à nicolas (balance de l'autre commande)
 * [[/users/bgm]] 1 - ramassé, à payer
-* [[/users/iwayMan]] 1 ramassé, payé à anarcat
+* [[/users/iwayMan]] 1 ramassé, payé à anarcat, repayé à nicolas (140$)
 
 total: 20
 
