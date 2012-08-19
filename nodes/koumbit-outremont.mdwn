@@ -47,6 +47,9 @@ Operator
 Links
 : None yet, possible with scientist-poly
 
+Configured with [[configuration/batman]], [[configuration/ad-hoc]]
+(old BSSID!) and [[configuration/babel]].
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
