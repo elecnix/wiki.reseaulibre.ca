@@ -41,14 +41,14 @@ Grand Total                                 |              $912.91||||
 Par personne
 ------------
 
-| Personne | Total avant taxes | Total avec taxes |
----------- | ----------------: | ---------------: |
-Gapzap     | 170+24 = 194$     |   223.05$        |
-elecnix    |          194$     |   223.05$        |
-scientist  | 194/2  = 97$      |   111.53$        |
-bgm        |          97$      |   111.53$        |
-anarcat    | 194 + 18 = 212$   |   243.75$        |
-total      |           794$    |   912.91$        |
+| Personne | Total avant taxes | Total avec taxes | Ramassé? |
+---------- | ----------------: | ---------------: | :------: |
+Gapzap     | 170+24 = 194$     |   223.05$        | non      |
+elecnix    |          194$     |   223.05$        | 50 connecteurs |
+scientist  | 194/2  = 97$      |   111.53$        | oui      |
+bgm        |          97$      |   111.53$        | oui sauf la boîte de câble?? |
+anarcat    | 194 + 18 = 212$   |   243.75$        | oui      |
+total      |           794$    |   912.91$        | il reste au bureau de koumbit: 2 boîtes de câbles |
 
 Mises à jour
 ------------
