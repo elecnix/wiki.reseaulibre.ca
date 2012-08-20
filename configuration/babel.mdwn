@@ -178,4 +178,4 @@ References
 ==========
 
  * [HacDC setup notes](http://wiki.hacdc.org/index.php/Babel_Setup)
- * RFC [[!rfc 6126]]
+ * [[!rfc 6126]]
