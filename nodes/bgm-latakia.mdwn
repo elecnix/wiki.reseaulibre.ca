@@ -21,11 +21,11 @@ IPv6: ..
  * Panorama: N/A
  * Status: [[!taglink up]]
  * Operator: [[users/bgm]]
- * Links: [[bgm-homs]], [[hexa]]
+ * Links: [[bgm-homs]], [[hexa]], [[deuxpi]]
 
-# Services
+# Photo
 
- * Point d'accès "Librenet-m2" qui permet de se connecter à http://partage.bidon.ca en IPv6.
+[[!img  http://www.bidon.ca/files/toit/20120819_001-small.jpg size="600x798" alt="Bullet M2"]]
 
 # UCI
 
