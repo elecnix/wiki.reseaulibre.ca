@@ -11,10 +11,10 @@ Channel
 : 1
 
 Session ID (ESSID, suggéré):
-: `mesh-mtl`
+: `reseaulibre.ca`
 
 Cell (BSSID)
-: `02:51:48:72:03:11`
+: `02:CA:FF:EE:BA:BE`
 
 The channel can be changed according to location and existing
 interference. It needs to be the same for all devices that
@@ -40,12 +40,12 @@ Separate wireless network from `lan`
 
     uci delete wireless.@wifi-iface[0].network
 
-Montreal mesh standards: channel 1, adhoc, named mesh-mtl. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
+Montreal mesh standards: channel 1, adhoc, named `reseaulibre.ca`. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
 
     uci set wireless.radio0.channel=1
     uci set wireless.@wifi-iface[0].mode=adhoc
-    uci set wireless.@wifi-iface[0].ssid=mesh-mtl
-    uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
+    uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
+    uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
 
 Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
 
@@ -63,6 +63,8 @@ Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
 
 # Ad-Hoc on Debian
 
+(!) Désactiver Network Manager.
+
 Découvrir quelle est l'interface réseau (ex: wlan0) :
 
     /sbin/iwconfig
@@ -71,13 +73,13 @@ Découvrir quelle est l'interface réseau (ex: wlan0) :
 
 This will bring up your network interface:
 
-    iwconfig wlan0 mode ad-hoc essid mesh-mtl ap 02:51:48:72:03:11 channel 1
+    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 1
     ifconfig wlan0 up
 
 Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. 
 
-    wlan0     IEEE 802.11bgn  ESSID:"mesh-mtl"  
-              Mode:Ad-Hoc  Frequency:2.412 GHz  Cell: 02:51:48:72:03:11   
+    wlan0     IEEE 802.11bgn  ESSID:"reseaulibre.ca"  
+              Mode:Ad-Hoc  Frequency:2.412 GHz  Cell: 02:CA:FF:EE:BA:BE
               Tx-Power=17 dBm   
               RTS thr:off   Fragment thr:off
               Encryption key:off
@@ -87,9 +89,20 @@ Sinon, descendre l'interface réseau (voir même désactiver son module noyau) e
 
 Voir [[configuration/ip]] pour configurer l'interface et [[policy/numbering]] pour l'allocation de l'addresse.
 
-## Problèmes communs
+## Network manager
 
-### Interface non-supportée par iwconfig
+Il est possible de configurer le réseau avec Network Manager. Il
+suffit d'éditer le réseau et ne pas utiliser le mode "DHCP" mais
+"link-local", suivre:
+
+ * tab Wireless
+ * choisir le nom du réseau, cliquer "Edit..."
+ * Choisir l'onglet "IPv4 Settings"
+ * Choisir Method: "Link-Local Only"
+
+# Problèmes communs
+
+## Interface non-supportée par iwconfig
 
 <http://linuxwireless.org/en/developers/Documentation/nl80211> -
 it seems the proper way to configure interfaces is not through
@@ -98,17 +111,17 @@ for your hardware:
 
     iw dev wlan0 interface add wlan1 type adhoc
 
-### Device or resource busy
+## Device or resource busy
 
 Si Network Manager est actif, vous pourriez voir:
 
-    iwconfig wlan0 mode ad-hoc essid mesh-mtl
+    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca
     Error for wireless request "Set Mode" (8B06) :
         SET failed on device wlan0 ; Device or resource busy.
 
 Il faut alors désactiver le réseau, avec l'icône dans Gnome.
 
-### Problèmes à créer une connexion ad-hoc
+## Problèmes à créer une connexion ad-hoc
 
 Désactiver puis ré-activer la carte réseau (malheureusement, il faut deviner le module de la carte, pas toujours évident). Au pire, redémarrer.
 
@@ -135,7 +148,7 @@ Pourtant, ce fichier est disponible dans /lib/firmware, si la carte etait foncti
 
 Puis utiliser la commande "ping" pour voir si on peut parler à une autre machine.
 
-### Key encryption
+## Key encryption
 
 Dans le cas d'un laptop qui n'est pas dedié au mesh, il se peut que la configuration de l'interface wlan0 traîne des flags de ses configurations précédentes. 
 
@@ -143,8 +156,8 @@ Dans le cas d'un laptop qui n'est pas dedié au mesh, il se peut que la configur
 
 devrait montrer
 
-    wlan0     IEEE 802.11abgn  ESSID:"mesh-mtl"  
-              Mode:Ad-Hoc  Frequency:2.412 GHz  Cell: 02:51:48:72:03:11   
+    wlan0     IEEE 802.11abgn  ESSID:"reseaulibre.ca"  
+              Mode:Ad-Hoc  Frequency:2.412 GHz  Cell: 02:CA:FF:EE:BA:BE
               Tx-Power=15 dBm   
               Retry  long limit:7   RTS thr:off   Fragment thr:off
               Encryption key:off
@@ -156,12 +169,12 @@ Pourtant, il est possible que d'une autre machine, par exemple un routeur OpenWR
 
 montre que notre cellule a son "Encryption key" à "on"
 
-    Cell 10 - Address: 02:51:48:72:03:11
+    Cell 10 - Address: 02:CA:FF:EE:BA:BE
                 Channel:1
                 Frequency:2.412 GHz (Channel 1)
                 Quality=70/70  Signal level=-25 dBm  
                 Encryption key:on
-                ESSID:"mesh-mtl"
+                ESSID:"reseaulibre.ca"
                 Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 6 Mb/s
                           9 Mb/s; 12 Mb/s; 18 Mb/s
                 Bit Rates:24 Mb/s; 36 Mb/s; 48 Mb/s; 54 Mb/s

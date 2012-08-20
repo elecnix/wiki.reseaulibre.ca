@@ -1,5 +1,10 @@
 [[!toc levels=2]]
 
+5 libertés
+===========
+
+Il a été proposé sur la liste d'adopter les [5 libertés du Free Network Foundation](http://www.commons.freenetworkfoundation.org/index.php?title=Free_network_definition) le 9 août. Selon nos politiques, la proposition sera adoptée après un délai de 7 jours.
+
 Débat sur le mode de décision du projet
 =======================================
 
@@ -49,8 +54,8 @@ Statu quo
 
 Le statu quo semble être que *une décision peut être prise sur la liste de discussion en amenant une proposition non-controversée et en attendant un certain délai indéterminé. le résultat est indéterminé s'il y a une objection (*statu quo *ou la proposition est reportée à une rencontre en personne?)*.
 
-Nouvelle proposition
---------------------
+Nouvelle proposition (en vigueur)
+---------------------------------
 
 La proposition suivante a été élaborée en réunion et y faisait consensus, mais reste à être approuvée sur la liste avant d'être ajoutée à la page wiki ici.
 

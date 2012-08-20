@@ -1,0 +1,32 @@
+[[!waypoint lat="45.541706" lon="-73.603992" embed hidden width="400px" height="400px" right desc="Futur Bullet+15dbi sur toit - maison 2 étages -"]]
+
+
+- Point de relai planifié août 2012 - 
+
+ * MAC address:
+ * IP address:
+ * IPv6 address:
+ * Software: on va bien voir!
+ * Hardware: ubiquity Bullet
+ * Power:
+ * Location:
+ * Status: [[!taglink planned]]
+ * Links:
+ * Azimuth:
+ * Panorama:
+ * Operator: [[users/gapzap]]
+
+## Liens possible
+
+ * [[nodes/val]]
+
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]

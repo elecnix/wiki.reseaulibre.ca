@@ -1,5 +1,7 @@
 Register our project at <http://global.freifunk.net/>
 
+Update: i wrote info@freifunk to ask if they add our new news feed. --[[anarcat]]
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable

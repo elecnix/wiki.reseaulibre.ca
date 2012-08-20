@@ -1,6 +1,16 @@
 This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
+# test utf8
+
+ceci est un test du bot avec du utf8
+
+# test gitpush
+
+je me demande comment ça a déjà pu marcher
+
 # report plugin test
+
+this lists the IP fields on the nodes pages.
 
 <table>
 <tr><th>#</th><th>hostname</th><th>IP</th><th>IPv6</th><th>MAC</th></tr>
@@ -75,8 +85,6 @@ Bulleted list
 
 * *item*
 * item
-
-
 
 [[ikiwiki/WikiLink]]
 

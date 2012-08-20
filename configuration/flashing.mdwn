@@ -47,6 +47,10 @@ Nanostation M2
 : [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin)
 : [trunk](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
 
+TP-Link 1043ND
+: [backfire](http://downloads.openwrt.org/snapshots/backfire/10.03.1/ar71xx/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
+: [trunk](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
+
 # Flashing methods
 
 You can flash your devices in many ways. The most reliable, which

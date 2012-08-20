@@ -1,0 +1,14 @@
+À venir
+
+This guide guides you through the process of securing your node.  The mesh is an hostile environment, meaning that you do not have control over who is part of it, connects to it and how people use it.  It is important to secure your node so that no malicious user/node can hack into your node, and more importantly, into your home LAN.
+
+This guide is in no way exhaustive, nor complete and does not cover every possible situation, though it tries to cover the most common scenarios.  For questions or help securing your network, do not hesitate to consult with us on irc or on the mailing list. See page [[Participer]] for how to contact us.
+
+# Know your frontiers
+
+# Setup the firewall
+
+# Secure the ssh console
+
+# Secure the web gui
+

@@ -17,8 +17,9 @@ Antenne planifiée sur le toit d'un édifice de deux étages, à la fin de septe
 
 ## Liens possibles
 
- * [[nodes/genb]]
- * [[nodes/jojo]]
+ * [[/nodes/theodore]]
+ * [[/nodes/jojo]]
+ * [[/nodes/DELTA100]]
 
 [[!img pano-val.jpg size=950x]]
 

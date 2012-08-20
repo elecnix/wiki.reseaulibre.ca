@@ -2,4 +2,6 @@ bgm (and maybe other) keep disappearing from the map.
 
 The generation of the kml file need to be fixed
 
-On dirait que ca fonctionne une modification sur 2. 
+On dirait que ca fonctionne une modification sur 2.
+
+This bug has been [[fixed|done]] [here](http://ikiwiki.info/bugs/osm_sometimes_looses_some_nodes/). --[[anarcat]]

@@ -1,11 +1,13 @@
 Mesh Montréal est un réseau ouvert.  Tout le monde peut s'impliquer et plus il y aura de monde dans le réseau, plus ça deviendra intéressant.  
 
 * D'abord prendre connaissance de la [[foire aux questions|FAQ]].
-* S'inscrire sur la [[liste de discussion|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]].
+* S'inscrire sur la [[liste de discussion|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]] ou la [[liste d'annonces|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca]].
+* [[S'inscrire comme noeud|Nodes]] (node) potentiel dans le wiki, voir les noeuds à proximité avec qui il serait possible de connecter.
 * Participer aux [[rencontres techniques et sociales|meetings]].
 * Discuter avec les membres sur le chat irc [[#reseaulibre|http://webchat.freenode.net/?channels=reseaulibre]] sur freenode.net
 * Ouvrir un point d'accès en suivant les [[guides d'introduction|guides]] ou les [[configurations avancées|configuration]].
 * Voir la liste des [[tâches à faire|Todo]].
+* [[Donner du matériel|donate]], comme un routeur sans-fil ou de la quincaillerie d'antenne.
 
 Prochaine rencontre!
 : [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]]

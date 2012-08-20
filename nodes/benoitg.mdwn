@@ -47,7 +47,7 @@ Operator
 : [[users/benoitg]]
 
 Links
-: [[ouaibe]]
+: 
 
 This node runs batman according to the [[configuration/batman]] howto.
 

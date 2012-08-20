@@ -9,6 +9,8 @@ reconstructed.
 
 See the branchable tab above to clone this wiki.
 
+This wiki is now managed through [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]], which means a few information here are not up-to-date (and marked as such).
+
 ## Ikiwiki and extensions
 
 ikiwiki was installed through the [[!debpkg ikiwiki]] debian package. We are running version at least 3.0, and we recommend running backports if not running testing/unstable. Some of the packages suggested by ikiwiki were also necessary for extra functionality:
@@ -21,6 +23,8 @@ ikiwiki was installed through the [[!debpkg ikiwiki]] debian package. We are run
 All the recommended packages were installed.
 
 ## Apache and configuration
+
+(!) Note that this has been superseded by the use of [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]], which creates virtual hosts (and DNS records) automatically.
 
 I originally ran this straight out of my ~/public_html directory, but now we have a real virtual host:
 
@@ -47,6 +51,8 @@ I originally ran this straight out of my ~/public_html directory, but now we hav
     </VirtualHost>
 
 ## Publishing the wiki source
+
+(!) Note that this has been superseded by the use of the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which configures git hooks automatically.
 
 To publish the source, I use a regular HTTP server. For this, I had to
 change the post-update hook as described
@@ -85,9 +91,9 @@ The wiki content is under GFDL, as detailed in the footer. A [[!iki plugins/meta
 
 The [[!iki plugins/theme]] (actiontabs) was slightly tweaked to have the footer display properly, based on the work at the [[GNU HURD wiki|http://www.bddebian.com/~hurd-web/]]. For this, the [[local.css]] file was created and can be modified through git.
 
-# Plugins
+## Plugins
 
-## Enabled plugins
+### Enabled plugins
 
 On top of the default plugins, the following plugins are enabled in
 the wiki:
@@ -110,7 +116,7 @@ the wiki:
 
 ... and more, see the setup file.
 
-## Possible plugins to enable
+### Possible plugins to enable
 
 * [[!iki plugins/anonok]] - may provoke a deluge of spam
 * [[!iki plugins/favicon]] - once we have an icon (but can't we just edit favicon.ico in the root of the wiki?)
@@ -118,14 +124,20 @@ the wiki:
 * [[!iki plugins/highlight]] - source code hilighting
 * [[!iki plugins/mirrorlist]] - if/when we get mirrors of this wiki
 
-# Templates
+## Templates
 
 This section documents which templates are available and to what pages they apply, see also the [[!iki plugins/editemplate]] plugin.
 
  * [[!edittemplate template="templates/node" match="nodes/*"]]
  * [[!edittemplate template="templates/link" match="links/*"]]
 
-# Multiple committers
+# Additionnaly configuration
+
+The following steps are not required for the wiki to work correctly, but they are nevertheless useful.
+
+## Multiple committers
+
+(!) Note that this has been superseded by the use of the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which handles this automatically through anonymous git pushes.
 
 The [[!iki rcs/git]] page details a bit of the git internals of ikiwiki, but doesn't explain clearly how to do such a setup. In order to allow multiple committers, I therefore had to go through a few hoops to be able to allow the web interface, myself and others to push commits to the repository.
 
@@ -147,7 +159,7 @@ To allow users to push to the repository, use:
 
     adduser anarcat mtl-mesh
 
-# CIA.vc notifications
+## CIA.vc notifications
 
 I am using the
 [Koumbit git-hooks](https://redmine.koumbit.net/projects/git-hooks) to
@@ -167,6 +179,10 @@ We use email notifications because the potentially disconnected nature
 of the mesh.
 
 Note that the scripts are available in the `setup` branch.
+
+## Hosting your own maps
+
+If you want to host your own map tiles instead of using the openstreetmap server (for instance, if you run without internet access), see [[Hosting your own maps]]
 
 # Other tools
 

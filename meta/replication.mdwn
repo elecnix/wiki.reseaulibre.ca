@@ -6,6 +6,8 @@ documentation even if the network goes down. This is done through
 (!) Note that this is all much easier with the "branchable" plugin of
 the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package.
 
+[[!toc]]
+
 # Basic offline editing and sharing
 
 Basically, this wiki is a collection of [[ikiwiki/markdown]]-formatted pages
@@ -32,15 +34,46 @@ The following steps should get you going:
     edit ikiwiki.setup # fix paths
     ikiwiki --setup ikiwiki.setup
 
-See also [[meta/Maintenance]] for the plugins to enable and the hooks
+Another guide is the [[!iki tips/laptop_wiki_with_git]] guide. To get a
+better understanding of how ikiwiki works, see [[!iki rcs/git]].
+
+Once the wiki can generate pages, you may need to go over the
+[[meta/Maintenance]] guide for the plugins to enable and the hooks
 configuration.
 
 (!) Oh, and [this](http://piny.be/jrayhawk/notes/ikiwiki_creation/)
 may also be of use if the above doesn't work.
 
+There is some work being done to host copies of this wiki on OpenWrt nodes. See [[meta/ikiwiki+openwrt]].
+
+# Keeping the mirror up to date
+
+There are two options here. One is to regularly pull from the master (less reliable, klunky, but doesn't require cooperation from the master), the other is to make the master push to the mirror. For this, the master needs to enable the [[!iki plugins/gitpush]] plugin and add the following to the setup file:
+
+    git_push_to:
+    - ssh://user@example.com/source.git
+
+The repository URL above needs to point to the "repository" directory of the mirror, see the [[!iki rcs/git]] documentation for a good explanation of the layout of the different git repositories in ikiwiki.
+
+# Publishing the mirror
+
+Once your mirror works, it needs to be added to the list of mirrors. You can ask the mirror where you take it from (and why not, all mirrors) to add it to their setup file. As an example, here's the configuration for the first mirror:
+
+    mirrorlist:
+      deuxpi: https://reseaulibre.deuxpi.ca/
+
+The [[!iki plugins/mirrorlist]] plugin of course needs to be enabled.
+
 # Merging back into the wiki
 
-Now that multi-user configuration is enabled in the wiki (see [[maintenance]]), i can allow git over SSH access for people that are into that kind of stuff, just ask here or by email.
+The final step is to make edits on the mirror reflect back to the master site. That way the mirror is not only for reading, but can also be edited, even when the master is offline or the network is separated.
+
+To do this, the mirror needs to push back to the master, again using the gitpush plugin:
+
+    git_push_to:
+    - git://wiki.reseaulibre.ca/
+
+This will ensure that commits done on the mirror will propagate back to the master.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 

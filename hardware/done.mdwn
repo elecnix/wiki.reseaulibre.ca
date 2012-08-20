@@ -1,0 +1,1 @@
+[[!inline pages="hardware/achats/* and !hardware/achats/*/* and !hardware/achats/discussion and link(done)" feeds=no]]

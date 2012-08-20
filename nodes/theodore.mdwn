@@ -1,0 +1,51 @@
+[[!waypoint  lat="45.539759" lon="-73.601008" embed hidden width="400px" height="400px" right desc="Un noeud sur le toit"]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: 00:27:22:2e:bd:3d
+IP: 172.16.0.22
+IPv6: 
+"""]]
+
+hostname
+: theodore
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk
+
+Hardware
+: Bullet M2 Ubiquiti avec antenne 15 dBi omnidirectionnelle 
+
+Power
+: 15dBm/28mW (default)
+
+Location
+: Quelques pieds dans les airs attachée sur la cheminée du toit d'un duplex
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[users/genb]]
+
+Links
+: [[clarence]]
+
+## Panorama
+[[!img panorama_theodore.jpg align="left" size="950x" alt="Panorama"]]

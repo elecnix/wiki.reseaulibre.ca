@@ -1,19 +1,106 @@
 [[!waypoint lat="45.52661" lon="-73.61886" embed hidden width="400px" height="400px" right desc="A node in our 3rd floor window pointing towards Outremont and Université de montréal"]]
 
-we are thinking of putting up a node in our window, which sees the mountain and outremont very well, third floor.
+A node in our window, done with gboudrias's hardware (ex-zoidberg).
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software:
- * Hardware:
- * Power:
- * Location:
- * Status: [[!taglink planned]]
- * Links: 
- * Azimuth:
- * Panorama:
- * Operator: [[users/anarcat]] [[users/gboudrias]]
+[[!ymlfront data="""
+MAC: 00:27:22:8a:cb:c4
+IP: 172.16.0.5/12
+IPv6: Not yet
+"""]]
+
+hostname
+: koumbit-outremont
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk
+
+Hardware
+: Nanostation M2
+
+Power
+: default
+
+Location
+: Dans la fenêtre
+
+Azimuth
+: 60° sud
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[users/anarcat]] [[users/gboudrias]]
+
+Links
+: None yet, possible with scientist-poly
+
+Configured with [[configuration/batman]], [[configuration/ad-hoc]]
+(new BSSID) and [[configuration/babel]].
+
+UCI config:
+
+[[!format txt """
+babeld.@general[0]=general
+babeld.wlan=interface
+babeld.lan=interface
+babeld.@filter[0]=filter
+babeld.@filter[0].ignore=true
+babeld.@filter[0].type=redistribute
+babeld.@filter[0].ip=0.0.0.0/0
+babeld.@filter[0].le=0
+babeld.@filter[0].proto=3
+babeld.@filter[0].action=metric 128
+babeld.wlan0=interface
+batman-adv.bat0=mesh
+batman-adv.bat0.interfaces=wlan0 br-lan
+[...]
+network.lan=interface
+network.lan.type=bridge
+network.lan.proto=static
+network.lan.ipaddr=172.16.0.5
+network.lan.netmask=255.240.0.0
+network.lan.ifname=eth0 bat0
+network.wan=interface
+network.wan.ifname=eth1
+network.wan.proto=dhcp
+network.wlan0=interface
+network.wlan0.ifname=wlan0
+network.wlan0.proto=none
+network.wlan0.mtu=1528
+network.bat0=interface
+network.bat0.ifname=bat0
+network.bat0.proto=none
+network.bat0.mtu=1500
+[...]
+system.@system[0].hostname=koumbit-outremont
+[...]
+wireless.radio0=wifi-device
+wireless.radio0.type=mac80211
+wireless.radio0.macaddr=00:27:22:8a:cb:c4
+wireless.radio0.hwmode=11ng
+wireless.radio0.htmode=HT20
+wireless.radio0.ht_capab=SHORT-GI-40 TX-STBC RX-STBC1 DSSS_CCK-40
+wireless.radio0.channel=1
+wireless.@wifi-iface[0]=wifi-iface
+wireless.@wifi-iface[0].device=radio0
+wireless.@wifi-iface[0].encryption=none
+wireless.@wifi-iface[0].mode=adhoc
+wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
+wireless.@wifi-iface[0].ssid=relais.reseaulibre.ca
+"""]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 

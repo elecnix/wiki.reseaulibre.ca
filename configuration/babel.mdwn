@@ -25,7 +25,7 @@ specific routes
 
 Another common configuration is to refuse the default route, which is:
 
-    in ip 0.0.0.0/0 le 0 deny
+    in ip 0.0.0.0/32 le 0 deny
 
 This is especially important on routers that *do* have network access,
 as babel will happily override existing routes in certain
@@ -111,6 +111,9 @@ Advantages of Babel over BATMAN
  3. multi-platform support (e.g. FreeBSD)
  4. uses real routing tables (easier to debug)
  5. tcpdump parses babel packets properly
+ 6. No need to change the MTU of some network interface to 1528, which means:
+ 7. Network interfaces can be edited with the web interface luci (mtu field does not accept values > 1500), which means:
+ 8. People afraid of command line and ssh could now configure their device
 
 Troubleshooting
 ===============
@@ -140,8 +143,39 @@ Also, during your tests, give some time for Babel to
 synchronise. Things can take a few seconds (count to 10) to
 synchronise.
 
+Config samples
+==============
+
+Here's my configuration:
+
+[[!format txt """
+# mesh IPv6
+redistribute local ip fd64:2c08:9fa7:1::1/128 metric 128
+redistribute local ip fd64:2c08:9fa7::1/128 metric 128
+redistribute ip fd64:2c08:9fa7::/48 metric 128
+# mesh IPv4
+redistribute local ip 172.16.0.1/32 metric 128
+# public IPv6
+redistribute local ip 2001:1928:1:9::/128 metric 128
+redistribute ip 2001:1928:1:9::/64 metric 128
+# IPv6 interconnect
+redistribute local ip 2001:1928:0:ffff::1b/128 metric 128
+redistribute ip 2001:1928:0:ffff::1a/128 metric 128
+# public IPv4
+redistribute local ip 72.0.72.144/32 metric 128
+# IPv4 interconnect
+redistribute ip 66.96.31.6/32 metric 128
+# default route
+redistribute ip 0.0.0.0/0 le 0 metric 128
+# IPv6 default route
+redistribute ip ::/4 metric 128
+# refuse anything else not explicitely allowed
+redistribute local deny
+redistribute deny
+"""]]
+
 References
 ==========
 
  * [HacDC setup notes](http://wiki.hacdc.org/index.php/Babel_Setup)
- * RFC [[!rfc 6126]]
+ * [[!rfc 6126]]

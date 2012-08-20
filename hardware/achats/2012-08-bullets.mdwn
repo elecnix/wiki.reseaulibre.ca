@@ -1,0 +1,25 @@
+Achat de bullet + antenne 15 dbi + injecteur POE
+
+* [[/users/elecnix]] 6 ([[/nodes/bb]], [[/nodes/val]],
+  [[/nodes/lacou]], [[/nodes/capitaine]], [[/nodes/btm2]],
+  [[/nodes/greene]]) - 6 antennes à ramasser, le reste ramassé et payé.
+* [[/users/gapzap]] 2 - à ramasser, à payer?
+* [[/users/tahini]] 3 - ramassé, à payer
+* [[/users/deuxpi]] 3 - ramassé, à payer
+* [[/users/scientist]] 2 - ramassé, à payer
+* [[/users/anarcat]] 2 ([[nodes/magicfab]], spare) - ramassé, payé 55$
+  à nicolas (balance de l'autre commande)
+* [[/users/bgm]] 1 - ramassé, à payer
+* [[/users/iwayMan]] 1 ramassé, payé à anarcat, repayé à nicolas (140$)
+
+total: 20
+
+9-août/gapzap: prix pour **20 kits**: 120$/kit --> 137.97$ tx in.
+
+10-août/gapzap: Command passée pour 20, Converbit prépare tout ça!
+
+15-août/gapzap: notre commande est prête pour le pick-up!
+
+16-août/gapzap: Richard a testé sa SMART en allant chercher tout ça!! - tout sera au RDV dimanche chez Koumbit - 
+
+[[done]] - livré au bureau de Koumbit.

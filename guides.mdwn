@@ -6,3 +6,5 @@ Those guides should help you getting started on some platforms.
 * [[guides/olsr+ipv6]] - configuration avec OLSR, IPv6 sur un [[nanostation]]
 * [[guides/robin]] - configuration d'une machine avec [[robin]]
 * [[guides/openwrt+webcam]] - connexion d'une webcam sur un routeur
+* [[Installation et configuration d'un noeud|guides/install+node+facile]] - Flashage et configuration d'openwrt via l'interface web, procédure simplifié
+* [[Sécurisation d'un noeud|guides/securing+device]] - Guide pour configurer le pare-feu du routeur, sécuriser la console ssh, l'interface web, etc.

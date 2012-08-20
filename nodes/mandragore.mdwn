@@ -9,7 +9,7 @@ My friends at mandragore may be able to put up a node.
  * Hardware:
  * Power:
  * Location:
- * Status: [[!taglink planned]]
+ * Status: [[!taglink prospect]]
  * Links: 
  * Azimuth:
  * Panorama: 

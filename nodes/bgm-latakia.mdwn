@@ -1,0 +1,69 @@
+[[!waypoint lat="45.465677" lon="-73.572797" embed hidden width="400px" height="400px" right desc="Node au 3e etage, bullet avec antenne 15dbi."]]
+
+# Détails techniques
+
+[[!ymlfront data="""
+MAC: DC:9F:DB:01:13:79
+IP: ..
+IPv6: ..
+"""]]
+
+ * hostname: homs
+ * MAC address: {{$MAC}}
+ * IPv6 address: {{$IPv6}}
+ * Link-local IPv6 address: n/a (wlan0), fe80::de9f:dbff:fe01:1379 (eth0), 2607:f2c0:f00f:2910:de9f:dbff:fe01:1379/64 (eth0)
+ * IP address: {{$IP}}
+ * Software: OpenWRT (Backfire) Trunk 2012-07-26
+ * Hardware: Ubiquity NanoStation M2
+ * Power: 28dBm
+ * Location: dans une fenêtre au 3e étage
+ * Azimuth: 120°
+ * Panorama: N/A
+ * Status: [[!taglink up]]
+ * Operator: [[users/bgm]]
+ * Links: [[bgm-homs]], [[hexa]], [[deuxpi]]
+
+# Photo
+
+[[!img  bgm-latakia.jpg size="600x798" alt="Bullet M2"]]
+
+# UCI
+
+# base
+uci delete wireless.radio0.disabled
+uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
+uci set system.@system[0].hostname=latakia
+
+# connexion réseau local
+uci set network.lan=interface
+uci set network.lan.ifname=eth0
+uci set network.lan.proto=dhcp
+
+# wifi
+uci delete wireless.@wifi-iface[0].network
+uci set wireless.radio0.channel=1
+uci set wireless.@wifi-iface[0].mode=adhoc
+uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
+uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
+uci set network.wlan0=interface
+uci set network.wlan0.ifname=wlan0
+uci set network.wlan0.proto=none
+uci set network.wlan0.mtu=1528
+
+#batman
+uci set network.bat0=interface
+uci set network.bat0.ifname=bat0
+uci set network.bat0.proto=none
+uci set network.bat0.mtu=1500
+
+uci set network.bat0.ipaddr=172.16.1.42
+uci set network.bat0.proto=static
+uci set network.bat0.netmask=255.255.0.0
+
+uci set batman-adv.bat0.interfaces="wlan0"
+uci commit
+reboot
+
+# packages
+opkg update
+opkg install kmod-ipv6 kmod-batman-adv babeld

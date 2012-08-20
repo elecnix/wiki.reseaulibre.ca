@@ -1,0 +1,128 @@
+Une petite lettre express pour vous livrer les dernières nouvelles du mois d'août, qui s'annonce être plein d'activités!
+
+[[!toc]]
+
+Festival d'installation dimanche
+================================
+
+[Koumbit][1] va vous accueillir dimanche pour un festival d'installation! Nous allons recevoir notre première [commande de groupe][2] et probablement configurer certaines de ces magnifiques machines. 
+
+Si vous avez des machines que vous voulez installer pour joindre le mesh, c'est un bon moment pour venir nous voir et essayer de vous joindre au projet! Que vous ayez un laptop ou un petit routeur de maison, il est fort probablement que vous puissiez vous joindre à nous. Nous utilisons principalement le projet [OpenWRT][3] donc consultez la [liste du matériel supporté][4] pour voir si votre routeur maison fonctionne.
+
+Donc rendez-vous 13h, dimanche le 19 août au 6833 de l'Épée bureau #308.
+
+ [1]: http://koumbit.org/
+ [2]: http://wiki.reseaulibre.ca/hardware/achats/2012-08-bullets/
+ [3]: http://openwrt.org/
+ [4]: http://wiki.openwrt.org/toh/start
+
+23 noeuds en ligne et bientôt plus
+==================================
+
+Nous avons établi quelques statistiques sur les noeuds déployés. Nous avons maintenant 23 stations en ligne, tout type confondus. 36 sont planifiés et nous avons 10 autres emplacements sur lesquels nos bénévoles gardent un oeil comme des bonnes possibilités. La [liste des nodes][5] a été mise à jour afin de montrer ces statistiques.
+
+Cette lettre comportera donc à l'avenir une section statistiques à chaque envoi.
+
+ [5]: http://wiki.reseaulibre.ca/nodes/#index2h1
+
+Dons en matériel acceptés
+=========================
+
+Nous acceptons désormais les [dons matériels][7]. Comme nous n'avons pas d'existence légale, le groupe ne peut rien posséder collectivement. La page "donate" présente une liste de personnes qui acceptent de recevoir les dons en matériel, en échange de quoi ils s'engageront à l'utiliser pour le réseau.
+
+Nous cherchons en particulier des [routeurs sans-fil][8], pour servir de points d'accès au réseau, des [câbles réseau][9] de grade extérieur, avec mise à la terre, des tubes en métal galvanisé, pour supporter les antennes et d'autres [bases d'antennes][10], comme des supports de soucoupe satellite.
+
+ [7]: http://wiki.reseaulibre.ca/donate/
+ [8]: http://wiki.reseaulibre.ca/hardware/routers/
+ [9]: http://wiki.reseaulibre.ca/hardware/cabling/
+ [10]: http://wiki.reseaulibre.ca/hardware/antennes/
+
+Rappel: Maker faire
+===================
+
+On vous rappel qu'on sera au [Mini Maker Faire de Montréal][6], tout comme plein d'autres projets palpitants! Joignez-vous à nous du 25 au 26 août au stade olympique!
+
+ [6]: http://www.makerfairemontreal.ca
+
+Horst: un analyseur spectral
+============================
+
+Un bénévole ([anarcat][11]) a fait un package Debian pour l'outil [horst][12], un analyseur spectral pour les cartes wifi. Le paquet est [en cours d'acceptation][13] dans les dépôts Debian principaux, mais il est malheureusement trop tard pour qu'il fasse partie du prochain release de Debian (wheezy). Vous devriez quand même être capable d'essayer le logiciel très bientôt, grâce à la magie des "backports". :)
+
+ [11]: http://wiki.reseaulibre.ca/users/anarcat
+ [12]: http://br1.einfach.org/tech/horst/
+ [13]: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=684440
+
+Les 5 libertés de la Free Network Foundation
+============================================
+
+Si tout se passe comme prévu, le Réseau Libre devrait adopter vendredi les [5 libertés][14] de la [Free Network Foundation][15]. Une [traduction][16] est en cours vers le français
+
+ * Freedom 0) The freedom to participate in the network.
+ * Freedom 1) The freedom to determine where one's bits are stored.
+ * Freedom 2) The freedom to determine the parties with whom one's bits are shared.
+ * Freedom 3) The freedom to transmit bits to one's peers without the prospect of interference, interception or censorship.
+ * Freedom 4) The freedom to maintain anonymity, or to present a unique, trusted identity.
+
+Une fois adoptée, cette politique sera ajouté à notre [liste de politiques existantes][17].
+
+ [14]: http://www.commons.freenetworkfoundation.org/index.php?title=Free_network_definition
+ [15]: http://freenetworkfoundation.org/
+ [16]: https://framapad.org/3RVAW1TLEP
+ [17]: http://wiki.reseaulibre.ca/policy/
+
+Statistiques
+============
+
+Les stations
+------------
+
+planned
+:	36
+
+up
+:	23
+
+prospect
+:	10 (nouveau tag!)
+
+test
+:	4
+
+unknown
+:	1
+
+down
+:	1
+
+Nombre d'inscrits
+-----------------
+
+nodes
+: 58
+
+nouvelles
+: 13
+
+Tout le monde est encouragé à joindre la nouvelle liste de nouvelles
+pour être au courant des derniers évènements et éviter le traffic de la
+liste principale:
+
+https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca
+
+Wiki
+----
+
+fichiers
+: 261
+
+lignes
+: 12350 (23108 added, 10758 removed)
+
+commits
+: 2206 (average 14.5 commits per active day, 7.1 per all days)
+
+authors
+: 57 (average 38.7 commits per author)
+
+PS: le wiki approche de son premier anniversaire, le 10 octobre!

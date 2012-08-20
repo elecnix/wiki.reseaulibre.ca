@@ -1,0 +1,7 @@
+Bonjour!
+
+Vous visitez probablement cette page car vous avez rencontré le nom de réseau sans fil `relais.reseaulibre.ca`, très bien! Cette page vise à expliquer brièvement le réseau que vous avez découvert.
+
+Il s'agit d'un relais dans le "réseau libre", un projet d'internet citoyen décentralisé. La connexion directe à un relais n'est pas recommandée, et exige une configuration spéciale. Pour accéder au réseau, recherchez plutôt le nom `acces.reseaulibre.ca`.
+
+L'accès au réseau est libre, et vous pouvez aussi [[participer]] à son déploiement. Pour plus d'information, consultez [[la page d'accueil|index]].

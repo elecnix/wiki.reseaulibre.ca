@@ -1,8 +1,8 @@
 This project is inspired, guided and sometimes in communication with the following projects:
 
 #Global
-* <http://freenetworkfoundation.org> The Free Network Foundation
-* <https://projectmeshnet.org/> The Project Meshnet
+* <http://freenetworkfoundation.org> - The Free Network Foundation
+* <https://projectmeshnet.org/> - The Project Meshnet
 
 #Europe
 * <http://www.opennet-initiative.de/> - Rostock
@@ -22,8 +22,8 @@ This project is inspired, guided and sometimes in communication with the followi
 
 #Amérique du Nord
 * <http://www.communifi.ca> - Mesh project in Toronto (in planning stage)
-* <http://www.pandaboard.org/content/pandamesh> PandaMesh - Northern Utah
-* <http://seattlemeshnet-nodeshot.appspot.com/> Seattle Meshnet
+* <http://www.pandaboard.org/content/pandamesh> - PandaMesh, Northern Utah
+* <http://seattlemeshnet-nodeshot.appspot.com/> - Seattle Meshnet
 
 #Amérique du sud et centrale
 * <http://buenosaireslibre.org/> - Buenos Aires, Argentine, un des plus importants réseaux libres en Amérique latine

@@ -150,7 +150,7 @@ Configure the wireless radio with Montreal [[configuration/ad-hoc]] standards:
     uci set wireless.radio0.channel=1
     uci set wireless.@wifi-iface[0].mode=adhoc
     uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
-    uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
+    uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
 
 Configure the wireless interface with a higher MTU to allow batman to decorate packets without causing fragmentation:
 

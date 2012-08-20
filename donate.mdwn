@@ -1,0 +1,23 @@
+# Dons en matériel
+
+Comme nous n'avons pas d'existence légale, le groupe ne peut rien posséder collectivement. Voici une liste de personnes qui acceptent de recevoir les dons en matériel, en échange de quoi ils s'engageront à l'utiliser pour le réseau.
+
+ * Nicolas Marchildon ([[users/elecnix]]) - 514 394-7847 - Nord-est de Montréal: Saint-Michel, Saint-Léonard, Montréal-Nord, Anjou, Villeray, Parc-Extension, Outremont, Rosemont, Plateau Mont-Royal
+ * Antoine Beaupré ([[users/anarcat]]) - [[twitter|http://twitter.com/theanarcat]], [[identi.ca|http://status.orangeseeds.org]] ou écrivez moi dans ma [[page personnelle|users/anarcat]] - zone: Rosemont, Plateau Mt-Royal, Centre-ville, sud-ouest (verdun max), est (pie-IX max), ahuntsic
+ * Pierre Gaudet ([[users/gapzap]]) - 514-692-4303 - 200km autour de Montréal!! (même plus si besoin)
+ * Richard Lussier ([[users/opa]]) - 514.574.5111 - Montréal et les environs
+
+## Règles
+
+ * N'importe qui peut ajouter son nom à la liste, mais ne doit pas ajouter le nom d'une autre personne.
+ * La personne doit fournir une façon d'être contactée, ainsi qu'une zone de déplacement.
+ * Celui qui affiche son nom peut avoir à se déplacer pour aller chercher le matériel.
+ * S'il ne peut pas récupérer le matériel avant deux semaines, il est invité à passer l'offre à quelqu'un d'autre.
+ * Le matériel devient propriété de celui qui reçoit le don, et est invité à offrir ce matériel gratuitement à son tour à la communauté s'il ne peut en faire usage personnellement.
+
+## Besoins particuliers
+
+ * Routeurs sans-fil, pour servir de points d'accès au réseau - voir [[hardware/routers]]
+ * Câble réseau de grade extérieur, avec mise à la terre - voir [[hardware/cabling]]
+ * Tubes en métal galvanisé, pour supporter les antennes - voir [[hardware/antennes]]
+ * Bases d'antennes, comme des supports de soucoupe satellite - idem

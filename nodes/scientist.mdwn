@@ -1,13 +1,10 @@
-[[!waypoint  lat="45.4717" lon="-73.570128" embed hidden width="400px" height="400px" right desc="A future node"]]
+[[!waypoint  lat="45.4717" lon="-73.570128" embed hidden width="400px" height="400px" right desc="My main node"]]
 
 [[!ymlfront data="""
-MAC: 
+MAC: 00:27:22:72:CF:9F
 IP: 172.16.1.28
 """]]
-Possibilité de poser une antenne. 
-
-Je ne sais pas encore si l'accès au toit est possible. A la limite, je peux poser une antenne à l'arrière au 3e étage
-
+Présentement à l'arrière au 3e étage. En attente d'accéder au toit pour l'installer de facon permanente
 
 
  * MAC address: {{$MAC}}
@@ -17,8 +14,41 @@ Je ne sais pas encore si l'accès au toit est possible. A la limite, je peux pos
  * Hardware: Ubiquiti Bullet M2HP + Ombi 8dbi
  * Power:
  * Location:
- * Status: [[!taglink planned]]
- * Links: [[nodes/deuxpi]] (down)
+ * Status: [[!taglink up]]
+ * Links: [[scientist-jardin]], [[deuxpi]]
  * Azimuth:
  * Panorama:
  * Operator: [[users/scientist]]
+
+
+Mes commandes UCI:
+
+	#basic stuff
+	uci delete wireless.radio0.disabled
+	uci set system.@system[0].hostname=scientist-batman
+	uci set network.lan.ipaddr=192.168.2.33
+	uci set network.lan.gateway=192.168.2.1
+	uci set network.lan.dns=192.168.2.1
+	uci set dhcp.lan.ignore=1
+	uci delete wireless.@wifi-iface[0].network
+	uci set wireless.radio0.channel=1
+	uci set wireless.@wifi-iface[0].mode=adhoc
+	uci set wireless.@wifi-iface[0].ssid=mesh-mtl
+	#uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
+	uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
+	uci set network.wlan0=interface
+	uci set network.wlan0.ifname=wlan0
+	uci set network.wlan0.proto=none
+	uci set network.wlan0.mtu=1528
+
+	#batman
+	uci set network.bat0=interface
+	uci set network.bat0.ifname=bat0
+	uci set network.bat0.proto=none
+	uci set network.bat0.mtu=1500
+
+	uci set network.bat0.ipaddr=172.16.1.28
+	uci set network.bat0.proto=static
+	uci set network.bat0.netmask=255.255.0.0
+
+	uci set batman-adv.bat0.interfaces="wlan0 br-lan"

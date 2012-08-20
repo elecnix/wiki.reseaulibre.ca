@@ -1,19 +1,97 @@
-[[!waypoint  lat="45.529245" lon="-73.579667" embed width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint  lat="45.529245" lon="-73.579667" embed hidden width="400px" height="400px" right desc="Antenne au-dessus du toit installée. Branchement prévu à la fin août 2012. Panorama disponible!"]]
 
-Possible node on roof.
+Antenne au-dessus du toit installée. Branchement prévu à la fin août 2012.
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software:
- * Hardware:
- * Power:
- * Location:
- * Status: [[!taglink planned]]
- * Links: 
- * Azimuth:
- * Panorama:
- * Operator: [[users/elecnix]]
+# Technical details
+
+[[!ymlfront data="""
+MAC: DC:9F:DB:00:13:76
+IP: 172.16.0.18
+IPv6: 
+"""]]
+
+hostname
+: bb
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: 
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: roof
+
+Azimuth
+: 360°
+
+Status
+: [[!taglink down]] (antenne installée, branchement prévu bientôt)
+
+Operator
+: [[users/elecnix]]
+
+Links
+: (none)
+
+## Panorama
+
+### Vue vers le sud (montréalais)
+
+[[!img 2012-08-18-bb-sud.jpg size=950x]]
+
+### Vue vers le nord
+
+[[!img 2012-08-18-bb-nord.jpg size=950x]]
+
+## Configuration
+
+<pre>
+uci delete wireless.radio0.disabled
+uci set system.@system[0].hostname=bb
+uci set network.lan.ifname="eth0"
+uci set network.lan.ipaddr=192.168.3.18
+uci set network.lan.gateway=192.168.3.1
+uci set network.lan.dns=192.168.3.1
+uci set network.lan.netmask=255.255.0.0
+uci set dhcp.lan.ignore=1
+uci commit
+reboot & exit
+ssh root@192.168.3.18
+
+uci delete wireless.@wifi-iface[0].network
+uci set wireless.radio0.channel=1
+uci set wireless.@wifi-iface[0].mode=adhoc
+uci set wireless.@wifi-iface[0].ssid=relais.reseaulibre.ca
+uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
+uci set network.wlan0=interface
+uci set network.wlan0.ifname=wlan0
+uci set network.wlan0.proto=none
+uci set network.wlan0.mtu=1528
+opkg update
+opkg install kmod-batman-adv
+uci set network.bat0=interface
+uci set network.bat0.ifname=bat0
+uci set network.bat0.proto=static
+uci set network.bat0.mtu=1500
+uci set network.bat0.ipaddr=172.16.0.18
+uci set network.bat0.netmask=255.240.0.0
+uci set batman-adv.bat0.interfaces="wlan0"
+uci commit
+reboot & exit
+</pre>
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 

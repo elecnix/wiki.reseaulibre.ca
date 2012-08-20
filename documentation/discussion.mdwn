@@ -1,0 +1,58 @@
+Je sais pas où mettre ça alors je dumpe ça ici pour l'instant.. peut-être une section "communication"?
+
+Invites
+=======
+
+Those are invites we can send people when we are almost convinced we can get them involved.
+
+A potential node on your roof
+-----------------------------
+
+So here's the proposal to join the Montreal Mesh project, also
+known as "Réseau libre":
+
+http://reseaulibre.ca/
+
+This would give you access to the resources and services hosted on the mesh, which are limited at this time, but that we want to expand to create a local internet that is controlled by the community, not the private companies or the government. This network will be uncensored and free. You would also help growing the network into your area, providing a valuable service for the community.
+
+What this would involve in terms of effort:
+
+ * access to the roof - we may be able to arrange for volunteers for the
+   actual install, including a ladder to climb on the roof
+
+ * get some fixture to setup the antenna (examples here:
+
+   http://wiki.reseaulibre.ca/hardware/antennes/
+
+ * run a network cable down from the roof
+
+ * get a router:
+
+   http://wiki.reseaulibre.ca/hardware/routers/
+
+We recommend a Ubiquity Bullet for this location. We have just bought 20
+of those for the project in a collective buying spree. :) They go for
+around 137$ a pop and look something like this:
+
+http://wiki.reseaulibre.ca/nodes/Grace/
+http://farm6.staticflickr.com/5468/6906283982_e0dd288d25_z.jpg
+
+Ideally, you would buy the device: I can sell you one, as it would be
+cheaper because we have a rebate because of the mass of devices. :) It's
+about 160-170$ for the kit. The idea is that each node operator is
+autonomous and owns its own hardware and can operate on it.
+
+If you want, you (or another member of your group) can join us tomorrow
+for the install fest when we are going to configure those devices:
+
+http://wiki.reseaulibre.ca/meetings/2012-08-19-install-fest/
+
+... otherwise if you can't find 140$, i may consider lending you the
+device, because I think your location is important. But this would come
+out of my pocket - we have no sponsors or funding of any kind, so
+involvement of peers is appreciated!
+
+I have also taken the liberty to add your location as a "prospect" in
+our node directory:
+
+http://wiki.reseaulibre.ca/nodes/NODENAMEHERE

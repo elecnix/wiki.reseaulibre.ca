@@ -1,0 +1,82 @@
+[[!waypoint lat="45.465677" lon="-73.572597" embed hidden width="400px" height="400px" right desc="AP au 3e etage."]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: (mac address here)
+IP: (pick one from [[policy/numbering]])
+IPv6: 
+"""]]
+
+hostname
+: (node hostname here)
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: 
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: (where is this node physically installed?)
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]] (can also be up, down, planned, unknown)
+
+Operator
+: [[users/bgm]]
+
+Links
+: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+
+# Commandes UCI
+
+    uci set network.lan=interface
+    uci set network.lan.ifname=eth0
+    uci set network.lan.proto=dhcp
+    uci set network.wan=interface
+    uci set network.wan.ifname=eth1
+    uci set network.wan.proto=dhcp
+    uci set network.wifi=interface
+    uci set network.wifi.ifname=wlan0
+    uci set network.wifi.proto=static
+    uci set network.wifi.ipaddr=192.168.52.1
+    uci set network.wifi.netmask=255.255.255.0
+    uci set network.wifi.ip6addr=2607:f2c0:f00f:29a2::1/64
+    uci set network.@switch[0]=switch
+    uci set network.@switch[0].name=eth0
+    uci set network.@switch[0].reset=1
+    uci set network.@switch[0].enable_vlan=1
+    uci set network.@switch_vlan[0]=switch_vlan
+    uci set network.@switch_vlan[0].device=eth0
+    uci set network.@switch_vlan[0].vlan=1
+    uci set network.@switch_vlan[0].ports=0 1 2 3 4
+    uci set wireless.@wifi-iface[0].network=wifi
+    uci set wireless.@wifi-iface[0]=wifi-iface
+    uci set wireless.@wifi-iface[0].device=radio0
+    uci set wireless.@wifi-iface[0].network=wifi
+    uci set wireless.@wifi-iface[0].mode=ap
+    uci set wireless.@wifi-iface[0].ssid=alep.acces.reseaulibre.ca
+    uci set wireless.@wifi-iface[0].encryption=psk2
+    uci set wireless.@wifi-iface[0].key= ....
+    uci commit
+
+NB: mes interfaces ne sont pas bridgées parce que je fais du routage. Il manque peut-être des configurations à noter..

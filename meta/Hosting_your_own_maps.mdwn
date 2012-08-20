@@ -1,0 +1,112 @@
+Pour un site qui n'a pas de garanti d'avoir toujours accès à internet (tel un wiki sur le mesh) il est utile d'héberger localement les cartes de la zone utile.  L'hébergement des cartes sert aussi à désengorger les serveurs d'OpenStreetMap qui fonctionnent par les dons de la communauté.
+
+Les instructions suivantes permettent de générer soi-même toutes les cartes en utilisant mapnik, postgis, osm2pgsql et les données d'OpenStreetMap.
+
+
+[[!toc]]
+
+# Préparer le système
+
+Pour un système Ubuntu, voici les commandes à exécuter pour obtenir les packages qui vont permettre de générer les tiles du openstreetmap
+
+    sudo add-apt-repository ppa:kakrueger/openstreetmap
+    sudo apt-get update
+    sudo apt-get install osm2pgsql postgis python-mapnik
+
+(!) Attention, la version du package python-mapnik doit être > 2.0.  Sur oneiric, c'était 0.7.1, j'ai donc dû faire la génération sur mon laptop archlinux pour avoir la version la plus récente
+
+# Obtenir les données géographiques du Québec et les mettre dans la BD
+
+Cette étape consiste à télécharger les données du Québec et les importer dans une BD postgis (BD préconfigurée par le package postgis dans postgresql).  Le fichier à télécharger fait 223 MB et une fois décompressé, la taille de la base de données est 3954 MB.
+
+Normalement, si le packages osm2pgsql et postgis ont été installés depuis le repository ppa:kakrueger/openstreetmap, la base de données gis devrait avoir été configurée au moment de l'installation du package et vous avez dû spécifier un usager (le vôtre) comme ayant droit d'accès à cette base de données. 
+
+Les fichiers de données géographiques pour une zone se trouve ici [[http://download.geofabrik.de/osm/]]
+
+Ensuite, pour les mettre dans la base de données avec osm2pgsql, exécuter la commande suivante avec un usager ayant accès à la base de données gis:
+
+    osm2pgsql --slim -C 1500 /opt/home/gen/dev/mapserver/quebec.osm.pbf 
+
+(!) Si osm2pgsql se plaint que la BD gis n'existe pas ou n'est pas prête, assurez-vous d'avoir bien installé le package osm2pgsql et postgis depuis le repository d'openstreetmap sudo add-apt-repository ppa:kakrueger/openstreetmap.
+
+
+# Utiliser mapnik pour générer les tiles
+
+Aller chercher les fichiers de mapnik 
+
+    svn export http://svn.openstreetmap.org/applications/rendering/mapnik
+    cd mapnik
+
+Pour générer les cartes de haut niveau, il faut aller chercher l'information sur les lignes de côtes et les frontières du monde.  Donc télécharger les fichiers suivants:
+
+    wget http://tile.openstreetmap.org/world_boundaries-spherical.tgz # (50 MB)
+    wget http://tile.openstreetmap.org/processed_p.tar.bz2 # (357 MB)
+    wget http://tile.openstreetmap.org/shoreline_300.tar.bz2 # (46 MB)
+    wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/10m-populated-places.zip # (1.5 MB)
+    wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/110m-admin-0-boundary-lines.zip # (38 KB)
+
+Ensuite décompresser tous ces fichiers dans un répertoire world_boundaries à l'intérieur du répertoire mapnik (ou ailleurs)
+
+    cd ~/mapnik
+    mkdir world_boundaries
+    tar xzf world_boundaries-spherical.tgz
+    tar xjf processed_p.tar.bz2 -C world_boundaries
+    tar xjf shoreline_300.tar.bz2 -C world_boundaries
+    unzip 10m-populated-places.zip -d world_boundaries
+    unzip 110m-admin-0-boundary-lines.zip -d world_boundaries
+
+Il faut d'abord générer le fichier osm.xml qui contient l'information pour générer les tiles.  Pour obtenir de l'aide sur la commnde à exécuter:
+
+    ./generate_xml.py -h
+
+La commande complète pour générer le xml ressemble à ceci.  Voir si les valeurs par défaut sont satisfaisantes.
+
+    ./generate_xml.py --host localhost --user dbuser --dbname gis --symbols ./symbols/ --world_boundaries ./world_boundaries/ --port 5432 --password 'something' --accept-none
+
+(!) Les scripts de mapnik utilisent python2 minimum, donc lors de l'exécution, s'il y a des erreurs de syntaxe, ce peut être à cause de la version de python.  Pour d'autre types d'erreurs, il se peut qu'il manque des packages.  Bien installer ceux de python2.
+
+Editer les fichiers generate_tiles.py ou generate_tiles_multiprocess.py pour spécifier les régions à générer et dans le cas du fichier _multiprocess le nombre de threads à exécuter:
+
+Pour le nombre de threads autour de la ligne 16
+
+    NUM_THREADS = 2
+
+Pour les boîtes à générer, c'est tout au bas du fichier et voici des valeurs pour le Québec et plus spéciquement Montréal.  À modifier selon la zone à couvrir, il s'agit des coordonnées géographiques (gauche,bas,droite,haut)
+
+    #-------------------------------------------------------------------------
+    #
+    # Change the following for different bounding boxes and zoom levels
+    #
+    # Start with an overview
+    # World
+    bbox = (-180.0,-90.0, 180.0,90.0)
+
+    render_tiles(bbox, mapfile, tile_dir, 0, 5, "World")
+
+    # quebec au complet: 
+    bbox = (-81.8465630328821,44.3740009888647,-55.5740165169154,62.5804862642291)
+    render_tiles(bbox, mapfile, tile_dir, 6, 10)
+
+    # quebec peuple
+    bbox = (-76.064758, 44.914249, -70.983582, 47.275502)
+    render_tiles(bbox, mapfile, tile_dir, 11, 15)
+
+    # montreal
+    bbox = (-74.022, 45.35, -73.406525, 45.74)
+    render_tiles(bbox, mapfile, tile_dir, 16, 18)
+
+Ensuite, pour générer les tiles, la commande suivante doit être appelée:
+
+    MAPNIK_MAP_FILE="osm.xml" MAPNIK_TILE_DIR="tiles/" ./generate_tiles[_multiprocess].py
+
+(!) C'est long... très long... Ça a pris plusieurs heures, voire quelques jours générer tout ça sur un laptop dual core.  Le Québec peuplé peut se contenter d'un zoom 14, ou alors la zone peut être rapetissée.
+
+Et voilà!  Les images sont dans le répertoire ./tiles!  Il reste à les déplacer sur le serveur web.
+
+************************************
+
+References
+
+* [[http://switch2osm.org/serving-tiles/]]
+* [[http://wiki.openstreetmap.org/wiki/Creating_your_own_tiles]]
+* [[http://wiki.openstreetmap.org/wiki/Mapnik#Rendering_with_Mapnik]]

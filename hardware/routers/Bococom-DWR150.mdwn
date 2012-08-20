@@ -1,0 +1,928 @@
+[[!toc levels=4]]
+
+# Name
+
+The router is unbranded, but may has the following model names, depending on the seller:
+
+ * Portable Mini 150M 802.11n WiFi Wireless 3G Router, model C1291
+ * TopLink RT-3GWT Wireless N Access Point 3G Travel Size Mobile Router
+ * Bococom DWR-150
+ * CW-G3 (CDR-King)
+ * Widemac SL-R7206
+
+# Identification
+
+This is a small router with a single antenna, with the front and back covered with a blue strip. Some may have a logo on its top. It opens by removing 4 screws under the router, and reveals a Ralink RT3050F chip. The board is identified as `XDX-RN502R V2.0`.
+
+[[!img RT-3GWT_2.jpg size="300x"]]
+
+[[!img bococom-bare.jpg]]
+
+More pictures: http://www.flickr.com/photos/elecnix/sets/72157629696033799
+
+# Specifications
+
+ * Wireless LAN: IEEE802.11 b / g / n, 2400-2483.5 MHz
+ * LAN: IEEE802.3/802.3u
+ * 1 RJ45 port LAN 10/100Base-TX
+ * 1 USB port (type A female)
+ * 1 indicateur de puissance
+ * 1 indicateur de réseau WLAN
+ * DC 12V @ 1A
+ * Power < 6W
+ * 88mm × 65mm × 23mm, 108 grams
+ * Working temperature: -10 ° C à +60 ° C
+ * Température de stockage: -20 ℃ à +70 ℃
+ * Humidité: 5% ~ 95% non-condensing
+ * CE Certified
+ * RoHS certification
+ * Chipset: Ralink 3050
+
+# Detection of original firmware
+
+    $ sudo nmap -P0 -O 192.168.0.1
+    
+    Starting Nmap 5.21 ( http://nmap.org ) at 2012-03-29 22:45 EDT
+    Nmap scan report for 192.168.0.1
+    Host is up (0.0016s latency).
+    Not shown: 996 closed ports
+    PORT     STATE SERVICE
+    23/tcp   open  telnet
+    53/tcp   open  domain
+    80/tcp   open  http
+    2869/tcp open  unknown
+    MAC Address: 00:B0:C0:01:8B:34 (Unknown)
+    Device type: media device|general purpose
+    Running: Chumby embedded, Linux 2.6.X
+    OS details: Chumby Internet radio, Linux 2.6.13 - 2.6.28
+    Network Distance: 1 hop
+    
+    OS detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+    Nmap done: 1 IP address (1 host up) scanned in 2.90 seconds
+
+So this appears to be running Linux, and mistaken to be a [[Chumby|http://en.wikipedia.org/wiki/Chumby]].
+
+$ nmap -P0 -sV 192.168.0.1
+
+    Starting Nmap 5.21 ( http://nmap.org ) at 2012-03-29 22:58 EDT
+    Nmap scan report for 192.168.0.1
+    Host is up (0.030s latency).
+    Not shown: 996 closed ports
+    PORT     STATE SERVICE    VERSION
+    23/tcp   open  telnet     Linksys WRT54G telnetd (Tomato firmware)
+    53/tcp   open  domain     dnsmasq 2.22
+    80/tcp   open  tcpwrapped
+    2869/tcp open  unknown
+    1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at http://www.insecure.org/cgi-bin/servicefp-submit.cgi :
+    SF-Port2869-TCP:V=5.21%I=7%D=3/29%Time=4F752165%P=i686-pc-linux-gnu%r(GetR
+    SF:equest,9F,"HTTP/1\.0\x20200\x20OK\r\nCONTENT-TYPE:\x20text/xml\r\nCONTE
+    SF:NT-LENGTH:\x200\r\nDATE:\x20Thu,\x2001\x20Jan\x201970\x2001:45:44\x20GM
+    SF:T\r\nSERVER:\x20Linux/2\.6\.21\x20UPnP/1\.0\x20myigd/1\.0\r\nCONNECTION
+    SF::\x20close\r\n\r\n");
+    Service Info: Device: WAP
+
+There's a telnet server, a DNS and web server, and something unknown on port 2869.
+
+Let's telnet into it, using the default `admin` username and `admin` password.
+
+    $ telnet 192.168.0.1
+    Trying 192.168.0.1...
+    Connected to 192.168.0.1.
+    Escape character is '^]'.
+    Router login: admin
+    Password: 
+    Welcome to  Bococom Router Series
+      For detailed information, please check:
+            www.bococom.com
+    
+    
+    BusyBox v1.12.1 (2010-11-26 17:38:48 CST) built-in shell (msh)
+    Enter 'help' for a list of built-in commands.
+    
+    # 
+
+The C1291 or Top Link RT3-GWT is revealing its name! Bococom is a company in [[Shenzhen|http://en.wikipedia.org/wiki/Shenzhen]], China.
+
+A search for Bococom leads to a thread on the DD-WRT forum about some people flashing a very similar router, but based on the Ralink 3052, which is the 300Mbit/s version, with two antennas instead of one.
+
+http://www.dd-wrt.com/phpBB2/viewtopic.php?t=82160&postdays=0&postorder=asc&start=30
+
+It links to the OpenWRT forum with essentially the same flashing procedure, which involves using a serial cable.
+
+https://forum.openwrt.org/viewtopic.php?pid=158105#p158105
+
+The firmware they flash the router with is for the Aceex NR22/Y, and the same company also makes the NR11/Y which is 150 Mbit/s 1T1R, most likely using the same Ralink 3050 as our Bococom. There are still ongoing discussions as of today, march 28 2012. In the DD-WRT database, only the Aceex NR22/Y is listed.
+
+Back to Bococom, they list the DWR150
+
+http://www.bococom.com/product.asp?ProdNum=134&zid=200909221828087028825
+
+There is no software available for download for this router on the Brococom web site:
+
+http://www.bococom.com/download.asp?type=DWR150
+
+# Getting access to the serial port
+
+I used an old [[Siemens IP-40 cellphone serial communication cable|http://pinouts.ru/CellularPhones-P-W/siemens_c55_pinout.shtml]] to connect to the TTL-level serial port on the PCB, inspired by the [[unbricking of a TP-Link MR3420|https://forum.openwrt.org/viewtopic.php?pid=158464]] and connected to the Bococom with minicom on Linux with the `57600 8N1` settings.
+
+If you want to do the same, we suggest to have a look at the [[Serial Console Documentation|http://wiki.openwrt.org/doc/hardware/port.serial]] on the OpenWRT wiki.
+
+[[!img bococom-serial.jpg]]
+
+# Serial Console Boot
+
+Here's the output:
+
+## Booting the Original Firmware
+
+    U-Boot 1.1.3 (Apr  7 2010 - 09:43:57)                                           
+                                                                                    
+    Board: Ralink APSoC DRAM:  32 MB                                                
+    relocate_code Pointer at: 81fac000                                              
+    ======= config usb otg =====                                                    
+    flash_protect ON: from 0xBF000000 to 0xBF0205C3                                 
+    protect on 0                                                                    
+    protect on 1                                                                    
+    protect on 2                                                                    
+    protect on 3                                                                    
+    protect on 4                                                                    
+    protect on 5
+    protect on 6                                                                    
+    protect on 7                                                                    
+    protect on 8                                                                    
+    protect on 9                                                                    
+    flash_protect ON: from 0xBF030000 to 0xBF03FFFF                                 
+    protect on 10                                                                   
+    *** Warning - bad CRC, using default environment                                
+                                                                                    
+    ============================================                                    
+    Ralink UBoot Version: 3.2                                                       
+    --------------------------------------------                                    
+    ASIC 3052_MP2 (Port5<->None)                                                    
+    DRAM COMPONENT: 256Mbits                                                        
+    DRAM BUS: 16BIT                                                                 
+    Total memory: 32 MBytes                                                         
+    Date:Apr  7 2010  Time:09:43:57                                                 
+    ============================================                                    
+    icache: sets:128, ways:4, linesz:32 ,total:16384                                
+    dcache: sets:128, ways:4, linesz:32 ,total:16384                                
+                                                                                    
+     ##### The CPU freq = 320 MHZ ####                                              
+                                                                                    
+    SDRAM bus set to 16 bit                                                         
+     SDRAM size =32 Mbytes                                                          
+                                                                                    
+    Please choose the operation:                                                    
+       1: Load system code to SDRAM via TFTP.                                       
+       2: Load system code then write to Flash via TFTP.                            
+       3: Boot system code via Flash (default).                                     
+       4: Entr boot command line interface.                                         
+       9: Load Boot Loader code then write to Flash via TFTP.                       
+                                                                                    
+    You choosed 3                                                                   
+                                                                                    
+     0                                                                              
+                                                                                    
+    3: System Boot system code via Flash.                                           
+    ## Booting image at bf050000 ...                                                
+       Image Name:   Linux Kernel Image                                             
+       Created:      2011-05-25   7:38:47 UTC                                       
+                                                                                    
+     System Control Status = 0x00400000                                             
+       Image Type:   MIPS Linux Kernel Image (lzma compressed)                      
+       Data Size:    3502016 Bytes =  3.3 MB                                        
+       Load Address: 80000000                                                       
+       Entry Point:  802d2000                                                       
+       Verifying Checksum ... OK                                                    
+       Uncompressing Kernel Image ... OK                                            
+    No initrd                                                                       
+    ## Transferring control to Linux (at address 802d2000) ...                      
+    ## Giving linux memsize in MB, 32                                               
+                                                                                    
+    Starting kernel ...                                                             
+                                                                                    
+                                                                                    
+    LINUX started...                                                                
+                                                                                    
+     THIS IS ASIC                                                                   
+                                                                                    
+    3G Router Start!                                                                
+
+Then the console goes silent and does not echo back what I type.
+
+## Boot command-line interface
+
+Turning off the router, then holding the '4' key, I get:
+
+
+    Please choose the operation:                                                    
+       1: Load system code to SDRAM via TFTP.                                       
+       2: Load system code then write to Flash via TFTP.                            
+       3: Boot system code via Flash (default).                                     
+       4: Entr boot command line interface.                                         
+       9: Load Boot Loader code then write to Flash via TFTP.                       
+                                                                                    
+    You choosed 4                                                                   
+                                                                                    
+     0                                                                              
+                                                                                    
+     eth_register                                                                   
+    Eth0 (10/100-M)                                                                 
+     enetvar=ethaddr,Eth addr:00:AA:BB:CC:DD:10                                     
+     00:AA:BB:CC:DD:10:                                                             
+                                                                                    
+     eth_current->name = Eth0 (10/100-M)                                            
+                                                                                    
+                                                                                    
+    4: System Enter Boot Command Line Interface.                                    
+                                                                                    
+    U-Boot 1.1.3 (Apr  7 2010 - 09:43:57)                                           
+                                                                                    
+     main_loop !!                                                                   
+                                                                                    
+     In main_loop !!                                                                
+                                                                                    
+                                                                                    
+                                                                                    
+     CONFIG_BOOTDELAY                                                               
+    ### main_loop entered: bootdelay=5                                              
+                                                                                    
+    ### main_loop: bootcmd="tftp"                                                   
+    RT3052 #                                    
+
+You may also press the Reset button while powering the router, and you will get 5 seconds to pick an option from the menu.
+
+## Environment Variables
+
+
+    RT3052 # printenv                                                               
+    bootcmd=tftp                                                                    
+    bootdelay=5                                                                     
+    baudrate=57600                                                                  
+    ethaddr="00:AA:BB:CC:DD:10"                                                     
+    ipaddr=10.10.10.123                                                             
+    serverip=10.10.10.3                                                             
+    preboot=echo;echo                                                               
+    ramargs=setenv bootargs root=/dev/ram rw                                        
+    addip=setenv bootargs $(bootargs) ip=$(ipaddr):$(serverip):$(gatewayip):$(netmask):$(hostname):$(netdev):off
+    addmisc=setenv bootargs $(bootargs) console=ttyS0,$(baudrate) ethaddr=$(ethaddr) panic=1
+    flash_self=run ramargs addip addmisc;bootm $(kernel_addr) $(ramdisk_addr)
+    kernel_addr=BFC40000                                                            
+    u-boot=u-boot.bin                                                               
+    load=tftp 8A100000 $(u-boot)                                                    
+    u_b=protect off 1:0-1;era 1:0-1;cp.b 8A100000 BC400000 $(filesize)              
+    loadfs=tftp 8A100000 root.cramfs                                                
+    u_fs=era bc540000 bc83ffff;cp.b 8A100000 BC540000 $(filesize)                   
+    test_tftp=tftp 8A100000 root.cramfs;run test_tftp                               
+    stdin=serial                                                                    
+    stdout=serial                                                                   
+    stderr=serial                                                                   
+    ethact=Eth0 (10/100-M)                                                          
+                                                                                    
+    Environment size: 783/65532 bytes                                               
+    RT3052
+
+## Command-line Help
+
+    RT3052 # help                                                                   
+    ?       - alias for 'help'                                                      
+    boot    - boot default, i.e., run 'bootcmd'                                     
+    bootd   - boot default, i.e., run 'bootcmd'                                     
+    bootm   - boot application image from memory                                    
+    bootp   - boot image via network using BootP/TFTP protocol                      
+    cp      - memory copy                                                           
+    echo    - echo args to console                                                  
+    erase   - erase FLASH memory                                                    
+    go      - start application at address 'addr'                                   
+    help    - print online help                                                     
+    loadb   - load binary file over serial line (kermit mode)                       
+    md      - memory display                                                        
+    mdio   - Ralink PHY register R/W command !!                                     
+    mm      - memory modify (auto-incrementing)                                     
+    mw      - memory write (fill)                                                   
+    nm      - memory modify (constant address)                                      
+    printenv- print environment variables                                           
+    protect - enable or disable FLASH write protection                              
+    reset   - Perform RESET of the CPU                                              
+    run     - run commands in an environment variable                               
+    saveenv - save environment variables to persistent storage                      
+    setenv  - set environment variables                                             
+    spicmd  - read/write data from/to eeprom or vtss                                
+    tftpboot- boot image via network using TFTP protocol                            
+    loopback   - Ralink eth loopback test !!                                        
+    version - print monitor version                                                 
+    RT3052 # 
+
+### help bootm
+
+    RT3052 # help bootm
+    bootm [addr [arg ...]]
+        - boot application image stored in memory
+            passing arguments 'arg ...'; when booting a Linux kernel,
+            'arg' can be the address of an initrd image
+### help bootd
+
+    RT3052 # help bootd
+    bootd - No help available.
+
+### help bootp
+
+    RT3052 # help bootp
+    bootp [loadAddress] [bootfilename]
+
+### help cp
+
+    RT3052 # help cp
+    cp [.b, .w, .l] source target count
+        - copy memory
+
+### help echo
+
+    RT3052 # help echo
+    echo [args..]
+        - echo args to console; \c suppresses newline
+
+### help erase
+
+    RT3052 # help erase
+    erase start end
+        - erase FLASH from addr 'start' to addr 'end'
+    erase N:SF[-SL]
+        - erase sectors SF-SL in FLASH bank # N
+    erase bank N
+        - erase FLASH bank # N
+    erase all
+        - erase all FLASH banks
+    erase linux
+        - erase linux kernel block
+
+### help go
+
+    RT3052 # help go
+    go addr [arg ...]
+        - start application at address 'addr'
+          passing 'arg' as arguments
+
+### help loadb
+
+    RT3052 # help loadb
+    loadb [ off ] [ baud ]
+        - load binary file over serial line with offset 'off' and baudrate 'baud'
+
+### help md
+
+    RT3052 # help md
+    md [.b, .w, .l] address [# of objects]
+        - memory display
+
+### help mdio
+
+    RT3052 # help mdio
+    mdio mdio.r [phy_addr(dec)] [reg_addr(dec)] 
+    mdio.w [phy_addr(dec)] [reg_addr(dec)] [data(HEX)] 
+    mdio.anoff GMAC1 Force link status enable !!  
+    mdio.anon GMAC1 Force link status disable !!  
+    mdio.wb [phy register(dec)] [bit offset(Dec)] [Value(0/1)]  
+
+### help mm
+
+    RT3052 # help mm
+    mm [.b, .w, .l] address
+        - memory modify, auto increment address
+
+### help mw
+
+    RT3052 # help mw
+    mw [.b, .w, .l] address value [count]
+        - write memory
+
+### help nm
+
+    RT3052 # help nm
+    nm [.b, .w, .l] address
+        - memory modify, read and keep address
+
+### help printenv
+
+    RT3052 # help printenv 
+    printenv 
+        - print values of all environment variables
+    printenv name ...
+        - print value of environment variable 'name'
+
+### help protect
+
+    RT3052 # help protect
+    protect on  start end
+        - protect FLASH from addr 'start' to addr 'end'
+    protect on  N:SF[-SL]
+        - protect sectors SF-SL in FLASH bank # N
+    protect on  bank N
+        - protect FLASH bank # N
+    protect on  all
+        - protect all FLASH banks
+    protect off start end
+        - make FLASH from addr 'start' to addr 'end' writable
+    protect off N:SF[-SL]
+        - make sectors SF-SL writable in FLASH bank # N
+    protect off bank N
+        - make FLASH bank # N writable
+    protect off all
+        - make all FLASH banks writable
+
+### help reset
+
+    RT3052 # help reset
+    reset - No help available.
+
+### help run
+
+    RT3052 # help run
+    run var [...]
+        - run the commands in the environment variable(s) 'var'
+
+### help saveenv
+
+    RT3052 # help saveenv
+    saveenv - No help available.
+
+### help setenv
+
+    RT3052 # help setenv
+    setenv name value ...
+        - set environment variable 'name' to 'value ...'
+    setenv name
+        - delete environment variable 'name'
+
+### help spicmd
+
+    RT3052 # help spicmd
+    spicmd spicmd usage:
+      spicmd eeprom read [address]
+      spicmd eeprom write [size] [address] [value]
+      spicmd eeprom dump
+      spicmd vtss read [block] [sub-block] [address]
+      spicmd vtss write [block] [sub-block] [address] [value]
+        NOTE: size is 1, 2, 4 bytes only, address and value are in hex
+
+### help tftpboot
+
+    RT3052 # help tftpboot 
+    tftpboot [loadAddress] [bootfilename]
+
+### help version
+
+    RT3052 # help version
+    version - No help available
+
+# Linux Kernel Boot Log
+
+Here is the output when booting with option 1, with image from http://necromant.ath.cx/files/arthelail/2011.08.16/openwrt-ramips-rt305x-unbranded-3gn-squashfs-sysupgrade.bin
+
+    CPU revision is: 0001964c (MIPS 24Kc)
+    Ralink RT3350   id:1 rev:2 running at 320.00 MHz
+    Determined physical RAM map:
+     memory: 02000000 @ 00000000 (usable)
+    Initrd not found or empty - disabling initrd
+    Zone PFN ranges:
+      Normal   0x00000000 -> 0x00002000
+    Movable zone start PFN for each node
+    early_node_map[1] active PFN ranges
+        0: 0x00000000 -> 0x00002000
+    Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8128
+    Kernel command line:  board=UNBRANDED-3GN mtdparts=physmap-flash.0:192k(u-boot)ro,64k(u-boot-env)ro,64k(factory)ro,960k(kernel),2816k(rootfs),2
+    PID hash table entries: 128 (order: -3, 512 bytes)
+    Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+    Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+    Primary instruction cache 16kB, VIPT, 4-way, linesize 32 bytes.
+    Primary data cache 16kB, 4-way, VIPT, no aliases, linesize 32 bytes
+    Writing ErrCtl register=00000000
+    Readback ErrCtl register=00000000
+    Memory: 29880k/32768k available (1966k kernel code, 2888k reserved, 344k data, 152k init, 0k highmem)
+    SLUB: Genslabs=9, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+    NR_IRQS:48
+    console [ttyS1] enabled, bootconsole disabled
+    console [ttyS1] enabled, bootconsole disabled
+    Calibrating delay loop... 212.58 BogoMIPS (lpj=1062912)
+    pid_max: default: 32768 minimum: 301
+    Mount-cache hash table entries: 512
+    NET: Registered protocol family 16
+    MIPS: machine is Unbranded 3GN router from DX
+    bio: create slab <bio-0> at 0
+    usbcore: registered new interface driver usbfs
+    usbcore: registered new interface driver hub
+    usbcore: registered new device driver usb
+    Switching to clocksource MIPS
+    NET: Registered protocol family 2
+    IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+    TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+    TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+    TCP: Hash tables configured (established 1024 bind 1024)
+    TCP reno registered
+    UDP hash table entries: 256 (order: 0, 4096 bytes)
+    UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+    NET: Registered protocol family 1
+    squashfs: version 4.0 (2009/01/31) Phillip Lougher
+    JFFS2 version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+    msgmni has been set to 58
+    io scheduler noop registered
+    io scheduler deadline registered (default)
+    Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+    serial8250: ttyS0 at MMIO 0x10000500 (irq = 13) is a 16550A
+    serial8250: ttyS1 at MMIO 0x10000c00 (irq = 20) is a 16550A
+    physmap platform flash device: 00800000 at bf000000
+    physmap-flash.0: Found 1 x16 devices at 0x0 in 16-bit bank. Manufacturer ID 0x0000c2 Chip ID 0x0022a8
+    Amd/Fujitsu Extended Query Table at 0x0040
+      Amd/Fujitsu Extended Query version 1.1.
+    number of CFI chips: 1
+    6 cmdlinepart partitions found on MTD device physmap-flash.0
+    Creating 6 MTD partitions on "physmap-flash.0":
+    0x000000000000-0x000000030000 : "u-boot"
+    0x000000030000-0x000000040000 : "u-boot-env"
+    0x000000040000-0x000000050000 : "factory"
+    0x000000050000-0x000000140000 : "kernel"
+    0x000000140000-0x000000400000 : "rootfs"
+    mtd: partition "rootfs" set to be root filesystem
+    split_squashfs: no squashfs found in "physmap-flash.0"
+    0x000000050000-0x000000400000 : "firmware"
+    dwc_otg: version 2.72a 24-JUN-2008
+    dwc_otg: Core Release: 2.66a
+    dwc_otg: Periodic Transfer Interrupt Enhancement - disabled
+    dwc_otg: Multiprocessor Interrupt Enhancement - disabled
+    dwc_otg: Using DMA mode
+    dwc_otg: Device using Buffer DMA mode
+    dwc_otg lm0: DWC OTG Controller
+    dwc_otg lm0: new USB bus registered, assigned bus number 1
+    dwc_otg lm0: irq 26, io mem 0x00000000
+    dwc_otg: Init: Port Power? op_state=1
+    dwc_otg: Init: Power Port (0)
+    hub 1-0:1.0: USB hub found
+    hub 1-0:1.0: 1 port detected
+    TCP westwood registered
+    NET: Registered protocol family 17
+    802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+    All bugs added by David S. Miller <davem@redhat.com>
+[...]
+
+    jffs2_scan_eraseblock(): Magic bitmask 0x1985 not found at 0x00290020: 0x4f10 instead
+    jffs2_scan_eraseblock(): Magic bitmask 0x1985 not found at 0x00290024: 0x0781 instead
+    Further such events for this erase block will not be printed
+    Cowardly refusing to erase blocks on filesystem with no valid JFFS2 nodes
+    empty_blocks 2, bad_blocks 0, c->nr_blocks 44
+    VFS: Cannot open root device "(null)" or unknown-block(31,4)
+    Please append a correct "root=" boot option; here are the available partitions:
+    1f00             192 mtdblock0  (driver?)
+    1f01              64 mtdblock1  (driver?)
+    1f02              64 mtdblock2  (driver?)
+    1f03             960 mtdblock3  (driver?)
+    1f04            2816 mtdblock4  (driver?)
+    1f05            3776 mtdblock5  (driver?)
+    Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(31,4)
+
+A custom build with ramdisk as the target image actually boots and gives a shell prompt.
+
+Type `make menuconfig` in the OpenWRT source, and pick:
+
+ * Target System: Ralink RT288x/RT3xxx
+ * Subtarget: RT305x based boards
+ * Target Profile Default Profile
+ * Target images: ramdisk
+
+You should also [[compile batman-adv|http://wiki.openwrt.org/inbox/mesh.batman]] too if you plan to use this for a mesh node, and do not forget `debugfs`, which is used by `batctl`:
+
+ * Global build settings / Compile the kernel with Debug FileSystem enabled
+
+Original MTD flash backup:
+
+    root@OpenWrt:/tmp# dd if=/dev/mtd0 of=/tmp/mtd0
+    384+0 records in
+    384+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd1 of=/tmp/mtd1
+    128+0 records in
+    128+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd2 of=/tmp/mtd2
+    128+0 records in
+    128+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd3 of=/tmp/mtd3
+    1792+0 records in
+    1792+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd4 of=/tmp/mtd4
+    5760+0 records in
+    5760+0 records out
+    root@OpenWrt:/tmp# dd if=/dev/mtd5 of=/tmp/mtd4
+    root@OpenWrt:/tmp# dd if=/dev/mtd5 of=/tmp/mtd5
+    7552+0 records in
+    7552+0 records out
+
+I'm asking for help on the OpenWRT forum: https://forum.openwrt.org/viewtopic.php?pid=165814
+
+# Flashing
+
+## Configuration of TFTP Server: dnsmasq
+
+Install dnsmasq:
+
+    sudo apt-get install dnsmasq
+
+Edit `/etc/dnsmasq.conf`:
+
+    # Enable dnsmasq's built-in TFTP server
+    enable-tftp
+
+    # Set the root directory for files available via FTP.
+    tftp-root=/var/ftpd
+
+Apply the changes by restarting dnsmasq:
+
+    sudo /etc/init.d/dnsmasq restart
+
+Create the folder where you'll put the image:
+
+    sudo mkdir /var/ftpd
+
+Download the image:
+
+    wget http://marchildon.net/openwrt/xdx-rn502r/openwrt-ramips-rt305x-xdxrn502r-squashfs-sysupgrade.bin
+
+Copy the images to the server's folder, and give it a shorter name:
+
+    sudo cp openwrt-ramips-rt305x-xdxrn502r-squashfs-sysupgrade.bin /var/ftpd/bococom.bin
+
+## Testing OpenWRT from Serial Console
+
+At boot, select option 1, then provide the IP address the router should have for flashing (192.168.1.1), the IP address of your computer plugged into the router (192.168.1.2) and the file you want to boot: bococom-test.bin
+
+## Flashing OpenWRT from Serial Console
+
+Choose option 2 at boot, specify the IP addresses just like when testing, but provide the squashfs image: bococom-flash.bin
+
+    2: System Load Linux Kernel then write to Flash via TFTP.                       
+     Warning!! Erase Linux in Flash then burn new one. Are you sure?(Y/N)           
+     Please Input new ones /or Ctrl-C to discard                                    
+            Input device IP (192.168.1.1) ==:                                       
+                                                                                    
+            Input server IP (192.168.1.2) ==:                                       
+                                                                                    
+            Input Linux Kernel filename (xdxrn502r.bin) ==:bococom.bin        
+                                                                                    
+     netboot_common, argc= 3                                                        
+     *************buf = 0x81fcc740                                                  
+     **********NexTxPacket = 81fe4840                                               
+                                                                                    
+     NetTxPacket = 0x81FE4840                                                       
+                                                                                    
+     NetRxPackets[0] = 0x81FE4E40                                                   
+                                                                                    
+     NetRxPackets[1] = 0x81FE5440                                                   
+                                                                                    
+     NetRxPackets[2] = 0x81FE5A40                                                   
+                                                                                    
+     NetRxPackets[3] = 0x81FE6040                                                   
+                                                                                    
+     NetRxPackets[4] = 0x81FE6640                                                   
+                                                                                    
+     NetRxPackets[5] = 0x81FE6C40                                                   
+                                                                                    
+     NetRxPackets[6] = 0x81FE7240                                                   
+                                                                                    
+     NetRxPackets[7] = 0x81FE7840                                                   
+                                                                                    
+     NetRxPackets[8] = 0x81FE7E40                                                   
+                                                                                    
+     NetRxPackets[9] = 0x81FE8440                                                   
+                                                                                    
+     NetRxPackets[10] = 0x81FE8A40                                                  
+                                                                                    
+     NetRxPackets[11] = 0x81FE9040                                                  
+                                                                                    
+     NetRxPackets[12] = 0x81FE9640                                                  
+                                                                                    
+     NetRxPackets[13] = 0x81FE9C40                                                  
+                                                                                    
+     NetRxPackets[14] = 0x81FEA240                                                  
+                                                                                    
+     NetRxPackets[15] = 0x81FEA840                                                  
+                                                                                    
+     NetRxPackets[16] = 0x81FEAE40                                                  
+                                                                                    
+     NetRxPackets[17] = 0x81FEB440                                                  
+                                                                                    
+     NetRxPackets[18] = 0x81FEBA40                                                  
+                                                                                    
+     NetRxPackets[19] = 0x81FEC040                                                  
+                                                                                    
+     KSEG1ADDR(NetTxPacket) = 0xA1FE4840                                            
+                                                                                    
+     NetLoop,call eth_halt !                                                        
+                                                                                    
+     NetLoop,call eth_init !                                                        
+    Trying Eth0 (10/100-M)                                                          
+                                                                                    
+     Waitting for RX_DMA_BUSY status Start... done                                  
+                                                                                    
+     Header Payload scatter function is Disable !!                                  
+                                                                                    
+     ETH_STATE_ACTIVE!!                                                             
+    Using Eth0 (10/100-M) device                                                    
+    TFTP from server 192.168.1.2; our IP address is 192.168.1.1                     
+    Filename 'xdxrn502r-f.bin'.                                                     
+                                                                                    
+     TIMEOUT_COUNT=10,Load address: 0x80100000                                      
+    Loading: Got ARP REPLY, set server/gtwy eth addr (00:50:ba:0d:35:9e)            
+    Got it                                                                          
+    T #                                                                             
+     first block received                                                           
+    ################################################################                
+             #################################################################      
+             #################################################################      
+             #################################################################      
+             #################################################################      
+             #################################################################      
+             #################################################################      
+             ################################                                       
+    done                                                                            
+    Bytes transferred = 2490372 (260004 hex)                                        
+    NetBootFileXferSize= 00260004                                                   
+    Erase linux kernel block !!                                                     
+    From 0xBF050000 To 0xBF2BFFFF                                                   
+                                                                                    
+     b_end =BF3FFFFF                                                                
+    Erase Flash from 0xbf050000 to 0xbf2bffff in Bank # 1                           
+                                                                                    
+     erase sector  = 12                                                             
+    sect = 12,s_last = 50,erase poll = 862490                                       
+                                                                                    
+     erase sector  = 13                                                             
+    sect = 13,s_last = 50,erase poll = 887050                                       
+                                                                                    
+     erase sector  = 14                                                             
+    *sect = 14,s_last = 50,erase poll = 876172                                      
+                                                                                    
+     erase sector  = 15                                                             
+    sect = 15,s_last = 50,erase poll = 887384                                       
+                                                                                    
+     erase sector  = 16                                                             
+    *sect = 16,s_last = 50,erase poll = 863202                                      
+                                                                                    
+     erase sector  = 17                                                             
+    sect = 17,s_last = 50,erase poll = 864672                                       
+                                                                                    
+     erase sector  = 18                                                             
+    sect = 18,s_last = 50,erase poll = 890738                                       
+                                                                                    
+     erase sector  = 19                                                             
+    *sect = 19,s_last = 50,erase poll = 863479                                      
+                                                                                    
+     erase sector  = 20                                                             
+    sect = 20,s_last = 50,erase poll = 874541                                       
+                                                                                    
+     erase sector  = 21                                                             
+    *sect = 21,s_last = 50,erase poll = 898728                                      
+                                                                                    
+     erase sector  = 22                                                             
+    sect = 22,s_last = 50,erase poll = 887842                                       
+                                                                                    
+     erase sector  = 23                                                             
+    *sect = 23,s_last = 50,erase poll = 864332                                      
+                                                                                    
+     erase sector  = 24                                                             
+    sect = 24,s_last = 50,erase poll = 900177                                       
+                                                                                    
+     erase sector  = 25                                                             
+    sect = 25,s_last = 50,erase poll = 887867                                       
+                                                                                    
+     erase sector  = 26                                                             
+    *sect = 26,s_last = 50,erase poll = 894720                                      
+                                                                                    
+     erase sector  = 27                                                             
+    sect = 27,s_last = 50,erase poll = 864177                                       
+                                                                                    
+     erase sector  = 28                                                             
+    *sect = 28,s_last = 50,erase poll = 884890                                      
+                                                                                    
+     erase sector  = 29                                                             
+    sect = 29,s_last = 50,erase poll = 879023                                       
+                                                                                    
+     erase sector  = 30                                                             
+    *sect = 30,s_last = 50,erase poll = 863664                                      
+                                                                                    
+     erase sector  = 31                                                             
+    sect = 31,s_last = 50,erase poll = 901956                                       
+                                                                                    
+     erase sector  = 32                                                             
+    sect = 32,s_last = 50,erase poll = 882317                                       
+                                                                                    
+     erase sector  = 33                                                             
+    *sect = 33,s_last = 50,erase poll = 863698                                      
+                                                                                    
+     erase sector  = 34                                                             
+    sect = 34,s_last = 50,erase poll = 863779                                       
+                                                                                    
+     erase sector  = 35                                                             
+    *sect = 35,s_last = 50,erase poll = 876729                                      
+                                                                                    
+     erase sector  = 36                                                             
+    sect = 36,s_last = 50,erase poll = 874723                                       
+                                                                                    
+     erase sector  = 37                                                             
+    sect = 37,s_last = 50,erase poll = 867728                                       
+                                                                                    
+     erase sector  = 38                                                             
+    *sect = 38,s_last = 50,erase poll = 878086                                      
+                                                                                    
+     erase sector  = 39                                                             
+    sect = 39,s_last = 50,erase poll = 884085                                       
+                                                                                    
+     erase sector  = 40                                                             
+    *sect = 40,s_last = 50,erase poll = 890798                                      
+                                                                                    
+     erase sector  = 41                                                             
+    sect = 41,s_last = 50,erase poll = 888390                                       
+                                                                                    
+     erase sector  = 42                                                             
+    *sect = 42,s_last = 50,erase poll = 864276                                      
+                                                                                    
+     erase sector  = 43                                                             
+    sect = 43,s_last = 50,erase poll = 874877                                       
+                                                                                    
+     erase sector  = 44                                                             
+    sect = 44,s_last = 50,erase poll = 882002                                       
+                                                                                    
+     erase sector  = 45                                                             
+    *sect = 45,s_last = 50,erase poll = 868414                                      
+                                                                                    
+     erase sector  = 46                                                             
+    sect = 46,s_last = 50,erase poll = 898189                                       
+                                                                                    
+     erase sector  = 47                                                             
+    *sect = 47,s_last = 50,erase poll = 889159                                      
+                                                                                    
+     erase sector  = 48                                                             
+    sect = 48,s_last = 50,erase poll = 888447                                       
+                                                                                    
+     erase sector  = 49                                                             
+    *sect = 49,s_last = 50,erase poll = 884581                                      
+                                                                                    
+     erase sector  = 50                                                             
+    sect = 50,s_last = 50,erase poll = 872685                                       
+     done                                                                           
+    Erased 39 sectors                                                               
+                                                                                    
+     Copy linux image[2490372 byte] to Flash[0xBF050000]....                        
+    Copy to Flash...                                                                
+     Copy 2490372 byte to Flash...                                                  
+     addr = 0xBF0B1182 ,cnt=2092674                                                 
+     addr = 0xBF1122F2 ,cnt=1694994                                                 
+     addr = 0xBF17316A ,cnt=1298074                                                 
+     addr = 0xBF1D430A ,cnt=900346                                                  
+     addr = 0xBF235480 ,cnt=502660                                                  
+     addr = 0xBF296A60 ,cnt=103844 done                                             
+    ## Booting image at bf050000 ...                                                
+       Image Name:   MIPS OpenWrt Linux-3.3.3                                       
+       Created:      2012-04-28   2:50:47 UTC                                       
+                                                                                    
+     System Control Status = 0x00400000                                             
+       Image Type:   MIPS Linux Kernel Image (lzma compressed)                      
+       Data Size:    832013 Bytes = 812.5 kB                                        
+       Load Address: 80000000                                                       
+       Entry Point:  80000000                                                       
+       Verifying Checksum ... OK                                                    
+       Uncompressing Kernel Image ... OK                                            
+    No initrd                                                                       
+    ## Transferring control to Linux (at address 80000000) ...                      
+    ## Giving linux memsize in MB, 32                                               
+                                                                                    
+    Starting kernel ...                                                             
+                                                                                    
+    [    0.000000] Linux version 3.3.3 (nicolas@cortex) (gcc version 4.6.3 201202012
+
+## After Flashing
+
+For some reason, a wrong MAC address for the wireless interface is specified in the image. To let OpenWRT figure the MAC correctly, remove the bad config:
+
+    uci delete wireless.radio0.macaddr
+    uci commit && reboot
+
+## Install B.A.T.M.A.N.
+
+No need to. It's already compiled in the kernel and batctl is in the image :) See the [Batman on OpenWRT Guide](/guides/openwrt+batman/), but skip the BATMAN installation.
+
+# Building your own image
+
+If you have used the `openwrt-ramips-rt305x-xdxrn502r-squashfs-sysupgrade.bin` image, you may wonder what it is. This Bococom is not officially supported by OpenWRT just yet; we have a patch that we're working on, in a [[branch on Github|https://github.com/elecnix/openwrt/tree/xdx-rn502r]].
+
+Here's how to get the source:
+
+    git clone git://github.com/mirrors/openwrt.git
+    git remote add elecnix git://github.com/elecnix/openwrt.git
+    git fetch elecnix
+    git checkout -b xdx-rn502r elecnix/xdx-rn502r
+
+Then proceed as usual, as per the OpenWRT [[readme|https://github.com/mirrors/openwrt#readme]] and the [[build howto|http://wiki.openwrt.org/doc/howto/build]]. Don't forget to add [[BATMAN|http://wiki.openwrt.org/inbox/mesh.batman]]!
+
+# TO DO / À faire
+
+ * Pourquoi l'interface eth0 ne communique pas? Parce qu'il faut utiliser eth0.2!
+ * (?) Pourquoi l'adresse MAC est à 00:11:22:33:44:55 après flashing?
+ * Soumettre patch à OpenWRT
+ * Tester carte wifi USB

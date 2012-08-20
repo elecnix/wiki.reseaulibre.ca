@@ -2,14 +2,14 @@
 
 
 
- * MAC address:
- * IP address:
+ * MAC address: 00:27:22:EC:3A:40
+ * IP address: 172.16.1.199
  * IPv6 address:
  * Software:
- * Hardware:
+ * Hardware: Ubiquiti Nanostation LOCO M2
  * Power:
  * Location:
- * Status: [[!taglink planned]] 
+ * Status: [[!taglink up]]
  * Links: 
  * Azimuth:
  * Panorama:

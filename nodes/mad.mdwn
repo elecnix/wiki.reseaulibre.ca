@@ -1,0 +1,57 @@
+[[!waypoint lat="45.4595" lon="-73.5676" embed hidden width="400px" height="400px" right desc="Noeud potentiel"]]
+Possibilité d'un noeud, sur toit au 3e étage. La vue vers l'est est bloquée. 
+# Technical details
+
+[[!ymlfront data="""
+MAC: (mac address here)
+IP: (pick one from [[policy/numbering]])
+IPv6: 
+"""]]
+
+hostname
+: tbd
+
+MAC address
+: tbd
+
+IPv6 address
+: tbd
+
+IP address
+: tbd
+
+Software
+: 
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: 3e étage
+
+Azimuth
+: 
+Panorama
+: N/A
+
+Status
+: [[!taglink planned]] 
+
+Operator
+: [[users/mad]]
+
+Links
+: 
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]

@@ -1,7 +1,11 @@
 # Nicolas Marchildon
-[[!img nicolas_300.jpg align="left" size="150x"]]
+[[!img nicolas_300.jpg align="right" size="150x"]]
 Je suis programmeur. J'ai installé une antenne chez moi pour communiquer avec mon frère avant la naissance du projet, qui m'a intéressé parce qu'il permettra d'éviter le goulot d'étranglement des connexions internet DSL ou câble.
 
-Je suis intéressé à bâtir des noeuds pas chers, à l'aide de routeurs qu'on retrouve un peu partout. Je tente d'installer OpenWrt sur petit routeur [[Bococom|hardware/Bococom-DWR150]].
+J'ai installé OpenWrt sur le petit routeur [[Bococom|hardware/routers/Bococom-DWR150]].
 
-http://identi.ca/elecnix
+## Contact
+
+ * nicolas@marchildon.net
+ * http://identi.ca/elecnix
+ * 514 394-7847

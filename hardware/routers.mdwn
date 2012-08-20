@@ -1,0 +1,149 @@
+[[!meta title="Routers and embeded devices"]]
+
+[[!toc levels=3]]
+
+## Ubiquiti
+
+Le revendeur [[Converbit|http://www.converbit.ca/magasin/]] à Boucherville, Richard Marquis, offre la [[PicoStation M2HP pour 71$|http://www.converbit.ca/magasin/products.php?product=PicoStation-M2HP]], incluant un injecteur de courant PoE 15V et une antenne omnidirectionnelle (connecteur RP-SMA). Le Bullet M2HP est également offert [[tout nu à 75$|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]]. C'est exactement le même système que la PicoStation, à l'exception du connecteur d'antenne de type N. La Bullet n'inclus cependant pas d'injecteur PoE ni d'antenne. On peut aussi se procurer la Bullet en "kit", soit le [[kit omnidirectionnel avec injecteur PoE est 130$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-Antenne-Omni--8DBI-%252b-POE-15V]], et le [[kit à antenne parabolique avec injecteur PoE est 115$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-GRid-24DBI-%252b-POE-15V]]. Notez que le kit omnidirectionnel inclus une antenne 8dbi, mais qu'une 15dbi est également disponible chez ce fournisseur et qu'il ne revient pas vraiment plus cher de se faire son propre "kit". L'antenne parabolique directionnelle n'est pas recommandée pour le mesh, mais pourrait permettre d'établir des liens de point à point sur de plus grande distances, si cela est nécessaire.
+
+Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez directement pour faire une commande ils peuvent vous la charger en $CAN et tout le monde sauve au bout du compte (Paypal sont assez chers pour les taux de change).
+
+À noter qu'OpenWRT ne supporte pas le mode "TDMA" des antennes.
+
+Il sera peut-être possible de compiler batman-adv pour AirOS. Suivre les développements sur la [[mailing list batman-adv|https://lists.open-mesh.org/pipermail/b.a.t.m.a.n/2012-April/006893.html]] (self-signed cert)
+
+### PicoStation (omni)
+
+La compagnie Ubiquiti produit du matériel excellent et bon marché. Pour un noeud placé à l'extérieur, l'option la moins coûteuse et la plus simple est la [[PicoStation M2HP|http://dl.ubnt.com/datasheets/picostationm/picom2hp_DS.pdf]]. Elle a une portée de 500 mètres maximum (dans toutes les directions), et vient avec un injecteur PoE qui évite d'avoir à passer un fil d'alimentation, le câble réseau servant à transporter le courant.
+
+[[!img pico_station.jpg size="200x"]]
+
+* Émission à 28dBm ( 630mW )
+
+I hope you're only using this equipment at least ~20m from living
+space. Otherwise I find this rather irresponsible: 100mW is the
+maximum allowed power in the EU at least, with a non-directional
+antenna. I'm usually setting my home equipment to 1mW, since that's
+already more than enough to cover an apartment in a house built out
+of mostly wood (it's even enough to surf from in front of the house
+when the accesspoint is on the 3rd floor). Compared to that you're
+kind of claiming that your service is benefiting 800 simultaneous
+users per such access point if you're radiating that power.
+
+#### Specifications
+
+* Atheros MIPS 4KC, 180MHz
+* 32MB SDRAM, 8MB Flash
+* Prise 10/100 BASE-TX
+* RP-SMA omni antenna included ( 6dBi )
+* 15V, 0.8A DC, avec l'adapteur PoE inclu.
+* PoE Passif (paires (+)4,5; (-)7,8)
+* -20C à +70C
+* 0.10 kg
+* Intérieur: 200 m et Extérieur (Ligne de vue): 400 m à 11Mbps
+* Omnidirectionnelle
+
+### Bullet2 (sans antenne)
+
+Pour des liens à plus grande distance, le [[Bullet-M2HP|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]] est plus flexible, car vous choisissez quelle antenne vous branchez dessus, et obtenir ainsi plusieurs kilomètres de portée.
+
+Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une antenne externe. Pareil comme la pico station sinon.
+
+[[!img bullet-m2hp.jpg size="200x"]]
+
+[[!img kit-bullet-m2.jpg size="500x"]]
+
+### Nanostation (directionnelle)
+
+[Ubiquiti](http://www.ubnt.ca), modèles [Nanostation M2](http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=115&category_id=35&option=com_virtuemart&Itemid=1) (2.4gHz) / M5 (5gHz).
+
+ * Roule Linux par défaut (AirOS), supporté par OpenWRT
+ * Wifi atheros, supporte 802.11n
+ * fait pour couvrir de plus grandes distances, sur une zone plus restreinte (sectorielle a 60°)
+ * power over ethernet
+
+## Cisco/Linksys WRT* (omni)
+
+Those devices are everywhere, but they are cheap and may not be worth it.
+
+### Pros
+
+ * readily available
+ * cheap
+
+### Cons
+
+ * uses [RP-TNC](https://en.wikipedia.org/wiki/TNC_connector) (reverse-polarity) connectors so that regular antenna equipment cannot be used to amplify the signal
+ * known to overheat
+ * very low power (~28mW by default)
+ * low bandwidth (~2mbps)
+
+## TP-Link (omni)
+
+### TP-Link TL-MR3220
+
+A small router b/g/n with one chain, compatible with openwrt, very cheap 31.06$ at directcanada.
+
+<http://wiki.openwrt.org/toh/tp-link/tl-mr3420> .
+
+I am working on a weatherproof enclosure for it.
+
+Comes with a 5dbi omni antenna.
+It has a rp-sma connector for the antenna.
+Connectors are on a cable to the pcb so easy to relocate
+
+[[!img TL-MR3220-naked.JPG size="400x"]]
+
+### TP-Link TL-MR3420
+
+Same as above with 2 chain (more speed) and [[40.77$ at DirectCanada|http://www.directcanada.com/search/?kw=TL-MR3420]]. Comes with two 3dbi omni antennas, with RP-SMA connectors. Connectors are on a cable to the PCB, so they are easy to relocate.
+
+<http://wiki.openwrt.org/toh/tp-link/tl-mr3420>
+
+[[!img MR3420-inside.jpg size="400x"]]
+
+### TP-Link TL-WR1043ND
+
+The
+[TP-Link TL-WR1043ND](http://www.tp-link.com/en/products/details/?model=TL-WR1043ND),
+"cheap and nice" according to our friends in Rostock. :) Same as the
+above but with 3 antennas and gigabit ports. [54$ at DirectCanada](http://www.directcanada.com/search/?kw=TL-WR1043ND).
+
+8MB flash, 32MB ram, 400mhz
+
+[[!img TL-WR1043ND-04.jpg size="300x"]]
+
+
+### TP-Link TL-WR703N
+
+Minuscule routeur alimenté par un connecteur mini USB, possédant un port un connecteur USB accessoire, mais pas d'antenne extérieure. Peut servir comme point d'accès (AP) dans la maison, et pour tester des configurations. On peut l'obtenir pour [[24$ chez Deal Extreme|https://www.dealextreme.com/p/tp-link-703n-ultra-mini-portable-3g-802-11b-g-n-150mbps-wifi-wireless-router-light-blue-white-102903]].
+
+Il existe ce qui semble être un clone, le fast-fwr171 qu'on peut acheter pour aussi peu que [[15$ plus shipping sur volumerates.com|http://www.volumerates.com/product/fast-fwr171-3g-pocketable-11n-150m-3g-mobile-wireless-broadband-router--black-101761]].
+
+[[!img TL-WR703N_eth.jpg size="200x"]]
+
+Le 703N a un port USB, ce qui permet d'y ajouter un adapteur USB possédant une antenne détachable, comme le TL-WN422G ([[12.69$ chez hookbag.ca|http://www.hookbag.ca/product/H3C06HZHQ/]] et [[15$ chez newegg.ca|http://www.newegg.ca/Product/Product.aspx?Item=N82E16833704046&Tpk=WN422G]], et [[18$ chez Addison|http://www.addison-electronique.com/pdf/catalog_pdf/130000-N-INFORMATIQUE.pdf]]). L'avantage de cette option, c'est que le routeur pourra fonctionner avec les deux antennes simultanément; l'antenne interne pourra être configuré en Access Point, et l'antenne externe communiquera avec les autres noeuds.
+
+Il est peut-être possible de [[souder une antenne|http://www.nathanlipscy.com/wireless_usb_hack/]]. L'antenne est sur le PCB et les composantes du circuit sont ajustées pour ça. Il faut sectionner le PCB pour enlever l'antenne existante et trouver moyen de souder un câble. Ensuite il faudrait ré-accorder l'antenne en changeant possiblement des composantes. Un autre problème c'est l'alimentation 5v qui serait pas facile d'amener en PoE sans trop de perte.
+
+## Unbranded XDX-RN502J / SL-R7205
+
+Semblable au TP-Link TL-MR3420, mais basé sur le Ralink RT3052. Il possède deux antennes, donc débit théorique de 300 mbit/s. Il [[peut être flashé avec OpenWRT|http://wiki.openwrt.org/toh/unbranded/xdx-rn502j]] en se connectant par le port série et avec un serveur TFTP. Trouvé plusieurs à [[32$ sur eBay|http://www.ebay.ca/itm/120830233185?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1439.l2649]].
+
+[[!img XDX-RN502J.jpg size="200x"]]
+
+[[!img SL-R7205_V5.0_opened.jpg size="200x"]]
+
+## Bococom XDX-RN502R / SL-R7206
+
+Petit frère du XDX-RN502J, le Bococom porte l'inscription XDX-RN502R, et fonctionne avec un Ralink RT3050 à une seule antenne, donc 150 mbit/s. On peut le trouver à 20,50$ l'unité en [[paquets de 10 sur aliexpress.com|http://www.aliexpress.com/product-fm/541496604-Portable-Mini-150M-802-11n-WiFi-Wireless-3G-Router-White-Color-UMTS-HSPA-EVDO-USB-modems-wholesalers.html]]. [[users/elecnix]] en a commandé un et va bientôt tenter de flasher avec OpenWRT. Voir la page [[Bococom-DWR150]] pour les détails.
+
+[[!img Bococom-DWR150/RT-3GWT_2.jpg size="200x"]]
+
+# Pirate box
+
+See <http://wiki.daviddarts.com/PirateBox_DIY>
+
+# Drones?
+
+Il est possible que certains noeuds du mesh soient déployés sur des drones, au-dessus des zones qui ont une faible couverture par antennes fixes. Deux drones pourraient se relayer, pour recharger tout à tour leur batteries. Des tests sont à faire pour déterminer si les drones devront cesser de voler en cas de pluie et si la possibilité de charger les drones automatiquement est faisable.

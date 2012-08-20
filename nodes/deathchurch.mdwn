@@ -9,7 +9,7 @@ Possible node. Need to ask them.
  * Hardware:
  * Power:
  * Location:
- * Status: [[!taglink planned]]
+ * Status: [[!taglink prospect]]
  * Links: 
  * Azimuth:
  * Panorama:

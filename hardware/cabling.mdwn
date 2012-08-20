@@ -1,0 +1,134 @@
+[[!meta title="Câblage et conncteurs"]]
+
+[[!toc levels=2]]
+
+# Câblage réseau / PoE
+
+Normalement on veux installer un câble réseau ([[!wikipedia RJ-45]] standard) avec [[!wikipedia PoE]].
+Alors un seul câble suffit si le routeur est sur le toit.
+
+Ce type de câble doit être conçu pour l'extérieur. Il doit aussi avoir une mise à la terre ("ground") pour protéger les équipements des décharges électrostatiques ([[!wikipedia Electro-Static Discharches]]). Un blindage aide à augmenter la longueur maximale du câble. On peux toujours installer un câble pour l'intérieur, mais il sèchera après quelques années.
+
+Il faut éviter le [[cat6|http://fr.wikipedia.org/wiki/C%C3%A2ble_cat%C3%A9gorie_6]]: c'est inutile considérant la vitesse de transmission en Wifi et il est plus difficile de faire des connecteurs aux extrémités. De toute façon, le [Cat5-E](https://fr.wikipedia.org/wiki/C%C3%A2ble_cat%C3%A9gorie_5#Comparaison_entre_cat.C3.A9gorie_5_et_5e) est suffisant pour des liens gigabit, la Cat6 est utile seulement pour les liens [10 gigabit](https://fr.wikipedia.org/wiki/10GBASE-T). Même là, le Cat5 fourni des liens [Fast Ethernet](https://fr.wikipedia.org/wiki/Fast_Ethernet) (100 megabit) qui sont suffisant pour la majorité des liens sans fil, le B et G supportant un maximum de 54 megabit.
+
+## Ubiquity tough cable
+
+Exemple de câble: [[Ubiquity Tough Cable|http://www.ubnt.ca/index.php?page=shop.product_details&product_id=136]] and [[Touch cable connector|http://www.ubnt.ca/index.php?page=shop.product_details&product_id=138]].
+
+Disponible chez [[Converbit]]:
+
+ * [[1000' cable|http://www.converbit.ca/magasin/products.php?product=Tough-Cable-Pro]]: 160$
+
+## Shireen
+
+[Shireen](https://www.shireeninc.com/) ont du [câble 5e outdoor shielded grounded](https://www.shireeninc.com/outdoor-shielded-cat5e-ftp-cable-messenger-wire-2/), en vente chez Converbit pour [170$ pour une boîte de 1000'](http://www.converbit.ca/magasin/products.php?product=Shireen-Cable-Exterieur-Cat-5E-avec-Shield). 
+
+## CMXT
+
+[Ce thread sur les forums de Ubiquity](http://forum.ubnt.com/showthread.php?t=47242) recommande également le CMXT, Outdoor, shielded, grounded itou:
+
+ * [127$ chez inifitecables.com](http://www.infinitecables.com/pop/bk-c5esl-4dbs.htm) (toronto, 15$ shipping)
+ * [119.99$ chez directron.com](http://directron.com/k5ecmxt52mmod.html)
+ * [165$ chez mikrotik](https://www.wlan1.com/product_p/c5cmxt-416bk.htm)
+
+## Monoprice
+
+Chez monoprice, ça se passe soit dans le:
+
+ * [[Cat 5e|https://www.monoprice.com/products/subdepartment.asp?c_id=102&cp_id=10233#1023305]]: 120$
+ * [[Cat 6e|https://www.monoprice.com/products/subdepartment.asp?c_id=102&cp_id=10234#1023405]]: 150$
+
+Le câble outdoor est assez curieux, avec un "riser" externe qui semble être un ground (ou est-ce juste pour que le fil soit plus solide?). Viennent sur des spools en bois. Ils ont aussi du "in-wall rated" qui est curieusement plus cher que le "outdoor", ce qui me fait douter de la qualité de leur "outdoor".
+
+## Cablek
+
+Ils ont du [[câble outdoor|http://www.cablek.com/catalog/advanced_search_result.php?search_from=menu&keywords=outdoor&x=0&y=0]], mais assez dispendieux:
+
+ * 150$ unshielded, indoor
+ * 390$ direct burial, unshield
+ * 900$ gel-coated, shielded
+
+Mais au moins c'est à Montréal.
+
+# Un peu de théorie
+
+## Puissance vs voltage et distance
+
+Tableau de longueur de câble réseau vs. puissance et voltage:
+
+[[!img UBNT_POE_Cable_Lengths.pdf.png size="950x"]]
+
+Source: http://store.freenet-antennas.com.au/documents/UBNT_POE_Cable_Lengths.pdf
+
+## POE links
+
+Les routeurs de Ubiquiti fournissent un injecteur de même marque, mais si vous installez un routeur ordinaire, vous voudrez sûrement l'alimenter par le fil réseau. Voici quelques liens qui montrent comment s'en fabriquer un:
+
+* [[Glen Pitt-Pladdy's Passive PoE DIY|http://www.pitt-pladdy.com/blog/_20100530-083726_0100_DIY_Passive_PoE/]]
+* [[How to Make a Power Over Ethernet (PoE) Adapter|http://tech2.in.com/how-to/wifi-routers/how-to-make-a-power-over-ethernet-poe-adapter/223062]]
+
+Il est aussi possible d'en acheter pour 10$ (plus livraison) de Solimedia: [[Passive PoE™ Set 5,5x2,5|http://solimedia.ca/wireless-accessories/44-poe-injector-splitter-set.html]].
+
+# Cable connectors
+
+We need special metal connectors. They are more solid (while harder to crimp) and allow for grounding the devices, as you solder the cable's ground to the connector.
+
+Packs of 100:
+
+ * [Infinite cables](http://www.infinitecables.com/pop/pr_cn-rj45s.htm): 29.50$ (toronto)
+ * [Converbit](http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces): 48$
+
+
+# Antenna cables
+
+Mainly there is also 3 type of cable: all of them have an impedance of 50 ohms.
+The attenuation of signal in the cable is more significant at higher frequencies.N_Connector.jpg
+Almost 70% more loss at 5.8Ghz than at 2.4Ghz.
+These cables cannot be sharply bent or squeezed. We have to be careful using gun tackers on them.
+
+ 1. RG174U: this cable is the smallest we use. It has 2.5mm diameter and is used for very short distances. It's a high loss cable (1.4db/m at 2.4Ghz) so we use it where we need a short and flexible cable. It fits very well on the RP-SMA connector.
+ 2. RG58 (or LMR195 high quality) varies between 4.7mm and 5.4mm in diameter. It loses .8db/m at 2.4Ghz, so it is suitable for medium distances (up to 10 feet is ok)
+ 3. RG8 (or LMR400 high quality) is 10mm in diameter. It loses .2db/m at 2.4Ghz, so it is suitable for medium distances (up to 50 feet is ok)
+this cable is not flexible at all and can only accept N connectors size.
+
+# Antenna connectors
+
+There are 3 types of connectors used :
+
+### RP-SMA
+
+[[!img Gniazdo_RPSMA.jpg align="left" size="100x"]]
+
+The [[RP-SMA|https://en.wikipedia.org/wiki/SMA_connector]] (reverse polarity SMA) is the connector used on most indoor units. It is small, inexpensive, but cannot accommodate large cable. 
+
+It is often found on:
+
+ * wireless cards
+ * wireless routers
+
+The RP-SMA connector is "reversed polarity" to keep people from connecting high-gain antennas (for example used by ham radio operators) to commodity hardware.
+
+### N connectors
+
+[[!img N_Connector.jpg align="left" size="100x"]]
+
+The [[N connector|https://en.wikipedia.org/wiki/N_connector]] is mostly used in the professional field and ham radio operators.
+
+It is robust, and suitable for outdoor use.
+
+It is specifically used for [[Cantennas|https://en.wikipedia.org/wiki/Cantenna]] and ham radio UHF  transceivers.
+
+### RP-TNC
+
+[[!img RP-TNC-female.jpg align="left" size="100x"]]
+[[!img RP-TNC-male.jpg align="left" size="100x"]]
+
+The RP-TNC is a threaded version of the venerable BNC connector (used in older wired networks).
+
+It is somehow between the SMA and N connectors.
+
+It is most notably used on the Linksys WRT-54G devices, but pretty much *only* there.
+
+It is not recommended to use this connector for new projects unless really necessary, as it is non-standard and harder to find. 
+
+...
