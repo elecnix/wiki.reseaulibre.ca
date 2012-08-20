@@ -25,7 +25,7 @@ IPv6: ..
 
 # Photo
 
-[[!img  http://www.bidon.ca/files/toit/20120819_001-small.jpg size="600x798" alt="Bullet M2"]]
+[[!img  bgm-latakia.jpg size="600x798" alt="Bullet M2"]]
 
 # UCI
 
