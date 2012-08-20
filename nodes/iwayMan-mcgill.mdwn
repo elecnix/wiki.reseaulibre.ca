@@ -13,8 +13,8 @@
  * Status: [[!taglink planned]]
  * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
  * Azimuth:
- * Panorama:
  * Operator: [[users/iwayMan]]
+ * Panorama: [[!img iwayMan-McGill-panorama.jpg align="right" size="898x211" alt="Vue vers l'est"]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
@@ -25,3 +25,4 @@ any later version published by the Free Software Foundation; with no Invariant
 Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
+
