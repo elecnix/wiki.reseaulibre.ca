@@ -34,7 +34,8 @@ Mes commandes UCI:
 	uci set wireless.radio0.channel=1
 	uci set wireless.@wifi-iface[0].mode=adhoc
 	uci set wireless.@wifi-iface[0].ssid=mesh-mtl
-	uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
+	#uci set wireless.@wifi-iface[0].bssid=02:51:48:72:03:11
+	uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
 	uci set network.wlan0=interface
 	uci set network.wlan0.ifname=wlan0
 	uci set network.wlan0.proto=none
