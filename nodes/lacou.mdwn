@@ -2,18 +2,89 @@
 
 Besoin d'un kit et d'une échelle. Prévu pour septembre 2012.
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software:
- * Hardware: Bullet M2HP
- * Power:
- * Location: roof
- * Status: [[!taglink planned]]
- * Links: [[/nodes/boulette]]
- * Azimuth: 360
- * Panorama:
- * Operator: [[users/elecnix]]
+# Technical details
+
+[[!ymlfront data="""
+MAC: DC:9F:DB:00:12:D3
+IP: 172.16.0.19
+IPv6: 
+"""]]
+
+hostname
+: bb
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: 
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: roof
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink planned]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: (none)
+
+<pre>
+passwd
+
+uci delete wireless.radio0.disabled
+uci set system.@system[0].hostname=lacou
+uci set network.lan.ifname="eth0"
+uci set network.lan.ipaddr=192.168.3.19
+uci set network.lan.gateway=192.168.3.1
+uci set network.lan.dns=192.168.3.1
+uci set network.lan.netmask=255.255.0.0
+uci set dhcp.lan.ignore=1
+uci commit
+reboot & exit
+ssh root@192.168.3.19
+
+uci delete wireless.@wifi-iface[0].network
+uci set wireless.radio0.channel=1
+uci set wireless.@wifi-iface[0].mode=adhoc
+uci set wireless.@wifi-iface[0].ssid=relais.reseaulibre.ca
+uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
+uci set network.wlan0=interface
+uci set network.wlan0.ifname=wlan0
+uci set network.wlan0.proto=none
+uci set network.wlan0.mtu=1528
+opkg update
+opkg install kmod-batman-adv
+uci set network.bat0=interface
+uci set network.bat0.ifname=bat0
+uci set network.bat0.proto=static
+uci set network.bat0.mtu=1500
+uci set network.bat0.ipaddr=172.16.0.19
+uci set network.bat0.netmask=255.240.0.0
+uci set batman-adv.bat0.interfaces="wlan0"
+uci commit
+reboot & exit
+</pre>
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 

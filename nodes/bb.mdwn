@@ -60,16 +60,16 @@ Links
 
 <pre>
 uci delete wireless.radio0.disabled
-uci set system.@system[0].hostname=ti-noeud
 uci set system.@system[0].hostname=bb
 uci set network.lan.ifname="eth0"
 uci set network.lan.ipaddr=192.168.3.18
 uci set network.lan.gateway=192.168.3.1
 uci set network.lan.dns=192.168.3.1
+uci set network.lan.netmask=255.255.0.0
 uci set dhcp.lan.ignore=1
 uci commit
 reboot & exit
-ssh root@192.168.1.10
+ssh root@192.168.3.18
 
 uci delete wireless.@wifi-iface[0].network
 uci set wireless.radio0.channel=1
