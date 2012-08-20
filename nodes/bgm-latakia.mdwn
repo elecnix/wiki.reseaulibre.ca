@@ -29,41 +29,42 @@ IPv6: ..
 
 # UCI
 
-# base
-uci delete wireless.radio0.disabled
-uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
-uci set system.@system[0].hostname=latakia
+    # base
+    uci delete wireless.radio0.disabled
+    uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
+    uci set system.@system[0].hostname=latakia
 
-# connexion réseau local
-uci set network.lan=interface
-uci set network.lan.ifname=eth0
-uci set network.lan.proto=dhcp
+    # connexion réseau local
+    uci set network.lan=interface
+    uci set network.lan.ifname=eth0
+    uci set network.lan.proto=dhcp
 
-# wifi
-uci delete wireless.@wifi-iface[0].network
-uci set wireless.radio0.channel=1
-uci set wireless.@wifi-iface[0].mode=adhoc
-uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
-uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
-uci set network.wlan0=interface
-uci set network.wlan0.ifname=wlan0
-uci set network.wlan0.proto=none
-uci set network.wlan0.mtu=1528
+    # wifi
+    uci delete wireless.@wifi-iface[0].network
+    uci set wireless.radio0.channel=1
+    uci set wireless.@wifi-iface[0].mode=adhoc
+    uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
+    uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
+    uci set network.wlan0=interface
+    uci set network.wlan0.ifname=wlan0
+    uci set network.wlan0.proto=none
+    uci set network.wlan0.mtu=1528
+    
+    #batman
+    uci set network.bat0=interface
+    uci set network.bat0.ifname=bat0
+    uci set network.bat0.proto=none
+    uci set network.bat0.mtu=1500
+    
+    uci set network.bat0.ipaddr=172.16.1.42
+    uci set network.bat0.proto=static
+    uci set network.bat0.netmask=255.255.0.0
+    
+    uci set batman-adv.bat0.interfaces="wlan0"
+    uci commit
+    reboot
+    
+    # packages
+    opkg update
+    opkg install kmod-ipv6 kmod-batman-adv babeld
 
-#batman
-uci set network.bat0=interface
-uci set network.bat0.ifname=bat0
-uci set network.bat0.proto=none
-uci set network.bat0.mtu=1500
-
-uci set network.bat0.ipaddr=172.16.1.42
-uci set network.bat0.proto=static
-uci set network.bat0.netmask=255.255.0.0
-
-uci set batman-adv.bat0.interfaces="wlan0"
-uci commit
-reboot
-
-# packages
-opkg update
-opkg install kmod-ipv6 kmod-batman-adv babeld
