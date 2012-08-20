@@ -25,7 +25,7 @@ IPv6: ..
 
 # Photo
 
-[[!img  bgm-latakia.jpg size="600x798" alt="Bullet M2"]]
+[[!img img/bgm-latakia-small.jpg size="600x798" alt="Bullet M2"]]
 
 # UCI
 
