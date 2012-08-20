@@ -5,7 +5,6 @@ MAC: 00:27:22:4E:16:B7
 IP: 172.16.1.8
 IPv6:
 - fd64:2c08:9fa7:4::1
-- 2001:470:1d:4a6::1
 """]]
 
 À faire:
@@ -32,10 +31,29 @@ Détails:
  * Power: 28 dBm, 11 dBi
  * Location: Verdun, coin LaSalle et Rushbrooke
  * Status: [[!taglink up]]
- * Links: [[nodes/bgm-homs]], [[nodes/hexa]], [[nodes/scientist]]
+ * Links: [[nodes/bgm-homs]], [[nodes/bgm-latakia]], [[nodes/hexa]], [[nodes/scientist]]
  * Azimuth: Sud-ouest
  * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]], [[Vue du site de l'installation|https://farm6.staticflickr.com/5223/5881898216_6198d24176.jpg]]
  * Operator: [[users/deuxpi]]
+
+# Configuration Babel
+
+[[!format txt """
+babeld.@general[0]=general
+babeld.@general[0].local_server=33123
+babeld.wlan=interface
+babeld.wlan.ignore=true
+babeld.lan=interface
+babeld.lan.ignore=true
+babeld.mesh=interface
+babeld.@filter[0]=filter
+babeld.@filter[0].type=redistribute
+babeld.@filter[0].if=bat0
+babeld.@filter[0].action=metric 128
+babeld.@filter[1]=filter
+babeld.@filter[1].type=redistribute
+babeld.@filter[1].action=deny
+"""]]
 
 [[!meta copyright="Copyright © 2012 Philippe Gauthier"]]
 
