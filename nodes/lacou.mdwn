@@ -85,7 +85,7 @@ uci set network.bat0.proto=static
 uci set network.bat0.mtu=1500
 uci set network.bat0.ipaddr=172.16.0.19
 uci set network.bat0.netmask=255.240.0.0
-uci set batman-adv.bat0.interfaces="wlan0"
+uci set batman-adv.bat0.interfaces="wlan0 br-lan"
 uci commit
 reboot & exit
 </pre>
