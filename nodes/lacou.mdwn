@@ -1,6 +1,6 @@
-[[!waypoint lat="45.534260" lon="-73.603265" embed hidden width="400px" height="400px" right desc="Planifié sur le toit"]]
+[[!waypoint lat="45.534260" lon="-73.603265" embed hidden width="400px" height="400px" right desc="Routeur Bullet sur le toit, avec point d'accès au 3e étage"]]
 
-Besoin d'un kit et d'une échelle. Prévu pour septembre 2012.
+Routeur Bullet sur le toit, avec point d'accès au 3e étage.
 
 # Technical details
 
@@ -11,7 +11,7 @@ IPv6:
 """]]
 
 hostname
-: bb
+: lacou
 
 MAC address
 : {{$MAC}}
@@ -44,7 +44,7 @@ Status
 : [[!taglink up]]
 
 Operator
-: [[users/elecnix]]
+: [[users/elecnix]] & [[users/scientist]]
 
 Links
 : [[boulette]]
