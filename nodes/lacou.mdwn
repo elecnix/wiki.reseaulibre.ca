@@ -23,10 +23,10 @@ IP address
 : {{$IP}}
 
 Software
-: 
+: Openwrt + Batman
 
 Hardware
-: 
+: Ubiquiti Bullet + 15 dbi
 
 Power
 : 
@@ -41,13 +41,13 @@ Panorama
 : N/A
 
 Status
-: [[!taglink planned]]
+: [[!taglink up]]
 
 Operator
 : [[users/elecnix]]
 
 Links
-: (none)
+: [[boulette]]
 
 <pre>
 passwd
