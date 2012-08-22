@@ -58,4 +58,6 @@ we are looking into
 [Opentracker](http://erdgeist.org/arts/software/opentracker/) as it is
 highly portable and is used by Archive.org.
 
-See this howto: <https://forum.suprbay.org/showthread.php?tid=58785>.
+See this howto:
+<https://forum.suprbay.org/showthread.php?tid=58785>. A Debian request
+for package has been filed: [[!debbug 685575]].
