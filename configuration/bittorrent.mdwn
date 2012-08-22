@@ -17,6 +17,10 @@ Downloading Reseaulibre's software through bittorrent
 Just download [[this torrent|reseaulibre-openwrt.torrent]] and open it
 with your bittorrent client.
 
+The images here are generated from this OpenWRT feed:
+
+    git clone git://src.anarcat.ath.cx/reseaulibre-feed
+
 How to create a torrent
 =======================
 
