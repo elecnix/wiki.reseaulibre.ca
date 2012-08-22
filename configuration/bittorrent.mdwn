@@ -11,6 +11,12 @@ and a tracker is also present on the mesh network itself. Through
 Local Peer Discovery, you should also be able to discover the peers on
 the local network even if that tracker is down.
 
+Downloading Reseaulibre's software through bittorrent
+=====================================================
+
+Just download [[this torrent|reseaulibre-openwrt.torrent]] and open it
+with your bittorrent client.
+
 How to create a torrent
 =======================
 
@@ -22,8 +28,8 @@ example for the [Transmission](http://transmissionbt.com/):
                         -t udp://tracker.publicbt.com:80 \
                         -t udp://tracker.ccc.de:80 \
                         -t udp://tracker.istole.it:80 \
-                        -t http://packages.reseaumedia.ca:8080/Routeurs/openwrt/ \
-                        -o reseaulibre-openwrt-devel.torrent devel
+                        -t http://packages.reseaumedia.ca:8080/Routeurs/reseaulibre-openwrt/ \
+                        -o reseaulibre-openwrt.torrent reseaulibre-openwrt
 
 Notice how we use
 [Web seeding](https://en.wikipedia.org/wiki/BitTorrent_(protocol)#Web_seeding),
