@@ -1,0 +1,60 @@
+[[!waypoint lat="45.527599" lon="-73.596146" embed hidden width="400px" height="400px" right desc="Window facing east, 12th floor"]]
+
+Possible antenna in window, facing East, 12th floor.
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: 
+IP: 
+IPv6: 
+"""]]
+
+hostname
+: 
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: 
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: window
+
+Azimuth
+: 360°
+
+Panorama
+: soon!
+
+Status
+: [[!taglink prospect]] (can also be up, down, planned, unknown)
+
+Operator
+: [[users/elecnix]]
+
+Links
+: 
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
