@@ -1,0 +1,51 @@
+Bittorrent is a great way to distribute content over the mesh, because
+it is decentralised. Multiple copies of the files can be distributed
+over the network and shared, and Bittorent will figure out the optimal
+way to download the files, even if the network is segmented.
+
+We are currently sharing legal files, for example OpenWRT images, a
+mirror of Wikipedia or OpenStreetMap tiles.
+
+We use [public trackers](http://openbittorrent.com/) to share files,
+and a tracker is also present on the mesh network itself. Through
+Local Peer Discovery, you should also be able to discover the peers on
+the local network even if that tracker is down.
+
+How to create a torrent
+=======================
+
+Creating a torrent file is simple, and requires only a small piece of
+software. Most Bittorrent clients ship with such a tool, here's an
+example for the [Transmission](http://transmissionbt.com/):
+
+    transmission-create -t udp://tracker.openbittorrent.com:80 \
+                        -t udp://tracker.publicbt.com:80 \
+                        -t udp://tracker.ccc.de:80 \
+                        -t udp://tracker.istole.it:80 \
+                        -t http://packages.reseaumedia.ca:8080/Routeurs/openwrt/ \
+                        -o reseaulibre-openwrt-devel.torrent devel
+
+Notice how we use
+[Web seeding](https://en.wikipedia.org/wiki/BitTorrent_(protocol)#Web_seeding),
+which means we don't have to have files opened in a bittorrent
+tracker, a web mirror is enough to seed the files. More specifically,
+we are using the [Getright](http://www.getright.com/seedtorrent.html) protocol.
+
+This is inspired by the way [Archive.org](http://archive.org/)
+[host their files through Bittorent](https://archive.org/about/faqs.php#Archive_BitTorrents).
+
+Hosting a Bittorrent tracker
+============================
+
+(!) In progress.
+
+Hosting a
+[Bittorrent tracker](https://en.wikipedia.org/wiki/BitTorrent_tracker)
+is fairly easy and can help the network's resilience in hosting
+files. Amongst the
+[different Bittorrent trackers](https://en.wikipedia.org/wiki/BitTorrent_tracker_software),
+we are looking into
+[Opentracker](http://erdgeist.org/arts/software/opentracker/) as it is
+highly portable and is used by Archive.org.
+
+See this howto: <https://forum.suprbay.org/showthread.php?tid=58785>.
