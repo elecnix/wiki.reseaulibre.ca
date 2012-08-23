@@ -1,0 +1,7 @@
+| Item                                      | Qtee | Prix unit | Total | En stock |
+------------------------------------------- | :--: | --------: | ----: | -------: |
+[[NanoStation M2|http://www.converbit.ca/magasin/products.php?product=NanoStation-M2]] 				    | 2	| $89.00 | $178.00 | 0 |
+[[Mount pour NanoStation pour Fenetre ou Mur|http://www.converbit.ca/magasin/products.php?product=Mount-pour-NanoStation-pour-Fenetre-ou-Mur]]  | 2	| $18.00  | $36.00  | 26 |
+TPS                                         |               $||||
+TVQ                                         |               $||||
+Grand Total                                 |              $||||
