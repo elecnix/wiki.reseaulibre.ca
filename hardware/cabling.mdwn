@@ -84,6 +84,8 @@ You need to solder the cable connector on the roof. If you have a balconee, give
 
 [[!img ST250K_lg.jpg]]
 
+Note that this can be difficult to use under windy conditions.
+
 Else, if you have one of those connectors that have a small, round metal tube leg, you can also squeeze the ground wire by inserting then pressing. It's not as good as a soldered connection, but it will do if you do not have access to a soldering iron.
 
 # Antenna cables
