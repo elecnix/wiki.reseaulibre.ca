@@ -1,5 +1,7 @@
-* NanoStation M2 (elecnix: 2)
-* Mount pour NanoStation (elecnix: 2)
+* NanoStation M2 (elecnix: 2, anarcat: 4)
+* Mount pour NanoStation (elecnix: 2, anarcat: 4)
+
+anarcat: a confirmer, depend de Koumbit et autres.
 
 | Item                                      | Qtee | Prix unit | Total | En stock |
 ------------------------------------------- | :--: | --------: | ----: | -------: |
