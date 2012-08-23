@@ -7,4 +7,8 @@
 * Prochaine commande de matériel?
 * Prochaine rencontre
 
+# Vidéaste recherché
+
+Nous aimerions documenter l'installation d'un noeud sur un toit d'édifice avec une caméra. L'objectif est d'aider ceux qui voudront le faire, et d'interviewer les participants sur leurs motivations.
+
 [[!tag draft]]
