@@ -6,7 +6,7 @@ IP: 172.16.1.21
 """]]
 
 
-Je "cache" une antenne sur le bord de la fenêtre de mon bureau. Une belle vue vers le nord-est de Montréal.
+L'université a trouvé cette antenne et m'a demandé de la retirer. Je vais essayer de voir si on ne pourrait pas avoir un accès officiel au toit. 
 
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
@@ -15,7 +15,7 @@ Je "cache" une antenne sur le bord de la fenêtre de mon bureau. Une belle vue v
  * Hardware: Bococom 
  * Power:
  * Location: 4e étage du pavillon Lassonde, Polytechnique
- * Status: [[!taglink up]] 
+ * Status: [[!taglink down]] 
  * Links: 
  * Azimuth:
  * Panorama:
