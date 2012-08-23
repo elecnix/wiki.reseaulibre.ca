@@ -49,6 +49,10 @@ Operator
 Links
 : 
 
+# Panorama
+
+[[!img 2012-08-22-loplop.jpg size=950x]]
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
