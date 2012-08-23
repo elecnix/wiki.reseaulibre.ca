@@ -78,6 +78,11 @@ Packs of 100:
  * [Infinite cables](http://www.infinitecables.com/pop/pr_cn-rj45s.htm): 29.50$ (toronto)
  * [Converbit](http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces): 48$
 
+## Soldering
+
+You need to solder the cable connector on the roof. If you have a balconee, give you some extra length to perform this near an electrical outlet, to power the soldering iron. Otherwise, you can buy a cheap Butane Torch Kit ([[25$ @ Home Depot|http://www.homedepot.ca/product/st250k-butane-micro-torch-kit/984064]]) with a refill bottle ([[6$|http://www.homedepot.ca/product/bf55-55-oz-butane-refill/981002]]).
+
+Else, if you have one of those connectors that have a small, round metal tube leg, you can also squeeze the ground wire by inserting then pressing. It's not as good as a soldered connection, but it will do if you do not have access to a soldering iron.
 
 # Antenna cables
 
