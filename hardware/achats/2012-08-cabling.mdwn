@@ -58,3 +58,5 @@ Mises à jour
  * 2012-08-19: livrée à koumbit, première distribution presque
    terminée, mais on dirait que la gang de verdun a oublié de prendre
    une boîte de câble!
+
+[[done]]
