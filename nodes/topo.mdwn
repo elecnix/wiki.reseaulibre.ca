@@ -49,6 +49,9 @@ Operator
 Links
 : 
 
+# Panorama
+
+[[!img 2012-08-22-topo.jpg size=950x]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
