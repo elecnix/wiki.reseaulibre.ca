@@ -28,23 +28,22 @@ Creating a torrent file is simple, and requires only a small piece of
 software. Most Bittorrent clients ship with such a tool, here's an
 example for the [Transmission](http://transmissionbt.com/):
 
-    transmission-create -t udp://tracker.openbittorrent.com:80 \
-                        -t udp://tracker.publicbt.com:80 \
-                        -t udp://tracker.ccc.de:80 \
-                        -t udp://tracker.istole.it:80 \
-                        -o reseaulibre-openwrt.torrent reseaulibre-openwrt
+    btmakemetafile.bittornado udp://tracker.openbittorrent.com:80 reseaulibre-openwrt \
+                        --announce_list 'udp://tracker.publicbt.com:80|udp://tracker.ccc.de:80|udp://tracker.istole.it:80' \
+                        --httpseeds 'http://packages.reseaulibre.ca:8080/Routeurs/reseaulibre-openwrt/' \
 
-This *does not* use
-[Web
+Notice how we use [Web
 seeding](https://en.wikipedia.org/wiki/BitTorrent_(protocol)#Web_seeding), 
-as Transmission [doesn't support it
-yet](https://trac.transmissionbt.com/ticket/4645). 
-
-Webseeding means we don't have to have files opened in a bittorrent
+which means we don't have to have files opened in a bittorrent
 tracker, a web mirror is enough to seed the files. More specifically, we
 are using the [Getright](http://www.getright.com/seedtorrent.html)
-protocol. To generate our torrent, we are therefore using
-[Deluge](http://deluge-torrent.org) right now.
+protocol. 
+
+Note that as Transmission
+[doesn't support it yet](https://trac.transmissionbt.com/ticket/4645),
+so you either need to use the above commandline with the
+[bittornado client](http://bittornado.com/) or use the
+[Deluge](http://deluge-torrent.org) GUI to generate the torrent.
 
 This is inspired by the way [Archive.org](http://archive.org/)
 [host their files through Bittorent](https://archive.org/about/faqs.php#Archive_BitTorrents).
