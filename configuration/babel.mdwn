@@ -85,6 +85,22 @@ Debian
 
 See [[policy/numbering]] to choose the proper IP above, but note the netmask (`255.255.255.255` or `/32`) that needs to be defined for babel to work.
 
+###Network Manager
+
+/!\ If you are currently using Network Manager on an IPv6 network, there seems to be a bug which makes Babel publish all routing cache entries. This shows up as huge routing tables full of static routes that may look a bit like this:
+
+    2001:6f8:1055:deb::80 via fe80::94d6:9eff:fecc:2494 dev bat0  proto 42  metric 1024
+    2607:f8b0:4007:801::100f via fe80::94d6:9eff:fecc:2494 dev bat0  proto 42  metric 1024
+    2607:f8b0:400b:800::1017 via fe80::94d6:9eff:fecc:2494 dev bat0  proto 42  metric 1024
+    2607:f8b0:400b:801::1000 via fe80::94d6:9eff:fecc:2494 dev bat0  proto 42  metric 1024
+    2607:f8b0:400b:801::1001 via fe80::94d6:9eff:fecc:2494 dev bat0  proto 42  metric 1024
+    2607:f8b0:400b:801::1002 via fe80::94d6:9eff:fecc:2494 dev bat0  proto 42  metric 1024
+    ...
+
+The possible workaround is to open the Network settings, select the IPv6 parameters page of your connection, click the Routes button and check "Ignore automatically obtained routes".
+
+This bug is described at [[https://bugzilla.gnome.org/show_bug.cgi?id=682616]]
+
 FreeBSD
 -------
 
