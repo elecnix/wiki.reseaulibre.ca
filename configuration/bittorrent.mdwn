@@ -38,7 +38,7 @@ Note that as Transmission
 [doesn't support it yet](https://trac.transmissionbt.com/ticket/4645),
 and the [bittornado client](http://bittornado.com/) has its own
 different protocol which is also used by
-[Deluge](http://deluge-torrent.org) and others.
+[Deluge](http://deluge-torrent.org) and others, so you need to be careful when choosing "web seeds", they are not all compatible with each other.
 
 Here are the list of trackers you should use:
 
