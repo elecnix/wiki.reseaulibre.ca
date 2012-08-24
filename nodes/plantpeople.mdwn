@@ -4,6 +4,9 @@ This node is still being built, for now it's sitting in a window but
 we are trying to figure out how to bring it to the top, which is hard
 because we need a very tall ladder.
 
+I (anarcat0 still own the hardware, but plantpeople are looking at
+finding money to buy it.
+
 # Technical details
 
 [[!ymlfront data="""
