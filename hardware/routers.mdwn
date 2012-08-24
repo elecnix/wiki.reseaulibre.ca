@@ -102,6 +102,14 @@ Same as above with 2 chain (more speed) and [[40.77$ at DirectCanada|http://www.
 
 [[!img MR3420-inside.jpg size="400x"]]
 
+### TP-Link TL-WR841ND
+
+[[Supporté par OpenWRT|http://wiki.openwrt.org/toh/tp-link/tl-wr841nd]] et environ 40$ chez Addison.
+
+### TP-Link TL-WR941ND
+
+[[Supporté par OpenWRT|http://wiki.openwrt.org/toh/tp-link/tl-wr941nd]] et 53$ chez Addison.
+
 ### TP-Link TL-WR1043ND
 
 The
