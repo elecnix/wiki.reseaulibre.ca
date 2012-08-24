@@ -1,12 +1,15 @@
-* NanoStation M2 (elecnix: 2, anarcat: 4)
-* Mount pour NanoStation (elecnix: 2, anarcat: 4)
+* NanoStation M2 (anarcat: 4)
+* [[Antenne 9dBi 2.4GHz 120 degrés|http://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9]] (elecnix: 1)
+* Mount pour NanoStation (anarcat: 4)
 
-anarcat: a confirmer, depend de Koumbit et autres.
+anarcat: à confirmer, dépend de Koumbit et autres.
 
 | Item                                      | Qtee | Prix unit | Total | En stock |
 ------------------------------------------- | :--: | --------: | ----: | -------: |
 [[NanoStation M2|http://www.converbit.ca/magasin/products.php?product=NanoStation-M2]] 				    | 2	| $89.00 | $178.00 | 0 |
-[[NanoBracket|http://www.converbit.ca/magasin/products.php?product=NanoBracket]]  | 2	| $9.00  | $18.00  | 27 |
+[[NanoBracket|http://www.converbit.ca/magasin/products.php?product=NanoBracket]]  | 4	| $9.00  | $  | 27 |
+[[Antenne 9dBi 2.4GHz 120 degrés|http://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9]] | 1 | 62$ | $ | ? |
+
 TPS                                         |               $||||
 TVQ                                         |               $||||
 Grand Total                                 |              $||||
