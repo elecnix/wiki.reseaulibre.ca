@@ -42,6 +42,46 @@ Operator
 Links
 : 
 
+<pre>
+# Using OpenWRT trunk (2012-08-23)
+atftp --tftp-timeout=1 --trace --option "mode octet" --put --local-file openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin 192.168.1.20
+telnet 192.168.1.1
+passwd
+
+uci delete wireless.radio0.disabled
+uci set system.@system[0].hostname=greene
+uci set network.lan.ifname="eth0"
+uci set network.lan.ipaddr=192.168.3.40
+uci set network.lan.gateway=192.168.3.1
+uci set network.lan.dns=192.168.3.1
+uci set network.lan.netmask=255.255.0.0
+uci set dhcp.lan.ignore=1
+uci commit
+reboot & exit
+ssh root@192.168.3.40
+
+uci delete wireless.@wifi-iface[0].network
+uci set wireless.radio0.channel=1
+uci set wireless.@wifi-iface[0].mode=adhoc
+uci set wireless.@wifi-iface[0].ssid=relais.reseaulibre.ca
+uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
+uci set network.wlan0=interface
+uci set network.wlan0.ifname=wlan0
+uci set network.wlan0.proto=none
+uci set network.wlan0.mtu=1528
+opkg update
+opkg install kmod-batman-adv
+uci set network.bat0=interface
+uci set network.bat0.ifname=bat0
+uci set network.bat0.proto=static
+uci set network.bat0.mtu=1500
+uci set network.bat0.ipaddr=172.16.0.20
+uci set network.bat0.netmask=255.240.0.0
+uci set batman-adv.bat0.interfaces="wlan0 br-lan"
+uci commit
+reboot & exit
+</pre>
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
