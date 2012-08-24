@@ -32,14 +32,19 @@ example for the [Transmission](http://transmissionbt.com/):
                         -t udp://tracker.publicbt.com:80 \
                         -t udp://tracker.ccc.de:80 \
                         -t udp://tracker.istole.it:80 \
-                        -t http://packages.reseaumedia.ca:8080/Routeurs/reseaulibre-openwrt/ \
                         -o reseaulibre-openwrt.torrent reseaulibre-openwrt
 
-Notice how we use
-[Web seeding](https://en.wikipedia.org/wiki/BitTorrent_(protocol)#Web_seeding),
-which means we don't have to have files opened in a bittorrent
-tracker, a web mirror is enough to seed the files. More specifically,
-we are using the [Getright](http://www.getright.com/seedtorrent.html) protocol.
+This *does not* use
+[Web
+seeding](https://en.wikipedia.org/wiki/BitTorrent_(protocol)#Web_seeding), 
+as Transmission [doesn't support it
+yet](https://trac.transmissionbt.com/ticket/4645). 
+
+Webseeding means we don't have to have files opened in a bittorrent
+tracker, a web mirror is enough to seed the files. More specifically, we
+are using the [Getright](http://www.getright.com/seedtorrent.html)
+protocol. To generate our torrent, we are therefore using
+[Deluge](http://deluge-torrent.org) right now.
 
 This is inspired by the way [Archive.org](http://archive.org/)
 [host their files through Bittorent](https://archive.org/about/faqs.php#Archive_BitTorrents).
