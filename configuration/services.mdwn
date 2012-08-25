@@ -152,6 +152,19 @@ However, there may yet be DNS servers on the mesh, which your router can use. Le
 
 This is taken from [the OpenWRT howto](http://wiki.openwrt.org/doc/howto/dhcp.dnsmasq#add.a.secondary.dns).
 
+## IPv6 DNS service
+
+Follow the above configuration, then:
+
+    echo 'nameserver fd64:2c08:9fa7:1::1' >> /etc/resolv.conf
+    uci add radvd rdnss
+    uci set radvd.@rdnss[0].interface wlan0
+    uci set radvd.@rdnss[0].addr fd64:2c08:9fa7:1::3
+    uci del radvd.@rdnss[0].ignore
+    uci commit
+
+[Reference](http://wiki.openwrt.org/doc/howto/ipv6.dns).
+
 ## Providing some services behind a firewall
 
 A good approach is to allocate a specific port on your firewall and allow it only some access to your internal network, and, maybe, the internet.
