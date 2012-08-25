@@ -1,0 +1,10 @@
+# Notes & Todos
+
+ * [Disabling http leaving only https](http://wiki.openwrt.org/doc/howto/http.mini-httpd)
+ * Possibly: opkg remove kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-ppp kmod-pppoe kmod-pppox luci-proto-ppp ppp ppp-mod-pppoe
+ * Possibly install TorWRT: https://accesslabs.org/wiki/TorWRT
+ * Possibly install: iftop vnstat bandwidthd (CPU hungry) darkstat ntop collectd bmon (see: http://wiki.openwrt.org/doc/howto/bwmon )
+ * Setup remote syslog
+ * Setup a mesh AP
+ * [OpenWRT in VirtualBox](http://wiki.openwrt.org/doc/howto/virtualbox) (for testing)
+ * Services to setup on a machine inside the lan: XMPP, Mesh-VoIP, IkiWiki replica, ???
