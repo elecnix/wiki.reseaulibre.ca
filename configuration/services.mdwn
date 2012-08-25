@@ -128,6 +128,18 @@ uci set network.wlan0.ip6addr="fd64:2c08:9fa7:2::1/64"
 uci commit
 """]]
 
+## DNS services
+
+By default, OpenWRT provides a DNS server through DNSmasq, however it relies on an upstream DNS server. To provide a "real" DNS server, you can try [MaraDNS](http://wiki.openwrt.org/doc/howto/dns.maradns) or the `bind-server` package.
+
+However, there may yet be DNS servers on the mesh, which your router can use. Let's assume that `172.16.0.1` is a DNS server, then the following should enable your router to be a DNS cache:
+
+    rm /etc/resolv.conf
+    echo 'nameserver 172.16.0.1' > /etc/resolv.conf
+    /etc/init.d/dnsmasq restart
+
+This is taken from [the OpenWRT howto](http://wiki.openwrt.org/doc/howto/dhcp.dnsmasq#add.a.secondary.dns).
+
 ## Providing some services behind a firewall
 
 A good approach is to allocate a specific port on your firewall and allow it only some access to your internal network, and, maybe, the internet.
