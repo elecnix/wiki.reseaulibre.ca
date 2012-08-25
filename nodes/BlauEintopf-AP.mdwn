@@ -9,7 +9,7 @@ IPv6:
 """]]
 
 hostname
-: BlauEintopf
+: BlauEintopf-AP
 
 MAC address
 : {{$MAC}}
