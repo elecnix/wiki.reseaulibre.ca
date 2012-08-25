@@ -58,20 +58,32 @@ Then in `/etc/firewall.user`:
 [[!format sh """
 #! /bin/sh
 
-extif=br-lan
-intif=wlan0
-
-# get rid of the openwrt firewall
-iptables -F
 # set saneunsafe but open defaults
 iptables -P INPUT   ACCEPT
 iptables -P OUTPUT  ACCEPT
-iptables -P FORWARD ACCEPT
-# empy NAT
+# drop forward - only NAT'd packets allowed
+iptables -P FORWARD DROP
+
+# get rid of the openwrt firewall
+iptables -X
+iptables -F
+iptables -t mangle -F
+iptables -t mangle -X
+iptables -t raw -F
+iptables -t raw -X
 iptables -t nat -F
-iptables -t nat -A POSTROUTING -o $extif -j MASQUERADE
-iptables -A FORWARD -i $intif -o $extif -m state  --state RELATED,ESTABLISHED -j ACCEPT
-iptables -A FORWARD -i $extif -o $intif -j ACCEPT
+iptables -t nat -X
+
+route_nat() {
+  intif="$1"
+  extif="$2"
+  echo "configuring nat from $intif to $extif"
+  iptables -A FORWARD -i $extif -o $intif -m state  --state RELATED,ESTABLISHED -j ACCEPT
+  iptables -A FORWARD -i $intif -o $extif -j ACCEPT
+  iptables -t nat -A POSTROUTING -o $extif -j MASQUERADE
+}
+
+route_nat wlan0 br-mesh
 """]]
 
 The above will clear all firewall rules, allowing all traffic through the node. It assumes you have another router doing some filtering downstream, if not you will need to customize that firewall according to your policy, below.
