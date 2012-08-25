@@ -1,4 +1,4 @@
-[[!waypoint  lat="45.466301" lon="-73.623719" embed hidden width="400px" height="400px" right desc="An access point on my roof"]]
+[[!waypoint  map="null" lat="45.466301" lon="-73.623719" embed hidden width="400px" height="400px" right desc="An access point on my roof"]]
 
 # Technical details
 
