@@ -137,6 +137,8 @@ However, there may yet be DNS servers on the mesh, which your router can use. Le
     rm /etc/resolv.conf
     echo 'nameserver 172.16.0.1' > /etc/resolv.conf
     uci set dhcp.@dnsmasq[0].resolvfile=/etc/resolv.conf
+    uci set dhcp.@dnsmasq[0].domain=reseaulibre.ca
+    uci set dhcp.@dnsmasq[0].local=/reseaulibre.ca/
     uci commit
     /etc/init.d/dnsmasq restart
 
