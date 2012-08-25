@@ -42,7 +42,7 @@ Status
 : [[!taglink planned]]
 
 Operator
-: [[users/alice]]
+: [[users/Eric]]
 
 Links
 : 
