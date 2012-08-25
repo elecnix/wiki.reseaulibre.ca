@@ -6,6 +6,7 @@
 * Retour sur Maker Faire
 * Prochaine commande de matériel?
 * Prochaine rencontre
+* statistics
 
 # Vidéaste recherché
 
