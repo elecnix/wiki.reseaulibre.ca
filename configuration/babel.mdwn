@@ -69,6 +69,10 @@ add batman to the list of interfaces babel works on:
 Note that in our current [[batman]] configuration, the above is not
 necessary as the `br-lan` interface includes `bat0`.
 
+Pour avoir l'interface de monitoring:
+
+    uci set babeld.@general[0].local_server=33231
+
 Debian
 ------
 
