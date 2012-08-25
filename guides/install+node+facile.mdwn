@@ -46,7 +46,7 @@ Under the "Router Password" header, enter your password twice and the click "Sav
 
 To add the custom repository to your router's software sources, in the web interface, click the "System" tab, then "Software" subtab.  In "OPKG-Configuration", there are 2 tabs, click the "Configuration" and you see the text of the opkg.conf file.  Add the following line, then click submit.  Stability and architecture depends on what image you downloaded.  It is where you got the image from.
 
-    src reseau_libre http://packages.reseaulibre.ca:8080/Routeurs/openwrt/<stability>/<architecture>/packages
+    src reseau_libre http://packages.reseaulibre.ca:8080/Routeurs/reseaulibre-openwrt/<stability>/<architecture>/packages
 
 For example, here is what the file would look like for the devel branch of a nanostation device
 
