@@ -5,10 +5,9 @@ software ([[configuration/babel]] and [[configuration/batman]]). The uplink port
 
 Those are the configuration steps followed:
 
- * [[configuration/flashing]]
- * [[configuration/batman]]
- * [[configuration/babel]]
- * [[configuration/ip]]
+ * [[configuration/flashing]] - with genb's firmware ([[guide complet|guides/install+node+facile]])
+ * [[configuration/batman]] and [[configuration/babel]] - only on LAN ports, not on wifi
+ * [[configuration/ip]] - regular IPv4 and IPv6, although wifi has a `192.168.1.1` net
  * [[configuration/services]] - IPv6, DHCP, DNS
 
 Not documented: the access point is in managed mode, see the configuration dump below for examples.
