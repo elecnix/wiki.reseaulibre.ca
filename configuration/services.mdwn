@@ -163,7 +163,9 @@ Follow the above configuration, then:
     uci del radvd.@rdnss[0].ignore
     uci commit
 
-[Reference](http://wiki.openwrt.org/doc/howto/ipv6.dns).
+Taken from the [OpenWRT howto](http://wiki.openwrt.org/doc/howto/ipv6.dns).
+
+<!> Note: currently not working with Network manager during our first tests.
 
 ## Providing some services behind a firewall
 
