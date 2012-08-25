@@ -27,12 +27,27 @@ from the above repository and create a new wiki.
 
 The following steps should get you going:
 
-    git clone --bare git://wiki.reseaulibre.ca/
-    git clone wiki.reseaulibre.ca.git
+    git clone git://wiki.reseaulibre.ca/ wiki.reseaulibre.ca
     cd wiki.reseaulibre.ca
-    git co setup
+    git branch setup origin/setup
+    cd ../
+    git clone -b setup wiki.reseaulibre.ca setup
+    cd setup
     edit ikiwiki.setup # fix paths
     ikiwiki --setup ikiwiki.setup
+
+Sample configurations:
+
+    srcdir: /home/anarcat/wikis/wiki.reseaulibre.ca
+    destdir: /home/anarcat/public_html/wiki.reseaulibre.ca
+    libdir: /home/anarcat/wikis/wiki.reseaulibre.ca/.ikiwiki
+    git_wrapper: /home/anarcat/wikis/wiki.reseaulibre.ca/.git/hooks/post-commit
+    git_test_receive_wrapper: /home/anarcat/wikis/wiki.reseaulibre.ca/.git/hooks/pre-receive
+    gitorigin_branch: "" # disable
+    ENV:
+      TMPDIR: /home/anarcat/tmp
+
+Disable the `search`, `ikiwikihosting` and `branchable` plugins.
 
 Another guide is the [[!iki tips/laptop_wiki_with_git]] guide. To get a
 better understanding of how ikiwiki works, see [[!iki rcs/git]].
