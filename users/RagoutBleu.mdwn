@@ -8,3 +8,13 @@
  * Setup a mesh AP
  * [OpenWRT in VirtualBox](http://wiki.openwrt.org/doc/howto/virtualbox) (for testing)
  * Services to setup on a machine inside the lan: XMPP, Mesh-VoIP, IkiWiki replica, ???
+
+# My Nodes
+
+## Operational nodes
+
+[[!map pages="link(.) and nodes/* and tagged(up)"]]
+
+## Planned nodes
+
+[[!map pages="link(.) and nodes/* and tagged(planned)"]]
