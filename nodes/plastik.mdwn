@@ -1,8 +1,17 @@
 Access point in my living room, same location as boulette or carton...
 
 The wifi here is in managed mode, but the LAN ports run mesh
-software (babel and batman). The uplink port is simply a DHCP client
-that would get announced on babel.
+software ([[configuration/babel]] and [[configuration/batman]]). The uplink port is simply a DHCP client, so that it can connect to a regular internet uplink and announce it on the mesh. Otherwise it can network multiple mesh nodes through the gigabit LAN ports.
+
+Those are the configuration steps followed:
+
+ * [[configuration/flashing]]
+ * [[configuration/batman]]
+ * [[configuration/babel]]
+ * [[configuration/ip]]
+ * [[configuration/services]] - IPv6, DHCP, DNS
+
+Not documented: the access point is in managed mode, see the configuration dump below for examples.
 
 # Technical details
 
@@ -51,7 +60,7 @@ Operator
 Links
 : [[nodes/carton]] [[nodes/boulette]]
 
-Config dump
+Config dump:
 
 [[!format txt """
 babeld.@general[0]=general
