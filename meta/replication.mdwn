@@ -38,6 +38,8 @@ The following steps should get you going:
 
 Sample configurations:
 
+    cgiurl: http://wiki.reseaulibre.ca/ikiwiki.cgi
+    cgi_wrapper: /home/anarcat/public_html/ikiwiki.cgi
     srcdir: /home/anarcat/wikis/wiki.reseaulibre.ca
     destdir: /home/anarcat/public_html/wiki.reseaulibre.ca
     libdir: /home/anarcat/wikis/wiki.reseaulibre.ca/.ikiwiki
@@ -55,6 +57,11 @@ better understanding of how ikiwiki works, see [[!iki rcs/git]].
 Once the wiki can generate pages, you may need to go over the
 [[meta/Maintenance]] guide for the plugins to enable and the hooks
 configuration.
+
+You will also need a webserver to serve the content in the `destdir`
+defined above. This configuration varies wildly, but the ikiwiki
+documentation ([[!iki setup]] and [[!iki tips/dot_cgi]]) has some
+hints.
 
 (!) Oh, and [this](http://piny.be/jrayhawk/notes/ikiwiki_creation/)
 may also be of use if the above doesn't work.
