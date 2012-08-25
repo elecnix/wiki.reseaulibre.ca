@@ -117,10 +117,10 @@ This can be implemented immediatly with:
     ifconfig vr2 inet6 fd64:2c08:9fa7::1/64
     rtadvd vr2
 
-# Issues and todos
+# Routing issues
 
 We can already observe a basic problem here: globally routable IPs are
 not easily reachable from the mesh without adding static routes. This
-is something I hope [[olsrd]] can fix.
+is something [[babel]] can fix.
 
 Another option is to use `pinfoflags` field in `rtadvd.conf` to unset the second bit, the `autonomous address-configuration flag` (section 4.6.2 in [[!rfc 2461]]), which would disable the use of that prefix in address autoconfiguration while at the same time announcing the route. To be tested.
