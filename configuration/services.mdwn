@@ -7,11 +7,11 @@ A mesh is fun, but otherwise not very useful until services are plugged into it.
 # Currently available services
 
  * DNS server at `172.16.0.1` / `fd64:2c08:9fa7:1::1` (`roadkiller.anarcat.ath.cx`)
- * http://mesh.openisp.ca/ - this wiki, should be running on
+ * <http://mesh.openisp.ca/> - this wiki, should be running on
    `marcos.orangeseeds.org` (`2001:1928:1:9::1`), which should be
    routed by roadkiller, above
- * this wiki is also available through git
- * http://anarcat.ath.cx/ - various services, also available through
+ * this wiki is also available through git, see [[meta]]
+ * <http://anarcat.ath.cx/> - various services, also available through
    `marcos`
 
 # Naming your device
@@ -32,11 +32,6 @@ Set a custom name, in case you encouter other peers :-)
 
     hostname meshmtl42
     hostname > /etc/hostname
-
-## Other systems
-
-In other systems, this can vary wildly, but there is usually a
-configuration file for this.
 
 # Providing your own services
 
@@ -88,17 +83,33 @@ route_nat wlan0 br-mesh
 
 The above will clear all firewall rules, allowing all traffic through the node. It assumes you have another router doing some filtering downstream, if not you will need to customize that firewall according to your policy, below.
 
-## Providing DHCP and IPv6
+## DHCP configuration
 
-The following will enable DHCP and IPv6 on the router:
+The following will enable DHCP on the wireless interface of the router (`wlan0`):
 
-[[!format txt """
+[[!format sh """
 uci set dhcp.wlan0=dhcp
 uci set dhcp.wlan0.interface=wlan0
 uci set dhcp.wlan0.start=100
 uci set dhcp.wlan0.limit=150
 uci set dhcp.wlan0.leasetime=1h
 """]]
+
+Make sure the wireless interface has an IP assigned:
+
+[[!format sh """
+uci set network.wlan0.proto=static
+uci set network.wlan0.ipaddr="192.168.4.1"
+uci set network.wlan0.netmask="255.255.255.0"
+"""]]
+
+and don't forget to commit the results:
+
+    uci commit
+
+## IPv6 configuration
+
+The following will enable IPv6 router advertisement on the wireless router (`wlan0`):
 
 [[!format sh """
 uci add radvd prefix
@@ -121,9 +132,6 @@ uci set radvd.@interface[1].ignore=0
 Make sure you have configured an IP on wlan0, using the [[ip]] configuration rules. For example:
 
 [[!format sh """
-uci set network.wlan0.proto=static
-uci set network.wlan0.ipaddr="192.168.4.1"
-uci set network.wlan0.netmask="255.255.255.0"
 uci set network.wlan0.ip6addr="fd64:2c08:9fa7:2::1/64"
 uci commit
 """]]
