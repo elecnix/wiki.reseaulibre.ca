@@ -136,6 +136,8 @@ However, there may yet be DNS servers on the mesh, which your router can use. Le
 
     rm /etc/resolv.conf
     echo 'nameserver 172.16.0.1' > /etc/resolv.conf
+    uci set dhcp.@dnsmasq[0].resolvfile=/etc/resolv.conf
+    uci commit
     /etc/init.d/dnsmasq restart
 
 This is taken from [the OpenWRT howto](http://wiki.openwrt.org/doc/howto/dhcp.dnsmasq#add.a.secondary.dns).
