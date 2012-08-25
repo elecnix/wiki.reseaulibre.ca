@@ -3,7 +3,7 @@
 # Technical details
 
 [[!ymlfront data="""
-MAC: (mac address here)
+MAC: 00:27:22:2E:BD:0C
 IP: 172.16.1.30
 IPv6: 
 """]]
