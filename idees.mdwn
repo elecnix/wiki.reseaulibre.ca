@@ -24,5 +24,6 @@ Use this page to document potential utilizations. The goal is to answer "what wi
 * Réseau de paiement [[BitCoin | http://bitcoin.org/]]
 * Faire de l'exercice en installant des antennes !!
 * Serveur [[Diaspora | http://fr.wikipedia.org/wiki/Diaspora_(logiciel)]]
+* Station de radio (parlée ou musicale)
 
 Autres idées de serveurs: voir la liste du [Free Network Foundation](http://www.commons.freenetworkfoundation.org/index.php?title=FreedomNoc).
