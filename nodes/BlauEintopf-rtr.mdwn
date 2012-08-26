@@ -1,0 +1,33 @@
+This is my mesh router, which is not part of the BATMAN mesh but is
+still in the mesh at the IP level because it is connected to [[BlauEintopf]]
+
+In the future this router will provide internet access through Tor.
+
+[[!ymlfront data="""
+MAC: N/A
+IP: 172.16.0.29/48
+IPv6: 
+"""]]
+
+ * MAC address: {{$MAC}}
+ * IPv6 address: {{$IPv6}}
+ * IP address: {{$IP}}
+ * Software: OpenWRT
+ * Hardware: ??
+ * Power: N/A
+ * Location: [[RagoutBleu]]
+ * Status: [[!taglink planned]]
+ * Links: [[BlauEintopf]], [[BlauEintopf-AP]]
+ * Azimuth: N/A
+ * Panorama: N/A
+ * Operator: [[users/RagoutBleu]]
+
+[[!meta copyright="Copyright © 2011 Ragout Bleu"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
