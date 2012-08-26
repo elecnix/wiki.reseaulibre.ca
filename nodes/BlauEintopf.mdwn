@@ -27,7 +27,7 @@ Hardware
 : Ubiquity Bullet M2 + 15 dBi Hyperlink Tech omnidirectional antenna
 
 Power
-: 15dBm/28mW (default)
+: 30dBm/1000mW (default)
 
 Location
 : 10 feet up on a pole, on top of the third floor
