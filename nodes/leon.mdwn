@@ -1,12 +1,19 @@
-[[!waypoint  lat="45.539759" lon="-73.601008" embed width="400px" height="400px" right desc="Routeur local dans la maison"]]
+[[!waypoint  lat="45.539759" lon="-73.601008" embed width="400px" height="400px" right desc="Point d'accès"]]
 
-Pour l'instant mon node est un point d'accès ordinaire, mais quand j'aurai le temps, j'en ferai un point mesh.
+Point d'accès, avec accès à internet et au mesh.  Voir plus bas mes fichiers de config pour ce routeur.
 
 Ce routeur est mon super routeur de test avec serial et JTAG pour avoir du fun sans crainte de briquer :D
 
- * MAC address:
- * IP address:
- * IPv6 address:
+[[!ymlfront data="""
+MAC: 00:0c:41:14:e0:8f
+IP: 172.16.11.1
+IPv6: 
+"""]]
+
+
+ * MAC address: {{$MAC}}
+ * IP address: {{$IP}}
+ * IPv6 address: {{$IPv6}}
  * Software: Openwrt Kamikaze
  * Hardware: Linksys wrtsl54gs
  * Power:
@@ -16,6 +23,270 @@ Ce routeur est mon super routeur de test avec serial et JTAG pour avoir du fun s
  * Azimuth:
  * Panorama:
  * Operator: [[users/genb]]
+
+## Configuration
+
+C'est un routeur linksys, avec 4 ports LAN.  
+
+* Deux ports LAN sont sur le mesh, dont l'un d'eux est connecté à un nanostation, qui aurait aussi bien pu être le routeur sur mon toit.  
+
+* Deux autres ports LAN sont sur une autre interface pour des appareils non-batman.  Pas sûre qu'ils marchent maintenant par contre...
+
+* L'interface wifi elle est en simple AP.  
+
+* Et le port WAN a accès à internet via mon réseau interne, auquel je ne veux pas donner accès.
+
+Fichiers de config:
+
+/etc/config/network
+
+    config switch 'eth0'
+        option enable '1'
+        option enable_vlan '1'
+
+    config switch_vlan 'eth0_0'
+        option device 'eth0'
+        option vlan '0'
+        option ports '0 1 4 5'
+        #option ports '0 1 2 3 5'
+
+    config switch_vlan 'eth0_1'
+        option device 'eth0'
+        option vlan '1'
+        option ports '2 3 5'
+
+    config interface 'loopback'
+        option ifname 'lo'
+        option proto 'static'
+        option ipaddr '127.0.0.1'
+        option netmask '255.0.0.0'
+
+    config interface 'lan'
+        option proto 'static'
+        option netmask '255.255.0.0'
+        option ipaddr '172.16.11.1'
+        option type 'bridge'
+        option _orig_ifname 'eth0'
+        option _orig_bridge 'false'
+        option ifname 'bat0 eth0.1'
+
+    config interface 'wan'
+        option ifname 'eth1'
+        option macaddr '00:0c:41:14:e0:90'
+        option proto 'dhcp'
+        option hostname 'leon'
+
+    config interface 'wifi'
+        option 'proto' 'static'
+        option ipaddr '192.168.22.1'
+        option netmask '255.255.255.0'
+
+    config interface 'bat0'
+        option ifname 'bat0'
+        option proto 'none'
+        option mtu '1500'
+
+    config interface 'mesh1'
+        option proto 'none'
+        # Important!!  Il faut bridger cette interface à cause d'un bug avec batman-adv et les vlan
+        option type 'bridge'
+        option ifname 'eth0.0'
+        option mtu '1528'
+
+
+/etc/config/wireless
+
+    config wifi-device 'radio0'
+        option type 'mac80211'
+        option channel '11'
+        option macaddr '00:10:18:90:20:db'
+        option hwmode '11g'
+        option country '00'
+        option txpower '20'
+
+    config wifi-iface
+        option device 'radio0'
+        option mode 'ap'
+        option encryption 'none'
+        option ssid 'reseaulibre.ca - leon'
+        option network 'wifi'
+
+
+/etc/config/batman-adv
+
+    config 'mesh' 'bat0'
+        option 'interfaces' 'mesh1'
+        option 'aggregated_ogms'
+        option 'ap_isolation'
+        option 'bonding'
+        option 'fragmentation'
+        option 'gw_bandwidth'
+        option 'gw_mode' 'server'
+        option 'gw_sel_class'
+        option 'log_level'
+        option 'orig_interval'
+        option 'vis_mode'
+        option 'bridge_loop_avoidance'
+
+
+
+/etc/config/firewall
+
+    config defaults
+        option syn_flood '1'
+        option output 'ACCEPT'
+        option drop_invalid '1'
+        option input 'ACCEPT'
+        option forward 'ACCEPT'
+
+    config zone
+        option name 'lan'
+        option network 'lan'
+        option input 'ACCEPT'
+        option output 'ACCEPT'
+        option forward 'ACCEPT'
+
+    config zone
+        option name 'wan'
+        option network 'wan'
+        option output 'ACCEPT'
+        option input 'ACCEPT'
+        option forward 'ACCEPT'
+
+    config zone
+        option name 'wifi'
+        option input 'ACCEPT'
+        option output 'ACCEPT'
+        option forward 'ACCEPT'
+
+    config forwarding
+        option src 'lan'
+        option dest 'wan'
+
+    config forwarding
+        option src 'wifi'
+        option dest 'wan'
+
+    config forwarding
+        option src 'wifi'
+        option dest 'lan'
+
+    config rule
+        option name 'Allow-DHCP-Renew'
+        option src 'wan'
+        option proto 'udp'
+        option dest_port '68'
+        option target 'ACCEPT'
+        option family 'ipv4'
+
+    config rule
+        option name 'Allow-Ping'
+        option src 'wan'
+        option proto 'icmp'
+        option icmp_type 'echo-request'
+        option family 'ipv4'
+        option target 'ACCEPT'
+
+    config rule
+        option name 'Allow-DHCPv6'
+        option src 'wan'
+        option proto 'udp'
+        option src_ip 'fe80::/10'
+        option src_port '547'
+        option dest_ip 'fe80::/10'
+        option dest_port '546'
+        option family 'ipv6'
+        option target 'ACCEPT'
+
+    config rule
+        option name 'Allow-ICMPv6-Input'
+        option src 'wan'
+        option proto 'icmp'
+        list icmp_type 'echo-request'
+        list icmp_type 'destination-unreachable'
+        list icmp_type 'packet-too-big'
+        list icmp_type 'time-exceeded'
+        list icmp_type 'bad-header'
+        list icmp_type 'unknown-header-type'
+        list icmp_type 'router-solicitation'
+        list icmp_type 'neighbour-solicitation'
+        option limit '1000/sec'
+        option family 'ipv6'
+        option target 'ACCEPT'
+
+    config rule
+        option name 'Allow-ICMPv6-Forward'
+        option src 'wan'
+        option dest '*'
+        option proto 'icmp'
+        list icmp_type 'echo-request'
+        list icmp_type 'destination-unreachable'
+        list icmp_type 'packet-too-big'
+        list icmp_type 'time-exceeded'
+        list icmp_type 'bad-header'
+        list icmp_type 'unknown-header-type'
+        option limit '1000/sec'
+        option family 'ipv6'
+        option target 'ACCEPT'
+
+    config include
+        option path '/etc/firewall.user'
+
+    config forwarding
+        option dest 'lan'
+        option src 'wan'
+
+    config forwarding
+        option dest 'wifi'
+        option src 'wan'
+
+
+/etc/config/dhcp
+
+    config dnsmasq
+        option domainneeded '1'
+        option boguspriv '1'
+        option filterwin2k '0'
+        option localise_queries '1'
+        option rebind_protection '1'
+        option rebind_localhost '1'
+        option local '/lan/'
+        option domain 'lan'
+        option expandhosts '1'
+        option nonegcache '0'
+        option authoritative '0'
+        option readethers '1'
+        option leasefile '/tmp/dhcp.leases'
+        option resolvfile '/tmp/resolv.conf.auto'
+
+    config dhcp 'wifi'
+        option interface 'wifi'
+        option start '100'
+        option limit '150'
+        option leasetime '12h'
+
+    config dhcp 'mesh'
+        option interface 'lan'
+        option start '1533'
+        option limit '150'
+        option leasetime '12h'
+        option domain 'reseaulibre.ca'
+        option local '/reseaulibre.ca/'
+
+    config dhcp 'wan'
+        option interface 'wan'
+        option ignore '1'
+
+/etc/firewall.user
+
+    # This file is interpreted as shell script.
+    # Put your custom iptables rules here, they will
+    # be executed with each firewall (re-)start.
+
+    # Ces lignes empêchent l'accès à mon LAN sur 192.168.10.0 depuis autant le mesh que l'AP
+    iptables -t filter -I FORWARD -d 192.168.10.0/24 -j DROP
+    iptables -t filter -I FORWARD -d 192.168.10.0/24 -m state --state RELATED,ESTABLISHED -j ACCEPT
+
 
 
 Pour les intéressés, voici une petite photo de leon avec port série et jtag.
