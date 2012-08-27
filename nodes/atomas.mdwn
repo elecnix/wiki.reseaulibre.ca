@@ -19,7 +19,7 @@ hostname
 : atomas
 
 MAC address
-: {{$MAC}}
+: 
 
 IPv6 address
 : {{$IPv6}}
