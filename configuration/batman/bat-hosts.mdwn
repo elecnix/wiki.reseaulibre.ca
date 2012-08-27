@@ -4,3 +4,12 @@ Here's a list of suggested MAC address to hostname translations for BATMAN.
 
 [[!report pages="nodes/* and (field(MAC *))" template="bathosts" sort="field(MAC)"]]
 
+Other known MACs:
+
+    00:13:10:1b:6d:dd linksys-pierre
+    00:15:6d:5a:f7:27 batman-94
+    00:15:6d:81:e0:5b batman-92
+    00:15:6d:fc:be:90 batman-93
+    00:1C:10:22:02:AE carton
+    00:25:9c:5e:44:59 linksys-grace
+    00:b0:c0:02:39:5c elecnix-sl7205
