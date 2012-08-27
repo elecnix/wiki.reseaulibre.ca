@@ -47,3 +47,23 @@ Joignez-vous à nous pour voir des exemples d'applications rendues possibles par
 Réseau Libre aims to create a wireless community mesh network, independent and decentralized. The network is built organically and evolves as new members join. Each person participating in the network adds a node and chooses the services he or she wishes to share with the community, internet connection or not.
 
 Join us for examples of applications enabled by mesh networks. If you are interested by this project, come to our booth with an OpenWRT compatible router and we can help you install and configure the distribution to make it compatible to the mesh.
+
+## Retour
+
+Bons coups:
+
+ * les flyers sont super utiles, tout comme les affiches, ca evite a
+   repeter tout a chaque personne
+
+Mauvais coups:
+
+ * on aurait dû avoir une feuille pour permettre aux gens de
+   s'isncrire à la liste de discussion
+
+Questions frequentes:
+   * et les pedo-nazis?
+   * c'est legal?
+   * bell vont pas etre contents
+
+Questions moins frequentes:
+   * c'est comme "openmesh"?
