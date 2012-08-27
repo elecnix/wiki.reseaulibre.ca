@@ -20,7 +20,7 @@ Use this page to document potential utilizations. The goal is to answer "what wi
 * Installation d'un réseau de stations météorologiques, de surveillance de la qualité de l'air, pour par exemple analyser les ilôts de chaleur. Avec [[sonde de température USB|http://www.amazon.com/Powered-Thermometer-Temperature-Sensor-Data/dp/B0054U4YKI/ref=pd_cp_e_0]]?
 * Mesh-local Big Data processing: certains calculs distribués nécessitent une bande-passante plutôt élevée, comme la génération de tuiles pour OpenStreetMap.
 * Réseau de caméras de surveillance d'endroits publics, comme les parcs de quartier.
-* Sauvegarde de fichiers entre voisins (i.e. prêter un disque au voisins et y envoyer des sauvegardes encryptées)
+* Sauvegarde de fichiers entre voisins (i.e. prêter un disque au voisins et y envoyer des sauvegardes encryptées) - [bonne évaluation des technologies récentes](https://linuxfr.org/news/r-evolutions-dans-le-monde-de-la-sauvegarde-de-donnees) - [Tahoe-LAFS](https://tahoe-lafs.org/) serait particulièrement intéressant à tester
 * Réseau de paiement [[BitCoin | http://bitcoin.org/]]
 * Faire de l'exercice en installant des antennes !!
 * Serveur [[Diaspora | http://fr.wikipedia.org/wiki/Diaspora_(logiciel)]]
