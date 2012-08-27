@@ -77,6 +77,10 @@ There are two options here. One is to regularly pull from the master (less relia
 
 The repository URL above needs to point to the "repository" directory of the mirror, see the [[!iki rcs/git]] documentation for a good explanation of the layout of the different git repositories in ikiwiki.
 
+It also needs to allow the following SSH key to push to the repository:
+
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQsHWlypnPe+4e0mKkE51oDHK2yXrEeja6299Es/wFvqihvzY4hQhJdUdl2KVmz5CGjRYqhnQ8l5Al5vtHoi9IxlI7yS7cOsj/wFt4EKDophqoyUFDaiWtXuFCNYwdTeX5Fb9N6nT8ihUUK/q9k8Ew9kuBTbznsVra5zqJv+LhfAMIesPwmP6iF966Evi0uXxz0CkIevttvYgRZyPIvdVN90nr5f7um1vOP6L1KkQne8guHpuNfxd9XZg0e3XPG6decGREy8jdOc3xlIADc+yxKpB+XqZyE3iYi2RsxnjqWbSURvOhvI5z4EVj5Qv8ktSj8g3LkukQr25EgNMl1cv9 r-wiki@marcos
+
 # Publishing the mirror
 
 Once your mirror works, it needs to be added to the list of mirrors. You can ask the mirror where you take it from (and why not, all mirrors) to add it to their setup file. As an example, here's the configuration for the first mirror:
