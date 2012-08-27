@@ -37,7 +37,4 @@ Here's a list of suggested MAC address to hostname translations for BATMAN.
 
 (!) This table should supplant the manually maintained tables above.
 
-cat >> /etc/bat-hosts <<EOF
-[[!report pages="nodes/* and (field(MAC *))" template="bathosts"]]
-
 [[!report pages="nodes/* and (field(MAC *))" template="bathosts" sort="field(MAC)"]]
