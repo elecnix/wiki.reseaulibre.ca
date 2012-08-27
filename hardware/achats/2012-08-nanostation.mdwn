@@ -8,6 +8,8 @@ anarcat: à confirmer, dépend de Koumbit et autres.
 
 R: intéressé par un kit bullet / 15 dBi / ...
 
+Date limite: ??
+
 | Item                                      | Qtee | Prix unit | Total | En stock |
 ------------------------------------------- | :--: | --------: | ----: | -------: |
 [[NanoStation M2|http://www.converbit.ca/magasin/products.php?product=NanoStation-M2]] 				    | 2	| $89.00 | $178.00 | 0 |
