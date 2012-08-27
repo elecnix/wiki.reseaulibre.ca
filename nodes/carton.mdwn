@@ -1,4 +1,4 @@
-Test node for [[anarcat]], may be deployed below [[boulette]] to provide access to the local community.
+Test node for [[anarcat]], deployed below [[boulette]] to provide access to the local community.
 
 ---
 
