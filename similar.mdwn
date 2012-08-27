@@ -7,7 +7,7 @@ This project is inspired, guided and sometimes in communication with the followi
 #Europe
 * <http://www.opennet-initiative.de/> - Rostock
 * <http://reseaucitoyen.be/> - Bruxelles - forké en <http://bombolong.net> (down?)
-* <http://freifunk.net/> - Berlin
+* <http://freifunk.net/> - Berlin, Leipzig, Halle, Gadow, Dresden
 * <http://802x.fr/> - Dijon
 * <http://www.funkfeuer.at/> - Austria  developping OLSR
 * <http://www.awmn.net/> - Athens Wireless Metropolitan Network, Grèce, [1500 batman/olsr nodes WiND map](http://wind.awmn.net/?page=nodes)
