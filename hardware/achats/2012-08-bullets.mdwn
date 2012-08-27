@@ -2,7 +2,7 @@ Achat de bullet + antenne 15 dbi + injecteur POE
 
 * [[/users/elecnix]] 6 ([[/nodes/bb]], [[/nodes/val]],
   [[/nodes/lacou]], [[/nodes/capitaine]], [[/nodes/btm2]],
-  [[/nodes/greene]]) - 6 antennes à ramasser, le reste ramassé et payé.
+  [[/nodes/greene]]) - 6 ramassé et payé.
 * [[/users/gapzap]] 2 - ramassé, payé
 * [[/users/tahini]] 3 - ramassé, payé
 * [[/users/deuxpi]] 3 - ramassé, payé
@@ -22,4 +22,4 @@ total: 20
 
 16-août/gapzap: Richard a testé sa SMART en allant chercher tout ça!! - tout sera au RDV dimanche chez Koumbit - 
 
-[[done]] - livré au bureau de Koumbit.
+[[done]] - livré au bureau de Koumbit, tout a été ramassé et payé à tout le monde.
