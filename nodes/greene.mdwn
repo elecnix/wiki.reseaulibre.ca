@@ -1,4 +1,6 @@
-[[!waypoint lat="45.48513" lon="-73.58582" embed hidden width="400px" height="400px" right desc="Planifié sur le toit, en haut de la côte"]]
+[[!waypoint lat="45.48513" lon="-73.58582" embed hidden width="400px" height="400px" right desc="Planifié sur le toit, en haut de la côte (besoin de financement!)"]]
+
+L'accès au toit est autorisé par le propriétaire, et permettrait de faire un lien entre le haut et le bas de la côte. Cependant, quelqu'un doit fournir l'antenne.
 
 [[!ymlfront data="""
 MAC: DC:9F:DB:00:13:4C
