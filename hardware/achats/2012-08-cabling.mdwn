@@ -43,7 +43,7 @@ Par personne
 
 | Personne | Total avant taxes | Total avec taxes | Ramassé? | payé? |
 ---------- | ----------------: | ---------------: | :------: | ----- |
-Gapzap     | 170+24 = 194$     |   223.05$        | non      | non   |
+Gapzap     | 170+24 = 194$     |   223.05$        | oui      | non   |
 elecnix    |          194$     |   223.05$        | 50 connecteurs | oui, balance de l'autre commande |
 scientist  | 194/2  = 97$      |   111.53$        | oui      | oui, accèsD 2012-08-21 |
 bgm        |          97$      |   111.53$        | oui sauf la boîte de câble?? | non |
