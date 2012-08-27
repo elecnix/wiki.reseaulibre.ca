@@ -4,8 +4,8 @@ Achat de bullet + antenne 15 dbi + injecteur POE
   [[/nodes/lacou]], [[/nodes/capitaine]], [[/nodes/btm2]],
   [[/nodes/greene]]) - 6 antennes à ramasser, le reste ramassé et payé.
 * [[/users/gapzap]] 2 - à ramasser, à payer?
-* [[/users/tahini]] 3 - ramassé, à payer
-* [[/users/deuxpi]] 3 - ramassé, à payer
+* [[/users/tahini]] 3 - ramassé, payé
+* [[/users/deuxpi]] 3 - ramassé, payé
 * [[/users/scientist]] 2 - ramassé, à payer
 * [[/users/anarcat]] 2 ([[nodes/magicfab]], spare) - ramassé, payé 55$
   à nicolas (balance de l'autre commande)
