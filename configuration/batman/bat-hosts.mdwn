@@ -46,4 +46,4 @@ TODO: create `template/bat-hosts.tmpl` with this line:
 
 test:
 
-[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="iptable" sort="field(IP)"]]
+[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="bathosts" sort="field(IP)"]]
