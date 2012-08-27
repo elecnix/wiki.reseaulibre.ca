@@ -40,4 +40,4 @@ Here's a list of suggested MAC address to hostname translations for BATMAN.
 cat >> /etc/bat-hosts <<EOF
 [[!report pages="nodes/* and (field(MAC *))" template="bathosts"]]
 
-[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="bathosts" sort="field(IP)"]]
+[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="bathosts" sort="field(MAC)"]]
