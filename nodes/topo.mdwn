@@ -1,6 +1,6 @@
-[[!waypoint lat="45.527314" lon="-73.596565" embed hidden width="400px" height="400px" right desc="Planifié: NanoStation dans la fenêtre du 10e étage"]]
+[[!waypoint lat="45.527314" lon="-73.596565" embed hidden width="400px" height="400px" right desc="Planifié: Antenne sectorielle 120 degrés dans la fenêtre du 10e étage"]]
 
-Planifié: Deux NanoStation dans la fenêtre du 10e étage
+Planifié: Antenne sectorielle 120 degrés dans la fenêtre du 10e étage
 
 # Technical details
 
