@@ -54,6 +54,10 @@ Operator
 Links
 : none?
 
+Panorama
+
+[[!img 20120823_011-20120823_002.jpg.jpg size=950x]]
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
