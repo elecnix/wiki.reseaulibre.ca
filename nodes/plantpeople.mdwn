@@ -56,7 +56,7 @@ Links
 
 Panorama
 
-[[!img 20120823_011-20120823_002.jpg.jpg size=950x]]
+[[!img 20120823_011-20120823_002.jpg size=950x]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
