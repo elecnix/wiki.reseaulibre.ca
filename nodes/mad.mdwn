@@ -3,7 +3,6 @@ Possibilité d'un noeud, sur toit au 3e étage. La vue vers l'est est bloquée.
 # Technical details
 
 [[!ymlfront data="""
-MAC: (mac address here)
 IP: (pick one from [[policy/numbering]])
 IPv6: 
 """]]

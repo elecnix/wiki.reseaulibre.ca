@@ -2,7 +2,6 @@
 
 
 [[!ymlfront data="""
-MAC: TBD
 IP: 172.16.0.11
 IPv6: fd64:2c08:9fa7:11::/64
 """]]

@@ -1,7 +1,6 @@
 [[!waypoint lat="45.5275" lon="-73.5904" embed hidden width="400px" height="400px" right desc="Local Access Point"]]
 
 [[!ymlfront data="""
-MAC: N/A
 IP: 172.16.1.11
 IPv6: fd64:2c08:9fa7:11::2/64
 """]]

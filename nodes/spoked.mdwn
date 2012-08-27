@@ -1,7 +1,6 @@
 [[!waypoint lat="45.5352" lon="-73.584" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 
 [[!ymlfront data="""
-MAC: TBD
 IP: 172.16.0.10
 IPv6: fd64:2c08:9fa7:10::/64
 """]]

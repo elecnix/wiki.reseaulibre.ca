@@ -5,7 +5,6 @@ This is a public internet gateway. The access is severly firewalled, and
 access will be completely removed if abused.
 
 [[!ymlfront data="""
-MAC: N/A
 IP: 
 - 172.16.0.1/48
 - 72.0.72.144/32

@@ -4,7 +4,6 @@
 # Technical details
 
 [[!ymlfront data="""
-MAC: PU:SS:YY:RR:IO:TT
 IP: 
 IPv6: 
 """]]
