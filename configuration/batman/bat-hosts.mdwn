@@ -3,9 +3,6 @@ You may have noticed that `batctl tcpdump` and other commands display MAC addres
 Here's a list of suggested MAC address to hostname translations for BATMAN.
 
 [[!report pages="nodes/* and (field(MAC *))" template="bathosts" sort="field(MAC)"]]
-
-Other known MACs:
-
     00:13:10:1b:6d:dd linksys-pierre
     00:15:6d:5a:f7:27 batman-94
     00:15:6d:81:e0:5b batman-92
