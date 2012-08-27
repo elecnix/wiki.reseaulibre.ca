@@ -116,6 +116,15 @@ the wiki:
 
 ... and more, see the setup file.
 
+### Contrib plugins to install
+
+Those plugins are special, as they are not shipped with Ikiwiki out of
+the box.
+
+* [[!iki plugins/contrib/field]], [[!iki plugins/contrib/getfield]],
+  [[!iki plugins/contrib/ftemplate]], [[!iki plugins/contrib/report]],
+* 
+
 ### Possible plugins to enable
 
 * [[!iki plugins/anonok]] - may provoke a deluge of spam
