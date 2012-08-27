@@ -72,7 +72,9 @@ In the "Network" tab, "Interfaces" sub-tab, click the "Add new interface..." but
 
 Create an interface for each of the interfaces you plan to add to the mesh.  For instance, mesh0, mesh1, with protocol Unmanaged and select the interface it will be linked to (wlan0, eth0).  Then click "Submit".  To commit the changes, click "Save & Apply".
 
-*Missing submit screenshot*
+[[!img iface_mesh0_new.jpg align="left" size="950x" alt="Create interface mesh0"]]
+
+[[!img iface_mesh1_new.jpg align="left" size="950x" alt="Create interface mesh1"]]
 
 [[!img iface_mesh0_apply.jpg align="left" size="950x" alt="Apply new interface"]]
 
@@ -85,7 +87,7 @@ Like previously, add an interface that will be named bat0, with protocol Unmanag
 ## Configure the LAN interface
 
 In the "Network" tab, "Interfaces" sub-tab, edit the LAN interface.
-Configure your node by picking a free slot from the IP Allocation page. Here we assume you're installing a small node, so we use the 172.16.1.X/12 network.  And disable dhcp fro this interface.  Click "Save & Apply".
+Configure your node by picking a free slot from the [[IP Allocation|policy/numbering]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/12 network.  And disable dhcp fro this interface.  Click "Save & Apply".
 
 [[!img configure_lan.jpg align="left" size="950x" alt="Configure LAN"]]
 
