@@ -19,6 +19,7 @@ This project is inspired, guided and sometimes in communication with the followi
 
 #Afrique
 * <http://fabfi.fabfolk.com/> - Afghanistan et Kénia
+* <http://villagetelco.org/> - Bo-kaap, Cape Town; Dili, East Timor
 
 #Amérique du Nord
 * <http://www.communifi.ca> - Mesh project in Toronto (in planning stage)
@@ -28,3 +29,4 @@ This project is inspired, guided and sometimes in communication with the followi
 #Amérique du sud et centrale
 * <http://buenosaireslibre.org/> - Buenos Aires, Argentine, un des plus importants réseaux libres en Amérique latine
 * <http://www.redlibre.co/> - Red Libre.co, Colombie
+* <http://villagetelco.org/> - Piracanga, Bahia
