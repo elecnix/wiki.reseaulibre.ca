@@ -76,6 +76,13 @@ This will bring up your network interface:
     iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 1
     ifconfig wlan0 up
 
+Si vous avez une erreur avec le mode ad-hoc faire avant la commande:
+
+    ifconfig wlan0 up
+    iwconfig wlan0 channel 1
+
+(!) Le mode Ad-Hoc n'est pas supporté avec les driver rtl8187 dans linux.
+
 Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. 
 
     wlan0     IEEE 802.11bgn  ESSID:"reseaulibre.ca"  
@@ -84,6 +91,8 @@ Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la ca
               RTS thr:off   Fragment thr:off
               Encryption key:off
               Power Management:on
+
+Bien vérifier que la [Key encryption](/configuration/ad-hoc/#index5h2) est désactivée.
 
 Sinon, descendre l'interface réseau (voir même désactiver son module noyau) et la ré-activer.
 
