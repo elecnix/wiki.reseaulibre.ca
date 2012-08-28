@@ -15,4 +15,4 @@ facilitate reading `batctl` output.
     e8:9a:8f:6e:0f:60 angela-eth0
     00:15:6d:db:d3:65 boulette-eth
     dc:9f:db:01:12:d3 lacou-eth0
-    00:b0:c0:02:1a:9f bococom-inconnu
+    00:b0:c0:02:1a:9f bococom-lacou
