@@ -1,0 +1,5 @@
+Je pense qu'on devrait organiser une rencontre pour tester babel d'avantage. Amener quelques points d'accès et tester babel sans l'interférence de BATMAN.
+
+De plus, on pourrait profiter de cette occasion pour s'échanger nos clefs PGP, ce qui me semble être une bonne manière de pouvoir développer un VPN par l'échange sécurisé des empreintes de clefs des relais, peu importe la technologie choisie.
+
+Finalement, si on réussi tout ça et on cherche quelquechose à faire, il restera à configurer un VPN entre verdun et rosemont! :) On pourra aussi discuter de la question de l'adressage.
