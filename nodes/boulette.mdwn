@@ -50,6 +50,113 @@ Operator
 Links
 : [[carton]], [[roadkiller]], [[Grace]]
 
+[[!img nodes/boulette/20111101_004.jpg alt="Cheminée" align="right"]]
+
+Configuration
+=============
+
 This node runs batman according to the [[configuration/batman]] howto.
 
-[[!img nodes/boulette/20111101_004.jpg alt="Cheminée" align="right"]]
+Babel
+-----
+   
+    babeld.@general[0]=general
+    babeld.wlan=interface
+    babeld.lan=interface
+    babeld.@filter[0]=filter
+    babeld.@filter[0].ignore=true
+    babeld.@filter[0].type=redistribute
+    babeld.@filter[0].ip=0.0.0.0/0
+    babeld.@filter[0].le=0
+    babeld.@filter[0].proto=3
+    babeld.@filter[0].action=metric 128
+    babeld.wlan0=interface
+
+Batman
+------
+    
+    batman-adv.bat0=mesh
+    batman-adv.bat0.interfaces=wlan0 br-lan
+
+DHCP and DNS
+------------
+
+Doesn't serve any DHCP!
+
+    dhcp.lan.ignore=1
+    dhcp.wan=dhcp
+    dhcp.wan.interface=wan
+    dhcp.wan.ignore=1
+
+Network
+-------
+
+    network.lan=interface
+    network.lan.type=bridge
+    network.lan.proto=static
+    network.lan.mtu=1500
+    network.lan.ifname=eth0 bat0
+    network.lan.accept_ra=0
+    network.lan.send_rs=0
+    network.lan.ip6addr=fd64:2c08:9fa7::2/64
+    network.lan.dns=172.16.0.1
+    network.lan.gateway=172.16.0.1
+    network.lan.netmask=255.240.0.0
+    network.lan.ipaddr=172.16.0.2
+    network.wlan0=interface
+    network.wlan0.ifname=wlan0
+    network.wlan0.mtu=1528
+    network.wlan0.proto=static
+    network.wlan0.ipaddr=169.254.32.13
+    network.wlan0.netmask=255.255.255.255
+    network.bat0=interface
+    network.bat0.ifname=bat0
+    network.bat0.proto=none
+    network.bat0.mtu=1500
+
+IPv6
+----
+
+    radvd.@interface[0]=interface
+    radvd.@interface[0].interface=lan
+    radvd.@interface[0].AdvSendAdvert=1
+    radvd.@interface[0].AdvManagedFlag=0
+    radvd.@interface[0].AdvOtherConfigFlag=0
+    radvd.@interface[0].client=
+    radvd.@interface[0].ignore=1
+    radvd.@prefix[0]=prefix
+    radvd.@prefix[0].interface=lan
+    radvd.@prefix[0].prefix=
+    radvd.@prefix[0].AdvOnLink=1
+    radvd.@prefix[0].AdvAutonomous=1
+    radvd.@prefix[0].AdvRouterAddr=0
+    radvd.@prefix[0].ignore=0
+    radvd.@route[0]=route
+    radvd.@route[0].interface=lan
+    radvd.@route[0].prefix=
+    radvd.@route[0].ignore=1
+    radvd.@rdnss[0]=rdnss
+    radvd.@rdnss[0].interface=lan
+    radvd.@rdnss[0].addr=
+    radvd.@rdnss[0].ignore=1
+    radvd.@dnssl[0]=dnssl
+    radvd.@dnssl[0].interface=lan
+    radvd.@dnssl[0].suffix=
+    radvd.@dnssl[0].ignore=1
+
+Wifi
+----
+
+    wireless.radio0=wifi-device
+    wireless.radio0.type=mac80211
+    wireless.radio0.macaddr=00:15:6d:da:d3:65
+    wireless.radio0.hwmode=11ng
+    wireless.radio0.htmode=HT20
+    wireless.radio0.ht_capab=SHORT-GI-40 TX-STBC RX-STBC1 DSSS_CCK-40
+    wireless.radio0.channel=1
+    wireless.@wifi-iface[0]=wifi-iface
+    wireless.@wifi-iface[0].device=radio0
+    wireless.@wifi-iface[0].encryption=none
+    wireless.@wifi-iface[0].mode=adhoc
+    wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
+    wireless.@wifi-iface[0].ssid=relais.reseaulibre.ca
