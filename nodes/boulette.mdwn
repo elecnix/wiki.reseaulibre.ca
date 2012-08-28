@@ -59,10 +59,9 @@ This node runs batman according to the [[configuration/batman]] howto.
 
 Babel
 -----
-   
+
     babeld.@general[0]=general
     babeld.@general[0].local_server=33231
-    babeld.lan=interface
     babeld.@filter[0]=filter
     babeld.@filter[0].ignore=true
     babeld.@filter[0].type=redistribute
@@ -71,6 +70,7 @@ Babel
     babeld.@filter[0].proto=3
     babeld.@filter[0].action=metric 128
     babeld.wlan0=interface
+    babeld.lan=interface
 
 Batman
 ------
