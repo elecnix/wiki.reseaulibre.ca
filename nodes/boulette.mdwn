@@ -6,7 +6,7 @@
 
 [[!ymlfront data="""
 MAC: 00:15:6d:da:d3:65
-IP: 172.16.0.2
+IP: 172.16.0.2/32 172.16.0.3/12
 IPv6: fd64:2c08:9fa7:1::/64
 """]]
 
@@ -61,7 +61,7 @@ Babel
 -----
    
     babeld.@general[0]=general
-    babeld.wlan=interface
+    babeld.@general[0].local_server=33231
     babeld.lan=interface
     babeld.@filter[0]=filter
     babeld.@filter[0].ignore=true
@@ -95,7 +95,7 @@ Network
     network.lan.type=bridge
     network.lan.proto=static
     network.lan.mtu=1500
-    network.lan.ifname=eth0 bat0
+    network.lan.ifname=eth0
     network.lan.accept_ra=0
     network.lan.send_rs=0
     network.lan.ip6addr=fd64:2c08:9fa7::2/64
@@ -111,8 +111,10 @@ Network
     network.wlan0.netmask=255.255.255.255
     network.bat0=interface
     network.bat0.ifname=bat0
-    network.bat0.proto=none
     network.bat0.mtu=1500
+    network.bat0.proto=static
+    network.bat0.ipaddr=172.16.0.3
+    network.bat0.netmask=255.240.0.0
 
 IPv6
 ----
