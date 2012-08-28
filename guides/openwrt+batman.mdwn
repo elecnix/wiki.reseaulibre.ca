@@ -201,6 +201,17 @@ You're done! Commit the changes and reboot to test them.
     uci commit
     reboot & exit
 
+(!) Note for batman on wired interfaces with vlan (for example a 4 LAN port device) 
+
+Some bug in batman-adv makes it not support vlans, so if you simply try to add the eth0 interface to batman, it won't work.  The interface needs to be a bridge.  For example, you should have an interface that wraps eth0 configured as a bridge and add this interface to batman
+
+    uci set network.mesh0=interface
+    uci set network.mesh0.ifname=eth0
+    uci set network.mesh0.type=bridge
+    uci set network.mesh0.proto=none
+
+    uci set batman-adv.bat0.interfaces="mesh0 ..."
+
 # Testing
 
 After a reboot, check that the configuration worked
