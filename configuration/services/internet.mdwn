@@ -65,7 +65,7 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
  * [Pepperspot][] - other derivative of [Chillispot][]
   * Last release: 2011.
   * Radius, IPv6 support
-  *  * [DHCP-splash][] - Freifunk's software
+ * [DHCP-splash][] - Freifunk's software
   * Last release: ?
   * OpenWRT-only, packaged in official OpenWRT repos
  * [PfSense][] - full firewall solution that features a captive portal, based on [M0n0wall][]
