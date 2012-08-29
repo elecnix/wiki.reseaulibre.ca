@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.5" lon="-73.666667" embed hidden width="400px" height="400px" right desc="Un noeud sur mon toi"]]
+[[!waypoint map=null  lat="45.536" lon="-73.5954" embed hidden width="400px" height="400px" right desc="Un noeud sur mon toi"]]
 (remove map=null to display on the main map)
 
 (Description of the node here, with a link to your homepage.)
