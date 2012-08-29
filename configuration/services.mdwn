@@ -270,6 +270,10 @@ Then those services can be advertised in different ways:
    Microsoft
  * by documenting it in this page, above
 
+## Internet access
+
+Providing internet access deserves its own page, I believe, see [[internet]].
+
 # Allowing or preventing wireless clients inter-communication
 
 You may wish to allow or prevent wireless clients connected your node to communicate with wireless clients from other nodes. Batman has a feature to control this called Ap-Isolation. Note that this allows/prevents *wireless* clients of different nodes from communicating, but not *wired* clients, and also does not block broadcast or multicast packets if it is activated. Also, this does not prevent communication between wireless clients connected to the same node. This should be managed at another level on the AP. So far, I've only found the "isolate" flag in OpenWRT's interface configuration, but this only works with AP mode. What about ad-hoc?
