@@ -19,5 +19,39 @@ Fournisseurs interdisant la revente:
 * [[Primus|http://www.primustel.ca/en/residential/legal/termsofuse.html]]
 * Bell et Vidéotron interdisent également non seulement le partage de votre connexion mais aussi l'hébergement de serveurs
 
+Configure an access point
+-------------------------
+
+This requires adding a new node to the network that is part of the mesh. So you will probably need to follow:
+
+ * [[flashing]]
+ * a wired connexion to the mesh - *not* ad-hoc, as you want the wifi to be "managed"
+ * mesh software: [[batman]] or preferably [[babel]] so you get the mesh routes
+ * [[ip]] configuration
+
+Some known working access point which you can base your configuration on:
+
+ * [[nodes/plastik]] - batman, babel
+ * [[nodes/leon]] - batman
+
 Configure a splash page (optional)
 ----------------------------------
+
+This consists of setting up a [[!wikipedia Captive Portal]] on the access point so that people know that they are on relais libre. This serves two purposes: 1) it protects you legally and 2) it makes the user know how he gets internet access.
+
+There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for captive portal software and unfortunately it's unclear which one is the best. After a quick evaluation in 2012 by anarcat, we are suggesting the following tools:
+
+ * [NoDogSplash][] - inspired by [NoCatSplash][] but based on [WifiDog][]'s code.
+  * Last release: 2010
+  * OpenWRT only.
+  * [OpenWRT howto][]
+  * [ROBIN howto][]
+ * authpuppet - works in openwrt only, complex authentication gateway
+ * pepperspot - works in debian, talks to radius
+ * DHCP-splash - Freifunk's software
+
+ [NoDogSplash]: http://kokoro.ucsd.edu/nodogsplash/
+ [NoCatSplash]: https://personaltelco.net/wiki/NoCatSplash
+ [WifiDog]: https://personaltelco.net/wiki/WifiDog
+ [OpenWRT howto]: http://wiki.openwrt.org/doc/howto/wireless.hotspot.nodogsplash
+ [ROBIN howto]: http://wiki-robin.meshroot.com/Documentation/Captive_Portal/NoDogSplash
