@@ -46,6 +46,7 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
   * OpenWRT only, packaged in official OpenWRT repos
   * [OpenWRT howto][]
   * [ROBIN howto][]
+  * [[howto dans ce wiki|guides/olsr+ipv6/#index8h1]]
  * [Authpuppy][] - complex authentication gateway, replacement for [Wifidog][]
   * Last release: 2011
   * OpenWRT only
