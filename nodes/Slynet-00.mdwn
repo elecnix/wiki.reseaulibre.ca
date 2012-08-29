@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.511142" lon="-73.628985" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.511142" lon="-73.628985" embed hidden width="400px" height="400px" right desc="Super secret base of operations. Oh wait..."]]
 
 Danukeru's node.
 
