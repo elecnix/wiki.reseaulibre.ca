@@ -74,6 +74,9 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
  * [Anarcat's pf hack][] - a crude hack I quickly wrote but then stopped using because it was unreliable
   * No release.
   * FreeBSD or (probably) OpenBSD support
+ * [Captive::Portal][] - perl captive portal module
+  * Last release: 2012
+  * GPL, written in perl, runs as a CGI
 
  [NoDogSplash]: http://kokoro.ucsd.edu/nodogsplash/
  [NoCatSplash]: https://personaltelco.net/wiki/NoCatSplash
@@ -89,6 +92,7 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
  [M0n0wall]: http://m0n0.ch/wall
  [Anarcat's pf hack]: http://anarcat.ath.cx/software/portal/
  [out of date port]: http://www.freebsd.org/cgi/query-pr.cgi?pr=171153
+ [Captive::Portal]: http://search.cpan.org/dist/Captive-Portal/lib/Captive/Portal.pm
 
 Nodogsplash
 -----------
