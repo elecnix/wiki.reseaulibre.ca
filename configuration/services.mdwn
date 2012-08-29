@@ -272,7 +272,7 @@ Then those services can be advertised in different ways:
 
 ## Internet access
 
-Providing internet access deserves its own page, I believe, see [[internet]].
+Providing internet access deserves its own page, I believe, see [[services/internet]].
 
 # Allowing or preventing wireless clients inter-communication
 
