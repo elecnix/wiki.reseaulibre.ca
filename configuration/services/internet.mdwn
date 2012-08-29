@@ -125,10 +125,12 @@ FirewallRuleSet preauthenticated-users
   FirewallRule allow tcp port 80 to 172.16.42.1
 }
 
-GatewayName librenet-m2-sud
-RedirectURL http://splash.reseaulibre.ca/
-TrafficControl yes
-UploadLimit 128
+GatewayName ReseauLibre
+# redirect the user here after logging in
+#RedirectURL http://splash.reseaulibre.ca/
+# this may break, use with care
+#TrafficControl yes
+#UploadLimit 128
 """]]
 
-On peut modifier le html de la splash page dans `/etc/nodogsplash/htdocs/`. Il faut aussi que votre DNS fasse que `splash.reseaulibre.ca` pointe vers le AP. Ceci peut être fait dans `/etc/hosts`.
+On peut modifier le html de la splash page dans `/etc/nodogsplash/htdocs/`. 
