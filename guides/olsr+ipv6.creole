@@ -1,5 +1,7 @@
 [[!meta title="OpenWRT on a NanoStation M2 with IPv6"]]
 
+(!) Cette page n'est plus à jour. Voir les autres [[guides]] ou les examples de [[configuration]]. --[[users/anarcat]] 2012-08-29.
+
 Installation d'OpenWRT sur le NanoStation M2:
 
 [[!toc]]
