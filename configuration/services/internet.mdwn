@@ -60,8 +60,8 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
   * OpenWRT only
  * [Coova][] - main derivative of [Chillispot][]
   * Last release: 2012
-  * Seems to be a solid replacement for chilispot
-  * Debian, OpenWRT, and others: Redhat, Febora, Mandrake, Gentoo, FreeBSD (out of date port) and OpenBSD
+  * Seems to be a solid replacement for chilispot, but also relies on RADIUS, which makes everything much more complicated
+  * Debian, OpenWRT, and others: Redhat, Febora, Mandrake, Gentoo, FreeBSD ([out of date port]) and OpenBSD
  * [Pepperspot][] - other derivative of [Chillispot][]
   * Last release: 2011.
   * Radius, IPv6 support
@@ -88,6 +88,7 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
  [PfSense]: http://pfsense.org/
  [M0n0wall]: http://m0n0.ch/wall
  [Anarcat's pf hack]: http://anarcat.ath.cx/software/portal/
+ [out of date port]: http://www.freebsd.org/cgi/query-pr.cgi?pr=171153
 
 Nodogsplash
 -----------
