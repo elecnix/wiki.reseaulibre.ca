@@ -52,7 +52,7 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
  * [Pepperspot][] - derivative of [Chillispot][]
   * Last release: 2011.
   * Radius, IPv6 support
-  * Debian, OpenWRT, others supported
+  * Debian, OpenWRT, others (Redhat, Febora, Mandrake, Gentoo, FreeBSD and OpenBSD) were supported in Chillispot, current support unclear
  * [DHCP-splash][] - Freifunk's software
   * Last release: ?
   * OpenWRT-only, packaged in official OpenWRT repos
@@ -67,7 +67,7 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
  [ROBIN howto]: http://wiki-robin.meshroot.com/Documentation/Captive_Portal/NoDogSplash
  [Authpuppy]: http://www.authpuppy.org/
  [Pepperspot]: http://pepperspot.sourceforge.net/
- [Chillispot]: https://personaltelco.net/wiki/ChilliSpot
+ [Chillispot]: http://www.chillispot.info/
  [DHCP-splash]: http://wiki.freifunk.net/DHCP_Splash
  [PfSense]: http://pfsense.org/
  [M0n0wall]: http://m0n0.ch/wall
