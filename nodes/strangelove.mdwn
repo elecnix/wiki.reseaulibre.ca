@@ -8,6 +8,7 @@ IPv6: fd64:2c08:9fa7:11::/64
 
 Placeholder for a rooftop node. Need confirmation with friend this will be possible.
 
+ * hostname: strangelove
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
@@ -18,7 +19,7 @@ Placeholder for a rooftop node. Need confirmation with friend this will be possi
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth: 45.5275,-73.5904
- * Panorama: [[!img spoked2_pano_web.jpg align="right" size="950x" alt=""]]
+ * Panorama: [[!img strangelove_pano_web.jpg align="right" size="950x" alt=""]]
  * Operator: [[users/spoked]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]

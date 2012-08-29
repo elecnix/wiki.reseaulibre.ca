@@ -10,7 +10,7 @@ Node planifiee pour ce printemps. Acces au toit, le range devrait etre bon si je
 
 Details:
 
- * hostname: spoked
+ * hostname: lolita
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
@@ -21,7 +21,7 @@ Details:
  * Status: [[!taglink planned]]
  * Links: 
  * Azimuth:
- * Panorama: [[!img spoked_pano_web.jpg align="right" size="800x101" alt=""]] <br/><br/><br/><br/>
+ * Panorama: [[!img lolita_pano_web.jpg align="right" size="800x101" alt=""]] <br/><br/><br/><br/>
  * Panorama hi-res 5,4Mo : http://i.imgur.com/jVPiV.jpg
  * Operator: [[users/spoked]]
 

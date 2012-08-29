@@ -9,7 +9,7 @@ Point d'acces prevu pour redistribuer le mesh localement.
 
 Details:
 
- * hostname: spoked-AP
+ * hostname: clockwork
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
