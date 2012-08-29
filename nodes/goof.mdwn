@@ -1,4 +1,4 @@
-[[!waypoint lat="45.536" lon="-73.595" embed hidden width="400px" height="400px" right desc="Un noeud sur mon toit"]]
+[[!waypoint lat="45.536" lon="-73.595" embed  width="400px" height="400px" right desc="Un noeud sur mon toit"]]
 
 Noeud prevu sur mon toit, 2e etage. 
 # Technical details
@@ -10,7 +10,7 @@ IPv6:
 """]]
 
 hostname
-: (goof)
+: goof
 
 MAC address
 : {{$MAC}}
@@ -43,7 +43,7 @@ Status
 : [[!taglink planned]]
 
 Operator
-: [[users/alice]]
+: [[users/goof]]
 
 Links
 : (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
