@@ -1,4 +1,4 @@
-[[!waypoint lat="45.536" lon="-73.595" embed  width="400px" height="400px" right desc="Un noeud sur mon toit"]]
+[[!waypoint lat="45.536" lon="-73.595" embed hidden width="400px" height="400px" right desc="Un noeud sur mon toit"]]
 
 Noeud prevu sur mon toit, 2e etage. 
 # Technical details
