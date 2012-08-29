@@ -44,8 +44,8 @@ The idea is that whenever a user visits a webpage on your access point, they get
 
 Some portals also double as a firewall or can limit bandwidth usage.
 
-Software options
-----------------
+Software evaluation
+-------------------
 
 There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for captive portal software and unfortunately it's unclear which one is the best. After a quick evaluation in 2012 by anarcat, we are suggesting the following tools:
 
@@ -58,11 +58,14 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
  * [Authpuppy][] - complex authentication gateway, replacement for [Wifidog][]
   * Last release: 2011
   * OpenWRT only
- * [Pepperspot][] - derivative of [Chillispot][]
+ * [Coova][] - main derivative of [Chillispot][]
+  * Last release: 2012
+  * Seems to be a solid replacement for chilispot
+  * Debian, OpenWRT, and others: Redhat, Febora, Mandrake, Gentoo, FreeBSD (out of date port) and OpenBSD
+ * [Pepperspot][] - other derivative of [Chillispot][]
   * Last release: 2011.
   * Radius, IPv6 support
-  * Debian, OpenWRT, others (Redhat, Febora, Mandrake, Gentoo, FreeBSD and OpenBSD) were supported in Chillispot, current support unclear
- * [DHCP-splash][] - Freifunk's software
+  *  * [DHCP-splash][] - Freifunk's software
   * Last release: ?
   * OpenWRT-only, packaged in official OpenWRT repos
  * [PfSense][] - full firewall solution that features a captive portal, based on [M0n0wall][]
@@ -78,6 +81,7 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
  [OpenWRT howto]: http://wiki.openwrt.org/doc/howto/wireless.hotspot.nodogsplash
  [ROBIN howto]: http://wiki-robin.meshroot.com/Documentation/Captive_Portal/NoDogSplash
  [Authpuppy]: http://www.authpuppy.org/
+ [Coova]: http://www.coova.org/
  [Pepperspot]: http://pepperspot.sourceforge.net/
  [Chillispot]: http://www.chillispot.info/
  [DHCP-splash]: http://wiki.freifunk.net/DHCP_Splash
