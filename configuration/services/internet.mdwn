@@ -43,15 +43,31 @@ There are [a lot](https://personaltelco.net/wiki/PortalSoftware) of options for 
 
  * [NoDogSplash][] - inspired by [NoCatSplash][] but based on [WifiDog][]'s code.
   * Last release: 2010
-  * OpenWRT only.
+  * OpenWRT only, packaged in official OpenWRT repos
   * [OpenWRT howto][]
   * [ROBIN howto][]
- * authpuppet - works in openwrt only, complex authentication gateway
- * pepperspot - works in debian, talks to radius
- * DHCP-splash - Freifunk's software
+ * [Authpuppy][] - complex authentication gateway, replacement for [Wifidog][]
+  * Last release: 2011
+  * OpenWRT only
+ * [Pepperspot][] - derivative of [Chillispot][]
+  * Last release: 2011.
+  * Radius, IPv6 support
+  * Debian, OpenWRT, others supported
+ * [DHCP-splash][] - Freifunk's software
+  * Last release: ?
+  * OpenWRT-only, packaged in official OpenWRT repos
+ * [PfSense][] - full firewall solution that features a captive portal, based on [M0n0wall][]
+  * Laste release: 2011
+  * FreeBSD-based
 
  [NoDogSplash]: http://kokoro.ucsd.edu/nodogsplash/
  [NoCatSplash]: https://personaltelco.net/wiki/NoCatSplash
  [WifiDog]: https://personaltelco.net/wiki/WifiDog
  [OpenWRT howto]: http://wiki.openwrt.org/doc/howto/wireless.hotspot.nodogsplash
  [ROBIN howto]: http://wiki-robin.meshroot.com/Documentation/Captive_Portal/NoDogSplash
+ [Authpuppy]: http://www.authpuppy.org/
+ [Pepperspot]: http://pepperspot.sourceforge.net/
+ [Chillispot]: https://personaltelco.net/wiki/ChilliSpot
+ [DHCP-splash]: http://wiki.freifunk.net/DHCP_Splash
+ [PfSense]: http://pfsense.org/
+ [M0n0wall]: http://m0n0.ch/wall
