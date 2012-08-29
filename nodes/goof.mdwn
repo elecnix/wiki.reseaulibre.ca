@@ -1,7 +1,6 @@
-[[!waypoint map=null  lat="45.536" lon="-73.5954" embed hidden width="400px" height="400px" right desc="Un noeud sur mon toi"]]
-(remove map=null to display on the main map)
+[[!waypoint lat="45.536" lon="-73.5954" embed hidden width="400px" height="400px" right desc="Un noeud sur mon toit"]]
 
-(Description of the node here, with a link to your homepage.)
+Noeud prevu sur mon toit, 2e etage. 
 # Technical details
 
 [[!ymlfront data="""
@@ -32,16 +31,16 @@ Power
 : 
 
 Location
-: (where is this node physically installed?)
+: humm toit? 
 
 Azimuth
-: 360°
+: TBD°
 
 Panorama
 : N/A
 
 Status
-: [[!taglink prospect]] (can also be up, down, planned, unknown)
+: [[!taglink planned]]
 
 Operator
 : [[users/alice]]
