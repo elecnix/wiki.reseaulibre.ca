@@ -1,0 +1,51 @@
+[[!waypoint map=null lat="45.539759" lon="-73.601008" embed hidden width="400px" height="400px" right ]]
+
+Ce node est un clone de theodore pour fin de test.
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: dc:9f:db:00:11:dc
+IP: 172.16.11.2
+IPv6: 
+"""]]
+
+hostname
+: rogatien
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: Reseau libre devel
+
+Hardware
+: Bullet M2 Ubiquiti 
+
+Power
+: 15dBm/28mW (default)
+
+Location
+: 
+
+Azimuth
+: 
+
+Panorama
+: N/A
+
+Status
+: [[!taglink test]]
+
+Operator
+: [[users/genb]]
+
+Links
+: 
+
