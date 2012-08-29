@@ -1,6 +1,6 @@
 To provide [[internet]] access, you will need to...
 
-[[!toc]]
+[[!toc levels=2]]
 
 Trouver un fournisseurs légal
 =============================
@@ -121,9 +121,9 @@ FirewallRuleSet preauthenticated-users
 }
 
 GatewayName librenet-m2-sud
-RedirectURL http://partage.m2.bidon.ca/
+RedirectURL http://splash.reseaulibre.ca/
 TrafficControl yes
 UploadLimit 128
 """]]
 
-On peut modifier le html de la splash page dans `/etc/nodogsplash/htdocs/`.
+On peut modifier le html de la splash page dans `/etc/nodogsplash/htdocs/`. Il faut aussi que votre DNS fasse que `splash.reseaulibre.ca` pointe vers le AP. Ceci peut être fait dans `/etc/hosts`.
