@@ -46,9 +46,9 @@ Par personne
 Gapzap     | 170+24 = 194$     |   223.05$        | oui      | non   |
 elecnix    |          194$     |   223.05$        | oui      | oui, balance de l'autre commande |
 scientist  | 194/2  = 97$      |   111.53$        | oui      | oui, accèsD 2012-08-21 |
-bgm        |          97$      |   111.53$        | oui sauf la boîte de câble | non |
+bgm        |          97$      |   111.53$        | oui sauf la boîte de câble | oui |
 anarcat    | 194 + 18 = 212$   |   243.75$        | oui      | N/A |
-total      |           794$    |   912.91$        | reste une boîte de câble pour verdun | reste gapzap et bgm |
+total      |           794$    |   912.91$        | reste une boîte de câble pour verdun | reste gapzap |
 
 Mises à jour
 ------------
