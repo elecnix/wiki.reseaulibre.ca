@@ -5,6 +5,7 @@
  * bb?
 * Retour sur Maker Faire
 * Prochaine commande de matériel?
+* Noeuds cherchant financement: [[tag/needsfunding]]
 * Prochaine rencontre
 * statistics
 
