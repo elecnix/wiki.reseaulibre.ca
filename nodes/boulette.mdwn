@@ -101,7 +101,7 @@ Network
     network.lan.ip6addr=fd64:2c08:9fa7::2/64
     network.lan.dns=172.16.0.1
     network.lan.gateway=172.16.0.1
-    network.lan.netmask=255.240.0.0
+    network.lan.netmask=255.255.55.55
     network.lan.ipaddr=172.16.0.2
     network.wlan0=interface
     network.wlan0.ifname=wlan0
