@@ -21,7 +21,7 @@ IPv6:
  * Power: N/A
  * Location: [[anarcat]]
  * Status: [[!taglink up]]
- * Links: [[boulette]]
+ * Links: [[boulette]], [[plastik]]
  * Azimuth: N/A
  * Panorama: N/A
  * Operator: [[users/anarcat]]
