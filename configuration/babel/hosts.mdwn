@@ -4,6 +4,8 @@ Link-local IPv6 addresses of hosts on the Babel mesh.
     fe80::187e:aaff:fe80:e6d8 ?
     fe80::c0c8:f7ff:fe64:701 ?
     fe80::9c7a:3cff:fe00:b5b3 ?
+    fe80::227:22ff:fe4e:16b7 deuxpi-nano
     fe80::ec9a:8aff:fe4b:2984 bgm-latakia-bat0
     fe80::de9f:dbff:fe00:1379 bgm-latakia-wlan0
     fe80::de9f:dbff:fe01:1379 bgm-latakia-eth0
+    fe80::f6ec:38ff:feb5:db2b bgm-alep-eth1
