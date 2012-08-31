@@ -10,5 +10,38 @@ This guide is in no way exhaustive, nor complete and does not cover every possib
 
 # Secure the ssh console
 
+If you know you will always access the ssh console through, say, the wired interface, then you may as well block the 22 port on the other ports (see section on Firewall).
+
+## Disable password on ssh
+
+Instead of using a password to access your device through ssh, you can use a public/private key pair.
+
+See [[the openwrt wiki|http://wiki.openwrt.org/doku.php?id=oldwiki:dropbearpublickeyauthenticationhowto]] for detailed instructions.
+
+You can also do all this from the luci web interface.  Go to https://your device ip.  Under the "System" tab, "Administration" sub-tab  You can copy your public keys, one per line, in the ssh keys box at the bottom of the page.  You can also disable the password login and change the ssh port of the machine.  
+
+/!\ Before disabling password login, make sure you can login with your public/private key pair.  Just try sshing to your device and if you are not prompted for a password, you're good.
+
+[[!img secure_ssh.jpg align="left" size="950x" alt="Securing ssh"]]
+
+## Change the ssh port
+
+Changing the port from which you access your ssh makes it harder for malicious devices to find your ssh interface.
+
+You can change the ssh port through the we binterface as explained in the previous section.  Or by editing the file /etc/config/dropbear and changing the line
+
+    config dropbear
+        option Port '22'
+        ...
+
+
 # Secure the web gui
+
+The first time you logged in you should have set a password for the web gui so not anybody can log in.
+
+But even with a password, if you reach your web gui with simple http either through wifi or from the mesh, traffic is not encrypted, so your password passes in clear and can easily be sniffed.  **You should always access your web interface through https://**.  The Reseau Libre images have ssl enabled for the web interface.  If you are not using those images, make sure the package *luci-ssl* is installed.
+
+    root@clarence:~# opkg install luci-ssl
+
+
 
