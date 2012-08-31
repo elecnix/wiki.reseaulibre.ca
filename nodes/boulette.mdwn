@@ -48,7 +48,7 @@ Operator
 : [[users/anarcat]]
 
 Links
-: [[carton]], [[roadkiller]], [[Grace]]
+: [[carton]], [[roadkiller]], [[Grace]], [[plastik]]
 
 [[!img nodes/boulette/20111101_004.jpg alt="Cheminée" align="right"]]
 
