@@ -17,7 +17,7 @@ IPv6: fd64:2c08:9fa7::1/48 2001:1928:1:9::1/64
  * Power: N/A
  * Location: [[anarcat]]
  * Status: [[!taglink up]]
- * Links: [[boulette]], [[plastik]]
+ * Links: [[plastik]]
  * Azimuth: N/A
  * Panorama: N/A
  * Operator: [[users/anarcat]]
