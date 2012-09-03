@@ -8,7 +8,7 @@ The router is unbranded, but may has the following model names, depending on the
  * TopLink RT-3GWT Wireless N Access Point 3G Travel Size Mobile Router
  * Bococom DWR-150
  * CW-G3 (CDR-King)
- * Widemac SL-R7206
+ * Widemac or SkyLink SL-R7206
 
 # Identification
 

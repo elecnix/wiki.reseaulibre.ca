@@ -8,7 +8,7 @@ access will be completely removed if abused.
 IP: 
 - 172.16.0.1/48
 - 72.0.72.144/32
-IPv6: 
+IPv6:
 - fd64:2c08:9fa7::1/48
 - 2001:1928:1:9::1/64
 """]]
@@ -21,7 +21,7 @@ IPv6:
  * Power: N/A
  * Location: [[anarcat]]
  * Status: [[!taglink up]]
- * Links: [[boulette]]
+ * Links: [[plastik]]
  * Azimuth: N/A
  * Panorama: N/A
  * Operator: [[users/anarcat]]

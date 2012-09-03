@@ -3,23 +3,52 @@
 
 - Point de relai planifié août 2012 - 
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software: on va bien voir!
- * Hardware: ubiquity Bullet
- * Power:
- * Location:
- * Status: [[!taglink planned]]
- * Links:
- * Azimuth:
- * Panorama:
- * Operator: [[users/gapzap]]
+# Technical details
 
-## Liens possible
+[[!ymlfront data="""
+MAC: dc:9f:db:01:13:32
+IP: 172.16.0.23
+IPv6: 
+"""]]
 
- * [[nodes/val]]
+hostname
+: DELTA100
 
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT trunk
+
+Hardware
+: Bullet M2 Ubiquiti avec antenne 15 dBi omnidirectionnelle 
+
+Power
+: 15dBm/28mW (default)
+
+Location
+:  toit d'un duplex
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink planned]]
+
+Operator
+: [[users/gapzap]]
+
+Links
+: [[]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 

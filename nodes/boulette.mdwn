@@ -6,7 +6,9 @@
 
 [[!ymlfront data="""
 MAC: 00:15:6d:da:d3:65
-IP: 172.16.0.2/32 172.16.0.3/12
+IP: 
+- 172.16.0.2/32
+- 172.16.0.3/12
 IPv6: fd64:2c08:9fa7::2/64
 """]]
 
@@ -48,7 +50,7 @@ Operator
 : [[users/anarcat]]
 
 Links
-: [[carton]], [[roadkiller]], [[Grace]]
+: [[carton]], [[roadkiller]], [[Grace]], [[plastik]]
 
 [[!img nodes/boulette/20111101_004.jpg alt="Cheminée" align="right"]]
 
@@ -101,7 +103,7 @@ Network
     network.lan.ip6addr=fd64:2c08:9fa7::2/64
     network.lan.dns=172.16.0.1
     network.lan.gateway=172.16.0.1
-    network.lan.netmask=255.240.0.0
+    network.lan.netmask=255.255.255.255
     network.lan.ipaddr=172.16.0.2
     network.wlan0=interface
     network.wlan0.ifname=wlan0

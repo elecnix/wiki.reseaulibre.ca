@@ -17,6 +17,6 @@ facilitate reading `batctl` output.
     dc:9f:db:01:12:d3 lacou-eth0
     00:b0:c0:02:1a:9f bococom-lacou
     dc:9f:db:01:11:dc rogatien-eth
-    00:15:6d:f8:5c:9b clarence-eth
+    00:15:6d:f9:5c:9b clarence-eth
     00:27:22:2f:bd:3d theodore-eth
     

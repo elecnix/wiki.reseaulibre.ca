@@ -134,15 +134,15 @@ Le 703N a un port USB, ce qui permet d'y ajouter un adapteur USB possédant une 
 
 Il est peut-être possible de [[souder une antenne|http://www.nathanlipscy.com/wireless_usb_hack/]]. L'antenne est sur le PCB et les composantes du circuit sont ajustées pour ça. Il faut sectionner le PCB pour enlever l'antenne existante et trouver moyen de souder un câble. Ensuite il faudrait ré-accorder l'antenne en changeant possiblement des composantes. Un autre problème c'est l'alimentation 5v qui serait pas facile d'amener en PoE sans trop de perte.
 
-## Unbranded XDX-RN502J / SL-R7205
+## Widemac / SkyLink SL-R7205 (XDX-RN502J)
 
-Semblable au TP-Link TL-MR3420, mais basé sur le Ralink RT3052. Il possède deux antennes, donc débit théorique de 300 mbit/s. Il [[peut être flashé avec OpenWRT|http://wiki.openwrt.org/toh/unbranded/xdx-rn502j]] en se connectant par le port série et avec un serveur TFTP. Trouvé plusieurs à [[32$ sur eBay|http://www.ebay.ca/itm/120830233185?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1439.l2649]].
+Semblable au TP-Link TL-MR3420, mais basé sur le Ralink RT3052. Il possède deux antennes, donc débit théorique de 300 mbit/s. Il [[peut être flashé avec OpenWRT|http://wiki.openwrt.org/toh/widemac/sl-r7205]] en se connectant par le port série et avec un serveur TFTP. Trouvé plusieurs à [[32$ sur eBay|http://www.ebay.ca/itm/120830233185?ssPageName=STRK:MEWNX:IT&_trksid=p3984.m1439.l2649]].
 
 [[!img XDX-RN502J.jpg size="200x"]]
 
 [[!img SL-R7205_V5.0_opened.jpg size="200x"]]
 
-## Bococom XDX-RN502R / SL-R7206
+## Bococom / Widemac / SkyLink SL-R7206 (XDX-RN502R)
 
 Petit frère du XDX-RN502J, le Bococom porte l'inscription XDX-RN502R, et fonctionne avec un Ralink RT3050 à une seule antenne, donc 150 mbit/s. On peut le trouver à 20,50$ l'unité en [[paquets de 10 sur aliexpress.com|http://www.aliexpress.com/product-fm/541496604-Portable-Mini-150M-802-11n-WiFi-Wireless-3G-Router-White-Color-UMTS-HSPA-EVDO-USB-modems-wholesalers.html]]. [[users/elecnix]] a ajouté le support de ce routeur à OpenWRT (toutefois pas encore en trunk). Voir la page [[Bococom-DWR150]] pour les détails.
 
