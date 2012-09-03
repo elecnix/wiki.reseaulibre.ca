@@ -25,6 +25,70 @@ Details:
  * Panorama hi-res 5,4Mo : http://i.imgur.com/jVPiV.jpg
  * Operator: [[users/spoked]]
 
+Configuration
+=============
+
+This node strictly runs batman on both interfaces (eth0 & wlan0). Note that only bat0 is a member of the lan bridge. In a scenario with more available interfaces, one could and an interface that is not used by batman, and route non-mesh clients to the mesh. I'm using an MTU of 1500 on the raw interfaces and 1472 on bat0, because of the limitation of the MTU on the eth0 interface with OpenWRT. Reference thread from batman-adv list:[link](https://lists.open-mesh.org/pipermail/b.a.t.m.a.n/2012-April/006822.html) Otherwise, when running batman over eth0 interface in OpenWRT, Your batman setup might be working, but your probably spliting packets.
+
+package batman-adv
+
+    config mesh 'bat0'
+    	options interfaces 'wlan0 eth0'
+
+package network
+
+    config interface 'loopback'
+	option ifname 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+    config interface 'lan'
+	option ifname 'bat0'
+	option type 'bridge'
+	option proto 'static'
+	option mtu '1472'
+	option ipaddr '172.16.0.10'
+	option netmask '255.240.0.0'
+	option accept_ra '0'
+	option send_rs '0'
+	option ip6addr 'fd64:2c08:9fa7:10::1/64'
+
+    config interface 'wlan0'
+	option mtu '1500'
+	option ifname 'wlan0'
+	option proto 'static'
+	option ipaddr '169.254.32.10'
+	option netmask '255.255.255.255'
+
+    config interface 'eth0'
+	option ifname 'eth0'
+	option mtu '1500'
+	option proto 'none'
+
+package wireless
+
+    config wifi-device 'radio0'
+	option type 'mac80211'
+	option macaddr '00:27:22:84:76:1f'
+	option hwmode '11ng'
+	list ht_capab 'SHORT-GI-40'
+	list ht_capab 'TX-STBC'
+	list ht_capab 'RX-STBC1'
+	list ht_capab 'DSSS_CCK-40'
+	option txpower '8'
+	option htmode 'HT20'
+	option channel '1'
+
+    config wifi-iface
+	option device 'radio0'
+	option encryption 'none'
+	option network 'wlan0'
+	option mode 'adhoc'
+	option bssid '02:CA:FF:EE:BA:BE'
+	option ssid 'relais.reseaulibre.ca'
+
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
