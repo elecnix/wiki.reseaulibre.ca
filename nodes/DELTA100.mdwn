@@ -3,11 +3,17 @@
 
 - Point de relai planifié août 2012 - 
 
+
  * MAC address:
+
  * IP address:
+172.16.0.23
+
  * IPv6 address:
+
  * Software: on va bien voir!
- * Hardware: ubiquity Bullet
+
+ * Hardware: ubiquity Bullet M2 avec antenne 15dbi omni
  * Power:
  * Location:
  * Status: [[!taglink planned]]
