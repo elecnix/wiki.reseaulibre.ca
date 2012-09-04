@@ -23,6 +23,85 @@ Details:
  * Panorama:
  * Operator: [[users/spoked]]
 
+Configuration
+=============
+
+This node serves both as a wired mesh relay, and wireless 'non-mesh' AP. This way, I can link devices directly to the mesh, such as a Raspberry Pi server :), or extend my share of the network on both sides of the house with additional APs. The wireless interface serves clients as a traditional AP. I will share both mesh and internet access through this AP. The internet connection will come from the WAN interface as a strictly firewalled client to my internal LAN. I'm considering a tor proxy for this link, as a community service, for educational purposes, and to defer legal responsibility upstream for any actions taken by others on my Internet connection. For now, I haven't figured out how to route mesh services to the clients, this part will come later.
+
+/etc/config/batman-adv
+
+    package batman-adv
+
+    config mesh 'bat0'
+        options interfaces 'eth0'
+
+
+/etc/config/network
+
+    package network
+
+    config interface 'loopback'
+        option ifname 'lo'
+        option proto 'static'
+        option ipaddr '127.0.0.1'
+        option netmask '255.0.0.0'
+
+    config interface 'lan'
+        option type 'bridge'
+        option proto 'static'
+        option mtu '1472'
+        option ifname 'bat0 wlan0'
+        option ipaddr '172.16.1.10'
+        option netmask '255.240.0.0'
+
+    config interface 'wan'
+        option ifname 'eth1'
+        option proto 'dhcp'
+
+    config interface 'bat0'
+        option ifname 'bat0'
+        option mtu '1472'
+        option proto 'none'
+
+    config switch
+        option name 'eth0'
+        option reset '1'
+        option enable_vlan '1'
+
+    config switch_vlan
+        option device 'eth0'
+        option vlan '1'
+        option ports '0 1 2 3 4'
+
+    config interface 'wlan0'
+        option ifname 'wlan0'
+        option proto 'static'
+
+
+/etc/config/wireless
+
+    package wireless
+
+    config wifi-device 'radio0'
+        option type 'mac80211'
+        option macaddr '54:e6:fc:b9:c1:da'
+        option hwmode '11ng'
+        list ht_capab 'SHORT-GI-40'
+        list ht_capab 'TX-STBC'
+        list ht_capab 'RX-STBC1'
+        list ht_capab 'DSSS_CCK-40'
+        option txpower '8'
+        option htmode 'HT20'
+        option channel '1'
+
+    config wifi-iface
+        option device 'radio0'
+        option encryption 'none'
+        option mode 'ap'
+        option ssid 'acces.reseaulibre.ca'
+        option network 'wlan0'
+
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
