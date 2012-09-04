@@ -1,0 +1,33 @@
+I'm a random hacker from the 514. I come from a diverse background of interests, that make computing my main occupation. I'm an advocate for everything open source, freedom enabling, community oriented.  I also hold an amateur radio license, which extends my passion for radio to other frequencies.
+
+Free the bits, make data love.
+
+# My nodes
+
+Here is the list of the nodes I operate.
+
+## Operational nodes
+
+[[!map pages="link(.) and nodes/* and tagged(up)"]]
+
+## Planned nodes
+
+[[!map pages="link(.) and nodes/* and tagged(planned)"]]
+
+## Nodes in maintenance
+
+[[!map pages="link(.) and nodes/* and tagged(down)"]]
+
+# where I'm at
+
+## At home
+
+I am running batman on my rooftop (not yet installed) relay node, on its wireless and wired interfaces. I started configuring an internal router AP, running batman on its wired LAN switch, and a traditional AP on its wireless interface. The wan interface will help to serve Internet access in addition to mesh services to wireless clients.
+
+For now, I've been using an MTU of 1472 on my batman interfaces, because I can't set an MTU higher than 1500 on wired interfaces in OpenWRT. Many searches have found no solution to this problem. According to batman-adv messages, with anything higher than 1472, I'm fragmenting packets.
+
+In my tests with a Debian laptop, running batman, I'm able to route IP to and from all members of the mesh, my laptop, the router AP and the Bullet.
+
+## Other places
+
+I operate another site on St-Denis/Laurier at a friend's place. It will mostly be a replica of my home configuration, with a little less complexity on the internal segment.
