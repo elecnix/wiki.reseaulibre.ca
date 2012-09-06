@@ -1,0 +1,11 @@
+* Courriel: ouaibe @ gmail.com
+* Freenode: ouaibe
+* Identi.ca: @ouaibe
+
+# My nodes
+
+Here is the list of nodes I operate.
+
+## Operational nodes
+
+[[!map pages="link(.) and nodes/* and tagged(up)"]]
