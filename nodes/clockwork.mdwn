@@ -3,6 +3,7 @@
 [[!ymlfront data="""
 IP: 172.16.1.10
 IPv6: fd64:2c08:9fa7:10::2/64
+MAC: 54:e6:fc:b9:c1:d9
 """]]
 
 Point d'acces prevu pour redistribuer le mesh localement.
@@ -14,11 +15,11 @@ Details:
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
  * Software: OpenWRT + batman-adv
- * Hardware: Ubiquiti PicoStation M2
+ * Hardware: TP-Link MR-3220
  * Power:
  * Location:45.5352,-73.584
  * Status: [[!taglink planned]]
- * Links: 
+ * Links: [[nodes/lolita]]
  * Azimuth:
  * Panorama:
  * Operator: [[users/spoked]]
