@@ -6,20 +6,49 @@ IP: 172.16.1.2
 IPv6: n/a
 """]]
 
- * Hostname: Mesh Montreal
- * MAC address: {{$MAC}}
- * IP address: {{$IP}}
- * IPv6 address: {{$IPv6}}
- * Software: [[OpenWRT + BATMAN|http://mesh.openisp.ca/guides/openwrt+batman/]]
- * Hardware: UBNT Nanostation M2
- * Power: 27dBm
- * Location: 45.535894,-73.620778
- * Status: [[!taglink up]]
- * Links: [[nodes/benoitg]] (800 mètres)
- * Azimuth: North-North-West (ciblant/targeting Parc Jarry)
- * Panorama: 60°(H-pol) / 60° (V-pol) / 60° (Elevation) 
+Ubiquity Nanostation M2 router.
 
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+# Technical details
+
+Hostname
+: ouaibe
+
+MAC address
+: {{$MAC}}
+
+IP address
+: {{$IP}}
+
+IPv6 address
+: {{$IPv6}}
+
+Software
+: [[OpenWRT + BATMAN|http://mesh.openisp.ca/guides/openwrt+batman/]]
+
+Hardware
+: UBNT Nanostation M2
+
+Power
+: 26dBm
+
+Location
+: 45.535894,-73.620778
+
+Status
+: [[!taglink up]]
+
+Links
+: [[nodes/benoitg]] (800 mètres)
+
+Azimuth
+: North-North-West (ciblant/targeting Parc Jarry)
+
+Panorama
+: 60°(H-pol) / 60° (V-pol) / 60° (Elevation) 
+
+Operator
+: [[users/ouaibe]]
+
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
