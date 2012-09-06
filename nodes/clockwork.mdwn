@@ -26,7 +26,7 @@ Details:
 Configuration
 =============
 
-This node serves both as a wired mesh relay, and wireless 'non-mesh' AP. This way, I can link devices directly to the mesh, such as a Raspberry Pi server :), or extend my share of the network on both sides of the house with additional APs. The wireless interface serves clients as a traditional AP. I will share both mesh and internet access through this AP. The internet connection will come from the WAN interface as a strictly firewalled client to my internal LAN. I'm considering a tor proxy for this link, as a community service, for educational purposes, and to defer legal responsibility upstream for any actions taken by others on my Internet connection. For now, I haven't figured out how to route mesh services to the clients, this part will come later.
+This node serves both as a wired mesh relay, and wireless 'non-mesh' AP. This way, I can link devices directly to the mesh, such as a Raspberry Pi server :), or extend my share of the network on both sides of the house with additional APs. The wireless interface serves clients as a traditional AP. I will share both mesh and internet access through this AP. The internet connection will come from the WAN interface as a strictly firewalled client to my internal LAN. I'm considering a tor proxy for this link, as a community service, for educational purposes, and to defer legal responsibility upstream for any actions taken by others on my Internet connection. For now, I have a really insecure firewall config that leaves everything open, and I am able to ping a remote mesh node as a 'non-mesh' client of the wireless AP.
 
 /etc/config/batman-adv
 
@@ -76,6 +76,8 @@ This node serves both as a wired mesh relay, and wireless 'non-mesh' AP. This wa
     config interface 'wlan0'
         option ifname 'wlan0'
         option proto 'static'
+        option ipaddr '192.168.8.1'
+        option netmask '255.255.255.0'
 
 
 /etc/config/wireless
@@ -100,6 +102,56 @@ This node serves both as a wired mesh relay, and wireless 'non-mesh' AP. This wa
         option mode 'ap'
         option ssid 'acces.reseaulibre.ca'
         option network 'wlan0'
+
+
+/etc/config/firewall
+
+    # Note: partial config presented here, don't just copy and paste
+    # This is in no way a secure config
+
+    config defaults
+        option syn_flood '1'
+        option input 'ACCEPT'
+        option output 'ACCEPT'
+        option forward 'REJECT'
+        option disable_ipv6 '0'
+
+    config zone
+        option name 'lan'
+        option network 'lan'
+        option input 'ACCEPT'
+        option output 'ACCEPT'
+        option forward 'ACCEPT'
+        option masq '1'
+
+    config zone
+        option name 'wan'
+        option network 'wan'
+        option input 'REJECT'
+        option output 'ACCEPT'
+        option forward 'REJECT'
+        option masq '1'
+        option mtu_fix '1'
+
+    config zone
+        option name 'wlan'
+        option network 'wlan0'
+        option input 'ACCEPT'
+        option output 'ACCEPT'
+        option forward 'ACCEPT'
+        option masq '1'
+
+    config forwarding
+        option src 'lan'
+        option dest 'wan'
+
+    config forwarding
+        option src 'lan'
+        option dest 'wlan'
+
+    config forwarding
+        option src 'wlan'
+        option dest 'lan'
 
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
