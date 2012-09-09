@@ -1,25 +1,15 @@
 [[!waypoint lat="45.46919" lon="-73.56716" embed hidden width="400px" height="400px" right desc="Sous les panneaux solaires"]]
 
 [[!ymlfront data="""
-MAC: 00:27:22:4E:16:B7
+MAC: DC:9F:DB:00:11:D9
 IP: 172.16.1.8
 IPv6:
-- fd64:2c08:9fa7:4::1
+- fd64:2c08:9fa7:8::1
 """]]
 
-À faire:
-
- * <s>Déterminer une IPv4, IPv6 pour le mesh</s>
- * Réaligner l'antenne pour optimiser le signal vers [[nodes/bgm-homs]] et [[nodes/scientist]]
- * <s>Vérifier de la nécessité de AirMax/TDMA, sinon installer OpenWrt</s>
- * <s>Installer BATMAN sur le point d'accès</s>
- * <s>Configurer le port Ethernet pour avoir un accès pour Internet via IPv6</s>
-
-Pour tester l'interface Wi-fi, il est possible de pinger l'adresse IPv6 link-local, par exemple:
-
-    ping6 fe80::227:22ff:fe4e:16b7
-
 Pour obtenir la liste des noeuds connectés et leurs niveaux de signal respectifs, j'utilise le script [[bat-signal|https://gitorious.org/deuxpi-docs/deuxpi-docs/blobs/raw/master/bat-signal]]. Si le fichier [[configuration/batman/bat-hosts]] est disponible, le nom des noeuds sera affiché en plus de leur adresse MAC.
+
+(!) Batman n'est pas installé sur ce noeud. Seulement Babel est utilisé pour l'instant. Les adresses IP locales ainsi que les routes externes sont distribuées.
 
 Détails:
 
@@ -27,12 +17,12 @@ Détails:
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
  * Software: OpenWRT (trunk)
- * Hardware: NanoStation M2
- * Power: 28 dBm, 11 dBi
+ * Hardware: Ubiquiti Bullet M2
+ * Power: 16 dBm ?, 15 dBi
  * Location: Verdun, coin LaSalle et Rushbrooke
  * Status: [[!taglink up]]
  * Links: [[nodes/bgm-homs]], [[nodes/bgm-latakia]], [[nodes/hexa]], [[nodes/scientist]]
- * Azimuth: Sud-ouest
+ * Azimuth: Omni
  * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]], [[Vue du site de l'installation|https://farm6.staticflickr.com/5223/5881898216_6198d24176.jpg]]
  * Operator: [[users/deuxpi]]
 
@@ -41,18 +31,26 @@ Détails:
 [[!format txt """
 babeld.@general[0]=general
 babeld.@general[0].local_server=33123
-babeld.wlan=interface
-babeld.wlan.ignore=true
+babeld.wlan0=interface
 babeld.lan=interface
 babeld.lan.ignore=true
-babeld.mesh=interface
 babeld.@filter[0]=filter
 babeld.@filter[0].type=redistribute
-babeld.@filter[0].if=bat0
-babeld.@filter[0].action=metric 128
+babeld.@filter[0].local=true
+babeld.@filter[0].ip=172.16.0.0/12
+babeld.@filter[0].action=allow
 babeld.@filter[1]=filter
 babeld.@filter[1].type=redistribute
-babeld.@filter[1].action=deny
+babeld.@filter[1].local=true
+babeld.@filter[1].ip=fd64:2c08:9fa7::/48
+babeld.@filter[1].action=allow
+babeld.@filter[2]=filter
+babeld.@filter[2].type=redistribute
+babeld.@filter[2].if=wlan0
+babeld.@filter[2].action=metric 128
+babeld.@filter[3]=filter
+babeld.@filter[3].type=redistribute
+babeld.@filter[3].action=deny
 """]]
 
 [[!meta copyright="Copyright © 2012 Philippe Gauthier"]]
