@@ -16,11 +16,17 @@ Une nouvelle commande collective est en train de s'organiser! On prévoit l'acha
 
  [4]: http://wiki.reseaulibre.ca/hardware/achats/2012-08-nanostation/
 
-# Retour sur Maker Faire
+# Retour sur le Maker Faire
 
 Notre présence au Maker Faire a été un franc succès. Beaucoup de visiteurs se sont intéressés au projet, qui a semblé provoquer un bel enthousiasme chez les gens présents. Notre présence a permis de faire découvrir le projet à de nouveaux bénévoles motivés, y compris à des radios amateur de Laval, nos voisins de tables qui opèrent le répéteur [VE2RVL][5].
 
  [5]: http://ve2rvl.dyndns.org/
+
+# Présence au à une conférence internationale
+
+Le Réseau Libre enverra une petite délégation au [International Summit for Community Wireless Networks][12] en octobre, à Barcelone. opa et genb ont déjà eu leur financement approuvé et on cherche d'avantage de financement pour envoyer anarcat et nicolas.
+
+ [12]: http://wirelesssummit.org/
 
 # Nouveaux services sur le mesh
 
