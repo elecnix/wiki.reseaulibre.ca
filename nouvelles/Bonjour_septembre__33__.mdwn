@@ -22,7 +22,7 @@ Notre présence au Maker Faire a été un franc succès. Beaucoup de visiteurs s
 
 # Nouveaux services sur le mesh
 
-Un miroir Wikipedia est en cours de création, contactez [scientist][6] pour les détails. Nous avons également commencé à distribuer des images OpenWRT sur mesure pour le mesh (encore en développement) par le système [BitTorrent][7], ce qui permet de distribuer le téléchargement entre plusieurs noeuds sur le mesh. On cherche également à héberger un [tracker Bittorrent][8], contactez [anarcat][9] pour les détails.
+Un miroir Wikipedia est en cours de création, contactez [scientist][6] pour les détails. Nous avons également commencé à distribuer des images OpenWRT sur mesure pour le mesh (encore en développement) par le système [BitTorrent][7], ce qui permet de distribuer le téléchargement entre plusieurs noeuds sur le mesh. On cherche également à héberger un [tracker Bittorrent][8] directement sur le mesh afin que le service soit opérationnel sans accès internet, contactez [anarcat][9] pour les détails.
 
  [6]: http://wiki.reseaulibre.ca/users/scientist
  [7]: https://en.wikipedia.org/wiki/BitTorrent_(protocol)
