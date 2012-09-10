@@ -81,5 +81,3 @@ Auteurs
 : 74 (average 35.1 commits per author)
 
 À noter que le mois d'août a été le mois le plus occupé sur le wiki, avec 772 modifications.
-
-[[!tag draft]]
