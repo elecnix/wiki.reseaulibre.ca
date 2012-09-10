@@ -47,10 +47,13 @@ Nous aimerions documenter l'installation d'un noeud sur un toit d'édifice avec 
 
 planned
 :	44
+
 up
 :	29
+
 prospect
 :	15
+
 down
 :	3
 
