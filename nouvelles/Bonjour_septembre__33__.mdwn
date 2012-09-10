@@ -52,7 +52,9 @@ prospect
 down
 :	3
 
-Nous avons 6 nouveaux noeuds en ligne, il s'agit de [[BlauEintopf]], [[plastik]] (point d'accès), [[bgm-latakia]], [[plantpeople]], [[lacou]] et un autre que je n'arrive pas à retrouver.
+Nous avons 6 nouveaux noeuds en ligne, il s'agit de BlauEintopf, plastik (point d'accès), bgm-latakia, plantpeople, lacou et un autre que je n'arrive pas à retrouver. Voir la [liste complète][11] pour les détails.
+
+ [11]: http://wiki.reseaulibre.ca/nodes
 
 ## Inscrits
 
