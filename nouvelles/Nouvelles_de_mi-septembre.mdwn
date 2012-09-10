@@ -1,3 +1,5 @@
+Voici le bulletin de nouvelle mensuel du Réseau Libre, couvrant la période depuis la mi-août! Beaucoup de choses se sont produite et le projet est en pleine effervescence, lisez la suite pour les détails!
+
 [[!toc]]
 
 # Prochaine rencontre: tests Babel, jeudi 19h à Koumbit
