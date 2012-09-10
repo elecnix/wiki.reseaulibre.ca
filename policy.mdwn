@@ -1,5 +1,18 @@
 [[!toc]]
 
+5 freedoms
+==========
+
+Le Réseau Libre adhère au [5 libertés](http://www.commons.freenetworkfoundation.org/index.php?title=Free_network_definition) de la [Free Network Foundation](http://freenetworkfoundation.org/):
+
+ * Freedom 0) The freedom to participate in the network.
+ * Freedom 1) The freedom to determine where one's bits are stored.
+ * Freedom 2) The freedom to determine the parties with whom one's bits are shared.
+ * Freedom 3) The freedom to transmit bits to one's peers without the prospect of interference, interception or censorship.
+ * Freedom 4) The freedom to maintain anonymity, or to present a unique, trusted identity.
+
+Note: une [traduction](https://framapad.org/3RVAW1TLEP) est en cours vers le français.
+
 Usage policy
 ============
 
