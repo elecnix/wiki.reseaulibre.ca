@@ -2,21 +2,23 @@
 
 # Prochaine rencontre: tests Babel, jeudi 19h à Koumbit
 
-On souhaite ici se rencontre pour tester [[configuration/babel]] d'avantage, sans l'interférence de [[configuration/batman]]. On va également essayer de faire un petit échange de clefs PGP et discuter de VPN ainsi que d'adressage. Les détails dans [l'annonce complète]().
+On souhaite ici se rencontre pour tester [Babel][1] d'avantage, sans l'interférence de [BATMAN][2]. On va également essayer de faire un petit échange de clefs PGP et discuter de VPN ainsi que d'adressage. Les détails dans [l'annonce complète][3].
 
- [l'annonce complète]: http://wiki.reseaulibre.ca/meetings/2012-09-13-babel-VPN-PGP/
+ [1]: http://wiki.reseaulibre.ca/configuration/babel
+ [2]: http://wiki.reseaulibre.ca/configuration/batman
+ [3]: http://wiki.reseaulibre.ca/meetings/2012-09-13-babel-VPN-PGP/
 
 # Nouvelle commande collective
 
-Une nouvelle commande collective est en train de s'organiser! On prévoit l'achat de Nanostations mais aussi de Bullet, une excellente occasion de profiter des rabais associés aux commandes de groupe! Les détails dans [la page d'achat]().
+Une nouvelle commande collective est en train de s'organiser! On prévoit l'achat de Nanostations mais aussi de Bullet, une excellente occasion de profiter des rabais associés aux commandes de groupe! Les détails dans [la page d'achat][4].
 
- [la page d'achat]: http://wiki.reseaulibre.ca/hardware/achats/2012-08-nanostation/
+ [4]: http://wiki.reseaulibre.ca/hardware/achats/2012-08-nanostation/
 
 # Retour sur Maker Faire
 
-Notre présence au Maker Faire a été un franc succès. Beaucoup de visiteurs se sont intéressés au projet, qui a semblé provoquer un bel enthousiasme chez les gens présents. Notre présence a permis de faire découvrir le projet à de nouveaux bénévoles motivés, y compris à des radios amateur de Laval, nos voisins de tables qui opèrent le répéteur [VE2RVL]().
+Notre présence au Maker Faire a été un franc succès. Beaucoup de visiteurs se sont intéressés au projet, qui a semblé provoquer un bel enthousiasme chez les gens présents. Notre présence a permis de faire découvrir le projet à de nouveaux bénévoles motivés, y compris à des radios amateur de Laval, nos voisins de tables qui opèrent le répéteur [VE2RVL][5].
 
- [VE2RVL]: http://ve2rvl.dyndns.org/
+ [5]: http://ve2rvl.dyndns.org/
 
 # Nouveaux services sur le mesh
 
