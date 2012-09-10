@@ -1,3 +1,5 @@
+[[!toc]]
+
 # Prochaine rencontre: tests Babel, jeudi 19h à Koumbit
 
 On souhaite ici se rencontre pour tester [[configuration/babel]] d'avantage, sans l'interférence de [[configuration/batman]]. On va également essayer de faire un petit échange de clefs PGP et discuter de VPN ainsi que d'adressage. Les détails dans [l'annonce complète]().
