@@ -1,8 +1,10 @@
-Je pense qu'on devrait organiser une rencontre pour tester [[configuration/babel]] d'avantage, sans l'interférence de [[configuration/batman]].
+[[!meta title="Rencontre de test Babel-seulement, discussions VPN et signatures PGP"]]
 
-De plus, on pourrait profiter de cette occasion pour s'échanger nos clefs PGP, ce qui me semble être une bonne manière de pouvoir développer un VPN par l'échange sécurisé des empreintes de clefs des relais, peu importe la technologie choisie.
+On souhaite ici se rencontre pour tester [[configuration/babel]] d'avantage, sans l'interférence de [[configuration/batman]].
 
-Finalement, si on réussi tout ça et on cherche quelquechose à faire, il restera à configurer un [[VPN|todo/vpn_gateways]] entre verdun et rosemont! :) On pourra aussi discuter de la question de l'adressage.
+De plus, on pourra profiter de cette occasion pour s'échanger nos clefs PGP, ce qui me semble être une bonne manière de pouvoir développer un VPN par l'échange sécurisé des empreintes de clefs des relais, peu importe la technologie choisie. Si vous souhaitez participer à la signature de clefs PGP, il est préférable de vous créer une clef au préalable et d'emmener une copie de votre "empreinte de clef" de 40 caractères. Voir [le tutoriel de Koumbit](https://wiki.koumbit.net/GnuPrivacyGuard) (ligne de commande) ou [celui de Enigmail](http://www.enigmail.net/documentation/quickstart.php) (pour Thunderbird).
+
+Finalement, si on réussi tout ça et on cherche quelquechose à faire, il restera à configurer un [[VPN|todo/vpn_gateways]] entre Verdun et Rosemont! :) On pourra aussi discuter de la question de l'adressage.
 
 Date
 : jeudi 13 septembre
