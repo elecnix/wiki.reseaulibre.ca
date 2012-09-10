@@ -25,3 +25,5 @@ en:
 Ce qui est beaucoup plus lisible.
 
  [1]: http://daringfireball.net/projects/markdown/syntax
+
+Sinon, le courriel est un simple copier-coller du texte du wiki, avec la table des matières sous sa forme générée, bien entendu.
