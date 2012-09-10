@@ -1,16 +1,73 @@
-* Tracker BitTorrent
-* Miroir Wikipédia
-* Nouveaux noeuds durant le mois d'août:
- * lacou
- * bb?
-* Retour sur Maker Faire
-* Prochaine commande de matériel?
-* Noeuds cherchant financement: [[tag/needsfunding]]
-* Prochaine rencontre
-* statistics
+# Prochaine rencontre: tests Babel, jeudi 19h à Koumbit
 
-# Vidéaste recherché
+On souhaite ici se rencontre pour tester [[configuration/babel]] d'avantage, sans l'interférence de [[configuration/batman]]. On va également essayer de faire un petit échange de clefs PGP et discuter de VPN ainsi que d'adressage. Les détails dans [l'annonce complète]().
+
+ [l'annonce complète]: http://wiki.reseaulibre.ca/meetings/2012-09-13-babel-VPN-PGP/
+
+# Nouvelle commande collective
+
+Une nouvelle commande collective est en train de s'organiser! On prévoit l'achat de Nanostations mais aussi de Bullet, une excellente occasion de profiter des rabais associés aux commandes de groupe! Les détails dans [la page d'achat]().
+
+ [la page d'achat]: http://wiki.reseaulibre.ca/hardware/achats/2012-08-nanostation/
+
+# Retour sur Maker Faire
+
+Notre présence au Maker Faire a été un franc succès. Beaucoup de visiteurs se sont intéressés au projet, qui a semblé provoquer un bel enthousiasme chez les gens présents. Notre présence a permis de faire découvrir le projet à de nouveaux bénévoles motivés, y compris à des radios amateur de Laval, nos voisins de tables qui opèrent le répéteur [VE2RVL]().
+
+ [VE2RVL]: http://ve2rvl.dyndns.org/
+
+# Nouveaux services sur le mesh
+
+Un miroir Wikipedia est en cours de création, contactez [[scientist]] pour les détails. Nous avons également commencé à distribuer des images OpenWRT sur mesure pour le mesh (encore en développement) par le système [BitTorrent](), ce qui permet de distribuer le téléchargement entre plusieurs noeuds sur le mesh. On cherche également à héberger un [tracker Bittorrent](), contactez [[anarcat]] pour les détails.
+
+ [BitTorrent]: https://en.wikipedia.org/wiki/BitTorrent_(protocol)
+ [tracker Bittorrent]: https://en.wikipedia.org/wiki/BitTorrent_tracker
+
+# Noeuds cherchant financement
+
+Si votre node est en recherche de financement, indiquez le avec le tag "[[tag/needsfunding]]".
+
+# Vidéos et photos d'installation recherchés
 
 Nous aimerions documenter l'installation d'un noeud sur un toit d'édifice avec une caméra. L'objectif est d'aider ceux qui voudront le faire, et d'interviewer les participants sur leurs motivations.
+
+# Statistiques
+
+## Les stations
+
+planned
+:	44
+up
+:	29
+prospect
+:	15
+down
+:	3
+
+Nous avons 6 nouveaux noeuds en ligne, il s'agit de [[BlauEintopf]], [[plastik]] (point d'accès), [[bgm-latakia]], [[plantpeople]], [[lacou]] et un autre que je n'arrive pas à retrouver.
+
+## Inscrits
+
+liste de nouvelles
+: 17
+
+liste technique (nodes)
+: 67
+
+## Wiki
+
+Fichiers
+: 333
+
+Lignes
+: 22173 (34940 added, 12767 removed)
+
+Modifications
+: 2596 (average 14.8 commits per active day, 7.7 per all days)
+
+Auteurs
+: 74 (average 35.1 commits per author)
+
+À noter que le mois d'août a été le mois le plus occupé sur le wiki, avec 772 modifications.
 
 [[!tag draft]]
