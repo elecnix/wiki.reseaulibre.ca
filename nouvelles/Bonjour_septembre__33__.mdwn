@@ -22,14 +22,18 @@ Notre présence au Maker Faire a été un franc succès. Beaucoup de visiteurs s
 
 # Nouveaux services sur le mesh
 
-Un miroir Wikipedia est en cours de création, contactez [[scientist]] pour les détails. Nous avons également commencé à distribuer des images OpenWRT sur mesure pour le mesh (encore en développement) par le système [BitTorrent](), ce qui permet de distribuer le téléchargement entre plusieurs noeuds sur le mesh. On cherche également à héberger un [tracker Bittorrent](), contactez [[anarcat]] pour les détails.
+Un miroir Wikipedia est en cours de création, contactez [scientist][6] pour les détails. Nous avons également commencé à distribuer des images OpenWRT sur mesure pour le mesh (encore en développement) par le système [BitTorrent][7], ce qui permet de distribuer le téléchargement entre plusieurs noeuds sur le mesh. On cherche également à héberger un [tracker Bittorrent][8], contactez [anarcat][9] pour les détails.
 
- [BitTorrent]: https://en.wikipedia.org/wiki/BitTorrent_(protocol)
- [tracker Bittorrent]: https://en.wikipedia.org/wiki/BitTorrent_tracker
+ [6]: http://wiki.reseaulibre.ca/users/scientist
+ [7]: https://en.wikipedia.org/wiki/BitTorrent_(protocol)
+ [8]: https://en.wikipedia.org/wiki/BitTorrent_tracker
+ [9]: http://wiki.reseaulibre.ca/users/anarcat
 
 # Noeuds cherchant financement
 
-Si votre node est en recherche de financement, indiquez le avec le tag "[[tag/needsfunding]]".
+Si votre node est en recherche de financement, indiquez le avec le tag "[needsfunding][10]".
+
+ [10]: http://wiki.reseaulibre.ca/tag/needsfunding
 
 # Vidéos et photos d'installation recherchés
 
