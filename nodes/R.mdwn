@@ -21,6 +21,16 @@ A 802.11b/g node in a window (pointing North-North-West)
 
 Also VE2TUX licenced HAM.
 
+## Panorama
+
+### Vue vers le sud (montréalais)
+
+[[!img 2012-09-11-r-sud.jpg size=950x]]
+
+### Vue vers le nord
+
+[[!img 2012-09-11-r-nord.jpg size=950x]]
+
 [[!meta copyright="Copyright © 2012 Alexandre Guédon"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
