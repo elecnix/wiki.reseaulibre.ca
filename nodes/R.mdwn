@@ -1,4 +1,4 @@
-[[!waypoint lat="45.518629" lon="-73.58218" embed hidden width="400px" height="400px" right desc="A node in a window"]]
+[[!waypoint lat="45.518629" lon="-73.58218" embed hidden width="400px" height="400px" right desc="AP dans ma fenêtre arrière"]]
 
 A 802.11b/g node in a window (pointing North-North-West)
 
