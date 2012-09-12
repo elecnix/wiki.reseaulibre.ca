@@ -3,8 +3,11 @@
 [[!img 2012-09-11-r-nord.jpg size=950x]]
 
 # SETUP
+Operateur: [[users/R]]
+
 [[!toggle  id="carte" text="Afficher OpenStreetMap"]]
 [[!toggleable  id="carte" text="""
+
 En face du Parc des Amériques :
 [[!waypoint lat="45.518629" lon="-73.58218" embed hidden width="950px" height="300px" right desc="AP dans ma fenêtre nord"]]
 Pour l'instant, un AP 802.11b/g dans ma fenêtre (pointant vers le nord / nord-ouest)
@@ -26,10 +29,10 @@ Azimuth: North-North-West
 [[!toggle  id="incomingnodes" text="Afficher les autres noeuds potentiels et informations"]]
 [[!toggleable  id="incomingnodes" text="""
 
-# NOEUD 2:
+# NOEUD 2: [[!taglink unknown]]
 Ubnt NanoStation M² also available in a window pointing south (currently WPA2 on AirOS).
 
-# NOEUD 3:
+# NOEUD 3: [[!taglink planned]]
 Ubnt Bullet M² to be ordered soon with 15 dBi antenna...
 
 # AUTRES
