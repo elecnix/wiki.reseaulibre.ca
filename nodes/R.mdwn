@@ -29,10 +29,10 @@ Azimuth: North-North-West
 [[!toggle  id="incomingnodes" text="Afficher les autres noeuds potentiels et informations"]]
 [[!toggleable  id="incomingnodes" text="""
 
-# NOEUD 2: [[!taglink unknown]]
+## NOEUD 2: [[!taglink unknown]]
 Ubnt NanoStation M² also available in a window pointing south (currently WPA2 on AirOS).
 
-# NOEUD 3: [[!taglink planned]]
+## NOEUD 3: [[!taglink planned]]
 Ubnt Bullet M² to be ordered soon with 15 dBi antenna...
 
 # AUTRES
