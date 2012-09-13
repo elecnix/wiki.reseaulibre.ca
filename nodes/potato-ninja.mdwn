@@ -6,7 +6,7 @@
 
 [[!ymlfront data="""
 MAC: (mac address here)
-IP: 172.16.1.55/24
+IP: 172.16.1.55
 IPv6: 
 """]]
 
