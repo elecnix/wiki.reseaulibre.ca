@@ -6,7 +6,7 @@
 
 [[!ymlfront data="""
 MAC: (mac address here)
-IP: (pick one from [[policy/numbering]])
+IP: 172.16.1.55/24
 IPv6: 
 """]]
 
