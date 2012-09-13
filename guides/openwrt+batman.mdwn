@@ -6,7 +6,7 @@ This guide will take you from a fresh OpenWRT installation up to a fully functio
 
 # Installing OpenWRT
 
-To install OpenWRT, you must [[flash your router|configuration/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**, which provides batman version 2012.0.0. The stable version of OpenWRT, "backfire", provides an older version and is _not recommended_.
+To install OpenWRT, you must [[flash your router|configuration/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**, which, at time of writing provides version 2012.1.0 *(at svn r33362 provides batman version 2012.3.0)*. The stable version of OpenWRT, "backfire", provides an older version and is _not recommended_.
 
 # Set a Password
 
