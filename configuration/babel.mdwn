@@ -71,7 +71,7 @@ necessary as the `br-lan` interface includes `bat0`.
 
 Pour avoir l'interface de monitoring:
 
-    uci set babeld.@general[0].local_server=33231
+    uci set babeld.@general[0].local_server=33123
 
 Debian
 ------
