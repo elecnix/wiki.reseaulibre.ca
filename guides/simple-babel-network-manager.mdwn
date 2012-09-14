@@ -1,0 +1,62 @@
+[[!meta title="Simple Network Manager configuration for Babel"]]
+
+This page documents how to configure network manager to automatically
+start Babeld when it connects to a `reseaulibre.ca` wireless ad-hoc
+hotspot.
+
+Connecting your laptop to the mesh then becomes as simple as choosing
+the network conexion.
+
+This is designed for Wireless connexions, but can also be adapted to
+wired connexions.
+
+## Adhoc network manager configuration
+
+This assumes you have already tried connecting to a ad-hoc cell named
+`relais.reseaulibre.ca`. If that is not your case, try to find one and
+connect to it as a regular hotspot - it will fail but at least it will
+be in your list of networks.
+
+ 1. Right-click on the network-manager icon
+ 2. Choose `Edit connexions` (can also be launched through
+ `nm-connection-editor`)
+ 3. Choose the `Wireless` tab
+ 4. Click on `relais.reseaulibre.ca` in the list and then `Edit...`
+ 5. Choose the `IPv4 Settings`
+ 6. Choose `Link-Local Only`
+ 7. Click `Save...`
+ 8. Click `Close`
+
+This will make sure Network Manager will not try to get an IP using
+DHCP on the ad-hoc network.
+
+## Automatically starting babeld
+
+Network Manager has ways to automatically run scripts after a
+connexion is configured, in `/etc/NetworkManager/dispatcher.d/`.
+
+### Debian-specific
+
+(!) In Debian, there is a single hook that calls the "ifup" scripts
+defined in `/etc/network/if-up.d`, but this could be adapted to a
+network-manager-only setup.
+
+Place the following script in `/etc/network/if-up.d/reseaulibre-babel`:
+
+    #!/bin/sh -e
+    
+    if iwgetid -m | grep -q Ad-Hoc && iwgetid | grep -q reseaulibre; then
+        babeld -D -g 33123 "$IFACE"
+    fi
+
+Place the following in `/etc/network/if-post-down.d/reseaulibre-babel`:
+
+    #!/bin/sh -e
+    
+    if [ -e /var/run/babeld-reseaulibre.started ] ; then
+    	kill `cat /var/run/babeld.pid`
+    	rm /var/run/babeld-reseaulibre.started
+    fi
+
+Note: the above scripts could probably merged in one and ported to the
+`dispatcher.d` configuration... Patches welcome. :)
