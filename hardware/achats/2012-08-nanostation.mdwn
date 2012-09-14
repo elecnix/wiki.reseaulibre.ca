@@ -1,6 +1,6 @@
 * NanoStation M2 (anarcat: 4, alx1: 1)
 * Mount pour NanoStation (anarcat: 4, alx1: 1)
-* Bullet M2HP + antenne 15 dbi + injecteur POE (doundounba: 1, beastly: 2, goof: 1, Danukeru: 2 kits + 1 omni 15dbi d'extra, DanM: 1)
+* Bullet M2HP + antenne 15 dbi + injecteur POE (doundounba: 1, beastly: 2, goof: 1, DanM: 1)
 
 anarcat: à confirmer, dépend de Koumbit et autres.
 
