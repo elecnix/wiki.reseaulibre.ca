@@ -14,3 +14,36 @@ Lieu
 
 Doodle
 : <https://dudle.inf.tu-dresden.de/xau35mpm/>
+
+## Résumé de la rencontre
+
+On a pas mal tous réussi à créer un mesh babel assez robuste. On a pas
+beaucoup faire de tests de redondance, mais on a bien apprécié regarder
+les petits graphiques de deuxpi repondir sur son écran, très joli. :P
+
+On pense pas mal que Babel est simple et devrait être le protocole à
+utiliser pour l'avenir. C'était assez clair. J'ai reconfiguré les
+machines du bureau pour être en babel seulement et je considère faire de
+même avec les machines de la maison.
+
+On a échangé nos clefs PGP entre (presque) toutes les personnes
+présentes, alors que j'ai fait une très courte présentation sur les
+enjeux de la certification, des bases de confiances et d'autres détails
+important de PGP.
+
+J'ai aussi parlé de Monkeysphere, qu'on peut utiliser pour signer les
+clefs SSH ou HTTPS des serveurs, mais qu'on peut aussi utiliser pour les
+certificats RSA de IPsec! Le tout basé sur PGP également, voir
+http://monkeysphere.info/ pour les détails. J'ai également présenté
+monkeysign, qui aide à faire et envoyer des signatures PGP, mais qui
+avait quelques bogues (depuis résolus!) dans l'envoi de courriels. :)
+
+On a finalement parlé brièvement du VPN. On a observé qu'il sera
+peut-être nécessaire de segmenter le réseau en plusieurs sous-réseaux
+distincts pour faire que le VPN soit routable, mais on est pas certain:
+peut-être que si les nodes qui roulent le VPN roulent aussi babel, ils
+pourront échanger leurs routes...
+
+On a aussi pensé offrir un VPN comme un simple point d'accès au mesh,
+afin de permettre à n'importe qui de se connecter aux services du mesh
+de l'extérieur, pour faire des tests ou autre.
