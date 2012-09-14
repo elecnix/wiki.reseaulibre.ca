@@ -5,10 +5,10 @@ start Babeld when it connects to a `reseaulibre.ca` wireless ad-hoc
 hotspot.
 
 Connecting your laptop to the mesh then becomes as simple as choosing
-the network conexion.
+the network connection.
 
-This is designed for Wireless connexions, but can also be adapted to
-wired connexions.
+This is designed for Wireless connections, but can also be adapted to
+wired connections.
 
 ## Adhoc network manager configuration
 
@@ -18,7 +18,7 @@ connect to it as a regular hotspot - it will fail but at least it will
 be in your list of networks.
 
  1. Right-click on the network-manager icon
- 2. Choose `Edit connexions` (can also be launched through
+ 2. Choose `Edit connections` (can also be launched through
  `nm-connection-editor`)
  3. Choose the `Wireless` tab
  4. Click on `relais.reseaulibre.ca` in the list and then `Edit...`
@@ -33,7 +33,7 @@ DHCP on the ad-hoc network.
 ## Automatically starting babeld
 
 Network Manager has ways to automatically run scripts after a
-connexion is configured, in `/etc/NetworkManager/dispatcher.d/`.
+connection is configured, in `/etc/NetworkManager/dispatcher.d/`.
 
 ### Debian-specific
 
