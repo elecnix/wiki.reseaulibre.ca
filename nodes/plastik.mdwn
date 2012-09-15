@@ -16,8 +16,8 @@ Not documented: the access point is in managed mode, see the configuration dump 
 
 [[!ymlfront data="""
 MAC: F8:D1:11:B7:5A:62
-IP: 172.16.1.20/32 172.16.1.22/12
-IPv6: fd64:2c08:9fa7:1::3/128 FD64:2C08:9FA7:1:0:0:0:5/64
+IP: 172.16.1.20/32
+IPv6: fd64:2c08:9fa7:1::3/128
 """]]
 
 hostname
