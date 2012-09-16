@@ -1,4 +1,4 @@
-[[!toc]]
+[[!toc levels=2]]
 
 OpenVPN: providing client access to the mesh
 ============================================
@@ -71,8 +71,28 @@ Then this series of easy commands:
 prime - maybe a bad idea to be paranoid about that bit...)
 
 Create the `/usr/local/etc/openvpn/openvpn.conf` file, [the FreeBSD
-diary howto][openvpn] has a good sample file, but we are using a different, point to point configuration.
+diary howto][openvpn] has a good sample file, but we are using a
+different, point to point configuration. This is a minimal
+configuration, see the OpenVPN configuration for more samples.
 
+    dev tun
+    ifconfig 192.168.100.1 192.168.100.2
+    # not working?
+    push "route 172.16.0.0 255.240.0.0"
+    tls-server
+    dh /usr/local/etc/openvpn/easy-rsa/2.0/keys/dh2048.pem
+    ca /usr/local/etc/openvpn/easy-rsa/2.0/keys/ca.crt
+    cert /usr/local/etc/openvpn/easy-rsa/2.0/keys/vpn.orangeseeds.org.crt
+    key /usr/local/etc/openvpn/easy-rsa/2.0/keys/vpn.orangeseeds.org.key
+    port 1194
+    user nobody
+    group nobody
+    verb 3
+    status openvpn-status.log
+
+I was successful in using this configuration to access the mesh (and
+indeed my internal network too) by adding extra routes on the client,
+as it seems the `push` argument isn't working properly.
 
 [openvpn-routed]: http://www.freebsddiary.org/openvpn-routed.php
 [openvpn]: http://www.freebsddiary.org/openvpn.php
@@ -81,7 +101,7 @@ diary howto][openvpn] has a good sample file, but we are using a different, poin
 Debian
 ------
 
-(client conf)
+This is the client configuration.
 
     apt-get install openvpn
 
@@ -94,8 +114,8 @@ example.
 I transfer the client certificate created in the last step of the above
 FreeBSD config to the Debian client.
 
-To consider
------------
+Other considerations
+--------------------
 
 The above configuration basically hardcodes routes and netblocks. This
 means that the clients are necessarily on a different subnet than the
@@ -110,4 +130,6 @@ http://openvpn.net/index.php/open-source/documentation/miscellaneous/76-ethernet
 OS-level bridge configuration outside of OpenVPN.
 
 Another option would be to add tap0, the openvpn interface, to the mesh
-itself, so that the BATMAN mesh would run on top of the VPN.
+itself, so that the BATMAN mesh would run on top of the VPN. This
+seems rather perilous, and i was not able to run either BATMAN or
+OpenVPN in bridge mode in FreeBSD.
