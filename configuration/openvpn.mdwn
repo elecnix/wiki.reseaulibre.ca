@@ -1,5 +1,20 @@
 [[!toc levels=2]]
 
+mesh interconnect with tinc
+===========================
+
+[tinc]() is being considered instead of IPsec or OpenVPN for the mesh,
+for 2 reasons:
+
+ 1. it is deployed for use in the Freifunk mesh
+ 2. it supports full mesh routing (all nodes have access to all nodes,
+    no client/server model)
+
+tinc supports bridged mode like OpenVPN does, which should also allow
+us to send Babel broadcasts across the network.
+
+[tinc]: http://www.tinc-vpn.org/
+
 OpenVPN: providing client access to the mesh
 ============================================
 
