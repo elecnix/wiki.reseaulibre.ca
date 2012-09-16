@@ -1,7 +1,16 @@
+[[!toc]]
+
+OpenVPN: providing client access to the mesh
+============================================
+
+The following configurations use OpenVPN to allow external users to access the mesh directly.
+
+<!> Warning: this will give users to which you give access (through the SSL certificate) complete access to your internal network.
+
 FreeBSD
 -------
 
-(server conf)
+This is the server configuration, which we assume you are running on a router. It is quite FreeBSD-specific, but the OpenVPN configuration should be similar.
 
     pkg_add -r openvpn
 
@@ -9,18 +18,15 @@ Then add this to `/etc/rc.conf` to make sure the daemon is started on
 boot:
 
     openvpn_enable="YES"      # set to YES to enable openvpn
-    openvpn_if="tap"          # driver(s) to load, set to "tun", "tap" or "tun tap"
+    openvpn_if="tun"          # driver(s) to load, set to "tun", "tap" or "tun tap"
 
 Load the tap device:
 
-    kldload if_tap
+    kldload if_tun
 
 You also need to add this to `/boot/loader.conf`:
 
-    if_tap_load="YES"
-
-create the `/usr/local/etc/openvpn/openvpn.conf` file: see [the FreeBSD
-diary howto][openvpn] for a sample file.
+    if_tun_load="YES"
 
 using the easy-rsa package, here are my changes to the `vars` as
 suggested in the [SSL howto][ca-howto].
@@ -63,6 +69,10 @@ Then this series of easy commands:
 
 (To be continued: the build-dh step is still generating that 2048 bit
 prime - maybe a bad idea to be paranoid about that bit...)
+
+Create the `/usr/local/etc/openvpn/openvpn.conf` file, [the FreeBSD
+diary howto][openvpn] has a good sample file, but we are using a different, point to point configuration.
+
 
 [openvpn-routed]: http://www.freebsddiary.org/openvpn-routed.php
 [openvpn]: http://www.freebsddiary.org/openvpn.php
