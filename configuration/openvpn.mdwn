@@ -20,7 +20,7 @@ OpenVPN: providing client access to the mesh
 
 The following configurations use OpenVPN to allow external users to access the mesh directly.
 
-<!> Warning: this will give users to which you give access (through the SSL certificate) complete access to your internal network.
+/!\ Warning: this will give users to which you give access (through the SSL certificate) complete access to your internal network.
 
 FreeBSD
 -------
