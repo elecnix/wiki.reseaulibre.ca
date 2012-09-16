@@ -1,20 +1,5 @@
 [[!toc levels=2]]
 
-mesh interconnect with tinc
-===========================
-
-[tinc]() is being considered instead of IPsec or OpenVPN for the mesh,
-for 2 reasons:
-
- 1. it is deployed for use in the Freifunk mesh
- 2. it supports full mesh routing (all nodes have access to all nodes,
-    no client/server model)
-
-tinc supports bridged mode like OpenVPN does, which should also allow
-us to send Babel broadcasts across the network.
-
-[tinc]: http://www.tinc-vpn.org/
-
 OpenVPN: providing client access to the mesh
 ============================================
 
@@ -147,3 +132,77 @@ Another option would be to add tap0, the openvpn interface, to the mesh
 itself, so that the BATMAN mesh would run on top of the VPN. This
 seems rather perilous, and i was not able to run either BATMAN or
 OpenVPN in bridge mode in FreeBSD.
+
+mesh interconnect with tinc
+===========================
+
+[tinc]() is being considered instead of IPsec or OpenVPN for the mesh,
+for 2 reasons:
+
+ 1. it is deployed for use in the Freifunk mesh
+ 2. it supports full mesh routing (all nodes have access to all nodes,
+    no client/server model)
+
+tinc supports bridged mode like OpenVPN does, which should also allow
+us to send Babel broadcasts across the network.
+
+A disadvantage of tinc is that Windows isn't as well supported,
+[relying on Cygwin/MinGW](http://www.tinc-vpn.org/faq/#index9h3).
+
+[tinc]: http://www.tinc-vpn.org/
+
+Configuring one node
+--------------------
+
+The directory structure of tinc configuration files is important, so
+you first need to create that:
+
+    mkdir -p /etc/tinc/reseaulibre/hosts
+
+Here we have created the `hosts` directory that will hold the node
+configurations for the `reseaulibre` network. Then we need to create a
+configuration file for this host:
+
+    Name = roadkiller
+    Device = /dev/tap1
+
+Note that we use `tap1` because `tap0` is taken up by OpenVPN in my
+tests. This configuration file defines what the current host, but we
+need to create a corresponding configuration file in `hosts` on every
+host in the tinc mesh, including the current host, for example in
+`hosts/roadkiller`:
+
+    Address = vpn.orangeseeds.org
+    Subnet = 172.16.0.0/12
+
+SSL certificates
+----------------
+
+SSL certificates are created with this command in the `1.0` serie
+(this changes in later releases):
+
+    tincd -n reseaulibre -K
+
+This will create a private key for the host in
+`reseaulibre/rsa_key.priv` and add the public key material to the
+`hosts/roadkiller` configuration file.
+
+IP allocation
+-------------
+
+Each host in the network needs to have an IP allocated in the
+mesh. This IP is assigned to the interface, so it needs to be
+different than existing IPs you have configured on your network. This
+is defined in the `tinc-up` startup script:
+
+    ifconfig $INTERFACE 192.168.101.1 255.255.255.0
+
+The script needs to be made executable:
+
+    chmod a-x tinc-up
+
+Current status
+--------------
+
+The above doesn't work at all. I can't ping either side of the tunnel,
+even though they seem to connect fine.
