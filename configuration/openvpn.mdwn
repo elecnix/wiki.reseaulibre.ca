@@ -165,6 +165,7 @@ configuration file for this host:
 
     Name = roadkiller
     Device = /dev/tap1
+    Mode = switch
 
 Note that we use `tap1` because `tap0` is taken up by OpenVPN in my
 tests. This configuration file defines what the current host, but we
@@ -173,7 +174,12 @@ host in the tinc mesh, including the current host, for example in
 `hosts/roadkiller`:
 
     Address = vpn.orangeseeds.org
-    Subnet = 172.16.0.0/12
+    Subnet = 192.168.101.0/24
+
+This is for my laptop:
+
+    Address = angela.anarcat.ath.cx
+    Subnet = 192.168.101.42/32
 
 SSL certificates
 ----------------
@@ -195,14 +201,31 @@ mesh. This IP is assigned to the interface, so it needs to be
 different than existing IPs you have configured on your network. This
 is defined in the `tinc-up` startup script:
 
-    ifconfig $INTERFACE 192.168.101.1 255.255.255.0
+    ifconfig $INTERFACE 192.168.101.43 255.255.255.0 up
 
 The script needs to be made executable:
 
     chmod a-x tinc-up
 
+For my laptop:
+
+    ifconfig $INTERFACE 192.168.101.42 255.255.255.0 up
+
+Connecting with babel
+---------------------
+
+The resulting device can be added to the list of interfaces used by
+Babel for its routing:
+
+    babeld -D tap1
+
+Since this is now in "switched" mode, babeld will pass announcements
+through that device and add proper routing.
+
 Current status
 --------------
 
-The above doesn't work at all. I can't ping either side of the tunnel,
-even though they seem to connect fine.
+Even though babel can send routing information through the tunnel,
+actual packets are not going through the interface once babel goes
+up. At least the point to point configuration actually works with tinc
+now.
