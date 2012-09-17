@@ -5,6 +5,7 @@ This project is inspired, guided and sometimes in communication with the followi
 * <https://projectmeshnet.org/> - The Project Meshnet
 
 #Europe
+* <http://guifi.net/en> - Spain - 18,127 working nodes
 * <http://www.opennet-initiative.de/> - Rostock
 * <http://reseaucitoyen.be/> - Bruxelles - forké en <http://bombolong.net> (down?)
 * <http://freifunk.net/> - Berlin, Leipzig, Halle, Gadow, Dresden
