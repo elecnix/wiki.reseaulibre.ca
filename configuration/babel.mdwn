@@ -149,6 +149,7 @@ Advantages of Babel over BATMAN
  6. No need to change the MTU of some network interface to 1528, which means:
  7. Network interfaces can be edited with the web interface luci (mtu field does not accept values > 1500), which means:
  8. People afraid of command line and ssh could now configure their device
+ 9. most importantly: allows for an heterogeneous network with different protocols, as long as they talk IP and their routes are annonced through babeld
 
 Troubleshooting
 ===============
