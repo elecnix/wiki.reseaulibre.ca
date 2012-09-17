@@ -110,6 +110,13 @@ regular point to point routing as, if it would be installed on the
 tinc interface, it would actually block traffic as it would start to
 issue arp requests that would eventually fail.
 
+References
+----------
+
+ * [Tinc manual](http://www.tinc-vpn.org/documentation/tinc_toc)
+ * [Example configuration](http://www.tinc-vpn.org/documentation/tinc_4.html#Example-configuration)
+ * [Bridging example configuration](http://www.tinc-vpn.org/examples/bridging/) - note that we do not use bridges, as we rely on babel to do the magic, weird, but it seems to work
+
 OpenVPN: providing client access to the mesh
 ============================================
 
