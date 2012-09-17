@@ -16,7 +16,7 @@ OpenWRT
 -------
 
     opkg install babeld
-    ifconfig wlan0 up 169.254.11.7/32
+    ifconfig wlan0 up 172.16.0.43/32
     babeld -D wlan0
 
 To make sure that babel starts on boot:
@@ -49,9 +49,22 @@ add batman to the list of interfaces babel works on:
 Note that in our current [[batman]] configuration, the above is not
 necessary as the `br-lan` interface includes `bat0`.
 
-Pour avoir l'interface de monitoring:
+Here's a basic UCI config, taken from [[nodes/plastik]].
 
-    uci set babeld.@general[0].local_server=33123
+    package babeld
+    
+    config general
+            option local_server '33123'
+    
+    config filter
+            option ignore 'true'
+    
+    config interface 'wlan'
+
+    config interface 'lan'
+
+Note that we do not configure routing rules through UCI, but instead
+rely on the `/etc/babeld.conf` file, see below for config samples.
 
 Debian
 ------
