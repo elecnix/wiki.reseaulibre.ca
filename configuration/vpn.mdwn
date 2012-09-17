@@ -110,6 +110,44 @@ regular point to point routing as, if it would be installed on the
 tinc interface, it would actually block traffic as it would start to
 issue arp requests that would eventually fail.
 
+Getting a secure VPN connection with the mesh
+---------------------------------------------
+
+To make a VPN connexion to the mesh, you will need to have at least one peer configured with a trusted RSA key and a `ConnectTo` statement. Then this peer will send you the RSA keys it knows for the other hosts through that connexion and you can establish direct connexions to the other peers using those keys. Here's a cryptographically signed message for one of those hosts:
+
+[[!format txt """
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Address = vpn.orangeseeds.org
+
+- -----BEGIN RSA PUBLIC KEY-----
+MIIBCgKCAQEA2i3TG88WHGP64XXhr/qQH1mEoskXF6kRAchmy9zufEzRlf/hKQsy
+IijpvLG/boOpdjEGuaC712rGg5IlNdEhBAu963pVZuDWDT53U87llwn+ErTxdqaW
+BHTKyKe/KSWIXxJA0UBrlctgxgfr3XjT54/zsFBt8XZt9lGNjz76W3xe8YjvT5es
+OL9SBeaWiuwxIqCK1GhdEJ0I3ZruBMOybywJMvNMdvcP8qdDQ3lLaSuiQSQ7ZCfI
+yhOzskOr2szb9COGtsNoQj8W8C23U+IW32BDval39T9TrO9l4OsMn7qCTQ5vnGdh
+Lt9uhkBWIAfqdi8516cPNew3EXKe4D/ERQIDAQAB
+- -----END RSA PUBLIC KEY-----
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAEBCAAGBQJQVoCgAAoJEHkhUlJ7dZIeE+EP/3xUhWPHr9TLuZuTol18CFPW
+kLl0mIeZgEGDF59mQJ/kLI3i/sjRo9yUhtggUIeqAxLA78o/Dnp06MWNfRUdc3AX
+F8F42ULRqzF21nYADSDPDOx6YpmiDJuGnymzx+6B6wIy3Th3BSG1w3cpSyb1TMzE
+urkYHCGtCHPHSCoLuYXXdGFiYIvwHRGS1QAGNE91iS4bav2LD27aZs7us/hV8Npw
+CSSNrfr9rBIIokxTwNdCQ+yPAH3vZyF5YElxrRufb2bhyVG+qQBeUsuDZQ0I+rBe
+1DQEACsdT2RAq1oNkj9euG3fP43xNAxP9hARH/MEsQiNZh7VDEp9up1nMpIvfqkx
+J9ImbBINw4ft440WNhkkLNdm/QXw+ddEMeEaRwzle+v954ufc1eMt+i6DGe1scfk
+FHtgIWaSmFE/MfTf/KSaW4kwAH2AoOlGMlj7MNZlXdByvmJzjmAMJNVcYGDPf6kc
+dFFBAT1dCEydvSiS1NvW/4QHgtvbWMiyxjSik/aCPwkDMMgL6RQzB80f5Vhp1b35
+4oFfD01uq20Aq4KTAGk/r6bn5fM7GMrbH+r2YmO9h3gIEJfDl71DZeBGN/uOUN1l
+55Ilhp3/vrBUZVu/M4RRip2ERYtVoV+RH/va3nz6WZnxJqoWDTJrBUb5Ei8bOn06
+LVry8hC3B1p8MleYfvyQ
+=XtYi
+-----END PGP SIGNATURE-----
+"""]]
+
 References
 ----------
 
