@@ -134,9 +134,17 @@ certificate|roadkiller.asc]] and extract it in place:
     cd /etc/tinc/hosts/
     gpg roadkiller.asc > roadkiller
 
-Make sure that your `tinc.conf` has the following statement so that you connect to the host:
+Make sure that your `/etc/tinc/reseaulibre/tinc.conf` has the following statement so that you connect to the host:
 
     ConnectTo = roadkiller
+
+Automatic connection at startup
+-------------------------------
+
+In Debian, tinc will connect to the other peers automatically if you add the name of the network in `/etc/tinc/nets.boot`. For example:
+
+    ## This file contains all names of the networks to be started on system startup.
+    reseaulibre
 
 References
 ----------
