@@ -34,17 +34,20 @@ configurations for the `reseaulibre` network. Then we need to create a
 configuration file for this host in /etc/tinc/reseaulibre/tinc.conf:
 
     Name = roadkiller
-    Device = /dev/tap0
     Mode = switch
 
-This configuration file defines what the current host, but we
-need to create a corresponding configuration file in `hosts` on every
+This is necessary on FreeBSD:
+
+    Device = /dev/tap0
+
+The above configuration defines the current host, but we
+need to create a configuration file in `hosts` on every
 host in the tinc mesh, including the current host, for example in
 `hosts/roadkiller`:
 
     Address = vpn.orangeseeds.org
 
-This is for my laptop in `hosts/angela`:
+And this is for my laptop in `hosts/angela`:
 
     Address = angela.anarcat.ath.cx
 
