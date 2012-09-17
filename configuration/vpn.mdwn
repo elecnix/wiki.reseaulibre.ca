@@ -94,7 +94,7 @@ Connecting with babel
 The resulting device can be added to the list of interfaces used by
 Babel for its routing:
 
-    babeld -D tap1
+    babeld -D tap0
 
 Since this is now in "switched" mode, babeld will pass announcements
 through that device and add proper routing. Note that you will very
