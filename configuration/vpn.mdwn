@@ -44,7 +44,7 @@ host in the tinc mesh, including the current host, for example in
 
     Address = vpn.orangeseeds.org
 
-This is for my laptop in `hosts/angela` (?):
+This is for my laptop in `hosts/angela`:
 
     Address = angela.anarcat.ath.cx
 
@@ -120,6 +120,9 @@ certificate|roadkiller.asc]] and extract it in place:
     cd /etc/tinc/hosts/
     gpg roadkiller.asc > roadkiller
 
+Make sure that your `tinc.conf` has the following statement so that you connect to the host:
+
+    ConnectTo = roadkiller
 
 References
 ----------
