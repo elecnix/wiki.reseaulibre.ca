@@ -244,5 +244,6 @@ redistribute deny
 References
 ==========
 
+ * [Babel home page](http://www.pps.univ-paris-diderot.fr/~jch/software/babel/)
  * [HacDC setup notes](http://wiki.hacdc.org/index.php/Babel_Setup)
  * [[!rfc 6126]]
