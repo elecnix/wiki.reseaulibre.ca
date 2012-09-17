@@ -175,7 +175,22 @@ synchronise.
 Config samples
 ==============
 
-Here's my configuration:
+Basic open configuration
+------------------------
+
+This is the simplest `babeld.conf` configuration that will allow everything:
+
+    redistribute allow
+
+It is useful to remember this, as it can also be passed on the
+commandline directly, as such:
+
+    bababeld -d1 -C 'redistribute allow' wlan0
+
+Complex router
+--------------
+
+Here's my configuration for [[nodes/roadkiller]]:
 
 [[!format txt """
 # mesh IPv6
