@@ -1,6 +1,6 @@
 We are using different tools for different purposes. The simplest thing we can provide is to use [OpenVPN](https://openvpn.net) to provide client access to the mesh. The reason we used OpenVPN for this is that howtos are simpler to follow and it's easier to configure.
 
-We are therefore using [tinc](http://www.tinc-vpn.org/) for mesh interconnexion, as it is completely decentralised (as opposed to OpenVPN, which uses a client/server architecture). We can't use IPsec as it doesn't pass babel's IPv6 broadcasts properly. We could also have used tinc for simple client access, and instructions on how to do this (and therefore replace the OpenVPN instructions are welcome here).
+We are therefore using [tinc](http://www.tinc-vpn.org/) for mesh interconnection, as it is completely decentralised (as opposed to OpenVPN, which uses a client/server architecture). We can't use IPsec as it doesn't pass babel's IPv6 broadcasts properly. We could also have used tinc for simple client access, and instructions on how to do this (and therefore replace the OpenVPN instructions are welcome here).
 
 [[!toc levels=2]]
 
@@ -31,21 +31,20 @@ you first need to create that:
 
 Here we have created the `hosts` directory that will hold the node
 configurations for the `reseaulibre` network. Then we need to create a
-configuration file for this host:
+configuration file for this host in /etc/tinc/reseaulibre/tinc.conf:
 
     Name = roadkiller
-    Device = /dev/tap1
+    Device = /dev/tap0
     Mode = switch
 
-Note that we use `tap1` because `tap0` is taken up by OpenVPN in my
-tests. This configuration file defines what the current host, but we
+This configuration file defines what the current host, but we
 need to create a corresponding configuration file in `hosts` on every
 host in the tinc mesh, including the current host, for example in
 `hosts/roadkiller`:
 
     Address = vpn.orangeseeds.org
 
-This is for my laptop:
+This is for my laptop in `hosts/angela` (?):
 
     Address = angela.anarcat.ath.cx
 
