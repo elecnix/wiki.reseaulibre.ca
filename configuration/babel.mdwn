@@ -175,6 +175,15 @@ synchronise.
 Config samples
 ==============
 
+We are working with upstream to have a good default configuration
+provided with the package, see
+[this discussion](http://article.gmane.org/gmane.network.routing.babel.user/1049)
+and the `babeld.conf.sample` file in anarcat's repository:
+
+    git://src.anarcat.ath.cx/babeld
+
+See also [OpenWRT's sample config](https://dev.openwrt.org/browser/packages/net/babel/files/babeld.conf).
+
 Basic open configuration
 ------------------------
 
