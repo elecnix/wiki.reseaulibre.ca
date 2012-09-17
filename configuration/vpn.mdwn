@@ -4,6 +4,112 @@ We are therefore using [tinc](http://www.tinc-vpn.org/) for mesh interconnexion,
 
 [[!toc levels=2]]
 
+tinc: interconnect disjoint mesh networks
+=========================================
+
+We are using [tinc]() of IPsec or OpenVPN for the mesh, for 2 reasons:
+
+ 1. it is deployed for use in the Freifunk mesh
+ 2. it supports full mesh routing (all nodes have access to all nodes,
+    no client/server model)
+
+tinc supports bridged mode like OpenVPN does, which allows
+us to send Babel broadcasts across the network.
+
+A disadvantage of tinc is that Windows isn't as well supported,
+[relying on Cygwin/MinGW](http://www.tinc-vpn.org/faq/#index9h3).
+
+[tinc]: http://www.tinc-vpn.org/
+
+Configuring one node
+--------------------
+
+The directory structure of tinc configuration files is important, so
+you first need to create that:
+
+    mkdir -p /etc/tinc/reseaulibre/hosts
+
+Here we have created the `hosts` directory that will hold the node
+configurations for the `reseaulibre` network. Then we need to create a
+configuration file for this host:
+
+    Name = roadkiller
+    Device = /dev/tap1
+    Mode = switch
+
+Note that we use `tap1` because `tap0` is taken up by OpenVPN in my
+tests. This configuration file defines what the current host, but we
+need to create a corresponding configuration file in `hosts` on every
+host in the tinc mesh, including the current host, for example in
+`hosts/roadkiller`:
+
+    Address = vpn.orangeseeds.org
+
+This is for my laptop:
+
+    Address = angela.anarcat.ath.cx
+
+Note that we should *not* put `Subnet` blocks here since we are in
+switch mode, see
+[this post](http://www.tinc-vpn.org/pipermail/tinc/2012-September/003029.html)
+for the source.
+
+SSL certificates
+----------------
+
+SSL certificates are created with this command in the `1.0` serie
+(this changes in later releases):
+
+    tincd -n reseaulibre -K
+
+This will create a private key for the host in
+`reseaulibre/rsa_key.priv` and add the public key material to the
+`hosts/roadkiller` configuration file.
+
+IP allocation
+-------------
+
+Each host in the network needs to have an IP allocated in the
+mesh. This IP is assigned to the interface, so it needs to be
+different than existing IPs you have configured on your network. This
+is defined in the `tinc-up` startup script:
+
+    ifconfig $INTERFACE 172.16.242.43 255.255.255.255 up
+
+The script needs to be made executable:
+
+    chmod a-x tinc-up
+
+For my laptop:
+
+    ifconfig $INTERFACE 172.16.242.42 255.255.255.255 up
+
+Note that we allocate IPs in a special netblock (arbitrarily
+reserved). Those IPs won't be pingable, but can be used by babel to
+establish its routes. To have them routable, you can make the netmask
+a `/24`, but then it could interfere with other routes in the network.
+
+Connecting with babel
+---------------------
+
+The resulting device can be added to the list of interfaces used by
+Babel for its routing:
+
+    babeld -D tap1
+
+Since this is now in "switched" mode, babeld will pass announcements
+through that device and add proper routing. Note that you will very
+likely refuse routes from babel that interfere with the uplink, for
+example to connect to roadkiller, you want this in your `babeld.conf`:
+
+    in ip 72.0.72.144/32 deny
+    in ip 172.16.0.0/12 le 12 deny
+
+Note that we also block the BATMAN `/12` which interferes with our
+regular point to point routing as, if it would be installed on the
+tinc interface, it would actually block traffic as it would start to
+issue arp requests that would eventually fail.
+
 OpenVPN: providing client access to the mesh
 ============================================
 
@@ -136,110 +242,3 @@ Another option would be to add tap0, the openvpn interface, to the mesh
 itself, so that the BATMAN mesh would run on top of the VPN. This
 seems rather perilous, and i was not able to run either BATMAN or
 OpenVPN in bridge mode in FreeBSD.
-
-mesh interconnect with tinc
-===========================
-
-[tinc]() is being considered instead of IPsec or OpenVPN for the mesh,
-for 2 reasons:
-
- 1. it is deployed for use in the Freifunk mesh
- 2. it supports full mesh routing (all nodes have access to all nodes,
-    no client/server model)
-
-tinc supports bridged mode like OpenVPN does, which should also allow
-us to send Babel broadcasts across the network.
-
-A disadvantage of tinc is that Windows isn't as well supported,
-[relying on Cygwin/MinGW](http://www.tinc-vpn.org/faq/#index9h3).
-
-[tinc]: http://www.tinc-vpn.org/
-
-Configuring one node
---------------------
-
-The directory structure of tinc configuration files is important, so
-you first need to create that:
-
-    mkdir -p /etc/tinc/reseaulibre/hosts
-
-Here we have created the `hosts` directory that will hold the node
-configurations for the `reseaulibre` network. Then we need to create a
-configuration file for this host:
-
-    Name = roadkiller
-    Device = /dev/tap1
-    Mode = switch
-
-Note that we use `tap1` because `tap0` is taken up by OpenVPN in my
-tests. This configuration file defines what the current host, but we
-need to create a corresponding configuration file in `hosts` on every
-host in the tinc mesh, including the current host, for example in
-`hosts/roadkiller`:
-
-    Address = vpn.orangeseeds.org
-
-This is for my laptop:
-
-    Address = angela.anarcat.ath.cx
-
-Note that we should *not* put `Subnet` blocks here since we are in
-switch mode, see
-[this post](http://www.tinc-vpn.org/pipermail/tinc/2012-September/003029.html)
-for the source.
-
-SSL certificates
-----------------
-
-SSL certificates are created with this command in the `1.0` serie
-(this changes in later releases):
-
-    tincd -n reseaulibre -K
-
-This will create a private key for the host in
-`reseaulibre/rsa_key.priv` and add the public key material to the
-`hosts/roadkiller` configuration file.
-
-IP allocation
--------------
-
-Each host in the network needs to have an IP allocated in the
-mesh. This IP is assigned to the interface, so it needs to be
-different than existing IPs you have configured on your network. This
-is defined in the `tinc-up` startup script:
-
-    ifconfig $INTERFACE 172.16.242.43 255.255.255.255 up
-
-The script needs to be made executable:
-
-    chmod a-x tinc-up
-
-For my laptop:
-
-    ifconfig $INTERFACE 172.16.242.42 255.255.255.255 up
-
-Note that we allocate IPs in a special netblock (arbitrarily
-reserved). Those IPs won't be pingable, but can be used by babel to
-establish its routes. To have them routable, you can make the netmask
-a `/24`, but then it could interfere with other routes in the network.
-
-Connecting with babel
----------------------
-
-The resulting device can be added to the list of interfaces used by
-Babel for its routing:
-
-    babeld -D tap1
-
-Since this is now in "switched" mode, babeld will pass announcements
-through that device and add proper routing. Note that you will very
-likely refuse routes from babel that interfere with the uplink, for
-example to connect to roadkiller, you want this in your `babeld.conf`:
-
-    in ip 72.0.72.144/32 deny
-    in ip 172.16.0.0/12 le 12 deny
-
-Note that we also block the BATMAN `/12` which interferes with our
-regular point to point routing as, if it would be installed on the
-tinc interface, it would actually block traffic as it would start to
-issue arp requests that would eventually fail.
