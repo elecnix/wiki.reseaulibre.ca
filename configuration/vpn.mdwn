@@ -91,6 +91,17 @@ reserved). Those IPs won't be pingable, but can be used by babel to
 establish its routes. To have them routable, you can make the netmask
 a `/24`, but then it could interfere with other routes in the network.
 
+Running tinc by hand
+--------------------
+
+To do your first tests, you may prefer to run it by hand, using:
+
+    tincd -d4 -D -n reseaulibre
+
+ * `-d4` is to enable good debugging
+ * `-D` means to not detach as a daemon
+ * `-n reseaulibre` means to start the reseaulibre network
+
 Connecting with babel
 ---------------------
 
