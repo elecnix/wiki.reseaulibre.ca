@@ -151,6 +151,7 @@ LVry8hC3B1p8MleYfvyQ
 References
 ----------
 
+ * [tinc home page](http://www.tinc-vpn.org/)
  * [Tinc manual](http://www.tinc-vpn.org/documentation/tinc_toc)
  * [Example configuration](http://www.tinc-vpn.org/documentation/tinc_4.html#Example-configuration)
  * [Bridging example configuration](http://www.tinc-vpn.org/examples/bridging/) - note that we do not use bridges, as we rely on babel to do the magic, weird, but it seems to work
