@@ -1,36 +1,16 @@
 [[!meta title="Babel configuration notes"]]
 
-(!) Those are not official instructions to join the Montreal mesh. We
-are only experimenting with this technology at this point, so to join
-the mesh you should rather look at [[batman]] for now.
+(!) We are in the process of testing
+[Babel](http://www.pps.univ-paris-diderot.fr/~jch/software/babel/) to
+replace [[batman]]. A few of us are running both in dual stack, but we
+are likely to switch to babel after this evaluation period.
 
-Also used by commotionwireless.
+Babel is also used by [commotionwireless](https://commotionwireless.net/).
 
 [[!toc levels=3]]
 
-Configuration
-=============
-
-Regardless of the install method or platform, you need a
-`babeld.conf`. This will decide which routes you will announce and
-accept and so on, so it is rather important.
-
-For testing (and for open relays), the base configuration is:
-
-    redistribute metric 128
-
-This will redistribute all your routes with a non-zero metric so they
-do not override your default configuration. You can also announce
-specific routes
-
-Another common configuration is to refuse the default route, which is:
-
-    in ip 0.0.0.0/32 le 0 deny
-
-This is especially important on routers that *do* have network access,
-as babel will happily override existing routes in certain
-configurations. See the babeld manpage for more information on those
-rules.
+Installation
+------------
 
 OpenWRT
 -------
@@ -82,10 +62,8 @@ Debian
 
         ifconfig wlan0 down
         iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9
-        ifconfig wlan0 up
-        avahi-autoipd wlan0
-        ifconfig wlan0:avahi netmask 255.255.255.255
-        babeld -D wlan0:avahi wlan0
+        ifconfig wlan0 up 172.16.0.43/32
+        babeld -D wlan0
 
 See [[policy/numbering]] to choose the proper IP above, but note the netmask (`255.255.255.255` or `/32`) that needs to be defined for babel to work.
 
@@ -103,7 +81,7 @@ See [[policy/numbering]] to choose the proper IP above, but note the netmask (`2
 
 The possible workaround is to open the Network settings, select the IPv6 parameters page of your connection, click the Routes button and check "Ignore automatically obtained routes".
 
-This bug is described at [[https://bugzilla.gnome.org/show_bug.cgi?id=682616]]
+This bug is described at <https://bugzilla.gnome.org/show_bug.cgi?id=682616>
 
 FreeBSD
 -------
@@ -122,6 +100,30 @@ Optional
 --------
 
 `ahcpd -D wlan0` can be used to distribute IPs over the network (without announcing a gateway).
+
+Configuration
+=============
+
+Regardless of the install method or platform, you need a
+`babeld.conf`. This will decide which routes you will announce and
+accept and so on, so it is rather important.
+
+For testing (and for open relays), the base configuration is:
+
+    redistribute metric 128
+
+This will redistribute all your routes with a non-zero metric so they
+do not override your default configuration. You can also announce
+specific routes
+
+Another common configuration is to refuse the default route, which is:
+
+    in ip 0.0.0.0/32 le 0 deny
+
+This is especially important on routers that *do* have network access,
+as babel will happily override existing routes in certain
+configurations. See the babeld manpage for more information on those
+rules.
 
 Advantages of Babel over BATMAN
 ===============================
