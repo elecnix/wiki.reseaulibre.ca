@@ -76,7 +76,7 @@ mesh. This IP is assigned to the interface, so it needs to be
 different than existing IPs you have configured on your network. This
 is defined in the `tinc-up` startup script:
 
-    ifconfig $INTERFACE 172.16.242.43 255.255.255.255 up
+    ifconfig $INTERFACE 172.16.242.43 netmask 255.255.255.255 up
 
 The script needs to be made executable:
 
@@ -84,7 +84,7 @@ The script needs to be made executable:
 
 For my laptop:
 
-    ifconfig $INTERFACE 172.16.242.42 255.255.255.255 up
+    ifconfig $INTERFACE 172.16.242.42 netmask 255.255.255.255 up
 
 Note that we allocate IPs in a special netblock (arbitrarily
 reserved). Those IPs won't be pingable, but can be used by babel to
