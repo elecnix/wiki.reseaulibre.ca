@@ -12,6 +12,7 @@ Those instructions attempt to be platform-independent or at least cover multiple
 3. [[!traillink configuration/batman]] - configuring mesh software for interconnexion (see also [[configuration/babel]], which we are not using right now)
 4. [[!traillink configuration/ip]] - adress allocation on the network and connexion with the outside world, see also [[configuration/zeroconf]]
 5. [[!traillink configuration/services]] - configure services for the mesh
+6. [[!traillink configuration/vpn]] - interconnect mesh points with a VPN
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
