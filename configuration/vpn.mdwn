@@ -117,6 +117,8 @@ example to connect to roadkiller, you want this in your `babeld.conf`:
 
     in ip 72.0.72.144/32 deny
     in ip 172.16.0.0/12 le 12 deny
+    in ip 2001:1928:1:9::/128 deny
+    in ip 2001:1928:1:9::/64 deny
 
 Note that we also block the BATMAN `/12` which interferes with our
 regular point to point routing as, if it would be installed on the
