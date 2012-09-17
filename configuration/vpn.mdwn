@@ -1,3 +1,7 @@
+We are using different tools for different purposes. The simplest thing we can provide is to use [OpenVPN](https://openvpn.net) to provide client access to the mesh. The reason we used OpenVPN for this is that howtos are simpler to follow and it's easier to configure.
+
+We are therefore using [tinc](http://www.tinc-vpn.org/) for mesh interconnexion, as it is completely decentralised (as opposed to OpenVPN, which uses a client/server architecture). We can't use IPsec as it doesn't pass babel's IPv6 broadcasts properly. We could also have used tinc for simple client access, and instructions on how to do this (and therefore replace the OpenVPN instructions are welcome here).
+
 [[!toc levels=2]]
 
 OpenVPN: providing client access to the mesh
