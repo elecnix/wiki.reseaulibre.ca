@@ -147,6 +147,12 @@ LVry8hC3B1p8MleYfvyQ
 -----END PGP SIGNATURE-----
 """]]
 
+Pour installer, copiez-coller l'empreinte ci-haut dans empreinte.asc et rouler:
+
+    cd /etc/tinc/hosts/
+    gpg empreinte.asc > roadkiller
+
+
 References
 ----------
 
