@@ -174,12 +174,15 @@ host in the tinc mesh, including the current host, for example in
 `hosts/roadkiller`:
 
     Address = vpn.orangeseeds.org
-    Subnet = 192.168.101.0/24
 
 This is for my laptop:
 
     Address = angela.anarcat.ath.cx
-    Subnet = 192.168.101.42/32
+
+Note that we should *not* put `Subnet` blocks here since we are in
+switch mode, see
+[this post](http://www.tinc-vpn.org/pipermail/tinc/2012-September/003029.html)
+for the source.
 
 SSL certificates
 ----------------
@@ -201,7 +204,7 @@ mesh. This IP is assigned to the interface, so it needs to be
 different than existing IPs you have configured on your network. This
 is defined in the `tinc-up` startup script:
 
-    ifconfig $INTERFACE 192.168.101.43 255.255.255.0 up
+    ifconfig $INTERFACE 172.16.242.43 255.255.255.255 up
 
 The script needs to be made executable:
 
@@ -209,7 +212,12 @@ The script needs to be made executable:
 
 For my laptop:
 
-    ifconfig $INTERFACE 192.168.101.42 255.255.255.0 up
+    ifconfig $INTERFACE 172.16.242.42 255.255.255.255 up
+
+Note that we allocate IPs in a special netblock (arbitrarily
+reserved). Those IPs won't be pingable, but can be used by babel to
+establish its routes. To have them routable, you can make the netmask
+a `/24`, but then it could interfere with other routes in the network.
 
 Connecting with babel
 ---------------------
@@ -220,12 +228,14 @@ Babel for its routing:
     babeld -D tap1
 
 Since this is now in "switched" mode, babeld will pass announcements
-through that device and add proper routing.
+through that device and add proper routing. Note that you will very
+likely refuse routes from babel that interfere with the uplink, for
+example to connect to roadkiller, you want this in your `babeld.conf`:
 
-Current status
---------------
+    in ip 72.0.72.144/32 deny
+    in ip 172.16.0.0/12 le 12 deny
 
-Even though babel can send routing information through the tunnel,
-actual packets are not going through the interface once babel goes
-up. At least the point to point configuration actually works with tinc
-now.
+Note that we also block the BATMAN `/12` which interferes with our
+regular point to point routing as, if it would be installed on the
+tinc interface, it would actually block traffic as it would start to
+issue arp requests that would eventually fail.
