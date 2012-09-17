@@ -10,7 +10,7 @@ Babel is also used by [commotionwireless](https://commotionwireless.net/).
 [[!toc levels=3]]
 
 Installation
-------------
+============
 
 OpenWRT
 -------
