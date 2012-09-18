@@ -125,25 +125,20 @@ Regardless of the install method or platform, you need a
 `babeld.conf`. This will decide which routes you will announce and
 accept and so on, so it is rather important.
 
-We are working with upstream to have a good default configuration
-provided with the package, see
-[this discussion](http://article.gmane.org/gmane.network.routing.babel.user/1049)
-and the `babeld.conf.sample` file in anarcat's repository:
+Basic open configuration
+------------------------
 
-    git://src.anarcat.ath.cx/babeld
-
-See also [OpenWRT's sample config](https://dev.openwrt.org/browser/packages/net/babel/files/babeld.conf).
-
-Basic configuration
--------------------
-
-For testing (and for open relays), the base configuration is:
+For testing (and for open relays), this is the simplest `babeld.conf` configuration that will allow everything:
 
     redistribute metric 128
 
 This will redistribute all your routes with a non-zero metric so they
-do not override your default configuration. You can also announce
-specific routes
+do not override your default configuration.
+
+It is useful to remember this, as it can also be passed on the
+commandline directly, as such:
+
+    bababeld -d1 -C 'redistribute metric 128' wlan0
 
 Another common configuration is to refuse the default route, which is:
 
@@ -153,18 +148,6 @@ This is especially important on routers that *do* have network access,
 as babel will happily override existing routes in certain
 configurations. See the babeld manpage for more information on those
 rules.
-
-Basic open configuration
-------------------------
-
-This is the simplest `babeld.conf` configuration that will allow everything:
-
-    redistribute allow
-
-It is useful to remember this, as it can also be passed on the
-commandline directly, as such:
-
-    bababeld -d1 -C 'redistribute allow' wlan0
 
 Complex router
 --------------
@@ -192,6 +175,19 @@ redistribute ip ::/4 metric 128
 redistribute local deny
 redistribute deny
 """]]
+
+Other sample configurations
+---------------------------
+
+We are working with upstream to have a good default configuration
+provided with the package, see
+[this discussion](http://article.gmane.org/gmane.network.routing.babel.user/1049)
+and the `babeld.conf.sample` file in anarcat's repository:
+
+    git://src.anarcat.ath.cx/babeld
+
+See also [OpenWRT's sample config](https://dev.openwrt.org/browser/packages/net/babel/files/babeld.conf).
+
 
 Advantages of Babel over BATMAN
 ===============================
