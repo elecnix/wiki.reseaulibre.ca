@@ -6,10 +6,10 @@ access will be completely removed if abused.
 
 [[!ymlfront data="""
 IP: 
-- 172.16.0.1/48
+- 172.16.0.1/32
 - 72.0.72.144/32
 IPv6:
-- fd64:2c08:9fa7::1/48
+- fd64:2c08:9fa7::1/128
 - 2001:1928:1:9::1/64
 """]]
 
