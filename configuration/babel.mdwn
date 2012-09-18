@@ -53,7 +53,7 @@ wireless interface from the batman bridge, and add it to babel:
 /!\ Warning: this may break your existing connexion and require a
 reboot.
 
-Here's a basic UCI config, taken from [[nodes/plastik]].
+The following UCI config can be imported using `uci import` and will record the above configuration:
 
     package babeld
     
@@ -67,7 +67,7 @@ Here's a basic UCI config, taken from [[nodes/plastik]].
 
     config interface 'lan'
 
-Note that we do not configure routing rules through UCI, but instead
+Note that we do not configure routing rules through UCI (hence the `ignore` setting on the `config filter` section), but instead
 rely on the `/etc/babeld.conf` file, see below for config samples.
 
 Debian
