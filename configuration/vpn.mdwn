@@ -1,13 +1,13 @@
 We are using different tools for different purposes. The simplest thing we can provide is to use [OpenVPN](https://openvpn.net) to provide client access to the mesh. The reason we used OpenVPN for this is that howtos are simpler to follow and it's easier to configure.
 
-We are therefore using [tinc](http://www.tinc-vpn.org/) for mesh interconnection, as it is completely decentralised (as opposed to OpenVPN, which uses a client/server architecture). We can't use IPsec as it doesn't pass babel's IPv6 broadcasts properly. We could also have used tinc for simple client access, and instructions on how to do this (and therefore replace the OpenVPN instructions are welcome here).
+We are therefore using [tinc][] for mesh interconnection, as it is completely decentralised (as opposed to OpenVPN, which uses a client/server architecture). We can't use IPsec as it doesn't pass babel's IPv6 broadcasts properly. We could also have used tinc for simple client access, and instructions on how to do this (and therefore replace the OpenVPN instructions are welcome here).
 
 [[!toc levels=2]]
 
 tinc: interconnect disjoint mesh networks
 =========================================
 
-We are using [tinc]() of IPsec or OpenVPN for the mesh, for 2 reasons:
+We are using [tinc][] of IPsec or OpenVPN for the mesh, for 2 reasons:
 
  1. it is deployed for use in the Freifunk mesh
  2. it supports full mesh routing (all nodes have access to all nodes,
