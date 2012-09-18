@@ -27,13 +27,13 @@ Software
 : OpenWRT trunk
 
 Hardware
-: Bullet M2 Ubiquiti avec antenne 15 dBi omnidirectionnelle 
+: Bullet M2 avec antenne 15 dBi omnidirectionnelle 
 
 Power
 : 15dBm/28mW (default)
 
 Location
-:  toit d'un duplex
+:  toit d'un duplex, antenne sur mât de 11pieds
 
 Azimuth
 : 360°
