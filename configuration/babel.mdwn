@@ -1,11 +1,13 @@
 [[!meta title="Babel configuration notes"]]
 
+Before following those steps, we assume that you have [[flashed|flashing]] your device and created a link with another device, for example with the [[ad-hoc]] configuration.
+
+Once you have followed this configuration, make sure you have a persistent [[IP configuration|ip]] by following the [[ip configuration pages|ip]].
+
 (!) We are in the process of testing
 [Babel](http://www.pps.univ-paris-diderot.fr/~jch/software/babel/) to
 replace [[batman]]. A few of us are running both in dual stack, but we
 are likely to switch to babel after this evaluation period.
-
-Babel is also used by [commotionwireless](https://commotionwireless.net/).
 
 [[!toc levels=3]]
 
@@ -150,6 +152,8 @@ Advantages of Babel over BATMAN
  7. Network interfaces can be edited with the web interface luci (mtu field does not accept values > 1500), which means:
  8. People afraid of command line and ssh could now configure their device
  9. most importantly: allows for an heterogeneous network with different protocols, as long as they talk IP and their routes are annonced through babeld
+
+Babel is also used by [commotionwireless](https://commotionwireless.net/).
 
 Troubleshooting
 ===============
