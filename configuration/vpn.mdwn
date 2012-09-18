@@ -16,9 +16,6 @@ We are using [tinc][] of IPsec or OpenVPN for the mesh, for 2 reasons:
 tinc supports bridged mode like OpenVPN does, which allows
 us to send Babel broadcasts across the network.
 
-A disadvantage of tinc is that Windows isn't as well supported,
-[relying on Cygwin/MinGW](http://www.tinc-vpn.org/faq/#index9h3).
-
 [tinc]: http://www.tinc-vpn.org/
 
 Configuring one node
