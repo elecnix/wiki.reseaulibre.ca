@@ -125,6 +125,18 @@ Regardless of the install method or platform, you need a
 `babeld.conf`. This will decide which routes you will announce and
 accept and so on, so it is rather important.
 
+We are working with upstream to have a good default configuration
+provided with the package, see
+[this discussion](http://article.gmane.org/gmane.network.routing.babel.user/1049)
+and the `babeld.conf.sample` file in anarcat's repository:
+
+    git://src.anarcat.ath.cx/babeld
+
+See also [OpenWRT's sample config](https://dev.openwrt.org/browser/packages/net/babel/files/babeld.conf).
+
+Basic configuration
+-------------------
+
 For testing (and for open relays), the base configuration is:
 
     redistribute metric 128
@@ -141,6 +153,45 @@ This is especially important on routers that *do* have network access,
 as babel will happily override existing routes in certain
 configurations. See the babeld manpage for more information on those
 rules.
+
+Basic open configuration
+------------------------
+
+This is the simplest `babeld.conf` configuration that will allow everything:
+
+    redistribute allow
+
+It is useful to remember this, as it can also be passed on the
+commandline directly, as such:
+
+    bababeld -d1 -C 'redistribute allow' wlan0
+
+Complex router
+--------------
+
+Here's my configuration for [[nodes/roadkiller]]:
+
+[[!format txt """
+# mesh IPv6
+redistribute local ip fd64:2c08:9fa7:1::1/128 metric 128
+redistribute local ip fd64:2c08:9fa7::1/128 metric 128
+redistribute ip fd64:2c08:9fa7::/48 metric 128
+# mesh IPv4
+redistribute local ip 172.16.0.1/32 metric 128
+redistribute ip 172.16.0.0/12 ge 13 metric 128
+# public IPv6
+redistribute local ip 2001:1928:1:9::/128 metric 128
+redistribute ip 2001:1928:1:9::/64 metric 128
+# public IPv4
+redistribute local ip 72.0.72.144/32 metric 128
+# default route
+redistribute ip 0.0.0.0/0 le 0 metric 128
+# IPv6 default route
+redistribute ip ::/4 metric 128
+# refuse anything else not explicitely allowed
+redistribute local deny
+redistribute deny
+"""]]
 
 Advantages of Babel over BATMAN
 ===============================
@@ -191,57 +242,6 @@ Tcpdump groks Babel starting with version 4.2.1. Wireshark has support since ver
 Also, during your tests, give some time for Babel to
 synchronise. Things can take a few seconds (count to 10) to
 synchronise.
-
-Config samples
-==============
-
-We are working with upstream to have a good default configuration
-provided with the package, see
-[this discussion](http://article.gmane.org/gmane.network.routing.babel.user/1049)
-and the `babeld.conf.sample` file in anarcat's repository:
-
-    git://src.anarcat.ath.cx/babeld
-
-See also [OpenWRT's sample config](https://dev.openwrt.org/browser/packages/net/babel/files/babeld.conf).
-
-Basic open configuration
-------------------------
-
-This is the simplest `babeld.conf` configuration that will allow everything:
-
-    redistribute allow
-
-It is useful to remember this, as it can also be passed on the
-commandline directly, as such:
-
-    bababeld -d1 -C 'redistribute allow' wlan0
-
-Complex router
---------------
-
-Here's my configuration for [[nodes/roadkiller]]:
-
-[[!format txt """
-# mesh IPv6
-redistribute local ip fd64:2c08:9fa7:1::1/128 metric 128
-redistribute local ip fd64:2c08:9fa7::1/128 metric 128
-redistribute ip fd64:2c08:9fa7::/48 metric 128
-# mesh IPv4
-redistribute local ip 172.16.0.1/32 metric 128
-redistribute ip 172.16.0.0/12 ge 13 metric 128
-# public IPv6
-redistribute local ip 2001:1928:1:9::/128 metric 128
-redistribute ip 2001:1928:1:9::/64 metric 128
-# public IPv4
-redistribute local ip 72.0.72.144/32 metric 128
-# default route
-redistribute ip 0.0.0.0/0 le 0 metric 128
-# IPv6 default route
-redistribute ip ::/4 metric 128
-# refuse anything else not explicitely allowed
-redistribute local deny
-redistribute deny
-"""]]
 
 References
 ==========
