@@ -21,6 +21,8 @@ Install babel:
 
     opkg install babeld
 
+/!\ Warning: You need IPV6 modules installed (but not necessarily functionnal) in order to have babel working.
+
 Configure the wireless interface with a test IP (follow the [[ip configuration|ip]] to make those settings peristent, but make sure to use `255.255.255.255` as a netmask):
 
     ifconfig wlan0 up 172.16.0.43/32
