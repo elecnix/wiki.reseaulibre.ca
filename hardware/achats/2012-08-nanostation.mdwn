@@ -6,7 +6,7 @@
 [Bullet M2HP]: http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP
 [antenne omni 15 dbi]: http://www.converbit.ca/magasin/products.php?product=Antenne-omni-directionnel-2.4-GHZ-15DBI
 [antenne sectorielle 120°]: https://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9
-[inject POE 15V]: http://www.converbit.ca/magasin/products.php?product=-POE-15V
+[injecteur POE 15V]: http://www.converbit.ca/magasin/products.php?product=-POE-15V
 
 R: intéressé par un kit bullet / 15 dBi / ...
 
