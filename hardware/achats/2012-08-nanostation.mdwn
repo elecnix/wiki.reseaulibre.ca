@@ -1,8 +1,7 @@
-* NanoStation M2 (anarcat: 4, alx1: 1)
-* Mount pour NanoStation (anarcat: 4, alx1: 1)
+* NanoStation M2 (alx1: 1)
+* Mount pour NanoStation (alx1: 1)
 * Bullet M2HP + antenne 15 dbi + injecteur POE (doundounba: 1, beastly: 2, goof: 1, DanM: 1)
-
-anarcat: à confirmer, dépend de Koumbit et autres.
+* Bullet M2HP + injecteur POE + [[antenne sectorielle|https://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9]] 120° (anarcat: 2)
 
 R: intéressé par un kit bullet / 15 dBi / ...
 
@@ -10,9 +9,8 @@ Date limite: ??
 
 | Item                                      | Qtee | Prix unit | Total | En stock |
 ------------------------------------------- | :--: | --------: | ----: | -------: |
-[[NanoStation M2|http://www.converbit.ca/magasin/products.php?product=NanoStation-M2]] 				    | 3	| $89.00 | $267.00 | 0 |
-[[NanoBracket|http://www.converbit.ca/magasin/products.php?product=NanoBracket]]  | 5	| $9.00  | $45.00 |
-
+[[NanoStation M2|http://www.converbit.ca/magasin/products.php?product=NanoStation-M2]] 				    | 1	| $89.00 | $89 | 0 |
+[[NanoBracket|http://www.converbit.ca/magasin/products.php?product=NanoBracket]]  | 1	| $9.00  | $9.00 |
 TPS                                         |               $||||
 TVQ                                         |               $||||
 Grand Total                                 |              $||||
