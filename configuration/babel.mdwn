@@ -53,14 +53,6 @@ wireless interface from the batman bridge, and add it to babel:
 /!\ Warning: this may break your existing connexion and require a
 reboot.
 
-If you want to operate on both batman and babel, you simply need to
-add batman to the list of interfaces babel works on:
-
-    babeld -D wlan0 bat0
-
-Note that in our current [[batman]] configuration, the above is not
-necessary as the `br-lan` interface includes `bat0`.
-
 Here's a basic UCI config, taken from [[nodes/plastik]].
 
     package babeld
