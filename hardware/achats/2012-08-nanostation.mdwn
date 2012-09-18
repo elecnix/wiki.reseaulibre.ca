@@ -10,14 +10,14 @@ Date limite: ??
 
 | Item                                      | Qtee | Prix unit | Total | En stock |
 ------------------------------------------- | :--: | --------: | ----: | -------: |
-[NanoStation M2][] 			    | 1    | $89.00 | $89 | 100 |
-[NanoBracket][]                             | 1    | $9.00  | $9.00 | 6 |
-[Bullet M2HP][]                             | 7    | $75    | 375$ | 8 |
-[injecteur POE 15V][]                       | 7    | 12$    | 84$  | 0? |
-[antenne omni 15 dbi][]                     | 5    | 45$    | 225$ | 8 |
-[antenne sectorielle 120°][]                | 2    | $62    | 124$ | ? |
-Total                                       |      |  | 906$ | |
-Total +tx                                   |      | |   1041.67$| |
+[NanoStation M2][] 			    | 1    | 89$       |  89$  | 100 |
+[NanoBracket][]                             | 1    | 9$        |   9$  | 6 |
+[Bullet M2HP][]                             | 7    | 75$       | 375$  | 8 |
+[injecteur POE 15V][]                       | 7    | 12$       |  84$  | 0? |
+[antenne omni 15 dbi][]                     | 5    | 45$       | 225$  | 8 |
+[antenne sectorielle 120°][]                | 2    | 62$       | 124$  | ? |
+Total                                       |      |           | 906$  | |
+Total +tx                                   |      |           |1041.67$| |
 
 [NanoStation M2]: http://www.converbit.ca/magasin/products.php?product=NanoStation-M2
 [NanoBracket]: http://www.converbit.ca/magasin/products.php?product=NanoBracket
