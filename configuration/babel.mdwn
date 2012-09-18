@@ -17,14 +17,24 @@ Installation
 OpenWRT
 -------
 
+Install babel:
+
     opkg install babeld
+
+Configure the wireless interface with a test IP (follow the [[ip configuration|ip]] to make those settings peristent, but make sure to use `255.255.255.255` as a netmask):
+
     ifconfig wlan0 up 172.16.0.43/32
-    babeld -D wlan0
 
-To make sure that babel starts on boot:
+To start babel on the console for testing:
 
-    uci delete babeld.wlan.ignore
+    babeld -d1 wlan0
+
+Note how you specify the interface names directly on the commandline. The output should already show you neighbors, if there are any.
+
+To make sure that babel starts on boot on the wireless interface:
+
     /etc/init.d/babeld enable
+    uci delete babeld.wlan.ignore
 
 (!) Do not forget to save your changes!
 
