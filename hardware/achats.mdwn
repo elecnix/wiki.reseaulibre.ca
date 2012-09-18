@@ -7,4 +7,4 @@ Terminés
 
 Marquer l'achat comme [[done]] lorsque terminé.
 
-[[!inline pages="hardware/achats/* and !hardware/achats/*/* and !hardware/achats/discussion and link(done)" feeds=no]]
+[[!inline pages="hardware/achats/* and !hardware/achats/*/* and !hardware/achats/discussion and link(done)" feeds=no archive=yes]]
