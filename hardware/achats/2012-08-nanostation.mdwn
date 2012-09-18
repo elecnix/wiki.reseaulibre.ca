@@ -3,10 +3,6 @@
 * [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 15V][] (doundounba: 1, beastly: 2, goof: 1, DanM: 1)
 * [Bullet M2HP][] + [antenne sectorielle 120°][] + [injecteur POE 15V][] (anarcat: 2)
 
-[Bullet M2HP]: http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP
-[antenne omni 15 dbi]: http://www.converbit.ca/magasin/products.php?product=Antenne-omni-directionnel-2.4-GHZ-15DBI
-[antenne sectorielle 120°]: https://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9
-[injecteur POE 15V]: http://www.converbit.ca/magasin/products.php?product=-POE-15V
 
 R: intéressé par un kit bullet / 15 dBi / ...
 
@@ -14,8 +10,18 @@ Date limite: ??
 
 | Item                                      | Qtee | Prix unit | Total | En stock |
 ------------------------------------------- | :--: | --------: | ----: | -------: |
-[[NanoStation M2|http://www.converbit.ca/magasin/products.php?product=NanoStation-M2]] 				    | 1	| $89.00 | $89 | 0 |
-[[NanoBracket|http://www.converbit.ca/magasin/products.php?product=NanoBracket]]  | 1	| $9.00  | $9.00 |
-TPS                                         |               $||||
-TVQ                                         |               $||||
-Grand Total                                 |              $||||
+[NanoStation M2][] 			    | 1    | $89.00 | $89 | 100 |
+[NanoBracket][]                             | 1    | $9.00  | $9.00 | 6 |
+[Bullet M2HP][]                             | 7    | $75    | 375$ | 8 |
+[injecteur POE 15V][]                       | 7    | 12$    | 84$  | 0? |
+[antenne omni 15 dbi][]                     | 5    | 45$    | 225$ | 8 |
+[antenne sectorielle 120°][]                | 2    | $62    | 124$ | ? |
+Total                                       |      |  | 906$ | |
+Total +tx                                   |      | |   1041.67$| |
+
+[NanoStation M2]: http://www.converbit.ca/magasin/products.php?product=NanoStation-M2
+[NanoBracket]: http://www.converbit.ca/magasin/products.php?product=NanoBracket
+[Bullet M2HP]: http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP
+[antenne omni 15 dbi]: http://www.converbit.ca/magasin/products.php?product=Antenne-omni-directionnel-2.4-GHZ-15DBI
+[antenne sectorielle 120°]: https://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9
+[injecteur POE 15V]: http://www.converbit.ca/magasin/products.php?product=-POE-15V
