@@ -80,7 +80,7 @@ Debian
 2. setup [[ad-hoc]] and babeld
 
         ifconfig wlan0 down
-        iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 9
+        iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 1
         ifconfig wlan0 up 172.16.0.43/32
         babeld -D wlan0
 
