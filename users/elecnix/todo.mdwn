@@ -1,0 +1,9 @@
+* Brancher topo
+* Installer val
+* Brancher bb
+* Remplacer câble ethernet grace
+* Flasher lacou en Babel
+* Flasher jojo en Babel
+* Installer capitaine
+* Installer omni 15 dbi @ besik (Bullet?)
+* Installer omni cabanon @ elecnix (Bococom)
