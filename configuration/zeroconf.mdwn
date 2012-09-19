@@ -35,3 +35,24 @@ To automatically configure an IP on your interface:
 
 Above, the Avahi process tried a random IP adress, and tested if it
 was allocated before assigning it to the interface.
+
+Avahi DNS
+---------
+
+Magic DNS! Only works on the "local" network: works over the VPN, but
+not non-local Babel links.
+
+    # apt-get install avahi-utils
+    # avahi-resolve-address fe80::7cd1:dbff:fea3:8fa6
+    fe80::7cd1:dbff:fea3:8fa6       phil-ThinkPad-T500-3.local
+
+This can also be added to your `nsswitch.conf` so that regular DNS
+lookup routines will use Avahi for lookups:
+
+    hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4
+
+References
+==========
+
+See the excellent [Arch
+Linux](https://wiki.archlinux.org/index.php/Avahi) documentation.
