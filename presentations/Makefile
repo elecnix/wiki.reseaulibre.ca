@@ -1,7 +1,7 @@
-rst: sfd2012.html
+rst: general.html
 
-sfd2012.html: sfd2012.rst
-	rst2s5 --theme small-white $^ $@
+general.html: general.rst
+	rst2s5 --theme small-black $^ $@
 
 %.html: %.rst
 	rst2s5 --theme default $^ $@
