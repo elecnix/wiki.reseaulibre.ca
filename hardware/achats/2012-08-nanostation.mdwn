@@ -1,6 +1,6 @@
 * [NanoStation M2][]; alx1: 1
 * Mount pour NanoStation ([NanoBracket][]); alx1: 1
-* [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 15V][]; doundounba: 1, beastly: 2, goof: 1 (confirmé), DanM: 1, gboudrias: 1 (confirmé), |R: 1 (Je m'auto confirme?)
+* [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 15V][]; doundounba: 1 (confirmé), beastly: 2, goof: 1 (confirmé), DanM: 1 (confirmé), gboudrias: 1 (confirmé), |R: 1 (auto-confirmé)
 * [Bullet M2HP][] + [antenne sectorielle 120°][] + [injecteur POE 15V][]; anarcat: 2 (confirmé)
 
 
