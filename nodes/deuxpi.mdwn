@@ -7,11 +7,20 @@ IPv6:
 - fd64:2c08:9fa7:8::1
 """]]
 
-Pour obtenir la liste des noeuds connectés et leurs niveaux de signal respectifs, j'utilise le script [[bat-signal|https://gitorious.org/deuxpi-docs/deuxpi-docs/blobs/raw/master/bat-signal]]. Si le fichier [[configuration/batman/bat-hosts]] est disponible, le nom des noeuds sera affiché en plus de leur adresse MAC.
+(!) Batman n'est pas installé sur ce noeud. Seulement Babel est utilisé pour l'instant. Les adresses IP locales ainsi que les routes externes sont distribuées. Avec un peu de chance, pour l'instant, les noeuds qui s'y connectent auront un accès au VPN et à une route IPv4 par défaut vers l'Internet.
 
-(!) Batman n'est pas installé sur ce noeud. Seulement Babel est utilisé pour l'instant. Les adresses IP locales ainsi que les routes externes sont distribuées.
+# À faire
 
-Détails:
+ * Faire passer un câble Ethernet entre la Bullet sur le toit et la salle des machines.
+ * Monter la Bullet haut haut haut!
+ * Installer le nouveau serveur/routeur dans la salle des machines.
+   * Il faut réorganiser les alimentations électrique (présentement toutes occupées par le monitoring).
+   * Il faut s'assurer qu'il y a moyen de raccorder autant le nouveau câble que le filage qui monte vers les appartements. Ces derniers ont été pensés pour être plus près des entrées de Bell et Vidéotron que des entrées électriques.
+ * Tester Babel sur [Quagga](http://www.nongnu.org/quagga/) au lieu de babeld.
+ * Tester une configuration Batman/switch et Babel/routeur pour des grands sites qui pourraient profiter d'une topologie différente.
+ * Installer le point d'accès TP-Link déjà configuré.
+
+# Détails
 
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
@@ -52,6 +61,12 @@ babeld.@filter[3]=filter
 babeld.@filter[3].type=redistribute
 babeld.@filter[3].action=deny
 """]]
+
+## Extras
+
+Pour obtenir la liste des noeuds connectés et leurs niveaux de signal respectifs, j'utilise le script [[bat-signal|https://gitorious.org/deuxpi-docs/deuxpi-docs/blobs/raw/master/bat-signal]]. Si le fichier [[configuration/batman/bat-hosts]] est disponible, le nom des noeuds sera affiché en plus de leur adresse MAC.
+
+En cours de développement, une [interface curses](https://gitorious.org/babelcurse) pour suivre Babel.
 
 [[!meta copyright="Copyright © 2012 Philippe Gauthier"]]
 
