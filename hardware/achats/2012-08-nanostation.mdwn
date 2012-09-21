@@ -13,7 +13,7 @@ Date limite: 24 septembre 2012
 [Bullet M2HP][]                             | 9    | 75$       | 675$  | -8- |
 [injecteur POE 15V][]                       | 7    | 12$       |  84$  | 0? |
 [injecteur POE 24V][]                       | 2    |  9$       |  18   | ? |
-[antenne omni 15 dbi][]                     | 7    | 45$       | 315$  | 8 |
+[antenne omni 15 dbi][]                     | 7?   | 45$       | 315$  | 8 |
 [antenne sectorielle 120°][]                | 2    | 62$       | 124$  | ? |
 Total                                       |      |           |1296$ | |
 Total +tx                                   |      |           |  ??$| |
@@ -24,3 +24,4 @@ Total +tx                                   |      |           |  ??$| |
 [antenne omni 15 dbi]: http://www.converbit.ca/magasin/products.php?product=Antenne-omni-directionnel-2.4-GHZ-15DBI
 [antenne sectorielle 120°]: https://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9
 [injecteur POE 15V]: http://www.converbit.ca/magasin/products.php?product=-POE-15V
+[injecteur POE 24V]: http://www.converbit.ca/magasin/products.php?product=POE-24v
