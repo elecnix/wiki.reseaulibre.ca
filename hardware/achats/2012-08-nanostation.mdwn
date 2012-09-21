@@ -1,7 +1,7 @@
 * [NanoStation M2][]; alx1: 1
 * Mount pour NanoStation ([NanoBracket][]); alx1: 1
 * [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 15V][]; doundounba: 1 (confirmé), beastly: 2, goof: 1 (confirmé), DanM: 1 (confirmé), gboudrias: 1 (confirmé), |R: 1 (auto-confirmé), Marc-André/imusée: 2 avec POE 24v (confirmé)
-* [Bullet M2HP][] + [antenne sectorielle 120°][] + [injecteur POE 15V][]; anarcat: 2 (confirmé)
+* [Bullet M2HP][] + [injecteur POE 24V][]; anarcat: 2 (confirmé)
 
 
 Date limite: 24 septembre 2012
@@ -13,9 +13,8 @@ Date limite: 24 septembre 2012
 [Bullet M2HP][]                             | 9    | 75$       | 675$  | -8- |
 [injecteur POE 15V][]                       | 7    | 12$       |  84$  | 0? |
 [injecteur POE 24V][]                       | 2    |  9$       |  18   | ? |
-[antenne omni 15 dbi][]                     | 7?   | 45$       | 315$  | 8 |
-[antenne sectorielle 120°][]                | 2    | 62$       | 124$  | ? |
-Total                                       |      |           |1296$ | |
+[antenne omni 15 dbi][]                     | 7    | 45$       | 315$  | 8 |
+Total                                       |      |           |?$ | |
 Total +tx                                   |      |           |  ??$| |
 
 [NanoStation M2]: http://www.converbit.ca/magasin/products.php?product=NanoStation-M2
