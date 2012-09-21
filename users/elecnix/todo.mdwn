@@ -9,4 +9,5 @@
 * Installer omni cabanon @ elecnix (Bococom)
 
 Long-terme:
+
 * Installer un serveur http://sparkleshare.org/
