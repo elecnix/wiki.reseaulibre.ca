@@ -6,8 +6,7 @@
 # Technical details
 
 [[!ymlfront data="""
-MAC: dc:9f:db:01:13:32
-MAC: DC:9F:DB:00:13:5B
+MAC: [dc:9f:db:01:13:32, DC:9F:DB:00:13:5B]
 IP: 172.16.0.23
 IPv6: 
 """]]
