@@ -92,3 +92,7 @@ IPv6: ..
     uci set radvd.@dnssl[0]=dnssl
     uci set radvd.@dnssl[0].interface=wifi
     uci set radvd.@dnssl[0].suffix=net4.bidon.ca
+
+# Notes
+
+* Comment crimper avec les connecteurs "Tough cable": http://www.ubnt.com/downloads/datasheets/toughcable/TOUGHCable_Datasheet.pdf
