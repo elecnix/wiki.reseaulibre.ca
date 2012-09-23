@@ -42,6 +42,9 @@ Operator
 Links
 : 
 
+[[!img 2012-09-22_capitaine.jpg size=950x]]
+
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
