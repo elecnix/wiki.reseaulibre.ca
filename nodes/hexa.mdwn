@@ -20,3 +20,8 @@ IPv6: fd64:2c08:9fa7:51::1/64
  * Azimuth:
  * Panorama:
  * Operator: [[users/hexa]]
+
+# Photo
+
+
+[[!img img/setupprofile.jpg]]
