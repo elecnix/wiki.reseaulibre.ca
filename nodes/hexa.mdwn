@@ -23,5 +23,4 @@ IPv6: fd64:2c08:9fa7:51::1/64
 
 # Photo
 
-
-[[!img img/setupprofile.jpg]]
+[[!img setuprofile.jpg align="left" size="600x798" alt=""]]
