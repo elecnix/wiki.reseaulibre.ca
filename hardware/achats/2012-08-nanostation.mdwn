@@ -1,7 +1,7 @@
 * [NanoStation M2][]; alx1: 1 (confirmé)
 * Mount pour NanoStation ([NanoBracket][]); alx1: 1 (confirmé)
 * [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 15V][]; beastly: 2, DanM: 1 (confirmé), gboudrias: 1 (confirmé), |R: 1 (auto-confirmé)
-* [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V][]; doundounba: 1 (confirmé), Marc-André/imusée: 2 (confirmé), goof: 1 (confirmé)
+* [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V][]; doundounba: 1 (confirmé), Marc-André/imusée(gapzap): 2 (confirmé), goof: 1 (confirmé)
 * [Bullet M2HP][] + [injecteur POE 24V][]; anarcat: 2 (confirmé)
 
 
