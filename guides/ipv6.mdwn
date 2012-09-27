@@ -63,6 +63,16 @@ Ou les transfers scp:
 
 Dans les exemples ci-dessus on a spécifié l'interface réseau (wlan0). Les adresses sont locales (non-routables), donc le système d'exploitation ne saura pas nécessairement par quelle interface envoyer les données. Cependant, si on vient de faire un ping multicast et que l'adresse est encore dans la cache du système, on n'a pas besoin de spécifier l'interface.
 
+# Obtenir un bloc d'adresses IP
+
+Si votre fournisseur Internet en amont le supporte (ex: Teksavvy), c'est possible d'avoir une connexion IPv6 native (dual-stack avec ipv4). Par exemple, Teksavvy offre un block "/56", ce qui permet d'avoir 256 sous-réseaux de beaucoup de machines (256 * /32). On peut donc prendre un de ces sous-réseaux et l'annoncer par babel sur le mesh.
+
+Sinon, contactez quand même votre fournisseur pour leur dire que IPv6 est important pour vous. C'est un enjeu politique!
+
+En attendant, c'est possible d'avoir un tunnel par "Tunnel Broker" (un service gratuit de Hurricane Electric, he.net). [[http://tunnelbroker.net/]] Par défaut, Tunnel Broker assigne un /32 (pour un seul sous-réseau), mais on peut demander un /48 en un click. Voir les références ci-dessous pour plus d'information.
+
+*Pourquoi avoir un block d'IP routable de l'Internet?*  Ça permet d'avoir un seul ensemble d'adresses IPs qui sont annoncées autant sur Internet que sur le Mesh. Ça évite d'avoir à assigner une adresse de plus à toutes les machines qui sont sur le réseau, ou d'avoir à gérer des schémas d'assignations statiques d'adresses privées (ex: 172.16.x.x, 192.168.x.x ou fd64::/8).
+
 # Références
 
 * [[http://tunnelbroker.net/]] - excellent service de tunnels IPv6 gratuits par Hurricane Electric (HE). Ils ont aussi des petits jeux de "certification" pour expérimenter avec IPv6.
