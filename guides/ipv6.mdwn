@@ -71,7 +71,11 @@ Sinon, contactez quand même votre fournisseur pour leur dire que IPv6 est impor
 
 En attendant, c'est possible d'avoir un tunnel par "Tunnel Broker" (un service gratuit de Hurricane Electric, he.net). [[http://tunnelbroker.net/]] Par défaut, Tunnel Broker assigne un /32 (pour un seul sous-réseau), mais on peut demander un /48 en un click. Voir les références ci-dessous pour plus d'information.
 
-*Pourquoi avoir un block d'IP routable de l'Internet?*  Ça permet d'avoir un seul ensemble d'adresses IPs qui sont annoncées autant sur Internet que sur le Mesh. Ça évite d'avoir à assigner une adresse de plus à toutes les machines qui sont sur le réseau, ou d'avoir à gérer des schémas d'assignations statiques d'adresses privées (ex: 172.16.x.x, 192.168.x.x ou fd64::/8).
+**Pourquoi avoir un block d'IP routable sur Internet?**
+
+* Permet d'avoir un seul ensemble d'adresses IPs qui sont annoncées autant sur Internet que sur le Mesh.
+* Évite d'avoir à assigner une adresse de plus à toutes les machines qui sont sur le réseau, ou d'avoir à gérer des schémas d'assignations statiques d'adresses privées (ex: 172.16.x.x, 192.168.x.x ou fd64::/8).
+* Permet d'utiliser des DNS publics pour la résolution de noms de domaines. Ex: www.bidon.ca est accessible avec la même adresse IPv6 par Internet ainsi que par le mesh.
 
 # Références
 
