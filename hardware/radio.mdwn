@@ -568,4 +568,6 @@ The defacto reference in ham and wireless networking
 Other references
 ================
 
-A good reference on radio is also the [[Battlemesh Meshguide|http://battlemesh.org/BattleMeshV4/MeshGuide]]
+* A good reference on radio is also the [[Battlemesh Meshguide|http://battlemesh.org/BattleMeshV4/MeshGuide]]
+
+* CRTC politique d'utilisation du spectre pour les services exploités dans la gamme de fréquences 2285-2483,5 MHz: http://www.ic.gc.ca/eic/site/smt-gst.nsf/fra/sf09092.html
