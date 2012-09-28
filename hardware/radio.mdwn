@@ -64,6 +64,26 @@ Maximum transmitter power versus largest antenna table for PTMP (Point To MultiP
       14dBm 25mW              21dBi                  3.98
       10dBm 10mW              24dBi                  3.98
 
+
+De http://www.ic.gc.ca/eic/site/smt-gst.nsf/fra/sf09092.html :
+«Dans une décision rendue en avril 1997, la FCC a modifié ses règles (Part 15 rules) pour éliminer la limite applicable au gain de l'antenne directive des émetteurs à étalement du spectre exempts de licence fonctionnant dans la bande 2400–2483,5 MHz. Ces règles modifiées exigent également que, quand le gain de l'antenne directive dépasse 6 dBi, la puissance de sortie d'un émetteur à étalement du spectre soit réduite de 1 dB pour chaque tranche de 3 dB au-dessus de ce seuil. Ces modifications permettent la mise en place de liaisons radio ayant une portée de 10 km ou plus, tout en éliminant les délais et les coûts associés à la coordination et à la délivrance d'une licence.
+
+C'est pourquoi des dispositions sont prévues dans la présente politique, aux sections 3.6.1 et 3.6.2, pour faciliter l'exploitation de dispositifs et de systèmes radio exempts de licence dans la bande 2400–2483,5 MHz à des niveaux de puissance compatibles avec celles adoptées par la FCC.»
+
+et donc, de http://madwifi-project.org/wiki/UserDocs/CountryCode :
+
+     Power at antenna (dBm/watts) Max Antenna Gain (dBi)	EIRP (dBm)	EIRP (watts)
+     30 dBm             (1 W)	            6	         	      36	      4
+     29	                                    9	         	      38	      6.3
+     28	                                   12	        	      40	     10
+     27 dBm            (500 mW)	           15	         	      42	     16
+     26	                                   18	         	      44	     25
+     25	                                   21	         	      46	     39.8
+     24 dBm            (250 mW)	           24	         	      48	     63
+     23	                                   27	         	      50	    100
+     22	                                   30	         	      52	    158
+
+
 dBm to Watt Conversion Table
 ----------------------------
 
