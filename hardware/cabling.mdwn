@@ -69,6 +69,8 @@ Les routeurs de Ubiquiti fournissent un injecteur de même marque, mais si vous 
 
 Il est aussi possible d'en acheter pour 10$ (plus livraison) de Solimedia: [[Passive PoE™ Set 5,5x2,5|http://solimedia.ca/wireless-accessories/44-poe-injector-splitter-set.html]].
 
+[[!img ubiquiti-tough-rj45.jpg align="right" size="200x"]]
+
 # Cable connectors
 
 We need special metal connectors. They are more solid (while harder to crimp) and allow for grounding the devices, as you solder the cable's ground to the connector.
@@ -78,11 +80,9 @@ Packs of 100:
  * [Infinite cables](http://www.infinitecables.com/pop/pr_cn-rj45s.htm): 29.50$ (toronto)
  * [Converbit](http://www.converbit.ca/magasin/products.php?product=Connecteur-Tough-Cable-100-pieces): 48$
 
-[[!img ubiquiti-tough-rj45.jpg align="right" size="300x"]]
+[[!img ST250K_lg.jpg align="right" ]]
 
 ## Soldering
-
-[[!img ST250K_lg.jpg align="right" ]]
 
 You need to solder the cable connector on the roof. If you have a balconee, give you some extra length to perform this near an electrical outlet, to power the soldering iron. Otherwise, you can buy a cheap Butane Torch Kit ([[25$ @ Home Depot|http://www.homedepot.ca/product/st250k-butane-micro-torch-kit/984064]]) with a refill bottle ([[6$|http://www.homedepot.ca/product/bf55-55-oz-butane-refill/981002]]).
 
