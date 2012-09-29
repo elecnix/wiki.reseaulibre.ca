@@ -12,3 +12,4 @@
 Long-terme:
 
 * Installer un serveur http://sparkleshare.org/
+* AeroFS?
