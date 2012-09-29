@@ -7,7 +7,7 @@ ceci est un test du bot avec du utf8
 
 # test CIA/KGB
 
-Faut voir si ça se rend jusqu'à IRC
+Faut voir si ça se rend jusqu'à IRC, deuxième essai
 
 # report plugin test
 
