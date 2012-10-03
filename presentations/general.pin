@@ -1,0 +1,118 @@
+#!/usr/bin/env pinpoint
+
+[map_sample.png]
+
+-- 
+
+Réseau Libre
+
+Un Mesh à Montréal
+
+--
+
+# Réseau Libre est un réseau IP dans la longue tradition des réseaux
+# mesh qui existent ailleurs dans le monde, donc:
+
+Un mesh c'est quoi?
+
+✔ indépendant
+✔ local
+✔ décentralisé
+✔ non-commercial
+
+-- [../img/557254_529308290429346_1820250233_n.jpg]
+
+Pourquoi?
+
+✔ anti-corporation
+✔ freedom box
+✔ urgences
+✔ parce qu'on peut
+
+# contrer le contrôle accru des réseaux par les grandes corporations
+# rapatriement des services à la localité -> Freedom Box
+# services d'urgence
+# parce que ce qu'on peut
+# pas nécessairement d'accès internet
+
+-- 
+
+#Qui et où?
+✔ ~20 bénévoles
+✔ ~70 (mailing list)
+✔ Montréal et environs
+✔ mesh à Verdun et Rosemont + VPN
+✔ ~30 nodes
+✔ moins d'un an
+
+--
+
+-- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
+
+✔ ad-hoc 802.11n
+✔ Babel (from BATMAN)
+✔ Ubiquity, TP-Link
+✔ antennes sur les toits
+
+-- [../img/bgm-latakia-small.jpg]
+
+✔ relais et acces
+✔ relais: ad-hoc, babel
+✔ accès: "managed"
+✔ allocation IP: first come first serve
+✔ wiki
+✔ IPv6
+✔ "doodle", wikipedia, OSM, torrents, etc
+
+# montrer la map
+# wiki décentralisé, redondant, git
+# intégré avec la map
+
+--
+
+Politiques
+
+✔ consensus des opérateurs
+✔ propositions par courriel
+✔ logiciel libre
+
+--
+
+Picopeer agreement
+
+• Free Transit
+• Open Communication
+• No Warranty
+• Terms of Use
+
+-- [fnf.png] [font=Monospace 100px]
+
+5 libertés
+
+✽ Participer
+✽ Choisir où
+✽ Choisir avec qui
+✽ Sans interférence
+✽ Identity / anonymity
+
+# Liberté 0) La liberté de **participer** au réseau.
+# Liberté 1) La liberté de déterminer **l'endroit** où vos données sont stockées.
+# Liberté 2) La liberté de déterminer **avec qui** ces données sont partagés.
+# Liberté 3) La liberté de transmettre des données à ses pairs, **sans interférence**, interception ou censure.
+# Liberté 4) La liberté de **garder l'anonymat**, ou de présenter une **identité** unique digne de confiance.
+
+#Joignez-vous à nous!
+#--------------------
+#
+# * accès au toit? une belle vue? on a besoin de vous!
+# * documentation
+# * design - logo?
+# * vidéo / photos
+# * http://wiki.reseaulibre.ca/participer
+
+-- [bottom] [grace-win.jpg]
+
+Questions / discussion
+
+# Slides produites avec `Docutils S5 <http://docutils.sourceforge.net/docs/user/slide-shows.html>`_.
+
