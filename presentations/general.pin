@@ -2,18 +2,16 @@
 
 [map_sample.png]
 
--- [top]
+-- [bottom]
 
-Réseau Libre
+Réseau Libre - un Mesh à Montréal
 
-Un Mesh à Montréal
-
--- [../img/557254_529308290429346_1820250233_n.jpg] [bottom-left]
+-- [../img/557254_529308290429346_1820250233_n.jpg] [top-right]
 
 # Réseau Libre est un réseau IP dans la longue tradition des réseaux
 # mesh qui existent ailleurs dans le monde, donc:
 
-Un mesh c'est quoi?
+Un mesh?
 
 ✔ indépendant
 ✔ local
@@ -54,17 +52,18 @@ Pourquoi?
 ✔ Ubiquity, TP-Link
 ✔ antennes sur les toits
 
--- [../img/bgm-latakia-small.jpg]
+-- [../img/bgm-latakia-small.jpg] [bottom-left]
 
 ✔ relais et acces
-✔ relais: ad-hoc, babel
-✔ accès: "managed"
-✔ allocation IP: first come first serve
+✔ ad-hoc, babel
+✔ "managed"
+✔ allocation IP manuelle
 ✔ wiki
 ✔ IPv6
+# slide separee?
 ✔ "doodle", wikipedia, OSM, torrents, etc
 
-# montrer la map
+# allocation ip first come first serve
 # wiki décentralisé, redondant, git
 # intégré avec la map
 
