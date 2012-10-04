@@ -42,6 +42,9 @@ Why?
 
 Who & where?
 
+# who and where
+# just skip this slide
+
 -- [map_sample.png] [bottom]
 
 ✔ ~30 nodes
@@ -83,6 +86,7 @@ Who & where?
 # deux niveaux: accès et relais
 # relai: babel + adhoc
 # accès: mode managed + DHCP et NAT ou IPv6
+# IPv6
 # allocation ip: first come first serve
 # wiki décentralisé, redondant, git
 # intégration ikiwiki + OpenStreetMap
