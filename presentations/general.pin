@@ -8,8 +8,10 @@ Réseau Libre - un Mesh à Montréal
 
 -- [../img/557254_529308290429346_1820250233_n.jpg] [top-right]
 
-# Réseau Libre est un réseau IP dans la longue tradition des réseaux
-# mesh qui existent ailleurs dans le monde, donc:
+# un mesh c'est quoi?
+# réseau IP (Internet Protocol)
+# longue tradition des réseaux mesh qui existent ailleurs
+# donc:
 
 Un mesh?
 
@@ -27,23 +29,32 @@ Pourquoi?
 ✔ urgences
 ✔ parce qu'on peut
 
-# contrer le contrôle accru des réseaux par les grandes corporations
-# rapatriement des services à la localité -> Freedom Box
-# services d'urgence
-# parce que ce qu'on peut
-# pas nécessairement d'accès internet
+# ≠ contrôle accru des grandes corporations
+# changer le modèle hiéarchique / broadcasting / "télévision" du réseau
+# freedombox: ramener les services à la localité
+# pas nécessairement d'accès "internet"
 
 -- 
 
-#Qui et où?
-✔ ~20 bénévoles
-✔ ~70 (mailing list)
-✔ Montréal et environs
+Qui et où?
+
 ✔ mesh à Verdun et Rosemont + VPN
 ✔ ~30 nodes
+✔ ~20-50 bénévoles
+✔ Montréal et environs
 ✔ moins d'un an
 
+# Plusieurs bénévoles ont monté ~30 nodes
+# à deux endroits à montréal (rsmnt et verdun)
+# connectés par un VPN
+# ~70 (mailing list)
+# date de naissance:
+# wiki: 10 octobre 2011
+# premier meeting: février 2012
+
 --
+
+# montrer la carte ici, dans un browser si possible
 
 -- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
 
@@ -52,20 +63,26 @@ Pourquoi?
 ✔ Ubiquity, TP-Link
 ✔ antennes sur les toits
 
+# tech: 1/2
+# olsr -> batman -> babel -> ... ?
+# hardware
+# où: sur les toits, avec une vue
+
 -- [../img/bgm-latakia-small.jpg] [bottom-left]
 
-✔ relais et acces
-✔ ad-hoc, babel
-✔ "managed"
+✔ accès et relais
 ✔ allocation IP manuelle
 ✔ wiki
 ✔ IPv6
-# slide separee?
 ✔ "doodle", wikipedia, OSM, torrents, etc
 
-# allocation ip first come first serve
+# tech: 2/2
+# deux niveaux: accès et relais
+# relai: babel + adhoc
+# accès: mode managed + DHCP et NAT ou IPv6
+# allocation ip: first come first serve
 # wiki décentralisé, redondant, git
-# intégré avec la map
+# intégration ikiwiki + OpenStreetMap
 
 --
 
@@ -74,6 +91,10 @@ Politiques
 ✔ consensus des opérateurs
 ✔ propositions par courriel
 ✔ logiciel libre
+
+# politiques appliquées seulement après concensus des opérateurs
+# mode de décision: propositions par emails
+# basé surtout sur le logiciel libre
 
 --
 
@@ -100,18 +121,19 @@ Picopeer agreement
 # Liberté 3) La liberté de transmettre des données à ses pairs, **sans interférence**, interception ou censure.
 # Liberté 4) La liberté de **garder l'anonymat**, ou de présenter une **identité** unique digne de confiance.
 
-#Joignez-vous à nous!
-#--------------------
-#
-# * accès au toit? une belle vue? on a besoin de vous!
-# * documentation
-# * design - logo?
-# * vidéo / photos
-# * http://wiki.reseaulibre.ca/participer
+-- [grace-win.jpg]
+
+Joignez-vous à nous!
+
+# accès au toit? une belle vue? on a besoin de vous!
+✽ faites un relai
+✽ documentation
+✽ vidéo / photos
+✽ design: logo etc
+✽ http://wiki.reseaulibre.ca/participer
 
 -- [bottom] [grace-win.jpg]
 
 Questions / discussion
 
-# Slides produites avec `Docutils S5 <http://docutils.sourceforge.net/docs/user/slide-shows.html>`_.
-
+# rappeler l'adresse du site: reseau libre point c a
