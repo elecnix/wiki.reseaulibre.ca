@@ -1,8 +1,8 @@
 #!/usr/bin/env pinpoint
 
-[map_sample.png]
+[map_sample.png] [bottom]
 
--- [bottom]
+--
 
 Réseau Libre - un Mesh à Montréal
 
@@ -24,30 +24,20 @@ Un mesh?
 
 Pourquoi?
 
-✔ révolution
-✔ anti-corporation
-✔ freedom box
-✔ urgences
-✔ parce qu'on peut
-
 # ≠ contrôle accru des grandes corporations
 # changer le modèle hiéarchique / broadcasting / "télévision" du réseau
 # freedombox: ramener les services à la localité
+# parce qu'on peut
 # pas nécessairement d'accès "internet"
 
 -- 
 
 Qui et où?
 
-✔ mesh à Verdun et Rosemont + VPN
-✔ ~30 nodes
-✔ ~20-50 bénévoles
-✔ Montréal et environs
-✔ moins d'un an
-
 # Plusieurs bénévoles ont monté ~30 nodes
 # à deux endroits à montréal (rsmnt et verdun)
 # connectés par un VPN
+# ~30 nodes
 # ~70 (mailing list)
 # date de naissance:
 # wiki: 10 octobre 2011
@@ -75,7 +65,6 @@ Qui et où?
 ✔ allocation IP manuelle
 ✔ wiki
 ✔ IPv6
-✔ "doodle", wikipedia, OSM, torrents, etc
 
 # tech: 2/2
 # deux niveaux: accès et relais
@@ -84,6 +73,16 @@ Qui et où?
 # allocation ip: first come first serve
 # wiki décentralisé, redondant, git
 # intégration ikiwiki + OpenStreetMap
+
+--
+
+Services
+
+# "doodle"
+# wikipedia
+# OSM
+# torrents
+# etc
 
 --
 
@@ -114,7 +113,7 @@ Picopeer agreement
 ✽ Choisir où
 ✽ Choisir avec qui
 ✽ Sans interférence
-✽ Identity / anonymity
+✽ Identité / anonymat
 
 # Liberté 0) La liberté de **participer** au réseau.
 # Liberté 1) La liberté de déterminer **l'endroit** où vos données sont stockées.
@@ -126,12 +125,13 @@ Picopeer agreement
 
 Joignez-vous à nous!
 
-# accès au toit? une belle vue? on a besoin de vous!
-✽ faites un relai
 ✽ documentation
 ✽ vidéo / photos
 ✽ design: logo etc
 ✽ http://wiki.reseaulibre.ca/participer
+
+# accès au toit? une belle vue? on a besoin de vous!
+# faites un relai!
 
 -- [bottom] [grace-win.jpg]
 
