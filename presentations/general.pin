@@ -1,6 +1,6 @@
 #!/usr/bin/env pinpoint
 
-[map_sample.png] [bottom]
+[black] [center]
 
 --
 
@@ -20,9 +20,17 @@ A mesh?
 ✔ decentralised
 ✔ non-commercial
 
--- [chat_pourquoi.JPG]
+-- [chat_pourquoi.JPG] [bottom]
 
 Why?
+
+-- [chat_pourquoi.JPG]
+
+• citizen control
+• local services
+• emergencies
+• no censorship
+• because we can
 
 # ≠ contrôle accru des grandes corporations
 # changer le modèle hiéarchique / broadcasting / "télévision" du réseau
@@ -30,9 +38,15 @@ Why?
 # parce qu'on peut
 # pas nécessairement d'accès "internet"
 
--- 
+--
 
 Who & where?
+
+-- [map_sample.png] [bottom]
+
+✔ ~30 nodes
+✔ ~20-50 volunteers
+✔ started in 2012
 
 # Plusieurs bénévoles ont monté ~30 nodes
 # à deux endroits à montréal (rsmnt et verdun)
@@ -43,7 +57,7 @@ Who & where?
 # wiki: 10 octobre 2011
 # premier meeting: février 2012
 
---
+-- [map_sample.png]
 
 # montrer la carte ici, dans un browser si possible
 
@@ -83,7 +97,7 @@ Services
 # torrents
 # etc
 
--- [salem_what.JPG]
+-- [salem_what.JPG] [bottom]
 
 Politics
 
@@ -95,7 +109,7 @@ Politics
 # mode de décision: propositions par emails
 # basé surtout sur le logiciel libre
 
---
+-- [spiral.jpg]
 
 Picopeer agreement
 
@@ -120,7 +134,7 @@ Picopeer agreement
 #Freedom 3: speak freely with your peers. No interception or censorship
 #Freedom 4: maintain anonymity / present a unique, trusted identity
 
--- [grace-win.jpg]
+-- [grace-win.jpg] [bottom]
 
 Questions / discussion
 
