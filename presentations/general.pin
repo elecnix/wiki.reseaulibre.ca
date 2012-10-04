@@ -6,6 +6,9 @@
 
 Réseau Libre - Mesh @ Montréal
 
+# translate
+# explain how mesh montreal was unclear
+
 -- [latakia-nice.jpg]
 
 # un mesh c'est quoi?
@@ -71,7 +74,8 @@ Who & where?
 ✔ Ubiquity, TP-Link
 
 # tech: 1/2
-# olsr -> batman -> babel -> ... ?
+# olsr -> batman -> babel/robin -> bmx/unicycle ... ?
+# unclear what to choose: let's fix this!
 # hardware
 # où: sur les toits, avec une vue
 
