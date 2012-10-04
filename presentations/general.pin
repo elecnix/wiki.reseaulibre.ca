@@ -4,7 +4,7 @@
 
 --
 
-Réseau Libre - un Mesh à Montréal
+Réseau Libre - Mesh @ Montréal
 
 -- [../img/557254_529308290429346_1820250233_n.jpg] [top-right]
 
@@ -13,16 +13,16 @@ Réseau Libre - un Mesh à Montréal
 # longue tradition des réseaux mesh qui existent ailleurs
 # donc:
 
-Un mesh?
+A mesh?
 
-✔ indépendant
+✔ independant
 ✔ local
-✔ décentralisé
+✔ decentralised
 ✔ non-commercial
 
--- [piano_rouge.jpg]
+-- [chat_pourquoi.JPG]
 
-Pourquoi?
+Why?
 
 # ≠ contrôle accru des grandes corporations
 # changer le modèle hiéarchique / broadcasting / "télévision" du réseau
@@ -32,7 +32,7 @@ Pourquoi?
 
 -- 
 
-Qui et où?
+Who & where?
 
 # Plusieurs bénévoles ont monté ~30 nodes
 # à deux endroits à montréal (rsmnt et verdun)
@@ -50,9 +50,8 @@ Qui et où?
 -- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
 
 ✔ ad-hoc 802.11n
-✔ Babel (from BATMAN)
+✔ olsr / Babel / BATMAN
 ✔ Ubiquity, TP-Link
-✔ antennes sur les toits
 
 # tech: 1/2
 # olsr -> batman -> babel -> ... ?
@@ -61,10 +60,10 @@ Qui et où?
 
 -- [../img/bgm-latakia-small.jpg] [bottom-left]
 
-✔ accès et relais
-✔ allocation IP manuelle
-✔ wiki
+✔ access & relays
 ✔ IPv6
+✔ IP manual allocation
+✔ decentralised wiki
 
 # tech: 2/2
 # deux niveaux: accès et relais
@@ -74,7 +73,7 @@ Qui et où?
 # wiki décentralisé, redondant, git
 # intégration ikiwiki + OpenStreetMap
 
---
+-- [piano_rouge.jpg] [top]
 
 Services
 
@@ -84,13 +83,13 @@ Services
 # torrents
 # etc
 
---
+-- [salem_what.JPG]
 
-Politiques
+Politics
 
-✔ consensus des opérateurs
-✔ propositions par courriel
-✔ logiciel libre
+✔ consensus
+✔ email proposals
+✔ free software
 
 # politiques appliquées seulement après concensus des opérateurs
 # mode de décision: propositions par emails
@@ -107,33 +106,21 @@ Picopeer agreement
 
 -- [fnf.png] [font=Monospace 100px]
 
-5 libertés
+5 freedoms
 
-✽ Participer
-✽ Choisir où
-✽ Choisir avec qui
-✽ Sans interférence
-✽ Identité / anonymat
+✽ Participate
+✽ Where bits are stored
+✽ With whom they are shared
+✽ No interference
+✽ Indentity / anonmity
 
-# Liberté 0) La liberté de **participer** au réseau.
-# Liberté 1) La liberté de déterminer **l'endroit** où vos données sont stockées.
-# Liberté 2) La liberté de déterminer **avec qui** ces données sont partagés.
-# Liberté 3) La liberté de transmettre des données à ses pairs, **sans interférence**, interception ou censure.
-# Liberté 4) La liberté de **garder l'anonymat**, ou de présenter une **identité** unique digne de confiance.
+#Freedom 0: organize cooperative networks.
+#Freedom 1: own the material stores of your data.
+#Freedom 2: control access to your data.
+#Freedom 3: speak freely with your peers. No interception or censorship
+#Freedom 4: maintain anonymity / present a unique, trusted identity
 
 -- [grace-win.jpg]
-
-Joignez-vous à nous!
-
-✽ documentation
-✽ vidéo / photos
-✽ design: logo etc
-✽ http://wiki.reseaulibre.ca/participer
-
-# accès au toit? une belle vue? on a besoin de vous!
-# faites un relai!
-
--- [bottom] [grace-win.jpg]
 
 Questions / discussion
 
