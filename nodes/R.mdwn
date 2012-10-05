@@ -7,7 +7,7 @@ Operateur: [[users/R]]
 
 En face du Parc des Amériques :
 
-[[!waypoint lat="45.518629" lon="-73.58218" embed hidden width="950px" height="300px" right desc="AP dans ma fenetre nord"]]
+[[!waypoint lat="45.518629" lon="-73.58218" embed hidden width="950px" height="300px" right desc="Pico2HP dans ma fenetre nord"]]
 
 Pour l'instant, un AP 802.11b/g dans ma fenêtre (pointant vers le nord / nord-ouest)
 
