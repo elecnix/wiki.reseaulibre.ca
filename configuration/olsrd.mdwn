@@ -118,9 +118,8 @@ Those instructions were taken from [here](http://www.ubnt.com/wiki/OLSR_on_OpenW
 This configuration will enable olsrd on the wired interface of a machine:
 
     apt-get install olsrd
-    vi /etc/olsrd/olsrd.conf # change eth1 to eth0
-    olsrd -f /etc/olsrd/olsrd.conf -d 1 # to run in debugging mode for now
-    vi /etc/default/olsrd # enable daemon when satisfied
+    olsrd -i eth0 -d 1 # to run in debugging mode for now
+    echo 'DAEMON_OPTS="-i eth0"' >> /etc/default/olsrd
 
 # Route announcements
 
