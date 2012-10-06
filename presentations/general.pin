@@ -11,10 +11,9 @@ Réseau Libre - Mesh @ Montréal
 
 -- [latakia-nice.jpg]
 
-# un mesh c'est quoi?
-# réseau IP (Internet Protocol)
-# longue tradition des réseaux mesh qui existent ailleurs
-# donc:
+# what is a mesh?
+# long tradition
+# IP network (Internet Protocol)
 
 A mesh?
 
@@ -31,15 +30,14 @@ Why?
 
 • citizen control
 • local services
-• emergencies
+• emergency services
 • no censorship
 • because we can
 
-# ≠ contrôle accru des grandes corporations
-# changer le modèle hiéarchique / broadcasting / "télévision" du réseau
-# freedombox: ramener les services à la localité
-# parce qu'on peut
-# pas nécessairement d'accès "internet"
+# vs corporate
+# vs television / hierarchical internet, freedombox
+# it's fun
+# not necessarily internet
 
 --
 
@@ -54,11 +52,9 @@ Who & where?
 ✔ ~20-50 volunteers
 ✔ started in 2012
 
-# Plusieurs bénévoles ont monté ~30 nodes
-# à deux endroits à montréal (rsmnt et verdun)
-# connectés par un VPN
-# ~30 nodes
-# ~70 (mailing list)
+# two clusters ~30 nodes
+# VPN connected (tinc)
+# mailing list: 70
 # date de naissance:
 # wiki: 10 octobre 2011
 # premier meeting: février 2012
@@ -72,28 +68,28 @@ Who & where?
 ✔ ad-hoc 802.11n
 ✔ olsr / Babel / BATMAN
 ✔ Ubiquity, TP-Link
+✔ OpenWRT
 
 # tech: 1/2
 # olsr -> batman -> babel/robin -> bmx/unicycle ... ?
 # unclear what to choose: let's fix this!
-# hardware
+# hardware: off-the-shelf, ~150$
 # où: sur les toits, avec une vue
 
 -- [latakia-nice.jpg] [top-right]
 
-✔ access & relays
+✔ access &amp; relays
 ✔ IPv6
 ✔ IP manual allocation
 ✔ decentralised wiki
 
 # tech: 2/2
-# deux niveaux: accès et relais
 # relai: babel + adhoc
 # accès: mode managed + DHCP et NAT ou IPv6
 # IPv6
 # allocation ip: first come first serve
-# wiki décentralisé, redondant, git
-# intégration ikiwiki + OpenStreetMap
+# wiki: git, redundant => decentralised
+# + openstreetmap
 
 -- [piano_rouge.jpg] [top]
 
@@ -103,7 +99,7 @@ Services
 # wikipedia
 # OSM
 # torrents
-# etc
+# microblogging
 
 -- [salem_what.JPG] [bottom]
 
@@ -113,9 +109,11 @@ Politics
 ✔ email proposals
 ✔ free software
 
-# politiques appliquées seulement après concensus des opérateurs
-# mode de décision: propositions par emails
-# basé surtout sur le logiciel libre
+# concensus des opérateurs
+# décision: propositions par emails
+# logiciel libre
+# no formal corporation
+# story: bootstrapping the collectivity
 
 -- [spiral.jpg]
 
