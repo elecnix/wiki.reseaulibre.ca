@@ -10,4 +10,4 @@ Mesh Montréal est un réseau ouvert.  Tout le monde peut s'impliquer et plus il
 * [[Donner du matériel|donate]], comme un routeur sans-fil ou de la quincaillerie d'antenne.
 
 Prochaine rencontre!
-: [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]]
+: ???
