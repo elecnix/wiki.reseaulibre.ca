@@ -8,6 +8,8 @@ Réseau Libre - Mesh @ Montréal
 
 # translate
 # explain how mesh montreal was unclear
+#
+# source notes in general.rst
 
 -- [latakia-nice.jpg]
 
@@ -41,7 +43,7 @@ Why?
 
 --
 
-Who & where?
+Who &amp; where?
 
 # who and where
 # just skip this slide
@@ -139,6 +141,16 @@ Picopeer agreement
 #Freedom 2: control access to your data.
 #Freedom 3: speak freely with your peers. No interception or censorship
 #Freedom 4: maintain anonymity / present a unique, trusted identity
+
+--
+
+Help needed:
+
+✽ graphic design
+✽ documentation
+✽ feedback on protocols
+
+<span size="xx-small">[insert nice logo here]</span>
 
 -- [grace-win.jpg] [bottom]
 
