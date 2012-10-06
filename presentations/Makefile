@@ -1,6 +1,6 @@
-rst: general.html
+rst: local-fr.html
 
-general.html: general.rst
+local-fr.html: local-fr.rst
 	rst2s5 --theme small-black $^ $@
 
 %.html: %.rst
