@@ -1,4 +1,4 @@
-[[!waypoint lat="45.52486" lon="-73.58349" embed hidden width="400px" height="400px" right desc="Un node dans ma fenêtre!"]]
+[[!waypoint lat="45.52486" lon="-73.58349" embed hidden width="400px" height="400px" right desc="Un Bullet M2 sur le toit du quatrième! A Bullet M2 on the roof of a 4-story building."]]
 
 # Technical details
 
@@ -21,22 +21,22 @@ IP address
 : {{$IP}}
 
 Software
-: OpenWRT trunk (I think)
+: OpenWRT trunk
 
 Hardware
-: Nanostation M2
+: Bullet M2 + Omni 15 dbi
 
 Power
 : default
 
 Location
-: Dans ma fenêtre.
+: Sur le toit!
 
 Azimuth
-: 60° nord-nord-est
+: 360°
 
 Panorama
-: N/A
+: À venir bientôt!
 
 Status
 : [[!taglink planned]]
@@ -47,7 +47,7 @@ Operator
 Links
 : None yet :(
 
-This node runs batman according to the [[configuration/batman]] howto.
+This node will run Babel.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
