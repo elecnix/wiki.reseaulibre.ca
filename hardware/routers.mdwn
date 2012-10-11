@@ -148,6 +148,10 @@ Petit frère du XDX-RN502J, le Bococom porte l'inscription XDX-RN502R, et foncti
 
 [[!img Bococom-DWR150/RT-3GWT_2.jpg size="200x"]]
 
+# ARC Wireless
+
+FreeStation, qui possède deux radios, une pour le mesh, l'autre pour l'AP, grade extérieur, pour 100$: http://www.xagyl.com/store_ca/product.php?productid=16598&cat=&page=1
+
 # Pirate box
 
 See <http://wiki.daviddarts.com/PirateBox_DIY>
