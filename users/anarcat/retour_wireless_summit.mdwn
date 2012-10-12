@@ -1,0 +1,437 @@
+Voici mon retour sur le "International Summit for Community Wireless",
+affectueusement désigné sous l'acronyme IS4CW et sous le site web
+wirelesssummit.org. Je vais présenter un sommaire des projets les plus
+intéressant que j'ai retenu, en priorisant les projets qui sont les
+plus pertinents pour nous (à Réseau Libre).
+
+C'est une analyse fort technique mais qui, j'espère, pourra s'avérer
+être une référence utile pour la communauté réseau (francophone!) de
+Montréal mais aussi d'ailleurs dans le monde. Il s'agit bien sûr qu'un
+aperçu d'un moment dans le développement de tous ces projets et les
+choses vont probablement changer avec le temps!
+
+[[!toc levels=2]]
+
+Protocoles de routage
+=====================
+
+On a discuté principalement de 4 procotoles de routage:
+
+ * OLSR
+ * OLSR-2 (!!)
+ * Babel
+ * BMX6
+
+Aucune présentation sur batman-adv, notez bien, mais ce n'est pas
+qu'il n'est pas bon, seulement qu'il est plus utile pour les LAN que
+les mesh grande échelle. Un sommaire des pour et contre:
+
+Pour:
+
+ * OLSR: très répandu, standardisé, bien établi
+ * Babel: IPv6 natif, facile à utiliser, standardisé
+ * OLSR2: IPv6 natif, en voie d'être standardisé
+ * BMX6: IPv6 natif, très performant, supporté par Guifi.net
+
+Contre:
+
+ * OLSR: difficile à utiliser, IPv6 mal supporté, pas de métriques
+ * Babel: très peu répandu, problèmes théoriques avec le packet loss
+ * OLSR2: pas de release ou de package, pas compatible avec OLSR
+ * BMX6: tout nouveau, pas répandu, pas standard
+
+Je recommande donc d'utiliser le projet Babel pour l'instant, jusqu'à
+ce que les "contre" nommés ci-haut se manifestent de façon trop
+problématique. On pourra alors considérer, dans l'ordre, OLSR2 ou
+BMX6.
+
+Je détaille chacun des protocoles ci-bas.
+
+OLSR
+----
+
+OLSR était, comme d'habitude il semblerait, le seul véritable
+protocole utilisé "in the wild". Bien que tous les autres protocoles
+existent et fonctionnent, OLSR semble être le seul protocole utilisé
+par les grands mesh de Berlin, Vienne, Athènes et la Catalogne.
+
+Cependant, OLSR n'est pas sans problèmes. Le plus grave, pour les
+enthousiastes IPv6 que nous sommes, est que IPv6 est mal supporté:
+soit on active IPv6, soit on active IPv4!!! Il faut donc avoir deux
+daemons (!!) qui roulent en parallèle pour avoir les deux, un gros
+problème de conception et de "scalability" à mon avis.
+
+Aussi, OLSR n'a pas de métriques pour les liens, par défaut. Ainsi, un
+lien filaire et un lien wifi ont la même priorité dans un mesh
+OLSR. Il y a des patches pour permettre des métriques, mais elles
+rendent le protocole incompatible avec les versions non-patchées.
+
+Un avantage de OLSR: il peut rouler dans une table de routage séparée,
+et donc, contrairement à babel, on garde la table de routage
+principale propre et on peut utiliser le règles de "policy" du kernel
+linux.
+
+À noter aussi que depuis la version 0.6, il est possible de rouler
+OLSR avec un fichier de configuration minime, mais j'ai eu de la
+difficulté à implanter cette configuration malgré tout. Le résultat est
+dans le wiki de réseau libre et j'ai ouvert un bug report chez olsr.org.
+
+OLSR2
+-----
+
+J'ai eu la chance (comme dans "hasard") de souper avec Henning, un des
+développeurs principaux de OLSR, lors de notre premier soir à
+Barcelone. Il est maintenant payé pour son travail sur OLSR, ce qui
+mène (naturellement?) à un rewrite complet du protocole, dans une
+nouvelle architecture, incompatible avec la précédente (OLSR2).
+
+OLSR2 sera plus modulaire et est en plein développement. Ils
+s'attendent à un release "bientôt", mais il n'y a pas de packages
+Debian ou OpenWRT à ce que je sache. Le manque de "backward
+compatibility" a été une question récurrente et Henning a concédé
+qu'il essaierait d'avoir un module dans la nouvelle version pour avoir
+une migration plus smooth.
+
+Par le projet OLSR2, ils travaillent aussi au protocole "DLEP" qui est
+un nouveau standard pour échanger les conditions des liens (packet
+loss, signal wifi, channel, filaire, etc) entre les protocoles de
+routages et les interfaces réseau. Ceci rendrait cette information
+disponible de façon standard aux différents protocoles de routage.
+
+Site pour OLSR2:
+
+http://olsr.org/git/
+
+Babel
+-----
+
+Il n'y avait personne de Babel au sommet. Et pas juste personne du
+projet, personne qui utilise Babel, exception faite du projet
+Byzantium et de nous.
+
+Henning, du projet OLSR, m'a noté la distinction entre OLSR et Babel
+au niveau conceptuel et les problèmes que ça amène. Il est possible
+qu'un mesh babel s'écroule et doive reconstruire toutes ses tables de
+routage s'il y a une perte élevée de paquets.
+
+Il y a aussi un problème d'énumération infinie. C'est un peu complexe
+à expliquer, mais en bref, disons que les points A, B et C sont
+connectés en série (A - B - C). Si le lien de A à B disparaît, B le
+retire de sa table de routage et envoie l'annonce. Si C envoie ses
+annonces avant qu'il reçoive le changement de B, il est possible
+(selon Henning de OLSR), que B reçoive sa propre route et la
+réannonce, pensant que C a un chemin vers A. C va ensuite recevoir
+cette même route avec un hop de plus et la réannoncer, etc.
+
+Ces deux problèmes ont été découverts durant les "Battle Mesh" et il
+n'est pas exactement clair s'ils ont été résolus. Je soupçonne que le
+second l'a été, mais le premier, le problème de packet loss, est sujet
+à débat, alors que le créateur de Babel considère le packet loss comme
+un problème distinct que Babel peut se permettre d'ignorer.
+
+BMX6
+----
+
+Eh oui, encore un autre protocole de routage! Pour bien nous mélanger,
+les Catalans ont écrit leur propre protocole, dérivé de Batman (pas
+advanced!). Quelques points clefs:
+
+ * utilise le même protocole IPv6 que nous (ULA) pour l'allocation
+   automatique
+ * permet de faire du "SMS" sur le mesh en mettant un "status" dans
+   les paquets de routages du protocole
+ * intégré à qMp
+
+Je n'ai pas étudié le protocole d'avantage, mais ils se vantent
+d'avoir des avantages sur la performance de OLSR. J'hésite cependant à
+suggérer de basculer à ce protocole car il est tout nouveau, peu
+utilisé et ne semble pas avoir d'avantage significatif sur Babel.
+
+Atelier sur l'interopérabilité
+------------------------------
+
+Finalement, je peux mentionner que j'ai participé à un atelier sur
+l'interopérabilité entre les protocoles de mesh. L'idée a été lancée
+par le projet Byzantium (live CD de mesh) et consiste à créer un
+protocole par lequel un node peut déterminer le protocole par lequel
+le mesh opère.
+
+Plusieurs idées m'ont accroché:
+
+ * encodage de la configuration dans le ESSID (e.g. Berlin utilise
+   olsr.freifunk.net ou similaire)
+ * extensions 802.11u: ajout de nouveaux frames au niveau Wifi pour
+   encoder cette information (frames GAS et ANQP)
+ * utiliser les annonces mDNS
+
+J'ai noté avec certaines personnes les discussions que nous avons eu
+sur le BSSID "cafe babe" que nous avons choisi. En général, les gens se
+sont montrés sensibles au problème mais préfère
+l'interopérabilité... On m'a fait remarqué que "cafe babe" est
+également le "magic number" des fichiers .jar (Java).
+
+Le BSSID est tellement devenu un standard que des gens ont fait des
+t-shirts avec seulement le texte `02:CA:FF:EE:BA:BE`...
+
+Sinon j'ai encouragé les gens de Byzantium de regarder du côté des
+préfixes ULA pour l'autoconfiguration IPv6.
+
+Les firmwares
+=============
+
+Durant les présentations et, surtout, durant les discussions, on a
+découvert une pléthore de systèmes pour flasher nos routeurs. La
+vedette de tout cela, selon moi, est qMp, mais vu que ce n'est pas ma
+spécialité et que je n'ai testé aucun de ces logiciels, je me garde de
+faire une recommandation plus formelle.
+
+Cependant, un des points importants qui est ressorti du sommet est que
+tous les projets mesh ont tendance à réinventer la roue: on écrit son
+propre protocole, on construit des nouvelles images, etc. Tout ceci
+prend du temps. C'est un nouveau logiciel à maintenir, toute une
+communauté à animer.
+
+De plus, un des plus gros problème qu'on a présentement au niveau du
+déploiement et de la mise à jour des nodes est qu'on a pas de
+processus d'installation facile et flexible: on installe un firmware
+ou on suit un paquet d'instructions et basta, c'est fini. Or, il
+arrive qu'on a des changements assez importants à faire: on bascule de
+channel (pour éviter une interférence), on change de protocole (parce
+que celui qu'on utilisait est pourri), etc.
+
+Pour ces raisons, je recommande fortement que nous adoptions un projet
+déjà existant au lieu de créer notre propre distribution de
+OpenWRT. Nous éviterons beaucoup de travail qui a déjà été fait par
+d'autres communautés ailleurs dans le monde.
+
+Mais quand même, voici un petit résumé des pour et contre des
+différents protocoles.
+
+Pour:
+
+ * qMp: multi-protocole, bourré de fonctionnalités
+ * Commotion: développement de nouvelles fonctionnalités OLSR, axé sur
+   l'interface utilisateur
+ * Freifunk: des années d'expérience, générateur d'image
+   préconfigurées, "self-replicating"   
+ * OpenMesh: matériel préinstallé
+
+Contre:
+
+ * qMp: "New Kid On The Block"
+ * Freifunk: nouveau générateur d'image controversé
+ * OpenMesh: produit commercial, pas clair s'il est possible de le
+   redistribuer
+
+Les différents protocoles sont détaillés ci-bas.
+
+qMp - le firmware quick Mesh project
+------------------------------------
+
+J'ai été pas mal impressionné par cette présentation. Ils semblent
+avoir couvert beaucoup de points importants:
+
+ * multi-protocole (OLSR, Babel et BMX6)
+ * splash scree modifiable
+ * wizard d'installation
+ * IPv6 par défaut, IPv4 optionnel
+ * allocation d'IP automatique
+ * maps intégrées (OSM)
+
+Je pense que ce projet vaut vraiment la peine d'être étudié
+d'avantage. Il semble être un produit complet et mature, mais surtout
+facile d'installation et d'utilisation.
+
+qMp rend la configuration des nouveaux nodes très facile. Basculer
+entre OLSR et Babel est un simple menu. Le wizard semble très facile à
+utiliser. Nos instructions deviendraient une série de screenshots...
+
+Plus d'informations sur le projet:
+
+http://qmp.cat/
+
+Voyez particulièrement les captures d'écran:
+
+http://qmp.cat/projects/qmp/wiki/Screenshots
+
+Commotion wireless
+------------------
+
+Un point notable des lightning talks pour moi a été le projet
+Commotion Wireless, surtout basé à Washington DC, et qui essaie de
+redonner le contrôle sur le réseau aux utilisateurs. Cela me rappelle
+les pratiques des Zapatistes, "lead by obeying / asking": au lieu de
+déployer des outils et des réseaux comme des spécialistes qui imposent
+leur technologie, on essaie de répondre aux besoins de la
+communauté. Pour ce faire ils utilisent des outils non-techniques
+(e.g. des legos!) pour expliquer le réseau.
+
+Commotion Wireless est aussi un projet logiciel pour les téléphones
+cellulaires mais aussi un "firmware" basé sur OpenWRT et OLSR. Ils ont
+un plugin intéressant pour changer la puissance des antennes selon les
+tables de routage OLSR, pour éviter d'utiliser plus de courant que
+nécessaire, ce qui réduit aussi les interférences entre les liens
+redondants.
+
+Freifunk firmware
+-----------------
+
+Freifunk ont, depuis longtemps, un firmware utilisé pour configurer
+les points d'accès de ce vénérable mesh. Des modifications
+significatives ont été apportées au logiciel récemment, avec un
+générateur d'image automatisé, qui permet d'entrer la configuration
+qu'on cherche avec un petit wizard et qui nous sort une image au
+bout.
+
+Une des fonctionnalités intéressantes du firmware de Freifunk est
+qu'il se réplique tout seul: on peut utiliser un routeur freifunk pour
+flasher un autre routeur Freifunk (avec tftp, par exemple). Génial!
+Cependant, il semblerait que cette fonctionnalité ait disparu avec le
+nouveau générateur d'images.
+
+Openmesh
+--------
+
+Il vaut la peine de mentionner pour terminer le projet "Openmesh",
+aussi connu sous le nom de Robin-mesh, qui, au fond, roule
+Batman-adv. À ce que je comprends, c'est plutôt un produit, un routeur
+commercial avec une distribution basée sur OpenWRT et BATMAN
+derrière. Un des participants de Austin Wireless m'a recommandé
+d'utiliser Openmesh vu qu'il est possible pour les utilisateurs de
+commander des machines déjà préconfigurées avec les logiciels...
+
+Cependant, je n'ai pas réussi à trouver un download pour le firmware
+tant sur open-mesh.com, qui vend des routeurs, que open-mesh.org, qui
+parle surtout de Batman.
+
+Autres projets
+==============
+
+État de projets de mesh dans le monde
+-------------------------------------
+
+Petit survol rapide des projets dont je me souviens:
+
+ * Athènes: 2500 nodes, OLSR, BGP, possibilité de 10k nodes
+ * Guifi.net: 16k nodes, pas vraiment un mesh, mais réseau citoyen
+ * Berlin: plusieurs centaines de nodes, en décroissance
+ * Slovénie: premier mesh international, participation des ham
+
+Serval
+------
+
+Projet de mesh sortant de l'ordinaire, Serval est un outil visant
+surtout les commauntés défavorisées ou en situation d'urgence. Orienté
+surtout vers les téléphones cellulaires, Serval est principalement un
+logiciel pour les plateformes Android qui permet de communiquer entre
+des téléphones de façon complètement décentralisée et sécurisée, sans
+passer par une tour centrale.
+
+Beaucoup de travail a été fait pour essayer de contourner les embûches
+que Google met sur le chemin des développeurs pour utiliser le mode
+"ad-hoc" sur les téléphones. Il y aurait apparemment un mot ordre venant
+de très haut chez Google interdisant de supporter le ad-hoc. Sur les
+bugtrackers de Google, c'est le "bug #82", un chiffre très bas, datant
+du lancement de Android:
+
+http://code.google.com/p/android/issues/detail?id=82
+
+Le bug a plus de 5000 votes et 1500 commentaires! Il a été résolu
+d'ailleurs parmi les gens présent à un atelier de réserver le nom de
+domaine bug82.org pour militer pour cette cause.
+
+Pour revenir à Serval, il est intéressant de remarquer que, encore une
+fois, un nouveau protocole a été établi, le Mesh Datagram Protocol
+(MDP) car les protocoles existants (Ad-hoc, IP) étaient insuffisants
+pour les bsoins. Le MDP s'occupe du transport, de l'authentification
+et de l'encryption des paquets avec un protocole qui me rappelle un
+peu cjdns.
+
+Le MDP permet le partage de fichiers, de données cartographiques et
+des appels téléphoniques ou messages textes, le tout donc encrypté.
+
+Dotcat
+------
+
+.cat est le nom de domaine assigné à la catalogne par l'IANA. C'est
+une fondation sans but lucratif qui finance plusieurs projets de
+logiciel libre avec les revenus du domaine: qMp, guifiproxy (changeur
+de proxy automatique), partage d'un rack en centre de données,
+"Internet Exchange" neutre, etc.
+
+On note que ceci est possible car .cat est un registre *et* un
+registraire, c'est-à-dire que c'est eux qui vendent les domaines
+directement, contrairement à l'approche proposée par le "point Québec"
+qui se brasse présentement, où il s'agit de faire seulement un
+registre de domaines pour le Québec, sans nécessairement gérer les
+domaines directement.
+
+Quelques statistiques intéressantes du registre:
+
+ * taux de renouvellement annuel de 85% (très élevé!)
+ * 60k domaines, augmentation de 6k / an
+ * seulement pour les organisations s'identifiant comme Catalanes
+ 
+Guifi.net
+---------
+
+Probablement un des plus gros réseaux communautaires au monde,
+Guifi.net installent de la fibre, des liens sans fil et des petits
+mesh partout en catalogne. On parle de milliers de nodes partout dans
+la région. Beaucoup de projets consistent à amener de l'internet sur
+les régions éloignées, avec le financement de la communauté. Par
+exemple, ils commencent avec 18k$ pour quelques endroits, puis 40k$
+pour étendre le réseau pour finir avec un investissement de 500k$ pour
+tout un quartier, pour parler de 1-2M$ pour des villages entiers.
+
+Évidemment, en Catalogne comme ailleurs en Europe, la concentration de
+population est plus grande et rendent ces projets plus attrayants et
+rentables... Mais je pense qu'on doit apprendre de cette culture qui
+est bien établie maintenant en catalogne: l'infrastructure comme "bien
+commun". J'écris d'ailleurs ceci derrière une connexion Guifi.net,
+dans une communauté auto-gérée en banlieue de Barcelone.
+
+10 years of failures
+--------------------
+
+Il y a eu un atelier hilarant sur toutes les catastrophes que les
+opérateurs ont vécu. Vu qu'on apprend de nos erreurs et qu'on a appris
+beaucoup, il y a beaucoup de choses à discuter. :)
+
+Les leçons que j'ai retenu:
+
+ * la fibre optique n'es pas un bon câble pour tenir une tour (!)
+ * une chaudière vaut mieux qu'un tupperware pour isoler de la pluie
+ * attention aux questions politicos-économiques quand ont commence à
+   faire de la fibre
+ * tester dans le laboratoire avant de déployer sur le terrain
+
+Ce dernier point, en particulier, me semble vraiment important. Par
+exemple, un grand projet d'internet citoyen pour les communautés
+autochtones du comté de San Diego n'a pas utilisé de protocoles "mesh"
+parce que, lors du grand déploiement, rien ne fonctionnait!
+
+Techniques alternatives
+-----------------------
+
+Les Slovènes ont développés deux projets fort intéressant pour des
+liens longue distance. Le premier est un protocole de données pour la
+radio amateur conçu pour remplacer le AX-25. Il s'agit du protocole
+NBP, développé par le radio amateur local S53MV:
+
+http://lea.hamradio.si/~s53mv/nbp/nbp.html
+
+Ceci, évidemment, demande du matériel spécial, voire des SDR
+(Software-Defined Radio) pour opérer convenablement. Mais ceci peut
+permettre des liens longue distance, voir mondiaux.
+
+Un autre outil qui est développé par les slovènes est des liens
+optiques à haut débit, basés sur des lasers. Ils utilisent les "media
+converters" qui servent à alimenter la fibre optique dans les centres
+de données. Encore en développement, ceci semble prometteur!
+
+Dernières notes quelconques
+---------------------------
+
+Tout le monde disait "Open wurt" au lieu de "Open W R T", ça m'a pris
+un certain temps avant de comprendre de quoi ils parlaient!
