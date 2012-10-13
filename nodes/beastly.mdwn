@@ -1,4 +1,4 @@
-[[!waypoint  lat="45.474197" lon="-73.628602" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint  lat="45.474197" lon="-73.628602" embed hidden width="400px" height="400px" right desc="Bullet M2HD 24dbi gain antenna facing 159 degrees magnetic"]]
 
 # Technical details
 
@@ -8,10 +8,10 @@ IPv6:
 """]]
 
 hostname
-: (node hostname here)
+: transmitting SSID Beastly for test
 
 MAC address
-: {{$MAC}}
+: DC:9F:DB:06:D4:DA
 
 IPv6 address
 : {{$IPv6}}
@@ -38,7 +38,7 @@ Panorama
 : N/A
 
 Status
-: [[!taglink planned]]
+: Operational
 
 Operator
 : [[users/Eric]]
