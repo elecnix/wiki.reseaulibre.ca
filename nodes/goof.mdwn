@@ -22,10 +22,10 @@ IP address
 : {{$IP}}
 
 Software
-: 
+: OpenWrt Special reseaulibre remix.
 
 Hardware
-: 
+: Bullet + Omni
 
 Power
 : 
@@ -40,7 +40,7 @@ Panorama
 : N/A
 
 Status
-: [[!taglink planned]]
+: [[!taglink up]]
 
 Operator
 : [[users/goof]]
