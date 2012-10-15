@@ -22,10 +22,10 @@ Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
  * Hostname: r-nord.acces.reseaulibre.ca
  * Location: 45.518629,-73.58217
  * Software: ROBIN r3527-26/nO Build 0.6.0
- * IP address: 5.174.231.38
- * IPv6 address: ::1
+ * IP address: 5.174.231.38 ( Planned: {{$IP}} )
+ * IPv6 address: {{$IPv6}}
  * Hardware: Ubnt PicoStation2 HP
- * MAC address: 00:15:6D:AD:E7:26
+ * MAC address: {{$MAC}}
  * Channel: 9
  * 802.11: b, g
 
