@@ -1,4 +1,4 @@
-### Vue vers le nord
+### Vue vers le nord (montréalais)
 
 [[!img 2012-09-11-r-nord.jpg size=950x]]
 
@@ -7,21 +7,21 @@ Operateur: [[users/R]]
 
 En face du Parc des Amériques :
 
-[[!waypoint lat="45.518629" lon="-73.58218" embed hidden width="950px" height="300px" right desc="Pico2HP dans ma fenetre nord"]]
+[[!waypoint lat="45.518629" lon="-73.58219" embed hidden width="950px" height="300px" right desc="Bullet M2 + 15dBi"]]
 
-Pour l'instant, un AP 802.11b/g dans ma fenêtre (pointant vers le nord / nord-ouest)
+Bullet M2 + 15dBi à installer
 
-# NOEUD 1: (AP) - [[!taglink up]]
+# NOEUD: (AP) - [[!taglink planned]]
 [[!format sh """
-Hostname: r-nord.acces.reseaulibre.ca
-MAC address: 00:15:6D:AD:E7:26
-IP address: 5.174.231.38
-IPv6 address: N/A :-(
-Software: ROBIN r3527-26/nO Build 0.6.0
-Hardware: Ubnt PicoStation 2HP (NanoStation M2 disponible)
-Power: 29dBm/800mW
-Location: 45.518629,-73.58218
-Azimuth: North-North-West
+Hostname: r.relais.reseaulibre.ca
+MAC address: DC:9F:DB:06:D4:CC
+IP address: x.x.x.x
+IPv6 address: ::1
+Software: OpenWRT + ?
+Hardware: Ubnt Bullet M2
+Power: 4W EIRP
+Location: 45.518629,-73.58219
+Azimuth: 360°
 """]]
 
 [[!toggle  id="incomingnodes" text="Afficher les autres noeuds potentiels et informations"]]
