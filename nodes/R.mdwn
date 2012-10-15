@@ -5,7 +5,7 @@
 [[!ymlfront data="""
 MAC: DC:9F:DB:06:D4:CC
 IP: 172.16.0.33
-IPv6: 
+IPv6: Not yet
 """]]
 
 # SETUP
@@ -22,10 +22,10 @@ Bullet M2 + 15dBi à installer
  * Hostname: r.relais.reseaulibre.ca
  * Location: 45.518629,-73.58219
  * Software: OpenWRT + (¿QmP?)
- * IP address: 127.0.0.1
- * IPv6 address: ::1
+ * IP address: {{$IP}}
+ * IPv6 address: {{$IPv6}}
  * Hardware: Ubnt Bullet M2
- * MAC address: DC:9F:DB:06:D4:CC
+ * MAC address: {{$MAC}}
  * Channel: 1
  * 802.11: b, g, n
 
