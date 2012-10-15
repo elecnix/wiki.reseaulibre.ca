@@ -11,9 +11,9 @@ En face du Parc des Amériques :
 
 Bullet M2 + 15dBi à installer
 
-# NODE - [[!taglink prospect]]
+# NODE - r.relais.reseaulibre.ca
 
- * Status: [[!taglink prospect]] 
+ * Status: [[!taglink planned]] 
  * Hostname: r.relais.reseaulibre.ca
  * Location: 45.518629,-73.58219
  * Software: OpenWRT + (¿QmP?)
@@ -31,18 +31,9 @@ Bullet M2 + 15dBi à installer
  * Impedance: 50 Ohm
  * Power: 4W (Max EIRP)
 
+### Links
  * Links: [[nodes/zoidberg]] (700 m)
 
-[[!toggle  id="incomingnodes" text="Afficher les autres noeuds potentiels et informations"]]
-[[!toggleable  id="incomingnodes" text="""
-
-## NOEUD 2: [[!taglink unknown]]
-Ubnt NanoStation M² also available in a window pointing south (currently WPA2 on latest AirOS).
-
-
-# AUTRES
-VE2TUX licenced HAM. Links: [[nodes/R-nord]] ([[links/R/]])
-"""]]
 ### Vue vers le sud (montréalais)
 [[!img 2012-09-11-r-sud.jpg size=950x]]
 
