@@ -12,7 +12,6 @@ En face du Parc des Amériques :
 Bullet M2 + 15dBi à installer
 
 # NODE - r.relais.reseaulibre.ca
-
  * Status: [[!taglink planned]] 
  * Hostname: r.relais.reseaulibre.ca
  * Location: 45.518629,-73.58219
@@ -21,6 +20,8 @@ Bullet M2 + 15dBi à installer
  * IPv6 address: ::1
  * Hardware: Ubnt Bullet M2
  * MAC address: DC:9F:DB:06:D4:CC
+ * Channel: 1
+ * 802.11: b, g, n
 
 ### Antenna
  * Azimuth: H: 360° / V: 6°
