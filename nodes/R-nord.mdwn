@@ -2,6 +2,12 @@
 
 [[!img /nodes/R/2012-09-11-r-nord.jpg size=950x]]
 
+[[!ymlfront data="""
+MAC: 00:15:6D:AD:E7:26
+IP: 172.16.1.33
+IPv6: Not yet
+"""]]
+
 # SETUP
 Operateur: [[users/R]]
 
