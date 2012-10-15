@@ -5,37 +5,28 @@
 # SETUP
 Operateur: [[users/R]]
 
-En face du Parc des Amériques :
+Point d'accès public en face du Parc des Amériques :
 
-[[!waypoint lat="45.518629" lon="-73.58218" embed hidden width="950px" height="300px" right desc="Pico2HP dans ma fenetre nord"]]
+[[!waypoint lat="45.518629" lon="-73.58217" embed hidden width="950px" height="300px" right desc="Pico2HP dans ma fenetre nord"]]
 
-Pour l'instant, un AP 802.11b/g dans ma fenêtre (pointant vers le nord / nord-ouest)
+Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
 
-# NOEUD 1: (AP) - [[!taglink up]]
-[[!format sh """
-Hostname: r-nord.acces.reseaulibre.ca
-MAC address: 00:15:6D:AD:E7:26
-IP address: 5.174.231.38
-IPv6 address: N/A :-(
-Software: ROBIN r3527-26/nO Build 0.6.0
-Hardware: Ubnt PicoStation 2HP (NanoStation M2 disponible)
-Power: 29dBm/800mW
-Location: 45.518629,-73.58218
-Azimuth: North-North-West
-"""]]
+# NODE - r-nord.acces.reseaulibre.ca
+ * Status: [[!taglink up]]
+ * Hostname: r-nord.acces.reseaulibre.ca
+ * Location: 45.518629,-73.58217
+ * Software: ROBIN r3527-26/nO Build 0.6.0
+ * IP address: 5.174.231.38
+ * IPv6 address: ::1
+ * Hardware: Ubnt PicoStation2 HP
+ * MAC address: 00:15:6D:AD:E7:26
 
-[[!toggle  id="incomingnodes" text="Afficher les autres noeuds potentiels et informations"]]
-[[!toggleable  id="incomingnodes" text="""
+### Antenna
+ * Azimuth: H: 360° / V: ?
+ * Connector RP-SMA
+ * Gain: 6 dBi
+ * Power: 28 dBm
 
-## NOEUD 2: [[!taglink unknown]]
-Ubnt NanoStation M² also available in a window pointing south (currently WPA2 on AirOS).
-
-## NOEUD 3: [[!taglink planned]]
-Ubnt Bullet M² to be ordered soon with 15 dBi antenna...
-
-# AUTRES
-VE2TUX licenced HAM. Links: [[nodes/R-nord]] ([[links/R/]])
-"""]]
 ### Vue vers le sud (montréalais)
 [[!img /nodes/R/2012-09-11-r-sud.jpg size=950x]]
 
