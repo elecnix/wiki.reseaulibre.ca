@@ -3,5 +3,12 @@ Alex...
 total world domination (à) g mail point, "comme" ;)
 
 # Mes Noeuds
+
 ## Noeuds fonctionnels
+
 [[nodes/R]]
+
+[[nodes/R-nord]]
+
+Ubnt NanoStation M² also available in a window pointing south (currently WPA2 on latest AirOS).
+
