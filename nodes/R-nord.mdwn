@@ -1,4 +1,4 @@
-### Vue vers le nord
+### Vue vers le nord (montréalais)
 
 [[!img /nodes/R/2012-09-11-r-nord.jpg size=950x]]
 
@@ -29,6 +29,9 @@ Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
  * Connector RP-SMA
  * Gain: 6 dBi
  * Power: 28 dBm
+
+### Links
+ * Public / Ouvert / Stations
 
 ### Vue vers le sud (montréalais)
 [[!img /nodes/R/2012-09-11-r-sud.jpg size=950x]]
