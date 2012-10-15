@@ -20,9 +20,12 @@ Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
  * IPv6 address: ::1
  * Hardware: Ubnt PicoStation2 HP
  * MAC address: 00:15:6D:AD:E7:26
+ * Channel: 9
+ * 802.11: b, g
 
 ### Antenna
  * Azimuth: H: 360° / V: ?
+ * Frequency: 2400 - 2483MHz
  * Connector RP-SMA
  * Gain: 6 dBi
  * Power: 28 dBm
