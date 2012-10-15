@@ -34,7 +34,7 @@ Ubnt NanoStation M² also available in a window pointing south (currently WPA2 o
 Ubnt Bullet M² to be ordered soon with 15 dBi antenna...
 
 # AUTRES
-VE2TUX licenced HAM. Links: [[nodes/R-nord]] ([[links/R/]])
+VE2TUX licenced HAM. Links: [[nodes/R]] ([[links/R/]])
 """]]
 ### Vue vers le sud (montréalais)
 [[!img 2012-09-11-r-sud.jpg size=950x]]
