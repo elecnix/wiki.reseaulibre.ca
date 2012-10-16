@@ -21,7 +21,7 @@ IPv6: fd64:2c08:9fa7:42::1
  * Panorama: N/A
  * Status: [[!taglink up]]
  * Operator: [[users/bgm]]
- * Links: [[hexa]], [[bgm-alep]]
+ * Links: [[hexa]] (3.5 mbps), [[bgm-alep]] (ethernet), [[bgm-homs]] (ethernet)
 
 = Services =
 
