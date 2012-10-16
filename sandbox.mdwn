@@ -1,14 +1,6 @@
 This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
 
-# test utf8
-
-ceci est un test du bot avec du utf8
-
-# test CIA/KGB
-
-Test KGB, voir si ça entre sur une ligne
-
 # report plugin test
 
 this lists the IP fields on the nodes pages.
