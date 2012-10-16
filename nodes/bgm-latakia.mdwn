@@ -1,4 +1,4 @@
-[[!waypoint lat="45.465677" lon="-73.572797" embed hidden width="400px" height="400px" right desc="Node au 3e etage, bullet avec antenne 15dbi."]]
+[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Bullet 15 dbi sur le mat de mon voisin."]]
 
 # Détails techniques
 
