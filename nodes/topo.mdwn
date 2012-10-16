@@ -1,12 +1,12 @@
-[[!waypoint lat="45.527314" lon="-73.596565" embed hidden width="400px" height="400px" right desc="Planifié: Antenne sectorielle 120 degrés dans la fenêtre du 10e étage"]]
+[[!waypoint lat="45.527314" lon="-73.596565" embed width="400px" height="400px" right desc="Antenne sectorielle 120 degrés dans la fenêtre du 10e étage"]]
 
-Planifié: Antenne sectorielle 120 degrés dans la fenêtre du 10e étage
+Antenne sectorielle 120 degrés dans la fenêtre du 10e étage.
 
 # Technical details
 
 [[!ymlfront data="""
-MAC: 
-IP: 
+MAC: dc:9f:db:00:13:24
+IP: 172.16.0.34
 IPv6: 
 """]]
 
@@ -23,25 +23,25 @@ IP address
 : {{$IP}}
 
 Software
-: 
+: qMp (testing)
 
 Hardware
-: 
+: Bullet M2HP
 
 Power
-: 
+: 16 dBm
 
 Location
 : Fenêtre
 
 Azimuth
-: 120°
+: 120°, 9 dBi
 
 Panorama
-: soon
+: available
 
 Status
-: [[!taglink planned]]
+: [[!taglink up]]
 
 Operator
 : [[users/elecnix]] (pour l'instant)
