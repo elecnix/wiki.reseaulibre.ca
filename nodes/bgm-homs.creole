@@ -21,7 +21,7 @@ IPv6: fd64:2c08:9fa7:42::1
  * Panorama: N/A
  * Status: [[!taglink up]]
  * Operator: [[users/bgm]]
- * Links: [[deuxpi]], [[bgm-hama]]
+ * Links: [[hexa]], [[bgm-alep]]
 
 = Services =
 
