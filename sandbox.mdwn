@@ -1,5 +1,6 @@
 This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
+# Désolé pour le bruit :)
 
 # report plugin test
 
