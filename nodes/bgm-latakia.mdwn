@@ -1,5 +1,7 @@
 [[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Bullet 15 dbi sur le mat de mon voisin."]]
 
+[[!toc levels=3]]
+
 # Détails techniques
 
 [[!ymlfront data="""
@@ -27,7 +29,7 @@ IPv6: ..
 
 [[!img img/557254_529308290429346_1820250233_n.jpg alt="Bullet M2"]]
 
-# UCI
+# Configuration UCI
 
     # base
     uci delete wireless.radio0.disabled
