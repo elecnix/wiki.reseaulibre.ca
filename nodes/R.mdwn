@@ -39,7 +39,7 @@ Bullet M2 + 15dBi à installer
  * Power: 4W (Max EIRP)
 
 ### Links
- * Links: [[nodes/zoidberg]] (700 m)
+ * Links: [[R-nord]] (ethernet), [[zoidberg]] (700 m)
 
 ### Vue vers le sud (montréalais)
 [[!img 2012-09-11-r-sud.jpg size=950x]]
