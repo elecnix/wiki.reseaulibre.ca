@@ -1,9 +1,10 @@
-[[!waypoint  lat="45.474197" lon="-73.628602" embed hidden width="400px" height="400px" right desc="Bullet M2HD 24dbi gain antenna facing 159 degrees magnetic"]]
+[[!waypoint  lat="45.474197" lon="-73.628602" embed hidden width="400px" height="400px" right desc="Bullet M2HD 24dbi @ 159"]]
 
 # Technical details
 
 [[!ymlfront data="""
-IP: (pick one from [[policy/numbering]])
+MAC: DC:9F:DB:06:D4:DA 
+IP: 199.84.4.24
 IPv6: 
 """]]
 
@@ -11,7 +12,7 @@ hostname
 : transmitting SSID Beastly for test
 
 MAC address
-: DC:9F:DB:06:D4:DA
+: {{$MAC}}
 
 IPv6 address
 : {{$IPv6}}
@@ -23,22 +24,22 @@ Software
 : 
 
 Hardware
-: 
+: Ubiquity Bullet M2 + 24 dBi sectional, facing 159 magnetic
 
 Power
-: 
+: 24 dBm
 
 Location
-: (roof 38' above local ground level)
+: (roof 30' above local ground level)
 
 Azimuth
-: 360°
+: 15°
 
 Panorama
 : N/A
 
 Status
-: Operational
+: [[!taglink up]]
 
 Operator
 : [[users/Eric]]
