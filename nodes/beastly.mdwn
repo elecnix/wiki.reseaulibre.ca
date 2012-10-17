@@ -9,7 +9,7 @@ IPv6:
 """]]
 
 hostname
-: transmitting SSID Beastly for test
+: 
 
 MAC address
 : {{$MAC}}
@@ -25,6 +25,7 @@ Software
 
 Hardware
 : Ubiquity Bullet M2 + 24 dBi sectional, facing 159 magnetic
+
 
 Power
 : 24 dBm
