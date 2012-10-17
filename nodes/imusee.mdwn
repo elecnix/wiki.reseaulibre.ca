@@ -1,7 +1,7 @@
-[[!waypoint map=null  lat="45.5" lon="-73.666667" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
-(remove map=null to display on the main map)
+[[!waypoint lat="45.54967" lon="-73.538709" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 
-(Description of the node here, with a link to your homepage.)
+http://www.imusee.net/
+
 # Technical details
 
 [[!ymlfront data="""
