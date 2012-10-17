@@ -12,6 +12,11 @@ Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca Leur site (un peu 
 
 Il sera peut-être possible de compiler batman-adv pour AirOS. Suivre les développements sur la [[mailing list batman-adv|https://lists.open-mesh.org/pipermail/b.a.t.m.a.n/2012-April/006893.html]] (self-signed cert)
 
+De [[http://wiki.openwrt.org/toh/ubiquiti/airmaxm]] :
+
+«It is possible to remotely press the reset button on M-series devices by briding the powerlines, Ubiquiti's 1 ampere power injector (the one with LAN LEDs) has a button that you can press that physically closes the reset button circuit. If you have the smaller power injector or a generic one, you can read [[http://dren.dk/mreset.html]] for more information about making your own reset button out of it.»
+
+
 ### PicoStation (omni)
 
 La compagnie Ubiquiti produit du matériel excellent et bon marché. Pour un noeud placé à l'extérieur, l'option la moins coûteuse et la plus simple est la [[PicoStation M2HP|http://dl.ubnt.com/datasheets/picostationm/picom2hp_DS.pdf]]. Elle a une portée de 500 mètres maximum (dans toutes les directions), et vient avec un injecteur PoE qui évite d'avoir à passer un fil d'alimentation, le câble réseau servant à transporter le courant.
