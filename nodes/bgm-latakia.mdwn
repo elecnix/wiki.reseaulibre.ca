@@ -93,6 +93,21 @@ IPv6: ..
     uci set radvd.@dnssl[0].interface=wifi
     uci set radvd.@dnssl[0].suffix=net4.bidon.ca
 
+# Configuration babel
+
+## Routeur principal
+
+    interface eth1 wired true
+    redistribute local proto 2 ip 2607:f2c0:f00f:2900::1/56 le 56
+
+    # refuse anything else not explicitely allowed
+    redistribute local deny
+    redistribute deny
+
+IMPORTANT: 2607:f2c0:f00f:2900::1/56 doit être assigné à une interface réseau, pour que la route existe. C'est équivalent à 2607:f2c0:f00f:2900::/56, mais on ne peut pas assigner ça à une interface réseau. Initialement j'avais 2607:f2c0:f00f:2900::1/128 (= damas.net4.bidon.ca).
+
+Configurer ça comme ça permet d'exporter une seule entrée pour tout mon réseau.
+
 # Notes
 
 * Comment crimper avec les connecteurs "Tough cable": http://www.ubnt.com/downloads/datasheets/toughcable/TOUGHCable_Datasheet.pdf
