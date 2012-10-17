@@ -21,7 +21,7 @@ IPv6 address
 : {{$IPv6}}
 
 IP address
-: {{$IP}}
+: 172.16.0.23
 
 Software
 : OpenWRT trunk
