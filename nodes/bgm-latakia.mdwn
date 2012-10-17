@@ -95,7 +95,20 @@ IPv6: ..
 
 # Configuration babel
 
-## Routeur principal
+Topologie:
+
+    [routeur principal "damas"]  => [routeur tplink MR3420 voisinage "alep"] => [nanostation "homs"] => [bullet "latakia"]
+     2607:f2c0:f00f:2900::/56
+    
+                                                                              => [wifi] 2607:f2c0:f00f:29a5::/64
+    
+                                                                              => [routeur dlink voisins] => [lan voisins]
+
+                                 => [desktops/laptops câblés] 2607:f2c0:f00f:2910::/64
+                                 
+
+
+## Routeur principal "damas" (Debian)
 
     interface eth1 wired true
     redistribute local proto 2 ip 2607:f2c0:f00f:2900::1/56 le 56
