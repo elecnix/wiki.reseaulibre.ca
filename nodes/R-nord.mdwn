@@ -37,7 +37,8 @@ Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
  * Power: 28 dBm
 
 ### Links
- * Public / Ouvert / Stations
+* Links: [[R]] (ethernet)
+
 
 ### Vue vers le sud (montréalais)
 [[!img /nodes/R/2012-09-11-r-sud.jpg size=950x]]
