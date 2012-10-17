@@ -1,4 +1,4 @@
-[[!waypoint  lat="45.474197" lon="-73.628602" embed hidden width="400px" height="400px" right desc="Bullet M2HD 24dbi @ 159"]]
+[[!waypoint  lat="45.474197" lon="-73.628602" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 
 # Technical details
 
