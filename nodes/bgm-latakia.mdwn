@@ -106,6 +106,9 @@ IPv6: ..
 
 IMPORTANT: 2607:f2c0:f00f:2900::1/56 doit être assigné à une interface réseau, pour que la route existe. C'est équivalent à 2607:f2c0:f00f:2900::/56, mais on ne peut pas assigner ça à une interface réseau. Initialement j'avais 2607:f2c0:f00f:2900::1/128 (= damas.net4.bidon.ca).
 
+    ip -f inet6 addr del 2607:f2c0:f00f:2900::1/128 dev eth0
+    ip -f inet6 addr add 2607:f2c0:f00f:2900::1/56 dev eth0
+
 Configurer ça comme ça permet d'exporter une seule entrée pour tout mon réseau.
 
 # Notes
