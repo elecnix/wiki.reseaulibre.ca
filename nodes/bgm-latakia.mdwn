@@ -141,6 +141,39 @@ Configurer ça comme ça permet d'exporter une seule entrée pour tout mon rése
 i.e. on écoute sur les interfaces câblées, et on ne redistribue pas de routes. Ça va relayer celle de 'damas' automatiquement.
 Ce routeur a du wifi (wlan0), mais c'est du WPA2 pour les visiteurs, ce n'est pas un AP ouvert, donc pas besoin d'y rouler babel.
 
+## Routeur nanostation "homs" (OpenWRT)
+
+    babeld.@general[0]=general
+    babeld.@general[0].local_server=33123
+    babeld.@filter[0]=filter
+    babeld.@filter[0].type=redistribute
+    babeld.@filter[0].local=true
+    babeld.@filter[0].action=deny
+    babeld.@filter[1]=filter
+    babeld.@filter[1].type=redistribute
+    babeld.@filter[1].action=deny
+    babeld.wlan0=interface
+    babeld.eth0=interface
+    babeld.eth1=interface
+
+Ici on utilise les 3 interfaces, car eth0 connecte à "latakia" (bullet), eth1 à "alep" (vers le réseau local) et le wlan0 connecte à hexa en mode adhoc.
+
+## Routeur nanostation "latakia" (OpenWRT)
+
+    babeld.@general[0]=general
+    babeld.@general[0].local_server=33123
+    babeld.@filter[0]=filter
+    babeld.@filter[0].type=redistribute
+    babeld.@filter[0].local=true
+    babeld.@filter[0].action=deny
+    babeld.@filter[1]=filter
+    babeld.@filter[1].type=redistribute
+    babeld.@filter[1].action=deny
+    babeld.wlan0=interface
+    babeld.eth0=interface
+
+Fin de la chaîne.. wlan0 connecte à deuxpi par adhoc, eth0 connecte à "homs" (bullet).
+
 # Notes
 
 * Comment crimper avec les connecteurs "Tough cable": http://www.ubnt.com/downloads/datasheets/toughcable/TOUGHCable_Datasheet.pdf
