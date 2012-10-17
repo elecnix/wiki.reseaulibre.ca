@@ -4,8 +4,8 @@
 
 [[!ymlfront data="""
 MAC: 00:15:6D:72:94:2F
-IP: 172.16.1.42
-IPv6: fd64:2c08:9fa7:42::1
+IP: 2607:f2c0:f00f:29a5:15:6dff:fe73:942f
+Link-local: fe80::215:6dff:fe72:942f
 """]]
 
  * hostname: homs
