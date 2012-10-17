@@ -3,7 +3,7 @@
 # Technical details
 
 [[!ymlfront data="""
-MAC: 00:27:22:8a:cb:c4
+MAC: dc:9f:db:06:d4:cd
 IP: 172.16.0.15
 IPv6: Not yet
 """]]
@@ -21,7 +21,7 @@ IP address
 : {{$IP}}
 
 Software
-: OpenWRT trunk
+: qMp build de bullet 14 oct 2012
 
 Hardware
 : Bullet M2 + Omni 15 dbi
