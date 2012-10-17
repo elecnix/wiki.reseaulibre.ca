@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.532907" lon="-73.575424" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.532907" lon="-73.575424" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 (remove map=null to display on the main map)
 
 (Description of the node here, with a link to your homepage.)
@@ -41,7 +41,7 @@ Panorama
 : N/A
 
 Status
-: [[!taglink prospect]] (can also be up, down, planned, unknown)
+: [[!taglink planned]] (can also be up, down, planned, unknown)
 
 Operator
 : [[users/Cooper]]
