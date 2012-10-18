@@ -4,7 +4,7 @@
 MAC: DC:9F:DB:00:11:D9
 IP: 172.16.1.8
 IPv6:
-- fd64:2c08:9fa7:8::1
+- 2001:470:b2a7:2::/64
 """]]
 
 (!) Batman n'est pas installé sur ce noeud. Seulement Babel est utilisé pour l'instant. Les adresses IP locales ainsi que les routes externes sont distribuées. Avec un peu de chance, pour l'instant, les noeuds qui s'y connectent auront un accès au VPN et à une route IPv4 par défaut vers l'Internet.
@@ -37,12 +37,17 @@ IPv6:
 
 # Configuration Babel
 
+## Routeur "relais"
+
+ * Adresse IPv4 172.16.1.8/32 sur br-lan et wlan0 (point-à-point, routage par Babel seulement)
+ * Adresse IPv6 2001:470:b2a7:2::2/64 sur br-lan (fe80::de9f:dbff:fe01:11d9/64) et wlan0 (fe80::de9f:dbff:fe00:11d9/64)
+ * Route IPv6 statique 2001:470:b2a7::/48 via 2001:470:b2a7:2::1 sur br-lan.
+
 [[!format txt """
 babeld.@general[0]=general
 babeld.@general[0].local_server=33123
 babeld.wlan0=interface
 babeld.lan=interface
-babeld.lan.ignore=true
 babeld.@filter[0]=filter
 babeld.@filter[0].type=redistribute
 babeld.@filter[0].local=true
@@ -51,15 +56,73 @@ babeld.@filter[0].action=allow
 babeld.@filter[1]=filter
 babeld.@filter[1].type=redistribute
 babeld.@filter[1].local=true
-babeld.@filter[1].ip=fd64:2c08:9fa7::/48
+babeld.@filter[1].ip=2001:470:b2a7::/48
 babeld.@filter[1].action=allow
 babeld.@filter[2]=filter
 babeld.@filter[2].type=redistribute
-babeld.@filter[2].if=wlan0
-babeld.@filter[2].action=metric 128
+babeld.@filter[2].local=true
+babeld.@filter[2].action=deny
+"""]]
+
+## Point d'accès
+
+ * Adresse IPv4 172.16.1.188/32 sur br-lan (point-à-point, routage par Babel seulement)
+ * Adresse IPv4 192.168.8.1/24 sur wlan0 pour les clients
+ * Adresse IPv6 2001:470:b2a7:2::1/64 sur br-lan (fe80::fad1:11ff:fe91:218/64) et wlan0 (fe80::fad1:11ff:fe91:218/64)
+ * Route IPv6 statique 2001:470:b2a7:1::/64 via 2001:470:b2a7:1::1 sur wlan0 pour lien avec laptop et VPN.
+
+[[!format txt """
+babeld.@general[0]=general
+babeld.@general[0].local_server=33123
+babeld.wlan0=interface
+babeld.lan=interface
+babeld.@filter[0]=filter
+babeld.@filter[0].type=redistribute
+babeld.@filter[0].local=true
+babeld.@filter[0].ip=192.168.8.0/24
+babeld.@filter[0].le=24
+babeld.@filter[0].proto=2
+babeld.@filter[0].action=allow
+babeld.@filter[1]=filter
+babeld.@filter[1].type=redistribute
+babeld.@filter[1].local=true
+babeld.@filter[1].ip=172.16.0.0/12
+babeld.@filter[1].action=allow
+babeld.@filter[2]=filter
+babeld.@filter[2].type=in
+babeld.@filter[2].ip=2001:470:b2a7::/48
+babeld.@filter[2].action=deny
 babeld.@filter[3]=filter
 babeld.@filter[3].type=redistribute
+babeld.@filter[3].local=true
 babeld.@filter[3].action=deny
+"""]]
+
+## Laptop/VPN (à remplacer avec serveur rackmount)
+
+ * Adresse IPv4 172.16.1.88/32 sur mesh (VPN)
+ * Adresse IPv4 192.168.8.222/24 sur wlan1 obtenue du point d'accès par DHCP.
+ * Adresse IPv6 2001:470:b2a7:1::1/64 sur wlan1 (fe80::21d:fff:feb5:917f/64) et mesh (fe80::5c70:7ff:feba:17aa/64).
+ * VPN vers [[nodes/roadkiller]]
+
+Le fichier de configuration Babel est un peu compliqué pour s'assurer que Babel ne fasse pas passer le VPN par le VPN...
+
+[[!format txt """
+redistribute local ip 172.16.0.0/12
+redistribute local proto 2 ip 2001:470:b2a7:1::/64 le 64 allow
+redistribute local proto 2 ip 2001:470:b2a7:2::/64 le 64 allow
+redistribute local deny
+redistribute deny
+in ip 172.16.0.0/12
+in ip fd64:2c08:9fa7::/48
+in ip 2607:f2c0:f00f::/48
+in ip 72.0.72.144/32 deny
+in ip 192.168.1.0/24 deny
+in ip 2001:1928:1:9::/128 deny
+in ip 2001:1928:1:9::/64 deny
+in if reseaulibre metric 512
+interface wlan1 rxcost 96
+interface mesh rxcost 512
 """]]
 
 ## Extras
