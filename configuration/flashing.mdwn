@@ -39,13 +39,13 @@ architecture dans la [cible brcm47xx](http://downloads.openwrt.org/backfire/10.0
 
 Bullet M2
 : [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-bullet-m-squashfs-factory.bin) (non-recommandé pour B.A.T.M.A.N)
-: trunk: [factory](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-jffs2-factory.bin) pour la première fois, [sysupgrade](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin) ensuite.
+: attitude_adjustment_beta [factory](http://downloads.openwrt.org/attitude_adjustment/12.09-beta/ar71xx/generic/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin) pour la première fois, [sysupgrade](http://downloads.openwrt.org/attitude_adjustment/12.09-beta/ar71xx/generic/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin) ensuite.
 
 See the excellent flashing guide on the Ubiquiti wiki: [Installing OpenWRT on NanoStations/Bullets](http://wiki.ubnt.com/Installing_OpenWRT_on_NanoStations/Bullets).
 
 Nanostation M2
 : [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin)
-: [trunk](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
+: [attitude_adjustment_beta](http://downloads.openwrt.org/attitude_adjustment/12.09-beta/ar71xx/generic/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
 
 TP-Link 1043ND
 : [backfire](http://downloads.openwrt.org/snapshots/backfire/10.03.1/ar71xx/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
