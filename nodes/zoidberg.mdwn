@@ -39,7 +39,7 @@ Panorama
 : À venir bientôt!
 
 Status
-: [[!taglink planned]]
+: [[!taglink up]]
 
 Operator
 : [[users/gboudrias]]
@@ -47,7 +47,7 @@ Operator
 Links
 : None yet :(
 
-This node will run Babel.
+This node runs Babel. Not yet fully configured yet.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
