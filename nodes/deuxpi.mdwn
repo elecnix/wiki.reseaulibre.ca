@@ -112,10 +112,6 @@ redistribute local ip 172.16.0.0/12
 redistribute local proto 2 ip 2001:470:b2a7:1::/64 le 64 allow
 redistribute local proto 2 ip 2001:470:b2a7:2::/64 le 64 allow
 redistribute local deny
-redistribute deny
-in ip 172.16.0.0/12
-in ip fd64:2c08:9fa7::/48
-in ip 2607:f2c0:f00f::/48
 in ip 72.0.72.144/32 deny
 in ip 192.168.1.0/24 deny
 in ip 2001:1928:1:9::/128 deny
