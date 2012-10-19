@@ -33,7 +33,7 @@ IPv6: ..
 
     # base
     uci delete wireless.radio0.disabled
-    uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
+    uci set wireless.@wifi-iface[0].ssid=latakia.relais.reseaulibre.ca
     uci set system.@system[0].hostname=latakia
 
     # connexion réseau local
@@ -45,33 +45,33 @@ IPv6: ..
     uci delete wireless.@wifi-iface[0].network
     uci set wireless.radio0.channel=1
     uci set wireless.@wifi-iface[0].mode=adhoc
-    uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
+    uci set wireless.@wifi-iface[0].ssid=latakia.relais.reseaulibre.ca
     uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
     uci set network.wlan0=interface
     uci set network.wlan0.ifname=wlan0
     uci set network.wlan0.proto=none
-    uci set network.wlan0.mtu=1528
+    uci set network.wlan0.mtu=1500
     
     # packages pour batman et babel
     opkg update
-    opkg install kmod-ipv6 kmod-batman-adv babeld
+    opkg install kmod-ipv6 babeld iperf ip
 
-    #batman
-    uci set network.bat0=interface
-    uci set network.bat0.ifname=bat0
-    uci set network.bat0.proto=none
-    uci set network.bat0.mtu=1500
-    
-    uci set network.bat0.ipaddr=172.16.1.42
-    uci set network.bat0.proto=static
-    uci set network.bat0.netmask=255.255.0.0
-    
-    uci set batman-adv.bat0.interfaces="wlan0"
     uci commit
     reboot
-    
 
-    # ipv6
+    uci set babeld.@general[0]=general
+    uci set babeld.@general[0].local_server=33123
+    uci set babeld.@filter[0]=filter
+    uci set babeld.@filter[0].type=redistribute
+    uci set babeld.@filter[0].local=true
+    uci set babeld.@filter[0].action=deny
+    uci set babeld.@filter[1]=filter
+    uci set babeld.@filter[1].type=redistribute
+    uci set babeld.@filter[1].action=deny
+    uci set babeld.wlan0=interface
+    uci set babeld.eth0=interface
+
+    # ipv6 radvd ??
     uci set radvd.@interface[0]=interface
     uci set radvd.@interface[0].interface=wifi
     uci set radvd.@interface[0].AdvSendAdvert=1
