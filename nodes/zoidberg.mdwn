@@ -49,6 +49,10 @@ Links
 
 This node runs Babel. Not yet fully configured yet.
 
+## Panorama
+[[!img 2012-10-18-zoidberg.jpg align="left" size="950x" alt="Panorama montrant au loin les édifices autour du Parc Lafontaine, le centre-ville, un arbre, un gros édifice, le Mont-Royal, le conservatoire d'art dramatique, les édifices du Mile-End, les cheminées de l'incinérateur, un arbre, le stade olympique, et la maison de la culture en face du métro Mont-Royal."]]
+
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
