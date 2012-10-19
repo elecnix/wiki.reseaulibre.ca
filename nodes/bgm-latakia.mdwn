@@ -126,6 +126,16 @@ IMPORTANT: 2607:f2c0:f00f:2900::1/56 doit être assigné à une interface résea
 
 Configurer ça comme ça permet d'exporter une seule entrée pour tout mon réseau.
 
+    # Route pour Homs
+    #  homs.net4.bidon.ca = 2607:f2c0:f00f:29a1::1/64
+    #  upstream: 2607:f2c0:f00f:2910:215:6dff:fe73:942f
+    ip route add 2607:f2c0:f00f:29a1::/64 via fe80::215:6dff:fe73:942f dev eth1
+
+    # Route pour Alep
+    #  alep.net4.bidon.ca = 2607:f2c0:f00f:29a2::1/64 (voisin) et 2607:f2c0:f00f:29a5::1/64 (wifi)
+    ip -6 route add 2607:f2c0:f00f:29a2::/64 via fe80::f6ec:38ff:feb5:db2b dev eth1
+    ip -6 route add 2607:f2c0:f00f:29a5::/64 via fe80::f6ec:38ff:feb5:db2b dev eth1
+
 ## Routeur voisinage "alep" (OpenWRT)
 
     babeld.@general[0]=general
@@ -142,6 +152,8 @@ Configurer ça comme ça permet d'exporter une seule entrée pour tout mon rése
 
 i.e. on écoute sur les interfaces câblées, et on ne redistribue pas de routes. Ça va relayer celle de 'damas' automatiquement.
 Ce routeur a du wifi (wlan0), mais c'est du WPA2 pour les visiteurs, ce n'est pas un AP ouvert, donc pas besoin d'y rouler babel.
+
+NB: désactiver "iptables", sinon ça bloque le routage par défaut.
 
 ## Routeur nanostation "homs" (OpenWRT)
 
