@@ -13,8 +13,8 @@ The goal of this project is to create a community wireless network accessible fr
 Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre chaque étape. Ceci devrait se résumer à:
 
 1. [[Installation de OpenWRT|configuration/flashing/]]
-2. [[Configurer OpenWRT avec Batman|guides/openwrt+batman]]
-3. [[Configurer IPv6|guides/ipv6]] (optionnel)
+2. [[Configurer Babel|configuration/babel/]] (jadis nous utilisions [[Batman|guides/openwrt+batman]])
+3. [[Configurer IPv6|guides/ipv6]]
 
 ou
 
