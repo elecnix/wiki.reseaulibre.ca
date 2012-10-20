@@ -17,11 +17,9 @@ Installation
 OpenWRT
 -------
 
-Install babel:
+Install babel and the [[ipv6|documentation/ipv6]] kernel module:
 
-    opkg install babeld
-
-/!\ Warning: You need IPV6 modules installed (but not necessarily functionnal) in order to have babel working.
+    opkg install babeld kmod-ipv6
 
 Configure the wireless interface with a test IP (follow the [[ip configuration|ip]] to make those settings peristent, but make sure to use `255.255.255.255` as a netmask):
 
