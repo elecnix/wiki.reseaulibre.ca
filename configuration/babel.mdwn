@@ -14,7 +14,7 @@ Installation
 OpenWRT
 -------
 
-If you have not yet installed OpenWRT on your router, see: [[flashed|flashing]]. It must also have the correct [[ad-hoc]] wireless configuration to link with other devices.
+If you have not yet installed OpenWRT on your router, see [[flashing]]. It must also have the correct [[ad-hoc]] wireless configuration to link with other devices.
 
 Install babel and the [[ipv6|configuration/ipv6]] kernel module:
 
@@ -28,7 +28,7 @@ To start babel on the console for testing:
 
     babeld -d1 wlan0
 
-Note how you specify the interface names directly on the commandline. The output should already show you neighbors, if there are any.
+Note how you specify the interface names directly on the command line. The output should already show you neighbors, if there are any.
 
 To make sure that babel starts on boot on the wireless interface:
 
