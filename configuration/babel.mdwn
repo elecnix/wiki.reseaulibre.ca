@@ -1,13 +1,10 @@
 [[!meta title="Babel configuration notes"]]
 
-Before following those steps, we assume that you have [[flashed|flashing]] your device and created a link with another device, for example with the [[ad-hoc]] configuration.
+Babel is a routing protocol. It allows everyone to "announce" their routes (your local network prefix), or it can simply relay routing information to the other nodes. It works well on a wireless mesh network as well as on a wired network.
 
-Once you have followed this configuration, make sure you have a persistent [[IP configuration|ip]] by following the [[ip configuration pages|ip]].
+In the simplest configuration, your babel node might simply "relay" information and very little configuration is required. With IPv6, every device has a link-local address, and this is sufficient to route. If you also want to route IPv4 (ex: to share your Internet access to the general public), you will have to assign an IPv4 address to your device.
 
-(!) We are in the process of testing
-[Babel](http://www.pps.univ-paris-diderot.fr/~jch/software/babel/) to
-replace [[batman]]. A few of us are running both in dual stack, but we
-are likely to switch to babel after this evaluation period.
+If you want to expose your local network to the mesh, you will probably want your devices to only relay routing information, and install babel on your main router. This way, all computers connected to that router will be able to access the mesh. We will talk more about routing later.
 
 [[!toc levels=3]]
 
@@ -16,6 +13,8 @@ Installation
 
 OpenWRT
 -------
+
+If you have not yet installed OpenWRT on your router, see: [[flashed|flashing]]. It must also have the correct [[ad-hoc]] wireless configuration to link with other devices.
 
 Install babel and the [[ipv6|documentation/ipv6]] kernel module:
 
