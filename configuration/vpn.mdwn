@@ -28,14 +28,14 @@ you first need to create that:
 
 Here we have created the `hosts` directory that will hold the node
 configurations for the `reseaulibre` network. Then we need to create a
-configuration file for this host in /etc/tinc/reseaulibre/tinc.conf:
+configuration file for this host in `/etc/tinc/reseaulibre/tinc.conf`:
 
     Name = roadkiller
     Mode = switch
 
-This is necessary on FreeBSD:
-
-    Device = /dev/tap0
+> (!) This is necessary on FreeBSD:
+> 
+>     Device = /dev/tap0
 
 The above configuration defines the current host, but we
 need to create a configuration file in `hosts` on every
@@ -51,7 +51,7 @@ And this is for my laptop in `hosts/angela`:
 Note that we should *not* put `Subnet` blocks here since we are in
 switch mode, see
 [this post](http://www.tinc-vpn.org/pipermail/tinc/2012-September/003029.html)
-for the source.
+for a discussion about this.
 
 SSL certificates
 ----------------
