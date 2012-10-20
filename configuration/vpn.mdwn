@@ -61,6 +61,10 @@ SSL certificates are created with this command in the `1.0` serie
 
     tincd -n reseaulibre -K
 
+For the new version of tinc:
+
+    tincctl -n reseaulibre generate-keys
+
 This will create a private key for the host in
 `reseaulibre/rsa_key.priv` and add the public key material to the
 `hosts/roadkiller` configuration file.
