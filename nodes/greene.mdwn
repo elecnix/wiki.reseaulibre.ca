@@ -3,7 +3,7 @@
 L'accès au toit est autorisé par le propriétaire, et permettrait de faire un lien entre le haut et le bas de la côte. Cependant, quelqu'un doit fournir l'antenne.
 
 [[!ymlfront data="""
-MAC: DC:9F:DB:00:13:4C
+MAC: 
 IP: 172.16.0.20
 IPv6: 
 """]]
