@@ -39,7 +39,7 @@ Azimuth
 : 360°
 
 Status
-: [[!taglink planned]] (can also be up, down, planned, unknown)
+: [[!taglink up]] (can also be up, down, planned, unknown)
 
 Operator
 : [[users/elecnix]]
