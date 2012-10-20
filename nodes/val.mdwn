@@ -2,18 +2,47 @@
 
 Antenne planifiée sur le toit d'un édifice de deux étages, à la fin de septembre 2012.
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software:
- * Hardware:
- * Power:
- * Location:
- * Status: [[!taglink planned]]
- * Links:
- * Azimuth:
- * Panorama:
- * Operator: [[users/elecnix]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: 00:B0:C0:02:1C:53
+IP: 172.16.0.23
+IPv6: fd66:66:66:0:de9f:dbff:fe00:134c
+"""]]
+
+hostname
+: val
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: Bullet
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: Roof
+
+Azimuth
+: 360°
+
+Status
+: [[!taglink planned]] (can also be up, down, planned, unknown)
+
+Operator
+: [[users/elecnix]]
 
 ## Liens possibles
 
