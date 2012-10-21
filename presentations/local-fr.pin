@@ -1,0 +1,183 @@
+#!/usr/bin/env pinpoint
+
+[white] [center]
+
+-- [NetworkTopology-Mesh.png]
+
+Réseau Libre - un réseau Mesh @ Montréal
+
+# translate
+# explain how mesh montreal was unclear
+#
+# presentation designed for international audience, in english
+
+-- [latakia-nice.jpg]
+
+# what is a mesh?
+# long tradition 
+# IP network (Internet Protocol)
+
+Un réseau maillé?
+
+✔ independant
+✔ local
+✔ décentralisé
+✔ non-commercial
+
+-- [questionmark.jpg] [top-right]
+
+Pourquoi?
+
+-- [questionmark.jpg]
+
+• Contrôle citoyen
+• Services locaux
+• Services d'urgences
+• Sans censure
+• Parce qu'on peut...
+
+# vs corporate
+# vs television / hierarchical internet, freedombox
+# it's fun
+# not necessarily internet
+
+--
+
+Qui &amp; Où?
+
+# who and where
+# just skip this slide
+
+-- [map_sample.png] [bottom]
+
+✔ ~30 noeuds
+✔ ~20 bénévoles
+✔ débuté en 2012
+
+# two clusters ~30 nodes
+# VPN connected (tinc)
+# mailing list: 70
+# date de naissance:
+# wiki: 10 octobre 2011
+# premier meeting: février 2012
+
+-- [map_sample.png] [command=firefox http://wiki.reseaulibre.ca/ikiwiki.cgi?map=map\&do=osm\&zoom=12\&lat=45.5227\&lon=-73.59554\&layers=BT]
+
+# montrer la carte ici, dans un browser si possible
+
+
+-- 
+
+Organisation
+
+• Politique
+• Technique
+-- [hemicycle.jpg] [bottom]
+ 
+Politiques
+
+✔ consensus
+✔ propositions par courriels
+✔ logiciel libre
+
+# concensus des opérateurs
+# décision: propositions par emails
+# logiciel libre
+# no formal corporation
+# story: bootstrapping the collectivity
+
+
+-- [fnf.png] [font=Monospace 100px]
+
+5 libertés
+
+Free Network Foundation
+ ✽ Participer
+ ✽ Où les données sont stockées
+ ✽ Avec qui partager
+ ✽ Sans interférence
+ ✽ Identité / anonymat
+
+#Freedom 0: organize cooperative networks.
+#Freedom 1: own the material stores of your data.
+#Freedom 2: control access to your data.
+#Freedom 3: speak freely with your peers. No interception or censorship
+#Freedom 4: maintain anonymity / present a unique, trusted identity
+
+-- [spiral.jpg]
+
+Picopeer agreement
+
+• Transit libre
+• Communication ouverte
+• Aucune garantie
+• Conditions d'utilisation
+-- [bottom] [../hardware/routers/kit-bullet-m2.jpg]
+
+Protocoles, matériels et services
+
+-- 
+Protocoles
+✔ ad-hoc 802.11n
+✔ olsr
+ ✔ BATMAN
+  ✔ babel
+
+# tech: 1/2
+# olsr -> batman -> babel/robin -> bmx/unicycle ... ?
+# unclear what to choose: let's fix this!
+
+-- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
+
+-- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
+
+Matériel
+✔ Ubiquity, TP-Link, etc...
+✔ OpenWRT
+
+
+# hardware: off-the-shelf, ~150$
+# où: sur les toits, avec une vue
+
+-- [latakia-nice.jpg] [top-right]
+
+✔ Accès &amp; relais
+✔ IPv6
+✔ allocation IP manuelle
+✔ wiki décentralisé
+
+# tech: 2/2
+# relai: babel + adhoc
+# accès: mode managed + DHCP et NAT ou IPv6
+# IPv6
+# allocation ip: first come first serve
+# wiki: git, redundant => decentralised
+# + openstreetmap
+
+-- [grumman78_flick.jpg][shading-opacity=1.000000] [bottom-right]
+
+Services
+
+# "doodle"
+# wikipedia
+# OSM
+# torrents
+# microblogging
+
+
+-- 
+
+Impliquez-vous!:
+
+✽ Installez une antenne
+✽ Design graphique
+✽ Documentation
+✽ Outils!
+
+<span size="xx-small">[insert nice logo here]</span>
+
+-- [grace-win.jpg] [bottom]
+
+Questions / discussion 
+
+# rappeler l'adresse du site: reseau libre point c a
