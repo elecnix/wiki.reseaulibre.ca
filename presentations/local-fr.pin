@@ -5,13 +5,14 @@
 -- [NetworkTopology-Mesh.png]
 
 Réseau Libre - un réseau Mesh @ Montréal
-
+         
+           http://wiki.reseaulibre.ca/
 # translate
 # explain how mesh montreal was unclear
 #
 # presentation designed for international audience, in english
 
--- [latakia-nice.jpg]
+-- [latakia-nice.jpg][fill]
 
 # what is a mesh?
 # long tradition 
@@ -23,6 +24,16 @@ Un réseau maillé?
 ✔ local
 ✔ décentralisé
 ✔ non-commercial
+
+-- 
+Ailleurs dans le monde?
+
+• Europe (Allemagne, Grèce)
+• Amérique du Nord (Seatle, Toronto)
+• Amérique du Sud
+• Afrique, asie
+
+
 
 -- [questionmark.jpg] [top-right]
 
@@ -41,7 +52,7 @@ Pourquoi?
 # it's fun
 # not necessarily internet
 
---
+-- [DSC_0176.JPG][top-right]
 
 Qui &amp; Où?
 
@@ -61,12 +72,12 @@ Qui &amp; Où?
 # wiki: 10 octobre 2011
 # premier meeting: février 2012
 
--- [map_sample.png] [command=firefox http://wiki.reseaulibre.ca/ikiwiki.cgi?map=map\&do=osm\&zoom=12\&lat=45.5227\&lon=-73.59554\&layers=BT]
+-- [map_sample.png] [command=epiphany http://wiki.reseaulibre.ca/ikiwiki.cgi?map=map\&do=osm\&zoom=12\&lat=45.5227\&lon=-73.59554\&layers=BT]
 
 # montrer la carte ici, dans un browser si possible
 
 
--- 
+-- [scientist-toit.jpg] [fill]
 
 Organisation
 
@@ -164,8 +175,12 @@ Services
 # torrents
 # microblogging
 
+-- [DSC_0295.JPG][top]
 
--- 
+Impliquez-vous!
+
+
+-- [DSC_0295.JPG]
 
 Impliquez-vous!:
 
@@ -178,6 +193,7 @@ Impliquez-vous!:
 
 -- [grace-win.jpg] [bottom]
 
-Questions / discussion 
+Questions / discussion
+  wiki.reseaulibre.ca
 
 # rappeler l'adresse du site: reseau libre point c a
