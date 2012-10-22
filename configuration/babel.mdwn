@@ -232,6 +232,8 @@ To print the current status only (instead of sending the USR1 kill signal to the
 
     nc :: 33123 | awk '{ if (/add/ || /BABEL/) { print } else { exit } }'
 
+You can also use the babelstatus.sh script to dump a slightly more readable output: https://gist.github.com/3547685
+
 Tcpdump groks Babel starting with version 4.2.1. Wireshark has support since version 1.6.0.
 
 Also, during your tests, give some time for Babel to
