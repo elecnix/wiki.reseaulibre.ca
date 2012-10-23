@@ -75,7 +75,8 @@ IP allocation
 Each host in the network needs to have an IP allocated in the
 mesh. This IP is assigned to the interface, so it needs to be
 different than existing IPs you have configured on your network. This
-is defined in the `tinc-up` startup script (to be put in /etc/tinc/reseaulibre/):
+is defined in the `tinc-up` startup script (to be put in
+`/etc/tinc/reseaulibre/`):
 
     ifconfig $INTERFACE 172.16.242.43 netmask 255.255.255.255 up
 
