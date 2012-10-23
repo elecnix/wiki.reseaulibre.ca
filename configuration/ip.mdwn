@@ -1,5 +1,5 @@
 [[!meta title="Internet protocols configuration"]]
-[[!meta description="Includes information about IP addresses, IPv6 and routing"]]
+[[!meta description="Includes information about IP addresses and routing"]]
 
 [[!toc levels=3]]
 
@@ -31,62 +31,6 @@ example.
 Commit changes and reboot:
 
     uci commit ; reboot & exit
-
-### IPv6
-
-IPv6 on OpenWRT requires a bit more effort.
-
-First, install necessary packages on OpenWRT:
-
-    opkg update
-    opkg install kmod-ipv6 radvd ip kmod-ip6tables ip6tables
-
-Then configure a static IP address:
-
-    uci set network.lan.ip6addr="fd64:2c08:9fa7:1::2/64"
-
-Finally the following will make sure that clients can autoconfigure:
-
-    uci set radvd.@interface[0].ignore=0
-    uci set radvd.@prefix[0].ignore=0
-    uci set radvd.@prefix[0].AdvRouterAddr=1
-    uci set radvd.@prefix[0].prefix=fd64:2c08:9fa7:1::2/64
-    /etc/init.d/radvd enable
-
-> *You could also replace the above by the following to make the LAN
-> interface autoconfigure if there is another router present:*
-    
-        uci set network.lan.accept_ra=1
-        uci set network.lan.send_rs=1
-
-Make sure the IPv6 firewall is enabled:
-
-    uci set firewall.defaults.disable_ipv6=0
-
-Commit changes and reboot:
-
-    uci commit ; reboot & exit
-
-To enable routing, put this in your `/etc/sysctl.conf`:
-
-    net.ipv6.conf.all.forwarding=1
-
-#### Other howtos
-
- * [Freifunk Mesh6 documentation](http://wiki.freifunk.net/6mesh.freifunk.net)
- * [OpenWRT IPv6 howto](http://wiki.openwrt.org/doc/howto/ipv6)
- * [OpenWRT config/network reference](http://wiki.openwrt.org/doc/uci/network)
- * [SixXS.net guide to OpenWRT and IPv6](https://www.sixxs.net/wiki/Configuring_OpenWRT_on_an_NSLU2)
-
-#### Useful tools
-
-Force discovery
-
-    rdisc6 bat0
-
-Show existing nodes
-
-    ip -6 neigh
 
 ## FreeBSD
 

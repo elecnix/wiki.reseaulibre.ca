@@ -63,6 +63,58 @@ Ou les transfers scp:
 
 Dans les exemples ci-dessus on a spécifié l'interface réseau (wlan0). Les adresses sont locales (non-routables), donc le système d'exploitation ne saura pas nécessairement par quelle interface envoyer les données. Cependant, si on vient de faire un ping multicast et que l'adresse est encore dans la cache du système, on n'a pas besoin de spécifier l'interface.
 
+
+Forcer la découverte de routeurs et autres appareils sur le réseau:
+
+    rdisc6 bat0
+
+(!) Ceci peut changer l'addresse IPv6 si un nouveau routeur est trouvé!
+
+### Configurer un routeur
+
+Il est possible de configurer votre machine comme un "routeur", c'est
+à dire qu'il s'annonce sur le réseau et distribue des adresses, un peu
+comme un serveur DHCP en IPv4. Ceci se fait avec le service `radvd`:
+
+    opkg install radvd
+
+Then configure a static IP address:
+
+    uci set network.lan.ip6addr="fd64:2c08:9fa7:1::2/64"
+
+Finally the following will make sure that clients can autoconfigure:
+
+    uci set radvd.@interface[0].ignore=0
+    uci set radvd.@prefix[0].ignore=0
+    uci set radvd.@prefix[0].AdvRouterAddr=1
+    uci set radvd.@prefix[0].prefix=fd64:2c08:9fa7:1::2/64
+    /etc/init.d/radvd enable
+
+> *You could also replace the above by the following to make the LAN
+> interface autoconfigure if there is another router present:*
+    
+        uci set network.lan.accept_ra=1
+        uci set network.lan.send_rs=1
+
+Make sure the IPv6 firewall is enabled:
+
+    uci set firewall.defaults.disable_ipv6=0
+
+Commit changes and reboot:
+
+    uci commit ; reboot & exit
+
+To enable routing, put this in your `/etc/sysctl.conf`:
+
+    net.ipv6.conf.all.forwarding=1
+
+### Other howtos
+
+ * [Freifunk Mesh6 documentation](http://wiki.freifunk.net/6mesh.freifunk.net)
+ * [OpenWRT IPv6 howto](http://wiki.openwrt.org/doc/howto/ipv6)
+ * [OpenWRT config/network reference](http://wiki.openwrt.org/doc/uci/network)
+ * [SixXS.net guide to OpenWRT and IPv6](https://www.sixxs.net/wiki/Configuring_OpenWRT_on_an_NSLU2)
+
 # Obtenir un bloc d'adresses IP
 
 Si votre fournisseur Internet en amont le supporte (ex: Teksavvy), c'est possible d'avoir une connexion IPv6 native (dual-stack avec ipv4). Par exemple, Teksavvy offre un block "/56", ce qui permet d'avoir 256 sous-réseaux de beaucoup de machines (256 * /32). On peut donc prendre un de ces sous-réseaux et l'annoncer par babel sur le mesh.
