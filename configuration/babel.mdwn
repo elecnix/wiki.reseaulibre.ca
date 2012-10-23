@@ -148,6 +148,14 @@ as babel will happily override existing routes in certain
 configurations. See the babeld manpage for more information on those
 rules.
 
+Blocking some announcements
+---------------------------
+
+The above will announce all routes, which is really not desirable sometimes, as it may leak your private LAN. To block such addresses, try:
+
+    redistribute ip 192.168.1.0/24 deny
+    redistribute local ip 192.168.1.0/24 deny
+
 Complex router
 --------------
 
