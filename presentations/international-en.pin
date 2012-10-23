@@ -67,7 +67,7 @@ Who &amp; where?
 
 -- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
 
-✔ ad-hoc 802.11n
+✔ ad-hoc 802.11[b,g]
 ✔ olsr / Babel / BATMAN
 ✔ Ubiquity, TP-Link
 ✔ OpenWRT
