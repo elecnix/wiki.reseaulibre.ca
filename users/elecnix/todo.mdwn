@@ -1,4 +1,5 @@
 * Rédaction du rapport de Barcelone
+* Récupérer vidéo d'installation de val
 * Installer qMp sur un Bococom
 * Remplacer câble ethernet grace
 * Brancher bb
