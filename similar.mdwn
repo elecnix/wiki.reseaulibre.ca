@@ -14,6 +14,7 @@ This project is inspired, guided and sometimes in communication with the followi
 * <http://www.awmn.net/> - Athens Wireless Metropolitan Network, Grèce, [1500 batman/olsr nodes WiND map](http://wind.awmn.net/?page=nodes)
 * <http://twmn.net/> - Thessaloniki's Wireless Metropolitan Network, Grèce [450 olsrd? nodes WiND map](http://wind.twmn.net/?page=nodes)
 * <http://ninux.org/> - Ninux, Italie [120 OLSR nodes](http://map.ninux.org/)
+* <http://wlan-si.net> - wlan slovenija, concepteurs du projet <http://dev.wlan-si.net/wiki/Nodewatcher>
 
 #Asie
 * <http://fabfi.fabfolk.com/> - Afghanistan et Kénia
