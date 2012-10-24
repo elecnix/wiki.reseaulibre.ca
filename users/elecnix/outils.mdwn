@@ -1,4 +1,5 @@
 À apporter lors d'une installation:
+
 * Coffre à outils
  * Fer à souder électrique, avec étain
  * Fer à souder au butane, avec briquet
