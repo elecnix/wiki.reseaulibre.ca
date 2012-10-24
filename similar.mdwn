@@ -28,6 +28,7 @@ This project is inspired, guided and sometimes in communication with the followi
 #Amérique du Nord
 * <http://www.communifi.ca> - Mesh project in Toronto (in planning stage)
 * <http://www.pandaboard.org/content/pandamesh> - PandaMesh, Northern Utah
+* <https://personaltelco.net/> - Personal Telco Project, Portland, Oregon
 * <http://seattlemeshnet-nodeshot.appspot.com/> - Seattle Meshnet
 
 #Amérique du sud et centrale
