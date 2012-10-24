@@ -1,5 +1,7 @@
-* Brancher bb
+* Rédaction du rapport de Barcelone
+* Installer qMp sur un Bococom
 * Remplacer câble ethernet grace
+* Brancher bb
 * Flasher jojo en qMp
 * Installer capitaine
 * Installer omni 15 dbi @ besik (Bullet?)
