@@ -5,7 +5,9 @@ Noeud prevu sur mon toit, 2e etage.
 
 [[!ymlfront data="""
 MAC: DC:9F:DB:06:D5:A9
-IP: 172.16.0.172 et 172.16.0.171 pour accès temporaire
+IP: 
+- 172.16.0.172 
+- 172.16.0.171 
 IPv6: 
 """]]
 
