@@ -1,0 +1,39 @@
+# Intro
+
+qMp est un firmware basé sur OpenWRT. Il y a un certain consensus d'essayer qMp pour le mesh, étant donné ses belles interfaces et son config wizard qui rend le tout un peu plus accessible pour les gens moins techniques.
+
+# Problèmes et todo
+
+* Manque de documentation, particulièrement lié à Babel. Il faut documenter les différentes config. Il y a un bon début dans [[configuration/babel]], mais rien qui ne fait référence à qMp et ses nombreuses interfaces.
+* qMp, en tout cas les images précompilées, utilise actuellement la version Backfire de OpenWRT. (Ancienne version.) Il y a des tests en cours avec une version plus récente (?)
+* Pas encore d'utilisation unanime sur le mesh malgré le consensus. Il y a un problème d'oeuf/poule parce qu'il faut des utilisateurs pour documenter. Ce n'est pas tragique vu que qMp bien configuré devrait parler à toute machine babel, mais si on veut atteindre notre but d'améliorer l'accessibilité, il faut qu'il y ait un bon support local, et donc beaucoup d'utilisateurs.
+
+# Configurer qMp
+
+Voici les étapes à suivre pour configurer qMp avec Babel pour être compatible avec le reste du mesh.
+
+## Préalables
+
+* Créer un node planned.
+* Réserver un IP. (Sur la page du node, mais voir [[policy/numbering]] pour les détails.)
+* Obtenir un routeur compatible qMp (tous les routeurs compatibles OpenWRT devraient être compatibles qMp, mais ils n'ont pas tous des images précompilées).
+
+## Flasher
+
+Il faut [[flasher|configuration/flashing]] avec la bonne image de qMp.
+
+Puis, s'assurer d'avoir une connexion fonctionnelle (se connecter en root par SSH).
+
+Les credentials par défaut sur qMp:
+user: root
+password: 13f
+
+## Wizard
+
+Rouler le Wizard dans LuCI (interface web).
+
+TODO: Détails/screenshots.
+
+## Tweaking Babel
+
+???
