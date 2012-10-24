@@ -50,7 +50,11 @@ Operator
  * [[/nodes/jojo]]
  * [[/nodes/DELTA100]]
 
+## Panorama
+
 [[!img pano-val.jpg size=950x]]
+
+Haute résolution (sud-est): http://farm9.staticflickr.com/8332/8117677539_87f94377e9_o.jpg
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
