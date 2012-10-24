@@ -1,0 +1,37 @@
+À apporter lors d'une installation:
+* Coffre à outils
+ * Fer à souder électrique, avec étain
+ * Fer à souder au butane, avec briquet
+ * Espaceur (fait avec des rails de tablettes)
+ * Ruban électriqe
+ * Tire-fond
+ * Ancrages en plomb et en plastique
+ * Mèches (béton, métal) courtes et longues
+ * Clefs à cliquet
+ * Vis et boulons 1/4"
+ * Pince à "crimper"
+ * Pince à dénuder
+ * Couteau (X-Acto)
+ * Connecteurs RJ45 avec mise à la terre
+ * Tie-wraps
+ * Cordelette bleue
+ * Scie à métal à manuelle
+ * Attaches de plastique, avec vis auto-taraudeuses
+ * Équerres et plaques de métal variées
+ * Barres granola
+ * Lampe frontale
+* Boîte à lait
+  * Perceuse à percussion
+  * Rectifieuse
+* Routeur (Bullet) avec injecteur
+* Point d'accès (Bococom, TP-Link)
+* Antenne (avec son grément)
+* Mât (10 pieds ou plus court?)
+* Attaches d'antenne en V (au cas où)
+* Boîte de fil réseau extérieur
+* Échelle pliante
+* Dépliants
+* Laptop
+ * Transformateur
+ * Petit fil réseau
+* Téléphone cellulaire (appareil photo)
