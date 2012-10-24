@@ -1,14 +1,8 @@
-* Installer val
 * Brancher bb
 * Remplacer câble ethernet grace
-* Flasher lacou en Babel
-* Flasher jojo en Babel
+* Flasher jojo en qMp
 * Installer capitaine
 * Installer omni 15 dbi @ besik (Bullet?)
 * Installer omni cabanon @ elecnix (Bococom)
-* Remplacer Linksys G par routeur N
-
-Long-terme:
-
-* Installer un serveur http://sparkleshare.org/
-* AeroFS?
+* Remplacer Linksys G par routeur N, avec webcam
+* Installer motion
