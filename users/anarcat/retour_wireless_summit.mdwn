@@ -359,12 +359,7 @@ logiciel libre avec les revenus du domaine: qMp, guifiproxy (changeur
 de proxy automatique), partage d'un rack en centre de données,
 "Internet Exchange" neutre, etc.
 
-On note que ceci est possible car .cat est un registre *et* un
-registraire, c'est-à-dire que c'est eux qui vendent les domaines
-directement, contrairement à l'approche proposée par le "point Québec"
-qui se brasse présentement, où il s'agit de faire seulement un
-registre de domaines pour le Québec, sans nécessairement gérer les
-domaines directement.
+Ceci est possible car la fondation PuntCat, qui gère le nom de domaine, est un peu plus qu'un registre. Ils gèrent également les "glue records" du domaine et donc les serveurs pour le domaine .cat. Ils recoivent donc également des redevances pour les noms de domaines vendus qui finance cet hébergement.
 
 Quelques statistiques intéressantes du registre:
 
