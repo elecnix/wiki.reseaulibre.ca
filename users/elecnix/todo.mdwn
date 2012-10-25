@@ -1,6 +1,6 @@
 * Rédaction du rapport de Barcelone
 * Récupérer vidéo d'installation de val
-* Installer qMp sur un Bococom
+* Installer qMp sur un Bococom pour btm
 * Suivi de ma patch pour ajouter le support du Bococom dans OpenWrt
 * Brancher bb
 * Flasher jojo en qMp
