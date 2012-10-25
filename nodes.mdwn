@@ -25,6 +25,8 @@ Operational nodes
 
 Those are the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(up)"]] nodes marked as "up".
 
+<!-- for month in 03 04 05 06 07 08 09 10 11 ; do commit=`git log origin/master --until 2012-$month-01 -n 1 --format=oneline|cut -f 1 -d ' '` ; git checkout $commit 2> /dev/null ; count=`grep -r 'taglink up' nodes|wc -l` ; echo "2012-$month $count" ; done ; git checkout master -->
+
 <img src="https://chart.googleapis.com/chart?cht=bvg&chs=175x75&chd=t:5,5,13,17,1,20,29,30,35&chco=4D89F9,C6D9FD&chbh=10,1,6&chxt=x,y&chxl=0:|M|A|M|J|J|A|S|O|N"/>
 
 [[!inline pages="nodes/* and !*/*/* and !*/discussion and tagged(up)" archive=yes sort=title template=titlepage]]
