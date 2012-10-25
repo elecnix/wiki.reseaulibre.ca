@@ -25,6 +25,8 @@ Operational nodes
 
 Those are the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(up)"]] nodes marked as "up".
 
+<img src="https://chart.googleapis.com/chart?cht=bvg&chs=175x75&chd=t:5,5,13,17,1,20,29,30,35&chco=4D89F9,C6D9FD&chbh=10,1,6&chxt=x,y&chxl=0:|M|A|M|J|J|A|S|O|N"/>
+
 [[!inline pages="nodes/* and !*/*/* and !*/discussion and tagged(up)" archive=yes sort=title template=titlepage]]
 
 Nodes in maintenance
