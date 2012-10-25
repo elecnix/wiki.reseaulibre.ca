@@ -2,7 +2,6 @@
 * Récupérer vidéo d'installation de val
 * Installer qMp sur un Bococom
 * Suivi de ma patch pour ajouter le support du Bococom dans OpenWrt
-* Remplacer câble ethernet grace
 * Brancher bb
 * Flasher jojo en qMp
 * Installer capitaine
