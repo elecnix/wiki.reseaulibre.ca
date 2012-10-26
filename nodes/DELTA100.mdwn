@@ -8,7 +8,7 @@
 [[!ymlfront data="""
 MAC:
 - dc:9f:db:01:13:32
-- DC:9F:DB:00:13:5B
+- dc:9f:db:00:13:5b
 IP: 172.16.0.24
 IPv6:
 """]]
