@@ -1,4 +1,4 @@
-[[!waypoint lat="45.504972" lon="-73.61479" embed hidden width="400px" height="400px" right desc="My office window"]]
+
 
 [[!ymlfront data="""
 MAC: 00:12:17:d9:0f:7b
@@ -6,7 +6,7 @@ IP: 172.16.1.21
 """]]
 
 
-L'université a trouvé cette antenne et m'a demandé de la retirer. Je vais essayer de voir si on ne pourrait pas avoir un accès officiel au toit. 
+Cette antenne de test n'est plus disponible. Elle me sert pour tes démos à l'occasion. 
 
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
@@ -14,7 +14,7 @@ L'université a trouvé cette antenne et m'a demandé de la retirer. Je vais ess
  * Software: OpenWRT trunk
  * Hardware: Bococom 
  * Power:
- * Location: 4e étage du pavillon Lassonde, Polytechnique
+ * Location: 
  * Status: [[!taglink down]] 
  * Links: 
  * Azimuth:
