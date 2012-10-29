@@ -18,7 +18,7 @@ En face du Parc des Amériques :
 Bullet M2 + 15dBi à installer
 
 # NODE - r.relais.reseaulibre.ca
- * Status: [[!taglink planned]] 
+ * Status: [[!taglink up]] 
  * Hostname: r.relais.reseaulibre.ca
  * Location: 45.518629,-73.58219
  * Software: OpenWRT + (¿QmP?)
