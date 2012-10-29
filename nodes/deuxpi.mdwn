@@ -121,6 +121,43 @@ interface wlan1 rxcost 96
 interface mesh rxcost 512
 """]]
 
+## Serveur sur Quagga
+
+Il y a un bug présentement dans la version principale de Quagga qui empêche d'avoir une redistribution des routes sur IPv4 et IPv6 en même temps sur la même interface, alors la configuration suivante ne considère que IPv6.
+
+[[!format txt """
+! Fichier /etc/quagga/babeld.conf
+password zebra
+!
+access-list vty permit 127.0.0.0/8
+access-list vty deny any
+!
+line vty
+ access-class vty
+!
+debug babel common
+debug babel filter
+log file /var/log/quagga/babeld.log
+!
+router babel
+ network mesh
+ redistribute connected
+ redistribute kernel
+ distribute-list filter in mesh
+ distribute-list local out mesh
+!
+interface mesh
+ babel wired
+ babel split-horizon
+ babel hello-interval 4000
+ babel update-interval 16000
+!
+ipv6 access-list filter deny ::/4
+ipv6 access-list filter permit any
+ipv6 access-list local permit 2001:470:1f07:a98::/64
+ipv6 access-list local deny any
+"""]]
+
 ## Extras
 
 Pour obtenir la liste des noeuds connectés et leurs niveaux de signal respectifs, j'utilise le script [[bat-signal|https://gitorious.org/deuxpi-docs/deuxpi-docs/blobs/raw/master/bat-signal]]. Si le fichier [[configuration/batman/bat-hosts]] est disponible, le nom des noeuds sera affiché en plus de leur adresse MAC.
