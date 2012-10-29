@@ -1,5 +1,10 @@
 Pour voir les présentation .pin, il vous faut pinpoint:
-
 https://live.gnome.org/Pinpoint
 
-ou dans votre distribution préférée
+Avec Debian/Ubuntu:
+$ sudo apt-get install pinpoint
+
+Pour ouvrir une présentation:
+$ pinpoint foo.pin
+
+Le fichier ".pin" est en format texte UTF-8.
