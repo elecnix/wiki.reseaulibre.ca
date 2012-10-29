@@ -190,4 +190,5 @@ Fin de la chaîne.. wlan0 connecte à deuxpi par adhoc, eth0 connecte à "homs" 
 
 # Notes
 
-* Comment crimper avec les connecteurs "Tough cable": http://www.ubnt.com/downloads/datasheets/toughcable/TOUGHCable_Datasheet.pdf
+* Comment crimper avec les connecteurs "Tough cable": [[http://shop.varia-store.com/media/products/ubnt/ToughCable_QSG.pdf]]
+* "Tough cable" datasheet: [[http://www.ubnt.com/downloads/datasheets/toughcable/TOUGHCable_Datasheet.pdf]]
