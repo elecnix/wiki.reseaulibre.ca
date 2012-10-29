@@ -1,0 +1,328 @@
+#!/usr/bin/env pinpoint
+
+[white] [center]
+
+-- [NetworkTopology-Mesh.png]
+
+Réseau Libre - Introduction IPv6
+
+           http://www.reseaulibre.ca/
+
+-- [latakia-nice.jpg][fill]
+
+Un réseau maillé?
+
+✔ independant
+✔ local
+✔ décentralisé
+✔ non-commercial
+
+-- [questionmark.jpg]
+
+Pourquoi ?
+
+• Contrôle citoyen
+• Services locaux
+• Services d'urgences
+• Sans censure
+• Parce qu'on peut...
+
+-- [DSC_0176.JPG]
+
+✔ ~30 noeuds
+✔ ~20 bénévoles
+✔ débuté en 2012
+
+-- [hemicycle.jpg]
+ 
+Politiques
+
+✔ consensus
+✔ propositions par courriels
+✔ logiciel libre
+
+-- [fnf.png] [font=Monospace 100px]
+
+5 libertés
+
+Free Network Foundation
+ ✽ Participer
+ ✽ Où les données sont stockées
+ ✽ Avec qui partager
+ ✽ Sans interférence
+ ✽ Identité / anonymat
+
+-- [spiral.jpg]
+
+Picopeer agreement
+
+• Transit libre
+• Communication ouverte
+• Aucune garantie
+• Conditions d'utilisation
+
+-- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
+
+Comment ça marche ?
+
+• réseaux sans fil "ad-hoc" 802.11n
+• routage décentralisé avec Babel
+• petites machines Ubiquity, TP-Link
+• plein d'antennes sur les toits
+
+-- [latakia-nice.jpg] [top-right]
+
+-- [DSC_0295.JPG][top]
+
+-- [grace-win.jpg] [bottom]
+
+--
+
+IPv6 ?
+
+--
+
+• Plus flexible
+• Beaucoup d'adresses
+• "link-local" est pratique
+
+-- [ipv6-launch.jpg][bottom][font=Sans 18px]
+
+2012/06/06
+
+--
+
+Types d'adresses
+
+• Unicast
+• Multicast
+  • Broadcast n'existe plus
+• Anycast ("one to nearest", switchs)
+
+--
+
+Différences
+
+• 128 bits vs 32 bits
+• Entête simplifiée
+• ICMPv6/DHCPv6
+  • "neighbour discovery"
+  • auto-configuration
+• IPsec
+
+--
+
+Adresses
+
+• 128 bits séparés en 8 octets
+• Séparés par des ":"
+• Octets de 4 digits
+• En hexadécimal
+• Les "0" peuvent être consolidés (une fois)
+• Supporte les adresses IPv4
+  ::ffff:172.16.1.10
+
+--
+
+Ces adresses sont toutes identiques:
+
+• fd64:2c08:9fa7:0000:0001:0000:0000:0001
+• fd64:2c08:9fa7::0001:0000:0000:0001
+• fd64:2c08:9fa7::1:0:0:1
+• fd64:2c08:9fa7:0:1::1
+
+--[font=Monospace 50px][white]
+
+URL/URI
+
+• [fd64:2c08:9fa7:0:1::1]:80
+
+• http://[2002::3:1]:80/
+
+--[font=Monospace 50px][white]
+
+• localhost = 127.0.0.1 = ::1
+
+• any       = 0.0.0.0   = ::
+
+--[font=Monospace 50px][white]
+
+Préfixes IPv4:
+
+• Netmask 255.255.255.0 = /24
+• Netmask 255.255.0.0   = /16
+• Netmask 255.0.0.0     = /8
+
+--
+
+Préfixes IPv6:
+
+ • fc00::/8
+ • 2002::/3
+ • 2607:f2c0:f00f:2900::/56
+ • 3fff:ffff::/32
+ • ::1/128
+
+--
+
+Préfixes: Loopback ::1/128
+
+ • IPv4 était 127.0.0.1/24
+
+ • juste une adresse loopback IPv6
+
+--
+
+Préfixes: Link-local fe80::/10
+
+ • Toute interface a une adresse link-local
+
+ • Résolution par "scope id"
+
+--
+
+"Scope ID"
+
+ • S'applique seulement aux adresses non-globales
+ • Seulement valide pour la machine qui fait la requête
+  • n'est pas envoyé sur le réseau
+
+ • Postfixe %
+  • http://[fe80::1:2%eth0]:80/index.html
+  • ping6 fe80::1:2%eth0
+  • ping6 ff02::1%eth0
+
+--
+
+Préfixes: "Site-local" fec0::/10
+
+ • Équivalent à 192.168/16, 172/12, 10/8
+
+ • Désuet, remplacé par les adresses unique-local
+
+ • Peut quand même être utilisé (labo isolé)
+
+ • Pas pratique si deux réseaux sont fusionnés
+
+--
+
+Préfixes: "Unique-local" fc00::/8 et fd00::/8
+
+ • fc00::/8 = assignation par une authorité
+
+ • fd00::/8 = assignation aléatoire par RFC4193
+
+ • ne devraient pas être routables
+
+--
+
+Préfixes: "Global" 2000::/3
+
+• Publiquement accessibles
+
+• Expectative de ne pas avoir de NAT
+
+• Seulement un des 8 /3 est alloué
+
+--
+
+Préfixes: Tunnel IPv6 sur un réseau IPv4
+
+• "6to4" 2002::/16
+   les deux "endpoint" doivent avoir une adresse IP publique
+
+• Toredo 2001::/16
+   encapsule les paquets IPv6 dans IPv4 UDP
+   apt-get install miredo
+
+--
+
+Préfixes: "IPv4 mapped" ::ffff/96
+
+• ::ffff:10.67.10.12
+
+• dual stack
+
+• risques de sécurité (pare-feu)
+
+--
+
+Préfixes: Multicast
+
+• ff02::1 toutes les machines
+
+  ping6 ff02::1%eth0
+  ip -6 neigh show
+
+• ff02::2 tous les routeurs
+
+• ff02::1:2 serveurs DHCP (RFC3315)
+
+--
+
+IPv6 mobile
+
+• Permet de changer d'un réseau à un autre,
+  tout en gardant la même adresse IP, sans interruption.
+
+• Utilise une adresse de référence et les paquets sont
+  envoyés par un tunnel.
+
+--
+
+Radvd
+
+• Implémente les annonces link-local pour
+  annoncer des routes IPv6 par Neighbor
+  Discovery Protocol (NDP).
+
+• RFC 2461
+
+-- [font=Monospace 50px]
+
+interface eth1
+{
+  AdvSendAdvert on;
+
+  prefix 2607:f2c0:f00f:2910::/64
+  {
+    AdvOnLink on;
+    AdvAutonomous on;
+  };
+};
+
+-- [font=Monospace 50px]
+
+Permettre le « forwarding »
+
+/etc/sysctl.conf :
+net.ipv6.conf.all.forwarding=1
+
+\# sysctl -w net.ipv6.conf.all.forwarding=1
+
+-- [font=Monospace 50px]
+
+Ajouter une adresse statique à une interface:
+
+\# ip -f inet6 addr add add 2607:f2c0:f00f:2901::42 dev eth0
+
+-- [font=Monospace 50px]
+
+Ajouter une route:
+
+\# ip -6 route add 2607:f2c0:f00f:29a2::/64 \\
+   via fe80::f6ec:38ff:feb5:db2b dev eth1
+
+--
+
+Références
+
+Réseau Libre:
+http://www.reseaulibre.ca
+
+Tunnel Broker:
+http://www.tunnelbroker.net
+
+Présentation par Rob Green (Senior Engineer Voxeo)
+http://www.youtube.com/watch?v=tw8EyTlSDrc
+
