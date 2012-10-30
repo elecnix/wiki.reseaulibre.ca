@@ -40,7 +40,7 @@ Bullet M2 + 15dBi à installer
 
 ### Links
  * Links: [[R-nord]] (ethernet)
- * Planned: zoidberg (700 m)
+ * Links: [[zoidberg]] (~700 m)
 
 ### Vue vers le sud (montréalais)
 [[!img 2012-09-11-r-sud.jpg size=950x]]
