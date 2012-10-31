@@ -1,4 +1,4 @@
-[[!waypoint lat="45.48099 lon="-73.55025 embed hidden width="400px" height="400px" right desc="A node on a big building in PSC"]]
+[[!waypoint lat="45.48099" lon="-73.55025" embed hidden width="400px" height="400px" right desc="A node on a big building in PSC"]]
 
 /!\ Coordinates inaccurate.
 
