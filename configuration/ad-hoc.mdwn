@@ -47,7 +47,7 @@ Montreal mesh standards: channel 1, adhoc, named `reseaulibre.ca`. Il faut speci
     uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
     uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
 
-Configuration de l'interface sans-fil avec MTU plus élevé pour batman:
+(!) Optionnellement: configuration de l'interface sans-fil avec MTU plus élevé pour [[batman]]:
 
     uci set network.wlan0=interface
     uci set network.wlan0.ifname=wlan0
@@ -73,15 +73,15 @@ Découvrir quelle est l'interface réseau (ex: wlan0) :
 
 This will bring up your network interface:
 
+    ifconfig wlan0 down
     iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 1
     ifconfig wlan0 up
 
-Si vous avez une erreur avec le mode ad-hoc faire avant la commande:
+(!) Si vous avez une erreur avec le mode ad-hoc faire avant la commande:
 
-    ifconfig wlan0 up
     iwconfig wlan0 channel 1
 
-(!) Le mode Ad-Hoc n'est pas supporté avec les driver rtl8187 dans linux.
+/!\ Le mode Ad-Hoc n'est pas supporté avec les driver rtl8187 dans linux.
 
 Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. 
 
