@@ -25,12 +25,12 @@ Install babel and the [[ipv6|configuration/ipv6]] kernel module:
 > location where you got the images for [[flashing]]. Then you can
 > copy the packages on the router with the following ssh command:
 >
->     scp kmod-ipv6*.ipk babeld*.ipk librt*.ipkg root@192.168.1.1:
+>     scp libpthread*.ipk kmod-ipv6*.ipk babeld*.ipk librt*.ipk root@192.168.1.1:
 >     ssh root@192.168.1.1 "opkg install *.ipkg"
 
 Configure the wireless interface with a test IP (follow the [[ip configuration|ip]] to make those settings peristent, but make sure to use `255.255.255.255` as a netmask):
 
-    ifconfig wlan0 up 172.16.0.43/32
+    ifconfig wlan0 up 172.16.0.43 netmask 255.255.255.255
 
 To start babel on the console for testing:
 
@@ -43,9 +43,20 @@ To make sure that babel starts on boot on the wireless interface:
     /etc/init.d/babeld enable
     uci delete babeld.wlan.ignore
 
+Configure the wireless interface correctly, see the
+[[ip configuration|ip]] page for more information.
+
+    uci add network wlan
+    uci set network.wlan=interface
+    uci set network.wlan.ifname=wlan0
+    uci set network.wlan.proto=static
+    uci set network.wlan.ipaddr=172.16.0.123
+    uci set network.wlan.netmask=255.255.255.255
+
 (!) Do not forget to save your changes!
 
     uci commit
+    reboot & exit
 
 To announce routes on the wired intefaces too:
 
@@ -155,6 +166,15 @@ This is especially important on routers that *do* have network access,
 as babel will happily override existing routes in certain
 configurations. See the babeld manpage for more information on those
 rules.
+
+Whitelisting netblocks
+----------------------
+
+Instead of blocking stuff we don't want, it can be easier to just
+allow the stuff we want:
+
+    redistribute local ip 172.16.0.0/12
+    redistribute local deny
 
 Blocking some announcements
 ---------------------------
