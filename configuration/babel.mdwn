@@ -46,7 +46,6 @@ To make sure that babel starts on boot on the wireless interface:
 Configure the wireless interface correctly, see the
 [[ip configuration|ip]] page for more information.
 
-    uci add network wlan
     uci set network.wlan=interface
     uci set network.wlan.ifname=wlan0
     uci set network.wlan.proto=static
