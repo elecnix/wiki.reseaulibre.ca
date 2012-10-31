@@ -78,7 +78,7 @@ route_nat() {
   iptables -t nat -A POSTROUTING -o $extif -j MASQUERADE
 }
 
-route_nat wlan0 br-mesh
+route_nat wlan0 br-lan
 """]]
 
 The above will clear all firewall rules, allowing all traffic through the node. It assumes you have another router doing some filtering downstream, if not you will need to customize that firewall according to your policy, below.
