@@ -1,4 +1,4 @@
-[[!waypoint lat="45.5" lon="-73.666667" embed hidden width="400px" height="400px" right desc="A node on a big building in PSC"]]
+[[!waypoint lat="45.48099 lon="-73.55025 embed hidden width="400px" height="400px" right desc="A node on a big building in PSC"]]
 
 /!\ Coordinates inaccurate.
 
@@ -51,10 +51,23 @@ Operator
 Links
 : (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
 
+Objectif principal
+==================
+
+ * extraire un signal vidéo du bâtiment 7 pour le diffuser sur
+   internet dans le cadre d'un projet artistique
+
 Todo
 ====
 
- * 
+ * relai batiment7 et dame7:
+   * [[configuration/flashing]]
+   * [[configuration/adhoc]]
+   * [[configuration/babel]]
+   * [[configuration/ip]]
+   * DHCP sur l'interface interne
+ * dame7:
+   * firewall
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
