@@ -7,8 +7,8 @@ Le bâtiment 7 est finalement à nous! Un endroit idéal pour le mesh.
 # Technical details
 
 [[!ymlfront data="""
-MAC: (mac address here)
-IP: (pick one from [[policy/numbering]])
+MAC: 00:15:6D:A9:C7:84
+IP: 172.16.2.1
 IPv6: 
 """]]
 
