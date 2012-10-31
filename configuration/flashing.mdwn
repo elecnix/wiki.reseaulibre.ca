@@ -92,16 +92,16 @@ icon and uncheck `Enable networking`'' or:
 
  * with [[!debpkg atftp]] (prefered):
 
-        atftp --trace --option "timeout 1" --tftp-timeout 1 --option "mode octet" --put --local-file openwrt-xxx-x.x-xxx.bin 192.168.1.1
+            atftp --trace --option "timeout 1" --tftp-timeout 1 --option "mode octet" --put --local-file openwrt-xxx-x.x-xxx.bin 192.168.1.1
 
  * with [[!debpkg netkit-tftp]]:
  
-        $ tftp 192.168.1.1x
-        tftp> binary
-        tftp> rexmt 1
-        tftp> timeout 1
-        tftp> trace
-        tftp> put openwrt.bin
+            $ tftp 192.168.1.1x
+            tftp> binary
+            tftp> rexmt 1
+            tftp> timeout 1
+            tftp> trace
+            tftp> put openwrt.bin
 
 4. reboot the router with the reset button pressed
 
@@ -157,7 +157,7 @@ Keep the password in a safe place, your password manager or your head, if the la
 
 ## Other configuration
 
-* If you want a web interface, follow http://wiki.openwrt.org/doc/howto/luci.essentials#installation
+* If you want a web interface, follow [the luci install instructions](http://wiki.openwrt.org/doc/howto/luci.essentials#installation)
 * See the next [[configuration]] pages for the next steps for setting-up the mesh.
 
 # Password reset
