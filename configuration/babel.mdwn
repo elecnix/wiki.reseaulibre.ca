@@ -20,6 +20,14 @@ Install babel and the [[ipv6|configuration/ipv6]] kernel module:
 
     opkg install babeld kmod-ipv6
 
+> (!) If you do not have network access, download the babel, kmod-ipv6
+> and librt packages from the `packages/` directory at the same
+> location where you got the images for [[flashing]]. Then you can
+> copy the packages on the router with the following ssh command:
+>
+>     scp kmod-ipv6*.ipk babeld*.ipk librt*.ipkg root@192.168.1.1:
+>     ssh root@192.168.1.1 "opkg install *.ipkg"
+
 Configure the wireless interface with a test IP (follow the [[ip configuration|ip]] to make those settings peristent, but make sure to use `255.255.255.255` as a netmask):
 
     ifconfig wlan0 up 172.16.0.43/32
