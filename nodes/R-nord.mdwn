@@ -13,14 +13,14 @@ Operateur: [[users/R]]
 
 Point d'accès public en face du Parc des Amériques :
 
-[[!waypoint lat="45.518629" lon="-73.58217" embed hidden width="950px" height="300px" right desc="Pico2HP dans ma fenetre nord"]]
+[[!waypoint lat="45.518629" lon="-73.58216" embed hidden width="950px" height="300px" right desc="Pico2HP dans ma fenetre nord"]]
 
 Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
 
 # NODE - r-nord.acces.reseaulibre.ca
  * Status: [[!taglink up]]
  * Hostname: r-nord.acces.reseaulibre.ca
- * Location: 45.518629,-73.58217
+ * Location: 45.518629,-73.58216
  * Software: ROBIN r3527-26/nO Build 0.6.0
  * IP address: 5.174.231.38 ( Planned: {{$IP}} )
  * IPv6 address: {{$IPv6}}
