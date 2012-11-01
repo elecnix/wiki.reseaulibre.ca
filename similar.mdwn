@@ -32,6 +32,7 @@ This project is inspired, guided and sometimes in communication with the followi
 * <http://www.pandaboard.org/content/pandamesh> - PandaMesh, Northern Utah
 * <https://personaltelco.net/> - Personal Telco Project, Portland, Oregon
 * <http://seattlemeshnet-nodeshot.appspot.com/> - Seattle Meshnet
+* <http://gowasabi.net/> - WasabiNet, St. Louis, MO
 
 #Amérique du sud et centrale
 * <http://buenosaireslibre.org/> - Buenos Aires, Argentine, un des plus importants réseaux libres en Amérique latine
