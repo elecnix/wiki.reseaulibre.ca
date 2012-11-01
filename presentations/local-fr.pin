@@ -1,18 +1,43 @@
 #!/usr/bin/env pinpoint
 
-[white] [center]
+[white][bottom]
 
 -- [NetworkTopology-Mesh.png]
 
 Réseau Libre - un réseau Mesh @ Montréal
          
-           http://wiki.reseaulibre.ca/
+           http://wiki.reseaulibre.ca
 # translate
 # explain how mesh montreal was unclear
 #
 # presentation designed for international audience, in english
 
--- [latakia-nice.jpg][fill]
+--[black][center]
+
+Internet disponible partout, sauf que...
+
+• points d'accès wi-fi tous barrés
+• régions "éloignées" mal desservies
+• 21 % des canadiens n'ont pas accès à la maison
+• 58 % des personnes vivant seules n'ont pas accès
+
+-- [isp.png][bottom]
+
+Aujourd'hui
+
+# Tout passe par internet.
+# On passe par internet pour communiquer avec son voisin.
+# Vitesse d'envoi limitée.
+
+-- [vitesse-de-partage.png][top]
+
+Vitesse de partage
+
+-- [relais-vs-acces.png][bottom]
+
+Réseau maillé
+
+-- [latakia-nice.jpg][fill][right]
 
 # what is a mesh?
 # long tradition 
@@ -25,21 +50,7 @@ Un réseau maillé?
 ✔ décentralisé
 ✔ non-commercial
 
--- 
-Ailleurs dans le monde?
-
-• Europe (Allemagne, Grèce)
-• Amérique du Nord (Seatle, Toronto)
-• Amérique du Sud
-• Afrique, asie
-
-
-
--- [questionmark.jpg] [top-right]
-
-Pourquoi?
-
--- [questionmark.jpg]
+-- [questionmark.jpg][top-right]
 
 • Contrôle citoyen
 • Services locaux
@@ -52,12 +63,37 @@ Pourquoi?
 # it's fun
 # not necessarily internet
 
+-- [guifi-map.png][center]
+
+Catalogne
+
+-- [awmn-map.png][center]
+
+Athènes
+
+-- [awmn-map.png][center]
+
+Ailleurs dans le monde
+• Europe (Allemagne, Grèce)
+• Amérique du Nord (Seatle, Toronto)
+• Amérique du Sud
+• Afrique, Asie
+
 -- [DSC_0176.JPG][top-right]
 
-Qui &amp; Où?
+Bénévole
 
-# who and where
-# just skip this slide
+-- [DSC_0295.JPG][top]
+
+# Antenne installée: de quoi ça a l'air
+
+-- [scientist-toit.jpg] [fill]
+
+Créativité
+
+-- [antenne-sur-mat-electrique.png]
+
+Audace
 
 -- [map_sample.png] [bottom]
 
@@ -72,19 +108,16 @@ Qui &amp; Où?
 # wiki: 10 octobre 2011
 # premier meeting: février 2012
 
--- [map_sample.png] [command=epiphany http://wiki.reseaulibre.ca/ikiwiki.cgi?map=map\&do=osm\&zoom=12\&lat=45.5227\&lon=-73.59554\&layers=BT]
+-- [map_sample.png] [command=gnome-open http://wiki.reseaulibre.ca/ikiwiki.cgi?map=map\&do=osm\&zoom=12\&lat=45.5227\&lon=-73.59554\&layers=BT]
 
 # montrer la carte ici, dans un browser si possible
-
-
--- [scientist-toit.jpg] [fill]
 
 Organisation
 
 • Politique
 • Technique
 -- [hemicycle.jpg] [bottom]
- 
+
 Politiques
 
 ✔ consensus
@@ -97,8 +130,7 @@ Politiques
 # no formal corporation
 # story: bootstrapping the collectivity
 
-
--- [fnf.png] [font=Monospace 100px]
+-- [font=Monospace 100px]
 
 5 libertés
 
@@ -123,6 +155,19 @@ Picopeer agreement
 • Communication ouverte
 • Aucune garantie
 • Conditions d'utilisation
+
+-- [lafontaine-hiver.jpg]
+Obstacles techniques
+
+-- [lafontaine-arbres.jpg]
+✔ Les arbres!
+
+-- [lafontaine-arbres.jpg]
+✔ Le terrain
+✔ L'humain
+✔ Le logiciel
+✔ Le matériel
+
 -- [bottom] [../hardware/routers/kit-bullet-m2.jpg]
 
 Protocoles, matériels et services
@@ -134,11 +179,10 @@ Protocoles
  ✔ BATMAN
   ✔ babel
 
+# Protocole de routage reflète notre organisation humaine
 # tech: 1/2
 # olsr -> batman -> babel/robin -> bmx/unicycle ... ?
 # unclear what to choose: let's fix this!
-
--- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
 
 -- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
 
@@ -146,16 +190,36 @@ Matériel
 ✔ Ubiquity, TP-Link, etc...
 ✔ OpenWRT
 
+-- [bottom-left] [../hardware/routers/kit-bullet-m2.jpg]
 
 # hardware: off-the-shelf, ~150$
 # où: sur les toits, avec une vue
 
--- [latakia-nice.jpg] [top-right]
+-- [isp.png][bottom]
 
-✔ Accès &amp; relais
-✔ IPv6
-✔ allocation IP manuelle
-✔ wiki décentralisé
+Aujourd'hui
+
+-- [relais-vs-acces.png][bottom]
+
+Demain
+
+# Point d'accès avec deux WAN: internet, et mesh
+# Relais servant d'infrastructure
+# Possible de communiquer sans passer par internet.
+# Débits en téléversement plus élevés: 100 ko/s vs. 1000+ ko/s
+
+-- [v4_address_space_time.png]
+
+IPv4
+
+-- [ipv6-80-ton-whale-cisco.png]
+
+-- [ipv6-80-ton-whale-cisco.png]
+
+IPv6
+
+✔ nécessaire
+✔ éducatif
 
 # tech: 2/2
 # relai: babel + adhoc
@@ -178,12 +242,6 @@ Services
 -- [DSC_0295.JPG][top]
 
 Impliquez-vous!
-
-
--- [DSC_0295.JPG]
-
-Impliquez-vous!:
-
 ✽ Installez une antenne
 ✽ Design graphique
 ✽ Documentation
@@ -197,3 +255,4 @@ Questions / discussion
   wiki.reseaulibre.ca
 
 # rappeler l'adresse du site: reseau libre point c a
+
