@@ -11,6 +11,7 @@ Nous en profiterons également de cette rencontre pour faire un retour sur le «
 IPv6 est un protocole réseau destiné à remplacer le protocole IPv4. IPv6 dispose d'un espace d'adressage bien plus important qu'IPv4, ce qui permet une plus grande flexibilité dans l'attribution des adresses. Concrètement, pour les réseaux en maille, IPv6 simplifie l'allocation des adresses IP et le routage.
 
 Autres nouvelles en bref de Réseau-Libre:
+
 * 11 nouvelles antennes achetées lors du dernier achat de groupe (merci Louis-Michel!)
 * Nouveau noeuds et lien entre "Zoidberg" et "R" sur le Plateau.
 * Nouveau noeud "val" dans Rosemont.
@@ -40,6 +41,7 @@ We will also take this opportunity to discuss about the recent "International Su
 IPv6 is a network protocol which will replace IPv4. IPv6 has a much bigger address space. This allows more flexibility in how addresses are assigned and routed, which is important for a mesh network such as Réseau-Libre.
 
 Other news:
+
 * 11 new antennas bought during the last group purchase (thanks Louis-Michel!)
 * New nodes and link on the Plateau: "Zoidberg" and "R".
 * New node "val" in Rosemont.
