@@ -98,7 +98,9 @@ Bienvenue sur le mesh!
 
 ## Je n'ai pas accès à un toit, je peux aider quand même?
 
-Pour joindre le réseau, il faut généralement voir un autre noeud. Il est possible d'installer un point d'accès au réseau dans une fenêtre, et de le relier aux autres noeuds par votre connexion internet. Un voisin remarquera peut-être ce point d'accès et vous contactera pour établir un lien. En attendant vous aurez appris à configurer un noeud, et vous pourrez aider les autres. Sinon, vous pourriez peut-être aider à compléter la [[documentation|configuration]].
+Il est possible d'installer un point d'accès au réseau dans une fenêtre, et de le relier aux autres noeuds par votre connexion internet. Un voisin remarquera peut-être ce point d'accès et vous contactera pour établir un lien. En attendant vous aurez appris à configurer un noeud, et vous pourrez aider les autres. Sinon, vous pourriez peut-être aider à compléter la [[documentation|configuration]].
+
+Un accès au toit reste tout de même l'idéal. Avez-vous demandé l'accès à votre propriétaire? Nous avons rédigé une [[lettre-type|participer/lettre-proprio]] pour vous aider.
 
 ## Est-ce que je dois avoir un "line of sight" entre deux noeuds pour faire une connexion?
 
