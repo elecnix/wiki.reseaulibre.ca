@@ -11,6 +11,17 @@ Que vous soyez simplement curieux des nouveaux usages rendus possibles par un te
 
 Pour plus d'information: http://www.reseaulibre.ca
 
-Venez nous rencontrer au Maker Faire Montréal, les 25 et 26 août, sur l'esplanade du Stade Olympique: http://www.makerfairemontreal.ca/
+ABOUT RÉSEAU-LIBRE
+
+Réseau Libre is a mesh network, meaning that it is a type of network topology where each host is connected to its neighbours, thus forming a sort of fishing net. Each participant, also called a "node", is linked to its direct neighbours, making it possible to have many routes possible between two points on the network. The main advantage of this topology is that there are no single point of failure essential for the network to function. In the event of a failure of one or many nodes, the network can still continue to function. This also makes it easy to add new nodes.
+
+Concretely, the network needs people who want to install wireless routers in their home or office, adding nodes to the network and increasing its coverage. There routers run a (free software) program that automatically finds other nodes and participates in relaying information. General users then connect to a wireless access points, making it easy to access the mesh network without installing additional software.
+
+Our network is growing! We already have networks online in the Montreal boroughs of Rosemont, Plateau, Verdun and Saint-Michel-Parc-Extention, with many new nodes to come. There may already be one near your location? Look at our website for the interactive map!
+
+Whether you are simply curious about the new possibilities of such a network, or you wish to learn more about the installation of wireless antennas and networking, Réseau Libre is an "ad hoc" place for collaboration open to all.
+
+For more information: http://www.reseaulibre.ca
+
 
 [[!tag draft]]
