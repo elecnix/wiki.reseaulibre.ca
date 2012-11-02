@@ -1,0 +1,10 @@
+Bonjour M. Untel,
+
+Je vous ai parlé récemment du projet de Réseau Libre à Montréal, un réseau sans-fil citoyen et décentralisé.
+
+Ce dont nous avons besoin, c'est essentiellement d'un accès au toit de l'édifice, pour y installer une antenne. Celle-ci servirait de relais vers d'autres immeubles, pour - entre autres - offir un accès à internet. Un point d'accès sans-fil sera aussi installé dans le logement, et connecté au relais. Les deux n'ont besoin que d'une prise de courant. L'équipement sera payé par moi-même.
+
+
+
+* http://facilities.utah.edu/facilities-services/building-access/roof-access.php
+* http://www.sie.uqam.ca/secar/documents/Autotoit.pdf
