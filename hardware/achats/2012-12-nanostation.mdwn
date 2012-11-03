@@ -4,6 +4,8 @@ Si vous n'êtes pas sur la listes de discussion "nodes@", mentionnez comment vou
 * [Bullet M2HP Ti][] + [antenne omni 15 dbi][] + [injecteur POE 24V][]; |R: 1 (confirmé)
 * [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V][];
 * [NanoStation M2][];
+* [PicoStation M2HP][]; |R: 1 (confirmé)
+* [Injecteur POE 24V 1A w/RESET]: |R: 2 (confirmé) (où?)
 
 Date limite: ?? décembre 2012
 
@@ -15,6 +17,7 @@ Personne responsable de l'achat: ??
 [NanoBracket][]                             | 0    |    9$     |   0$  | ? |
 [Bullet M2HP Ti][]                          | 1    |  108$     |   0$  | ? |
 [Bullet M2HP][]                             | 0    |   75$     |   0$  | ? |
+[PicoStation M2HP][]                        | 1    |   77$     |   0$  | ? |
 [injecteur POE 24V][]                       | 1    |    9$     |   0$  | ? |
 [antenne omni 15 dbi][]                     | 1    |   45$     |   0$  | ? |
 Total                                       |      |           |   0$ | |
@@ -24,11 +27,12 @@ Total +tx                                   |      |           |  ??$| |
 [NanoBracket]: http://www.converbit.ca/magasin/products.php?product=NanoBracket
 [Bullet M2HP]: http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP
 [Bullet M2HP Ti]: http://www.converbit.ca/magasin/products.php?product=Bullet-M2-Titanium
+[PicoStation M2HP]: http://www.converbit.ca/magasin/products.php?product=PicoStation-M2HP
 [antenne omni 15 dbi]: http://www.converbit.ca/magasin/products.php?product=Antenne-omni-directionnel-2.4-GHZ-15DBI
 [antenne sectorielle 120°]: https://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9
 [injecteur POE 15V]: http://www.converbit.ca/magasin/products.php?product=-POE-15V
 [injecteur POE 24V]: http://www.converbit.ca/magasin/products.php?product=POE-24v
-
+[Injecteur POE 24V 1A w/RESET]: http://www.miro.co.za/upload/poe24_ds.pdf
 
 # "Spares"
 
