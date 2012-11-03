@@ -21,9 +21,10 @@ Bullet M2 + 15dBi à installer
  * Status: [[!taglink up]] 
  * Hostname: r.relais.reseaulibre.ca
  * Location: 45.518629,-73.58219
- * Software: OpenWRT + (¿QmP?)
+ * Software: OpenWRT 12.09-beta1
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
+ * Routage: babeld
  * Hardware: Ubnt Bullet M2
  * MAC address: {{$MAC}}
  * Channel: 1
