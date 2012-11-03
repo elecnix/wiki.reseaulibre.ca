@@ -1,7 +1,7 @@
 [[!meta title="Flashing your device"]]
 
 This page is designed to give you quick howtos to flash common
-devices. It is not meant to be a complete directory of all esoteric
+type of devices that we recommend. It is not meant to be a complete directory of all esoteric
 devices, others have done this better.
 
 [[!toc levels=3]]
@@ -27,15 +27,14 @@ Bullet M2
 
 See the excellent flashing guide on the Ubiquiti wiki: [Installing OpenWRT on NanoStations/Bullets](http://wiki.ubnt.com/Installing_OpenWRT_on_NanoStations/Bullets).
 
+Bullet M2
+: [attitude_adjustment_beta](http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/ar71xx/generic/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin)
+
 Nanostation M2
 : [attitude_adjustment_beta](http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/ar71xx/generic/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
 
 TP-Link 1043ND
 : [attitude_adjustment_beta](http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/ar71xx/generic/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
-
-Linksys WRT54G
-: [attitude_adjusment_beta](http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/brcm47xx/generic/openwrt-wrt54g-squashfs.bin)
-
 
 # Flashing methods
 
