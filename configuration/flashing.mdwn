@@ -99,6 +99,8 @@ Si vous avez déjà OpenWRT, mais que vous voulez le flasher avec une autre vers
 
 [!] Attention!! Il est très important de prendre l'image marquée `-sysupgrade` ou, si elle n'est pas disponible, le `.trx`.
 
+[!] Attention! Si vous faites une mise à jour d'un routeur qui avait déjà `babel`, arrêter le service avant de lancer la mise à jour (/etc/init.d/babel stop). Sinon `sysupgrade` va arrêter babel avant de lancer la mise à jour, ce qui cause une interruption du réseau pendant 1-2 minutes.
+
 [!] Attention! Ceci ne fonctionne pas bien sur les Linksys WRT54GLv1.1 (au moins). Essayer avec ceci la prochaine fois:
 
     mtd write /tmp/openwrt-brcm47xx-squashfs.trx linux && reboot
