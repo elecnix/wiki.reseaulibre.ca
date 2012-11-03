@@ -14,28 +14,12 @@ To choose the firmware, look into the
 [table of hardware](http://wiki.openwrt.org/toh/start) on the OpenWRT
 site, each device page will list which firmware you should use.
 
-Right after flashing, to ensure that tftp is available in case your router gets bricked, type these commands out in telnet/ssh:
-
-    nvram set boot_wait=on
-    nvram set boot_time=10
-    nvram commit && reboot
-    
-(!) Note: On WRT54GL (at least), you should probably use 'wait_time' instead of 'boot_time'.
-
 ### Specific hardware
 
-OpenWRT comes in many versions. You will want to use the `backfire`
-unless you need cutting edge features (like [[BATMAN]]) in which case
-you should use the `attidue adjustment` beta release series.
+OpenWRT comes in many versions. We recommend the `attidue adjustment` beta release series.
 
 Since there are many devices, there are also different different
 architectures to choose from, depending on the hardware "in the box".
-
-Linksys WRT54G
-: [backfire](http://downloads.openwrt.org/backfire/10.03.1/brcm47xx/openwrt-wrt54g-squashfs.bin)
-: [trunk](http://downloads.openwrt.org/snapshots/trunk/brcm47xx/openwrt-wrt54g-squashfs.bin)
-: C'est un exemple! Il y a beaucoup d'autres images pour cette
-architecture dans la [cible brcm47xx](http://downloads.openwrt.org/backfire/10.03.1/brcm47xx/).
 
 Bullet M2
 : [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-bullet-m-squashfs-factory.bin) (non-recommandé pour B.A.T.M.A.N)
@@ -44,12 +28,14 @@ Bullet M2
 See the excellent flashing guide on the Ubiquiti wiki: [Installing OpenWRT on NanoStations/Bullets](http://wiki.ubnt.com/Installing_OpenWRT_on_NanoStations/Bullets).
 
 Nanostation M2
-: [backfire](http://downloads.openwrt.org/backfire/10.03.1/ar71xx/openwrt-ar71xx-ubnt-nano-m-squashfs-factory.bin)
-: [attitude_adjustment_beta](http://downloads.openwrt.org/attitude_adjustment/12.09-beta/ar71xx/generic/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
+: [attitude_adjustment_beta](http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/ar71xx/generic/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
 
 TP-Link 1043ND
-: [backfire](http://downloads.openwrt.org/snapshots/backfire/10.03.1/ar71xx/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
-: [trunk](http://downloads.openwrt.org/snapshots/trunk/ar71xx/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
+: [attitude_adjustment_beta](http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/ar71xx/generic/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
+
+Linksys WRT54G
+: [attitude_adjusment_beta](http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/brcm47xx/generic/openwrt-wrt54g-squashfs.bin)
+
 
 # Flashing methods
 
