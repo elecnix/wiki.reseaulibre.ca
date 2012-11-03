@@ -180,14 +180,6 @@ installing to big packages (clean the JFFS2 partition and start over)
 
 If you are done with failsafe mode power cycle the router and boot in normal mode.
 
-## Tomato firmware
-
-Just hold the reset key down until the power led flashes, see <http://www.polarcloud.com/tomatofaq#why_doesnt_my_password_work>.
-
-## DD-WRT firmware
-
-Hold the reset button for 30 seconds, see <http://www.dd-wrt.com/wiki/index.php/Reset_And_Reboot>.
-
 # Other guides
 
 * [[ddwrt install instructions|http://www.dd-wrt.com/wiki/index.php/Installation]]
