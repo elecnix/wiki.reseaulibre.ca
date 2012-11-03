@@ -1,25 +1,15 @@
 [[!meta title="Flashing your device"]]
 
 This page is designed to give you quick howtos to flash common
-type of devices that we recommend. It is not meant to be a complete directory of all esoteric
-devices, others have done this better.
+type of [[hardware]] devices that we recommend.
 
 [[!toc levels=3]]
 
 # Firmware downloads
 
-## OpenWRT firmware
+Réseau Libre recommends the `attitude adjustment` beta release series of the OpenWRT project.
 
-To choose the firmware, look into the
-[table of hardware](http://wiki.openwrt.org/toh/start) on the OpenWRT
-site, each device page will list which firmware you should use.
-
-OpenWRT comes in many versions. We recommend the `attitude adjustment` beta release series.
-
-Since there are many devices, there are also different different
-architectures to choose from, depending on the hardware "in the box".
-
-See the excellent flashing guide on the Ubiquiti wiki: [Installing OpenWRT on NanoStations/Bullets](http://wiki.ubnt.com/Installing_OpenWRT_on_NanoStations/Bullets).
+Depending on your [[hardware]], you must download the correct firmware version onto your computer, which we will use to flash the router in the next step.
 
 Bullet M2
 : [attitude_adjustment_beta2](http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/ar71xx/generic/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin)
@@ -30,11 +20,14 @@ Nanostation M2
 TP-Link 1043ND
 : [attitude_adjustment_beta2](http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/ar71xx/generic/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
 
+See the excellent flashing guide on the Ubiquiti wiki: [Installing OpenWRT on NanoStations/Bullets](http://wiki.ubnt.com/Installing_OpenWRT_on_NanoStations/Bullets).
+
+For more information on other devices, see the [table of hardware](http://wiki.openwrt.org/toh/start) on the OpenWRT
+site, each device page will list which firmware you should use.
+
 # Flashing methods
 
-You can flash your devices in many ways. The most reliable, which
-should work in almost worst case scenario. The web interface is the
-easiest.
+You can flash your devices in many ways. The web interface is the easiest.
 
 ## Web interface
 
