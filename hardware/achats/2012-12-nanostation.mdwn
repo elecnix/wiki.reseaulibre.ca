@@ -15,7 +15,6 @@ Personne responsable de l'achat: ??
 [NanoBracket][]                             | 0    |    9$     |   0$  | ? |
 [Bullet M2HP Ti][]                          | 1    |  108$     |   0$  | ? |
 [Bullet M2HP][]                             | 0    |   75$     |   0$  | ? |
-[injecteur POE 15V][]                       | 0    |   12$     |   0$  | ?? |
 [injecteur POE 24V][]                       | 1    |    9$     |   0$  | ? |
 [antenne omni 15 dbi][]                     | 1    |   45$     |   0$  | ? |
 Total                                       |      |           |   0$ | |
