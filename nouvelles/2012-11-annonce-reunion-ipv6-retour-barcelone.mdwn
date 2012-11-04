@@ -13,7 +13,7 @@ IPv6 est un protocole réseau destiné à remplacer le protocole IPv4. IPv6 disp
 Autres nouvelles en bref de Réseau-Libre:
 
 * 11 nouvelles antennes achetées lors du dernier achat de groupe (merci Louis-Michel!)
-* Nouveau noeuds et lien entre "Zoidberg" et "R" sur le Plateau.
+* Nouveaux noeuds et lien entre "Zoidberg" et "R" sur le Plateau.
 * Nouveau noeud "val" dans Rosemont.
 * Nouveaux noeuds prévus: "Eastern Block" dans Parc-X, "Coop Généreux" sur le Plateau.
 
