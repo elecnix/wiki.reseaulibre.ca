@@ -4,7 +4,7 @@ Sujet: Formation IPv6 et retour sur Barcelone, mardi le 13 novembre à 19h
 
 Le mardi 13 novembre 2012, à 19h, à l'École Polytechnique (LOCAL?) [1], Réseau-Libre organise une formation sur le protocole réseau IPv6.
 
-Nous en profiterons également de cette rencontre pour faire un retour sur le «International Summit for Community Wireless Networks » (IS4CWN) à Barcelone, où 4 bénévoles de Réseau-Libre étaient présents.
+Nous profiterons également de cette rencontre pour faire un retour sur le «International Summit for Community Wireless Networks » (IS4CWN) à Barcelone, où 4 bénévoles de Réseau-Libre étaient présents.
 
 [1] L'École Polytechnique est située au 2900 boulevard Édouard-Montpetit, métro Université de Montréal.
 
