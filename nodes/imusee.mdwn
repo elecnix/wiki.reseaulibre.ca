@@ -5,13 +5,13 @@ http://www.imusee.net/
 # Technical details
 
 [[!ymlfront data="""
-MAC: (DC:9F:DB:07:D0:79)
-IP: (172.16.0.35)
+MAC: DC:9F:DB:07:D0:79
+IP: 172.16.0.35
 IPv6: 
 """]]
 
 hostname
-: (imusee)
+: imusee
 
 MAC address
 : {{$MAC}}
