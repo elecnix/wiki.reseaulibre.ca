@@ -5,9 +5,28 @@
 SSID du réseau
 ==============
 
-Le SSID du réseau est `reseaulibre.ca`. À noter que le nom précédent du réseau était `mesh-mtl`.
+Nous utilisons des noms dérivés du nom de domaine `reseaulibre.ca` pour que les gens qui voient un SSID relié au projet puisse obtenir plus d'information sur le projet en visitant le site web.
 
-LE BSSID du réseau est `02:CA:FF:EE:BA:BE`. C'est le BSSID réservé
+Il y a deux principaux types d'appareils connectés au réseau:
+
+Relais mesh
+: 
+* node qui fonctionne avec "babel" et qui a pour principal objectif de relayer le réseau
+* SSID: relais.reseaulibre.ca ou [nom-de-la-machine].relais.reseaulibre.ca
+
+Point d'accès (AP)
+: 
+* point d'accès où le public peut se connecter sans avoir à configurer Babel, idéalement avec un "splash page" pour expliquer le projet
+* SSID: acces.reseaulibre.ca ou [nom-de-la-machine].acces.reseaulibre.ca
+
+Le SSID peut être n'importe quoi en réalité, car c'est le BSSID qui est utilisé pour créer le lien ad-hoc entre les relais. Cependant, ça permet de faire connaître le projet et aide à identifier les participants sur le réseau.
+
+Voir la page [[discussion]] pour voir comment ceci a été établi.
+
+BSSID du réseau
+===============
+
+Le BSSID du réseau est `02:CA:FF:EE:BA:BE`. C'est le BSSID réservé
 pour l'utilisation de tous les canaux par le Freifunk de Berlin, voir
 leur
 [schema d'allocation](http://wiki.freifunk.net/Kamikaze/Meshwizard/BSSID-Schema)
