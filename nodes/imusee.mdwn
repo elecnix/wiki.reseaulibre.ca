@@ -6,7 +6,7 @@ http://www.imusee.net/
 
 [[!ymlfront data="""
 MAC: (mac address here)
-IP: (pick one from [[policy/numbering]])
+IP: (172.16.0.35)
 IPv6: 
 """]]
 
