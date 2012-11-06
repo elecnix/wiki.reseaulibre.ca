@@ -69,6 +69,12 @@ Todo
  * dame7:
    * firewall
 
+full backup
+-----------
+
+see [[export.uci]] for a full backup of a working attitude adjustment
+config.
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
