@@ -94,7 +94,7 @@ DHCP and DNS
     dhcp.@dnsmasq[0].authoritative=0
     dhcp.@dnsmasq[0].resolvfile=/etc/resolv.conf
     dhcp.@dnsmasq[0].domain=reseaulibre.ca
-    dhcp.@dnsmasq[0].local=/reseaulibre.ca/
+    dhcp.@dnsmasq[0].local=/local/
     dhcp.lan=dhcp
     dhcp.lan.interface=lan
     dhcp.lan.start=100
