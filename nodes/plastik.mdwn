@@ -63,7 +63,7 @@ Babel configuration
 -------------------
 
     babeld.@general[0]=general
-    babeld.@general[0].local_server=33231
+    babeld.@general[0].local_server=33123
     babeld.wlan=interface
     babeld.wlan.ignore=true
     babeld.@filter[0]=filter
