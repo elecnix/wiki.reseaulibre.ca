@@ -62,9 +62,9 @@ Todo
 
  * relai batiment7 et dame7:
    * [[documentation/flashing]]
-   * [[configuration/adhoc]]
-   * [[configuration/babel]]
-   * [[configuration/ip]]
+   * [[documentation/adhoc]]
+   * [[documentation/babel]]
+   * [[documentation/ip]]
    * DHCP sur l'interface interne
  * dame7:
    * firewall

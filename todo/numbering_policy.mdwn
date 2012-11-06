@@ -2,9 +2,9 @@ We need to think about how IPs are allocated, a constant sticky problem in mesh 
 
 Freifunk have been using unallocated IP space. Opennet has been using `192.168.0.0/16`.
 
-So far, i've been using `10.0.0.0/8`, but we should really look at [[configuration/ipv6]]. See also <http://wiki.freifunk.net/6mesh.freifunk.net>.
+So far, i've been using `10.0.0.0/8`, but we should really look at [[documentation/ipv6]]. See also <http://wiki.freifunk.net/6mesh.freifunk.net>.
 
-Update: [[done]], see [[configuration/ip]] for configuration et [[policy/numbering]] for policy and allocation.
+Update: [[done]], see [[documentation/ip]] for configuration et [[policy/numbering]] for policy and allocation.
 
 
 

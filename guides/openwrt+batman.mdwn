@@ -145,7 +145,7 @@ The wifi network should no longer belong in the 'lan' network bridge because tha
 
     uci delete wireless.@wifi-iface[0].network
 
-Configure the wireless radio with Montreal [[configuration/ad-hoc]] standards:
+Configure the wireless radio with Montreal [[documentation/ad-hoc]] standards:
 
     uci set wireless.radio0.channel=1
     uci set wireless.@wifi-iface[0].mode=adhoc
@@ -194,7 +194,7 @@ Tell batman to use the mesh interfaces: (normally: "wlan0 br-lan")
 
     uci set batman-adv.bat0.interfaces="<space separated mesh interfaces>"
 
-Optionally use our our [[bat-hosts|configuration/batman/bat-hosts]] file.
+Optionally use our our [[bat-hosts|documentation/batman/bat-hosts]] file.
 
 You're done! Commit the changes and reboot to test them.
 
@@ -229,6 +229,6 @@ wlan0: active
 
 # Other Readings
 
-For Batman operations and troubleshooting, see the general [[Batman Configuration|configuration/batman]] page.
+For Batman operations and troubleshooting, see the general [[Batman Configuration|documentation/batman]] page.
 
-This guide being incomplete, you will most likely want to tweak the IP addresses of your router. For this, please read the [[IP Configuration|configuration/ip]] page. When things are settled and tested, this guide should be updated.
+This guide being incomplete, you will most likely want to tweak the IP addresses of your router. For this, please read the [[IP Configuration|documentation/ip]] page. When things are settled and tested, this guide should be updated.

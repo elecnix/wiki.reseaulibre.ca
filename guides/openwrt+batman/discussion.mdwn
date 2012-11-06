@@ -1,6 +1,6 @@
-Can you reproduce the bug i have [[here|configuration/batman/#index8h2]]? I can't seem to reach *through IP pings* the third node in a three node mesh where the first and third node don't see each other reliably... --[[anarcat]]
+Can you reproduce the bug i have [[here|documentation/batman/#index8h2]]? I can't seem to reach *through IP pings* the third node in a three node mesh where the first and third node don't see each other reliably... --[[anarcat]]
 
-> Update: this happens only in regular adhoc mode, see [[this|configuration/batman/discussion/#index2h1]].
+> Update: this happens only in regular adhoc mode, see [[this|documentation/batman/discussion/#index2h1]].
 
 Pourquoi il faut utiliser le trunk?  Batman 2012 ne peut pas être installé sur backfire?  Et pourquoi c'est pas recommandé de l'utiliser?  Je n'aime pas trop l'idée d'avoir à flasher le trunk, par définition, pas stable... -- genb
 

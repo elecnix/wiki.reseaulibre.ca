@@ -118,11 +118,11 @@ L'interface doit ensuite être configurée
 
 # Étape suivante
 
-Faire la [[configuration IP|configuration/ip]].
+Faire la [[configuration IP|documentation/ip]].
 
 ## Use our bat-hosts
 
-You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|configuration/batman/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
+You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|documentation/batman/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
 
 # Troubleshooting
 

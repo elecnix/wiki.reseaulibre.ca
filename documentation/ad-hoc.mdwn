@@ -1,7 +1,7 @@
 [[!toc levels=3]]
 [[!meta title="Ad-hoc Network Configuration"]]
 
-This page is an attempt to help you configure and troubleshoot the Ad-Hoc mode on your network card. This is a requirement for joining a mesh network, since it allows "many to many" connections between participants of the ad-hoc network. Routing protocols, such as [[Babel|configuration/babel]], are added on top to provide routing information beyond direct neighbors.
+This page is an attempt to help you configure and troubleshoot the Ad-Hoc mode on your network card. This is a requirement for joining a mesh network, since it allows "many to many" connections between participants of the ad-hoc network. Routing protocols, such as [[Babel|documentation/babel]], are added on top to provide routing information beyond direct neighbors.
 
 # General configuration
 
@@ -92,11 +92,11 @@ Exemple de résultat dans iwconfig:
               Encryption key:off
               Power Management:on
 
-Bien vérifier que la [Key encryption](/configuration/ad-hoc/#index5h2) est désactivée.
+Bien vérifier que la [Key encryption](/documentation/ad-hoc/#index5h2) est désactivée.
 
 Sinon, descendre l'interface réseau (voir même désactiver son module noyau) et la ré-activer.
 
-Voir [[configuration/ip]] pour configurer l'interface et [[policy/numbering]] pour l'allocation de l'addresse.
+Voir [[documentation/ip]] pour configurer l'interface et [[policy/numbering]] pour l'allocation de l'addresse.
 
 ## Network manager
 

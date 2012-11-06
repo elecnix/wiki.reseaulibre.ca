@@ -1,6 +1,6 @@
 [[!meta title="Rencontre de test Babel-seulement, discussions VPN et signatures PGP"]]
 
-On souhaite ici se rencontre pour tester [[configuration/babel]] d'avantage, sans l'interférence de [[configuration/batman]].
+On souhaite ici se rencontre pour tester [[documentation/babel]] d'avantage, sans l'interférence de [[documentation/batman]].
 
 De plus, on pourra profiter de cette occasion pour s'échanger nos clefs PGP, ce qui me semble être une bonne manière de pouvoir développer un VPN par l'échange sécurisé des empreintes de clefs des relais, peu importe la technologie choisie. Si vous souhaitez participer à la signature de clefs PGP, il est préférable de vous créer une clef au préalable et d'emmener une copie de votre "empreinte de clef" de 40 caractères. Voir [le tutoriel de Koumbit](https://wiki.koumbit.net/GnuPrivacyGuard) (ligne de commande) ou [celui de Enigmail](http://www.enigmail.net/documentation/quickstart.php) (pour Thunderbird).
 

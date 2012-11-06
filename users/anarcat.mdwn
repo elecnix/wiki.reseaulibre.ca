@@ -26,7 +26,7 @@ Here is the list of nodes I operate.
 # Todo
 
  * make the mesh work in my home (./) done with [[nodes/carton]]
- * fix IPv4 allocation to use `172.16.0.0/12` (./) done, see [[configuration/ip]]
+ * fix IPv4 allocation to use `172.16.0.0/12` (./) done, see [[documentation/ip]]
  * test IPv6 autoconfiguration (./) done
  * setup a DHCP server and regular ad-hoc mode on [[carton]] (./) done!! i now use the mesh for my wifi access!
  * test ipv6 announcements [!] somehow this doesn't work as expected:
@@ -34,10 +34,10 @@ Here is the list of nodes I operate.
    * only the link-local prefix route gets added to the table, that's
      kind of weird
    * the packets don't actually go through to marcos
- * so next step: [[configuration/olsrd]] to propagate those routes between routers.
+ * so next step: [[documentation/olsrd]] to propagate those routes between routers.
  * merge DMZ and mesh zones in [[nodes/roadkiller]]
  * configure second linksys router to join the mesh
- * install ganglia? or [[configuration/monitoring]]?
+ * install ganglia? or [[documentation/monitoring]]?
  * aggregate node parameters in a table automatically ([[!iki todo/internal_definition_list_support/]])
 
 # Notes
@@ -52,15 +52,15 @@ the roof, but it was short-circuited during the
 
 ## Phase I: local tests
 
- 1. setup [[configuration/ad-hoc]] mode between the laptop, the
+ 1. setup [[documentation/ad-hoc]] mode between the laptop, the
  linksys and the n900
    * [!] problem here - the laptop doesn't support ad-hoc mode!! see
      [[!debbug 645055]]
    * (!) next step: setup olsrd on the n900, see <http://wiki.funkfeuer.at/index.php/OLSR_am_Nokia_N900>
- 2. (./) setup [[configuration/olsrd]] between the nodes (OpenWRT and wired laptop configured)
+ 2. (./) setup [[documentation/olsrd]] between the nodes (OpenWRT and wired laptop configured)
  3. hookup the linksys to `roadkill.anarcat.ath.cx`, setup [[todo/vpn_gateways]] for outgoing?
- 4. think about system-wide [[todo/numbering policy]] (and [[configuration/ipv6]]? - see <http://wiki.freifunk.net/6mesh.freifunk.net> for this)
- 5. think about [[configuration/dns]] within the mesh
+ 4. think about system-wide [[todo/numbering policy]] (and [[documentation/ipv6]]? - see <http://wiki.freifunk.net/6mesh.freifunk.net> for this)
+ 5. think about [[documentation/dns]] within the mesh
 
 ## Phase II: first link
 

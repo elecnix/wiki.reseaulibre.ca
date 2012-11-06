@@ -4,24 +4,26 @@
 * [[Nodes]] - the list of deployed nodes
 * [[Links]] - the links between the nodes
 
-# Joining the mesh
+# Comment rejoindre le mesh
 
 Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre chaque étape. Ceci devrait se résumer à:
 
-1. [[Installation de OpenWRT|documentation/flashing]]
-2. [[Configurer le mode réseau adhoc|configuration/ad-hoc]]
-3. [[Configurer Babel|configuration/babel/]] (jadis nous utilisions [[Batman|guides/openwrt+batman]])
-4. [[Configurer IPv6|configuration/ipv6]]
+1. [[Installation de OpenWRT|flashing/]] [[!trail flashing]]
+2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trail ad-hoc]]
+3. [[Configurer Babel|babel/]] [[!trail babel]]
+(jadis nous utilisions [[Batman|guides/openwrt+batman]])
+4. [[Configurer IPv6|ipv6]] [[!trail ipv6]]
+5. [[Configurer IPv4]ip]] [[!trail ip]]
+(optionnel: pour permettre l'accès au vieil internet)
+6. [[Configurer des services|services]] [[!trail services]] (voir aussi [[vpn]], [[zeroconf]]
 
 ou
 
 1. [[Installation et configuration d'un noeud|guides/install+node+facile]] (avec web gui, plus simple)
 
-Les pages de [[configuration]] examinent chaque étape en détail et permettent aussi de configurer des systèmes non-basés sur OpenWRT.
-
 Les [[guides]] documentent également d'autres configurations utilisées.
 
-# Technical documentation
+# Other documentation
 
 This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
 

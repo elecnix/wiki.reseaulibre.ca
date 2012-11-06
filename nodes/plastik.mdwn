@@ -1,14 +1,14 @@
 Access point in my living room, same location as boulette or carton...
 
 The wifi here is in managed mode, but the LAN ports run mesh
-software ([[configuration/babel]] only). The uplink port is simply a DHCP client, so that it can connect to a regular internet uplink and announce it on the mesh. Otherwise it can network multiple mesh nodes through the gigabit LAN ports.
+software ([[documentation/babel]] only). The uplink port is simply a DHCP client, so that it can connect to a regular internet uplink and announce it on the mesh. Otherwise it can network multiple mesh nodes through the gigabit LAN ports.
 
 Those are the configuration steps followed:
 
  * [[documentation/flashing]] - with genb's firmware ([[guide complet|guides/install+node+facile]])
- * [[configuration/babel]] - only on LAN ports, not on wifi
- * [[configuration/ip]] - regular IPv4 and IPv6, although wifi has a `192.168.1.1` net
- * [[configuration/services]] - IPv6, DHCP, DNS
+ * [[documentation/babel]] - only on LAN ports, not on wifi
+ * [[documentation/ip]] - regular IPv4 and IPv6, although wifi has a `192.168.1.1` net
+ * [[documentation/services]] - IPv6, DHCP, DNS
 
 Not documented: the access point is in managed mode, see the configuration dump below for examples.
 

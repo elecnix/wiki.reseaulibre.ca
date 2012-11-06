@@ -4,7 +4,7 @@ qMp est un firmware basé sur OpenWRT. Il y a un certain consensus d'essayer qMp
 
 # Problèmes et todo
 
-* Manque de documentation, particulièrement lié à Babel. Il faut documenter les différentes config. Il y a un bon début dans [[configuration/babel]], mais rien qui ne fait référence à qMp et ses nombreuses interfaces.
+* Manque de documentation, particulièrement lié à Babel. Il faut documenter les différentes config. Il y a un bon début dans [[documentation/babel]], mais rien qui ne fait référence à qMp et ses nombreuses interfaces.
 * qMp, en tout cas les images précompilées, utilise actuellement la version Backfire de OpenWRT. (Ancienne version.) Il y a des tests en cours avec une version plus récente (?)
 * Pas encore d'utilisation unanime sur le mesh malgré le consensus. Il y a un problème d'oeuf/poule parce qu'il faut des utilisateurs pour documenter. Ce n'est pas tragique vu que qMp bien configuré devrait parler à toute machine babel, mais si on veut atteindre notre but d'améliorer l'accessibilité, il faut qu'il y ait un bon support local, et donc beaucoup d'utilisateurs.
 * De toute façon, la belle interface de qMp ne permet rien en ce qui concerne babel.  Il faut aller par ssh pour configurer babel et c'est une vieille version de babel qui roule sur backfire, donc quelques trucs différents.

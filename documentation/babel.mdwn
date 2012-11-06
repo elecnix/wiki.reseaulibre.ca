@@ -16,7 +16,7 @@ OpenWRT
 
 If you have not yet installed OpenWRT on your router, see [[documentation/flashing]]. It must also have the correct [[ad-hoc]] wireless configuration to link with other devices.
 
-Install babel and the [[ipv6|configuration/ipv6]] kernel module:
+Install babel and the [[ipv6|documentation/ipv6]] kernel module:
 
     opkg install babeld kmod-ipv6
 

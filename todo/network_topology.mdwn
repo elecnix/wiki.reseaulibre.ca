@@ -12,13 +12,13 @@ We are also considering ad-hoc mode and OLSR, see [[todo/network_topology]].
 
 Some more tests are required but so far i am thinking of:
 
- * [[configuration/olsrd]]
- * [[configuration/ad-hoc]] mode
+ * [[documentation/olsrd]]
+ * [[documentation/ad-hoc]] mode
  * [[todo/vpn_gateways]] over that for global network access
 
 We also need to figure out how [[nodes]] are interconnected, at the physical level. Do we want a tree?
 
-Update: we should consider this mostly [[done]] - we are using [[configuration/ad-hoc]] mode with [[configuration/BATMAN]] or [[configuration/babeld]] on top. the [[todo/vpn_gateways]] todo remains for the VPN part, but we are still thinking of using vpns to connect disconnected segments. --[[anarcat]]
+Update: we should consider this mostly [[done]] - we are using [[documentation/ad-hoc]] mode with [[documentation/BATMAN]] or [[documentation/babeld]] on top. the [[todo/vpn_gateways]] todo remains for the VPN part, but we are still thinking of using vpns to connect disconnected segments. --[[anarcat]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
