@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.48065" lon="-73.55155" embed hidden width="400px" height="400px" right desc="A node-gw in front of node batiment7"]]
 
 Neighbor of [[batiment7]].
 
