@@ -5,7 +5,7 @@ software ([[configuration/babel]] only). The uplink port is simply a DHCP client
 
 Those are the configuration steps followed:
 
- * [[configuration/flashing]] - with genb's firmware ([[guide complet|guides/install+node+facile]])
+ * [[documentation/flashing]] - with genb's firmware ([[guide complet|guides/install+node+facile]])
  * [[configuration/babel]] - only on LAN ports, not on wifi
  * [[configuration/ip]] - regular IPv4 and IPv6, although wifi has a `192.168.1.1` net
  * [[configuration/services]] - IPv6, DHCP, DNS
