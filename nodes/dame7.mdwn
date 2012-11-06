@@ -6,7 +6,7 @@ Neighbor of [[batiment7]].
 
 [[!ymlfront data="""
 MAC: 00:15:6D:AD:6B:8B
-IP: 172.168.2.2
+IP: 172.16.2.2
 IPv6: N/A
 """]]
 
