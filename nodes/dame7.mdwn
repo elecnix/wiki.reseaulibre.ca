@@ -221,6 +221,30 @@ root@dame7:~/#
 Ça semble fonctionner! 
 
 
+Babeld au démarrage
+-------------------
+Hack dans /etc/rc.local/:
+
+    babeld -D -g 33123 -p 6696 ath0
+
+Redistribution de la route par défaut sur le mesh
+-------------------------------------------------
+décommenter la dernière ligne dans /etc/babeld.conf:
+
+    redistribute ip 0.0.0.0/0 le 0 proto 3 metric 128
+
+Rendre dame7 client dhcp
+------------------------
+par luci-web: /admin/network/network/lan/
+
+    protocole: dhcp client
+
+    network.lan
+    network.lan._orig_bridge=false
+    network.lan._orig_ifname=eth0
+    network.lan.ipaddr
+    network.lan.netmask
+    network.lan.proto
 
 # Photos
 
