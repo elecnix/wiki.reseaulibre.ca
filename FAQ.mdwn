@@ -108,11 +108,11 @@ C'est préférable d'être capable de voir l'autre noeud. Il est /possible/ de f
 
 ## Comment je peux flasher mon router XYZ?
 
-Voir la page [[configuration/flashing]].
+Voir la page [[documentation/flashing]].
 
 ## J'ai perdu mon password!
 
-Voir [[configuration/flashing]] (oui encore).
+Voir [[documentation/flashing]] (oui encore).
 
 ## Je suis perdu parmi le jargon technique!
 
