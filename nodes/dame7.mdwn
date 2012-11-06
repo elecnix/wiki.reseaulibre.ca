@@ -246,6 +246,12 @@ par luci-web: /admin/network/network/lan/
     network.lan.netmask
     network.lan.proto
 
+Full backup
+-----------
+
+see [[export.uci]] for a full backup of a working backfire
+configuration.
+
 # Photos
 
 (You can upload images when you edit this page. Feel free to upload photos
