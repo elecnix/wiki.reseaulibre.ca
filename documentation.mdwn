@@ -15,7 +15,7 @@ Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre cha
 4. [[Configurer IPv6|ipv6]] [[!trailitem ipv6]]
 5. [[Configurer IPv4|ip]] [[!trailitem ip]]
 (optionnel: pour permettre l'accès au vieil internet)
-6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]]
+6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
 ou
 
