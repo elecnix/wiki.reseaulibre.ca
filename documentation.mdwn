@@ -8,14 +8,14 @@
 
 Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre chaque étape. Ceci devrait se résumer à:
 
-1. [[Installation de OpenWRT|flashing/]] [[!trail flashing]]
-2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trail ad-hoc]]
-3. [[Configurer Babel|babel/]] [[!trail babel]]
+1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
+2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trailitem ad-hoc]]
+3. [[Configurer Babel|babel/]] [[!trailitem babel]]
 (jadis nous utilisions [[Batman|guides/openwrt+batman]])
-4. [[Configurer IPv6|ipv6]] [[!trail ipv6]]
-5. [[Configurer IPv4]ip]] [[!trail ip]]
+4. [[Configurer IPv6|ipv6]] [[!trailitem ipv6]]
+5. [[Configurer IPv4|ip]] [[!trailitem ip]]
 (optionnel: pour permettre l'accès au vieil internet)
-6. [[Configurer des services|services]] [[!trail services]] (voir aussi [[vpn]], [[zeroconf]]
+6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]]
 
 ou
 
