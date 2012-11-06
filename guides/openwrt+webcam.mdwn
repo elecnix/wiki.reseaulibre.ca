@@ -2,7 +2,7 @@
 
 ## Installation de OpenWrt
 
-To install OpenWrt, you must [[flash your router|configuration/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**.
+To install OpenWrt, you must [[flash your router|documentation/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**.
 
 ## Installation des logiciels
 

@@ -1,7 +1,3 @@
-While [Ile Sans Fil](http://ilesansfil.org) does incredible work in providing free wifi access to the community, the goal of creating an alternative network, independant from big corporate providers and decentralized, has remained elusive.
-
-The goal of this project is to create a community wireless network accessible from both fixed and mobile devices that can be used in day to day life by regular people as well as during emergencies. We're building on the experience of [[similar projects|Similar]].
-
 # Status
 
 * [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
@@ -12,7 +8,7 @@ The goal of this project is to create a community wireless network accessible fr
 
 Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre chaque étape. Ceci devrait se résumer à:
 
-1. [[Installation de OpenWRT|configuration/flashing/]]
+1. [[Installation de OpenWRT|documentation/flashing]]
 2. [[Configurer le mode réseau adhoc|configuration/ad-hoc]]
 3. [[Configurer Babel|configuration/babel/]] (jadis nous utilisions [[Batman|guides/openwrt+batman]])
 4. [[Configurer IPv6|configuration/ipv6]]

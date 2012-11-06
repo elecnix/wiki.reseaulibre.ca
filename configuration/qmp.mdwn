@@ -21,7 +21,7 @@ Voici les étapes à suivre pour configurer qMp avec Babel pour être compatible
 
 ## Flasher
 
-Il faut [[flasher|configuration/flashing]] avec la bonne image de qMp.
+Il faut [[flasher|documentation/flashing]] avec la bonne image de qMp.
 
 Puis, s'assurer d'avoir une connexion fonctionnelle (se connecter en root par SSH).  L'adresse ip par défaut sur le fil réseau est le 172.30.22.1
 

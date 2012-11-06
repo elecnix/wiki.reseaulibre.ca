@@ -61,7 +61,7 @@ Todo
 ====
 
  * relai batiment7 et dame7:
-   * [[configuration/flashing]]
+   * [[documentation/flashing]]
    * [[configuration/adhoc]]
    * [[configuration/babel]]
    * [[configuration/ip]]
