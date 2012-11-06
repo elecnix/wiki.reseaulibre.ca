@@ -6,7 +6,7 @@ This is about having gateways to the "real internet" available in the mesh, but 
 Just a brainstorm for now:
 
  1. no default route (0.0.0.0) should be announced unless people are really nice and want to give out free (and insecure) internet
- 2. let's use [[configuration/vpn]]?
+ 2. let's use [[documentation/vpn]]?
  3. we need to distribute certificates
  4. how do give access? through a client cert? or username/password? how do we revoke it?
  5. the bug in the [[olsrd]] routing is a big issue: we can't setup a VPN if we can't ping the remote host!
@@ -16,7 +16,7 @@ Just a brainstorm for now:
  * [Freifunk VPN + OLSR GSOC project](http://wiki.freifunk.net/GSOC:VPN)
  * [Opennet VPN configuration details](https://wiki.opennet-initiative.de/wiki/Opennet_Firmware/Firmware-Paket_technische_Dokumentation) (in german)
 
-Update: [[configuration/vpn]] tests started, but no clear result yet. Other alternatives: IPsec, tinc and cjDNS, in order of personnal preference.. --[[anarcat]]
+Update: [[documentation/vpn]] tests started, but no clear result yet. Other alternatives: IPsec, tinc and cjDNS, in order of personnal preference.. --[[anarcat]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
