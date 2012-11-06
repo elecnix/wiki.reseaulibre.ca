@@ -82,13 +82,11 @@ DHCP and DNS
 
     dhcp.@dnsmasq[0]=dnsmasq
     dhcp.@dnsmasq[0].domainneeded=1
-    dhcp.@dnsmasq[0].boguspriv=1
-    dhcp.@dnsmasq[0].filterwin2k=0
     dhcp.@dnsmasq[0].localise_queries=1
     dhcp.@dnsmasq[0].rebind_protection=1
     dhcp.@dnsmasq[0].rebind_localhost=1
     dhcp.@dnsmasq[0].expandhosts=1
-    dhcp.@dnsmasq[0].nonegcache=0
+    dhcp.@dnsmasq[0].nonegcache=1
     dhcp.@dnsmasq[0].readethers=1
     dhcp.@dnsmasq[0].leasefile=/tmp/dhcp.leases
     dhcp.@dnsmasq[0].authoritative=0
