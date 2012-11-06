@@ -62,20 +62,18 @@ Links
 Babel configuration
 -------------------
 
-[[!format txt """
-babeld.@general[0]=general
-babeld.@general[0].local_server=33231
-babeld.wlan=interface
-babeld.wlan.ignore=true
-babeld.@filter[0]=filter
-babeld.@filter[0].ignore=true
-babeld.@filter[0].type=redistribute
-babeld.@filter[0].ip=0.0.0.0/0
-babeld.@filter[0].le=0
-babeld.@filter[0].proto=3
-babeld.@filter[0].action=metric 128
-babeld.mesh=interface
-"""]]
+    babeld.@general[0]=general
+    babeld.@general[0].local_server=33231
+    babeld.wlan=interface
+    babeld.wlan.ignore=true
+    babeld.@filter[0]=filter
+    babeld.@filter[0].ignore=true
+    babeld.@filter[0].type=redistribute
+    babeld.@filter[0].ip=0.0.0.0/0
+    babeld.@filter[0].le=0
+    babeld.@filter[0].proto=3
+    babeld.@filter[0].action=metric 128
+    babeld.mesh=interface
 
 DHCP and DNS
 ------------
