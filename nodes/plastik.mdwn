@@ -89,7 +89,6 @@ DHCP and DNS
     dhcp.@dnsmasq[0].nonegcache=1
     dhcp.@dnsmasq[0].readethers=1
     dhcp.@dnsmasq[0].leasefile=/tmp/dhcp.leases
-    dhcp.@dnsmasq[0].authoritative=0
     dhcp.@dnsmasq[0].resolvfile=/etc/resolv.conf
     dhcp.@dnsmasq[0].domain=reseaulibre.ca
     dhcp.@dnsmasq[0].local=/local/
