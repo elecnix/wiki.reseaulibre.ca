@@ -129,7 +129,7 @@ Network config
 
 IPv6 configuration
 ------------------
-    
+
     radvd.@interface[0]=interface
     radvd.@interface[0].interface=lan
     radvd.@interface[0].AdvSendAdvert=1
