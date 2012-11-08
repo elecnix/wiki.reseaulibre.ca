@@ -1,3 +1,50 @@
+## Connectivité Ad-Hoc
+
+Pour activer les fonctionnalités de monitorage sur un appareil OpenWRT, on peut installer le paquet "muninlite" qui est beaucoup plus léger que le script habituel munin-node et qui ne dépend pas de Perl.
+
+[[!format txt """
+$ opkg update
+Downloading ...
+$ opkg install muninlite
+Installing muninlite (1.0.4-3) to root...
+Configuring muninlite.
+$ /etc/init.d/xinetd enable
+$ /etc/init.d/xinetd start
+$ mkdir -p /etc/munin/plugins
+"""]]
+
+Une fois installé, on doit activer la recherche de "plugins" en éditant le script /usr/sbin/munin-node:
+
+[[!format patch """
+-PLUGINPATTERN=$(dirname $0)"/munin-node-plugin.d/*"
++PLUGINPATTERN="/etc/munin/plugins/*"
+
+# Remove unwanted plugins from this list
+-PLUGINS="cpu if_ if_err_ load memory processes netstat uptime interrupts irqstats"
++PLUGINS="cpu if_ if_err_ load memory processes netstat uptime interrupts irqstats plugindir_"
+"""]]
+
+On peut ensuite télécharger et placer le script suivant dans le répertoire /etc/munin/plugins et le rendre exécutable: [[adhoc_rssi.sh]]
+
+[[!format txt """
+$ wget http://wiki.reseaulibre.ca/configuration/munin/adhoc_rssi.sh
+$ chmod +x adhoc_rssi.sh
+$ mv adhoc_rssi.sh /etc/munin/plugins/adhoc_rssi
+"""]]
+
+On peut vérifier le bon fonctionnement de Munin et le contenu de la liste des plugins disponibles:
+
+[[!format txt """
+$ telnet localhost 4949
+# munin node at pinxos.deuxpi.ca
+list
+cpu if_wlan0 if_eth0 if_br_lan if_err_wlan0 if_err_eth0 if_err_br_lan load memory processes uptime interrupts irqstats adhoc_rssi
+quit
+"""
+]]
+
+## Quagga/Babeld
+
 Le logiciel de routage Quagga possède une interface de contrôle qui rend le monitorage plus facile que si on utilisait le serveur Babeld standard. Par exemple, le script pour munin-node ci-dessous (tiré de [[https://dn42.net/trac/wiki/Statistics]], voir ce site pour les instructions) permet de tracer le nombre de routes fournies par le réseau:
 
 [[!format txt """
