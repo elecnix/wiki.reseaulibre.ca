@@ -37,4 +37,4 @@ Le logiciel de routage Quagga possède une interface de contrôle qui rend le mo
 # Measure Section ##########
 """]]
 
-Un exemple d'utilisation de ce script est disponible sur [[http://www.deuxpi.ca/munin/localdomain/localhost.localdomain/quagga_babel.html]].
+Un exemple d'utilisation de ce script est disponible sur [[http://www.deuxpi.ca/munin/deuxpi.ca/mail.deuxpi.ca/quagga_babel.html]].
