@@ -1,6 +1,6 @@
-[[!waypoint lat="45.532907" lon="-73.575424" embed hidden width="400px" height="400px" right desc="A node on tje coop's roof"]]
+[[!waypoint lat="45.532907" lon="-73.575424" embed hidden width="400px" height="400px" right desc="A node on the coop's roof"]]
 
-Planned node on the roof of a third floor building. Maintained by http://www.coopsurgenereux.org/
+Node on the roof of a third floor building. Maintained by http://www.coopsurgenereux.org/
 
 # Technical details
 
@@ -23,22 +23,22 @@ IP address
 : {{$IP}}
 
 Software
-: 
+: OpenWrt
 
 Hardware
-: 
+: Bullet M2HP
 
 Power
 : 
 
 Location
-: (where is this node physically installed?)
+: Roof, on small pole
 
 Azimuth
 : 360°
 
 Panorama
-: N/A
+: Available
 
 Status
 : [[!taglink planned]] (can also be up, down, planned, unknown)
@@ -48,6 +48,8 @@ Operator
 
 Links
 : (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+
+[[!img 2012-11-07-coop-nuit.jpg size=950x]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
