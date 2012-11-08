@@ -1,0 +1,40 @@
+Le logiciel de routage Quagga possède une interface de contrôle qui rend le monitorage plus facile que si on utilisait le serveur Babeld standard. Par exemple, le script pour munin-node ci-dessous (tiré de [[https://dn42.net/trac/wiki/Statistics]], voir ce site pour les instructions) permet de tracer le nombre de routes fournies par le réseau:
+
+[[!format txt """
+#!/bin/sh
+
+#
+#
+# Munin Plugin to show quagga babel routes
+
+# Standard Config Section Begin ##
+  if [ "$1" = "autoconf" ]; then
+        echo yes
+        exit 0
+  fi
+
+  if [ "$1" = "config" ]; then
+
+       echo 'graph_title Quagga Babel Routes'
+       echo 'graph_args --base 1000 -l 0'
+       echo 'graph_scale yes'
+       echo 'graph_vlabel Received routes via Babel'
+       echo 'graph_category network'
+       echo 'babelroutes.label Routes'
+       echo 'graph_info Route information provided by quagga daemon via vtysh'
+       exit 0
+  fi
+# Standard Config Section End ####
+
+# Measure Section Begin ##########
+  data=$(vtysh -d babeld -c "show babel database"|grep installed|wc -l)
+
+  if [ "$data" = "" ]; then
+     echo babelroutes.value    0
+  else
+     echo babelroutes.value    $data
+  fi
+# Measure Section ##########
+"""]]
+
+Un exemple d'utilisation de ce script est disponible sur [[http://www.deuxpi.ca/munin/localdomain/localhost.localdomain/quagga_babel.html]].
