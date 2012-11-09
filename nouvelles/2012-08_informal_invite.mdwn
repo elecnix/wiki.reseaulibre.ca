@@ -57,4 +57,4 @@ our node directory:
 
 http://wiki.reseaulibre.ca/nodes/NODENAMEHERE
 
-[[draft]]
+[[!tag draft]]
