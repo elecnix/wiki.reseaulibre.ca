@@ -36,9 +36,9 @@ Activer la radio
 
     uci delete wireless.radio0.disabled
 
-Separate wireless network from `lan`
+Move wireless network from `lan` to `wlan`:
 
-    uci delete wireless.@wifi-iface[0].network
+    uci set wireless.@wifi-iface[0].network=wlan
 
 Montreal mesh standards: channel 1, adhoc, named `reseaulibre.ca`. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
 
