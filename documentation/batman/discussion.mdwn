@@ -140,6 +140,6 @@ This is the way to do it, apparently: see the [[services]] page.
 
 J'essaie d'installer BATMAN sur mon laptop Debian (pour les tests), il y a une étape qui manque, clairement dans la configuration IP. Il y a un lien pour configurer ça, mais c'est sur OpenWRT (uci). Ça serait bien d'avoir un guide plus complet là-dessus, j'ai cherché longtemps, rien trouvé. --[[gboudrias]]
 
-> C'est quoi le problème avec la config qui manque? Est-ce que tu as fait la configuration manuelle indiquée plus bas? Si oui, il suffit ensuite de suivre [[/configuration/ip]]... [[anarcat]]
+> C'est quoi le problème avec la config qui manque? Est-ce que tu as fait la configuration manuelle indiquée plus bas? Si oui, il suffit ensuite de suivre [[/documentation/ip]]... [[anarcat]]
 
-> > Le problème est que [[/configuration/ip]] n'as pas de section Debian. Ça peut paraître simple comme ça, mais j'ai essayé de faire l'équivalent sur Debian, sans succès. --[[gboudrias]]
+> > Le problème est que [[/documentation/ip]] n'as pas de section Debian. Ça peut paraître simple comme ça, mais j'ai essayé de faire l'équivalent sur Debian, sans succès. --[[gboudrias]]

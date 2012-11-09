@@ -16,7 +16,7 @@ Protocole/logiciel de routing qui vise à remplacer OLSR. C'est un protocole de 
 
 Vise à décentraliser l'information sur les routes possibles des packets.
 
-Voir aussi [[configuration/batman]] et l'article de Wikipédia: [[!wikipedia B.A.T.M.A.N.]].
+Voir aussi [[documentation/batman]] et l'article de Wikipédia: [[!wikipedia B.A.T.M.A.N.]].
 
 # Bullet
 
@@ -96,7 +96,7 @@ Voir aussi [[nodes]]
 
 Protocole de routing optimisé pour les réseaux mesh. Tend à être remplacé par BATMAN.
 
-Voir aussi [[configuration/olsrd]].
+Voir aussi [[documentation/olsrd]].
 
 # Packet
 

@@ -45,7 +45,7 @@ The main developper of BATMAN, Elektra, is working heavily on the project.
 
 * <http://freifunk.net/>
 
-See also our [[configuration/batman]] page.
+See also our [[documentation/batman]] page.
 
 ## Babel
 
@@ -61,7 +61,7 @@ Quagga daemon. It is used by the
 
 And it's an RFC ([[!rfc 6126]]).
 
-Our configuation notes are in [[configuration/babel]].
+Our configuation notes are in [[documentation/babel]].
 
 ## CJDNS
 
@@ -84,7 +84,7 @@ note
 
 Based on [OpenWrt](http://openwrt.org),
 [Robin](http://www.robin-mesh.com/) seems to be a fairly complete
-solution integrating BATMAN and a GUI. See [[configuration/Robin]] for
+solution integrating BATMAN and a GUI. See [[documentation/Robin]] for
 our notes on how to configure robin.
 
 Not actively maintained for the past two years?

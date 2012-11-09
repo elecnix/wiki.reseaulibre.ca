@@ -25,7 +25,7 @@ Configure an access point
 
 This requires adding a new node to the network that is part of the mesh. So you will probably need to follow:
 
- * [[flashing]]
+ * [[documentation/flashing]]
  * a wired connexion to the mesh - *not* ad-hoc, as you want the wifi to be "managed"
  * mesh software: [[batman]] or preferably [[babel]] so you get the mesh routes
  * [[ip]] configuration

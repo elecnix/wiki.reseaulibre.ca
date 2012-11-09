@@ -23,7 +23,7 @@ IPv6 address
 : {{$IPv6}}
 
 Software
-: [[OpenWRT + Babel|http://wiki.reseaulibre.ca/configuration/]]
+: [[OpenWRT + Babel|http://wiki.reseaulibre.ca/documentation/]]
 
 Hardware
 : UBNT Nanostation M2

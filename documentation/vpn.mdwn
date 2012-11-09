@@ -133,7 +133,7 @@ Getting a secure VPN connection with the mesh
 To make a VPN connexion to the mesh, you will need to have at least one peer configured with a trusted RSA key and a `ConnectTo` statement. Then this peer will send you the RSA keys it knows for the other hosts through that connexion and you can establish direct connexions to the other peers using those keys. 
 
 To setup a connexion work [[nodes/roadkiller]], download the [[signed
-certificate|roadkiller.asc]] and extract it in place:
+certificate|documentation/vpn/roadkiller.asc]] and extract it in place:
 
     cd /etc/tinc/hosts/
     gpg roadkiller.asc > roadkiller

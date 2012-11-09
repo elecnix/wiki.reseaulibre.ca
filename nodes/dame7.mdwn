@@ -1,0 +1,269 @@
+[[!waypoint lat="45.48065" lon="-73.55155" embed hidden width="400px" height="400px" right desc="A node-gw in front of node batiment7"]]
+
+Neighbor of [[batiment7]].
+
+
+dame7 reçoit le signal de [[batiment7]] et le transmet vers la passerelle de la dame qui héberge l'antenne puis vers l'internet.
+L'objectif est de streamer un flux video dans le Batiment 7 vers l'internet.dame7 est donc un client dhcp puisqu'elle doit recevoir son IP sur br-lan de la passerelle de la dame qui héberge l'antenne.
+
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: 00:15:6D:AD:6B:8B
+IP: 172.16.2.2
+IPv6: N/A
+"""]]
+
+hostname
+: dame7
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT Backfire
+
+Hardware
+: Nanostation 2
+
+Power
+: ?
+
+Location
+: neighbor of [[batiment7]]
+
+Azimuth
+: 60°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink planned]]
+
+Operator
+: [[users/anarcat]], [[users/martn]]
+
+Links
+: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+
+
+Babel Configuration
+-------------------
+
+    babeld.@general[0]=general
+    babeld.@general[0].port=6696
+    babeld.wlan=interface
+    babeld.wlan.ignore=true
+    babeld.lan=interface
+    babeld.lan.ignore=true
+    babeld.@filter[0]=filter
+    babeld.@filter[0].ignore=true
+    babeld.@filter[0].type=redistribute
+    babeld.@filter[0].ip=0.0.0.0/0
+    babeld.@filter[0].le=0
+    babeld.@filter[0].proto=3
+    babeld.@filter[0].action=metric 128
+
+Network config
+--------------
+
+    network.loopback=interface
+    network.loopback.ifname=lo
+    network.loopback.proto=static
+    network.loopback.ipaddr=127.0.0.1
+    network.loopback.netmask=255.0.0.0
+    network.lan=interface
+    network.lan.ifname=eth0
+    network.lan.proto=static
+    network.lan.ipaddr=192.168.1.1
+    network.lan.netmask=255.255.255.0
+    network.mesh=interface
+    network.mesh.proto=static
+    network.mesh.netmask=255.255.255.255
+    network.mesh.ipaddr=172.16.2.2
+
+
+Radio configuration
+-------------------
+    
+    wireless.wifi0=wifi-device
+    wireless.wifi0.type=atheros
+    wireless.wifi0.antenna=auto
+    wireless.wifi0.channel=1
+    wireless.@wifi-iface[0]=wifi-iface
+    wireless.@wifi-iface[0].device=wifi0
+    wireless.@wifi-iface[0].encryption=none
+    wireless.@wifi-iface[0].mode=adhoc
+    wireless.@wifi-iface[0].ssid=relais.reseaulibre.ca
+    wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
+    wireless.@wifi-iface[0].network=mesh
+
+
+
+
+# Notes d'installation
+
+
+Reflashing de dame7 avec openwrt:backfire
+-----------------------------------------
+
+    atftp --trace --option "timeout 1" --tftp-timeout 1 --option "mode octet" --put --local-file openwrt-atheros-ubnt2-squashfs.bin   192.168.1.20 
+
+après l'avoir flashé, il prend 192.168.1.1
+
+    telnet 192.168.1.1
+    passwd
+
+root@OpenWrt:/# 
+
+    uci set system.@system[0].hostname=dame7
+    uci delete wireless.wifi0.disabled
+    uci delete wireless.@wifi-iface[0].network
+    uci set wireless.wifi0.channel=1
+    uci set wireless.@wifi-iface[0].mode=adhoc
+    uci set wireless.@wifi-iface[0].ssid='relais.reseaulibre.ca'
+    uci set wireless.@wifi-iface[0].bssid='02:CA:FF:EE:BA:BE'
+    uci commit
+    reboot & exit
+
+
+Installation des paquets
+------------------------
+ * kmod-ipv6
+ * babeld
+Donc un accès à internet.
+Pour accès à internet, ça lui prend une adresse sur 192.168.0.255...
+root@dame7:~# 
+
+    ifconfig  br-lan 192.168.0.42  netmask 255.255.255.0 & exit
+
+root@dame7:~#
+
+    route add default gw 192.168.0.1
+    vim /etc/resolv.conf
+    >> nameserver 192.168.0.1
+
+(J'ai aussi enlever 127.0.0.1, ça fuckait le dns)
+root@dame7:~# 
+
+    opkg update
+    opkg install ip kmod-ipv6 babeld
+
+
+Configuration du parefeu et des zones
+-------------------------------------
+
+par luci-web on va créer la zone 'mesh' 
+/admin/network/network/mesh
+
+    protocole: static
+    interface: ath0 (Wireless Network: Ad-Hoc "relais.reseaulibre.ca")
+    firewall-zone: mesh
+    ipv4 addr: 172.168.2.2
+    ipv4 netmask: 255.255.255.255
+
+save & apply
+(elle pert son ip 192.168.0.42 et retourne sur 192.168.1.1)
+
+
+/admin/network/network/lan >> physical settings
+on enlève le bridge du lan
+/admin/network/network/lan >> firewall
+on assigne  lan à wan
+            mesh à lan
+Essentiellement, ce qui arrive de batiment7 par le mesh peut sortir vers le wan (vers le routeur chez la dame), mais ce qui arrive de chez la dame ne va pas vers le mesh.
+On pourrait éventuellement rafiner les règles pour éviter que quelqu'un accède à l'internet par le routeur de la dame en passant par le mesh.
+
+    firewall.cfg1692bd=rule
+    firewall.cfg1692bd.target=ACCEPT
+
+    firewall.cfg02f50e
+    firewall.cfg02f50e.drop_invalid=1
+
+    firewall.cfg06a808
+    firewall.cfg06a808.network=wan lan
+
+    firewall.cfg043115
+    firewall.cfg043115.network=lan mesh
+
+    network.lan
+    network.lan.type
+
+save & apply
+
+root@dame7:~# 
+
+    babeld -d1 ath0
+
+nope.
+
+root@dame7:~/#
+    uci show babeld | grep port
+    babeld.@general[0].port=6697
+
+root@dame7:~/# 
+    uci set babeld.@general[0].port=6696
+    uci commit
+
+nope. toujours pas.  Soyons explicite:
+root@dame7:~/# 
+
+    babeld -d1 -p6696 ath0
+
+Ça semble fonctionner! 
+
+
+Babeld au démarrage
+-------------------
+Hack dans /etc/rc.local/:
+
+    babeld -D -g 33123 -p 6696 ath0
+
+Redistribution de la route par défaut sur le mesh
+-------------------------------------------------
+décommenter la dernière ligne dans /etc/babeld.conf:
+
+    redistribute ip 0.0.0.0/0 le 0 proto 3 metric 128
+
+Rendre dame7 client dhcp
+------------------------
+par luci-web: /admin/network/network/lan/
+
+    protocole: dhcp client
+
+    network.lan
+    network.lan._orig_bridge=false
+    network.lan._orig_ifname=eth0
+    network.lan.ipaddr
+    network.lan.netmask
+    network.lan.proto
+
+Full backup
+-----------
+
+see [[export.uci]] for a full backup of a working backfire
+configuration.
+
+# Photos
+
+(You can upload images when you edit this page. Feel free to upload photos
+of your installation or of the panorama. It will help other people who may
+want to link with you.)
+
+[[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]

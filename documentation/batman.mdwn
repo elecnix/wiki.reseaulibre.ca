@@ -8,7 +8,7 @@ B.A.T.M.A.N., a "Better Approach To Mobile Ad-hoc Networking", is an alternative
 
 On assume que les étapes suivantes ont été faites avec succès:
 
- 1. [[Flashing]] de votre routeur (avec `trunk` pour OpenWRT, voir ci-bas)
+ 1. [[documentation/Flashing]] de votre routeur (avec `trunk` pour OpenWRT, voir ci-bas)
  2. Configuration du mode [[ad-hoc]]
 
 # Installer et configurer BATMAN
@@ -17,7 +17,7 @@ On assume que les étapes suivantes ont été faites avec succès:
 
 *Ceci est un résumé de l'excellent [[Guide d'installation de BATMAN sur OpenWRT|guides/openwrt+batman]].*
 
-[!] **Important**: il faut utiliser une *version récente* de OpenWRT  (`trunk` au moment d'écrire ces lignes) pour obtenir de bons résultats (BATMAN 2012). Voir [[flashing]] pour plus d'informations sur l'architecture à utiliser. `backfire` n'est *pas* compatible.
+[!] **Important**: il faut utiliser une *version récente* de OpenWRT  (`trunk` au moment d'écrire ces lignes) pour obtenir de bons résultats (BATMAN 2012). Voir [[documentation/flashing]] pour plus d'informations sur l'architecture à utiliser. `backfire` n'est *pas* compatible.
 
 Pour installer batman-adv:
 
@@ -31,7 +31,7 @@ Pour installer batman-adv:
         opkg -f /tmp/opkg.conf install http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-lib-crc16_3.2.13-1_brcm47xx.ipk \
             http://downloads.openwrt.org/snapshots/trunk/brcm47xx/packages/kmod-batman-adv_3.2.13+2012.0.0-1_brcm47xx.ipk
 
-> Voir [[flashing]] pour plus d'informations sur l'architecture à utiliser.
+> Voir [[documentation/flashing]] pour plus d'informations sur l'architecture à utiliser.
 
 Changement du MTU de l'interface wifi:
 
@@ -118,11 +118,11 @@ L'interface doit ensuite être configurée
 
 # Étape suivante
 
-Faire la [[configuration IP|configuration/ip]].
+Faire la [[configuration IP|documentation/ip]].
 
 ## Use our bat-hosts
 
-You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|configuration/batman/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
+You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our [[bat-hosts|documentation/batman/bat-hosts]] file to let batman display nice, user-friendly names (such as 'boulette', our very first Ubiquiti "Bullet").
 
 # Troubleshooting
 

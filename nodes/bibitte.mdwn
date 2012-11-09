@@ -1,13 +1,53 @@
-[[!osm lat="45.5661" lon="-73.598172" map="map" href="/map" zoom=15 right]]
+Test TP-Link 703N node.
 
- * Mode: WDS
- * Distance: 180m
- * Nodes: [[nodes/elecnix]], [[nodes/besik]]
- * Speed: 20mbps
- * Noise floor: -90dBm
+# Technical details
 
+[[!ymlfront data="""
+MAC: EC:88:8F:C6:3E:38
+IP: 172.16.1.56
+IPv6: 
+"""]]
 
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+hostname
+: bibitte
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT 12.09-beta2
+
+Hardware
+: TP-Link 703N
+
+Power
+: 
+
+Location
+: 
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink test]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: [[nodes/princesse]]
+
+[[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this

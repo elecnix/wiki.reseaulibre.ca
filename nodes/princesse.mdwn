@@ -1,10 +1,53 @@
- * Mode: managed
- * Distance: 500m
- * Nodes: [[nodes/hexa]], [[nodes/bgm-homs]]
- * Speed: 1mbps (bloqué par le gros édifice
- * Picture: [[!img IMG_3134.JPG]]
+Test TP-Link 703N node.
 
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+# Technical details
+
+[[!ymlfront data="""
+MAC: EC:88:8F:C6:41:B4
+IP: 172.16.1.57
+IPv6: 
+"""]]
+
+hostname
+: princesse
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT 12.09-beta2
+
+Hardware
+: TP-Link 703N
+
+Power
+: 
+
+Location
+: 
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink test]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: [[nodes/bibitte]]
+
+[[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this

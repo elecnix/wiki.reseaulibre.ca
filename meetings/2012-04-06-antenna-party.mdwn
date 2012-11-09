@@ -16,7 +16,7 @@ excellente vue là-bas. Malheureusement, benoitg et anarcat ne se
 
 On a beaucoup travaillé avec les Ubiquity Bullet, qui sont un charme à installer et configurer, pour vu bien sûr qu'on a les antennes qui vont avec.
 
-Il y a maintenant les deux premiers nodes en mode mesh de montés, et la documentation a été beaucoup améliorée, particulièrement au niveau [[configuration/ip]] et [[configuration/batman]].
+Il y a maintenant les deux premiers nodes en mode mesh de montés, et la documentation a été beaucoup améliorée, particulièrement au niveau [[documentation/ip]] et [[documentation/batman]].
 
 Lisez ci-bas pour les détails.
 
@@ -64,7 +64,7 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
  * Client: clef USB UR055G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mode adhoc. Transfert: 5.88 MB @ 4.82 Mbit/s. Distance: 60 centimètres.
  * Client: Linsys WRT54G 802.11bg, serveur: laptop avec Intel Pro/Wireless 2100. Mode Access Point. 6.50 MBytes @ 5.23 Mbits/sec. Distance: 2 mètres avec 2 murs.
 
-[[users/elecnix]] a bien travaillé sur la [documentation batman](configuration/batman) et avait déjà deux points d'accès Linksys préconfigurés pour faire des tests.
+[[users/elecnix]] a bien travaillé sur la [documentation batman](documentation/batman) et avait déjà deux points d'accès Linksys préconfigurés pour faire des tests.
 
 ## Organisation
 
@@ -90,7 +90,7 @@ Test de vitesse préliminaire avec `iperf -s` et `iperf -c <hostname>`.
    physique vers le mesh, sans problème, suffit d'ajouter le node
    comme gateway de son laptop
  * un Bullet M2 est maintenant en place et fonctionnel chez [[nodes/benoitg]] et [[nodes/boulette]], mais ne se voient pas
- * anarcat a travaillé à la [configuration IP](configuration/ip) de son node, avec des bonnes idées pour le IPv6
+ * anarcat a travaillé à la [configuration IP](documentation/ip) de son node, avec des bonnes idées pour le IPv6
  * anarcat a appris à crimper et souder des câbles extérieurs pour le PoE
  * [[Photos|http://www.flickr.com/photos/elecnix/sets/72157629757019923]]!
 

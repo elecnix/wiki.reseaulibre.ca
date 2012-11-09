@@ -6,8 +6,8 @@ Voici le bulletin de nouvelle mensuel du Réseau Libre, couvrant la période dep
 
 On souhaite ici se rencontre pour tester [Babel][1] d'avantage, sans l'interférence de [BATMAN][2]. On va également essayer de faire un petit échange de clefs PGP et discuter de VPN ainsi que d'adressage. Les détails dans [l'annonce complète][3].
 
- [1]: http://wiki.reseaulibre.ca/configuration/babel
- [2]: http://wiki.reseaulibre.ca/configuration/batman
+ [1]: http://wiki.reseaulibre.ca/documentation/babel
+ [2]: http://wiki.reseaulibre.ca/documentation/batman
  [3]: http://wiki.reseaulibre.ca/meetings/2012-09-13-babel-VPN-PGP/
 
 # Nouvelle commande collective

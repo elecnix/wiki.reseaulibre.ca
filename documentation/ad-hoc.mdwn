@@ -1,7 +1,7 @@
 [[!toc levels=3]]
 [[!meta title="Ad-hoc Network Configuration"]]
 
-This page is an attempt to help you configure and troubleshoot the Ad-Hoc mode on your network card. This type of configuration is useful when joining a B.A.T.M.A.N. mesh as a client without B.A.T.M.A.N., or as a fully-enabled mesh node, as per the [[B.A.T.M.A.N. Configuration|configuration/batman]].
+This page is an attempt to help you configure and troubleshoot the Ad-Hoc mode on your network card. This is a requirement for joining a mesh network, since it allows "many to many" connections between participants of the ad-hoc network. Routing protocols, such as [[Babel|documentation/babel]], are added on top to provide routing information beyond direct neighbors.
 
 # General configuration
 
@@ -11,7 +11,7 @@ Channel
 : 1
 
 Session ID (ESSID, suggéré):
-: `reseaulibre.ca`
+: `relais.reseaulibre.ca`
 
 Cell (BSSID)
 : `02:CA:FF:EE:BA:BE`
@@ -36,9 +36,9 @@ Activer la radio
 
     uci delete wireless.radio0.disabled
 
-Separate wireless network from `lan`
+Move wireless network from `lan` to `wlan`:
 
-    uci delete wireless.@wifi-iface[0].network
+    uci set wireless.@wifi-iface[0].network=wlan
 
 Montreal mesh standards: channel 1, adhoc, named `reseaulibre.ca`. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
 
@@ -83,7 +83,7 @@ This will bring up your network interface:
 
 /!\ Le mode Ad-Hoc n'est pas supporté avec les driver rtl8187 dans linux.
 
-Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la carte est "associée" et on voit aussi avec quelle cellule (une MAC). La cellule devrait être la même sur toutes les machines. 
+Exemple de résultat dans iwconfig:
 
     wlan0     IEEE 802.11bgn  ESSID:"reseaulibre.ca"  
               Mode:Ad-Hoc  Frequency:2.412 GHz  Cell: 02:CA:FF:EE:BA:BE
@@ -92,11 +92,11 @@ Quand le mode ad-hoc est bien configuré, on peut voir dans "iwconfig" que la ca
               Encryption key:off
               Power Management:on
 
-Bien vérifier que la [Key encryption](/configuration/ad-hoc/#index5h2) est désactivée.
+Bien vérifier que la [Key encryption](/documentation/ad-hoc/#index5h2) est désactivée.
 
 Sinon, descendre l'interface réseau (voir même désactiver son module noyau) et la ré-activer.
 
-Voir [[configuration/ip]] pour configurer l'interface et [[policy/numbering]] pour l'allocation de l'addresse.
+Voir [[documentation/ip]] pour configurer l'interface et [[policy/numbering]] pour l'allocation de l'addresse.
 
 ## Network manager
 

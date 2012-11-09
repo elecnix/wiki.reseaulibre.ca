@@ -1,27 +1,28 @@
 Achat collectif: date indéterminée, ajoutez votre nom, et quand la liste sera assez grande, on s'arrangera!
 Si vous n'êtes pas sur la listes de discussion "nodes@", mentionnez comment vous rejoindre.
 
-* [Bullet M2HP Ti][] + [antenne omni 15 dbi][] + [injecteur POE 24V][]; |R: 1 (confirmé)
+* [Bullet M2HP Ti][] + [antenne omni 15 dbi][] + [injecteur POE 24V 1A w/RESET][]; |R: 1 (confirmé)
 * [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V][];
 * [NanoStation M2][];
 * [PicoStation M2HP][]; |R: 1 (confirmé)
-* [Injecteur POE 24V 1A w/RESET]: |R: 2 (confirmé) (où?)
+* [Injecteur POE 24V 1A w/RESET]: |R: 1 (confirmé) (où?)
 
-Date limite: ?? décembre 2012
+Date limite: ? décembre 2012
 
-Personne responsable de l'achat: ??
+Personne responsable de l'achat: ?
 
 | Item                                      | Qtee | Prix unit | Total | En stock |
 ------------------------------------------- | :--: | --------: | ----: | -------: |
 [NanoStation M2][] 			    | 0    |   89$     |   0$  | ? |
 [NanoBracket][]                             | 0    |    9$     |   0$  | ? |
-[Bullet M2HP Ti][]                          | 1    |  108$     |   0$  | ? |
+[Bullet M2HP Ti][]                          | 1    |  108$     | 108$  | ? |
 [Bullet M2HP][]                             | 0    |   75$     |   0$  | ? |
-[PicoStation M2HP][]                        | 1    |   77$     |   0$  | ? |
-[injecteur POE 24V][]                       | 1    |    9$     |   0$  | ? |
-[antenne omni 15 dbi][]                     | 1    |   45$     |   0$  | ? |
-Total                                       |      |           |   0$ | |
-Total +tx                                   |      |           |  ??$| |
+[PicoStation M2HP][]                        | 1    |   77$     |  77$  | ? |
+[injecteur POE 24V][]                       | 0    |    9$     |   0$  | ? |
+[Injecteur POE 24V 1A w/RESET]              | 2    |   19$     |  38$  | ? |
+[antenne omni 15 dbi][]                     | 1    |   45$     |  45$  | ? |
+Total                                       |      |           |   0$  | ? |
+Total +tx                                   |      |           |   ?$  | ? |
 
 [NanoStation M2]: http://www.converbit.ca/magasin/products.php?product=NanoStation-M2
 [NanoBracket]: http://www.converbit.ca/magasin/products.php?product=NanoBracket
@@ -32,8 +33,7 @@ Total +tx                                   |      |           |  ??$| |
 [antenne sectorielle 120°]: https://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9
 [injecteur POE 15V]: http://www.converbit.ca/magasin/products.php?product=-POE-15V
 [injecteur POE 24V]: http://www.converbit.ca/magasin/products.php?product=POE-24v
-[Injecteur POE 24V 1A w/RESET]: http://www.miro.co.za/upload/poe24_ds.pdf
-
+[Injecteur POE 24V 1A w/RESET]: http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&category_id=7&product_id=105&option=com_virtuemart&Itemid=1
 # "Spares"
 
 Si vous avez du matériel en trop que vous voulez revendre, ajoutez votre nom ici et une façon de vous contacter:

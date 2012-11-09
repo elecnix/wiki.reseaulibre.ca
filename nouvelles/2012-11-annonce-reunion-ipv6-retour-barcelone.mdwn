@@ -2,11 +2,11 @@ Sujet: Formation IPv6 et retour sur Barcelone, mardi le 13 novembre à 19h
 
 (english follows)
 
-Le mardi 13 novembre 2012, à 19h, à l'École Polytechnique (LOCAL?) [1], Réseau-Libre organise une formation sur le protocole réseau IPv6.
+Le mardi 13 novembre 2012, à 19h, à l'École Polytechnique (Pavillon Lassonde, local M-1420) [1], Réseau Libre organise une formation sur le protocole réseau IPv6.
 
-Nous en profiterons également de cette rencontre pour faire un retour sur le «International Summit for Community Wireless Networks » (IS4CWN) à Barcelone, où 4 bénévoles de Réseau-Libre étaient présents.
+Nous profiterons également de cette rencontre pour faire un retour sur le «International Summit for Community Wireless Networks » (IS4CWN) à Barcelone, où 4 bénévoles de Réseau Libre étaient présents.
 
-[1] L'École Polytechnique est située au 2900 boulevard Édouard-Montpetit, métro Université de Montréal.
+[1] L'École Polytechnique est située au 2900 boulevard Édouard-Montpetit, métro Université de Montréal. http://www.polymtl.ca/lassonde/plan/index.php
 
 IPv6 est un protocole réseau destiné à remplacer le protocole IPv4. IPv6 dispose d'un espace d'adressage bien plus important qu'IPv4, ce qui permet une plus grande flexibilité dans l'attribution des adresses. Concrètement, pour les réseaux en maille, IPv6 simplifie l'allocation des adresses IP et le routage.
 
@@ -15,8 +15,8 @@ Autres nouvelles en bref de Réseau-Libre:
 * 11 nouvelles antennes achetées lors du dernier achat de groupe (merci Louis-Michel!)
 * Nouveaux noeuds et lien entre "Zoidberg" et "R" sur le Plateau.
 * Nouveau noeud "val" dans Rosemont.
-* Nouveaux noeuds prévus: "Eastern Block" dans Parc-X, "Coop Généreux" sur le Plateau.
-
+* Nouveaux noeuds prévus: "Eastern Block" dans Parc-X, "Coop Généreux" sur le Plateau
+  ce mercredi 7 nov: https://www.facebook.com/events/527439023950284/
 
 À PROPOS DE RÉSEAU-LIBRE
 
@@ -32,13 +32,13 @@ Pour plus d'information: http://www.reseaulibre.ca
 
 *** ENGLISH ***
 
-Tuesday, Novermber 13, 2012, at 7 PM, at the École Polytechnique (LOCAL?) [1], Réseau-Libre invites you to an IPv6 workshop.
+Tuesday, November 13, 2012, at 7 PM, at the École Polytechnique (Lassonde building, room M-1420) [1], Réseau Libre invites you to an IPv6 workshop.
 
-We will also take this opportunity to discuss about the recent "International Summit for Community Wireless Networks" (IS4CWN) in Barcelona, where four volunteers of Réseau-Libre were present.
+We will also take this opportunity to discuss about the recent "International Summit for Community Wireless Networks" (IS4CWN) in Barcelona, where four volunteers of Réseau Libre were present.
 
 [1] The "École Polytechnique" is located at 2900 boulevard Édouard-Montpetit, Université de Montréal metro station.
 
-IPv6 is a network protocol which will replace IPv4. IPv6 has a much bigger address space. This allows more flexibility in how addresses are assigned and routed, which is important for a mesh network such as Réseau-Libre.
+IPv6 is a network protocol which will replace IPv4. IPv6 has a much bigger address space. This allows more flexibility in how addresses are assigned and routed, which is important for a mesh network such as Réseau Libre.
 
 Other news:
 

@@ -6,7 +6,7 @@ Antenne planifiée sur le toit d'un édifice de deux étages, à la fin de septe
 # Technical details
 
 [[!ymlfront data="""
-MAC: 00:B0:C0:02:1C:53
+MAC: DC:9F:DB:00:13:4C
 IP: 172.16.0.23
 IPv6: fd66:66:66:0:de9f:dbff:fe00:134c
 """]]

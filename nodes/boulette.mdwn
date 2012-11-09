@@ -57,7 +57,7 @@ Links
 Configuration
 =============
 
-This node runs batman according to the [[configuration/batman]] howto.
+This node runs batman according to the [[documentation/batman]] howto.
 
 Babel
 -----

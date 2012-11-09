@@ -19,7 +19,7 @@ IP address
 : {{$IP}}
 
 Software
-: OpenWRT trunk (attitude adjustment)
+: OpenWRT 12.09-beta2 (attitude adjustment)
 
 Hardware
 : SL-7205 (XDX-RN502J board)

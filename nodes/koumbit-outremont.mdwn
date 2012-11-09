@@ -47,8 +47,8 @@ Operator
 Links
 : None yet, possible with scientist-poly
 
-Configured with [[configuration/batman]], [[configuration/ad-hoc]]
-(new BSSID) and [[configuration/babel]].
+Configured with [[documentation/batman]], [[documentation/ad-hoc]]
+(new BSSID) and [[documentation/babel]].
 
 UCI config:
 
