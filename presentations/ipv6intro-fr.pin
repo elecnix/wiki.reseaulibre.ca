@@ -1,6 +1,6 @@
 #!/usr/bin/env pinpoint
 
-[white] [center]
+[white] [center] [text-color=white] [shading-opacity=0.5]
 
 -- [NetworkTopology-Mesh.png]
 
@@ -13,7 +13,7 @@ Réseau Libre - Introduction IPv6
 Un réseau maillé?
 
 ✔ independant
-✔ local
+✓ local
 ✔ décentralisé
 ✔ non-commercial
 
@@ -76,11 +76,19 @@ Comment ça marche ?
 
 -- [grace-win.jpg] [bottom]
 
---
+-- [black] [center] [text-color=white] [shading-opacity=1] [font=Sans bold 100px]
 
 IPv6 ?
 
---
+-- [white] [center] [text-color=black] [shading-opacity=0] [transition=slide-up]
+
+* Nouveau protocole (~ 15 ans)
+* N'est pas une extention de IPv4
+* Nouvelle courbe d'apprentissage
+* Peut coexister avec IPv4
+   (comme DECnet!)
+
+-- [white] [center] [text-color=black] [shading-opacity=0] [transition=fade]
 
 • Plus flexible
 • Beaucoup d'adresses
@@ -323,6 +331,11 @@ http://www.reseaulibre.ca
 Tunnel Broker:
 http://www.tunnelbroker.net
 
+ARIN IPv6 wiki:
+http://www.getipv6.info/
+
 Présentation par Rob Green (Senior Engineer Voxeo)
 http://www.youtube.com/watch?v=tw8EyTlSDrc
 
+CIRA:
+http://cira.ca/centre-des-connaissances/technologie/ipv6/
