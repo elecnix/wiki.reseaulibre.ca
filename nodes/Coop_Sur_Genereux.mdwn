@@ -6,7 +6,7 @@ Node on the roof of a third floor building. Maintained by http://www.coopsurgene
 
 [[!ymlfront data="""
 MAC: (mac address here)
-IP: (pick one from [[policy/numbering]])
+IP: 172.16.0.72
 IPv6: 
 """]]
 
@@ -44,7 +44,7 @@ Status
 : [[!taglink planned]] (can also be up, down, planned, unknown)
 
 Operator
-: [[users/Cooper]]
+: [[users/Cooper]], [[users/gboudrias]]
 
 Links
 : (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
