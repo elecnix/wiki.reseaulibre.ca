@@ -24,7 +24,7 @@ Une fois installé, on doit activer la recherche de "plugins" en éditant le scr
 +PLUGINS="cpu if_ if_err_ load memory processes netstat uptime interrupts irqstats plugindir_"
 """]]
 
-On peut ensuite télécharger et placer le script suivant dans le répertoire /etc/munin/plugins et le rendre exécutable: [[adhoc_rssi.sh]]
+On peut ensuite télécharger et placer le script suivant dans le répertoire /etc/munin/plugins et le rendre exécutable: [[documentation/munin/adhoc_rssi.sh]]
 
 [[!format txt """
 $ wget http://wiki.reseaulibre.ca/configuration/munin/adhoc_rssi.sh
