@@ -48,7 +48,7 @@ Trying 192.168.2.1...
 Connected to 192.168.2.1.
 Escape character is '^]'.
 Username: admin
-Password: ********
+Password: *****
 
 HomeGateway> system shell
 Temporary setting log_level off
