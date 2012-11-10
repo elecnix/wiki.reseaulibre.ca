@@ -68,3 +68,10 @@ Enter 'help' for a list of built-in commands.
 """]]
 
 Amusez-vous...
+
+# Liens utiles:
+
+* [[http://www.hardware.com.br/comunidade/sagemcom-hackeando/1238038/]]
+* [[http://www.tripleoxygen.net/wp/2012/08/sagemcom-modem-fst-2764-gv-power-box-gvt-hacking-1/]]
+* [[http://www.jungo.com/products/openrg-uniform-gateway-middleware/]]
+* [[http://en.wikipedia.org/wiki/TR-069]]
