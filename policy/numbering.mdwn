@@ -77,3 +77,7 @@ first.
 > [SixXS.net](https://www.sixxs.net/tools/grh/ula/), using the MAC
 > address of my router. It was also registered there under Anarcat's
 > email address.*
+
+## Other Networks in the World
+
+Documented here is our own policies, but we're not alone with this problem. See this [[list on the Open Networks Interoperability Wiki|http://interop.wlan-si.net/wiki/IPAddressing/List]] for IP ranges used by other community networks around the world.
