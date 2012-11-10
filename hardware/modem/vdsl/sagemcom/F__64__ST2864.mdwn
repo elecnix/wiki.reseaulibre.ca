@@ -1,0 +1,63 @@
+# Modem VDSL Sagemcom F@ST2864
+Modem loué par Bell (obligatoire) pour du VDSL.
+Utilisé par les abonnées de TSI qui veulent avoir du IPv6 natif.
+
+## HARDWARE
+
+[[!format  bash """
+128MB de RAM
+
+ * cpu model	: MIPS 24K V4.12
+ * BogoMIPS	: 330.13
+"""]]
+
+## Obtenir un accès par telnet:
+
+### Download Config:
+[[!format  bash """
+curl http://admin:admin@192.168.2.1/save_rg_conf.cgi > HomeGateway.conf
+"""]]
+  
+### Edit Config :
+Trouver la ligne:
+[[!format  bash """
+(telnets(ports))
+"""]]
+
+Remplacer par:
+[[!format  bash """
+(telnets
+  (ports
+    (0
+      (port(23))
+      (ssl_mode(none))
+      (remote_access(0))
+    )
+  )
+)
+"""]]
+
+### POST Config:
+[[!format  bash """
+curl --data-urlencode new_rg_conf@HomeGateway.conf http://admin:admin@192.168.2.1/replace_rg_conf.cgi
+"""]]
+
+[[!format  bash """
+>telnet 192.168.2.1 
+Trying 192.168.2.1...
+Connected to 192.168.2.1.
+Escape character is '^]'.
+Username: admin
+Password: ********
+
+HomeGateway> system shell
+Temporary setting log_level off
+
+
+BusyBox v1.01 (2005.09.07-07:38+0000) Built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# 
+"""]]
+
+Amusez-vous...
