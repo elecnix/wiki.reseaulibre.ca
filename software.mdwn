@@ -127,11 +127,25 @@ Développé par AthensWireless. Interface web de gestion de nodes.  Version 2 pr
 
  * <http://wind.cube.gr/>
 
+# Node Databases
+
 ## NodeWatcher
 
 Développé par Wlan Slovenija:  Générateur de firmware openwrt + OLSR, pas mal de trucs qui ont l'air intéressants
 
  * <http://dev.wlan-si.net/wiki/Nodewatcher>
+
+## Nodeshot
+
+Nodeshot, developed by Ninux, allows members to add their node and to share and manage information about their configurations like devices, ip addresses, wireless parameters etc. It is based on WNMap, and is scriptable.
+
+ * <https://github.com/ninuxorg/nodeshot>
+
+## WiND
+
+Developed by the members of Athens Wireless Metropolitan Network (AWMN) located in Athens, Greece.
+
+ * <http://wind.cube.gr/>
 
 # References
 
