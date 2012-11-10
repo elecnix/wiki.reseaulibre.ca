@@ -55,7 +55,7 @@ Password: *****
 HomeGateway>
 """]]
 
-Obtenir root:
+Obtenir root et étendre le lien IP vers Bell:
 [[!format  bash """
 HomeGateway> system shell
 Temporary setting log_level off
@@ -64,12 +64,23 @@ Temporary setting log_level off
 BusyBox v1.01 (2005.09.07-07:38+0000) Built-in shell (ash)
 Enter 'help' for a list of built-in commands.
 
-# 
+# ifconfig ppp1 down
 """]]
 
-Amusez-vous...
+La lumière rouge devrait éventuellement s'allumer à côté du "@" (1-2 minutes), 
+indiquant que votre connexion à Bell est rompue! 
 
-# Liens utiles:
+ie: vous êtes libéré de leur gestion! ;)
+
+...Amusez-vous...
+
+## TODO:
+
+* comprendre qu'est ce qui fait quoi
+* Dumper l'image cramfs / jffs2
+* modifier les configurations par défaut et changer les logos de la page web ;)
+
+## Liens utiles:
 
 * [[http://www.dslreports.com/forum/r27703851-Sagemcom-F-st-2864-unlock-on-nix]]
 * [[http://www.hardware.com.br/comunidade/sagemcom-hackeando/1238038/]]
