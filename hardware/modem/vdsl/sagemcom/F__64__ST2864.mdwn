@@ -42,6 +42,8 @@ Remplacer par:
 curl --data-urlencode new_rg_conf@HomeGateway.conf http://admin:admin@192.168.2.1/replace_rg_conf.cgi
 """]]
 
+### Conect:
+Utilisez telnet:
 [[!format  bash """
 >telnet 192.168.2.1 
 Trying 192.168.2.1...
@@ -50,6 +52,11 @@ Escape character is '^]'.
 Username: admin
 Password: *****
 
+HomeGateway>
+"""]]
+
+Obtenir root:
+[[!format  bash """
 HomeGateway> system shell
 Temporary setting log_level off
 
