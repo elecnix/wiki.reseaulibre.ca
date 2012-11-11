@@ -71,6 +71,7 @@ La lumière rouge devrait éventuellement s'allumer à côté du "@" (1-2 minute
 indiquant que votre connexion à Bell est rompue! 
 
 ie: vous êtes libéré de leur gestion! ;)
+Caveat emptor: Au resync xDSL suivant la connexion ppp1 sera rétablie (voir TODO)
 
 ### Pour obtenir les statistiques sur la ligne:
 (commande vdsl avec mot de passe superikanos)
@@ -173,10 +174,7 @@ cpe>
 
 """]]
 
-
 ...Amusez-vous...
-
-Caveat emptor: Au resync xDSL suivant la connexion ppp1 sera rétablie (voir TODO)
 
 ## TODO:
 
