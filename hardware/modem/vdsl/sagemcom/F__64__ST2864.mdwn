@@ -72,6 +72,111 @@ indiquant que votre connexion à Bell est rompue!
 
 ie: vous êtes libéré de leur gestion! ;)
 
+Pour obtenir les statistiques sur la ligne:
+
+(commande vdsl avec mot de passe superikanos)
+[[!format  bash """
+# vdsl
+
+Please enter console password: superikanos
+
+Supervisor mode
+
+
+
+      BME Reference board API Menu
+Ikanos Communications Copyright 2000-2008
+             Version 9.2.0.12 VOX180 
+=========================================
+
+    2) Initiate Reset BME command
+    3) Configure System Provision (default values)
+    4) Configure Port Provision
+    5) Initiate Port Start command
+    7) Initiate Port Stop command
+    9) Start Loopback Test
+   10) Request Brief Port Status
+   11) Request Extended Port Status
+   12) Display Performance Counters
+   13) Get Near End SNR Margin and Attenuation
+   15) Display User Logs
+   16) Clear User Logs
+   20) Display this menu
+   21) Modify Port Provision
+   31) INI CRC Threshold
+   41) Port Error Count Management
+   42) Event Log Management
+   55) Board Configuration Management
+   56) OAM Options Mask Setting
+   57) Performance Management Parameter Configuration
+   58) Trigger PM Failures
+   59) Bitloading Per Tone
+   62) GPIO Test
+   70) Maintenance Mode
+   72) VDSL2 Double Ended Loop Testing (DELT)
+   73) Freeze Mode
+   90) BME Firmware versions
+   91) EFM Pre-emption
+   99) Log off/ Go to auto mode
+  114) Clear Performance Counters
+  127) System training LED blink rate
+  131) VDSL CRC Threshold
+  140) Internal EOC Commands
+  141) Overhead Message Commands
+  143) Remote Ethernet Status Report
+  150) Bit Swap Commands
+  212) Display All Performance Counters
+
+cpe>
+"""]]
+
+Pour obtenir les statistiques de votre connexion:
+
+(exemple avec ADSL2 16/1)
+[[!format  bash """
+cpe>11
+
+cpe> 
+Extended Port Status
+=================
+Bme: 1 Port: 1
+Downstream line rate: 16908 kbps
+Upstream line rate: 800 kbps
+Bearer0 Downstream payload rate: 0 kbps
+Bearer1 Downstream payload rate: 15992 kbps
+Bearer0 Upstream payload rate: 0 kbps
+Bearer1 Upstream payload rate: 728 kbps
+Downstream attainable payload rate: 15972 kbps
+Downstream attainable line rate: 16912 kbps
+Downstream Training Margin: 6.0 dB
+Downstream Line Protection (Bearer1 Path): 0.0 DMT Symbols
+Upstream Line Protection (Bearer1 Path): 0.0 DMT Symbols
+Near-end ITU Vendor Id: 0xb500494b4e530200
+Far-end ITU Vendor Id: 0xb500494b4e530100
+Downstream delay: 0.1 ms
+Upstream delay: 0.9 ms
+Tx total power 10.9 dbm
+FE Tx total power 12.3 dbm
+VDSL Estimated Loop Length : 5259 ft
+G.Hs Estimated Near End Loop Length : 5259 ft
+G.Hs Estimated Far End Loop Length :0 ft
+Current framing mode: 0x00 ATM
+Bandplan Type...........: 1
+No. of Upstream Bands...: 1
+No. of Downstream Bands.: 1
+Line Type: 0x00000020 ADSL2 PLUS ANNEX A
+Downstream FFT Protection (Bearer1 Path): 0.0 DMT Symbols
+Upstream FFT Protection (Bearer1 Path): 0.0 DMT Symbols
+Upstream Line Attenuation: NA (Only for ADSL1 & T1.413)
+Upstream SNR Margin: NA (Only for ADSL1 & T1413)
+Upstream Retransmission status: Disabled
+Downstream Retransmission status: Disabled
+
+cpe> 
+
+"""]]
+
+
 ...Amusez-vous...
 
 Caveat emptor: Au resync xDSL suivant la connexion ppp1 sera rétablie (voir TODO)
