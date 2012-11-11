@@ -74,6 +74,8 @@ ie: vous êtes libéré de leur gestion! ;)
 
 ...Amusez-vous...
 
+Caveat emptor: Au resync xDSL suivant la connexion ppp1 sera rétablie (voir TODO)
+
 ## TODO:
 
 * comprendre qu'est ce qui fait quoi
