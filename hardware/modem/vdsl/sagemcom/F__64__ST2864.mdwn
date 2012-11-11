@@ -72,8 +72,7 @@ indiquant que votre connexion à Bell est rompue!
 
 ie: vous êtes libéré de leur gestion! ;)
 
-Pour obtenir les statistiques sur la ligne:
-
+### Pour obtenir les statistiques sur la ligne:
 (commande vdsl avec mot de passe superikanos)
 [[!format  bash """
 # vdsl
@@ -130,9 +129,7 @@ Ikanos Communications Copyright 2000-2008
 cpe>
 """]]
 
-Pour obtenir les statistiques de votre connexion:
-
-(exemple avec ADSL2 16/1)
+Pour obtenir les statistiques de votre connexion (exemple avec ADSL2 16/1):
 [[!format  bash """
 cpe>11
 
