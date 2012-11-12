@@ -155,7 +155,7 @@ do not override your default configuration.
 It is useful to remember this, as it can also be passed on the
 commandline directly, as such:
 
-    bababeld -d1 -C 'redistribute metric 128' wlan0
+    babeld -d1 -C 'redistribute metric 128' wlan0
 
 Another common configuration is to refuse the default route, which is:
 
