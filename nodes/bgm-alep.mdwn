@@ -4,7 +4,7 @@
 
 [[!ymlfront data="""
 IP: 
-IPv6: 2607:f2c0:f00f:29a5:15:6dff:fe73:942f
+IPv6: 2607:f2c0:f00f:29a5::1
 """]]
 
 hostname
