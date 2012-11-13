@@ -15,11 +15,12 @@ En face du Parc des Amériques :
 
 [[!waypoint lat="45.518629" lon="-73.58219" embed hidden width="950px" height="300px" right desc="Bullet M2 + 15dBi"]]
 
-Bullet M2 + 15dBi à installer
+Bullet M2 + 15dBi
 
 # NODE - r.relais.reseaulibre.ca
-[[!img antenne_mat.jpg alt="antenne sur mat" align="right" size="x400" ]] * Status: [[!taglink up]] 
+[[!img antenne_mat.jpg alt="antenne sur mat" align="right" size="x380" ]]
 
+ * Status: [[!taglink up]] 
  * Hostname: r.relais.reseaulibre.ca
  * Location: 45.518629,-73.58219
  * Software: OpenWRT 12.09-beta1
