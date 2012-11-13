@@ -1,6 +1,6 @@
 [[!waypoint lat="45.465672" lon="-73.572792" embed hidden width="400px" height="400px" right desc="Serveur"]]
 
-= Détails techniques =
+# Détails techniques
 
 [[!ymlfront data="""
 MAC: 
@@ -23,6 +23,6 @@ IPv6: 2607:f2c0:f00f:2900::1/56
  * Operator: [[users/bgm]]
  * Links: [[bgm-alep]] (ethernet)
 
-= Services =
+# Services
 
  * http://partage.bidon.ca en IPv6.
