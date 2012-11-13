@@ -82,11 +82,12 @@ IPv6 ?
 
 -- [white] [center] [text-color=black] [shading-opacity=0] [transition=slide-up]
 
-* Nouveau protocole (~ 15 ans)
-* N'est pas une extention de IPv4
-* Nouvelle courbe d'apprentissage
-* Peut coexister avec IPv4
-   (comme DECnet!)
+• Nouveau protocole (~ 15 ans)
+• N'est pas une extention de IPv4
+• Nouvelle courbe d'apprentissage
+• Peut coexister avec IPv4
+
+## Co-existance: comme DECnet, Appletalk..
 
 -- [white] [center] [text-color=black] [shading-opacity=0] [transition=fade]
 
@@ -129,6 +130,8 @@ Adresses
 • Les "0" peuvent être consolidés (une fois)
 • Supporte les adresses IPv4
   ::ffff:172.16.1.10
+
+-- [flikr_wrosgen_arcencielmtl.jpg]
 
 --
 
@@ -206,7 +209,7 @@ Préfixes: "Site-local" fec0::/10
 
  • Équivalent à 192.168/16, 172/12, 10/8
 
- • Désuet, remplacé par les adresses unique-local
+ • DÉSUET, remplacé par les adresses unique-local
 
  • Peut quand même être utilisé (labo isolé)
 
@@ -237,7 +240,8 @@ Préfixes: "Global" 2000::/3
 Préfixes: Tunnel IPv6 sur un réseau IPv4
 
 • "6to4" 2002::/16
-   les deux "endpoint" doivent avoir une adresse IP publique
+   les deux « endpoint » doivent avoir
+   une adresse IP publique
 
 • Toredo 2001::/16
    encapsule les paquets IPv6 dans IPv4 UDP
@@ -276,6 +280,36 @@ IPv6 mobile
 • Utilise une adresse de référence et les paquets sont
   envoyés par un tunnel.
 
+-- [flikr_ampm_cat_in_box.jpg] [top]
+
+Concrètement?
+
+## Source: http://www.flickr.com/photos/ampm/3481540472/
+
+--
+
+Obtenir un bloc d'adresses
+
+• Connexion Internet IPv6?
+
+• TunnelBroker.net
+
+• Unique-local address
+
+-- [font=Monospace 50px]
+
+Préfixe /48 unique-local (ULA):
+
+• Assignation aléatoire
+
+• SiXXs ULA
+
+• Réseau libre: /64 dans notre bloc
+
+## http://www.sixxs.net/tools/grh/ula/
+## http://wiki.reseaulibre.ca/policy/numbering/
+## http://wiki.reseaulibre.ca/documentation/ipv6/
+
 --
 
 Radvd
@@ -286,9 +320,19 @@ Radvd
 
 • RFC 2461
 
--- [font=Monospace 50px]
+--
 
-interface eth1
+Installation de radvd
+
+• Debian: apt-get install radvd
+
+• OpenWRT: opkg install radvd
+
+## aussi s'assurer d'avoir kmod-ipv6
+
+--
+
+interface eth0
 {
   AdvSendAdvert on;
 
@@ -298,6 +342,9 @@ interface eth1
     AdvAutonomous on;
   };
 };
+
+## /etc/radvd.conf
+## man 5 radvd.conf
 
 -- [font=Monospace 50px]
 
@@ -310,23 +357,35 @@ net.ipv6.conf.all.forwarding=1
 
 -- [font=Monospace 50px]
 
-Ajouter une adresse statique à une interface:
+Ajouter une adresse IP statique
+à une interface:
 
-\# ip -f inet6 addr add add 2607:f2c0:f00f:2901::42 dev eth0
+\# ip -f inet6 addr add 
+  2607:f2c0:f00f:2901::42 dev eth0
 
 -- [font=Monospace 50px]
 
 Ajouter une route:
 
-\# ip -6 route add 2607:f2c0:f00f:29a2::/64 \\
-   via fe80::f6ec:38ff:feb5:db2b dev eth1
+\# ip -6 route
+   add 2607:f2c0:f00f:29a2::/64 
+   via fe80::f6ec:38ff:feb5:db2b 
+   dev eth1
+
+-- [font=Monospace 50px]
+
+\# tcpdump -i eth0 ip6
+\# tcpdump -i eth0 icmp6
+
+\# tcpdump -i eth0
+  src 2607:f2c0:f00f:2910::1
+  and icmp6
 
 --
 
-Références
-
 Réseau Libre:
 http://www.reseaulibre.ca
+http://www.reseaulibre.ca/presentations/ipv6intro-fr.pin
 
 Tunnel Broker:
 http://www.tunnelbroker.net
