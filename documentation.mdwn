@@ -22,6 +22,7 @@ ou
 1. [[Installation et configuration d'un noeud|guides/install+node+facile]] (avec web gui, plus simple)
 
 Les [[guides]] documentent également d'autres configurations utilisées.
+Voir aussi les fiches de [[présentations|http://wiki.reseaulibre.ca/presentations/]].
 
 # Other documentation
 
@@ -35,7 +36,7 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Meta]] - gestion de ce wiki
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
 
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+[[!meta copyright="Copyright © 2011-2012 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
