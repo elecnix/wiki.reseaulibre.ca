@@ -3,13 +3,13 @@
 # IP allocation strategy
 
 IP addresses are allocated on a first come first serve basis. We
-strongly encourage clever use of IPv6 to avoid starvation.
+strongly encourage the use of IPv6 to avoid starvation and simplify routing.
 
 This section documents the strategy and the addresses already allocated. To configure your device, see the next section, but please update your node page when you allocate yourself an IP.
 
-## New! Dynamic table of IP addresses
+## Dynamic table of IP addresses
 
-(!) This table should supplant the manually maintained tables below. Just follow the example of Bullet and fix the metadata on your node pages!!
+This table is automatically generated using the metadata information in the node pages.
 
 <table>
 <tr><th>#</th><th>hostname</th><th>IP</th><th>IPv6</th><th>MAC</th></tr>
@@ -42,21 +42,7 @@ your window, using `172.16.1.X/24` for now (like [[nodes/carton]]).
 
 ## IPv6
 
-We are using a huge IPv6 space (a `/48`, which allows for 65,536 `/64` networks) known as ULA (see below) for our mesh. The global prefix (`fd64:2c08:9fa7::/48`) is announced from some routers on the mesh, but is usually allocated in smaller `/64` networks, independent from one another, and that can be used to announce local networks.
-
-If you wish, however, to be on the global mesh, you should use a `/48` netmask to be able to reach all nodes in the vincinity.
-
-Known allocations:
-
- * `fd64:2c08:9fa7:1::1/64` - `roadkiller.anarcat.ath.cx` - router behind [[nodes/boulette]]
- * `fd64:2c08:9fa7::/64` - `roadkiller.anarcat.ath.cx` - network behind
-   roadkiller
- * `fd64:2c08:9fa7:1::2/64` - `boulette.anarcat.ath.cx` - [[nodes/boulette]] itself, announcing his netblock
- * `fd64:2c08:9fa7:2::/64` - `carton.anarcat.ath.cx` - [[nodes/carton]], a public access point
- * `fd64:2c08:9fa7:3::/64` - `pico.mesh.openisp.ca` - [[nodes/pic]], a
-   public access point at foulab
-
-Notice how I have a global router (`boulette`) which has a `/48` netmask while a local access node uses a small `/64` subnet.2
+We are using a huge IPv6 space (`fd64:2c08:9fa7::/48`, which allows for 65,536 `/64` networks) known as unique-local addresses (ULA, see below) for our mesh. This allows us to announce a single prefix, if we were to link with other networks (using a VPN to a mesh in another city, for example).
 
 ### Note on ULA prefixes
 
