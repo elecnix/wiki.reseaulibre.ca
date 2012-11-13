@@ -117,16 +117,33 @@ To enable routing, put this in your `/etc/sysctl.conf`:
 
 # Obtenir un bloc d'adresses IP
 
+## Par votre fournisseur d'accès à Internet
+
 Si votre fournisseur Internet en amont le supporte (ex: Teksavvy), c'est possible d'avoir une connexion IPv6 native (dual-stack avec ipv4). Par exemple, Teksavvy offre un block "/56", ce qui permet d'avoir 256 sous-réseaux de beaucoup de machines (256 * /32). On peut donc prendre un de ces sous-réseaux et l'annoncer par babel sur le mesh.
 
 Sinon, contactez quand même votre fournisseur pour leur dire que IPv6 est important pour vous. C'est un enjeu politique!
 
-En attendant, c'est possible d'avoir un tunnel par "Tunnel Broker" (un service gratuit de Hurricane Electric, he.net). [[http://tunnelbroker.net/]] Par défaut, Tunnel Broker assigne un /64 (pour un seul sous-réseau), mais on peut demander un /48 en un click. Voir les références ci-dessous pour plus d'information.
+## Par Tunnel Broker
 
-**Pourquoi avoir un bloc d'IP routable sur Internet?**
+C'est possible d'avoir un tunnel par "Tunnel Broker" (un service gratuit de Hurricane Electric, he.net). [[http://tunnelbroker.net/]] Par défaut, Tunnel Broker assigne un /64 (pour un seul sous-réseau), mais on peut demander un /48 en un click. Voir les références ci-dessous pour plus d'information.
+
+## Avec un block d'adresses privées "unique-local" (ULA)
+
+En IPv6, les adresses privées du genre 192.168.x.x ne sont plus recommandées, car ça rend la fusion de réseaux difficiles. Par exemple, si on connecte en VPN deux réseaux privés, il y a un risque que les deux réseaux aient utilisé 192.168.1.1 pour leur routeur.
+
+La méthode suggérée en IPv6 est donc de s'assigner un bloc d'adresses privé ("unique-local", "ULA") sous fd::/8. Voir [[policy/numbering]] pour plus d'information.
+
+Réseau libre utilise le bloc fd64:2c08:9fa7::/48. Vous pouvez donc vous assigner un bloc /64 dans cet espace.
+
+Pour choisir un bloc libre:
+
+* voir: [[policy/numbering]] et choisir un bloc libre.
+* inscrire votre bloc dans la page wiki de votre noeud (utiliser le template, ou voir comment les autres noeuds font)
+
+## Pourquoi avoir un bloc d'IP routable sur Internet?
 
 * Permet d'avoir un seul ensemble d'adresses IPs qui sont annoncées autant sur Internet que sur le Mesh.
-* Évite d'avoir à assigner une adresse de plus à toutes les machines qui sont sur le réseau, ou d'avoir à gérer des schémas d'assignations statiques d'adresses privées (ex: 172.16.x.x, 192.168.x.x ou fd64::/8).
+* Évite d'avoir à assigner une adresse de plus à toutes les machines qui sont sur le réseau, ou d'avoir à gérer des schémas d'assignations statiques d'adresses privées (ex: 172.16.x.x, 192.168.x.x ou fd64::/16).
 * Permet d'utiliser des DNS publics pour la résolution de noms de domaines. Ex: www.bidon.ca est accessible avec la même adresse IPv6 par Internet ainsi que par le mesh.
 
 # Références
