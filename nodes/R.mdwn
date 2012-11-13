@@ -1,6 +1,6 @@
 ### Vue vers le nord (montréalais)
 
-[[!img 2012-09-11-r-nord.jpg size=950x]]
+[[!img 2012-09-11-r-nord.jpg size=950x alt="panorama nord" ]]
 
 [[!ymlfront data="""
 MAC: DC:9F:DB:06:D4:CC
@@ -18,7 +18,8 @@ En face du Parc des Amériques :
 Bullet M2 + 15dBi à installer
 
 # NODE - r.relais.reseaulibre.ca
- * Status: [[!taglink up]] 
+[[!img antenne_mat.jpg alt="antenne sur mat" align="right" size="x400" ]] * Status: [[!taglink up]] 
+
  * Hostname: r.relais.reseaulibre.ca
  * Location: 45.518629,-73.58219
  * Software: OpenWRT 12.09-beta1
@@ -44,7 +45,7 @@ Bullet M2 + 15dBi à installer
  * Links: [[zoidberg]] (~700 m) : [[Qualité du lien|http://munin.twd.su/bulletm2/bulletm2/adhoc_rssi.html]]
 
 ### Vue vers le sud (montréalais)
-[[!img 2012-09-11-r-sud.jpg size=950x]]
+[[!img 2012-09-11-r-sud.jpg size=950x alt="panorama sud" ]]
 
 [[!meta copyright="Copyright © 2012 Alexandre Guédon"]]
 
