@@ -1,0 +1,28 @@
+[[!waypoint lat="45.465672" lon="-73.572792" embed hidden width="400px" height="400px" right desc="Serveur"]]
+
+= Détails techniques =
+
+[[!ymlfront data="""
+MAC: 
+IP: 
+IPv6: 2607:f2c0:f00f:2900::1/56
+"""]]
+
+ * hostname: homs
+ * MAC address: {{$MAC}}
+ * IPv6 address: {{$IPv6}}
+ * Link-local IPv6 address:
+ * IP address: {{$IP}}
+ * Software: Debian GNU/Linux
+ * Hardware: Atom DTX avec 2 GB de mémoire
+ * Power: n/a
+ * Location: n/a
+ * Azimuth: n/a
+ * Panorama: N/A
+ * Status: [[!taglink up]]
+ * Operator: [[users/bgm]]
+ * Links: [[bgm-alep]] (ethernet)
+
+= Services =
+
+ * http://partage.bidon.ca en IPv6.
