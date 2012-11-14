@@ -36,7 +36,7 @@ Qui et où?
 Comment ça marche? technique 1
 ------------------------------
 
- * réseaux sans fil "ad-hoc" 802.11n
+ * réseaux sans fil "ad-hoc" 802.11b/g
  * routage décentralisé avec Babel (anciennement BATMAN) - similaire à
    OSLR
  * petites machines Ubiquity, TP-Link ou autre
