@@ -83,11 +83,9 @@ IPv6 ?
 -- [white] [center] [text-color=black] [shading-opacity=0] [transition=slide-up]
 
 • Nouveau protocole (~ 15 ans)
-• N'est pas une extention de IPv4
+• N'est pas une extension de IPv4
 • Nouvelle courbe d'apprentissage
 • Peut coexister avec IPv4
-
-## Co-existance: comme DECnet, Appletalk..
 
 -- [white] [center] [text-color=black] [shading-opacity=0] [transition=fade]
 
