@@ -121,9 +121,9 @@ Différences
 
 Adresses
 
-• 128 bits séparés en 8 octets
+• 128 bits séparés en 16 octets
+• Octets groupés par 2
 • Séparés par des ":"
-• Octets de 4 digits
 • En hexadécimal
 • Les "0" peuvent être consolidés (une fois)
 • Supporte les adresses IPv4
