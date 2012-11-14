@@ -143,3 +143,11 @@ It is most notably used on the Linksys WRT-54G devices, but pretty much *only* t
 It is not recommended to use this connector for new projects unless really necessary, as it is non-standard and harder to find. 
 
 ...
+
+# Câbles série
+
+Il peut arriver qu'une mauvaise manoeuvre nous "barre" de notre routeur, et il est impossible de le ré-initialiser par le port réseau ou un bouton Reset. Dans ce cas, la plupart des routeurs possèdent un port série interne, sur lequel on peut se brancher pour voir ce qui se passe au démarrage, réparer la configuration, ou ré-initialiser.
+
+Plusieurs des modèles de routeurs possèdent un port série à niveaux TTL 3.3 volts. Il faut alors se procurer un câble USB-série comme celui-ci:
+
+https://www.olimex.com/Products/Components/Cables/USB-Serial-Cable/USB-Serial-Cable-F/
