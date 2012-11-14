@@ -39,7 +39,7 @@ Politiques
 
 ✔ consensus
 ✔ propositions par courriels
-✔ logiciel libre
+✔ logiciels libres
 
 -- [fnf.png] [font=Monospace 100px]
 
@@ -198,7 +198,7 @@ Préfixes: Link-local fe80::/10
  • Seulement valide pour la machine qui fait la requête
   • n'est pas envoyé sur le réseau
 
- • Postfixe %
+ • Suffixe %
   • http://[fe80::1:2%eth0]:80/index.html
   • ping6 fe80::1:2%eth0
   • ping6 ff02::1%eth0
