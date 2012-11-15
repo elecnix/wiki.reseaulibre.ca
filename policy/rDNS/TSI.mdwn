@@ -1,0 +1,36 @@
+Template letter to escalate in response to TSI's policy on rDNS not being deployed in their beta IPv6 service.
+
+### Letter to send to biz@teksavvy.com (and/or ipv6@)
+Hi,
+
+We're currently part of ReseauLibre.ca in Montreal and we have been encouraging a lot of people (and all the people signing this letter) to migrate to TekSavvy.
+
+First, because you offer IPv6 and we encourage people to migrate to IPv6 as it allows people to fully be part of what the Internet is and represent and also because we know that you are probably the most forward looking commercial ISP in Canada in term of deploying new technologies and defending access rights.
+
+So, we are writing this letter as a friendly reminder that to fully allow your clients to be part of the Internet, we would like to know what is your roadmap on giving reverse DNS to your client's /56 zones?
+
+As per ARIN's policy:
+
+https://www.arin.net/policy/nrpm.html#six56
+
+... it would be a lot of help for us if it could be implemented in the near future.
+
+rDNS would be useful for security reasons:
+
+* Validating mail servers
+* ... FILL ME ... ;)
+
+and other reasons:
+
+* ... same same ... :P
+
+Best regards,
+
+multpile
+signing
+parties
+here
+...
+
+
+
