@@ -4,10 +4,8 @@
 MAC: DC:9F:DB:00:11:D9
 IP: 172.16.1.8
 IPv6:
-- 2001:470:b2a7::/64
+- 2001:470:b2a7::/48
 """]]
-
-(!) Batman n'est pas installé sur ce noeud. Seulement Babel est utilisé pour l'instant. Les adresses IP locales ainsi que les routes externes sont distribuées. Avec un peu de chance, pour l'instant, les noeuds qui s'y connectent auront un accès au VPN et à une route IPv4 par défaut vers l'Internet.
 
 # À faire
 
@@ -37,7 +35,7 @@ IPv6:
 
 # Configuration Babel
 
-## Routeur "relais"
+## Routeur "relais" pinxo.mesh.deuxpi.ca
 
  * Adresse IPv4 172.16.1.8/32 sur br-lan et wlan0 (point-à-point, routage par Babel seulement)
  * Adresse IPv6 2001:470:b2a7:2::2/64 sur br-lan (fe80::de9f:dbff:fe01:11d9/64) et wlan0 (fe80::de9f:dbff:fe00:11d9/64)
@@ -64,12 +62,12 @@ babeld.@filter[2].local=true
 babeld.@filter[2].action=deny
 """]]
 
-## Point d'accès
+## Point d'accès acces.mesh.deuxpi.ca
 
  * Adresse IPv4 172.16.1.188/32 sur br-lan (point-à-point, routage par Babel seulement)
  * Adresse IPv4 192.168.8.1/24 sur wlan0 pour les clients
  * Adresse IPv6 2001:470:b2a7:2::1/64 sur br-lan (fe80::fad1:11ff:fe91:218/64) et wlan0 (fe80::fad1:11ff:fe91:218/64)
- * Route IPv6 statique 2001:470:b2a7:1::/64 vers le laptop sur wlan0 pour lien avec laptop et VPN.
+ * Route IPv6 statique 2001:470:b2a7:1::/64 vers le laptop sur wlan0 pour lien avec laptop, le réseau local et le VPN.
 
 [[!format txt """
 babeld.@general[0]=general
@@ -98,30 +96,12 @@ babeld.@filter[3].local=true
 babeld.@filter[3].action=deny
 """]]
 
-## Laptop/VPN (à remplacer avec serveur rackmount)
+## Serveur gelato.mesh.deuxpi.ca
 
- * Adresse IPv4 172.16.1.88/32 sur mesh (VPN)
- * Adresse IPv4 192.168.8.222/24 sur wlan1 obtenue du point d'accès par DHCP.
- * Adresse IPv6 2001:470:b2a7:1:227:13ff:fe68:17e8/64 sur eth0, wlan1 (fe80::21d:fff:feb5:917f/64) et mesh (fe80::5c70:7ff:feba:17aa/64).
+ * Adresse IPv4 172.16.1.181/32 sur mesh (VPN)
+ * Adresse IPv4 sur eth1 obtenue du routeur du réseau local.
+ * Adresse IPv6 2001:470:b2a7:1:225:90ff:fe94/64 sur eth0.
  * VPN vers [[nodes/roadkiller]]
-
-Le fichier de configuration Babel est un peu compliqué pour s'assurer que Babel ne fasse pas passer le VPN par le VPN...
-
-[[!format txt """
-redistribute local ip 172.16.0.0/12
-redistribute local proto 2 ip 2001:470:b2a7:1::/64 le 64 allow
-redistribute local proto 2 ip 2001:470:b2a7:2::/64 le 64 allow
-redistribute local deny
-in ip 72.0.72.144/32 deny
-in ip 192.168.1.0/24 deny
-in ip 2001:1928:1:9::/128 deny
-in ip 2001:1928:1:9::/64 deny
-in if reseaulibre metric 512
-interface wlan1 rxcost 96
-interface mesh rxcost 512
-"""]]
-
-## Serveur sur Quagga
 
 Il y a un bug présentement dans la version principale de Quagga qui empêche d'avoir une redistribution des routes sur IPv4 et IPv6 en même temps sur la même interface, alors la configuration suivante ne considère que IPv6.
 
@@ -132,6 +112,8 @@ interface eth0
 
 [[!format txt """
 ! Fichier /etc/quagga/babeld.conf
+password XXXXX
+!
 access-list vty permit 127.0.0.0/8
 access-list vty deny any
 !
@@ -143,16 +125,22 @@ line vty
 log file /var/log/quagga/babeld.log
 !
 router babel
+ network eth0
  network mesh
  redistribute connected
  redistribute kernel
  redistribute static
+ distribute-list filter in eth0
+ distribute-list local out eth0
  distribute-list filter in mesh
  distribute-list local out mesh
 !
-interface mesh
+interface eth0
  babel wired
  babel split-horizon
+!
+interface mesh
+ babel wired
 !
 ipv6 access-list filter deny ::/4
 ipv6 access-list filter permit any
@@ -162,7 +150,7 @@ ipv6 access-list local deny any
 
 ### Configuration DNS
 
-Ce serveur DNS avec Bind sert les zones mesh.deuxpi.ca et reseaulibre.ca et la zone inverse pour 2001:470:b2a7::/48. Il est prévu que ce service soit distribué avec une adresse anycast. Ici on a choisi 172.16.0.53.
+Ce serveur DNS avec Bind sert les zones mesh.deuxpi.ca et reseaulibre.ca et la zone inverse pour 2001:470:b2a7::/48. Il est prévu que ce service soit distribué avec une adresse anycast. Ici on a choisi 172.16.0.53. Le serveur écoute aussi sur l'adresse unicast 2001:470:b2a7::53.
 
 [[!format txt """
 // /etc/bind/named.conf.options
@@ -176,10 +164,11 @@ options {
     minimal-responses yes;
     listen-on { 127.0.0.1; 172.16.0.53; };
     listen-on-v6 { 2001:470:b2a7::53; };
-        query-source-v6 address 2001:470:b2a7:1:225:90ff:fe93:e9fc;
-        dns64 2001:470:b2a7:1:ffff::/96 {
-                clients { any; };
-        };
+    query-source-v6 address 2001:470:b2a7:1:225:90ff:fe93:e9fc;
+    dns64 2001:470:b2a7:1:ffff::/96 {
+        clients { any; };
+    };
+    // allow-transfer { ... };
 };
 """]]
 
@@ -206,11 +195,20 @@ zone "16.172.in-addr.arpa" {
 };
 """]]
 
+### Autres services
+
+Un serveur de clés publiques PGP est disponible. Par exemple pour obtenir une clé de ce serveur (ici c'est la clé Monkeysphere du serveur), on peut lancer:
+
+[[!format txt """
+gpg --keyserver keyserver.mesh.deuxpi.ca --recv-key 86B3721B
+"""]]
+
 ## Extras
 
 Pour obtenir la liste des noeuds connectés et leurs niveaux de signal respectifs, j'utilise le script [[bat-signal|https://gitorious.org/deuxpi-docs/deuxpi-docs/blobs/raw/master/bat-signal]]. Si le fichier [[documentation/batman/bat-hosts]] est disponible, le nom des noeuds sera affiché en plus de leur adresse MAC.
 
 En cours de développement, une [interface curses](https://gitorious.org/babelcurse) pour suivre Babel. Les [paquets OpenWRT](http://www.deuxpi.ca/babelcurse/) sont aussi disponibles.
+
 
 [[!meta copyright="Copyright © 2012 Philippe Gauthier"]]
 
