@@ -33,4 +33,6 @@ here
 ...
 
 
+### Autres références utiles:
+http://tools.ietf.org/html/rfc6177
 
