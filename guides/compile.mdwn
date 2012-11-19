@@ -1,0 +1,120 @@
+This guide describes the procedure to compile images for Reseau Libre.  This default procedure is the one used to compile the images that can be found at [[http://packages.reseaulibre.ca:8080/Routeurs]].  The image can be configured as desired and the Reseau Libre package feed welcomes contributions.
+
+[[!toc levels=3]]
+
+# Compile openwrt
+
+## Get the openwrt compilation environment
+
+Follow the instructions at [[http://wiki.openwrt.org/doc/howto/buildroot.exigence]]
+
+At step 2, the svn command mentioned will download the trunk.  Click on the link below saying "Downloading sources" for information on how to download specific version.
+
+For the latest attitude adjustment beta, the svn command line would be
+
+    svn co -r 33883 https://dev.openwrt.org/log/branches/attitude_adjustment
+
+## Get the Reseau libre feed
+
+Get the file from this git:
+
+    git clone git://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt.git reseau-libre-openwrt
+
+
+**Say you put the openwrt build environment in /home/me/openwrt and the git files are in /home/me/reseau-libre-openwrt**
+
+## Add reseau libre feed
+
+Add the reseaulibre feed to openwrt by editing the file /home/me/openwrt/feeds.conf.default and add the following line:
+
+    src-link reseaulibre /home/me/reseau-libre-openwrt/reseaulibre-feed
+
+## Update the feeds
+
+    cd /home/me/openwrt
+    ./scripts/feeds update -a
+    ./scripts/feeds install -a
+
+## Copy the config to openwrt
+
+    cp /home/me/reseau-libre-openwrt/openwrt/.config /home/me/openwrt
+
+## Modify the image (optional)
+
+Optionally, modify the packages to include in the image by running 
+
+    make menuconfig
+
+The .config file included in the git is the one used to build the image at [[http://packages.reseaulibre.ca:8080/Routeurs]].  It will build for ubiquiti products.  The make menuconfig command also allows you to change the device for which to build.
+
+## Build the image
+
+You should be good to go.  Type
+  
+    make V=99
+
+This may take a few hours.  After successful compilation, the images are in the bin/<arch> directory.
+
+# Reseau libre package information 
+
+Here are the details on what the Reseau libre packages do
+
+## reseaulibre-base
+
+This package just lists dependencies, to make sure all packages required or recommended by the Reseau Libre volunteers are included in the image, to avoid having to go through the whole menuconfig
+
+The packages this package depends on are 
+
+    kmod-ipv6 ip kmod-ip6tables ip6tables babeld radvd nano iperf opkg
+
+If you want to remove any of those packages from the image, you'll first have to disable the reseaulibre-base package by running 'make menuconfig'.
+
+## reseaulibre-mesh
+
+This package includes a few user contributed scripts useful whe running the image.  These scripts can be executed directly from a command line on the device.
+
+These packages are all source controlled at [[https://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt/trees/master/reseaulibre-feed/reseaulibre-mesh/files/usr/bin]] but some of those have their master source somewhere else.  In those cases, the main repository is mentioned.
+
+### babeldstate
+
+Sends the kill signal to the babel process and reads the latest logs
+
+author: bgm?
+
+sources: ?
+
+Usage: 
+    babeldstate
+
+### setup_babel
+
+Updates the babel config file for the interfaces in arguments, so there is no need to manually edit the babel configuration for it to work with respectable defaults.
+
+author: tahini
+
+Usage:
+
+    setup_babel interface [interface ...]
+    
+    Arguments:
+        List of interfaces to put on the mesh
+    
+    EXAMPLE:
+        This command line adds the wireless interface and wired interface eth0 to the mesh"
+        setup_babel wlan0 eth0"
+
+### bat-signal
+
+Displays signal levels from connected Wi-Fi stations.  *Is this batman dependent?*
+
+author: bgm, deuxpi
+
+sources: ?
+
+### ubnt-leds
+
+Use the leds on the ubiquiti device to show the strength of the link to one given station.  This was batman dependent, but we leave it here in case somebody wants to update/modify it.
+
+author: ?
+
+sources: ?
