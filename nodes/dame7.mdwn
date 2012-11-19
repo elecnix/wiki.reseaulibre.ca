@@ -7,6 +7,8 @@ dame7 reçoit le signal de [[batiment7]] et le transmet vers la passerelle de la
 L'objectif est de streamer un flux video dans le Batiment 7 vers l'internet.dame7 est donc un client dhcp puisqu'elle doit recevoir son IP sur br-lan de la passerelle de la dame qui héberge l'antenne.
 
 
+**Suite à des problèmes de DNS et comme la mission de cette antenne était principalement de transmettre un signal de [[batiment7]], j'ai du reflasher l'antenne avec son OS proprio d'origine.  Dame7 n'est donc plus du réseau.**
+
 # Technical details
 
 [[!ymlfront data="""
