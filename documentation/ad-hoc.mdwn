@@ -36,15 +36,16 @@ Activer la radio
 
     uci delete wireless.radio0.disabled
 
-Separate wireless network from `lan`
+Move wireless network from `lan` to `wlan`:
 
-    uci delete wireless.@wifi-iface[0].network
+    uci set wireless.@wifi-iface[0].network=wlan
 
-Montreal mesh standards: channel 1, adhoc, named `reseaulibre.ca`. Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
+Montreal mesh standards: channel 1, adhoc, named `relais.reseaulibre.ca` (ou [votre_node].relais.reseaulibre.ca). 
+Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la meme cellule.
 
     uci set wireless.radio0.channel=1
     uci set wireless.@wifi-iface[0].mode=adhoc
-    uci set wireless.@wifi-iface[0].ssid=reseaulibre.ca
+    uci set wireless.@wifi-iface[0].ssid=relais.reseaulibre.ca
     uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
 
 (!) Optionnellement: configuration de l'interface sans-fil avec MTU plus élevé pour [[batman]]:
@@ -74,7 +75,7 @@ Découvrir quelle est l'interface réseau (ex: wlan0) :
 This will bring up your network interface:
 
     ifconfig wlan0 down
-    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 1
+    iwconfig wlan0 mode ad-hoc essid relais.reseaulibre.ca ap 02:CA:FF:EE:BA:BE channel 1
     ifconfig wlan0 up
 
 (!) Si vous avez une erreur avec le mode ad-hoc faire avant la commande:
@@ -85,7 +86,7 @@ This will bring up your network interface:
 
 Exemple de résultat dans iwconfig:
 
-    wlan0     IEEE 802.11bgn  ESSID:"reseaulibre.ca"  
+    wlan0     IEEE 802.11bgn  ESSID:"relais.reseaulibre.ca"  
               Mode:Ad-Hoc  Frequency:2.412 GHz  Cell: 02:CA:FF:EE:BA:BE
               Tx-Power=17 dBm   
               RTS thr:off   Fragment thr:off
@@ -124,7 +125,7 @@ for your hardware:
 
 Si Network Manager est actif, vous pourriez voir:
 
-    iwconfig wlan0 mode ad-hoc essid reseaulibre.ca
+    iwconfig wlan0 mode ad-hoc essid relais.reseaulibre.ca
     Error for wireless request "Set Mode" (8B06) :
         SET failed on device wlan0 ; Device or resource busy.
 
@@ -165,7 +166,7 @@ Dans le cas d'un laptop qui n'est pas dedié au mesh, il se peut que la configur
 
 devrait montrer
 
-    wlan0     IEEE 802.11abgn  ESSID:"reseaulibre.ca"  
+    wlan0     IEEE 802.11abgn  ESSID:"relais.reseaulibre.ca"  
               Mode:Ad-Hoc  Frequency:2.412 GHz  Cell: 02:CA:FF:EE:BA:BE
               Tx-Power=15 dBm   
               Retry  long limit:7   RTS thr:off   Fragment thr:off
@@ -183,7 +184,7 @@ montre que notre cellule a son "Encryption key" à "on"
                 Frequency:2.412 GHz (Channel 1)
                 Quality=70/70  Signal level=-25 dBm  
                 Encryption key:on
-                ESSID:"reseaulibre.ca"
+                ESSID:"relais.reseaulibre.ca"
                 Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 6 Mb/s
                           9 Mb/s; 12 Mb/s; 18 Mb/s
                 Bit Rates:24 Mb/s; 36 Mb/s; 48 Mb/s; 54 Mb/s

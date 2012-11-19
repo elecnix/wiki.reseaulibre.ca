@@ -1,17 +1,15 @@
-[[!waypoint lat="45.532907" lon="-73.575424" embed hidden width="400px" height="400px" right desc="A node on the coop's roof"]]
-
-Node on the roof of a third floor building. Maintained by http://www.coopsurgenereux.org/
+Test TP-Link 703N node.
 
 # Technical details
 
 [[!ymlfront data="""
-MAC: (mac address here)
-IP: 172.16.0.72
+MAC: EC:88:8F:C6:3E:38
+IP: 172.16.1.56
 IPv6: 
 """]]
 
 hostname
-: (node hostname here)
+: bibitte
 
 MAC address
 : {{$MAC}}
@@ -23,35 +21,33 @@ IP address
 : {{$IP}}
 
 Software
-: OpenWrt
+: OpenWRT 12.09-beta2
 
 Hardware
-: Bullet M2HP
+: TP-Link 703N
 
 Power
 : 
 
 Location
-: Roof, on small pole
+: 
 
 Azimuth
 : 360°
 
 Panorama
-: Available
+: N/A
 
 Status
-: [[!taglink planned]] (can also be up, down, planned, unknown)
+: [[!taglink test]]
 
 Operator
-: [[users/Cooper]], [[users/gboudrias]]
+: [[users/elecnix]]
 
 Links
-: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+: [[nodes/princesse]]
 
-[[!img 2012-11-07-coop-nuit.jpg size=950x]]
-
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+[[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this

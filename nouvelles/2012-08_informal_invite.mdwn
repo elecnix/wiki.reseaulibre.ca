@@ -56,3 +56,5 @@ I have also taken the liberty to add your location as a "prospect" in
 our node directory:
 
 http://wiki.reseaulibre.ca/nodes/NODENAMEHERE
+
+[[!tag draft]]

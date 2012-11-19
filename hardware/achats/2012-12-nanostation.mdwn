@@ -5,7 +5,7 @@ Si vous n'êtes pas sur la listes de discussion "nodes@", mentionnez comment vou
 * [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V][];
 * [NanoStation M2][];
 * [PicoStation M2HP][]; |R: 1 (confirmé)
-* [Injecteur POE 24V 1A w/RESET]: |R: 1 (confirmé) (où?)
+* [Injecteur POE 24V 1A w/RESET]: |R: 1 (confirmé) (où?), tahini: 1
 
 Date limite: ? décembre 2012
 
@@ -19,7 +19,7 @@ Personne responsable de l'achat: ?
 [Bullet M2HP][]                             | 0    |   75$     |   0$  | ? |
 [PicoStation M2HP][]                        | 1    |   77$     |  77$  | ? |
 [injecteur POE 24V][]                       | 0    |    9$     |   0$  | ? |
-[Injecteur POE 24V 1A w/RESET]              | 2    |   19$     |  38$  | ? |
+[Injecteur POE 24V 1A w/RESET]              | 3    |   19$     |  57$  | ? |
 [antenne omni 15 dbi][]                     | 1    |   45$     |  45$  | ? |
 Total                                       |      |           |   0$  | ? |
 Total +tx                                   |      |           |   ?$  | ? |

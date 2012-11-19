@@ -8,20 +8,21 @@
 
 Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre chaque étape. Ceci devrait se résumer à:
 
-1. [[Installation de OpenWRT|flashing/]] [[!trail flashing]]
-2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trail ad-hoc]]
-3. [[Configurer Babel|babel/]] [[!trail babel]]
+1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
+2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trailitem ad-hoc]]
+3. [[Configurer Babel|babel/]] [[!trailitem babel]]
 (jadis nous utilisions [[Batman|guides/openwrt+batman]])
-4. [[Configurer IPv6|ipv6]] [[!trail ipv6]]
-5. [[Configurer IPv4]ip]] [[!trail ip]]
+4. [[Configurer IPv6|ipv6]] [[!trailitem ipv6]]
+5. [[Configurer IPv4|ip]] [[!trailitem ip]]
 (optionnel: pour permettre l'accès au vieil internet)
-6. [[Configurer des services|services]] [[!trail services]] (voir aussi [[vpn]], [[zeroconf]]
+6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
 ou
 
 1. [[Installation et configuration d'un noeud|guides/install+node+facile]] (avec web gui, plus simple)
 
 Les [[guides]] documentent également d'autres configurations utilisées.
+Voir aussi les fiches de [[présentations|http://wiki.reseaulibre.ca/presentations/]].
 
 # Other documentation
 
@@ -35,7 +36,7 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Meta]] - gestion de ce wiki
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
 
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+[[!meta copyright="Copyright © 2011-2012 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this

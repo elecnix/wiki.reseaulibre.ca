@@ -6,8 +6,8 @@
 
 [[!ymlfront data="""
 MAC: DC:9F:DB:01:13:79
-IP: ..
-IPv6: ..
+IP: 
+IPv6: 2607:f2c0:f00f:29a1::1
 """]]
 
  * hostname: latakia

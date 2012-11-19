@@ -1,0 +1,15 @@
+# Comment obtenir les coordonnées géographiques d'un emplacement
+
+1. Utilisez [Google Maps](https://maps.google.com/)
+
+2. Zoomez au niveau de précision désiré :
+
+[[!img coordonnees_etape_1.png]]
+
+3. À l'aide du clic-droit sélectionnez "Plus d'infos sur cet endroit" ou "What's here?" :
+
+[[!img coordonnees_etape_2.png]]
+
+4. Vous obtiendrez les coordonnées géographiques sur la flèche verte et dans le champ de recherche 
+:
+[[!img coordonnees_etape_3.png]]

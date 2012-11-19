@@ -3,8 +3,8 @@
 # Technical details
 
 [[!ymlfront data="""
-IP: (pick one from [[policy/numbering]])
-IPv6: 
+IP: 
+IPv6: 2607:f2c0:f00f:29a5::1
 """]]
 
 hostname

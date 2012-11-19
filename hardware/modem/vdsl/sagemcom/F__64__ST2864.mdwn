@@ -1,0 +1,191 @@
+# Modem VDSL Sagemcom F@ST2864
+Modem loué par Bell (obligatoire) pour du VDSL.
+Utilisé par les abonnées de TSI qui veulent avoir du IPv6 natif.
+
+## HARDWARE
+
+[[!format  bash """
+128MB de RAM
+
+ * cpu model	: MIPS 24K V4.12
+ * BogoMIPS	: 330.13
+"""]]
+
+## Obtenir un accès par telnet:
+
+### Download Config:
+[[!format  bash """
+curl http://admin:admin@192.168.2.1/save_rg_conf.cgi > HomeGateway.conf
+"""]]
+  
+### Edit Config :
+Trouver la ligne:
+[[!format  bash """
+(telnets(ports))
+"""]]
+
+Remplacer par:
+[[!format  bash """
+(telnets
+  (ports
+    (0
+      (port(23))
+      (ssl_mode(none))
+      (remote_access(0))
+    )
+  )
+)
+"""]]
+
+### POST Config:
+[[!format  bash """
+curl --data-urlencode new_rg_conf@HomeGateway.conf http://admin:admin@192.168.2.1/replace_rg_conf.cgi
+"""]]
+
+### Conect:
+Utilisez telnet:
+[[!format  bash """
+>telnet 192.168.2.1 
+Trying 192.168.2.1...
+Connected to 192.168.2.1.
+Escape character is '^]'.
+Username: admin
+Password: *****
+
+HomeGateway>
+"""]]
+
+Obtenir root et étendre le lien IP vers Bell:
+[[!format  bash """
+HomeGateway> system shell
+Temporary setting log_level off
+
+
+BusyBox v1.01 (2005.09.07-07:38+0000) Built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# ifconfig ppp1 down
+"""]]
+
+La lumière rouge devrait éventuellement s'allumer à côté du "@" (1-2 minutes), 
+indiquant que votre connexion à Bell est rompue! 
+
+ie: vous êtes libéré de leur gestion! ;)
+Caveat emptor: Au resync xDSL suivant la connexion ppp1 sera rétablie (voir TODO)
+
+### Pour obtenir les statistiques sur la ligne:
+(commande vdsl avec mot de passe superikanos)
+[[!format  bash """
+# vdsl
+
+Please enter console password: superikanos
+
+Supervisor mode
+
+
+
+      BME Reference board API Menu
+Ikanos Communications Copyright 2000-2008
+             Version 9.2.0.12 VOX180 
+=========================================
+
+    2) Initiate Reset BME command
+    3) Configure System Provision (default values)
+    4) Configure Port Provision
+    5) Initiate Port Start command
+    7) Initiate Port Stop command
+    9) Start Loopback Test
+   10) Request Brief Port Status
+   11) Request Extended Port Status
+   12) Display Performance Counters
+   13) Get Near End SNR Margin and Attenuation
+   15) Display User Logs
+   16) Clear User Logs
+   20) Display this menu
+   21) Modify Port Provision
+   31) INI CRC Threshold
+   41) Port Error Count Management
+   42) Event Log Management
+   55) Board Configuration Management
+   56) OAM Options Mask Setting
+   57) Performance Management Parameter Configuration
+   58) Trigger PM Failures
+   59) Bitloading Per Tone
+   62) GPIO Test
+   70) Maintenance Mode
+   72) VDSL2 Double Ended Loop Testing (DELT)
+   73) Freeze Mode
+   90) BME Firmware versions
+   91) EFM Pre-emption
+   99) Log off/ Go to auto mode
+  114) Clear Performance Counters
+  127) System training LED blink rate
+  131) VDSL CRC Threshold
+  140) Internal EOC Commands
+  141) Overhead Message Commands
+  143) Remote Ethernet Status Report
+  150) Bit Swap Commands
+  212) Display All Performance Counters
+
+cpe>
+"""]]
+
+Pour obtenir les statistiques de votre connexion (exemple avec ADSL2 16/1):
+[[!format  bash """
+cpe>11
+
+cpe> 
+Extended Port Status
+=================
+Bme: 1 Port: 1
+Downstream line rate: 16908 kbps
+Upstream line rate: 800 kbps
+Bearer0 Downstream payload rate: 0 kbps
+Bearer1 Downstream payload rate: 15992 kbps
+Bearer0 Upstream payload rate: 0 kbps
+Bearer1 Upstream payload rate: 728 kbps
+Downstream attainable payload rate: 15972 kbps
+Downstream attainable line rate: 16912 kbps
+Downstream Training Margin: 6.0 dB
+Downstream Line Protection (Bearer1 Path): 0.0 DMT Symbols
+Upstream Line Protection (Bearer1 Path): 0.0 DMT Symbols
+Near-end ITU Vendor Id: 0xb500494b4e530200
+Far-end ITU Vendor Id: 0xb500494b4e530100
+Downstream delay: 0.1 ms
+Upstream delay: 0.9 ms
+Tx total power 10.9 dbm
+FE Tx total power 12.3 dbm
+VDSL Estimated Loop Length : 5259 ft
+G.Hs Estimated Near End Loop Length : 5259 ft
+G.Hs Estimated Far End Loop Length :0 ft
+Current framing mode: 0x00 ATM
+Bandplan Type...........: 1
+No. of Upstream Bands...: 1
+No. of Downstream Bands.: 1
+Line Type: 0x00000020 ADSL2 PLUS ANNEX A
+Downstream FFT Protection (Bearer1 Path): 0.0 DMT Symbols
+Upstream FFT Protection (Bearer1 Path): 0.0 DMT Symbols
+Upstream Line Attenuation: NA (Only for ADSL1 & T1.413)
+Upstream SNR Margin: NA (Only for ADSL1 & T1413)
+Upstream Retransmission status: Disabled
+Downstream Retransmission status: Disabled
+
+cpe> 
+
+"""]]
+
+...Amusez-vous...
+
+## TODO:
+
+* comprendre qu'est ce qui fait quoi
+* Dumper l'image cramfs / jffs2
+* modifier les configurations par défaut et changer les logos de la page web ;)
+
+## Liens utiles:
+
+* [[http://www.dslreports.com/forum/r27703851-Sagemcom-F-st-2864-unlock-on-nix]]
+* [[http://www.hardware.com.br/comunidade/sagemcom-hackeando/1238038/]]
+* [[http://www.tripleoxygen.net/wp/2012/08/sagemcom-modem-fst-2764-gv-power-box-gvt-hacking-1/]]
+* [[http://www.jungo.com/products/openrg-uniform-gateway-middleware/]]
+* [[http://en.wikipedia.org/wiki/TR-069]]
