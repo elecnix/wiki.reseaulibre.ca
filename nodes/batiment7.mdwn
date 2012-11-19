@@ -1,10 +1,9 @@
 [[!waypoint lat="45.48099" lon="-73.55025" embed hidden width="400px" height="400px" right desc="A node on a big building in PSC"]]
 
-/!\ Coordinates inaccurate.
 
 Le bâtiment 7 est finalement à nous! Un endroit idéal pour le mesh.
 
-**Suite à des problèmes de DNS et comme la mission de cette antenne était principalement de transmettre un signal vers l'internet en passant par [[dame7]], j'ai du reflasher l'antenne avec son OS proprio d'origine.**
+/!\ **Suite à des problèmes de DNS et comme la mission de cette antenne était principalement de transmettre un signal vers l'internet en passant par [[dame7]], j'ai du reflasher l'antenne avec son OS proprio d'origine.**
 **Cependant, le projet d'une antenne mesh sur cet édifice est maintenu.  Elle sera probablement opérationnelle au printemps 2013 avec d'autres antennes de relais dans la Pointe.**
 
 

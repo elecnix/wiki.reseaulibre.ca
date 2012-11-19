@@ -1,0 +1,23 @@
+
+# My nodes
+
+## Operational nodes
+
+[[!map pages="link(.) and nodes/* and tagged(up)"]]
+
+## Planned nodes
+
+[[!map pages="link(.) and nodes/* and tagged(planned)"]]
+
+## Nodes in maintenance
+
+[[!map pages="link(.) and nodes/* and tagged(down)"]]
+
+
+# Todo
+
+ * Déployer un réseau minimal dans la Pointe (plusieurs toits d'alliés potentiels à mobiliser)
+ * En particulier, insérer le projet du Bâtiment 7 dans le réseau, notamment pour la diffusion de la radio du [Centre Social Autogéré](http://www.centresocialautogere.org/)
+ * Reconfiguration de [[nodes/batiment7]] pour la réintégrer dans le mesh
+
+
