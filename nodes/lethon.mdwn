@@ -1,0 +1,65 @@
+[[!waypoint map=null  lat="45.526887" lon="-73.523383" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
+(remove map=null to display on the main map)
+
+
+[[!ymlfront data="""
+MAC: 
+IP: 172.16.1.X
+IPv6: n/a
+"""]]
+
+Ubiquity Nanostation M2 router.
+
+# Technical details
+
+Hostname
+: lethon
+
+MAC address
+: {{$MAC}}
+
+IP address
+: {{$IP}}
+
+IPv6 address
+: {{$IPv6}}
+
+Software
+: [[OpenWRT + Babel|http://wiki.reseaulibre.ca/documentation/]]
+
+Hardware
+: UBNT Nanostation M2
+
+Power
+: 26dBm
+
+Location
+: 
+
+Status
+: [[!taglink prospect]]
+
+Links
+:
+
+Azimuth
+: North-North-West
+
+Panorama
+: 60°(H-pol) / 60° (V-pol) / 60° (Elevation) 
+
+Operator
+: [[users/ouaibe]]
+
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
+
+### Infrastructure reseaulibre (exemple)
+
+[[!img se4asCSfy5PLmrkhudcfUBQ.png size="960x720"]]
