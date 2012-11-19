@@ -5,7 +5,7 @@ Comment créer un node
 
  1. Créer une page ci-bas avec le nom de votre node
  2. Remplissez les champ, et en particulier:
-  * la directive `waypoint` avec les coordonnées du point, pour que le node soit affiché dans la carte ( (!) *attention: si l'icône du node n'apparait pas, essayer d'enlever le dernier chiffre de votre latitude, il est peut-être de trop !* - il peut y avoir 6 chiffres après la virgule)
+  * la directive `waypoint` avec les [[documentation/coordonnées_géographiques]] du point, pour que le node soit affiché dans la carte ( (!) *attention: si l'icône du node n'apparait pas, essayer d'enlever le dernier chiffre de votre latitude, il est peut-être de trop !* - il peut y avoir 6 chiffres après la virgule)
   * le champ `status` (réglé à `planned`, `up` ou `down` selon le statut)
  3. Si vous avez un lien avec un autre node, faites un lien wiki vers le node dans la page, il va être affiché dans la carte. Vous pouvez également ajouter des méta-données sur le lien dans la page [[links]]
 
