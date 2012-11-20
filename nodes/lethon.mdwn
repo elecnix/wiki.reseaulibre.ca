@@ -1,4 +1,4 @@
-[[!waypoint lat="45.526887" lon="-73.523383" embed hidden width="950px" height="400px" right desc=""]]
+[[!waypoint lat="45.526887" lon="-73.523383" embed hidden width="950px" height="400px" right desc="Node face à l'île"]]
 
 
 [[!ymlfront data="""
@@ -36,7 +36,7 @@ Location
 : 45.526887,-73.523383
 
 Status
-: [[!taglink prospect]]
+: [[!taglink planned]]
 
 Links
 :
