@@ -1,5 +1,4 @@
 [[!waypoint lat="45.526402" lon="-73.58474" embed hidden width="950px" height="400px" right desc="rue Pontiac"]]
-(remove map=null to display on the main map)
 
 Planned node on rue Pontiac.
 
