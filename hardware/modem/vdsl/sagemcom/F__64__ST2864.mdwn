@@ -71,7 +71,13 @@ La lumière rouge devrait éventuellement s'allumer à côté du "@" (1-2 minute
 indiquant que votre connexion à Bell est rompue! 
 
 ie: vous êtes libéré de leur gestion! ;)
+
 Caveat emptor: Au resync xDSL suivant la connexion ppp1 sera rétablie (voir TODO)
+
+Vous pouvez entre temps remplacer le 
+login: sc2864n 
+par: test@test 
+sans toucher le mot de passe et vous aurez un IP dans 10.x (non routable)
 
 ### Pour obtenir les statistiques sur la ligne:
 (commande vdsl avec mot de passe superikanos)
