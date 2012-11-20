@@ -59,6 +59,3 @@ Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
 
-### Infrastructure reseaulibre (exemple)
-
-[[!img se4asCSfy5PLmrkhudcfUBQ.png size="960x720"]]
