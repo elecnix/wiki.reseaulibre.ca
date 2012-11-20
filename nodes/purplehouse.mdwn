@@ -6,7 +6,7 @@ Planned node on rue Pontiac.
 
 [[!ymlfront data="""
 MAC: (mac address here)
-IP: 172.16.1.58)
+IP: 172.16.1.58
 IPv6: 
 """]]
 
@@ -32,7 +32,7 @@ Power
 : 
 
 Location
-: (where is this node physically installed?)
+: rue Pontiac between Bienville and Gilford
 
 Azimuth
 : 360°
@@ -41,10 +41,10 @@ Panorama
 : N/A
 
 Status
-: [[!taglink prospect]] (can also be up, down, planned, unknown)
+: [[!taglink planned]]
 
 Operator
-: [[users/alice]]
+: [[users/evanp]]
 
 Links
 : (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
