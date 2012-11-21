@@ -5,7 +5,7 @@ Mesh Montréal est un réseau ouvert.  Tout le monde peut s'impliquer et plus il
 * [[S'inscrire comme noeud|Nodes]] (node) potentiel dans le wiki, voir les noeuds à proximité avec qui il serait possible de connecter.
 * Participer aux [[rencontres techniques et sociales|meetings]].
 * Discuter avec les membres sur le chat irc [[#reseaulibre|http://webchat.freenode.net/?channels=reseaulibre]] sur freenode.net
-* Ouvrir un point d'accès en suivant les [[guides d'introduction|guides]] ou les [[configurations avancées|configuration]].
+* Installer un relais ou un point d'accès en suivant la [[documentation]].
 * Voir la liste des [[tâches à faire|Todo]].
 * [[Donner du matériel|donate]], comme un routeur sans-fil ou de la quincaillerie d'antenne.
 
