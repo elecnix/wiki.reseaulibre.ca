@@ -4,8 +4,12 @@
 
 # My nodes
 
-Here is the list of nodes I operate.
+Here is the list of nodes I operate :
 
-## Operational nodes
+### Operational nodes
 
 [[!map pages="link(.) and nodes/* and tagged(up)"]]
+
+### Planned nodes
+
+[[!map pages="link(.) and nodes/* and tagged(planned)"]]
