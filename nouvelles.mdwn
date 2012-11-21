@@ -1,4 +1,4 @@
-Les dernières nouvelles du réseau envoyées sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca) sont archivés ici.
+Les dernières nouvelles du réseau envoyées sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca) sont archivés ici. Les nouvelles sont aussi syndiquées par RSS sur [http://global.freifunk.net](http://global.freifunk.net/feeds/50127) donc n'oubliez pas le tag `\[[!tag draft]]` si c'est un brouillon!
 
 [[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and !tagged(draft)" archive=yes]]
 
