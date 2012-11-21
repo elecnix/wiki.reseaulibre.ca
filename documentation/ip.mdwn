@@ -5,9 +5,11 @@
 
 # Device configuration
 
-Before configuring your device, you need to choose an IP. To do this, head for the [[policy/numbering]] page and choose an IP address. Document it in the [[policy/numbering]] page and in your [[nodes]] page, unless of course the address is autoconfigured.
+Before configuring your device, you need to choose an IPv4 address that will be accessible from the mesh. To do this, head for the [[policy/numbering]] page and choose an IPv4 address.
 
-This section documents how you can configure your device to use the IP chosen.
+This section documents how you can configure your device to use the chosen IP.
+
+You will need an IPv4 address if you want to provide general Internet access on the mesh. Otherwise, we encourage you to use [[IPv6|configuration/ipv6]].
 
 ## OpenWRT
 
