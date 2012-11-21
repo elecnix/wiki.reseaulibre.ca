@@ -14,7 +14,7 @@ Voici la liste des nouvelles en rédaction. Indiquer le nom de l'annonce dans le
 Nodes de rédaction
 ------------------
 
-Les nouvelles sont rédigées pour être lisibles en "plain text", et donc on essaie de faire du [Markdown][1] le plus lisible possible par exemple comme ici en citant les liens hors du texte. Comme extra, on peut retirer les crochets autour du texte avant de faire l'envoir pour seulement laisser les notes. Dans emacs, ceci consiste en l'utilisation de l'expression régulière suivante: `\[\([^0-9]*\)\]` (le pattern de remplacement est simplement `\1`). Ceci transforme:
+Les nouvelles sont rédigées pour être lisibles en "plain text", et donc on essaie de faire du [Markdown][1] le plus lisible possible par exemple comme ici en citant les liens hors du texte. Comme extra, on peut retirer les crochets autour du texte avant de faire l'envoir pour seulement laisser les notes. Dans emacs ou vim, ceci consiste en l'utilisation de l'expression régulière suivante: `\[\([^0-9]*\)\]` (le pattern de remplacement est simplement `\1`). Ceci transforme:
 
     [Ceci][1].
 
