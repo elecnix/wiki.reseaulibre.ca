@@ -1,17 +1,19 @@
-Les dernières nouvelles du réseau envoyées sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca) sont archivés ici. Les nouvelles sont aussi syndiquées par RSS sur [http://global.freifunk.net](http://global.freifunk.net/feeds/50127) donc n'oubliez pas le tag `\[[!tag draft]]` si c'est un brouillon!
+Les dernières nouvelles du réseau envoyées sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca) sont archivés ici. Les nouvelles sont également syndiquées par RSS sur [http://global.freifunk.net](http://global.freifunk.net/feeds/50127).
 
 [[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and !tagged(draft)" archive=yes]]
 
 En rédaction
 ============
 
-Les nouvelles en rédaction sont marqués par le [[tag/draft]]. Il est préférable d'avoir un seul draft à la fois. 
+Les nouvelles en rédaction sont marqués par le [[tag/draft]] (brouillon). Ceci évite que la nouvelle soit publiée dans le flux RSS (ex: freifunk). Enlever le tag lorsque l'article sera complété et envoyé sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca).
 
-Voici la liste des nouvelles en rédaction. Indiquer le nom de l'annonce dans le champ pour créer une nouvelle annonce. Ne pas oublier d'utiliser `\[[!tag draft]]` afin d'indiquer le statut de brouillon tant que l'article n'est pas complété et envoyé sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca).
+Par convention, indiquer la date et nom de l'annonce dans le champ pour créer une nouvelle annonce (ex: "2013-02-20 Invitation pour ..."). Voir les annonces passées pour des exemples de modèles.
+
+Voici la liste des nouvelles en rédaction:
 
 [[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and tagged(draft)" rootpage="nouvelles" archive=yes feeds=no]]
 
-Nodes de rédaction
+Notes de rédaction
 ------------------
 
 Les nouvelles sont rédigées pour être lisibles en "plain text", et donc on essaie de faire du [Markdown][1] le plus lisible possible par exemple comme ici en citant les liens hors du texte. Comme extra, on peut retirer les crochets autour du texte avant de faire l'envoir pour seulement laisser les notes. Dans emacs ou vim, ceci consiste en l'utilisation de l'expression régulière suivante: `\[\([^0-9]*\)\]` (le pattern de remplacement est simplement `\1`). Ceci transforme:
