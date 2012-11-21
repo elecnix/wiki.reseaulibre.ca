@@ -1,17 +1,17 @@
-Alex...
+# Alexandre Guédon
+[[!img ag.jpg align="right" size="150x"]]
 
-total world domination (à) g mail point, "comme" ;)
+Je roule du wifi ouvert chez moi depuis longtemps et me voilà entouré de semblables!
 
-# Mes Noeuds
+* total world domination (à) g mail point, "comme" ;)
+* http://twd.su
 
-## Noeuds fonctionnels
+## Mes Noeuds
 
-[[nodes/R]]
+* [[nodes/R]] (relais principal)
+* [[nodes/R-nord]] (accès principal à upgrader de OpenMesh)
+* NanoStation M² (Mon AP interne bridgé WPA2)
 
-[[nodes/R-nord]]
+## Autres infos
 
-Ubnt NanoStation M² also available in a window pointing south (currently WPA2 on latest AirOS).
-
-# Autres infos
-
-VE2TUX licenced HAM.
+Radio amateur: VE2TUX
