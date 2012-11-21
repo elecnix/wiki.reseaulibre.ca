@@ -9,7 +9,7 @@ Before configuring your device, you need to choose an IPv4 address that will be 
 
 This section documents how you can configure your device to use the chosen IP.
 
-You will need an IPv4 address if you want to provide general Internet access on the mesh. Otherwise, we encourage you to use [[IPv6|configuration/ipv6]].
+You will need an IPv4 address if you want to provide general Internet access on the mesh. Otherwise, we encourage you to use [[IPv6|documentation/ipv6]].
 
 ## OpenWRT
 
@@ -45,23 +45,6 @@ If this host is to be a router, use instead:
 
     ifconfig_vr0="inet 172.16.0.1"
     gateway_enable="YES"
-
-### IPv6
-
-Here we assume that behind your mesh node, you have an "authoritative"
-router which has an IPv6 netblock it wants to announce on the
-mesh. This can be done with the following configurations:
-
-In `rc.conf`:
-
-    ipv6_ifconfig_vr2="fd64:2c08:9fa7::1/64"
-    rtadvd_enable="YES"
-    rtadvd_interfaces="vr2"
-
-This can be implemented immediatly with:
-
-    ifconfig vr2 inet6 fd64:2c08:9fa7::1/64
-    rtadvd vr2
 
 # Routing issues
 
