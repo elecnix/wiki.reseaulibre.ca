@@ -1,0 +1,53 @@
+Voici le bulletin de nouvelle mensuel du Réseau Libre.
+
+[[!toc]]
+
+# Présentation IPv6 du 13 novembre dernier
+
+(résumé ici, slides?)
+
+ [5]: http://wiki.reseaulibre.ca/nouvelles/2012-11-annonce-reunion-ipv6-retour-barcelone/
+
+# Prochaine rencontre
+
+(à planifier)
+
+# Nouvelle commande collective
+
+Les détails dans [la page d'achat][4].
+
+ [4]: http://wiki.reseaulibre.ca/hardware/achats/2012-12-nanostation/
+
+# Montage vidéo
+
+Des images ont été capturées lors de l'installation du noeud `val`. Nous sommes à la recherche de talents en montage vidéo.
+
+# Statistiques
+
+(à remplir avant envoi)
+
+ [11]: http://wiki.reseaulibre.ca/nodes
+
+## Inscrits
+
+liste de nouvelles
+: ?
+
+liste technique (nodes)
+: ?
+
+## Wiki
+
+Fichiers
+: ?
+
+Lignes
+: ?
+
+Modifications
+: ?
+
+Auteurs
+: ?
+
+[[tag/draft]]
