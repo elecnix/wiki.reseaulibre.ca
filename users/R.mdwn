@@ -3,8 +3,8 @@
 
 Je roule du wifi ouvert chez moi depuis longtemps et me voilà entouré de semblables!
 
-* total world domination (à) g mail point, "comme" ;)
-* http://twd.su
+* courriel: total world domination (à) g mail point, "comme" ;)
+* site: [[TWD|http://twd.su]]
 
 ## Mes Noeuds
 
@@ -15,3 +15,17 @@ Je roule du wifi ouvert chez moi depuis longtemps et me voilà entouré de sembl
 ## Autres infos
 
 Radio amateur: VE2TUX
+
+## Todo
+### hardware
+
+* Finir setup (relais.)
+* installer & upgrader(?) (acces.)
+* nœuds portable / solaire de test
+* ...
+
+### Software
+
+* Transparent tor proxy
+* service discovery
+* ???
