@@ -69,6 +69,8 @@ Les routeurs de Ubiquiti fournissent un injecteur de même marque, mais si vous 
 
 Il est aussi possible d'en acheter pour 10$ (plus livraison) de Solimedia: [[Passive PoE™ Set 5,5x2,5|http://solimedia.ca/wireless-accessories/44-poe-injector-splitter-set.html]].
 
+Une autre sorte, plus semblable aux injecteurs Ubiquiti (deux prises RJ45 femelle): [[Passive PoE Injector D-Shaped|http://www.aerial.net/shop/product/22_125/30/ezynet-passive-poe-injector-dshaped.html]].
+
 [[!img ubiquiti-tough-rj45.jpg align="right" size="200x"]]
 
 # Cable connectors
