@@ -5,7 +5,7 @@ Les dernières nouvelles du réseau envoyées sur la [liste de diffusion](https:
 En rédaction
 ============
 
-Les nouvelles en rédaction sont marqués par le [[tag/draft]] (brouillon). Ceci évite que la nouvelle soit publiée dans le flux RSS (ex: freifunk). Enlever le tag lorsque l'article sera complété et envoyé sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca).
+Les nouvelles en rédaction sont marqués par la balise `\[[tag/draft]]` (brouillon). Ceci évite que la nouvelle soit publiée dans le flux RSS (ex: freifunk). Enlever la balise lorsque l'article sera complété et envoyé sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca).
 
 Par convention, indiquer la date et nom de l'annonce dans le champ pour créer une nouvelle annonce (ex: "2013-02-20 Invitation pour ..."). Voir les annonces passées pour des exemples de modèles.
 
