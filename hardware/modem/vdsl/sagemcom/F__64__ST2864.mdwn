@@ -144,31 +144,31 @@ cpe>
 Extended Port Status
 =================
 Bme: 1 Port: 1
-Downstream line rate: 16908 kbps
-Upstream line rate: 800 kbps
+Downstream line rate: 29664 kbps
+Upstream line rate: 10932 kbps
 Bearer0 Downstream payload rate: 0 kbps
-Bearer1 Downstream payload rate: 15992 kbps
+Bearer1 Downstream payload rate: 26936 kbps
 Bearer0 Upstream payload rate: 0 kbps
-Bearer1 Upstream payload rate: 728 kbps
-Downstream attainable payload rate: 15972 kbps
-Downstream attainable line rate: 16912 kbps
-Downstream Training Margin: 6.0 dB
+Bearer1 Upstream payload rate: 9512 kbps
+Downstream attainable payload rate: 65888 kbps
+Downstream attainable line rate: 77576 kbps
+Downstream Training Margin: 24.7 dB
 Downstream Line Protection (Bearer1 Path): 0.0 DMT Symbols
 Upstream Line Protection (Bearer1 Path): 0.0 DMT Symbols
 Near-end ITU Vendor Id: 0xb500494b4e530200
 Far-end ITU Vendor Id: 0xb500494b4e530100
-Downstream delay: 0.1 ms
-Upstream delay: 0.9 ms
-Tx total power 10.9 dbm
-FE Tx total power 12.3 dbm
-VDSL Estimated Loop Length : 5259 ft
-G.Hs Estimated Near End Loop Length : 5259 ft
-G.Hs Estimated Far End Loop Length :0 ft
-Current framing mode: 0x00 ATM
-Bandplan Type...........: 1
-No. of Upstream Bands...: 1
-No. of Downstream Bands.: 1
-Line Type: 0x00000020 ADSL2 PLUS ANNEX A
+Downstream delay: 0.0 ms
+Upstream delay: 0.0 ms
+Tx total power -16.6 dbm
+FE Tx total power 14.2 dbm
+VDSL Estimated Loop Length : 877 ft
+G.Hs Estimated Near End Loop Length : 372 ft
+G.Hs Estimated Far End Loop Length :886 ft
+Current framing mode: 0x10 EFM
+Bandplan Type...........: 2
+No. of Upstream Bands...: 2
+No. of Downstream Bands.: 2
+Line Type: 0x01000000 VDSL2 Profile 12A 
 Downstream FFT Protection (Bearer1 Path): 0.0 DMT Symbols
 Upstream FFT Protection (Bearer1 Path): 0.0 DMT Symbols
 Upstream Line Attenuation: NA (Only for ADSL1 & T1.413)
@@ -177,7 +177,6 @@ Upstream Retransmission status: Disabled
 Downstream Retransmission status: Disabled
 
 cpe> 
-
 """]]
 
 ...Amusez-vous...
