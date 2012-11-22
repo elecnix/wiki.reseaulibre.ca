@@ -50,4 +50,4 @@ Modifications
 Auteurs
 : ?
 
-[[tag/draft]]
+[[!tag draft]]
