@@ -7,7 +7,7 @@ Si vous n'êtes pas sur la listes de discussion "nodes@", mentionnez comment vou
 * [PicoStation M2HP][]; |R: 1 (confirmé)
 * [Injecteur POE 24V 1A w/RESET]: |R: 1 (confirmé) (où?), tahini: 1
 
-Date limite: ? décembre 2012
+Date limite: 29 novembre 2012
 
 Personne responsable de l'achat: ?
 
