@@ -1,3 +1,7 @@
+(!) Notez que des stats sont montrées dans la page [[stats]].
+
+[[!toc]]
+
 ## Connectivité Ad-Hoc
 
 Pour activer les fonctionnalités de monitorage sur un appareil OpenWRT, on peut installer le paquet "muninlite" qui est beaucoup plus léger que le script habituel munin-node et qui ne dépend pas de Perl.
