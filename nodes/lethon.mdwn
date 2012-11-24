@@ -4,7 +4,7 @@
 [[!ymlfront data="""
 MAC: 00:15:6D:72:94:21
 IP: 172.16.1.22
-IPv6: n/a
+IPv6: fe80::215:6dff:fe72:9421/64
 """]]
 
 Ubiquity Nanostation M2 router.
