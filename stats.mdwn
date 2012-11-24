@@ -1,6 +1,6 @@
 [[!meta title="OOuhhh shiny graphics!"]]
 
-Ajoutez vos graphiques ici si vous en avez!
+Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/munin]], voir [[page de documentation|documentation/munin/]].
 
 [[!toc]]
 
