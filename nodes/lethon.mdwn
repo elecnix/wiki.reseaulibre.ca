@@ -2,7 +2,7 @@
 
 
 [[!ymlfront data="""
-MAC: 
+MAC: 00:15:6D:72:94:21
 IP: 172.16.1.22
 IPv6: n/a
 """]]
@@ -42,7 +42,7 @@ Links
 :
 
 Azimuth
-: North-North-West
+: North-North-West (Ciblant/targeting Montreal)
 
 Panorama
 : 60°(H-pol) / 60° (V-pol) / 60° (Elevation) 
