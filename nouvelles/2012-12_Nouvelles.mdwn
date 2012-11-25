@@ -24,6 +24,10 @@ Des images ont été capturées lors de l'installation du noeud `val`. Nous somm
 
 # Statistiques
 
+Quelques personnes ont installé Munin, et on peut voir la qualité des liens dans le temps sur la page de stats.
+
+ [10]: http://wiki.reseaulibre.ca/stats/
+
 (à remplir avant envoi)
 
  [11]: http://wiki.reseaulibre.ca/nodes
