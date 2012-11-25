@@ -25,6 +25,10 @@ See the excellent flashing guide on the Ubiquiti wiki: [Installing OpenWRT on Na
 For more information on other devices, see the [table of hardware](http://wiki.openwrt.org/toh/start) on the OpenWRT
 site, each device page will list which firmware you should use.
 
+## Custom firmwares
+
+(!) We are also developing custom firmware, if you feel like lending a hand, try out [those images](http://packages.reseaulibre.ca:8080/Routeurs/reseaulibre-openwrt/devel/aa_beta/).
+
 # Flashing methods
 
 You can flash your devices in many ways. The web interface is the easiest.
