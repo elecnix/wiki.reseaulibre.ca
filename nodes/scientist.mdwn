@@ -3,14 +3,15 @@
 [[!ymlfront data="""
 MAC: 00:27:22:72:CF:9F
 IP: 172.16.1.28
+IPV6: 2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f
 """]]
-Présentement à l'arrière au 3e étage. En attente d'accéder au toit pour l'installer de facon permanente
+Présentement à l'arrière dépassant un peu du toit . 
 
 
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
- * IPv6 address:
- * Software:
+ * IPv6 address: {{$IPV6}}
+ * Software: OpenWRT 12.09-beta
  * Hardware: Ubiquiti Bullet M2HP + Ombi 8dbi
  * Power:
  * Location:
@@ -21,7 +22,7 @@ Présentement à l'arrière au 3e étage. En attente d'accéder au toit pour l'i
  * Operator: [[users/scientist]]
 
 
-Mes commandes UCI:
+Mes commandes UCI (Outdated):
 
 	#basic stuff
 	uci delete wireless.radio0.disabled
