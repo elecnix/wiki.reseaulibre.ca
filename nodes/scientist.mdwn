@@ -12,7 +12,7 @@ Présentement à l'arrière dépassant un peu du toit .
  * IP address: {{$IP}}
  * IPv6 address: {{$IPV6}}
  * Software: OpenWRT 12.09-beta
- * Hardware: Ubiquiti Bullet M2HP + Ombi 8dbi
+ * Hardware: Ubiquiti Bullet M2HP + Ombi 15dbi
  * Power:
  * Location:
  * Status: [[!taglink up]]
