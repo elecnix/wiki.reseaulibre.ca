@@ -31,6 +31,7 @@ Bullet M2 + 15dBi
  * MAC address: {{$MAC}}
  * Channel: 1
  * 802.11: b, g, n
+ * Autonomie estimée: 15-30 minutes (UPS)
 
 ### Antenna
  * Azimuth: H: 360° / V: 6°
