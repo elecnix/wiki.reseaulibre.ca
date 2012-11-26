@@ -80,6 +80,10 @@ basic distribution. features OLSRd and Batman-adv.
 
 note
 
+## Réseau Libre
+
+Based on OpenWRT, see [[guides/compile]].
+
 ## Robin
 
 Based on [OpenWrt](http://openwrt.org),
