@@ -2,18 +2,52 @@
 
 Possibility of a node here pointing south-west, on the 4th floor, with a good view all the way to the mountain, with a possibility of also having a small post facing north.
 
- * MAC address:
- * IP address:
- * IPv6 address:
- * Software:
- * Hardware:
- * Power:
- * Location:
- * Status: [[!taglink planned]]
- * Links: 
- * Azimuth:
- * Panorama:
- * Operator: [[users/anarcat]]
+# Technical details
+
+[[!ymlfront data="""
+MAC: DC:9F:DB:07:EC:E7
+IP: 172.16.0.7/32
+IPv6: fd64:2c08:9fa7:3::/64
+"""]]
+
+hostname
+: atlas
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWRT AA-beta1 (tahini's)
+
+Hardware
+: Ubiquity Bullet M2 + sector antenna
+
+Power
+: 
+
+Location
+: not deployed yet
+
+Azimuth
+: 120° south-east
+
+Panorama
+: N/A
+
+Status
+: [[!taglink planned]]
+
+Operator
+: [[users/anarcat]]
+
+Links
+: 
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
