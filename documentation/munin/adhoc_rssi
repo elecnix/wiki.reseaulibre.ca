@@ -45,8 +45,8 @@ EOF
         for line in `iw $iface station dump`; do
             if echo "$line" | grep -q "Station"; then
                 mac=$(echo $line | awk '{print $2}' FS=" ")
-                if [ -f /etc/bat-hosts ]; then
-                    host=$(awk -v MAC=$mac 'tolower($1)==MAC {print $2}' FS=" " /etc/bat-hosts)
+                if [ -f /etc/ethers ]; then
+                    host=$(awk -v MAC=$mac 'tolower($1)==MAC {print $2}' FS=" " /etc/ethers)
                     if [ -z "$host" ]; then host=$mac; fi
                 fi
                 echo signal$mac.label $host
