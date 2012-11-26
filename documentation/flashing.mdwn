@@ -138,7 +138,8 @@ Keep the password in a safe place, your password manager or your head, if the la
 ## Other configuration
 
 * If you want a web interface, follow [the luci install instructions](http://wiki.openwrt.org/doc/howto/luci.essentials#installation)
-* See the next [[configuration]] pages for the next steps for setting-up the mesh.
+* See the next [[documentation]] pages for the next steps for
+  setting-up the mesh. Usually you want to setup [[ad-hoc]] mode.
 
 # Password reset
 
