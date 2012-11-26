@@ -37,11 +37,11 @@ example.
 > to configure an IP on (and create!) the WLAN interface, which may be
 > absent at this point:
 > 
->     uci set network.wlan=interface
->     uci set network.wlan.ifname=wlan0
->     uci set network.wlan.proto=static
->     uci set network.wlan.ipaddr=172.16.0.42
->     uci set network.wlan.netmask=255.255.255.255
+>     uci set network.wan=interface
+>     uci set network.wan.ifname=wlan0
+>     uci set network.wan.proto=static
+>     uci set network.wan.ipaddr=172.16.0.42
+>     uci set network.wan.netmask=255.255.255.255
 > 
 > Note that the netmask is `255.255.255.255` so that IP addresses are not looked up on the local network with ARP requests. Note, however, that this will make the interface unreachable with a regular non-babel computer, and will break completely non-babel setups.
 

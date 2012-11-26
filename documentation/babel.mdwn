@@ -31,16 +31,16 @@ Install babel and the [[ipv6|documentation/ipv6]] kernel module:
 To make sure that babel starts on boot on the wireless interface:
 
     /etc/init.d/babeld enable
-    uci delete babeld.wlan.ignore
+    uci delete babeld.wan.ignore
 
 Configure the wireless interface with an IP and a proper `/32` netmask (`255.255.255.255`), see the
 [[ip configuration|ip]] page for more information.
 
-    uci set network.wlan=interface
-    uci set network.wlan.ifname=wlan0
-    uci set network.wlan.proto=static
-    uci set network.wlan.ipaddr=172.16.0.123
-    uci set network.wlan.netmask=255.255.255.255
+    uci set network.wan=interface
+    uci set network.wan.ifname=wlan0
+    uci set network.wan.proto=static
+    uci set network.wan.ipaddr=172.16.0.123
+    uci set network.wan.netmask=255.255.255.255
 
 (!) Do not forget to save your changes!
 
@@ -61,7 +61,7 @@ The following UCI config can be imported using `uci import` and will record the 
     config filter
             option ignore 'true'
     
-    config interface 'wlan'
+    config interface 'wan'
 
     config interface 'lan'
 

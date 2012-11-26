@@ -44,9 +44,9 @@ Il faut specifier un BSSID pour s'assurer que tous les routeurs soient dans la m
     uci set wireless.@wifi-iface[0].ssid=relais.reseaulibre.ca
     uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
 
-Move wireless network from `lan` to `wlan`:
+Move wireless network from `lan` to `wan`:
 
-    uci set wireless.@wifi-iface[0].network=wlan
+    uci set wireless.@wifi-iface[0].network=wan
 
 Écrire les changements et redémarrer
 
