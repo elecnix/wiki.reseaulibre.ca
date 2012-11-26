@@ -1,4 +1,4 @@
-[[!meta title="Internet protocols configuration"]]
+[[!meta title="IPv4 configuration"]]
 [[!meta description="Includes information about IP addresses and routing"]]
 
 [[!toc levels=3]]
