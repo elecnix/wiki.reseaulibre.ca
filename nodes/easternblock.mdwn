@@ -5,9 +5,9 @@ Eastern Block has showed interest in having a node on their roof. They can find 
 # Technical details
 
 [[!ymlfront data="""
-MAC: 
+MAC: DC:9F:DB:07:D5:BE
 IP: 
-IPv6: 
+IPv6: fd64:2c08:9fa7:2::/64
 """]]
 
 hostname
