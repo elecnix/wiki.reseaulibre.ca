@@ -2,7 +2,7 @@
 
 15 dBI omnidirectional antenna connected to a Ubiquity Bullet M2 router.
 
-<a href="http://munin.orangeseeds.org/munin/boulette/boulette/adhoc_rssi.html"><img style="float: right" src="http://munin.orangeseeds.org/munin/boulette/boulette/adhoc_rssi-week.png" /></a>
+<a href="http://munin.orangeseeds.org/munin/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi.html"><img src="http://munin.orangeseeds.org/munin/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi-week.png" /></a>
 
 # Technical details
 
