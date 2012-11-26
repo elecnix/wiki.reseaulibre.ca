@@ -60,6 +60,17 @@ On peut vérifier le bon fonctionnement de Munin et le contenu de la liste des p
     .
     quit
 
+Il reste ensuite à configurer un serveur munin qui va aller collecter ces statistiques. Ceci est un peu au delà d'un simple tutoriel comme ceci, mais il devrait normalement suffire de faire:
+
+    apt-get install munin
+
+... sous Debian, et munin sera alors accessible sous http://localhost/munin. Il faudra corriger le fichier de config (`/etc/munin/apache.conf`) apache pour le rendre public puis ajouter votre routeur à la configuration dans `/etc/munin/munin.conf`, exemple:
+
+    [boulette]
+        address 172.16.0.2
+
+Voir la [documentation complète de munin](http://www.munin-monitoring.org/wiki/Documentation) pour les détails.
+
 ## Quagga/Babeld
 
 Le logiciel de routage Quagga possède une interface de contrôle qui rend le monitorage plus facile que si on utilisait le serveur Babeld standard. Par exemple, le script pour munin-node ci-dessous (tiré de [[https://dn42.net/trac/wiki/Statistics]], voir ce site pour les instructions) permet de tracer le nombre de routes fournies par le réseau:
