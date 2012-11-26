@@ -69,7 +69,7 @@ Babel
     babeld.@filter[0].le=0
     babeld.@filter[0].proto=3
     babeld.@filter[0].action=metric 128
-    babeld.wlan0=interface
+    babeld.wan=interface
     babeld.lan=interface
 
 DHCP and DNS
@@ -97,18 +97,11 @@ Network
     network.lan.gateway=172.16.0.1
     network.lan.netmask=255.255.255.255
     network.lan.ipaddr=172.16.0.2
-    network.wlan0=interface
-    network.wlan0.ifname=wlan0
-    network.wlan0.mtu=1528
-    network.wlan0.proto=static
-    network.wlan0.ipaddr=169.254.32.13
-    network.wlan0.netmask=255.255.255.255
-    network.bat0=interface
-    network.bat0.ifname=bat0
-    network.bat0.mtu=1500
-    network.bat0.proto=static
-    network.bat0.ipaddr=172.16.0.3
-    network.bat0.netmask=255.240.0.0
+    network.wan=interface
+    network.wan.ifname=wlan0
+    network.wan.proto=static
+    network.wan.ipaddr=169.254.32.13
+    network.wan.netmask=255.255.255.255
 
 IPv6
 ----
