@@ -51,6 +51,14 @@ Links
 
 ## Configuration
 
+### System
+
+    package system
+    
+    config system
+            option timezone 'America/Montreal'
+            option hostname 'easternblock'
+
 ### Babel
 
     package babeld
