@@ -98,7 +98,9 @@ The following sits in `/etc/babeld.conf`:
     config interface 'wan'
             option ifname 'wlan0'
             option proto 'static'
-            option ipaddr '255.255.255.255'
+            option ipaddr '172.16.0.6'
+            option netmask '255.255.255.255'
+            option dns '172.16.0.1'
 
 ### Radio
 
