@@ -1,4 +1,4 @@
-[[!meta title="Babel configuration notes"]]
+[[!meta title="Babel configuration"]]
 
 Babel is a routing protocol. It allows everyone to "announce" their routes (your local network prefix), or it can simply relay routing information to the other nodes. It works well on a wireless mesh network as well as on a wired network.
 
