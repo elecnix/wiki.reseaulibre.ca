@@ -6,9 +6,7 @@
 
 [[!ymlfront data="""
 MAC: 00:15:6d:da:d3:65
-IP: 
-- 172.16.0.2/32
-- 172.16.0.3/12
+IP: 172.16.0.2/32
 IPv6: fd64:2c08:9fa7::2/64
 """]]
 
@@ -57,7 +55,7 @@ Links
 Configuration
 =============
 
-This node runs batman according to the [[documentation/batman]] howto.
+This node runs babel according to the [[documentation/babel]] howto.
 
 Babel
 -----
@@ -73,12 +71,6 @@ Babel
     babeld.@filter[0].action=metric 128
     babeld.wlan0=interface
     babeld.lan=interface
-
-Batman
-------
-    
-    batman-adv.bat0=mesh
-    batman-adv.bat0.interfaces=wlan0 br-lan
 
 DHCP and DNS
 ------------
