@@ -16,8 +16,8 @@ Un noeud à l'extérieur de ma fenêtre, actuellement à puissance minimale vers
  * Status: [[!taglink up]]
  * Operator: [[/users/elecnix]]
  * Links: [[besik]] ([[links/elecnix-besik/]])
- * Battery backup: 30 minutes
- * Emergency power source: car battery (charged)
+ * Short-term backup power: 30 minutes (UPS)
+ * Emergency power: car battery (charged)
 
 Pour me contacter, utiliser le courriel marchildon.net retourné par: 
 
