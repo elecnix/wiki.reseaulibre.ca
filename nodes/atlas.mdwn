@@ -49,6 +49,10 @@ Operator
 Links
 : 
 
+## Configuration dump
+
+See [[easternblock]], as both machines are currently configured similarly.
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
