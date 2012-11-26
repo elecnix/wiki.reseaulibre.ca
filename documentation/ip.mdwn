@@ -17,11 +17,14 @@ To configure the IP address on a OpenWRT device, use this:
 
     uci set network.lan.ipaddr=172.16.0.123
     uci set network.lan.netmask=255.240.0.0
+
+If there is a gateway on the local network, you should also use this:
+
     uci set network.lan.gateway=172.16.0.1
     uci set network.lan.dns=172.16.0.1
 
 You may also commonly disable the DHCP server on LAN, so as to not
-interfere with another router:
+interfere with the other router:
 
     uci set dhcp.lan.ignore=1
 
