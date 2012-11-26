@@ -28,16 +28,6 @@ Install babel and the [[ipv6|documentation/ipv6]] kernel module:
 >     scp libpthread*.ipk kmod-ipv6*.ipk babeld*.ipk librt*.ipk root@192.168.1.1:
 >     ssh root@192.168.1.1 "opkg install *.ipkg"
 
-Configure the wireless interface with a test IP (follow the [[ip configuration|ip]] to make those settings peristent, but make sure to use `255.255.255.255` as a netmask):
-
-    ifconfig wlan0 up 172.16.0.43 netmask 255.255.255.255
-
-To start babel on the console for testing:
-
-    babeld -d1 wlan0
-
-Note how you specify the interface names directly on the command line. The output should already show you neighbors, if there are any.
-
 To make sure that babel starts on boot on the wireless interface:
 
     /etc/init.d/babeld enable
@@ -241,6 +231,28 @@ Babel is also used by [commotionwireless](https://commotionwireless.net/).
 Troubleshooting
 ===============
 
+Babel should generally "just work". You start it, and it starts
+exchanging routes with its neighbors through IPv6 broadcast packets.
+
+During your tests, give some time for Babel to synchronise. Things can
+take a few seconds (count to 10) to synchronise.
+
+Running babel manually
+----------------------
+
+Configure the wireless interface with a test IP (follow the [[ip configuration|ip]] to make those settings peristent, but make sure to use `255.255.255.255` as a netmask):
+
+    ifconfig wlan0 up 172.16.0.43 netmask 255.255.255.255
+
+To start babel on the console for testing:
+
+    babeld -d1 wlan0
+
+Note how you specify the interface names directly on the command line. The output should already show you neighbors, if there are any.
+
+Seeing the babel routes
+-----------------------
+
 Basic operation of Babel involves talking with the regular kernel
 routing table. If Babel sees a neighbor, it will add a route like this
 to the routing tables:
@@ -249,6 +261,9 @@ to the routing tables:
 
 This basically means: *"I see neighbor 169.254.11.8 and it's on the
 interface wlan0"*.
+
+Getting more information from babel
+-----------------------------------
 
 From the
 [FAQ](http://www.pps.univ-paris-diderot.fr/~jch/software/babel/faq.html):
@@ -270,10 +285,6 @@ To print the current status only (instead of sending the USR1 kill signal to the
 You can also use the babelstatus.sh script to dump a slightly more readable output: http://redmine.bidon.ca/projects/reseaulibre-scripts/repository/raw/babelstatus.sh
 
 Tcpdump groks Babel starting with version 4.2.1. Wireshark has support since version 1.6.0.
-
-Also, during your tests, give some time for Babel to
-synchronise. Things can take a few seconds (count to 10) to
-synchronise.
 
 References
 ==========
