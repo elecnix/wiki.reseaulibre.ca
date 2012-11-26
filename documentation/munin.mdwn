@@ -34,10 +34,10 @@ Une fois installé, on doit activer la recherche de "plugins" en éditant le scr
 
 On peut ensuite télécharger et placer le script suivant dans le répertoire /etc/munin/plugins et le rendre exécutable: [[adhoc_rssi.sh]]
 
-    wget http://wiki.reseaulibre.ca/documentation/munin/adhoc_rssi.sh
-    chmod +x adhoc_rssi.sh
     mkdir -p /etc/munin/plugins
-    mv adhoc_rssi.sh /etc/munin/plugins/adhoc_rssi
+    cd /etc/munin/plugins
+    wget http://wiki.reseaulibre.ca/documentation/munin/adhoc_rssi
+    chmod +x adhoc_rssi
 
 On peut vérifier le bon fonctionnement de Munin et le contenu de la liste des plugins disponibles:
 
