@@ -135,6 +135,15 @@ Keep the password in a safe place, your password manager or your head, if the la
 
 (!) Note that this will DISABLE telnet and you will have to use SSH instead.
 
+## Set the date
+
+This is kind of useful, but not mandatory:
+
+    root@easternblock:/etc/config# date 201211260235.15
+    Mon Nov 26 02:35:15 UTC 2012
+
+Notice how the time is [UTC](https://en.wikipedia.org/wiki/UTC).
+
 ## Other configuration
 
 * If you want a web interface, follow [the luci install instructions](http://wiki.openwrt.org/doc/howto/luci.essentials#installation)
