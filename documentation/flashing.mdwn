@@ -46,6 +46,8 @@ During the upload, pay attention to the following:
 * look at the LEDs pattern to see if they settle down
 * keep a ping to the router running
 
+(!) The default user/password of ubiquity devices is `ubnt/ubnt`.
+
 ## TFTP upload
 
 This works by turning off the device and rebooting it while repeatedly
