@@ -1,6 +1,6 @@
 [[!waypoint lat="45.534260" lon="-73.603265" embed hidden width="400px" height="400px" right desc="Routeur Bullet sur le toit, avec point d'accès au 3e étage"]]
 
-Routeur Bullet sur le toit, avec point d'accès au 3e étage.
+Routeur Bullet M2 sur le toit, avec point d'accès (actuellement hors-service) au 3e étage.
 
 # Technical details
 
@@ -23,7 +23,7 @@ IP address
 : {{$IP}}
 
 Software
-: Openwrt + Batman
+: qMp
 
 Hardware
 : Ubiquiti Bullet + 15 dbi
@@ -52,43 +52,6 @@ Links
 [[!img 2012-08-20-lacou.jpg size=950x]]
 Panorama en haute qualité: http://www.flickr.com/photos/elecnix/7828916420
 
-
-<pre>
-passwd
-
-uci delete wireless.radio0.disabled
-uci set system.@system[0].hostname=lacou
-uci set network.lan.ifname="eth0"
-uci set network.lan.ipaddr=192.168.3.19
-uci set network.lan.gateway=192.168.3.1
-uci set network.lan.dns=192.168.3.1
-uci set network.lan.netmask=255.255.0.0
-uci set dhcp.lan.ignore=1
-uci commit
-reboot & exit
-ssh root@192.168.3.19
-
-uci delete wireless.@wifi-iface[0].network
-uci set wireless.radio0.channel=1
-uci set wireless.@wifi-iface[0].mode=adhoc
-uci set wireless.@wifi-iface[0].ssid=relais.reseaulibre.ca
-uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
-uci set network.wlan0=interface
-uci set network.wlan0.ifname=wlan0
-uci set network.wlan0.proto=none
-uci set network.wlan0.mtu=1528
-opkg update
-opkg install kmod-batman-adv
-uci set network.bat0=interface
-uci set network.bat0.ifname=bat0
-uci set network.bat0.proto=static
-uci set network.bat0.mtu=1500
-uci set network.bat0.ipaddr=172.16.0.19
-uci set network.bat0.netmask=255.240.0.0
-uci set batman-adv.bat0.interfaces="wlan0 br-lan"
-uci commit
-reboot & exit
-</pre>
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
