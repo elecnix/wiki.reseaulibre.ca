@@ -10,7 +10,7 @@ Follow the instructions at [[http://wiki.openwrt.org/doc/howto/buildroot.exigenc
 
 At step 2, the svn command mentioned will download the trunk.  Click on the link below saying "Downloading sources" for information on how to download specific version.
 
-For the latest attitude adjustment beta, the svn command line would be
+For the latest attitude adjustment beta, the svn command line would be:
 
     svn co -r 33883 https://dev.openwrt.org/log/branches/attitude_adjustment
 
@@ -73,9 +73,9 @@ If you want to remove any of those packages from the image, you'll first have to
 
 ## reseaulibre-mesh
 
-This package includes a few user contributed scripts useful whe running the image.  These scripts can be executed directly from a command line on the device.
+This package includes a few user contributed scripts useful when running the image.  These scripts can be executed directly from a command line on the device.
 
-These packages are all source controlled at [[https://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt/trees/master/reseaulibre-feed/reseaulibre-mesh/files/usr/bin]] but some of those have their master source somewhere else.  In those cases, the main repository is mentioned.
+These packages are all source-controlled at [[https://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt/trees/master/reseaulibre-feed/reseaulibre-mesh/files/usr/bin]] but some of those have their master source somewhere else.  In those cases, the main repository is mentioned.
 
 ### babeldstate
 
@@ -107,7 +107,7 @@ Usage:
 
 ### bat-signal
 
-Displays signal levels from connected Wi-Fi stations.  *Is this batman dependent?*
+Displays signal levels from connected Wi-Fi stations. It works with the wifi device and has nothing to do with [[documentation/batman]].
 
 author: bgm, deuxpi
 
