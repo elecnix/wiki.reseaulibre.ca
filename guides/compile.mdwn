@@ -53,7 +53,7 @@ You should be good to go.  Type
   
     make V=99
 
-This may take a few hours.  After successful compilation, the images are in the bin/<arch> directory.
+This may take a few hours. On a quad-core computer, you may want to enable parallelism by adding the `-j4` option. After successful compilation, the images are in the bin/<arch> directory.
 
 # Reseau libre package information 
 
