@@ -60,6 +60,15 @@ On peut vérifier le bon fonctionnement de Munin et le contenu de la liste des p
     .
     quit
 
+Snippet de firewall:
+
+    config rule
+            option name             Allow-Munin-wan
+            option src              wan
+            option dest_port        4949
+            option proto            tcp
+            option target           ACCEPT
+
 Il reste ensuite à configurer un serveur munin qui va aller collecter ces statistiques. Ceci est un peu au delà d'un simple tutoriel comme ceci, mais il devrait normalement suffire de faire:
 
     apt-get install munin
