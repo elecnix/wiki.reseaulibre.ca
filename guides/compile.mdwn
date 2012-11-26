@@ -21,11 +21,11 @@ Get the file from this git:
     git clone git://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt.git reseau-libre-openwrt
 
 
-**Say you put the openwrt build environment in /home/me/openwrt and the git files are in /home/me/reseau-libre-openwrt**
+**Say you put the openwrt build environment in `/home/me/openwrt` and the git files are in `/home/me/reseau-libre-openwrt`**
 
 ## Add reseau libre feed
 
-Add the reseaulibre feed to openwrt by editing the file /home/me/openwrt/feeds.conf.default and add the following line:
+Add the reseaulibre feed to openwrt by editing the file `/home/me/openwrt/feeds.conf.default` and add the following line:
 
     src-link reseaulibre /home/me/reseau-libre-openwrt/reseaulibre-feed
 
@@ -41,29 +41,31 @@ Add the reseaulibre feed to openwrt by editing the file /home/me/openwrt/feeds.c
 
 ## Modify the image (optional)
 
-Optionally, modify the packages to include in the image by running 
+Optionally, modify the packages to include in the image by running:
 
     make menuconfig
 
-The .config file included in the git is the one used to build the image at [[http://packages.reseaulibre.ca:8080/Routeurs]].  It will build for ubiquiti products.  The make menuconfig command also allows you to change the device for which to build.
+There, navigate to `Network/Reseau Libre` and enable both options with a `*` star to ensure they are part of the produced image, not just as packages.
+
+The `.config` file included in the git is the one used to build the image at [[http://packages.reseaulibre.ca:8080/Routeurs]].  It will build for Ubiquiti products.  The `make menuconfig` command also allows you to change the device for which to build.
 
 ## Build the image
 
-You should be good to go.  Type
+You should be good to go.  Type:
   
     make V=99
 
-This may take a few hours. On a quad-core computer, you may want to enable parallelism by adding the `-j4` option. After successful compilation, the images are in the bin/<arch> directory.
+This may take a few hours. On a quad-core computer, you may want to enable parallelism by adding the `-j4` option. After successful compilation, the images are in the `bin/<arch>` directory.
 
 # Reseau libre package information 
 
-Here are the details on what the Reseau libre packages do
+Here are the details on what the Reseau libre packages do:
 
 ## reseaulibre-base
 
 This package just lists dependencies, to make sure all packages required or recommended by the Reseau Libre volunteers are included in the image, to avoid having to go through the whole menuconfig
 
-The packages this package depends on are 
+The packages this package depends on are:
 
     kmod-ipv6 ip kmod-ip6tables ip6tables babeld radvd nano iperf opkg
 
