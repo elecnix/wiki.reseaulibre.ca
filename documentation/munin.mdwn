@@ -16,6 +16,11 @@ Installing muninlite (1.0.4-3) to root...
 Configuring muninlite.
 """]]
 
+Définir le service munin (sinon xinetd refuse de partir), dans
+`/etc/services`:
+
+    munin	4949/tcp
+
 Si on veut que le service Munin soit accessible par IPv6, il faut ajouter une option "flags = IPv6" dans le fichier /etc/xinetd.d/munin. Dans tous les cas, on active et démarre xinetd:
 
     /etc/init.d/xinetd enable
