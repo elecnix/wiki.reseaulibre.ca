@@ -172,20 +172,19 @@ to reset the password using this simpler procedure:
 
 If done right the DMZ LED will quickly flash 3 times every second.
 
-You should be able to telnet to the router at 192.168.1.1 now (no
-username and password).
+You should be able to telnet to the router at 192.168.1.1 now.
 
-### Simple tips to recover the router in failsafe mode
-
-NOTE: The root file system in failsafe mode is the SquashFS partition
+The root file system in failsafe mode is the SquashFS partition
 mounted in readonly mode. To switch to the normal writable root file
-system run mount_root and make any changes. Run `mount_root` now.
+system run:
 
-Forgot/lost your password and you like to set a new one
+    mount_root
+
+To set a new password:
 
     passwd
 
-Forgot the routers IP address
+Find the router's IP address:
 
     uci get network.lan.ipaddr
 
