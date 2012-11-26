@@ -18,10 +18,8 @@ Configuring muninlite.
 
 Si on veut que le service Munin soit accessible par IPv6, il faut ajouter une option "flags = IPv6" dans le fichier /etc/xinetd.d/munin. Dans tous les cas, on active et démarre xinetd:
 
-[[!format txt """
-$ /etc/init.d/xinetd enable
-$ /etc/init.d/xinetd start
-"""]]
+    /etc/init.d/xinetd enable
+    /etc/init.d/xinetd start
 
 Une fois installé, on doit activer la recherche de "plugins" en éditant le script `/usr/sbin/munin-node`:
 
@@ -36,27 +34,22 @@ Une fois installé, on doit activer la recherche de "plugins" en éditant le scr
 
 On peut ensuite télécharger et placer le script suivant dans le répertoire /etc/munin/plugins et le rendre exécutable: [[adhoc_rssi.sh]]
 
-[[!format txt """
-$ wget http://wiki.reseaulibre.ca/documentation/munin/adhoc_rssi.sh
-$ chmod +x adhoc_rssi.sh
-$ mkdir -p /etc/munin/plugins
-$ mv adhoc_rssi.sh /etc/munin/plugins/adhoc_rssi
-"""]]
+    wget http://wiki.reseaulibre.ca/documentation/munin/adhoc_rssi.sh
+    chmod +x adhoc_rssi.sh
+    mkdir -p /etc/munin/plugins
+    mv adhoc_rssi.sh /etc/munin/plugins/adhoc_rssi
 
 On peut vérifier le bon fonctionnement de Munin et le contenu de la liste des plugins disponibles:
 
-[[!format txt """
-$ telnet localhost 4949
-# munin node at pinxo
-list
-cpu if_wlan0 if_eth0 if_br_lan if_err_wlan0 if_err_eth0 if_err_br_lan load memory processes uptime interrupts irqstats adhoc_rssi
-fetch adhoc_rssi
-signaldc:9f:db:00:13:79.value -55
-signal00:27:22:72:cf:9f.value -39
-.
-quit
-"""
-]]
+    $ telnet localhost 4949
+    # munin node at pinxo
+    list
+    cpu if_wlan0 if_eth0 if_br_lan if_err_wlan0 if_err_eth0 if_err_br_lan load memory processes uptime interrupts irqstats adhoc_rssi
+    fetch adhoc_rssi
+    signaldc:9f:db:00:13:79.value -55
+    signal00:27:22:72:cf:9f.value -39
+    .
+    quit
 
 ## Quagga/Babeld
 
