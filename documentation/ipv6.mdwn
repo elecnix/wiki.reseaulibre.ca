@@ -80,7 +80,7 @@ comme un serveur DHCP en IPv4. Ceci se fait avec le service `radvd`:
 
 Then configure a static IP address:
 
-    uci set network.lan.ip6addr="fd64:2c08:9fa7:1::2/64"
+    uci set network.lan.ip6addr=fd64:2c08:9fa7:1::2/64
 
 Finally the following will make sure that clients can autoconfigure:
 
