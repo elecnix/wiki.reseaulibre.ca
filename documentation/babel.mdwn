@@ -90,6 +90,16 @@ then the firewall can be restarted with:
 
     /etc/init.d/firewall restart
 
+> (!) While you are there, you might as well allow SSH access from the
+> mesh for maintenance:
+> 
+>     config rule
+>             option name             Allow-SSH-wan
+>             option src              wan
+>             option dest_port        22
+>             option proto            tcp
+>             option target           ACCEPT
+
 ### Simplest babeld.conf
 
 If you followed all the other steps to get here and have a local LAN
