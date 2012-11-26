@@ -33,7 +33,7 @@ To make sure that babel starts on boot on the wireless interface:
     /etc/init.d/babeld enable
     uci delete babeld.wlan.ignore
 
-Configure the wireless interface correctly, see the
+Configure the wireless interface with an IP and a proper `/32` netmask (`255.255.255.255`), see the
 [[ip configuration|ip]] page for more information.
 
     uci set network.wlan=interface
@@ -51,15 +51,6 @@ To announce routes on the wired intefaces too:
 
     uci delete babeld.lan.ignore
 
-If you had previously installed Batman, you will need to remove the
-wireless interface from the batman bridge, and add it to babel:
-
-    batctl if del wlan0
-    uci set babeld.wlan0=interface
-
-/!\ Warning: this may break your existing connexion and require a
-reboot.
-
 The following UCI config can be imported using `uci import` and will record the above configuration:
 
     package babeld
@@ -76,6 +67,17 @@ The following UCI config can be imported using `uci import` and will record the 
 
 Note that we do not configure routing rules through UCI (hence the `ignore` setting on the `config filter` section), but instead
 rely on the `/etc/babeld.conf` file, see below for config samples.
+
+### Migrating away from a BATMAN install
+
+If you had previously installed Batman, you will need to remove the
+wireless interface from the batman bridge, and add it to babel:
+
+    batctl if del wlan0
+    uci set babeld.wlan0=interface
+
+/!\ Warning: this may break your existing connexion and require a
+reboot.
 
 Debian
 ------
