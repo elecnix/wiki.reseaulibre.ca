@@ -12,6 +12,8 @@ Those are the configuration steps followed:
 
 Not documented: the access point is in managed mode, see the configuration dump below for examples.
 
+[[!toc]]
+
 # Technical details
 
 [[!ymlfront data="""
