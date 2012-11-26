@@ -30,6 +30,8 @@ machine again after a reboot. You will need to statically configure
 your laptop if it is the only device connected to the device, for
 example.
 
+(!) Also, if you have [[babel]] configured, the above IP address will be incorrect, you need to change the netmask to be `255.255.255.255` so that IP addresses are not looked up on the local network with ARP requests. Note, however, that this will make the interface unreachable with a regular non-babel computer, and will break completely non-babel setups.
+
 Commit changes and reboot:
 
     uci commit ; reboot & exit
