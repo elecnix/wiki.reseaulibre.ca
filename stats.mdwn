@@ -9,11 +9,6 @@ Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/muni
 
 <a href="http://munin.orangeseeds.org/munin/boulette/boulette/adhoc_rssi.html"><img src="http://munin.orangeseeds.org/munin/boulette/boulette/adhoc_rssi-week.png" /></a>
 
-[[nodes/R]]
-------------
-
-<a href="https://munin.twd.su/bulletm2/bulletm2/adhoc_rssi.html"><img src="https://munin.twd.su/bulletm2/bulletm2/adhoc_rssi-week.png" /></a>
-
 [[nodes/bgm-latakia]]
 -----------------
 
@@ -23,3 +18,8 @@ Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/muni
 ----------------
 
 <a href="http://www.deuxpi.ca/munin/mesh.deuxpi.ca/relais.mesh.deuxpi.ca/adhoc_rssi.html"><img src="http://www.deuxpi.ca/munin/mesh.deuxpi.ca/relais.mesh.deuxpi.ca/adhoc_rssi-week.png" /></a>
+
+[[nodes/R]]
+------------
+
+<a href="https://munin.twd.su/bulletm2/bulletm2/adhoc_rssi.html"><img src="https://munin.twd.su/bulletm2/bulletm2/adhoc_rssi-week.png" /></a>
