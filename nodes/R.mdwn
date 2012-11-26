@@ -20,7 +20,7 @@ Bullet M2 + 15dBi
 # NODE - r.relais.reseaulibre.ca
 [[!img antenne_mat.jpg alt="antenne sur mat" align="right" size="x380" ]]
 
- * Status: [[!taglink up]] 
+ * Status: [[!taglink up]] depuis 29/10/12
  * Hostname: r.relais.reseaulibre.ca
  * Location: 45.518629,-73.58219
  * Software: OpenWRT 12.09-beta1
