@@ -68,6 +68,28 @@ The following UCI config can be imported using `uci import` and will record the 
 Note that we do not configure routing rules through UCI (hence the `ignore` setting on the `config filter` section), but instead
 rely on the `/etc/babeld.conf` file, see below for config samples.
 
+### Firewall configuration
+
+It is important to configure your firewall properly to let the Babel
+packets go through otherwise you will end up with problems like:
+
+    Neighbour fe80::de9f:dbff:fe06:d5be dev wlan0 reach ff2f rxcost 257 txcost 65535 chan 1.
+
+and `unreachable` routes. The solution is to add an entry in the
+*marvelous* uci firewall:
+
+    config rule
+            option name             Allow-Babel
+            option src              wan
+            option dest_port        6696
+            option proto            udp
+            option target           ACCEPT
+
+... this needs to be added to your `/etc/config/firewall` file and
+then the firewall can be restarted with:
+
+    /etc/init.d/firewall restart
+
 ### Simplest babeld.conf
 
 If you followed all the other steps to get here and have a local LAN
