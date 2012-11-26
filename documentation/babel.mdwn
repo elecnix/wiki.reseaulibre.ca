@@ -14,7 +14,7 @@ Installation
 OpenWRT
 -------
 
-If you have not yet installed OpenWRT on your router, see [[documentation/flashing]]. It must also have the correct [[ad-hoc]] wireless configuration to link with other devices.
+If you have not yet installed OpenWRT on your router, see [[flashing]]. It must also have the correct [[ad-hoc]] wireless configuration to link with other devices.
 
 Install babel and the [[ipv6|documentation/ipv6]] kernel module:
 
