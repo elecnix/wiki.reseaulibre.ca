@@ -104,7 +104,7 @@ Commit changes and reboot:
 
     uci commit ; reboot & exit
 
-To enable routing, put this in your `/etc/sysctl.conf`:
+To enable routing, make sure this is in your `/etc/sysctl.conf`:
 
     net.ipv6.conf.all.forwarding=1
 
