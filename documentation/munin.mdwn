@@ -23,7 +23,7 @@ $ /etc/init.d/xinetd enable
 $ /etc/init.d/xinetd start
 """]]
 
-Une fois installé, on doit activer la recherche de "plugins" en éditant le script /usr/sbin/munin-node:
+Une fois installé, on doit activer la recherche de "plugins" en éditant le script `/usr/sbin/munin-node`:
 
 [[!format patch """
 -PLUGINPATTERN=$(dirname $0)"/munin-node-plugin.d/*"
