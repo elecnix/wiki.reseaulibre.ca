@@ -65,6 +65,10 @@ Links
     
     config interface 'lan'
 
+The following sits in `/etc/babeld.conf`:
+
+    redistribute local ip 192.168.1.0/24 deny
+
 ### Network
 
     package network
