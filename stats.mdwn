@@ -4,6 +4,11 @@ Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/muni
 
 [[!toc]]
 
+[[nodes/boulette]]
+------------------
+
+<a href="http://munin.orangeseeds.org/munin/boulette/boulette/adhoc_rssi.html"><img src="http://munin.orangeseeds.org/munin/boulette/boulette/adhoc_rssi-week.png" /></a>
+
 [[nodes/R]]
 ------------
 
