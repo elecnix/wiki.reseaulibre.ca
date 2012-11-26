@@ -68,6 +68,16 @@ The following UCI config can be imported using `uci import` and will record the 
 Note that we do not configure routing rules through UCI (hence the `ignore` setting on the `config filter` section), but instead
 rely on the `/etc/babeld.conf` file, see below for config samples.
 
+### Simplest babeld.conf
+
+If you followed all the other steps to get here and have a local LAN
+still configured on your ethernet interface, you at the very least
+want this one rule to avoid leaking those routes to the mesh:
+
+    redistribute local ip 192.168.1.0/24 deny
+
+This can be added to `/etc/babeld.conf`.
+
 ### Migrating away from a BATMAN install
 
 If you had previously installed Batman, you will need to remove the
