@@ -1,0 +1,179 @@
+[[!toc levels=3]]
+[[!meta title="Nanostation M2 specific Configuration"]]
+
+
+# General information
+
+Due to the Nanostation M2 special hardware (2 NIC, 1 RADIO) and its' original OpenWRT setup, it is necessary to change default zones so that the firewall protects the right ones.
+
+[[!img  reseaulibre_NSM2.png size="586x594" alt="NSM2 zones setup"]]
+
+# IPv4 setup for Nanostation M2
+
+## Zones modification
+
+### Using uci
+
+/!\ Be ready to [reset](documentation/flashing/#index8h2) the routerif anything bad were to happen and you'd lock yourself out.
+
+The objective of the zone modification is to protect the *lan* from the *wan* through the firewall.
+
+First, we need to remove the existing *lan* bridge interface and create the new *wan* interface with *wlan0*.
+
+    uci delete network.lan
+
+    uci set network.wan=interface
+    uci set network.wan.ifname=wlan0
+    uci set network.wan.proto=static
+    uci set network.wan.ipaddr=172.16.1.XX # Use your reserved IP from policy/numbering
+    uci set network.wan.netmask=255.255.255.255
+    
+Then we create the new *lan* zone that will contain the *eth1* interface, which is the interface labeled *Secondary* on the Nanostation M2.
+
+    uci set network.lan=interface
+    uci set network.lan.ifname=eth1
+
+You can also give that interface an IP address (static or dhcp) in your personal existing subnet so as to be able to connect to it by wire and update the software using your own Internet connection.
+Here's an example for a static IP setup in the 192.168.2.0/24 subnet.
+
+    uci set network.lan=interface
+    uci set network.lan.ifname=eth1
+    uci set network.lan.ipaddr=192.168.2.254
+    uci set network.lan.gateway=192.168.2.1
+    uci set network.lan.dns=192.168.2.1
+    uci set network.lan.proto=static
+    uci set network.lan.netmask=255.255.255.0
+
+If you wanted the *wan* zone to route through the *eth1* you could add this :
+
+(!) this is not really supported by our current babel setup and you'd have to open the necessary ports in the firewall.
+
+    uci set network.wan.gateway=192.168.2.254
+    uci set network.wan.dns=192.168.2.254
+
+At the end don't forget to commit your changes to uci
+
+    uci commit
+
+
+/!\ Do not reboot yet, don't forget to change the firwall configuration.
+
+### Editing the configuration files
+
+/etc/config/network
+
+    config interface 'wan'   # <- Rename to 'wan'
+        option ifname 'wlan0' # <- Remove eth0
+        #option type 'bridge' # <- Remove this
+        option proto 'static' 
+        option ipaddr '172.16.1.22'
+        option netmask '255.255.255.255'
+    
+    config interface 'lan' # <- Rename to 'lan'
+        option ifname 'eth1'
+        option ipaddr '192.168.2.254'
+        option gateway '192.168.2.1'
+        option dns '192.168.2.1'
+        option proto 'static' # <- You could also configure dhcp
+        option netmask '255.255.255.0'
+
+
+/!\ Do not reboot yet, don't forget to change the firwall configuration.
+
+## Firewall modification
+
+Now that the zones are set, we need to check the filtering for the firewall which shouldn't have changed since the *wan* and *lan* zones have only changed interfaces.
+
+### Editing the configuration files
+
+/etc/config/firewall
+
+    config zone
+        option name             lan
+        option network          'lan'
+        option input            ACCEPT
+        option output           ACCEPT
+        option forward          REJECT
+    
+    config zone
+        option name             wan
+        option network          'wan'
+        option input            REJECT
+        option output           ACCEPT
+        option forward          REJECT
+        option masq             1
+        option mtu_fix          1
+    
+    config forwarding
+        option src              lan
+        option dest             wan
+    
+    
+    # We need to accept udp packets on port 68,
+    # see https://dev.openwrt.org/ticket/4108
+    config rule
+        option name             Allow-DHCP-Renew
+        option src              wan
+        option proto            udp
+        option dest_port        68
+        option target           ACCEPT
+        option family           ipv4
+    
+    
+    # Allow IPv4 ping
+    config rule
+        option name             Allow-Ping
+        option src              wan
+        option proto            icmp
+        option icmp_type        echo-request
+        option family           ipv4
+        option target           ACCEPT
+
+
+/!\ The device can now be rebooted, don't forget the [failsafe](documentation/flashing/#index8h2) if there is a problem connecting afterwards.
+
+# Sample babel setup for Nanostation M2
+
+### Editing the configuration files
+
+After having installed babeld you can modify the configuration so that the mesh runs on the *wan* (or *wlan0*)  interface.
+
+/etc/config/babeld
+
+    config general
+        option local_server '33123'
+    
+    # Redistribute local ipv4
+    # Equivalent to babel.conf format: redistribute local ip 172.16.1.22/12 metric 128
+    config filter
+        option type 'redistribute'
+        option local 'true'
+        option ip '172.16.1.22/32'
+        option action 'metric 128'
+    
+    # Redistribute reseaulibre ipv4
+    # Equivalent to babel.conf format: redistribute ip 172.16.0.0/12 ge 13 metric 128
+    # 'ge 13' -> redistribute only what is below 172.16.
+    config filter
+        option type 'redistribute'
+        option ge '13'
+        option ip '172.16.0.0/12'
+        option action 'metric 128'
+    
+    # Refuse anything else locally
+    config filter
+        option type 'redistribute'
+        option local 'true'
+        option action 'deny'
+    
+    # Refuse anything else globally
+    config filter
+        option type 'redistribute'
+        option action 'deny'
+
+    config interface 'wan'
+    # alternatively you could use
+    # config interface 'wlan0'
+
+
+
