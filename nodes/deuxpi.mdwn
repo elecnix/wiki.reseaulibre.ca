@@ -7,6 +7,10 @@ IPv6:
 - 2001:470:b2a7::/48
 """]]
 
+## VPN
+
+ * Envoyez-moi votre clé publique pour partager l'accès à un tunnel VPN. Voici ma [clé publique pour Tinc](http://www.deuxpi.ca/deuxpi.asc) signée avec la clé 0xC7287C24.
+
 # À faire
 
  * Faire passer un câble Ethernet entre la Bullet sur le toit et la salle des machines.
