@@ -1,4 +1,4 @@
-[[!toc]]
+[[!toc levels=2]]
 
 # Flash the device
 
@@ -25,6 +25,30 @@ A warning will tell you this image is a third-party software and you are install
 Wait until the flashing is over, it may take a while.
 
 [[!img ubnt_wait.jpg align="center" size="550x" alt="Ubiquiti wait flash"]]
+
+## Upgrade an existing openwrt
+
+(!) The image of the firmware you should download is in "ar71xx" and is called *openwrt-ar71xx-generic-ubnt-<your device>-squashfs-sysupgrade.bin*. 
+
+Open your browser and browse to your router's ip address.  if you don't remember, it should be in your node's page ;-) 
+
+After entering your username & password, go to the "System" tab, and "Backup / Flash firmware" sub-tab.  
+
+You can first click on the "Generate archive" button and it will download your current router's configuration.  You may want to come back to it at some point.
+
+In the second section titled "Flash new firmware image", browse to the firmware image you just downloaded.  If you are just upgrading the image, you should leave checked the "Keep settings" checkbox.
+
+/!\  If you are upgrading from a previous batman configuration, it is advised to NOT keep the settings and start from scratch.  Too many things are changed and you may get yourself locked out of the device.
+
+[[!img sysupgrad_flash.jpg align="center" size="950x" alt="Upgrade openwrt"]]
+
+Click on the "Flash image..." button.
+
+The next screen allows you to confirm the flashing.  When the checksum matches, click "Proceed".
+
+[[!img sysupgrade_confirm.jpg align="center" size="950x" alt="Confirm openwrt upgrade"]]
+
+If you kept your old settings, skip to the last sections.  Otherwise, continue for a fresh install.
 
 # First login
 
@@ -62,36 +86,43 @@ Click "Save & Apply".
 
 # Configure your network
 
+{i} This section applies to routers to be used as relays, with the wifi interfaces broadcasting babel (mesh) packages.  For access point see *somewhere else*.
+
 Part of the network configuration can be done via the web interface, but for configuring the mesh itself, you'll need to access your device through ssh and follow it from there.
 
-## Create new interfaces for the mesh interfaces
+/!\ Ad-hoc wireless interfaces cannot be bridged, so the wifi has to be on its own interface.  
+
+In the "Network" tab, "Interfaces" sub-tab, you will see all available interfaces.  For a router on the mesh, you typically would have one interface for the wifi and one for each ethernet port.
+
+## Create new interfaces (if necessary)
 
 In the "Network" tab, "Interfaces" sub-tab, click the "Add new interface..." button
 
 [[!img new_interface.jpg align="left" size="950x" alt="New interface"]]
 
-Create an interface for each of the interfaces you plan to add to the mesh.  For instance, mesh0, mesh1, with protocol Unmanaged and select the interface it will be linked to (wlan0, eth0).  Then click "Submit".  To commit the changes, click "Save & Apply".
+Create an interface for each missing one.  Usually, the only missing one is wifi, but some devices may have different need.  Select static address for protocol.  Then click "Submit".
 
-[[!img iface_mesh0_new.jpg align="left" size="950x" alt="Create interface mesh0"]]
+[[!img new_wifi.jpg align="left" size="950x" alt="Create interface wifi"]]  
 
-[[!img iface_mesh1_new.jpg align="left" size="950x" alt="Create interface mesh1"]]
+On the next page, you edit the configuration.  
+Configure your node by picking a free slot from the [[IP Allocation|policy/numbering]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/32 network.  Notice the 255.255.255.255 ipv4 netmask.  We do this because babel will take care of the routing.  Also make sure there is no dhcp on this interface (there shouldn't be).
+To commit the changes, click "Save & Apply".
 
-[[!img iface_mesh0_apply.jpg align="left" size="950x" alt="Apply new interface"]]
+[[!img config_wifi_iface.jpg align="left" size="950x" alt="Configure wifi interface"]]
 
-## Create the bat0 interface for the mesh
 
-Like previously, add an interface that will be named bat0, with protocol Unmanaged
+## Remove the LAN bridge
 
-[[!img create_iface_bat0.jpg align="left" size="950x" alt="Create interface bat0"]]
-
-## Configure the LAN interface
+By default openwrt puts the wireless interface in the LAN bridge.  But the wifi will be ad-hoc, so we need to remove it from the bridge.
 
 In the "Network" tab, "Interfaces" sub-tab, edit the LAN interface.
-Configure your node by picking a free slot from the [[IP Allocation|policy/numbering]] page. Here we assume you're installing a small node, so we use the 172.16.1.X/12 network.  And disable dhcp fro this interface.  Click "Save & Apply".
+In the Physical Settings sub-tab, uncheck the "create a bridge over specified interface(s)" and select only the ethernet adapter (eth0).  Click "Save & Apply".
 
-[[!img configure_lan.jpg align="left" size="950x" alt="Configure LAN"]]
+While we're here, you may edit this interface.  If you plan to use this interface as a management interface (to manage and flash the device), you may change the subnet ipv4 address from 192.168.1.1 to something of your choice.  Then click "Save & Apply" and reconnect to your device using the address you configured.
 
-Once you have applied those changes, the ip of your router is the one you entered.  So set your own ip to something in the 172.16.x.x subnet and reconnect to your router at 172.16.1.X
+/!\ If the LAN interface is connected to an access point and you want this interface to be on the mesh, then DO NOT edit it yet.
+
+[[!img lan_phys_iface.jpg align="left" size="950x" alt="Edit LAN physicial interface"]]
 
 ## Set the wifi
 
@@ -99,36 +130,40 @@ In the tab "Network", click "Wifi" and then click to edit the wireless SSID.
 
 [[!img select_wifi.jpg align="left" size="950x" alt="Select wifi"]]
 
-First, click on the "Enable" button to enable the wireless network, then configure the ESSID, mode and BSSID for the mesh.  For the associated network, select the interface you have previously created to manage the wireless mesh interface (maybe wlan0).
+First, click on the "Enable" button to enable the wireless network, then configure the ESSID (relais.reseaulibre.ca), mode (Ad-hoc) and BSSID (02:CA:FF:EE:BA:BE) for the mesh.  For the associated network, select the interface you have previously created to manage the wireless mesh interface (maybe wifi).
 
-[[!img configure_wlan.jpg align="left" size="950x" alt="Configure wifi"]]
+[[!img setup_wifi.jpg align="left" size="950x" alt="Configure wifi"]]
 
 
-## Configure batman, through ssh
+## Configure babel, through ssh
 
-That is about all you can do with the web gui for the mesh.  You should now be able to reach your router through ssh with
+To enable and configure babel, you need to access the router through ssh.  Type
    
-    ssh root@172.16.1.X
+    ssh root@192.168.1.1
 
-Set the mtu of the mesh interfaces you have previously created to 1528.  From now on, you won't be able to edit those interfaces through the web gui, because the max value allowed in the mtu field is 1500...
+If you installed the Reseau Libre custom images, there is a script to automatically configure babel.  You just need to know the interfaces you want to put up.  For instance
 
-    root@clarence:~# uci set network.mesh0.mtu=1528
-    root@clarence:~# uci set network.mesh1.mtu=1528
+    root@clarence:~# setup_babel wlan0 eth0
 
-Where mesh0 and mesh1 are the mesh interfaces you created earlier.  There may be only one of those.
+will add both eth0 and wlan0 to the babel mesh.
 
-Now add those interfaces to batman-adv
+Reboot the device
 
-    root@clarence:~# uci set batman-adv.bat0.interfaces="mesh0 mesh1"
-
-Set the lan bridge to the interfaces that will be part of that bridge, where bat0 will take the place of all the mesh interfaces.  For instance, if you have only the wireless interface on the mesh, the LAN bridge may be over bat0 and eth0.  If both wireless and wired interfaces are on the mesh, the LAN bridge may be only on bat0.
-
-    root@clarence:~# uci set network.lan.ifname="bat0"
-
-Commit your changes and reboot the device
-
-    root@clarence:~# uci commit
     root@clarence:~# reboot & exit
+
+
+## Adding the lan interface to babel (optional)
+
+If you want the ethernet interface to be on babel too, you need to configure it with a /32 ip address.
+
+First, you need to pick a free slot from the [[IP Allocation|policy/numbering]] page again for this interface.  Through the web interface, go to "Network" tab, "Interfaces" sub-tab and edit the LAN interface.  Enter the IP you selected and for the netmask, select custom and enter 255.255.255.255.
+
+You may disable the dhcp server for this interface.
+
+Before clicking "Save & apply", remember that by doing this, both interfaces are now on babel.  Unless your device has another interface you can reach it through, you may not be able to connect to it, except through other babel devices.  Make sure you know what you're doing at this point and trust this wiki and know everything's gonna be all right.
+
+[[!img final_lan_config.jpg align="left" size="950x" alt="Configure LAN on babel interface"]]
+
 
 # Test the mesh
 
