@@ -31,7 +31,7 @@ Then forbid the service from starting again :
 
 ### Using uci
 
-/!\ Be ready to [reset](documentation/flashing/#index8h2) the routerif anything bad were to happen and you'd lock yourself out.
+/!\ Be ready to [reset](documentation/flashing/#index8h2) the router if anything bad were to happen and you'd lock yourself out.
 
 The objective of the zone modification is to protect the *lan* from the *wan* through the firewall.
 
@@ -96,7 +96,7 @@ At the end don't forget to commit your changes to uci
 
 ## Firewall modification
 
-The zones have changed but the firewall which shouldn't have since the *wan* and *lan* zones have only changed interfaces.
+The zones have changed but the firewall rules shouldn't, since the *wan* and *lan* zones have only changed interfaces and not roles.
 
 Don't forget to open the [right ports](/documentation/babel/#index1h3) for babel to work.
 
