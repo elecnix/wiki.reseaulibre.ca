@@ -68,6 +68,8 @@ The following UCI config can be imported using `uci import` and will record the 
 Note that we do not configure routing rules through UCI (hence the `ignore` setting on the `config filter` section), but instead
 rely on the `/etc/babeld.conf` file, see below for config samples.
 
+If you have a Nanostation M2 you can check this [config sample](/documentation/NSM2/#index3h1).
+
 ### Firewall configuration
 
 It is important to configure your firewall properly to let the Babel
