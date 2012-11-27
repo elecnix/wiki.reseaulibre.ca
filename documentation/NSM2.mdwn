@@ -10,6 +10,23 @@ Due to the Nanostation M2 special hardware (2 NIC, 1 RADIO) and its' original Op
 
 # IPv4 setup for Nanostation M2
 
+## Disabling DHCP
+
+### Editing the configuration files
+
+Start by disabling the DHCP client running on the *lan* interface :
+
+/etc/config/dhcp
+
+    config dhcp lan
+        option ignore 1
+        option interface lan
+        # Remove the rest of this section
+
+Then forbid the service from starting again :
+
+    /etc/init.d/dnsmasq disable
+
 ## Zones modification
 
 ### Using uci
@@ -21,6 +38,8 @@ The objective of the zone modification is to protect the *lan* from the *wan* th
 First, we need to remove the existing *lan* bridge interface and create the new *wan* interface with *wlan0*.
 
     uci delete network.lan
+
+Then setup the wan :
 
     uci set network.wan=interface
     uci set network.wan.ifname=wlan0
