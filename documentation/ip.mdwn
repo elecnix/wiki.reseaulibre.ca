@@ -13,7 +13,7 @@ You will need an IPv4 address if you want to provide general Internet access on 
 
 ## OpenWRT
 
-To configure the IP address on a OpenWRT device, use this:
+To configure the IP address on a OpenWRT device, use this or if you have a or if you have a [Nanostation M2](/documentation/NSM2/#index2h1) :
 
     uci set network.lan.ipaddr=172.16.0.123
     uci set network.lan.netmask=255.240.0.0
