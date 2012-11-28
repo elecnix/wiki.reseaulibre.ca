@@ -6,7 +6,7 @@ Si vous n'êtes pas sur la listes de discussion "nodes@", mentionnez comment vou
 * [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V][];
 * [NanoStation M2][]; |R: 1 (confirmé)
 * [PicoStation M2HP][]; 
-* [Injecteur POE 24V 1A w/RESET]: |R: 1 (confirmé) (où?), tahini: 1 (confirmé)
+* [Injecteur POE 24V 1A w/RESET]: |R: 1 (confirmé), tahini: 1 (confirmé)
 
 ## Date limite: 29 novembre 2012
 Personne responsable de l'achat: [[users/R]]
