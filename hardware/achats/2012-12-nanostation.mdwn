@@ -2,7 +2,7 @@
 Si vous n'êtes pas sur la listes de discussion "nodes@", mentionnez comment vous rejoindre.
 
 * [Bullet M2HP Ti][] + [antenne omni 15 dbi][] + [injecteur POE 24V 1A w/RESET][]; |R: 1 (confirmé)
-* [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V 1A w/RESET][]; |R: 1 (confirmé)
+* [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V 1A w/RESET][]; |R: 1 (confirmé), bgm (confirmé)
 * [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V][];
 * [NanoStation M2][]; |R: 1 (confirmé)
 * [PicoStation M2HP][]; 
@@ -13,13 +13,13 @@ Personne responsable de l'achat: [[users/R]]
 
 | Item                                      | Qtee | Prix unit | Total | En stock |
 ------------------------------------------- | :--: | --------: | ----: | -------: |
-[NanoStation M2][] 			    | 1    |   89$     |  89$  |     ?    |
+[NanoStation M2][] 			    | 2    |   89$     | 178$  |     ?    |
 [Bullet M2HP][]                             | 1    |   75$     |   0$  |     ?    |
 [Bullet M2HP Ti][]                          | 1    |  108$     | 108$  |     ?    |
 [PicoStation M2HP][]                        | 0    |   77$     |   0$  |     ?    |
 [antenne omni 15 dbi][]                     | 2    |   45$     |  90$  |     ?    |
 [injecteur POE 24V][]                       | 0    |    9$     |   0$  |     ?    |
-[Injecteur POE 24V 1A w/RESET]              | 3    |   19$     |  57$  |     ?    |
+[Injecteur POE 24V 1A w/RESET]              | 4    |   19$     |  76$  |     ?    |
 [antenne omni 15 dbi][]                     | 2    |   45$     |  90$  |     ?    |
 Total                                       |      |           |   ?$  |     ?    |
 Total +tx                                   |      |           |   ?$  |     ?    |
