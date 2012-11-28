@@ -2,27 +2,24 @@
 Si vous n'êtes pas sur la listes de discussion "nodes@", mentionnez comment vous rejoindre.
 
 * [Bullet M2HP Ti][] + [antenne omni 15 dbi][] + [injecteur POE 24V 1A w/RESET][]; |R: 1 (confirmé)
-* [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V 1A w/RESET][]; |R: 1 (confirmé), bgm (confirmé)
+* [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V 1A w/RESET][]; |R: 1 (confirmé), bgm: 1 (confirmé)
 * [Bullet M2HP][] + [antenne omni 15 dbi][] + [injecteur POE 24V][];
 * [NanoStation M2][]; |R: 1 (confirmé)
 * [PicoStation M2HP][]; 
-* [Injecteur POE 24V 1A w/RESET]: |R: 2 (confirmé) (où?), tahini: 1
+* [Injecteur POE 24V 1A w/RESET]: |R: 1 (confirmé) (où?), tahini: 1 (confirmé)
 
 ## Date limite: 29 novembre 2012
 Personne responsable de l'achat: [[users/R]]
 
-| Item                                      | Qtee | Prix unit | Total | En stock |
+| Item                                      | Qtée | Prix unit | Total | En stock |
 ------------------------------------------- | :--: | --------: | ----: | -------: |
-[NanoStation M2][] 			    | 2    |   89$     | 178$  |     ?    |
-[Bullet M2HP][]                             | 1    |   75$     |   0$  |     ?    |
+[Bullet M2HP][]                             | 2    |   75$     | 150$  |     ?    |
 [Bullet M2HP Ti][]                          | 1    |  108$     | 108$  |     ?    |
-[PicoStation M2HP][]                        | 0    |   77$     |   0$  |     ?    |
-[antenne omni 15 dbi][]                     | 2    |   45$     |  90$  |     ?    |
-[injecteur POE 24V][]                       | 0    |    9$     |   0$  |     ?    |
-[Injecteur POE 24V 1A w/RESET]              | 4    |   19$     |  76$  |     ?    |
-[antenne omni 15 dbi][]                     | 2    |   45$     |  90$  |     ?    |
-Total                                       |      |           |   ?$  |     ?    |
-Total +tx                                   |      |           |   ?$  |     ?    |
+[NanoStation M2][] 			    | 1    |   89$     |  89$  |     ?    |
+[antenne omni 15 dbi][]                     | 3    |   45$     | 135$  |     ?    |
+[Injecteur POE 24V 1A w/RESET]              | 5    |   19$     |  95$  |     ?    |
+Total                                       |      |           | 577$  |     ?    |
+Total +tx                                   |      |           |   -$  |     ?    |
 
 [NanoStation M2]: http://www.converbit.ca/magasin/products.php?product=NanoStation-M2
 [NanoBracket]: http://www.converbit.ca/magasin/products.php?product=NanoBracket
