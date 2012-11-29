@@ -335,7 +335,7 @@ Custom tools
 
 [babelstatus](http://redmine.bidon.ca/projects/reseaulibre-scripts/repository/raw/babelstatus.sh) will give you a slightly more readable output.
 
-[sonar](http://twd.su/sonar) will give you the details on connection quality with shiny colours.
+[sonar](http://git.twd.su/?p=sonar;a=blob_plain;f=sonar;hb=refs/heads/master) will give you the details on connection quality with shiny colours.
 
 
 References
