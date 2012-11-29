@@ -36,7 +36,7 @@ Location
 : 45.526887,-73.523383
 
 Status
-: [[!taglink planned]]
+: [[!taglink up]]
 
 Links
 :
