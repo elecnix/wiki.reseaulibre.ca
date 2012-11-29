@@ -2,6 +2,10 @@
 Modem loué par Bell (obligatoire) pour du VDSL.
 Utilisé par les abonnées de TSI qui veulent avoir du IPv6 natif.
 
+## TL;DR
+
+script pour activer telnet: [[sagemcom.sh|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/sagemcom.sh]]
+
 ## HARDWARE
 
 [[!format  bash """
