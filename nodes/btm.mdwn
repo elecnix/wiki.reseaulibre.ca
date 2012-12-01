@@ -1,6 +1,6 @@
 [[!waypoint lat="45.532364" lon="-73.620812" embed hidden width="400px" height="400px" right desc="Dans la fenêtre, vers le sud-est"]]
 
-Planifié en septembre 2012.
+En conversion à Babel.
 
 [[!ymlfront data="""
 MAC: 00:B0:C0:02:1D:1F
@@ -21,7 +21,7 @@ IP address
 : {{$IP}}
 
 Software
-: OpenWRT trunk
+: OpenWRT trunk (nov 2012)
 
 Hardware
 : [[/hardware/Bococom-DWR150]] + 16 dBi directional antenna (yagi)
@@ -39,7 +39,7 @@ Panorama
 : http://www.flickr.com/photos/elecnix/7039715167/sizes/o (12202 x 1501)
 
 Status
-: [[!taglink planned]]
+: [[!taglink down]]
 
 Operator
 : [[users/elecnix]]
