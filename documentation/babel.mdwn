@@ -308,6 +308,8 @@ to the routing tables:
 This basically means: *"I see neighbor 169.254.11.8 and it's on the
 interface wlan0"*.
 
+To show the routing table, use `ip -6 route show`. The full IPv6 routing table from the kernel can be shown with `route -A inet6`.
+
 Getting more information from babel
 -----------------------------------
 
