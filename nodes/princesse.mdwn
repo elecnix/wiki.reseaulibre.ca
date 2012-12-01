@@ -5,7 +5,7 @@ Test TP-Link 703N node.
 [[!ymlfront data="""
 MAC: EC:88:8F:C6:41:B4
 IP: 172.16.1.57
-IPv6: 
+IPv6: fd64:2c08:9fa7:57::1/128
 """]]
 
 hostname
