@@ -5,7 +5,7 @@ Test TP-Link 703N node.
 [[!ymlfront data="""
 MAC: EC:88:8F:C6:3E:38
 IP: 172.16.1.56
-IPv6: 
+IPv6: fd64:2c08:9fa7:56::1/128
 """]]
 
 hostname
@@ -46,6 +46,27 @@ Operator
 
 Links
 : [[nodes/princesse]]
+
+## Configuration
+
+<pre>
+cd /tmp
+opkg install libip6tc_1.4.10-4_ar71xx.ipk
+opkg install kmod-ip6tables_3.3.8-1_ar71xx.ipk
+opkg install kmod-ipv6_3.3.8-1_ar71xx.ipk
+opkg install ip6tables_1.4.10-4_ar71xx.ipk
+opkg install ip_3.3.0-1_ar71xx.ipk
+opkg install libdaemon_0.14-2_ar71xx.ipk
+opkg install radvd_1.9.1-1_ar71xx.ipk
+
+uci set network.lan.ip6addr=fd64:2c08:9fa7:56::1/128
+uci set radvd.@interface[0].ignore=0
+uci set radvd.@prefix[0].ignore=0
+uci set radvd.@prefix[0].AdvRouterAddr=1
+uci set radvd.@prefix[0].prefix=fd64:2c08:9fa7:56::1/64
+/etc/init.d/radvd enable
+uci commit ; reboot & exit
+</pre>
 
 [[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
 
