@@ -78,7 +78,7 @@ comme un serveur DHCP en IPv4. Ceci se fait avec le service `radvd`:
 
     opkg install radvd
 
-After [[#index4h1|choosing a network]], configure a static IP address:
+After [[choosing a network|ipv6#index4h1]], configure a static IP address:
 
     uci set network.lan.ip6addr=fd64:2c08:9fa7:1::2/64
 
