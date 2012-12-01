@@ -47,7 +47,21 @@ Operator
 Links
 : [[nodes/bibitte]]
 
-[[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
+## Configuration
+
+<pre>
+# LAN static config: 192.168.3.57, gw 192.168.3.1, netmask 255.255.255.0
+opkg install kmod-ipv6 ip kmod-ip6tables ip6tables radvd
+uci set network.lan.ip6addr=fd64:2c08:9fa7:57::1/128
+uci set radvd.@interface[0].ignore=0
+uci set radvd.@prefix[0].ignore=0
+uci set radvd.@prefix[0].AdvRouterAddr=1
+uci set radvd.@prefix[0].prefix=fd64:2c08:9fa7:57::1/64
+/etc/init.d/radvd enable
+uci commit ; reboot & exit
+</pre>
+
+[[!meta copyright="Copyright © 2011-2012 Nicolas Marchildon"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
