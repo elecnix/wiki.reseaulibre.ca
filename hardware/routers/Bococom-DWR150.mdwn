@@ -903,9 +903,9 @@ For some reason, a wrong MAC address for the wireless interface is specified in 
     uci delete wireless.radio0.macaddr
     uci commit && reboot
 
-## Install B.A.T.M.A.N.
+# Image and Packages
 
-No need to. It's already compiled in the kernel and batctl is in the image :) See the [Batman on OpenWRT Guide](/guides/openwrt+batman/), but skip the BATMAN installation.
+http://marchildon.net/openwrt/trunk/ramips/
 
 # Building your own image
 
