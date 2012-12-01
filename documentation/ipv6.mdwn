@@ -70,7 +70,7 @@ Forcer la découverte de routeurs et autres appareils sur le réseau:
 
 (!) Ceci peut changer l'addresse IPv6 si un nouveau routeur est trouvé!
 
-### Configurer un routeur
+# Configurer un routeur
 
 Il est possible de configurer votre machine comme un "routeur", c'est
 à dire qu'il s'annonce sur le réseau et distribue des adresses, un peu
@@ -78,7 +78,7 @@ comme un serveur DHCP en IPv4. Ceci se fait avec le service `radvd`:
 
     opkg install radvd
 
-After [[choosing a network|ipv6#index4h1]], configure a static IP address:
+After [[choosing a network|ipv6#index4h1]] (see below), configure a static IP address:
 
     uci set network.lan.ip6addr=fd64:2c08:9fa7:1::2/64
 
@@ -108,7 +108,7 @@ To enable routing, make sure this is in your `/etc/sysctl.conf`:
 
     net.ipv6.conf.all.forwarding=1
 
-### Other howtos
+## Other howtos
 
  * [Freifunk Mesh6 documentation](http://wiki.freifunk.net/6mesh.freifunk.net)
  * [OpenWRT IPv6 howto](http://wiki.openwrt.org/doc/howto/ipv6)
