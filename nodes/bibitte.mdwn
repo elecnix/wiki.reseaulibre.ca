@@ -49,6 +49,8 @@ Links
 
 ## Configuration
 
+Packages: http://downloads.openwrt.org/attitude_adjustment/12.09-beta/ar71xx/generic/packages/
+
 <pre>
 cd /tmp
 opkg install libip6tc_1.4.10-4_ar71xx.ipk
