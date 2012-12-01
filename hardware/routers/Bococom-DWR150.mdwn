@@ -925,4 +925,5 @@ Then proceed as usual, as per the OpenWRT [[readme|https://github.com/mirrors/op
  * Pourquoi l'interface eth0 ne communique pas? Parce qu'il faut utiliser eth0.2!
  * (?) Pourquoi l'adresse MAC est à 00:11:22:33:44:55 après flashing?
  * Soumettre patch à OpenWRT. C'est fait! http://patchwork.openwrt.org/patch/2605/
+ * Faire fonctionner bouton Reset (GPIO 10)
  * Tester carte wifi USB
