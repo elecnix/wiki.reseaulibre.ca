@@ -322,9 +322,9 @@ You can ask Babel to dump its internal tables. With the standalone daemon, send 
     show babel neighbour
     show babel route
 
-You can also start `babeld` with `-g 33231` to enable monitoring on `33231`, for example with:
+You can also start `babeld` with `-g 33123` to enable monitoring on `33123`, for example with:
 
-    telnet ::1 33231
+    telnet ::1 33123
 
 To print the current status only (instead of sending the USR1 kill signal to the process):
 
