@@ -167,6 +167,12 @@ config filter
         option local 'true'
         option ip fd64:2c08:9fa7:19::/64
         option action 'allow'
+
+config filter
+        option type 'redistribute'
+        option local 'true'
+        option ip '192.168.1.0/16'
+        option action 'deny'
 " | uci import
 </pre>
 
