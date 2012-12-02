@@ -102,6 +102,31 @@ config interface 'lan'" | uci import
 uci commit ; reboot & exit
 </pre>
 
+uci export radvd
+
+<pre>
+package radvd
+
+config interface
+	option interface 'lan'
+	option AdvSendAdvert '1'
+	option AdvManagedFlag '0'
+	option AdvOtherConfigFlag '0'
+	list client ''
+
+config prefix
+	option interface 'lan'
+	option AdvOnLink '1'
+	option AdvAutonomous '1'
+	option ignore '0'
+	option AdvRouterAddr '1'
+	option prefix 'fd64:2c08:9fa7:19::1/64'
+
+config route
+	option interface 'lan'
+	list prefix ''
+</pre>
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
