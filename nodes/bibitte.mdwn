@@ -70,6 +70,24 @@ uci set radvd.@prefix[0].prefix=fd64:2c08:9fa7:56::1/64
 uci commit ; reboot & exit
 </pre>
 
+uci export babeld
+<pre>
+package babeld
+
+config general
+	option local_server '33123'
+
+config interface 'wlan'
+
+config interface 'lan'
+
+config filter
+	option type 'redistribute'
+	option local 'true'
+	option ip 'fd64:2c08:9fa7:56::/64'
+	option action 'allow'
+</pre>
+
 [[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
