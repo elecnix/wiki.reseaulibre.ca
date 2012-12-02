@@ -50,6 +50,10 @@ Links
 Liens possibles
 : Grace, benoitg
 
+## Configuration
+
+Link-local IPv6 address: `fe80::2b0:c0ff:fe02:1d1f/64`
+
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
