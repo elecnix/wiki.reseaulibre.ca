@@ -128,6 +128,48 @@ config route
 	list prefix ''
 </pre>
 
+Switching bridge to router, to avoid interaction between the AP clients and the relais.
+
+<pre>
+# Change 'lan' from bridge to wireless
+uci del network.lan.type
+uci del network.lan.ifname
+uci set wireless.@wifi-iface[0].network=lan
+uci set network.lan.ipaddr=192.168.1.1
+uci set network.lan.netmask=255.255.255.0
+
+# Add 'wan' interface (wired to the relay node)
+uci set network.wan=interface
+uci set network.wan.ifname=eth0
+uci set network.wan.proto=static
+uci set network.wan.ipaddr=192.168.2.1
+uci set network.wan.netmask=255.255.255.0
+uci set network.wan.ip6addr=fd64:2c08:9fa7:19::1/64
+
+# Update firewall (TODO)
+/etc/init.d/firewall disable
+
+# Keep radvd configured for advertising on 'lan' (see above)
+
+# Reconfigure babel to use 'wan'
+echo "package babeld
+
+config general
+        option local_server '33123'
+
+config interface 'wan'
+
+config interface 'lan'
+        option ignore 'true'
+
+config filter
+        option type 'redistribute'
+        option local 'true'
+        option ip fd64:2c08:9fa7:19::/64
+        option action 'allow'
+" | uci import
+</pre>
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
