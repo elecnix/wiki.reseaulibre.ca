@@ -58,6 +58,9 @@ Liens possibles
 Link-local IPv6 address (eth0 & wlan0)
 : `fe80::2b0:c0ff:fe02:1d1f/64`
 
+LAN IPv4
+: `192.168.1.18`
+
 <pre>
 opkg install /tmp/radvd_1.9.1-2_ramips.ipk
 uci set network.lan.ip6addr=fd64:2c08:9fa7:18::1/128
