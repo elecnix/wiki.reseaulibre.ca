@@ -5,11 +5,14 @@ En conversion à Babel.
 [[!ymlfront data="""
 MAC: 00:B0:C0:02:1D:1F
 IP: 172.16.1.18
-IPv6: 
+IPv6: fd64:2c08:9fa7:18::1/128
 """]]
 
 hostname
 : btm
+
+SSID
+: btm.relais.reseaulibre.ca
 
 MAC address
 : {{$MAC}}
@@ -52,8 +55,30 @@ Liens possibles
 
 ## Configuration
 
-Link-local IPv6 address: `fe80::2b0:c0ff:fe02:1d1f/64`
+Link-local IPv6 address (eth0 & wlan0)
+: `fe80::2b0:c0ff:fe02:1d1f/64`
 
+<pre>
+opkg install /tmp/radvd_1.9.1-2_ramips.ipk
+uci set network.lan.ip6addr=fd64:2c08:9fa7:18::1/128
+
+uci set radvd.@interface[0].ignore=0
+uci set radvd.@prefix[0].ignore=0
+uci set radvd.@prefix[0].AdvRouterAddr=1
+uci set radvd.@prefix[0].prefix=fd64:2c08:9fa7:18::1/64
+/etc/init.d/radvd enable
+uci set firewall.defaults.disable_ipv6=0
+
+/etc/init.d/babeld enable
+uci delete babeld.wan.ignore
+uci set network.wan=interface
+uci set network.wan.ifname=wlan0
+uci set network.wan.proto=static
+uci set network.wan.ipaddr=172.16.1.18
+uci set network.wan.netmask=255.255.255.255
+uci delete babeld.lan.ignore
+
+</pre>
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
