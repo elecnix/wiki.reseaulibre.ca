@@ -8,6 +8,7 @@ Point d'accès dans la fenêtre vers la ruelle entre Saint-Vallier et Saint-Deni
 MAC: 00:B0:C0:02:1A:9F
 IP: 172.16.2.19
 IPv6: fd64:2c08:9fa7:19::1/128
+Link-Local IPv6: fe80::2b0:c0ff:fe02:1a9f/64
 """]]
 
 hostname
