@@ -1,6 +1,5 @@
 # Modem VDSL Sagemcom F@ST2864
 Modem loué par Bell (obligatoire) pour du VDSL.
-Utilisé par les abonnées de TSI qui veulent avoir du IPv6 natif.
 
 ## TL;DR
 
