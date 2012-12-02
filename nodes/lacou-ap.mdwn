@@ -1,0 +1,113 @@
+[[!waypoint map=null lat="45.534260" lon="-73.603265" embed hidden width="400px" height="400px" right desc="Point d'accès dans la fenêtre"]]
+
+Point d'accès dans la fenêtre vers la ruelle entre Saint-Vallier et Saint-Denis.
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: 00:B0:C0:02:1A:9F
+IP: 172.16.2.19
+IPv6: fd64:2c08:9fa7:19::1/128
+"""]]
+
+hostname
+: lacou-ap
+
+SSID
+: lacou.acces.reseaulibre.ca
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWrt Barrier Breaker (trunk @ 1 dec. 2012)
+
+Hardware
+: [[hardware/routers/Bococom-DWR150]]
+
+Power
+: 
+
+Location
+: window
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink down]]
+
+Operator
+: [[users/elecnix]]
+
+Links
+: [[lacou]]
+
+<pre>
+# after flashing, LAN is not accessible; use serial port to fix it:
+uci set network.lan.ifname=eth0
+uci commit ; reboot & exit
+
+# Notes:
+#  * lan is a bridge with eth0 and wlan0
+#  * babel runs on lan bridge
+
+uci set system.@system[0].hostname=lacou-ap
+uci set system.@system[0].timezone=EST
+uci delete wireless.radio0.disabled
+uci set wireless.radio0.channel=11
+uci set wireless.@wifi-iface[0].device=wlan0
+uci set wireless.@wifi-iface[0].ssid=lacou.acces.reseaulibre.ca
+uci set wireless.@wifi-iface[0].network=lan
+uci set wireless.@wifi-iface[0].mode=ap
+uci set wireless.@wifi-iface[0].encryption=none
+
+# scp kmod-ipv6_* ip_* kmod-ip6tables_* ip6tables_* radvd_* libip6tc_* libdaemon_* root@192.168.1.1:/tmp/
+opkg install /tmp/*.ipk
+
+uci set network.lan.ip6addr=fd64:2c08:9fa7:19::1/64
+uci set radvd.@interface[0].ignore=0
+uci set radvd.@prefix[0].ignore=0
+uci set radvd.@prefix[0].AdvRouterAddr=1
+uci set radvd.@prefix[0].prefix=fd64:2c08:9fa7:19::1/64
+/etc/init.d/radvd enable
+uci set firewall.defaults.disable_ipv6=0
+echo net.ipv6.conf.all.forwarding=1 >> /etc/sysctl.conf
+uci commit ; reboot & exit
+
+/etc/init.d/babeld enable
+uci delete babeld.lan.ignore
+
+echo "package babeld
+
+config general
+        option local_server '33123'
+
+config filter
+        option ignore 'true'
+
+config interface 'wan'
+        option ignore 'true'
+
+config interface 'lan'" | uci import
+uci commit ; reboot & exit
+</pre>
+
+[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
