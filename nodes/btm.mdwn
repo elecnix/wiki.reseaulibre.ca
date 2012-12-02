@@ -1,6 +1,6 @@
 [[!waypoint lat="45.532364" lon="-73.620812" embed hidden width="400px" height="400px" right desc="Dans la fenêtre, vers le sud-est"]]
 
-En conversion à Babel.
+Dans la fenêtre au 4e étage, vers [[nodes/Grace]] (mais actuellement pointe vers le bas).
 
 [[!ymlfront data="""
 MAC: 00:B0:C0:02:1D:1F
@@ -49,9 +49,6 @@ Operator
 
 Links
 : aucun
-
-Liens possibles
-: Grace, benoitg
 
 ## Configuration
 
