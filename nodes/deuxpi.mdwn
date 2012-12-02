@@ -74,30 +74,51 @@ babeld.@filter[2].action=deny
  * Route IPv6 statique 2001:470:b2a7:1::/64 vers le laptop sur wlan0 pour lien avec laptop, le réseau local et le VPN.
 
 [[!format txt """
-babeld.@general[0]=general
-babeld.@general[0].local_server=33123
-babeld.wlan0=interface
-babeld.lan=interface
-babeld.@filter[0]=filter
-babeld.@filter[0].type=redistribute
-babeld.@filter[0].local=true
-babeld.@filter[0].ip=192.168.8.0/24
-babeld.@filter[0].le=24
-babeld.@filter[0].proto=2
-babeld.@filter[0].action=allow
-babeld.@filter[1]=filter
-babeld.@filter[1].type=redistribute
-babeld.@filter[1].local=true
-babeld.@filter[1].ip=172.16.0.0/12
-babeld.@filter[1].action=allow
-babeld.@filter[2]=filter
-babeld.@filter[2].type=in
-babeld.@filter[2].ip=2001:470:b2a7::/48
-babeld.@filter[2].action=deny
-babeld.@filter[3]=filter
-babeld.@filter[3].type=redistribute
-babeld.@filter[3].local=true
-babeld.@filter[3].action=deny
+package babeld
+
+config general
+	option local_server '33123'
+
+config interface 'lan'
+	option wired 'true'
+
+config interface 'wlan0'
+
+config filter
+	option type 'redistribute'
+	option local 'true'
+	option ip '192.168.8.0/24'
+	option le '24'
+	option proto '2'
+	option action 'allow'
+
+config filter
+	option type 'redistribute'
+	option local 'true'
+	option ip '172.16.0.0/12'
+	option action 'allow'
+
+config filter
+	option type 'redistribute'
+	option local 'true'
+	option ip '2001:470:b2a7:2::/64'
+	option proto '2'
+	option action 'allow'
+
+config filter
+	option type 'in'
+	option ip '2001:470:b2a7::/48'
+	option action 'deny'
+
+config filter
+	option type 'redistribute'
+	option proto '3'
+	option action 'deny'
+
+config filter
+	option type 'redistribute'
+	option local 'true'
+	option action 'deny'
 """]]
 
 ## Serveur gelato.mesh.deuxpi.ca
