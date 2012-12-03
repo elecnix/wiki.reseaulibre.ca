@@ -15,6 +15,8 @@ Here is the list of nodes I operate.
 [[!report pages="nodes/* and link(anarcat) and (field(IP *) or field(IPv6 *))" template="iptable" sort="field(IP)"]]
 </table>
 
+See [[policy/numbering]] for a more complete listing of nodes.
+
 In other words, current allocation plan:
 
  IPv6     | function | host
