@@ -1,8 +1,12 @@
-# Status
+[[!toc levels=3]]
+
+# Inventaire
 
 * [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
 * [[Nodes]] - the list of deployed nodes
 * [[Links]] - the links between the nodes
+
+Voir aussi la page de [[stats]] pour une idée de l'état du réseau.
 
 # Comment rejoindre le mesh
 
@@ -17,7 +21,7 @@ Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre cha
 (jadis nous utilisions [[Batman|guides/openwrt+batman]])
 6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
-ou
+**ou**
 
 1. [[Installation et configuration d'un noeud|guides/install+node+facile]] (avec web gui, plus simple)
 
@@ -35,6 +39,12 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
+
+## Documentation orpheline
+
+Ceci est de la documentation que nous avons pas pris le temps de classifier correctement.
+
+[[!inline pages="!page(*/discussion) and !backlink(documentation) and page(documentation/*) and !page(documentation/*/*)" archive="yes" quick="yes" template="titlepage" sort="title"]]
 
 [[!meta copyright="Copyright © 2011-2012 Antoine Beaupré"]]
 
