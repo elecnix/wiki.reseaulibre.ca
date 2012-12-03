@@ -15,6 +15,38 @@ Here is the list of nodes I operate.
 [[!report pages="nodes/* and link(anarcat) and (field(IP *) or field(IPv6 *))" template="iptable" sort="field(IP)"]]
 </table>
 
+In other words, current allocation plan:
+
+ IPv6     | function | host
+----------|----------|------
+:0::1/128 | routeur  | roadkiller
+:0::2/64  | relai    | boulette
+:1::2/64  | laptop   | angela
+:1::3/128 | AP       | plastik
+:1::4/64  | ?        | plantpeople
+:2::/64   | relai/AP? | easternblock
+:3::/64   | relai/AP? | atlas
+
+Problems with the above:
+
+ * wtf?
+ * relai shouldn't have a /64 but a /128 in a magic subnet reserved for that purpose (/64?)
+ * laptop should either get an ip in a /64 from a router or be a /128 in the above subnet
+ * AP should have a /64 to redistribute
+ * plantpeople overlaps with the other /64
+
+Fixed up allocation plan:
+
+ IPv6     | function | host
+----------|----------|------
+:0::1/128 | routeur  | roadkiller (no change, announces 2001:1928:1:9::/64 to the mesh for its LAN)
+:0::2/128 | relai    | boulette (change prefix from /64 to /128)
+:X::/64   | AP       | plastik (new /64 to allocate, :0::3/128 on mesh interface if necessary)
+:0::42/128 | mobile   | angela (laptop, switch to /128, change subnet to :0::)
+:1::/64   | AP?      | plantpeople (change IP, keep /64 to avoid having to go there just now)
+:2::/64   | AP?      | easternblock (no change)
+:3::/64   | AP?      | atlas (no change)
+
 ## Operational nodes
 
 [[!map pages="link(.) and nodes/* and tagged(up)"]]
@@ -85,5 +117,4 @@ any later version published by the Free Software Foundation; with no Invariant
 Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
-
 
