@@ -6,9 +6,11 @@ See <https://wiki.koumbit.net/TheAnarcat>. I can be easily contact on [identica]
 
 [[!toc levels=2]]
 
-# My nodes
+# IP allocations
 
-Here is the list of nodes I operate.
+Those are all the machines I manage, by IP address.
+
+## Exhaustive allocation
 
 <table>
 <tr><th>#</th><th>hostname</th><th>IP</th><th>IPv6</th><th>MAC</th></tr>
@@ -16,6 +18,8 @@ Here is the list of nodes I operate.
 </table>
 
 See [[policy/numbering]] for a more complete listing of nodes.
+
+## Current allocation
 
 In other words, current allocation plan:
 
@@ -37,7 +41,7 @@ Problems with the above:
  * AP should have a /64 to redistribute
  * plantpeople overlaps with the other /64
 
-Fixed up allocation plan:
+## Fixed up allocation plan
 
  IPv6     | function | host
 ----------|----------|------
@@ -48,6 +52,10 @@ Fixed up allocation plan:
 :1::/64   | AP?      | plantpeople (change IP, keep /64 to avoid having to go there just now)
 :2::/64   | AP?      | easternblock (no change)
 :3::/64   | AP?      | atlas (no change)
+
+# My nodes
+
+Here is the list of nodes I operate.
 
 ## Operational nodes
 
