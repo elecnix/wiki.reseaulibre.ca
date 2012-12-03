@@ -97,18 +97,7 @@ IPv6: 2607:f2c0:f00f:29a1::1
 
 # Configuration babel
 
-Topologie:
-
-    [routeur principal "damas"]  => [routeur tplink MR3420 voisinage "alep"] => [nanostation "homs"] => [bullet "latakia"]
-     2607:f2c0:f00f:2900::/56
-    
-                                                                              => [wifi] 2607:f2c0:f00f:29a5::/64
-    
-                                                                              => [routeur dlink voisins] => [lan voisins]
-
-                                 => [desktops/laptops câblés] 2607:f2c0:f00f:2910::/64
-                                 
-
+Voir la section "topologie" au bas de la page pour un diagramme.
 
 ## Routeur principal "damas" (Debian)
 
@@ -187,6 +176,12 @@ Ici on utilise les 3 interfaces, car eth0 connecte à "latakia" (bullet), eth1 �
     babeld.eth0=interface
 
 Fin de la chaîne.. wlan0 connecte à deuxpi par adhoc, eth0 connecte à "homs" (bullet).
+
+# Topologie du réseau
+
+[[!img reseau-bgm.jpg alt="Topologie de mon réseau"]]
+
+Source: [[reseau-bgm.dia]], avec les images "Cisco - switch").
 
 # Notes
 
