@@ -1,6 +1,6 @@
 # Nicolas Marchildon
 [[!img nicolas_300.jpg align="right" size="150x"]]
-Je suis programmeur. J'ai installé une antenne chez moi, avant la naissance du projet, pour envoyer des backups chez mon frère. J'ai installé OpenWrt sur le petit routeur [[Bococom|hardware/routers/Bococom-DWR150]].
+Je suis programmeur. J'ai installé une antenne chez moi, avant la naissance du projet, pour envoyer des backups chez mon frère. J'ai installé OpenWrt sur le petit routeur [[Bococom|hardware/routers/Bococom-DWR150]], et je gère quelques noeuds.
 
  * nicolas@marchildon.net
  * http://identi.ca/elecnix
