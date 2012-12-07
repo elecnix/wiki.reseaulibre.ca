@@ -1,0 +1,4 @@
+[[!meta title="pages tagged accesspoint"]]
+
+[[!inline pages="tagged(accesspoint)" actions="no" archive="yes"
+feedshow=10]]
