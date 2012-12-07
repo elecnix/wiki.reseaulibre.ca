@@ -13,11 +13,13 @@ Depending on your [[hardware]], you must download the correct firmware version o
 
 Bullet M2
 : [attitude_adjustment_rc1](http://downloads.openwrt.org/attitude_adjustment/12.09-rc1/ar71xx/generic/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin)
+
 Nanostation M2
 : [attitude_adjustment_rc1](http://downloads.openwrt.org/attitude_adjustment/12.09-rc1/ar71xx/generic/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
 
 TP-Link 1043ND
 : [attitude_adjustment_rc1](http://downloads.openwrt.org/attitude_adjustment/12.09-rc1/ar71xx/generic/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
+
 See the excellent flashing guide on the Ubiquiti wiki: [Installing OpenWRT on NanoStations/Bullets](http://wiki.ubnt.com/Installing_OpenWRT_on_NanoStations/Bullets).
 
 For more information on other devices, see the [table of hardware](http://wiki.openwrt.org/toh/start) on the OpenWRT
