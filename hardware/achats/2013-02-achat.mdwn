@@ -44,3 +44,4 @@ Svp envoyer vos questions sur nodes@.
 Si vous avez du matériel en trop que vous voulez revendre, ajoutez votre nom ici et une façon de vous contacter:
 
 * nom / matériel / contact
+* [[R|http://wiki.reseaulibre.ca/users/R/]] / 2 x PoE 24v 0.5A
