@@ -12,7 +12,7 @@ Nicolas Marchildon présentera Réseau Libre le 18 décembre lors de la [rencont
 
 # Prochaine rencontre
 
-Une [scéance de partage de connaissances][2] entre les opérateurs de relais se tiendra le 17 décembre aux bureaux de Koumbit (6833 de L'Épée #308, métro Acadie). Venez partager comment votre relai est configuré si vous en opérez un! Nous ferons également des échanges de clef OpenPGP, donc n'oubliez pas votre [[empreinte de clef|https://wiki.koumbit.net/GnuPrivacyGuard]] [3].
+Une [scéance de partage de connaissances][2] entre les opérateurs de relais se tiendra le 17 décembre aux bureaux de Koumbit (6833 de L'Épée #308, métro Acadie). Venez partager comment votre relai est configuré si vous en opérez un! Nous ferons également des échanges de clef OpenPGP, donc n'oubliez pas votre [empreinte de clef][3].
 
  [2]: http://wiki.reseaulibre.ca/meetings/2012-12-17/
  [3]: https://wiki.koumbit.net/GnuPrivacyGuard
