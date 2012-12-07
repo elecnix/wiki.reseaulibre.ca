@@ -11,7 +11,7 @@ IPv6: Not yet
 # SETUP
 Operateur: [[users/R]]
 
-Point d'accès public en face du Parc des Amériques :
+Point d'accès public vers le nord du bloc :
 
 [[!waypoint lat="45.518629" lon="-73.58216" embed hidden width="950px" height="300px" right desc="NSM2 dans ma fenetre nord"]]
 
