@@ -39,6 +39,7 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
+* [[Presentations]] - les présentations du projet ou de concepts reliés au projets, les "powerpoints" sont ici!
 
 ## Documentation orpheline
 
