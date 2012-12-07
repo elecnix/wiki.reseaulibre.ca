@@ -3,7 +3,7 @@
 [[!img /nodes/R/2012-09-11-r-nord.jpg size=950x]]
 
 [[!ymlfront data="""
-MAC: 00:15:6D:AD:E7:26
+MAC: DC:9F:DB:10:D4:61
 IP: 172.16.1.33
 IPv6: Not yet
 """]]
@@ -13,33 +13,33 @@ Operateur: [[users/R]]
 
 Point d'accès public en face du Parc des Amériques :
 
-[[!waypoint lat="45.518629" lon="-73.58216" embed hidden width="950px" height="300px" right desc="Pico2HP dans ma fenetre nord"]]
+[[!waypoint lat="45.518629" lon="-73.58216" embed hidden width="950px" height="300px" right desc="NSM2 dans ma fenetre nord"]]
 
 Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
 
 
 # NODE - r-nord.acces.reseaulibre.ca
  * Type: [[!taglink accesspoint]]
- * Status: [[!taglink up]]
+ * Status: [[!taglink planned]]
  * Hostname: r-nord.acces.reseaulibre.ca
  * Location: 45.518629,-73.58216
- * Software: ROBIN r3527-26/nO Build 0.6.0
- * IP address: 5.174.231.38 ( Planned: {{$IP}} )
+ * Software: OpenWRT 12.09 (AA final)
+ * IP address: ( Planned: {{$IP}} )
  * IPv6 address: {{$IPv6}}
- * Hardware: Ubnt PicoStation2 HP
+ * Hardware: Ubnt NanoStation M2
  * MAC address: {{$MAC}}
- * Channel: 9
- * 802.11: b, g
+ * Channel: ?
+ * 802.11: b, g, n
 
 ### Antenna
- * Azimuth: H: 360° / V: ?
+ * Azimuth: H: 60° / V: 60°
  * Frequency: 2400 - 2483MHz
- * Connector RP-SMA
- * Gain: 6 dBi
- * Power: 28 dBm
+ * Connector Built-in
+ * Gain: 11 dBi
+ * Power: 28 dBm?
 
 ### Links
-* Links: [[R]] (ethernet)
+* Links: [[R]], [[R-sud]] (ethernet)
 
 
 ### Vue vers le sud (montréalais)
