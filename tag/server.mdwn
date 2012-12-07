@@ -1,0 +1,4 @@
+[[!meta title="pages tagged server"]]
+
+[[!inline pages="tagged(server)" actions="no" archive="yes"
+feedshow=10]]
