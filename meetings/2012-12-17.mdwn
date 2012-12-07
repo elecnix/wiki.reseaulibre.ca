@@ -1,5 +1,4 @@
-Session de partage de connaissances
-===================================
+[[!meta title="Session de partage de connaissances"]]
 
 Quand
 : lundi 17 décembre à 19h
@@ -11,8 +10,17 @@ Doodle
 : <http://sondage.orangeseeds.org/studs.php?sondage=tdz3apr2dlhlql24>
 
 Quoi
-: scéance de partage de connaissance
+: scéance de partage de connaissance sur nos configurations
 
 Sujets de discussion
 --------------------
 
+On cherche à partager comment nos réseaux sont configurés afin de faire émerger les meilleures pratiques, ou au moins apprendre des autres.
+
+ * configuration IP, IPv6
+ * parefeux, routage
+ * VPN
+ * configurations Babel
+ * branchements électriques et réseau
+
+Une session de signature de clef PGP sera tenue si les gens amènent leur empreinte de clefs PGP.
