@@ -103,5 +103,3 @@ Modifications
 
 Auteurs
 : 86
-
-[[!tag draft]]
