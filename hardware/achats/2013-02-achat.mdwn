@@ -9,7 +9,7 @@ Si vous n'êtes pas sur la listes de discussion [[nodes@|https://listes.koumbit.
 * [PicoStation M2HP][];  (votre nom ici)
 * [Injecteur POE 24V 1A w/RESET]: (votre nom ici)
 
-## Date limite: ... 2013 ?
+**Date limite: février ou mars 2013 ?**
 
 Personne responsable de l'achat: [[users/...]]
 
@@ -35,8 +35,9 @@ Total +tx                                   |      |           |   -$  |     ?  
 [Cable Cat 5E extérieur]: http://www.converbit.ca/magasin/products.php?product=Shireen-Cable-Exterieur-Cat-5E-avec-Shield
 [antenne sectorielle 120°]: https://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9
 
-### Questions
-Est-ce que certains AP viennent avec un PoE? (Nano?)
+# Questions
+
+Svp envoyer vos questions sur nodes@.
 
 # "Spares"
 
