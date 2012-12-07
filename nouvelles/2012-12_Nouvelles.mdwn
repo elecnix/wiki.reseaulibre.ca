@@ -51,7 +51,7 @@ Quelques personnes ont installé Munin sur leurs relais, et on peut voir la qual
 ## État des stations
 
 Up
-: 39
+: 39 (10 de plus depuis le bulletin de mi-septembre!)
 
 Planned
 : 43
@@ -83,7 +83,5 @@ Modifications
 
 Auteurs
 : 86
-
-Le mois de novembre dernier a été le mois le plus occuppé sur le wiki, avec près de 294 commits.
 
 [[!tag draft]]
