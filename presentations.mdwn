@@ -1,0 +1,42 @@
+Voici toutes les présentations publiées par les bénévoles de Réseau
+Libre.
+
+Présentations Pinpoint
+----------------------
+
+[[!map pages="presentations/*.pin"]]
+
+Pour voir les présentation .pin, il vous faut [pinpoint][]
+
+ [pinpoint]: https://live.gnome.org/Pinpoint
+
+Avec Debian/Ubuntu:
+
+    sudo apt-get install pinpoint
+
+Pour ouvrir une présentation:
+
+    pinpoint foo.pin
+
+Le fichier ".pin" est en format texte UTF-8.
+
+Présentations OpenOfiice
+------------------------
+
+[[!map pages="presentations/*.ods]]
+
+Présentations RST
+-----------------
+
+[[!map pages="presentations/*.rst]]
+
+Présentations Dia
+-----------------
+
+[[!map pages="presentations/*.dia]]
+
+Habituellement seulement pour des diagrammes en support à des
+présentations, [Dia][] est un logiciel similaire à "Visio" permettant
+de faire des diagrammes rapidement.
+
+ [Dia]: https://live.gnome.org/Dia
