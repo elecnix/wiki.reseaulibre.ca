@@ -33,7 +33,11 @@ Présentation IPv6 et retour de Barcelone: un succès!
 
 Le [13 novembre][7], les bénévoles de Réseau Libre ont organisé une formation sur l'IPv6, qu'on tente de promouvoir dans le projet. Nous avons également pris le temps de partager les découvertes faites par 4 bénévoles lors d'un séjour au [IS4CW][8] à Barcelone en octobre.
 
-L'évènement a été un succès, environ une vingtaine de personnes se sont présentées pour profiter de la formation IPv6 qui a donné un bon aperçu de cette technologie prometteuse pour le future de l'internet et surtout du mesh! 
+L'évènement a été un succès, environ une vingtaine de personnes se sont présentées pour profiter de la formation IPv6 qui a donné un bon aperçu de cette technologie prometteuse pour le future de l'internet et surtout du mesh! Les slides de cette présentation sont [disponibles][11], comme toutes les autres présentations des bénévoles de Réseau Libre.
+
+ [7]: http://wiki.reseaulibre.ca/nouvelles/2012-11-annonce-reunion-ipv6-retour-barcelone/
+ [8]: http://wirelesssummit.org/
+ [11]: http://wiki.reseaulibre.ca/presentations/ipv6intro-fr.pin
 
 Des discussions ont confirmé Babel comme un bon choix technique, bien que des inquiétudes ont été exprimées sur l'absence du projet au sommet. On garde un oeil sur OLSR2, la nouvelle version d'OLSR, ainsi que sur le projet BMX6, tous deux prometteurs, mais moins bien établis.
 
@@ -41,8 +45,6 @@ Nous avons également discuté des "firmwares" et bien que qMp a semblé très p
 
 Pour plus de détails sur ces différents projets, voir le [retour sur la conférence écrit par un des bénévoles du projet][9].
 
- [7]: http://wiki.reseaulibre.ca/nouvelles/2012-11-annonce-reunion-ipv6-retour-barcelone/
- [8]: http://wirelesssummit.org/
  [9]: http://wiki.reseaulibre.ca/users/anarcat/retour_wireless_summit/
 
 Montage vidéo
