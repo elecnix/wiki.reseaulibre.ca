@@ -44,7 +44,7 @@ Bullet M2 + 15dBi
  * Power: 4W (Max EIRP)
 
 ### Links
- * Links: [[R-nord]] (ethernet)
+ * Links: [[R-nord]], [[R-sud]] (ethernet)
  * Links: [[zoidberg]] (~700 m) : [[Qualité du lien|http://munin.twd.su/bulletm2/bulletm2/adhoc_rssi.html]]
 
 ### Vue vers le sud (montréalais)
