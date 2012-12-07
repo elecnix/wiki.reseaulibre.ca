@@ -1,5 +1,8 @@
 [[!waypoint lat="45.466497" lon="-73.569657" embed hidden width="400px" height="400px" right desc="A node"]]
 
+Type
+: [[!taglink relay]]
+
  * MAC address:
  * IP address:
  * IPv6 address:

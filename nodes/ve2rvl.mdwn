@@ -12,6 +12,9 @@ IPv6:
 hostname
 : ve2rvl?
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : {{$MAC}}
 

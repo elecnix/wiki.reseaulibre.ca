@@ -1,24 +1,62 @@
 [[!waypoint lat="45.566779" lon="-73.595172" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
 
- * hostname: UBNT-besik
- * MAC address: 00:15:6D:3C:00:7B
- * IP address: 192.168.1.20
- * IPv6 address: N/A
- * Software: AirOS
- * Hardware: Ubiquity NanoStation M5 (XM.v5.2)
- * Setup: WDS with WPA2-AES PSK
- * Power: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
- * Location: 45.566779,-73.595172
- * Azimuth: South-East
- * Panorama:
-   * Sud: http://www.flickr.com/photos/elecnix/6887807504/sizes/o
-   * Est: http://www.flickr.com/photos/elecnix/7033901979/sizes/o
- * Status: [[!taglink up]]
- * Links: [[elecnix]] ([[links/elecnix-besik/]])
- * Short-term backup power: none
+[[!ymlfront data="""
+MAC: 00:15:6D:3C:00:7B
+IP: 192.168.1.20
+IPv6: 
+"""]]
+
+hostname
+: UBNT-besik
+
+Type
+: [[!taglink relay]]
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+SSID
+: (hidden) WDS with WPA2-AES PSK
+
+Software
+: AirOS
+
+Hardware
+: Ubiquity NanoStation M5 (XM.v5.2)
+
+Power
+: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
+
+Location
+: Roof
+
+Azimuth
+: South-East
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[users/benoitg]]
+
+Links
+: [[elecnix]]
+
+Short-term backup power
+: none
+
 
 ## Panorama
 
+ * Sud: http://www.flickr.com/photos/elecnix/6887807504/sizes/o
+ * Est: http://www.flickr.com/photos/elecnix/7033901979/sizes/o
+   
 [[!img 6887807504_b8dc42eddb_o.jpg size="950x"]]
 
 [[!img 7033901979_4923b4082b_o.jpg size="950x"]]

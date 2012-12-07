@@ -8,6 +8,9 @@ IP: 172.16.1.21
 
 Cette antenne de test n'est plus disponible. Elle me sert pour tes démos à l'occasion. 
 
+Type
+: [[!taglink test]]
+
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address:

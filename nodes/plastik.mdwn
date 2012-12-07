@@ -25,6 +25,9 @@ IPv6: fd64:2c08:9fa7:1::3/128
 hostname
 : plastik
 
+Type
+: [[!taglink accesspoint]]
+
 MAC address
 : {{$MAC}}
 

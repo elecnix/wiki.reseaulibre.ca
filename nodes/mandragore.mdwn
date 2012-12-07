@@ -2,6 +2,9 @@
 
 My friends at mandragore may be able to put up a node.
 
+Type
+: [[!taglink relay]]
+
  * MAC address:
  * IP address:
  * IPv6 address:

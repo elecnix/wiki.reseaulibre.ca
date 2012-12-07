@@ -11,6 +11,9 @@ IPv6:
 hostname
 : BlauEintopf-AP
 
+Type
+: [[!taglink accesspoint]]
+
 MAC address
 : {{$MAC}}
 

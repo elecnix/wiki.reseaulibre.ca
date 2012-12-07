@@ -24,6 +24,9 @@ IPv6:
 
 # Détails
 
+Type
+: [[!taglink relay]]
+
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}

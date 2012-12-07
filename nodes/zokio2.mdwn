@@ -4,6 +4,9 @@ Standard mesh node with an Access Point
 
 [[http://node2.zokio.net]]
 
+Type
+: [[!taglink relay]]
+
  * MAC address:
  * IP address:
  * IPv6 address:

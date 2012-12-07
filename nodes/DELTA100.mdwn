@@ -16,6 +16,9 @@ IPv6:
 hostname
 : DELTA100
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : {{$MAC}}
 

@@ -14,6 +14,9 @@ hostname
 SSID
 : btm.relais.reseaulibre.ca
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : {{$MAC}}
 

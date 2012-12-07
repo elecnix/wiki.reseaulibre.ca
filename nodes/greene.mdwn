@@ -11,6 +11,9 @@ IPv6:
 hostname
 : greene
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : {{$MAC}}
 

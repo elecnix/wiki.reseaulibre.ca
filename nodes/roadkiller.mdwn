@@ -13,6 +13,9 @@ IPv6:
 - 2001:1928:1:9::1/64
 """]]
 
+Type
+: [[!taglink accesspoint]]
+
  * MAC address: {{$MAC}}
  * IPv6 address: {{$IPv6}}
  * IP address: {{$IP}}

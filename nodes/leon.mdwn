@@ -11,6 +11,9 @@ IPv6:
 """]]
 
 
+Type
+: [[!taglink accesspoint]]
+
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}

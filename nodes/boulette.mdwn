@@ -15,6 +15,9 @@ IPv6: fd64:2c08:9fa7::2/64
 hostname
 : boulette
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : {{$MAC}}
 

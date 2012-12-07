@@ -13,6 +13,9 @@ IPv6: fd64:2c08:9fa7:2::/64
 hostname
 : easternblock
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : {{$MAC}}
 

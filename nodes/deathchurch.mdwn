@@ -2,6 +2,9 @@
 
 Possible node. Need to ask them.
 
+Type
+: [[!taglink relay]]
+
  * MAC address:
  * IP address:
  * IPv6 address:

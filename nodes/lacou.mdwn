@@ -13,7 +13,7 @@ IPv6:
 hostname
 : lacou
 
-type
+Type
 : [[!taglink relay]]
 
 MAC address

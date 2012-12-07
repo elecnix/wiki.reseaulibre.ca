@@ -4,6 +4,9 @@ Currently in planning stage.
 Probably will use a 1w Alfa AWUS036H adapter with a TP-LINK TL-ANT2415D Antenna, might add an extra adapter with a directional antenna to link with other nodes(If any eventually shows up around it).
 Router model to be decided but will probably run OpenWRT.
 
+Type
+: [[!taglink relay]]
+
  * MAC address:N/A
  * IP address:N/A
  * IPv6 address:N/A

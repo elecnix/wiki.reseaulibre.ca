@@ -7,6 +7,10 @@ MAC: 00:15:6D:70:36:EA
 IP: 172.16.1.51
 IPv6: fd64:2c08:9fa7:51::1/64
 """]]
+
+Type
+: [[!taglink relay]]
+
  * MAC address: {{$MAC}}
  * IPv6 address: {{$IPv6}}
  * Link-local IPv6 address: fe80::eca4:2fff:fe7b:ecf7 (bat0)

@@ -9,6 +9,9 @@ IPv6:
 hostname
 : sl7205
 
+Type
+: [[!taglink test]]
+
 MAC address
 : {{$MAC}}
 

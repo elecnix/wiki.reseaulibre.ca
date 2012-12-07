@@ -9,6 +9,9 @@ IPv6:
 hostname
 : capitaine
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : {{$MAC}}
 

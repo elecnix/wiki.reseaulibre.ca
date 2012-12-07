@@ -6,6 +6,9 @@ IP: 172.16.1.14
 
 Mon laptop
 
+Type
+: [[!taglink test]]
+
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address:

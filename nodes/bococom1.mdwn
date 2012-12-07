@@ -9,6 +9,9 @@ IPv6:
 hostname
 : bococom1
 
+Type
+: [[!taglink test]]
+
 MAC address
 : {{$MAC}}
 

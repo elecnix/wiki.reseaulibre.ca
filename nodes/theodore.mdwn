@@ -11,6 +11,9 @@ IPv6: fd64:2c08:9fa7:b1b1::/64
 hostname
 : theodore
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : {{$MAC}}
 

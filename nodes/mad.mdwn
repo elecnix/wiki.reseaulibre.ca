@@ -10,6 +10,9 @@ IPv6:
 hostname
 : tbd
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : tbd
 

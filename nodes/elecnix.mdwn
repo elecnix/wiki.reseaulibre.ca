@@ -2,6 +2,9 @@
 
 Un noeud à l'extérieur de ma fenêtre, actuellement à puissance minimale vers le nord géographique.
 
+Type
+: [[!taglink relay]]
+
  * hostname: UBNT-elecnix
  * MAC address: 00:15:6D:3C:01:B9
  * IP address: 192.168.3.20

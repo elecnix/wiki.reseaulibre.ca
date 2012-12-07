@@ -8,6 +8,9 @@ IPV6: 2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f
 Présentement à l'arrière dépassant un peu du toit . 
 
 
+Type
+: [[!taglink relay]]
+
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}
  * IPv6 address: {{$IPV6}}

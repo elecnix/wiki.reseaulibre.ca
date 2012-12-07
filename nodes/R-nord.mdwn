@@ -17,6 +17,9 @@ Point d'accès public en face du Parc des Amériques :
 
 Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
 
+Type
+: [[!taglink accesspoint]]
+
 # NODE - r-nord.acces.reseaulibre.ca
  * Status: [[!taglink up]]
  * Hostname: r-nord.acces.reseaulibre.ca

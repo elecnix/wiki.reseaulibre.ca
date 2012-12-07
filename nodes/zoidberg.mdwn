@@ -11,6 +11,9 @@ IPv6: Not yet
 hostname
 : zoidberg
 
+Type
+: [[!taglink relay]]
+
 MAC address
 : {{$MAC}}
 

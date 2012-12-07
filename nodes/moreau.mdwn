@@ -2,6 +2,9 @@
 
 This is a potential spot, although I have yet to confirm with the tenants of the space, they have a very good view from their window on the 4th (5th?) floor of basically the whole city: downtown all the way up to rosemont...
 
+Type
+: [[!taglink relay]]
+
  * MAC address: TBD
  * IP address: TBD
  * IPv6 address: TBD

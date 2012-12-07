@@ -10,6 +10,9 @@ IP: 172.16.0.72
 IPv6: 
 """]]
 
+Type
+: [[!taglink relay]]
+
 hostname
 : (node hostname here)
 
