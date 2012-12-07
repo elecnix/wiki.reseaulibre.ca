@@ -10,7 +10,9 @@ Voici le bulletin de nouvelle mensuel du Réseau Libre.
 
 # Prochaine rencontre
 
-(à planifier)
+Ici: http://wiki.reseaulibre.ca/meetings/2012-12-17/
+
+# Présentations
 
 Nicolas Marchildon présentera Réseau Libre le 18 décembre lors de la rencontre mensuelle du groupe [6] Ruby Montréal.
 
