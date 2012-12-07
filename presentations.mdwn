@@ -8,7 +8,7 @@ Libre. Vous voudrez peut-être [cloner le dépôt git][] afin de pouvoir recrée
 Introductions courriel / textes
 -------------------------------
 
-[[!map pages="page(presentations/*) and !blob(*.rst)"]]
+[[!map pages="page(presentations/*)"]]
 
 Ceci sont des présentations seulement en texte, qui peuvent être envoyées par courriels ou peuvent faire une base pour un dépliant.
 
