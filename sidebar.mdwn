@@ -1,5 +1,5 @@
 * [[Bienvenue|index]]
-* [[Qu'est-ce que c'est?|FAQ]]
+* [[FAQ]]
 * [Carte](/ikiwiki.cgi?map=map&do=osm&zoom=12&lat=45.5227&lon=-73.59554&layers=BT)
 * [[Participer]]
 * [[Documentation]]
