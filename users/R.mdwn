@@ -8,9 +8,16 @@ Je roule du wifi ouvert chez moi depuis longtemps et me voilà entouré de sembl
 
 ## Mes Noeuds
 
+### Maison:
 * [[nodes/R]] (relais principal)
-* [[nodes/R-nord]] (accès principal à upgrader de OpenMesh)
-* NanoStation M² (Mon AP interne bridgé WPA2)
+* [[nodes/R-nord]] (accès à upgrader)
+* [[nodes/R-sud]] (accès à installer)
+
+### Portable:
+* Bullet M2 Ti (15dBi) + P2HP (6dBi) (à configurer pour noeuds d'événement, etc.)
+
+### À déployer:
+* Bullet M2 (15dBi) (à configurer / envoyer dans la famille?)
 
 ## Autres infos
 
@@ -19,13 +26,15 @@ Radio amateur: VE2TUX
 ## Todo
 ### hardware
 
-* Finir setup (relais.)
-* installer & upgrader(?) (acces.)
+* Finir setup (relais.), tests, upgrade AA, etc.
+* installer & upgrader(?) (acces.) x 2
 * nœuds portable / solaire de test
+* Noeuds parent
 * ...
 
 ### Software
 
 * Transparent tor proxy
 * service discovery
+* projet de portail HTML5 ?
 * ???
