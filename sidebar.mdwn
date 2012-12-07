@@ -4,3 +4,4 @@
 * [[Participer]]
 * [[Documentation]]
 * [[Nouvelles]]
+* [[Contact]]
