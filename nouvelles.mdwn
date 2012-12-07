@@ -1,5 +1,7 @@
 Les dernières nouvelles du réseau envoyées sur la [liste de diffusion](https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca) sont archivés ici. Les nouvelles sont également syndiquées par RSS sur [http://global.freifunk.net](http://global.freifunk.net/feeds/50127).
 
+[[!toc]]
+
 Dernières nouvelles
 ===================
 
