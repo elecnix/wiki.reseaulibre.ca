@@ -1,60 +1,27 @@
-Je sais pas où mettre ça alors je dumpe ça ici pour l'instant.. peut-être une section "communication"?
+Sujet
+: Réseau Libre: Invitation à participer à un réseau sans fil libre en "maille"
 
-Invites
-=======
+Réseau Libre est un réseau en "maille" (en anglais, "mesh"), soit une topologie réseau dans laquelle chaque hôte est connecté à ses voisins, formant une structure en forme de filet. Chaque maille est aussi appelée "noeud". Chaque noeud a un certain nombre de "voisins", de sorte qu'il existe plusieurs chemins pour se rendre à un même point. L'avantage d'une telle topologie est qu'il n'y a pas de noeud essentiel où l'on centralise les services. Ainsi, en cas de panne d'un ou plusieurs des noeuds, le réseau peut continuer à fonctionner. Cela permet également de facilement y ajouter ou enlever des noeuds.
 
-Those are invites we can send people when we are almost convinced we can get them involved.
+Concrètement, le réseau a besoin de gens qui installent des routeurs sans-fil chez eux, pour ajouter des noeuds au réseau et ainsi en élargir la couverture. On installe sur ces routeurs une application (à code source libre) qui trouve automatiquement les voisins et participe à relayer les données avec ces noeuds. Les utilisateurs se connectent ensuite à un point d'accès sans-fil ordinaire connecté à ce noeud, et peuvent alors accéder à tout le contenu disponible depuis ce noeud.
 
-A potential node on your roof
------------------------------
+Notre réseau grandit! Nous avons déjà des réseaux en ligne dans les quartiers de Rosemont, Verdun et Saint-Michel à Montréal, avec plusieurs autres noeuds qui seront bientôt en ligne. Peut-être y a-t-il déjà un noeud près de chez vous? Consultez notre carte interactive!
 
-So here's the proposal to join the Montreal Mesh project, also
-known as "Réseau libre":
+Que vous soyez simplement curieux des nouveaux usages rendus possibles par un tel réseau ou que vous souhaitez en apprendre plus sur l'installation d'antennes sans-fil et la réseautique, le Réseau Libre est un espace d'entraide "ad hoc" ouvert à tous et toutes.
 
-http://reseaulibre.ca/
+Pour plus d'information: http://www.reseaulibre.ca
 
-This would give you access to the resources and services hosted on the mesh, which are limited at this time, but that we want to expand to create a local internet that is controlled by the community, not the private companies or the government. This network will be uncensored and free. You would also help growing the network into your area, providing a valuable service for the community.
+ABOUT RÉSEAU-LIBRE
 
-What this would involve in terms of effort:
+Réseau Libre is a mesh network, meaning that it is a type of network topology where each host is connected to its neighbours, thus forming a sort of fishing net. Each participant, also called a "node", is linked to its direct neighbours, making it possible to have many routes possible between two points on the network. The main advantage of this topology is that there are no single point of failure essential for the network to function. In the event of a failure of one or many nodes, the network can still continue to function. This also makes it easy to add new nodes.
 
- * access to the roof - we may be able to arrange for volunteers for the
-   actual install, including a ladder to climb on the roof
+Concretely, the network needs people who want to install wireless routers in their home or office, adding nodes to the network and increasing its coverage. There routers run a (free software) program that automatically finds other nodes and participates in relaying information. General users then connect to a wireless access points, making it easy to access the mesh network without installing additional software.
 
- * get some fixture to setup the antenna (examples here:
+Our network is growing! We already have networks online in the Montreal boroughs of Rosemont, Plateau, Verdun and Saint-Michel-Parc-Extention, with many new nodes to come. There may already be one near your location? Look at our website for the interactive map!
 
-   http://wiki.reseaulibre.ca/hardware/antennes/
+Whether you are simply curious about the new possibilities of such a network, or you wish to learn more about the installation of wireless antennas and networking, Réseau Libre is an "ad hoc" place for collaboration open to all.
 
- * run a network cable down from the roof
+For more information: http://www.reseaulibre.ca
 
- * get a router:
-
-   http://wiki.reseaulibre.ca/hardware/routers/
-
-We recommend a Ubiquity Bullet for this location. We have just bought 20
-of those for the project in a collective buying spree. :) They go for
-around 137$ a pop and look something like this:
-
-http://wiki.reseaulibre.ca/nodes/Grace/
-http://farm6.staticflickr.com/5468/6906283982_e0dd288d25_z.jpg
-
-Ideally, you would buy the device: I can sell you one, as it would be
-cheaper because we have a rebate because of the mass of devices. :) It's
-about 160-170$ for the kit. The idea is that each node operator is
-autonomous and owns its own hardware and can operate on it.
-
-If you want, you (or another member of your group) can join us tomorrow
-for the install fest when we are going to configure those devices:
-
-http://wiki.reseaulibre.ca/meetings/2012-08-19-install-fest/
-
-... otherwise if you can't find 140$, i may consider lending you the
-device, because I think your location is important. But this would come
-out of my pocket - we have no sponsors or funding of any kind, so
-involvement of peers is appreciated!
-
-I have also taken the liberty to add your location as a "prospect" in
-our node directory:
-
-http://wiki.reseaulibre.ca/nodes/NODENAMEHERE
 
 [[!tag draft]]
