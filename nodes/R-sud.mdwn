@@ -1,0 +1,56 @@
+### Vue vers le nord (montréalais)
+
+[[!img /nodes/R/2012-09-11-r-nord.jpg size=950x]]
+
+[[!ymlfront data="""
+MAC: DC:9F:DB:10:D4:61
+IP: Not yet
+IPv6: Not yet
+"""]]
+
+# SETUP
+Operateur: [[users/R]]
+
+Point d'accès public en face du Parc des Amériques :
+
+[[!waypoint lat="45.518628" lon="-73.58215" embed hidden width="950px" height="300px" right desc="Pico2HP dans ma fenetre nord"]]
+
+Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
+
+
+# NODE - r-sud.acces.reseaulibre.ca
+ * Type: [[!taglink accesspoint]]
+ * Status: [[!taglink planned]]
+ * Hostname: r-sud.acces.reseaulibre.ca
+ * Location: 45.518628,-73.58215
+ * Software: OpenWRT 12.09 (AA final)
+ * IP address: ( Planned: {{$IP}} )
+ * IPv6 address: {{$IPv6}}
+ * Hardware: Ubnt NanoStation M2
+ * MAC address: {{$MAC}}
+ * Channel: ?
+ * 802.11: b, g, n
+
+### Antenna
+ * Azimuth: H: 60° / V: 60°
+ * Frequency: 2400 - 2483MHz
+ * Connector built-in
+ * Gain: 11 dBi
+ * Power: 28 dBm?
+
+### Links
+* Links: [[R]], [[R-nord]] (ethernet)
+
+
+### Vue vers le sud (montréalais)
+[[!img /nodes/R/2012-09-11-r-sud.jpg size=950x]]
+
+[[!meta copyright="Copyright © 2012 Alexandre Guédon"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
