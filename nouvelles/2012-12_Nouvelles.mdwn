@@ -62,8 +62,6 @@ Prospect
 Down
 : 5
 
- [11]: http://wiki.reseaulibre.ca/nodes
-
 ## Inscrits
 
 liste de nouvelles
@@ -75,15 +73,17 @@ liste technique (nodes)
 ## Wiki
 
 Fichiers
-: ?
+: 499
 
 Lignes
-: ?
+: 28761 (48279 added, 19518 removed)
 
 Modifications
-: ?
+: 3240 commits
 
 Auteurs
-: ?
+: 86
+
+Le mois de novembre dernier a été le mois le plus occuppé sur le wiki, avec près de 294 commits.
 
 [[!tag draft]]
