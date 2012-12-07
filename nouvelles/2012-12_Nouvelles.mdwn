@@ -12,14 +12,14 @@ Nicolas Marchildon présentera Réseau Libre le 18 décembre lors de la [rencont
 
 # Prochaine rencontre
 
-Une [scéance de partage de connaissances][2] entre les opérateurs de relais se tiendra le 17 décembre aux bureaux de Koumbit (6833 de L'Épée #308, métro Acadie). Venez partager comment votre relai est configuré si vous en opérez un! Nous ferons également des échanges de clef OpenPGP, donc n'oubliez pas votre empreinte de clef [3].
+Une [scéance de partage de connaissances][2] entre les opérateurs de relais se tiendra le 17 décembre aux bureaux de Koumbit (6833 de L'Épée #308, métro Acadie). Venez partager comment votre relai est configuré si vous en opérez un! Nous ferons également des échanges de clef OpenPGP, donc n'oubliez pas votre [[empreinte de clef|https://wiki.koumbit.net/GnuPrivacyGuard]] [3].
 
  [2]: http://wiki.reseaulibre.ca/meetings/2012-12-17/
  [3]: https://wiki.koumbit.net/GnuPrivacyGuard
 
 # Achat de matériel
 
-La [commande de décembre][4] est terminée! Le prochain achat de groupe sera probablement en [février 2013][5]. Si vous avez besoin de matériel d'ici là, quelques participants ont du matériel de côté pour les imprévus (contactez-nous par la liste nodes@ [6]).
+La [commande de décembre][4] est terminée! Le prochain achat de groupe sera probablement en [février 2013][5]. Si vous avez besoin de matériel d'ici là, quelques participants ont du matériel de côté pour les imprévus (contactez-nous par la liste [[nodes@|participer]] [6]).
 
  [4]: http://wiki.reseaulibre.ca/hardware/achats/2012-12-nanostation/
  [5]: http://wiki.reseaulibre.ca/hardware/achats/2013-02-achat/
