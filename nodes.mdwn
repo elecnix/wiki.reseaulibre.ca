@@ -23,8 +23,6 @@ Here is the list of the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion
 Operational nodes
 -----------------
 
-Those are the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(up)"]] nodes marked as "up". 
-
 <!--
 to generate a table for the following graph
 for year in 2012; do
@@ -36,7 +34,7 @@ for year in 2012; do
 done
 -->
 
-[[!sparkline 0 0 3 3 12 16 16 18 27 28 35 38 style=bar barwidth=20 barspacing=3 height=60]]
+Those are the [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(up)"]] nodes marked as "up".   Last 12-month growth: [[!sparkline 0 0 3 3 12 16 16 18 27 28 35 38 style=bar barwidth=20 barspacing=3 height=60]]
 
 <!-- <img src="https://chart.googleapis.com/chart?cht=bvg&chs=300x100&chd=t:5,5,13,17,1,20,29,30,35|14,17,24,29,33,37,43,45,41&chdl=Up|Planned&chco=4D89F9,C6D9FD&chbh=7,1,6&chxt=x,y&chxl=0:|M|A|M|J|J|A|S|O|N"/> -->
 
