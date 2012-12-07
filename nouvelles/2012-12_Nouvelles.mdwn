@@ -6,7 +6,7 @@ Voici le bulletin de nouvelle mensuel du Réseau Libre. On y présente les activ
 
 # Présentations à venir
 
-Nicolas Marchildon présentera Réseau Libre le 18 décembre lors de la rencontre mensuelle du groupe Ruby Montréal[1].
+Nicolas Marchildon présentera Réseau Libre le 18 décembre lors de la [rencontre mensuelle du groupe Ruby Montréal][1].
 
  [1]: http://www.montrealonrails.com/
 
