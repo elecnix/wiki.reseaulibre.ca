@@ -1,5 +1,7 @@
 Voici toutes les présentations publiées par les bénévoles de Réseau
-Libre.
+Libre. Vous voudrez peut-être [cloner le dépôt git][] afin de pouvoir recréer, éditer ou même voir la plupart de ces présentations, car les images ne sont généralement pas incluses dans la présentation.
+
+ [cloner le dépôt git]: http://wiki.reseaulibre.ca/ikiwiki.cgi?do=branchable
 
 Présentations Pinpoint
 ----------------------
@@ -20,23 +22,39 @@ Pour ouvrir une présentation:
 
 Le fichier ".pin" est en format texte UTF-8.
 
-Présentations OpenOfiice
-------------------------
+Présentations LibreOffice
+-------------------------
 
-[[!map pages="presentations/*.ods]]
+[[!map pages="presentations/*.ods"]]
+
+[LibreOffice][] est une suite office libre qui permet de faire des présentations, mais qui est aussi utilisée pour faire des diagrammes.
+
+ [LibreOffice]: http://www.libreoffice.org/
 
 Présentations RST
 -----------------
 
-[[!map pages="presentations/*.rst]]
+[[!map pages="presentations/*.rst"]]
+
+[rst2s5][] permet de faire des slides à partir d'un simple fichier "[restructured text][]", qui est ensuite transformé en HTML et Javascript, et qui peut donc être chargé dans n'importe quel navigateur web.
+
+ [rst2s5]: http://docutils.sourceforge.net/docs/user/slide-shows.html
+ [restructured text]: http://docutils.sourceforge.net/rst.html
 
 Présentations Dia
 -----------------
 
-[[!map pages="presentations/*.dia]]
+[[!map pages="presentations/*.dia"]]
 
 Habituellement seulement pour des diagrammes en support à des
 présentations, [Dia][] est un logiciel similaire à "Visio" permettant
 de faire des diagrammes rapidement.
 
  [Dia]: https://live.gnome.org/Dia
+
+Autres outils
+-------------
+
+Voir aussi la [documentation de Koumbit][] pour une liste plus complète d'outils libres pour faire des présentations.
+
+ [documentation de Koumbit]: https://wiki.koumbit.net/OutilsDePrésentation
