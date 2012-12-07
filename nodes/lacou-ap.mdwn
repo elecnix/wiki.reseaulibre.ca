@@ -14,6 +14,9 @@ Link-Local IPv6: fe80::2b0:c0ff:fe02:1a9f/64
 hostname
 : lacou-ap
 
+type:
+: [[!taglink accesspoint]]
+
 SSID
 : lacou.acces.reseaulibre.ca
 
