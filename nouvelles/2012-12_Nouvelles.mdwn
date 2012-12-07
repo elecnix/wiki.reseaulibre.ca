@@ -44,21 +44,33 @@ Des images ont été capturées lors de l'installation du noeud `val`. Nous somm
 
 # Statistiques
 
-Quelques personnes ont installé Munin, et on peut voir la qualité des liens dans le temps sur la page de stats.
+Quelques personnes ont installé Munin sur leurs relais, et on peut voir la qualité des liens dans le temps sur la [page de stats][5].
 
- [10]: http://wiki.reseaulibre.ca/stats/
+ [5]: http://wiki.reseaulibre.ca/stats/
 
-(à remplir avant envoi)
+## État des stations
+
+Up
+: 39
+
+Planned
+: 43
+
+Prospect
+: 15
+
+Down
+: 5
 
  [11]: http://wiki.reseaulibre.ca/nodes
 
 ## Inscrits
 
 liste de nouvelles
-: ?
+: 23
 
 liste technique (nodes)
-: ?
+: 72
 
 ## Wiki
 
