@@ -3,6 +3,15 @@ Libre. Vous voudrez peut-être [cloner le dépôt git][] afin de pouvoir recrée
 
  [cloner le dépôt git]: http://wiki.reseaulibre.ca/ikiwiki.cgi?do=branchable
 
+[[!testpagespec  pagespec="presentations/*.mdwn" match="presentations/foo.mdwn"]]
+
+Introductions courriel / textes
+-------------------------------
+
+[[!map pages="page(presentations/*) and !blob(*.rst)"]]
+
+Ceci sont des présentations seulement en texte, qui peuvent être envoyées par courriels ou peuvent faire une base pour un dépliant.
+
 Présentations Pinpoint
 ----------------------
 
@@ -34,7 +43,7 @@ Présentations LibreOffice
 Présentations RST
 -----------------
 
-[[!map pages="presentations/*.rst"]]
+[[!map pages="internal(presentations/*.rst)"]]
 
 [rst2s5][] permet de faire des slides à partir d'un simple fichier "[restructured text][]", qui est ensuite transformé en HTML et Javascript, et qui peut donc être chargé dans n'importe quel navigateur web.
 
