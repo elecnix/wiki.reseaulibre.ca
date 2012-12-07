@@ -3,8 +3,8 @@
 [[!img /nodes/R/2012-09-11-r-nord.jpg size=950x]]
 
 [[!ymlfront data="""
-MAC: DC:9F:DB:10:D4:61
-IP: Not yet
+MAC: 00:15:6D:70:37:25
+IP: 172.16.1.32
 IPv6: Not yet
 """]]
 
@@ -13,7 +13,7 @@ Operateur: [[users/R]]
 
 Point d'accès public en face du Parc des Amériques :
 
-[[!waypoint lat="45.518628" lon="-73.58215" embed hidden width="950px" height="300px" right desc="Pico2HP dans ma fenetre nord"]]
+[[!waypoint lat="45.518628" lon="-73.58215" embed hidden width="950px" height="300px" right desc="NSM2 dans ma fenetre sud"]]
 
 Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
 
@@ -34,7 +34,7 @@ Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
 ### Antenna
  * Azimuth: H: 60° / V: 60°
  * Frequency: 2400 - 2483MHz
- * Connector built-in
+ * Connector Built-in
  * Gain: 11 dBi
  * Power: 28 dBm?
 
