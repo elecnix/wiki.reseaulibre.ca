@@ -1,6 +1,6 @@
 Planned server at [[/nodes/besik]].
 
-[[!waypoint map=null lat="45.566779" lon="-73.595172" embed hidden width="950px" height="400px" right desc="Server"]]
+[[!waypoint map=null lat="45.566779" lon="-73.595172" embed hidden width="950px" height="200px" right desc="Server"]]
 
 # Technical details
 
