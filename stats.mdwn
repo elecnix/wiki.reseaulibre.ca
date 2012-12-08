@@ -22,4 +22,4 @@ Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/muni
 [[nodes/R]]
 ------------
 
-<a href="https://munin.twd.su/bulletm2/bulletm2/adhoc_rssi.html"><img src="https://munin.twd.su/bulletm2/bulletm2/adhoc_rssi-week.png" /></a>
+<a href="http://munin.twd.su/relais.reseaulibre.ca/r.relais.reseaulibre.ca/adhoc_rssi.html"><img src="http://munin.twd.su/relais.reseaulibre.ca/r.relais.reseaulibre.ca/adhoc_rssi-week.png" /></a>
