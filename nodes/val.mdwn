@@ -47,6 +47,9 @@ Status
 Operator
 : [[/users/elecnix]]
 
+Access Point
+: [[/nodes/pinot]]
+
 ## Liens possibles
 
  * [[/nodes/theodore]]
