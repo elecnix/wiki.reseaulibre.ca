@@ -9,9 +9,6 @@ IPv6:
 hostname
 : oeuf
 
-Type
-: [[!taglink test]]
-
 MAC address
 : {{$MAC}}
 

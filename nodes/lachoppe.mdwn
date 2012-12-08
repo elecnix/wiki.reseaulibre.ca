@@ -2,9 +2,6 @@
 
 Need to ask too.
 
-Type
-: [[!taglink relay]]
-
  * MAC address:
  * IP address:
  * IPv6 address:

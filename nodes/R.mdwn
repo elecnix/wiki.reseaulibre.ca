@@ -20,7 +20,6 @@ Bullet M2 + 15dBi
 # NODE - r.relais.reseaulibre.ca
 [[!img antenne_mat.jpg alt="antenne sur mat" align="right" size="x380" ]]
 
- * Type: [[!taglink relay]]
  * Status: [[!taglink up]] depuis 29/10/12
  * Hostname: r.relais.reseaulibre.ca
  * Location: 45.518631,-73.58220

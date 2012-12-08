@@ -13,9 +13,6 @@ IPv6:
 hostname
 : topo
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

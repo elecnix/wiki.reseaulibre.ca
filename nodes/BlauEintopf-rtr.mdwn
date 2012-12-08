@@ -8,9 +8,6 @@ IP: 172.16.0.29/48
 IPv6: Not yet
 """]]
 
-Type
-: [[!taglink accesspoint]]
-
  * MAC address: {{$MAC}}
  * IPv6 address: {{$IPv6}}
  * IP address: {{$IP}}

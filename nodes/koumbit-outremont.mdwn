@@ -11,9 +11,6 @@ IPv6: Not yet
 hostname
 : koumbit-outremont
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

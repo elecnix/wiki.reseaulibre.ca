@@ -10,9 +10,6 @@ Node planifiee pour ce printemps. Acces au toit, le range devrait etre bon si je
 
 Details:
 
-Type
-: [[!taglink relay]]
-
  * hostname: lolita
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}

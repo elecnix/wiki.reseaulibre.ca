@@ -8,9 +8,6 @@ IP:
 IPv6: 2607:f2c0:f00f:29a5:15:6dff:fe73:942f
 """]]
 
-type
-: [[!taglink relay]]
-
  * hostname: homs
  * MAC address: {{$MAC}}
  * IPv6 address: {{$IPv6}}

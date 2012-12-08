@@ -20,9 +20,6 @@ IPv6: N/A
 hostname
 : dame7
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

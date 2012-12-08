@@ -54,12 +54,8 @@ Access Point
 Short-term backup power
 : none
 
-
 ## Panorama
 
- * Sud: http://www.flickr.com/photos/elecnix/6887807504/sizes/o
- * Est: http://www.flickr.com/photos/elecnix/7033901979/sizes/o
-   
 [[!img 6887807504_b8dc42eddb_o.jpg size="950x"]]
 
 [[!img 7033901979_4923b4082b_o.jpg size="950x"]]

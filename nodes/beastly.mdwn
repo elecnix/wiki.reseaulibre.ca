@@ -11,9 +11,6 @@ IPv6:
 hostname
 : 
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

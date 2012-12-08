@@ -2,9 +2,6 @@
 
 
 
-Type
-: [[!taglink relay]]
-
  * MAC address: 00:27:22:EC:3A:40
  * IP address: 172.16.1.199
  * IPv6 address:

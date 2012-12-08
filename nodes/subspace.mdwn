@@ -2,9 +2,6 @@
 
 I'm looking to build my own nod here. Information to come as soon as it's up! (I'm learning the ropes!) It'll be named subspace as my internal network topology is based on the univers of Frank Herbert's Dune. Network being the "imperium" and various devices named after planets of this universe. I guess that "subspace" would be a nice way to connect my own imperium to the outer world !
 
-Type
-: [[!taglink relay]]
-
  * MAC address: *TBA*
  * IP address: *TBA*
  * IPv6 address: *TBA*

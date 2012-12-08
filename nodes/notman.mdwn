@@ -2,9 +2,6 @@
 
 Notman house is a geeky place that may be open to hosting a node.
 
-Type
-: [[!taglink relay]]
-
  * MAC address:
  * IP address:
  * IPv6 address:

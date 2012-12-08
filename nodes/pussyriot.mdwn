@@ -11,9 +11,6 @@ IPv6:
 hostname
 : pussyriot
 
-Type
-: [[!taglink test]]
-
 MAC address
 : {{$MAC}}
 

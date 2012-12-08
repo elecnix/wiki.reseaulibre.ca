@@ -7,8 +7,6 @@ IP: 172.16.1.7
 
 Noeud pointant vers l'est, présentement au premier étage. Surtout utile pour faire des tests à partir de la ruelle. Pourrait être monter au 2e étage si besoin. 
 
-Type
-: [[!taglink test]]
 
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}

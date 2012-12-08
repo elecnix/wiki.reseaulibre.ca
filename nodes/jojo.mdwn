@@ -14,9 +14,6 @@ IPv6:
 hostname
 : jojo
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

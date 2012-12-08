@@ -9,9 +9,6 @@ IPv6: fd64:2c08:9fa7:1::2/64
 hostname
 : angela
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

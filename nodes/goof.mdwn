@@ -14,9 +14,6 @@ IPv6:
 hostname
 : goof
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

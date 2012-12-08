@@ -5,9 +5,6 @@ Noeud possible dans la fenêtre du 4e étage.
 Status
 : [[!taglink prospect]]
 
-Type
-: [[!taglink relay]]
-
 Operator
 : [[/users/elecnix]]
 

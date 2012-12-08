@@ -13,9 +13,6 @@ IPv6: fd64:2c08:9fa7:3::/64
 hostname
 : atlas
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

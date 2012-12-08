@@ -2,9 +2,6 @@
 
 Can't believe [[Foulab|http://foulab.org/]] isn't listed. Even though it's a fairly poor spot, below the highway, it could relay to verdun.
 
-Type
-: [[!taglink relay]]
-
  * MAC address:
  * IP address:
  * IPv6 address:

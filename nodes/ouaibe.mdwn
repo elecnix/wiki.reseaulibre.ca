@@ -13,9 +13,6 @@ Ubiquity Nanostation M2 router.
 Hostname
 : ouaibe
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

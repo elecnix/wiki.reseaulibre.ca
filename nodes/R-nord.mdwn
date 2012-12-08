@@ -17,7 +17,6 @@ Point d'accès public vers le nord du bloc :
 
 Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
 
-
 # NODE - r-nord.acces.reseaulibre.ca
  * Type: [[!taglink accesspoint]]
  * Status: [[!taglink planned]]

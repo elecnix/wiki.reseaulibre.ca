@@ -14,9 +14,6 @@ Ubiquity Nanostation M2 router.
 Hostname
 : lethon
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

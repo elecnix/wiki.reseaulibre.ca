@@ -9,9 +9,6 @@ IPv6:
 hostname
 : quai21
 
-Type
-: [[!taglink test]]
-
 MAC address
 : {{$MAC}}
 

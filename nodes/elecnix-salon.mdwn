@@ -13,9 +13,6 @@ IPv6:
 hostname
 : salon
 
-Type
-: [[!taglink test]]
-
 MAC address
 : {{$MAC}}
 

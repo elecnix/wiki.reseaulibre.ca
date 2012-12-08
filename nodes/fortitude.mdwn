@@ -2,9 +2,6 @@
 
 AP/antenna in window approx. 180 ft above ground level. Clear SW to SSE view, SW to W completely obstructed, SSE to E partially obstructed ("Montreal" directions, E parallel to the river).
 
-Type
-: [[!taglink relay]]
-
  * MAC address:
  * IP address:
  * IPv6 address:

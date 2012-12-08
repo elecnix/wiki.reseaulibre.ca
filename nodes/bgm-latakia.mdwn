@@ -10,9 +10,6 @@ IP:
 IPv6: 2607:f2c0:f00f:29a1::1
 """]]
 
-Type
-: [[!taglink relay]]
-
  * hostname: latakia
  * MAC address: {{$MAC}}
  * IPv6 address: {{$IPv6}}

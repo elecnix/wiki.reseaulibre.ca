@@ -8,9 +8,6 @@ IPv6: fd64:2c08:9fa7:11::/64
 
 Placeholder for a rooftop node. Need confirmation with friend this will be possible.
 
-Type
-: [[!taglink relay]]
-
  * hostname: strangelove
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}

@@ -11,9 +11,6 @@ IPv6: fd64:2c08:9fa7:56::1/128
 hostname
 : bibitte
 
-Type
-: [[!taglink test]]
-
 MAC address
 : {{$MAC}}
 

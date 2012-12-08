@@ -10,9 +10,6 @@ Point d'acces prevu pour redistribuer le mesh localement.
 
 Details:
 
-Type
-: [[!taglink accesspoint]]
-
  * hostname: clockwork
  * MAC address: {{$MAC}}
  * IP address: {{$IP}}

@@ -13,9 +13,6 @@ IPv6:
 hostname
 : (node hostname here)
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

@@ -3,9 +3,6 @@
 
 (Description of the node here, with a link to your homepage.)
 
-Type
-: [[!taglink relay]]
-
  * MAC address:
  * IP address:
  * IPv6 address:

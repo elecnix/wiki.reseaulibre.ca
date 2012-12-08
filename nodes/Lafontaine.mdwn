@@ -1,9 +1,6 @@
 [[!waypoint map=null  lat="45.52279" lon="-73.56896" embed hidden width="400px" height="400px" right desc="en négociation: node toit 4ieme"]]
 
 
-Type
-: [[!taglink relay]]
-
  * MAC address:
  * IP address:
  * IPv6 address:

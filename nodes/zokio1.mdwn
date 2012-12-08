@@ -4,9 +4,6 @@ Long-range link Montreal-Boucherville
 
 [[http://node1.zokio.net]]
 
-Type
-: [[!taglink relay]]
-
  * MAC address:
  * IP address:
  * IPv6 address:

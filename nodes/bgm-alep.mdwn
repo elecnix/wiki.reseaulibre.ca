@@ -10,9 +10,6 @@ IPv6: 2607:f2c0:f00f:29a5::1
 hostname
 : (node hostname here)
 
-Type
-: [[!taglink accesspoint]]
-
 MAC address
 : {{$MAC}}
 

@@ -11,9 +11,6 @@ IPv6: fd64:2c08:9fa7:57::1/128
 hostname
 : princesse
 
-Type
-: [[!taglink test]]
-
 MAC address
 : {{$MAC}}
 

@@ -11,9 +11,6 @@ IPv6:
 hostname
 : benoitg
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

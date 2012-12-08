@@ -18,9 +18,6 @@ IPv6: fd64:2c08:9fa7:1::4/64 - should be /128
 hostname
 : plantpeople
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

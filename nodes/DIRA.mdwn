@@ -2,9 +2,6 @@
 
 Another potential partner/location. 
 
-Type
-: [[!taglink relay]]
-
  * MAC address:
  * IP address:
  * IPv6 address:

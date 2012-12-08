@@ -14,9 +14,6 @@ IPv6: fd66:66:66:0:de9f:dbff:fe00:134c
 hostname
 : val
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

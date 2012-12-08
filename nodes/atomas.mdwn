@@ -18,9 +18,6 @@ IPv6:
 hostname
 : atomas
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : 
 

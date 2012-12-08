@@ -13,9 +13,6 @@ IPv6: N/A
 hostname
 : nelson
 
-Type
-: [[!taglink relay]]
-
 MAC address
 : {{$MAC}}
 

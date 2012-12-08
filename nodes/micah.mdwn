@@ -2,9 +2,6 @@
 
 A node on the roof
 
-Type
-: [[!taglink relay]]
-
  * MAC address: c0:c1:c0:2d:a6:45
  * IP address: 206.248.185.24
  * IPv6 address: 2607:f2c0:f00f:6e00::1

@@ -2,9 +2,6 @@
 
 Planned.
 
-Type
-: [[!taglink relay]]
-
  * MAC address:
  * IP address:
  * IPv6 address:
