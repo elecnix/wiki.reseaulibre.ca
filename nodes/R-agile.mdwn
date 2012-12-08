@@ -1,24 +1,17 @@
-### Vue vers le nord (montréalais)
-
-[[!img 2012-09-11-r-nord.jpg size=950x alt="panorama nord" ]]
-
 [[!ymlfront data="""
-MAC: DC:9F:DB:06:D4:CC
-IP: 172.16.0.33
-IPv6: 2607:f2c0:f00f:e100::/56
+MAC: DC:9F:DB:04:90:F2
+IP: 172.16.0.32
+IPv6: Not Yet
 """]]
 
 # SETUP
 Operateur: [[users/R]]
 
-En face du Parc des Amériques :
-
-[[!waypoint lat="45.518631" lon="-73.58220" embed hidden width="950px" height="300px" right desc="Bullet M2 + 15dBi"]]
+Noeuds transportables sur batterie / solaire / prise de courant du coin: RELAIS + ACCES
 
 Bullet M2 + 15dBi
 
 # NODE - r-agile.relais.reseaulibre.ca
-[[!img antenne_mat.jpg alt="antenne sur mat" align="right" size="x380" ]]
 
  * Type: [[!taglink relay]]
  * Status: [[!taglink test]]
@@ -32,6 +25,21 @@ Bullet M2 + 15dBi
  * MAC address: {{$MAC}}
  * Channel: 1
  * 802.11: b, g, n
+ * Autonomie estimée: (?)
+
+# NODE - r-agile.acces.reseaulibre.ca
+ * Type: [[!taglink accesspoint]]
+ * Status: [[!taglink test]]
+ * Hostname: r-agile.acces.reseaulibre.ca
+ * Location: Portable
+ * Software: OpenWRT 12.09
+ * IP address: ?
+ * IPv6 address: ?
+ * Routage: ?
+ * Hardware: Ubnt PicoStation2 HP
+ * MAC address: 00:15:6D:AE:E7
+ * Channel: 9
+ * 802.11: b, g
  * Autonomie estimée: (?)
 
 ### Antenna
