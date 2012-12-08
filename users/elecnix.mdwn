@@ -5,3 +5,7 @@ Je suis programmeur. J'ai installé une antenne chez moi, avant la naissance du 
  * nicolas@marchildon.net
  * http://identi.ca/elecnix
  * 514 394-7847
+
+Les noeuds que j'administre:
+
+[[!map pages="link(.) and nodes/*"]]
