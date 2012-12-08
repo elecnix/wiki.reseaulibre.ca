@@ -1,5 +1,5 @@
 [[!waypoint map=null  lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
-(remove map=null to display on the main map)
+<!-- (remove map=null to display on the main map) -->
 
 (Description of the node here, with a link to your homepage.)
 
@@ -13,6 +13,12 @@ IPv6:
 
 hostname
 : (node hostname here)
+
+Type
+: [[!taglink relay]] (can also be accesspoint, test, server)
+
+SSID
+: relais.reseaulibre.ca (see [[policy/naming]])
 
 MAC address
 : {{$MAC}}
@@ -45,10 +51,13 @@ Status
 : [[!taglink prospect]] (can also be up, down, planned, unknown)
 
 Operator
-: [[users/alice]]
+: [[/users/alice]]
 
 Links
 : (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+
+Backup power
+: (is it plugged into a UPS? how long will it last during an outage?)
 
 # Photos
 
