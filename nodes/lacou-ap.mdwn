@@ -51,7 +51,7 @@ Status
 : [[!taglink down]]
 
 Operator
-: [[users/elecnix]]
+: [[/users/elecnix]]
 
 Links
 : [[lacou]]

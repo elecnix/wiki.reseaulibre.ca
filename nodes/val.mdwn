@@ -45,7 +45,7 @@ Status
 : [[!taglink up]] (can also be up, down, planned, unknown)
 
 Operator
-: [[users/elecnix]]
+: [[/users/elecnix]]
 
 ## Liens possibles
 

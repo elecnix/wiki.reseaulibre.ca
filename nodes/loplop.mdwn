@@ -47,7 +47,7 @@ Status
 : [[!taglink prospect]] (can also be up, down, planned, unknown)
 
 Operator
-: [[users/elecnix]]
+: [[/users/elecnix]] (need to contact owner)
 
 Links
 : 

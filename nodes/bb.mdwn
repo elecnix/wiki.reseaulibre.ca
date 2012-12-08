@@ -44,7 +44,7 @@ Status
 : [[!taglink down]] (antenne installée, branchement prévu bientôt)
 
 Operator
-: [[users/elecnix]]
+: [[/users/elecnix]]
 
 Links
 : (none)

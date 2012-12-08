@@ -42,7 +42,7 @@ Status
 : [[!taglink planned]], [[!taglink needsfunding]]
 
 Operator
-: [[users/elecnix]]
+: [[/users/elecnix]] (well, there is no node...)
 
 Links
 : 

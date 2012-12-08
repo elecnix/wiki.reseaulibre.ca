@@ -16,7 +16,7 @@ Type
  * Links: 
  * Azimuth:
  * Panorama:
- * Operator: [[users/elecnix]] (for now)
+ * Operator: [[/users/elecnix]] (there is no node)
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 

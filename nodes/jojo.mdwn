@@ -48,7 +48,7 @@ Status
 : [[!taglink up]]
 
 Operator
-: [[users/elecnix]]
+: [[/users/elecnix]]
 
 Links
 : 

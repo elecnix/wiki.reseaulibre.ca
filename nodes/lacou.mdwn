@@ -47,7 +47,7 @@ Status
 : [[!taglink up]]
 
 Operator
-: [[users/elecnix]] & [[users/scientist]]
+: [[/users/elecnix]]
 
 Links
 : [[boulette]]
