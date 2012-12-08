@@ -1,0 +1,54 @@
+Planned server at [[/nodes/besik]].
+
+[[!waypoint map=null lat="45.566779" lon="-73.595172" embed hidden width="950px" height="400px" right desc="Server"]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: 
+IP: 
+IPv6: 
+"""]]
+
+hostname
+: coconut
+
+Type
+: [[!taglink server]]
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: Debian
+
+Hardware
+: TBD
+
+Location
+: (where is this node physically installed?)
+
+Status
+: [[!taglink planned]]
+
+Operator
+: [[/users/elecnix]]
+
+Backup power
+: TBD (most likely)
+
+[[!meta copyright="Copyright © 2011-2012 Nicolas Marchildon"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
