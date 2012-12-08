@@ -48,6 +48,9 @@ Operator
 Links
 : [[elecnix]]
 
+Access Point
+: [[/nodes/syrah]]
+
 Short-term backup power
 : none
 
