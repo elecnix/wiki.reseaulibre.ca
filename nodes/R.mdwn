@@ -13,7 +13,7 @@ Operateur: [[users/R]]
 
 En face du Parc des Amériques :
 
-[[!waypoint lat="45.518631" lon="-73.58220" embed hidden width="950px" height="300px" right desc="Bullet M2 + 15dBi"]]
+[[!waypoint lat="45.518630" lon="-73.58223" embed hidden width="950px" height="300px" right desc="Bullet M2 + 15dBi"]]
 
 Bullet M2 + 15dBi
 
@@ -22,7 +22,7 @@ Bullet M2 + 15dBi
 
  * Status: [[!taglink up]] depuis 29/10/12
  * Hostname: r.relais.reseaulibre.ca
- * Location: 45.518631,-73.58220
+ * Location: 45.518630,-73.58223
  * Software: OpenWRT 12.09-beta1
  * IP address: {{$IP}}
  * IPv6 address: {{$IPv6}}
