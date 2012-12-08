@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.545342" lon="-73.61342" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
+[[!waypoint map=null  lat="45.545342" lon="-73.61342" embed hidden width="950px" height="200px" right desc="A node on my roof"]]
 
 Planned AP in window of 3rd floor under [[/nodes/jojo]]
 
