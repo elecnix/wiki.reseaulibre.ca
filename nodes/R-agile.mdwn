@@ -27,6 +27,15 @@ Bullet M2 + 15dBi
  * 802.11: b, g, n
  * Autonomie estimée: (?)
 
+### Antenna
+ * Azimuth: H: 360° / V: 6°
+ * Frequency: 2400 - 2483MHz
+ * Gain: 15 dBi
+ * Polarization: Vertical
+ * SWR : ≤ 1.5:1
+ * Impedance: 50 Ohm
+ * Power: 4W (Max EIRP)?
+
 # NODE - r-agile.acces.reseaulibre.ca
  * Type: [[!taglink accesspoint]]
  * Status: [[!taglink test]]
@@ -42,14 +51,6 @@ Bullet M2 + 15dBi
  * 802.11: b, g
  * Autonomie estimée: (?)
 
-### Antenna
- * Azimuth: H: 360° / V: 6°
- * Frequency: 2400 - 2483MHz
- * Gain: 15 dBi
- * Polarization: Vertical
- * SWR : ≤ 1.5:1
- * Impedance: 50 Ohm
- * Power: 4W (Max EIRP)
 
 ### Links
  * Links: Variable
