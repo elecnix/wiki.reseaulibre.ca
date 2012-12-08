@@ -45,10 +45,10 @@ Status
 : [[!taglink test]]
 
 Operator
-: [[users/elecnix]]
+: [[/users/elecnix]]
 
 Links
-: [[nodes/bibitte]]
+: [[/nodes/bibitte]]
 
 ## Configuration
 
