@@ -6,6 +6,14 @@ Je suis programmeur. J'ai installé une antenne chez moi, avant la naissance du 
  * http://identi.ca/elecnix
  * 514 394-7847
 
-Les noeuds que j'administre:
+Les relais que j'administre:
 
-[[!map pages="link(.) and nodes/*"]]
+[[!map pages="link(.) and nodes/* and tagged(relay)"]]
+
+Les points d'accès:
+
+[[!map pages="link(.) and nodes/* and tagged(accesspoint)"]]
+
+Routeurs de test:
+
+[[!map pages="link(.) and nodes/* and tagged(test)"]]
