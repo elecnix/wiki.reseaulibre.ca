@@ -53,6 +53,9 @@ Operator
 Links
 : 
 
+Access Point
+: [[/nodes/tempranillo]]
+
 ## Liens possibles
 
  * [[nodes/val]] 710 m
