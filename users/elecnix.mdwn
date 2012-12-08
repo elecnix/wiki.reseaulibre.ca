@@ -14,6 +14,10 @@ Les points d'accès:
 
 [[!map pages="link(.) and nodes/* and tagged(accesspoint)"]]
 
+Serveurs:
+
+[[!map pages="link(.) and nodes/* and tagged(server)"]]
+
 Routeurs de test:
 
 [[!map pages="link(.) and nodes/* and tagged(test)"]]
