@@ -14,10 +14,10 @@ Je roule du wifi ouvert chez moi depuis longtemps et me voilà entouré de sembl
 * [[nodes/R-sud]] (accès à installer)
 
 ### Portable:
-* Bullet M2 Ti (15dBi) + P2HP (6dBi) (à configurer pour noeuds d'événement, etc.)
+* [[nodes/R-agile]] (à configurer pour noeuds d'événement, demo, etc.)
 
 ### À déployer:
-* Bullet M2 (15dBi) (à configurer / envoyer dans la famille?)
+* [[nodes/R-pop]] (à configurer / envoyer dans la famille?)
 
 ## Autres infos
 
