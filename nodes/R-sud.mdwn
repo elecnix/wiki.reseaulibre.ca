@@ -1,6 +1,5 @@
-### Vue vers le nord (montréalais)
-
-[[!img /nodes/R/2012-09-11-r-nord.jpg size=950x]]
+### Vue vers le sud (montréalais)
+[[!img /nodes/R/2012-09-11-r-sud.jpg size=950x]]
 
 [[!ymlfront data="""
 MAC: 00:15:6D:70:37:25
@@ -40,10 +39,6 @@ Pour l'instant, un AP 802.11b/g dans ma fenêtre (côté nord du building)
 
 ### Links
 * Links: [[R]], [[R-nord]] (ethernet)
-
-
-### Vue vers le sud (montréalais)
-[[!img /nodes/R/2012-09-11-r-sud.jpg size=950x]]
 
 [[!meta copyright="Copyright © 2012 Alexandre Guédon"]]
 
