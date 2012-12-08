@@ -49,6 +49,9 @@ Operator
 Links
 : (none)
 
+Access Point
+: [[/nodes/muscat]]
+
 ## Panorama
 
 ### Vue vers le sud (montréalais)
