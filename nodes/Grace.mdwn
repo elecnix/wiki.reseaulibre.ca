@@ -45,7 +45,7 @@ Status
 : [[!taglink up]]
 
 Operator
-: [[users/elecnix]]
+: [[/users/elecnix]]
 
 Links
 : [[nodes/boulette]] (490 m, testé à 10mbps)
