@@ -161,6 +161,14 @@ After the next reboot OpenWrt should have been replaced by your newname:
 
     root@newname:~#
 
+## Set a default gateway and dns
+
+If you'll need access to the internet over IPv4 for package installations, you might need to do this with the proper address:
+
+    uci set network.lan.gateway=192.168.1.1
+    uci set network.lan.dns=192.168.1.1
+    uci commit
+
 ## Other configuration
 
 * If you want a web interface, follow [the luci install instructions](http://wiki.openwrt.org/doc/howto/luci.essentials#installation)
