@@ -150,6 +150,17 @@ This is kind of useful, but not mandatory:
 
 Notice how the time is [UTC](https://en.wikipedia.org/wiki/UTC).
 
+## Set a different hostname
+
+If you have multiple AP and don't want to confuse them on the command line, you can set different hostname by doing:
+
+    uci set system.@system[0].hostname=newname
+    uci commit
+
+After the next reboot OpenWrt should have been replaced by your newname:
+
+    root@newname:~#
+
 ## Other configuration
 
 * If you want a web interface, follow [the luci install instructions](http://wiki.openwrt.org/doc/howto/luci.essentials#installation)
