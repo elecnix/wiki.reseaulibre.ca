@@ -31,6 +31,9 @@ Set your PC to get an IP address automatically.
 Get into the router with its default IP address.
 
     telnet 192.168.1.1
+or
+
+    ssh root@192.168.1.1
 
 Activer la radio
 
