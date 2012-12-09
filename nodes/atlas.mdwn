@@ -51,7 +51,7 @@ Links
 
 ## Configuration dump
 
-See [[easternblock]], as both machines are currently configured similarly.
+See [the easternblock config](/nodes/easternblock), as both machines are currently configured similarly.
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
