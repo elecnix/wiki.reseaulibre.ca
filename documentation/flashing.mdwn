@@ -165,6 +165,13 @@ After the next reboot OpenWrt should have been replaced by your newname:
 
 If you'll need access to the internet over IPv4 for package installations, you might need to do this with the proper address:
 
+For temporary usage:
+
+    route add default gw 192.168.1.1
+    echo "nameserver 192.168.1.1" > /var/resolv.conf.auto
+
+to make it permanent:
+
     uci set network.lan.gateway=192.168.1.1
     uci set network.lan.dns=192.168.1.1
     uci commit
