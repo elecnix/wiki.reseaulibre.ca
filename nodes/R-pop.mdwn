@@ -13,7 +13,6 @@ Bullet M2 + 15dBi
 
 # NODE - r-pop.relais.reseaulibre.ca
 
- * Type: [[!taglink relay]]
  * Status: [[!taglink prospect]]
  * Hostname: r-pop.relais.reseaulibre.ca
  * Location: 45.502033,-73.583551
