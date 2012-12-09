@@ -5,7 +5,7 @@
 [[!ymlfront data="""
 MAC: DC:9F:DB:10:D4:61
 IP: 172.16.1.33
-IPv6: Not yet
+IPv6: 2607:f2c0:f00f:e1e3::/64
 """]]
 
 # SETUP
