@@ -1,0 +1,38 @@
+We have created custom firmware images based on OpenWRT attitude adjustment. The aim of this firmware is to simplify the installation of the required configuration to join our network (ex: by installing by default packages such as kmod-ipv6 and babel).
+
+[[!toc levels=3]]
+
+# Download
+
+You may find the latest Réseau libre firmware here:
+http://packages.reseaulibre.ca:8080/Routeurs/reseaulibre-openwrt/
+
+As of this writing, the firmware is built against Attitude Adjustment "beta2".
+
+# Package "base" vs "mesh"
+
+Needs documentation.
+
+# Extra packages
+
+After flashing your device, if you need to install additional packages, you may need to modify your /etc/opkg.conf to use openwrt.org's package repository.
+
+For example, for the ar71xx architecture, use:
+
+    http://downloads.openwrt.org/attitude_adjustment/12.09-beta2/ar71xx/generic/packages/
+
+# Building the firmware
+
+Needs documentation.
+
+# Support & contact
+
+It is in development and currently not the default recommended firmware.
+
+If you want to contribute, please join us in the [[#reseaulibre|http://webchat.freenode.net/?channels=reseaulibre]] Freenode.net IRC channel.
+
+The firmware is managed by Geneviève (tahini).
+
+# Bugs, todo ?
+
+We do not have a bug tracker at the moment.. feel free to add things here, but try to keep it tidy and realistic.
