@@ -11,10 +11,10 @@ As of this writing, the firmware is built against Attitude Adjustment "beta2".
 
 # Package "base" vs "mesh"
 
- * base: relates to the configuration of OpenWRT for reseaulibre specific's needs.
+ * base: relates to the configuration of OpenWRT for reseaulibre specific's needs.  Insures that all prerequisite packages are installed
  * mesh: extra software and scripts specifically for the mesh functionality.
 
-Needs documentation.
+More documentation on the content of these packages [[here|guides/compile/#index2h1]]
 
 # Extra packages
 
@@ -26,7 +26,7 @@ For example, for the ar71xx architecture, use:
 
 # Building the firmware
 
-Needs documentation.
+See [[this guide|guides/compile]] to compile this firmware
 
 # Support & contact
 
