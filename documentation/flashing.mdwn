@@ -27,7 +27,9 @@ site, each device page will list which firmware you should use.
 
 ## Custom firmwares
 
-(!) We are also developing custom firmware, if you feel like lending a hand, see [[firmware]].
+We are also building our own openwrt images, that include all necessary packages to run Reseau Libre, as well as some utilities developed by the Reseau Libre members to help manage the mesh.  Images are available here [[http://packages.reseaulibre.ca:8080/Routeurs/reseaulibre-openwrt/aa_beta/]].  Also read the [[simple and graphical procedure|guides/install+node+facile/]] to install those images.
+
+(!) If you feel like lending a hand with the work on those images, see [[firmware]].
 
 # Flashing methods
 
