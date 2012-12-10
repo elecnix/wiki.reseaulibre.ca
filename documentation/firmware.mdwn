@@ -13,6 +13,7 @@ As of this writing, the firmware is built against Attitude Adjustment "beta2".
 
  * base: relates to the configuration of OpenWRT
  * mesh: extra software and scripts specifically for the mesh functionality
+
 Needs documentation.
 
 # Extra packages
