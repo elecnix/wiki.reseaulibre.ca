@@ -27,7 +27,7 @@ site, each device page will list which firmware you should use.
 
 ## Custom firmwares
 
-(!) We are also developing custom firmware, if you feel like lending a hand, try out [those images](http://packages.reseaulibre.ca:8080/Routeurs/reseaulibre-openwrt/devel/aa_beta/).
+(!) We are also developing custom firmware, if you feel like lending a hand, see [[firmware]].
 
 # Flashing methods
 
