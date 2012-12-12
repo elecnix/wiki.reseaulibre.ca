@@ -5,7 +5,7 @@ Node on the roof of a third floor building. Maintained by http://www.coopsurgene
 # Technical details
 
 [[!ymlfront data="""
-MAC: (mac address here)
+MAC: dc:9f:db:00:13:7c
 IP: 172.16.0.72
 IPv6: 
 """]]
