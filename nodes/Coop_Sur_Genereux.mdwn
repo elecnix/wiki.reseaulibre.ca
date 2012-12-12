@@ -23,7 +23,7 @@ IP address
 : {{$IP}}
 
 Software
-: OpenWrt
+: OpenWrt + babeld
 
 Hardware
 : Bullet M2HP + omni 15dbi
@@ -47,7 +47,7 @@ Operator
 : [[users/Cooper]], [[users/gboudrias]]
 
 Links
-: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+: [[zoidberg]], [[R]]
 
 [[!img 2012-11-07-coop-nuit.jpg size=950x]]
 
