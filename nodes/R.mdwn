@@ -3,7 +3,7 @@
 [[!img 2012-09-11-r-nord.jpg size=950x alt="panorama nord" ]]
 
 [[!ymlfront data="""
-MAC: DC:9F:DB:06:D4:CC
+MAC: DE:9F:DB:06:D4:CC
 IP: 172.16.0.33
 IPv6: 2607:f2c0:f00f:e100::/56
 """]]
