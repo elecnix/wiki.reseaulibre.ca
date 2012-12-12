@@ -26,10 +26,10 @@ Software
 : OpenWrt
 
 Hardware
-: Bullet M2HP
+: Bullet M2HP + omni 15dbi
 
 Power
-: 
+: 30dbm (1W)
 
 Location
 : Roof, on small pole
@@ -41,7 +41,7 @@ Panorama
 : Available
 
 Status
-: [[!taglink planned]] (can also be up, down, planned, unknown)
+: [[!taglink up]]
 
 Operator
 : [[users/Cooper]], [[users/gboudrias]]
