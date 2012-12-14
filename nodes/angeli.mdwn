@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.536" lon="-73.620691" embed hidden width="950px" height="400px" right desc="Node sur le toît"]]
+[[!waypoint lat="45.536" lon="-73.620691" embed hidden width="950px" height="400px" right desc="Node sur le toit"]]
 <!-- (remove map=null to display on the main map) -->
 
 (Description of the node here, with a link to your homepage.)
@@ -30,7 +30,7 @@ IP address
 : {{$IP}}
 
 Software
-: 
+: [[OpenWRT + Babel|http://wiki.reseaulibre.ca/documentation/]]
 
 Hardware
 : Ubnt Bullet M2 + Omni
