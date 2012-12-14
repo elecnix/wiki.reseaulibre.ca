@@ -37,6 +37,10 @@ Location
 Status
 : [[!taglink up]]
 
+Type
+: [[!taglink relay]] (can also be accesspoint, test, server)
+
+
 Links
 : [[nodes/benoitg]] (800 mètres)
 
