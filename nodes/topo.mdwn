@@ -35,7 +35,7 @@ Location
 : Fenêtre
 
 Azimuth
-: 120°, 9 dBi
+: ouest montréalais (120°, 9 dBi)
 
 Panorama
 : available
