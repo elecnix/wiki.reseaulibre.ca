@@ -35,9 +35,6 @@ Power
 Location
 : 45.526887,-73.523383
 
-Type
-: [[!taglink relay]] (can also be accesspoint, test, server)
-
 Status
 : [[!taglink up]]
 
