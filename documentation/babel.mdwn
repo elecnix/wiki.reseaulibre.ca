@@ -386,6 +386,11 @@ Automate the process using a cron
 
 Configure a cron entry such as:
 
+    30 *  *   *   *     cd wiki.reseaulibre.ca && git pull && ssh root@latakia.net4.bidon.ca babelstatus.sh > nodes/bgm-latakia/babelstatus && ssh root@homs.net4.bidon.ca babelstatus.sh > nodes/bgm-homs/babelstatus && git commit -m "commit by cron, route change detected." nodes/bgm-latakia/babelstatus nodes/bgm-homs/babelstatus && git push
+
+You will probably want to replace that by a shell script, but you get the idea.
+
+Note that the cron is run only once per hour to avoid causing a high load on the git server if everyone starts doing the same thing.
 
 References
 ==========
