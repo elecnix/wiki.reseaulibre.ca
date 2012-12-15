@@ -1,6 +1,6 @@
 [[!waypoint lat="45.536" lon="-73.595" embed hidden width="400px" height="400px" right desc="Un noeud sur mon toit"]]
 
-Noeud prevu sur mon toit, 2e etage. 
+Noeud sur mon toit, 2e etage. 
 # Technical details
 
 [[!ymlfront data="""
@@ -9,6 +9,7 @@ IP:
 - 172.16.0.172 
 - 172.16.0.171 
 IPv6: 
+fd64:2c08:9fa7:172::1/64
 """]]
 
 hostname
@@ -24,7 +25,7 @@ IP address
 : {{$IP}}
 
 Software
-: OpenWrt Special reseaulibre remix.
+: OpenWrt Special reseaulibre remix + babeld-1.3.2
 
 Hardware
 : Bullet + Omni
