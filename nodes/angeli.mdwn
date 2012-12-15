@@ -1,5 +1,4 @@
 [[!waypoint lat="45.536" lon="-73.620691" embed hidden width="950px" height="400px" right desc="Node sur le toit"]]
-<!-- (remove map=null to display on the main map) -->
 
 (Description of the node here, with a link to your homepage.)
 
@@ -13,9 +12,6 @@ IPv6:
 
 hostname
 : (node hostname here)
-
-Type
-: [[!taglink relay]] (can also be accesspoint, test, server)
 
 SSID
 : relais.reseaulibre.ca (see [[policy/naming]])
