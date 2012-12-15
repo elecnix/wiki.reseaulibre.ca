@@ -356,32 +356,31 @@ Install babelstatus (and other useful tools):
 
 (if you are using something else than ar71xx (Ubiquity Bullet/Nanostation), those packages contain only shell scripts at the moment.)
 
-Allow root login using an ssh public key:
-
-* Clone the git repository of the wiki (may take some time) on a system that has git and can have ssh access to the nodes:
+Clone the git repository of the wiki (may take some time) on a system that has git and can have ssh access to the nodes:
 
     git clone git://wiki.reseaulibre.ca/
 
-* Create (if necessary) a public key with no passphrase on the system that has a copy of the git repository:
+Create (if necessary) a public key with no passphrase on the system that has a copy of the git repository:
 
     ssh-keygen
 
-* Copy the public key onto the node(s) that you want to monitor (assuming you do not already have keys in the file, otherwise add the key manually to the authorized_keys file, one key per line):
+Copy the public key onto the node(s) that you want to monitor (assuming you do not already have keys in the file, otherwise add the key manually to the authorized_keys file, one key per line):
 
     scp ~/.ssh/id_rsa.pub root@node.example.org:/etc/dropbear/authorized_keys
 
-* Create a page for your node. You probably want to do this using the wiki on the web, using the template on [[nodes]].
+Create a page for your node. You probably want to do this using the wiki on the web, using the template on [[nodes]].
 
-* Test babelstatus and commit to git for the first time:
+Test babelstatus and commit to git for the first time:
 
     cd wiki.reseaulibre.ca
+    git pull
     mkdir nodes/YOUR-NODE
     ssh root@node.example.org babelstatus.sh > nodes/YOUR-NODE/babelstatus
     git add nodes/YOUR-NODE/babelstatus
     git commit -m "initial commit"
     git push
 
-* Automate the process using a cron
+Automate the process using a cron
 
     crontab -e
 
