@@ -1,10 +1,10 @@
 My MAC ID:  de:9f:db:ff:fe:00:13:79
 *** Neighbours ***
-fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0 reach d941 rxcost 367 txcost 356 cost 510
+fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0 reach ffff rxcost 256 txcost 294 cost 294
 fe80::215:6dff:fe73:942f bgm-homs-eth1 if eth0 reach ffff rxcost 96 txcost 96 cost 96
-fe80::215:6dff:fe72:942f bgm-homs-wlan0 if wlan0 reach ffff rxcost 256 txcost 274 cost 274
+fe80::215:6dff:fe72:942f bgm-homs-wlan0 if wlan0 reach ffff rxcost 256 txcost 549 cost 549
 *** Routes ***
 fe80::de9f:dbff:fe00:11d9 deuxpi-bullet -> 
-    2001:470:b2a7::/48-761830 prefix 2001:470:b2a7::/48 installed yes id de:9f:db:ff:fe:00:11:d9 metric 510 refmetric 0 via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:470:b2a7:2::/64-761830 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18 metric 766 refmetric 256 via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128-761830 prefix 2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128 installed yes id 02:27:22:ff:fe:72:cf:9f metric 1003 refmetric 493 via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:470:b2a7::/48-761830 prefix 2001:470:b2a7::/48 installed yes id de:9f:db:ff:fe:00:11:d9 metric 294 refmetric 0 via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:470:b2a7:2::/64-761830 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18 metric 550 refmetric 256 via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128-761830 prefix 2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128 installed yes id 02:27:22:ff:fe:72:cf:9f metric 856 refmetric 562 via fe80::de9f:dbff:fe00:11d9 if wlan0
