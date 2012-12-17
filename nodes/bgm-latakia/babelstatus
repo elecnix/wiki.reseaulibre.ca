@@ -1,12 +1,9 @@
 My MAC ID:  de:9f:db:ff:fe:00:13:79
 *** Neighbours ***
-fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0 reach cceb rxcost 425 txcost 549 cost 911
+fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0 reach eabe rxcost 306 txcost 280 cost 335
 fe80::215:6dff:fe73:942f bgm-homs-eth1 if eth0 reach ffff rxcost 96 txcost 96 cost 96
-fe80::215:6dff:fe72:942f bgm-homs-wlan0 if wlan0 reach d7ee rxcost 372 txcost 303 cost 440
+fe80::215:6dff:fe72:942f bgm-homs-wlan0 if wlan0 reach dff3 rxcost 341 txcost 256 cost 341
 *** Routes ***
 fe80::de9f:dbff:fe00:11d9 deuxpi-bullet -> 
-    ::/0-761830 prefix ::/0 installed yes id 02:27:22:ff:fe:72:cf:9f metric 1384 refmetric 473 via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:470:b2a7::/48-761830 prefix 2001:470:b2a7::/48 installed yes id de:9f:db:ff:fe:00:11:d9 metric 911 refmetric 0 via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:470:b2a7:2::/64-761830 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18 metric 1167 refmetric 256 via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f2c0:f00e:4d00::/64-761830 prefix 2607:f2c0:f00e:4d00::/64 installed yes id 02:27:22:ff:fe:72:cf:9f metric 1384 refmetric 473 via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128-761830 prefix 2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128 installed yes id 02:27:22:ff:fe:72:cf:9f metric 1256 refmetric 345 via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:470:b2a7::/48-761830 prefix 2001:470:b2a7::/48 installed yes id de:9f:db:ff:fe:00:11:d9 metric 335 refmetric 0 via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:470:b2a7:2::/64-761830 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18 metric 591 refmetric 256 via fe80::de9f:dbff:fe00:11d9 if wlan0
