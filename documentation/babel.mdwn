@@ -256,7 +256,7 @@ and the `babeld.conf.sample` file in anarcat's repository:
 
     git://src.anarcat.ath.cx/babeld
 
-See also [OpenWRT's sample config](https://dev.openwrt.org/browser/packages/net/babel/files/babeld.conf).
+See also [OpenWRT's sample config](https://dev.openwrt.org/browser/packages/net/babel/files/babeld.config).
 
 
 Advantages of Babel over BATMAN
