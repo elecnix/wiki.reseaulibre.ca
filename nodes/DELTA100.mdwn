@@ -1,4 +1,4 @@
-[[!waypoint lat="45.541706" lon="-73.603992" embed hidden width="400px" height="400px" right desc="Futur Bullet+15dbi sur toit - maison 2 étages -"]]
+[[!waypoint lat="45.541706" lon="-73.603992" embed hidden width="400px" height="400px" right desc="Bullet+15dbi+mât 11' sur toit maison 2 étages -"]]
 
 
 - Point de relai up 17 septembre 2012 - 
