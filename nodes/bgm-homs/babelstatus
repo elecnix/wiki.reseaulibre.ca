@@ -1,11 +1,11 @@
 My MAC ID:  02:15:6d:ff:fe:73:94:2f
 *** Neighbours ***
 fe80::f6ec:38ff:feb5:db29 bgm-alep-eth0 if eth1 reach ffff rxcost 96 txcost 96 cost 96
-fe80::de9f:dbff:fe00:1379 bgm-latakia-wlan0 if wlan0 reach febf rxcost 258 txcost 410 cost 413
+fe80::de9f:dbff:fe00:1379 bgm-latakia-wlan0 if wlan0 reach bdad rxcost 349 txcost 341 cost 465
 fe80::de9f:dbff:fe01:1379 bgm-latakia-eth0 if eth0 reach ffff rxcost 96 txcost 96 cost 96
 *** Routes ***
 fe80::f6ec:38ff:feb5:db29 bgm-alep-eth0 -> 
     2607:f2c0:f00f:2900::/56-b4f928 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab metric 192 refmetric 96 via fe80::f6ec:38ff:feb5:db29 if eth1
 fe80::de9f:dbff:fe01:1379 bgm-latakia-eth0 -> 
-    2001:470:b2a7::/48-b4da50 prefix 2001:470:b2a7::/48 installed yes id de:9f:db:ff:fe:00:11:d9 metric 666 refmetric 570 via fe80::de9f:dbff:fe01:1379 if eth0
-    2001:470:b2a7:2::/64-b4da50 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18 metric 922 refmetric 826 via fe80::de9f:dbff:fe01:1379 if eth0
+    2001:470:b2a7::/48-b4da50 prefix 2001:470:b2a7::/48 installed yes id de:9f:db:ff:fe:00:11:d9 metric 1416 refmetric 1320 via fe80::de9f:dbff:fe01:1379 if eth0
+    2001:470:b2a7:2::/64-b4da50 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18 metric 1672 refmetric 1576 via fe80::de9f:dbff:fe01:1379 if eth0
