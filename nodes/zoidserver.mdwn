@@ -5,7 +5,7 @@ Serveur de gboudrias, accessible par [[nodes/zoidberg]]
 # Technical details
 
 [[!ymlfront data="""
-MAC: (mac address here)
+MAC: 00:e0:4c:20:57:ca
 IP: 172.16.3.15
 IPv6: fd64:2c08:9fa7:15::100
 """]]
