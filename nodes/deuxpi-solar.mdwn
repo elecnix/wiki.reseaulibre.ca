@@ -1,0 +1,70 @@
+[[!waypoint map=null  lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
+<!-- (remove map=null to display on the main map) -->
+
+(Description of the node here, with a link to your homepage.)
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: DC:9F:DB:00:12:68
+IP: 172.16.1.59
+IPv6: 2001:470:b2a7:3::1
+"""]]
+
+hostname
+: deuxpi-solar
+
+Type
+: [[!taglink relay]]
+
+SSID
+: relais.reseaulibre.ca
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: OpenWrt trunk
+
+Hardware
+: Bullet M2
+
+Power
+: 
+
+Location
+: Station portable
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink prospect]]
+
+Operator
+: [[/users/deuxpi]]
+
+Links
+:
+
+Backup power
+: 3 batteries 2.2 Ah
+
+[[!meta copyright="Copyright © 2012 Philippe Gauthier"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
