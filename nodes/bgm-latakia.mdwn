@@ -24,6 +24,7 @@ IPv6: 2607:f2c0:f00f:29a1::1
  * Status: [[!taglink up]]
  * Operator: [[users/bgm]]
  * Links: [[deuxpi]] (10mbps), [[bgm-homs]] (ethernet), [[bgm-alep]] (ethernet)
+ * Routes babel: [[bgm-latakia/babelstatus]]
 
 # Photo
 
