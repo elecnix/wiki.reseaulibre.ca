@@ -1,19 +1,48 @@
-My MAC ID:  02:15:6d:ff:fe:73:94:2f
-*** Neighbours ***
-fe80::f6ec:38ff:feb5:db29 bgm-alep-eth0 if eth1    
-fe80::de9f:dbff:fe00:1379 bgm-latakia-wlan0 if wlan0    
-fe80::de9f:dbff:fe01:1379 bgm-latakia-eth0 if eth0    
-*** Routes ***
-fe80::f6ec:38ff:feb5:db29 bgm-alep-eth0 -> 
-    2607:f2c0:f00f:2900::/56-84d620 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::f6ec:38ff:feb5:db29 if eth1
-fe80::de9f:dbff:fe01:1379 bgm-latakia-eth0 -> 
-    2001:470:b2a7:2::/64-84ba50 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18   via fe80::de9f:dbff:fe01:1379 if eth0
-fe80::de9f:dbff:fe00:1379 bgm-latakia-wlan0 -> 
-    ::/0-84be90 prefix ::/0 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:1379 if wlan0
-    2607:f2c0:f00e:4d00::/64-84be90 prefix 2607:f2c0:f00e:4d00::/64 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:1379 if wlan0
-    2607:f2c0:f00e:4d00::1/128-84be90 prefix 2607:f2c0:f00e:4d00::1/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:1379 if wlan0
-    2607:f2c0:f00e:4d00:21f:d0ff:fe5b:b90f/128-84be90 prefix 2607:f2c0:f00e:4d00:21f:d0ff:fe5b:b90f/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:1379 if wlan0
-    2607:f8b0:4009:802::100e/128-84be90 prefix 2607:f8b0:4009:802::100e/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:1379 if wlan0
-    2607:f8b0:4009:802::1016/128-84be90 prefix 2607:f8b0:4009:802::1016/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:1379 if wlan0
-    2a03:2880:2110:3f01:face:b00c:0:4/128-84be90 prefix 2a03:2880:2110:3f01:face:b00c:0:4/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:1379 if wlan0
-    2a03:2880:2110:9f01:face:b00c:0:4/128-84be90 prefix 2a03:2880:2110:9f01:face:b00c:0:4/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:1379 if wlan0
+*** IPv6 routing table (ip -6 route) ***
+2607:f2c0:f00f:29a1::/64 dev eth0   
+2607:f2c0:f00f:29a5::/64 dev eth1  proto kernel    expires 86136sec
+fe80::/64 dev eth0  proto kernel   
+fe80::/64 dev eth1  proto kernel   
+fe80::/64 dev wlan0  proto kernel   
+default via fe80::f6ec:38ff:feb5:db29 dev eth1  proto kernel    expires 1536sec
+*** IPv4 routing table (ip -4 route)***
+default via 192.168.55.1 dev eth1  proto static 
+192.168.55.0/24 dev eth1  proto kernel  scope link  src 192.168.55.6 
+*** ifconfig -a ***
+eth0      Link encap:Ethernet  HWaddr 00:15:6D:73:94:2F  
+          inet6 addr: fe80::215:6dff:fe73:942f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:240508 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:144099 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:33537330 (31.9 MiB)  TX bytes:51023712 (48.6 MiB)
+          Interrupt:4 
+
+eth1      Link encap:Ethernet  HWaddr 02:15:6D:73:94:2F  
+          inet addr:192.168.55.6  Bcast:192.168.55.255  Mask:255.255.255.0
+          inet6 addr: 2607:f2c0:f00f:29a5:15:6dff:fe73:942f/64 Scope:Global
+          inet6 addr: fe80::15:6dff:fe73:942f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2284917 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2352007 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:491918811 (469.1 MiB)  TX bytes:508815588 (485.2 MiB)
+          Interrupt:5 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:700 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:700 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:117837 (115.0 KiB)  TX bytes:117837 (115.0 KiB)
+
+wlan0     Link encap:Ethernet  HWaddr 00:15:6D:72:94:2F  
+          inet6 addr: fe80::215:6dff:fe72:942f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:137632 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3035 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:32 
+          RX bytes:23496286 (22.4 MiB)  TX bytes:644730 (629.6 KiB)
+
