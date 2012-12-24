@@ -4,6 +4,3 @@ fe80::21b:21ff:fe40:3aab [unknown] if eth1
 *** Routes ***
 fe80::21b:21ff:fe40:3aab [unknown] -> 
     2607:f2c0:f00f:2900::/56-be4460 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::21b:21ff:fe40:3aab if eth1
-*** IPv6 routing table (ip -6 route) ***
-*** IPv4 routing table (ip -4 route)***
-*** ifconfig -a ***
