@@ -47,7 +47,11 @@ Operator
 : [[users/bgm]]
 
 Links
-: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+: [[bgm-homs]] [[bgm-damas]]
+
+
+ * Routes babel: [[bgm-homs/babelstatus]]
+
 
 # Commandes UCI
 
