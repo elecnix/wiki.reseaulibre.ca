@@ -22,6 +22,7 @@ IPv6: 2607:f2c0:f00f:29a5:15:6dff:fe73:942f
  * Status: [[!taglink up]]
  * Operator: [[users/bgm]]
  * Links: [[hexa]] (3.5 mbps), [[bgm-alep]] (ethernet), [[bgm-homs]] (ethernet)
+ * Routes babel: [[bgm-homs/babelstatus]]
 
 = Services =
 
