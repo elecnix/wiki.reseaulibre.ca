@@ -26,6 +26,10 @@ IPv6: 2607:f2c0:f00f:29a1::1
  * Links: [[deuxpi]] (10mbps), [[bgm-homs]] (ethernet), [[bgm-alep]] (ethernet)
  * Routes babel: [[bgm-latakia/babelstatus]]
 
+= Stats =
+
+<a href="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/homs.net4.bidon.ca/adhoc_rssi-week.png" /></a>
+
 # Photo
 
 [[!img img/557254_529308290429346_1820250233_n.jpg alt="Bullet M2"]]
