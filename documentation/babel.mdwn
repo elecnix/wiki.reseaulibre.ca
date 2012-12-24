@@ -380,17 +380,27 @@ Test babelstatus and commit to git for the first time:
     git commit -m "initial commit"
     git push
 
-Automate the process using a cron
+Automate the process using [babelwatch.sh](http://redmine.bidon.ca/projects/reseaulibre-scripts/repository/revisions/master/entry/babelwatch.sh) :
 
-    crontab -e
+    mkdir ~/bin
+    cd ~/bin
+    wget http://redmine.bidon.ca/projects/reseaulibre-scripts/repository/revisions/master/raw/babelwatch.sh
+    chmod 0755 babelwatch.sh
+
+Create a config file in ~/.babelwatch. For example:
+
+    # where the wiki git repo is located
+    wiki /home/myuser/wiki.reseaulibre.ca
+
+    # [node name in wiki] [IP or hostname] [login]
+    node-a node-a.relais.example.net root
+    node-b node-b.relais.example.net root
 
 Configure a cron entry such as:
 
-    30 *  *   *   *     cd wiki.reseaulibre.ca && git pull && ssh root@latakia.net4.bidon.ca babelstatus.sh > nodes/bgm-latakia/babelstatus && ssh root@homs.net4.bidon.ca babelstatus.sh > nodes/bgm-homs/babelstatus && git commit -m "commit by cron, route change detected." nodes/bgm-latakia/babelstatus nodes/bgm-homs/babelstatus && git push
+    30 */2  *   *   *     babelwatch.sh
 
-You will probably want to replace that by a shell script, but you get the idea.
-
-Note that the cron is run only once per hour to avoid causing a high load on the git server if everyone starts doing the same thing.
+Note that the cron is run every two hours to avoid causing a high load on the git server if everyone starts doing the same thing. Choose a random minute (30), to avoid doing your commit at the same time as another node.
 
 References
 ==========
