@@ -1,24 +1,64 @@
 My MAC ID:  de:9f:db:ff:fe:00:13:79
 *** Neighbours ***
-fe80::215:6dff:fe72:942f bgm-homs-wlan0 if wlan0    
-fe80::215:6dff:fe73:942f bgm-homs-eth1 if eth0    
 fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0    
 *** Routes ***
-fe80::215:6dff:fe73:942f bgm-homs-eth1 -> 
-    2607:f2c0:f00f:2900::/56-bcb910 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::215:6dff:fe73:942f if eth0
 fe80::de9f:dbff:fe00:11d9 deuxpi-bullet -> 
     ::/0-bcb8a0 prefix ::/0 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:418:8001:3::a88f:f2e8/128-bcb8a0 prefix 2001:418:8001:3::a88f:f2e8/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:418:8001:3::a88f:f2f0/128-bcb8a0 prefix 2001:418:8001:3::a88f:f2f0/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:450:2002:31d::40d3:90aa/128-bcb8a0 prefix 2001:450:2002:31d::40d3:90aa/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2001:470:b2a7:2::/64-bcb8a0 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:590:1:204::451f:1d27/128-bcb8a0 prefix 2001:590:1:204::451f:1d27/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:590:1:204::451f:1de7/128-bcb8a0 prefix 2001:590:1:204::451f:1de7/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2600:1404:a::1743:fc12/128-bcb8a0 prefix 2600:1404:a::1743:fc12/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:4860:4008:802::1016/128-bcb8a0 prefix 2001:4860:4008:802::1016/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2607:f2c0:f00e:4d00::/64-bcb8a0 prefix 2607:f2c0:f00e:4d00::/64 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2607:f2c0:f00e:4d00::1/128-bcb8a0 prefix 2607:f2c0:f00e:4d00::1/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2607:f2c0:f00e:4d00:21f:d0ff:fe5b:b90f/128-bcb8a0 prefix 2607:f2c0:f00e:4d00:21f:d0ff:fe5b:b90f/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f8b0:4009:802::100e/128-bcb8a0 prefix 2607:f8b0:4009:802::100e/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2607:f8b0:4009:800::1009/128-bcb8a0 prefix 2607:f8b0:4009:800::1009/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2607:f8b0:4009:802::1001/128-bcb8a0 prefix 2607:f8b0:4009:802::1001/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2607:f8b0:4009:802::100f/128-bcb8a0 prefix 2607:f8b0:4009:802::100f/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2607:f8b0:4009:802::1016/128-bcb8a0 prefix 2607:f8b0:4009:802::1016/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2a03:2880:10:6f01:face:b00c:0:2/128-bcb8a0 prefix 2a03:2880:10:6f01:face:b00c:0:2/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2a03:2880:2110:3f01:face:b00c:0:4/128-bcb8a0 prefix 2a03:2880:2110:3f01:face:b00c:0:4/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2a03:2880:2110:9f01:face:b00c:0:4/128-bcb8a0 prefix 2a03:2880:2110:9f01:face:b00c:0:4/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2a03:2880:2030:2f01:face:b00c:0:4/128-bcb8a0 prefix 2a03:2880:2030:2f01:face:b00c:0:4/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2a03:2880:2050:1f01:face:b00c:0:4/128-bcb8a0 prefix 2a03:2880:2050:1f01:face:b00c:0:4/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+*** IPv6 routing table (ip -6 route) ***
+unreachable 2001:450:2002:31d::40d3:90aa dev lo  proto 42  metric -1  error -128
+2001:470:b2a7:2::/64 via fe80::de9f:dbff:fe00:11d9 dev wlan0  proto 42   
+unreachable 2001:4860:4008:802::1016 dev lo  proto 42  metric -1  error -128
+2607:f2c0:f00e:4d00::1 via fe80::de9f:dbff:fe00:11d9 dev wlan0  proto 42   
+2607:f2c0:f00e:4d00:21f:d0ff:fe5b:b90f via fe80::de9f:dbff:fe00:11d9 dev wlan0  proto 42   
+2607:f2c0:f00e:4d00::/64 via fe80::de9f:dbff:fe00:11d9 dev wlan0  proto 42   
+2607:f2c0:f00f:29a1::1 dev eth0  proto kernel   
+unreachable 2607:f8b0:4009:800::1009 dev lo  proto 42  metric -1  error -128
+unreachable 2607:f8b0:4009:802::1001 dev lo  proto 42  metric -1  error -128
+unreachable 2607:f8b0:4009:802::100f dev lo  proto 42  metric -1  error -128
+unreachable 2607:f8b0:4009:802::1016 dev lo  proto 42  metric -1  error -128
+2a03:2880:2030:2f01:face:b00c:0:4 via fe80::de9f:dbff:fe00:11d9 dev wlan0  proto 42   
+2a03:2880:2050:1f01:face:b00c:0:4 via fe80::de9f:dbff:fe00:11d9 dev wlan0  proto 42   
+fe80::/64 dev eth0  proto kernel   
+fe80::/64 dev wlan0  proto kernel   
+default via fe80::215:6dff:fe73:942f dev eth0  proto static   
+*** IPv4 routing table (ip -4 route)***
+*** ifconfig -a ***
+eth0      Link encap:Ethernet  HWaddr DC:9F:DB:01:13:79  
+          inet6 addr: 2607:f2c0:f00f:29a1::1/128 Scope:Global
+          inet6 addr: fe80::de9f:dbff:fe01:1379/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:144135 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:240549 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:51031604 (48.6 MiB)  TX bytes:33548426 (31.9 MiB)
+          Interrupt:4 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:67415 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:67415 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:4625370 (4.4 MiB)  TX bytes:4625370 (4.4 MiB)
+
+wlan0     Link encap:Ethernet  HWaddr DC:9F:DB:00:13:79  
+          inet6 addr: fe80::de9f:dbff:fe00:1379/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:134786 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:160475 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:32 
+          RX bytes:26003758 (24.7 MiB)  TX bytes:29578010 (28.2 MiB)
+
