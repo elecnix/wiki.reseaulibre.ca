@@ -10,6 +10,7 @@ Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/muni
 <a href="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi-week.png" /></a>
 
 [[nodes/bgm-homs]]
+-----------------
 
 <a href="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/homs.net4.bidon.ca/adhoc_rssi-week.png" /></a>
 
