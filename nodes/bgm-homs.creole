@@ -28,6 +28,10 @@ IPv6: 2607:f2c0:f00f:29a5:15:6dff:fe73:942f
 
  * Point d'accès "Librenet-m2" qui permet de se connecter à http://partage.bidon.ca en IPv6.
 
+= État =
+
+<a href="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/homs.net4.bidon.ca/adhoc_rssi-week.png" /></a>
+
 = Photos =
 
 Attention, les photos font plus de 4 Mo chaque (et c'est hébergé chez moi).
