@@ -6,17 +6,19 @@ fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0
 *** Routes ***
 fe80::de9f:dbff:fe00:11d9 deuxpi-bullet -> 
     ::/0-bcb8a0 prefix ::/0 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:470:b2a7::53/128-bcb8a0 prefix 2001:470:b2a7::53/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2001:470:b2a7:2::/64-bcb8a0 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2001:470:b2a7:3::1/128-bcb8a0 prefix 2001:470:b2a7:3::1/128 installed yes id de:9f:db:ff:fe:00:12:68   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2600:1408:7:1:8d00::eed/128-bcb8a0 prefix 2600:1408:7:1:8d00::eed/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:4860:4008:802::1000/128-bcb8a0 prefix 2001:4860:4008:802::1000/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:4860:4008:802::1012/128-bcb8a0 prefix 2001:4860:4008:802::1012/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:4860:4008:802::1013/128-bcb8a0 prefix 2001:4860:4008:802::1013/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2605:da00:5222:5269::2:1/128-bcb8a0 prefix 2605:da00:5222:5269::2:1/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2607:f2c0:f00e:4d00::/64-bcb8a0 prefix 2607:f2c0:f00e:4d00::/64 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2607:f2c0:f00e:4d00::1/128-bcb8a0 prefix 2607:f2c0:f00e:4d00::1/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2607:f2c0:f00e:4d00:21f:d0ff:fe5b:b90f/128-bcb8a0 prefix 2607:f2c0:f00e:4d00:21f:d0ff:fe5b:b90f/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
     2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128-bcb8a0 prefix 2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f2c0:f00e:4d00:5c5a:d47b:2e6:9526/128-bcb8a0 prefix 2607:f2c0:f00e:4d00:5c5a:d47b:2e6:9526/128 installed yes id 02:27:22:ff:fe:72:cf:9f   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f8b0:4009:802::1000/128-bcb8a0 prefix 2607:f8b0:4009:802::1000/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f8b0:4009:802::1005/128-bcb8a0 prefix 2607:f8b0:4009:802::1005/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f8b0:4009:802::1008/128-bcb8a0 prefix 2607:f8b0:4009:802::1008/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f8b0:4009:802::100f/128-bcb8a0 prefix 2607:f8b0:4009:802::100f/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f8b0:4009:802::1015/128-bcb8a0 prefix 2607:f8b0:4009:802::1015/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2a03:2880:2050:1f01:face:b00c:0:4/128-bcb8a0 prefix 2a03:2880:2050:1f01:face:b00c:0:4/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2607:f2c0:f00e:4d00:55a2:2844:894b:e849/128-bcb8a0 prefix 2607:f2c0:f00e:4d00:55a2:2844:894b:e849/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2607:f2c0:f00e:4d00:580c:e17c:d0ff:575c/128-bcb8a0 prefix 2607:f2c0:f00e:4d00:580c:e17c:d0ff:575c/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2607:f8b0:4001:c02::6d/128-bcb8a0 prefix 2607:f8b0:4001:c02::6d/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2607:f8b0:400d:c00::7d/128-bcb8a0 prefix 2607:f8b0:400d:c00::7d/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2607:f8b0:400d:c01::54/128-bcb8a0 prefix 2607:f8b0:400d:c01::54/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::de9f:dbff:fe00:11d9 if wlan0
