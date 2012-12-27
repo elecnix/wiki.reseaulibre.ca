@@ -21,13 +21,13 @@ IP address
 : {{$IP}}
 
 Software
-: OpenWRT trunk
+: Image réseau libre aa_beta, roule babel
 
 Hardware
 : Bullet M2 Ubiquiti avec antenne 15 dBi omnidirectionnelle 
 
 Power
-: 15dBm/28mW (default)
+: 20dBm/100mW
 
 Location
 : Quelques pieds dans les airs attachée sur la cheminée du toit d'un duplex
