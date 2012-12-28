@@ -6,21 +6,4 @@ fe80::15:6dff:fe73:942f [unknown] ->
     2001:470:b2a7::53/128-be4498 prefix 2001:470:b2a7::53/128 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::15:6dff:fe73:942f if eth0
     2001:470:b2a7:1::/64-be4498 prefix 2001:470:b2a7:1::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::15:6dff:fe73:942f if eth0
     2001:470:b2a7:2::/64-be4498 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18   via fe80::15:6dff:fe73:942f if eth0
-    2001:470:b2a7:2::1/128-be4498 prefix 2001:470:b2a7:2::1/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2001:470:b2a7:2::1:0/128-be4498 prefix 2001:470:b2a7:2::1:0/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
     2001:470:b2a7:3::1/128-be4498 prefix 2001:470:b2a7:3::1/128 installed yes id de:9f:db:ff:fe:00:12:68   via fe80::15:6dff:fe73:942f if eth0
-    2001:4860:4008:802::100e/128-be4498 prefix 2001:4860:4008:802::100e/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2001:4860:4008:802::1011/128-be4498 prefix 2001:4860:4008:802::1011/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2001:4860:4008:802::1015/128-be4498 prefix 2001:4860:4008:802::1015/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2605:da00:5222:5269::2:1/128-be4498 prefix 2605:da00:5222:5269::2:1/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00::/64-be4498 prefix 2607:f2c0:f00e:4d00::/64 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00::1/128-be4498 prefix 2607:f2c0:f00e:4d00::1/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128-be4498 prefix 2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00:8d36:b0c8:b602:4954/128-be4498 prefix 2607:f2c0:f00e:4d00:8d36:b0c8:b602:4954/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00:ad3b:237a:4a3c:b528/128-be4498 prefix 2607:f2c0:f00e:4d00:ad3b:237a:4a3c:b528/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f8b0:400b:800::1010/128-be4498 prefix 2607:f8b0:400b:800::1010/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f8b0:400b:801::100e/128-be4498 prefix 2607:f8b0:400b:801::100e/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f8b0:400c:c01::6a/128-be4498 prefix 2607:f8b0:400c:c01::6a/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f8b0:400d:c00::7d/128-be4498 prefix 2607:f8b0:400d:c00::7d/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f8b0:400d:c01::88/128-be4498 prefix 2607:f8b0:400d:c01::88/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f8b0:400d:c01::bd/128-be4498 prefix 2607:f8b0:400d:c01::bd/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
