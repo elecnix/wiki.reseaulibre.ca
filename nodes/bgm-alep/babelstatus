@@ -6,3 +6,4 @@ fe80::15:6dff:fe73:942f [unknown] ->
     2001:470:b2a7::53/128-be4498 prefix 2001:470:b2a7::53/128 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::15:6dff:fe73:942f if eth0
     2001:470:b2a7:1::/64-be4498 prefix 2001:470:b2a7:1::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::15:6dff:fe73:942f if eth0
     2001:470:b2a7:2::/64-be4498 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18   via fe80::15:6dff:fe73:942f if eth0
+    2001:470:b2a7:3::1/128-be4498 prefix 2001:470:b2a7:3::1/128 installed yes id de:9f:db:ff:fe:00:12:68   via fe80::15:6dff:fe73:942f if eth0
