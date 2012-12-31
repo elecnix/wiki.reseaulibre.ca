@@ -1,6 +1,6 @@
 L'idée du mesh vous plaît et vous voulez vous joindre au groupe?  Voici les étapes à suivre pour ajouter un noeud au réseau.
 
-À tout moment, de l'aide est disponible sur la mailing list ou le canal irc.  Voir la page [[participer]] pour contacter les autres membres du réseau.
+À tout moment, de l'aide est disponible sur la mailing list ou le canal IRC.  Voir la page [[participer]] pour contacter les autres membres du réseau.
 
 Déterminer quoi offrir
 ======================
@@ -10,7 +10,7 @@ Voir la description de la [[topologie du réseau|policy/topology]] pour les dét
 Relais
 ------
 
-Un relais est un appareil configuré pour se connecter sur le mesh avec B.A.T.M.A.N., le protocole de mesh utilisé.  L'appareil, une fois bien configuré, devrait se connecter automatiquement aux autres relais disponibles aux alentours.  Même si aucun noeud n'est disponible, vous pouvez laisser votre relais en place.  Un jour, quelqu'un s'y connectera!
+Un relais est un appareil configuré pour se connecter sur le mesh avec Babel, le protocole de mesh utilisé.  L'appareil, une fois bien configuré, devrait se connecter automatiquement aux autres relais disponibles aux alentours.  Même si aucun noeud n'est disponible, vous pouvez laisser votre relais en place.  Un jour, quelqu'un s'y connectera!
 
 L'appareil qui servira de relais devrait idéalement être dédié au mesh et ne pas servir de point d'accès, à moins d'avoir 2 radios, afin de ne pas ralentir le mesh.
 
