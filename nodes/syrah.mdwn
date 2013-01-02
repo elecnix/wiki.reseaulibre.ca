@@ -6,8 +6,8 @@ Access point under [[/nodes/besik]].
 
 [[!ymlfront data="""
 MAC: 
-IP: 
-IPv6: 
+IP: 172.16.1.60
+IPv6: fd64:2c08:9fa7:61::1/128
 """]]
 
 hostname
@@ -32,10 +32,10 @@ Software
 : OpenWrt
 
 Hardware
-: TBD
+: [[TP-Link TL-WR1043ND|http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd]]
 
 Power
-: 
+: N/A
 
 Location
 : TBD
