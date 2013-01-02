@@ -1,30 +1,69 @@
-[[!waypoint lat="45.565838" lon="-73.594550" embed width="400px" height="400px" right desc="A node in my window"]]
+[[!waypoint lat="45.565838" lon="-73.594550" embed width="950px" height="200px" right desc="A node in my window"]]
 
-Un noeud à l'extérieur de ma fenêtre, actuellement à puissance minimale vers le nord géographique.
+Un relais à l'extérieur de ma fenêtre, vers le nord géographique. Une migration vers OpenWrt et ad-hoc+Babel est prévue au début 2013.
 
- * hostname: UBNT-elecnix
- * MAC address: 00:15:6D:3C:01:B9
- * IP address: 192.168.3.20
- * IPv6 address: N/A
- * Software: AirOS
- * Hardware: Ubiquity NanoStation M5 (XM.v5.2)
- * Setup: WDS Access Point with WPA2-AES PSK
- * Power: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
- * Location: 45.56569,-73.6031785
- * Azimuth: North-East
- * Panorama: N/A
- * Status: [[!taglink up]]
- * Operator: [[/users/elecnix]]
- * Links: [[besik]] ([[links/elecnix-besik/]])
- * Short-term backup power: 30 minutes (UPS)
- * Emergency power: car battery (charged)
+# Technical details
+
+[[!ymlfront data="""
+MAC: 00:15:6D:3C:01:B9
+IP: 172.16.1.60
+IPv6: fd64:2c08:9fa7:61::1/128
+"""]]
+
+hostname
+: UBNT-elecnix
+
+Type
+: [[!taglink relay]]
+
+SSID
+: elecnix.relais.reseaulibre.ca
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: AirOS
+
+Hardware
+: [[Ubiquity NanoStation M5 (XM.v5.2)|http://wiki.openwrt.org/toh/ubiquiti/nanostationm5]]
+
+Power
+: 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
+
+Location
+: Window
+
+Azimuth
+: North
+
+Panorama
+: N/A
+
+Status
+: [[!taglink up]], but with WDS Access Point, WPA2-AES PSK, and no Babel yet
+
+Operator
+: [[/users/elecnix]]
+
+Links
+: [[/nodes/besik]] ([[links/elecnix-besik/]])
+
+Backup power
+: Short-term: 30 minutes (UPS), Emergency: car battery. I plan to increase capacity to 2 full days.
 
 Pour me contacter, utiliser le courriel marchildon.net retourné par: 
 
     gpg --recv-keys 5E8410890036BB636997232C8FFB777D39D4B2D4
     gpg --list-keys 39D4B2D4
 
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+[[!meta copyright="Copyright © 2012-2013 Nicolas Marchildon"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
