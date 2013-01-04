@@ -6,7 +6,7 @@ Un relais à l'extérieur de ma fenêtre, vers le nord géographique. Une migrat
 
 [[!ymlfront data="""
 MAC: 00:15:6D:3C:01:B9
-IP: 172.16.0.60
+IP: 172.16.0.61
 IPv6: fd64:2c08:9fa7:61::1/128
 """]]
 
