@@ -48,7 +48,7 @@ Operator
 : [[/users/elecnix]]
 
 Links
-: 
+: None
 
 Access Point
 : [[/nodes/tempranillo]]
@@ -60,7 +60,7 @@ Access Point
  * [[nodes/theodore]] 1,16 km
  * [[nodes/ouaibe]] 1,24 km
 
-## Panorama nord (nuit)
+## Panorama
 
 [[!img 2012-05-19_18.14.47-2012-05-19_18.15.42.jpg size=950x]]
 
