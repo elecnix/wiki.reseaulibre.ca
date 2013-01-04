@@ -6,7 +6,7 @@ Access point under [[/nodes/besik]].
 
 [[!ymlfront data="""
 MAC: 
-IP: 172.16.1.60
+IP: 
 IPv6: fd64:2c08:9fa7:61::1/128
 """]]
 
