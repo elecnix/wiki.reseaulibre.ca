@@ -1,16 +1,9 @@
 My MAC ID:  f6:ec:38:ff:fe:b5:db:2b
 *** Neighbours ***
+fe80::21b:21ff:fe40:3aab [unknown] if eth1    
 fe80::15:6dff:fe73:942f [unknown] if eth0    
 *** Routes ***
+fe80::21b:21ff:fe40:3aab [unknown] -> 
+    2607:f2c0:f00f:2900::/56-be44d0 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::21b:21ff:fe40:3aab if eth1
 fe80::15:6dff:fe73:942f [unknown] -> 
     2001:470:b2a7:2::/64-be4498 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18   via fe80::15:6dff:fe73:942f if eth0
-    2001:4860:4008:802::1014/128-be4498 prefix 2001:4860:4008:802::1014/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00::/64-be4498 prefix 2607:f2c0:f00e:4d00::/64 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00::1/128-be4498 prefix 2607:f2c0:f00e:4d00::1/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00:21f:d0ff:fe5b:b90f/128-be4498 prefix 2607:f2c0:f00e:4d00:21f:d0ff:fe5b:b90f/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00:5d7c:c93d:2ebb:5c0d/128-be4498 prefix 2607:f2c0:f00e:4d00:5d7c:c93d:2ebb:5c0d/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f2c0:f00e:4d00:6801:5d04:76d4:d10a/128-be4498 prefix 2607:f2c0:f00e:4d00:6801:5d04:76d4:d10a/128 installed yes id 02:15:6d:ff:fe:73:94:2f   via fe80::15:6dff:fe73:942f if eth0
-    2607:f8b0:4001:c02::8a/128-be4498 prefix 2607:f8b0:4001:c02::8a/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f8b0:4001:c02::8b/128-be4498 prefix 2607:f8b0:4001:c02::8b/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2607:f8b0:400d:c00::7d/128-be4498 prefix 2607:f8b0:400d:c00::7d/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
-    2a00:1450:400c:c03::6d/128-be4498 prefix 2a00:1450:400c:c03::6d/128 installed yes id 22:e5:2a:ff:fe:4d:8e:2a   via fe80::15:6dff:fe73:942f if eth0
