@@ -69,16 +69,6 @@ Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une ant
 
 ## Cisco/Linksys
 
-### Linksys E3000
-
-https://secure.dd-wrt.com/wiki/index.php/Linksys_E3000
-
- * 2.4/5Ghz
- * 64M de ram
- * 8M de flash
- * 4 ports gigabit
- * USB
-
 ### WRT* (omni)
 
 Those devices are everywhere, but they are cheap and may not be worth it.
@@ -96,6 +86,15 @@ Cons:
  * low bandwidth (~2mbps)
 
 ## TP-Link (omni)
+
+### TP-Link WDR3600
+
+Quite a beast, used by [[scientist]].
+
+ * 8M de flash
+ * 128M de ram
+ * 5 gigabit
+ * 2 USB
 
 ### TP-Link TL-MR3220
 
