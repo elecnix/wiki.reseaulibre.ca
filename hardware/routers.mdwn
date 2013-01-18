@@ -67,16 +67,28 @@ Juste le routeur pas d'antenne, avec un bon connecteur (N) pour brancher une ant
  * fait pour couvrir de plus grandes distances, sur une zone plus restreinte (sectorielle a 60°)
  * power over ethernet
 
-## Cisco/Linksys WRT* (omni)
+## Cisco/Linksys
+
+### Linksys E3000
+
+https://secure.dd-wrt.com/wiki/index.php/Linksys_E3000
+
+ * 2.4/5Ghz
+ * 64M de ram
+ * 8M de flash
+ * 4 ports gigabit
+ * USB
+
+### WRT* (omni)
 
 Those devices are everywhere, but they are cheap and may not be worth it.
 
-### Pros
+Pros:
 
  * readily available
  * cheap
 
-### Cons
+Cons:
 
  * uses [RP-TNC](https://en.wikipedia.org/wiki/TNC_connector) (reverse-polarity) connectors so that regular antenna equipment cannot be used to amplify the signal
  * known to overheat
