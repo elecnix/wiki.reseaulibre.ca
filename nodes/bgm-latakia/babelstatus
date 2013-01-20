@@ -1,8 +1,8 @@
 My MAC ID:  de:9f:db:ff:fe:00:13:79
 *** Neighbours ***
+fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0    
 fe80::215:6dff:fe72:942f bgm-homs-wlan0 if wlan0    
 fe80::215:6dff:fe73:942f bgm-homs-eth1 if eth0    
-fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0    
 *** Routes ***
 fe80::215:6dff:fe73:942f bgm-homs-eth1 -> 
     2607:f2c0:f00f:2900::/56-bcb8d8 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::215:6dff:fe73:942f if eth0
