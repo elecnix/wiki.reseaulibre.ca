@@ -1,4 +1,6 @@
-[[!waypoint lat="45.46919" lon="-73.56716" embed hidden width="400px" height="400px" right desc="Sous les panneaux solaires"]]
+### Vue vers le sud
+
+[[!img panorama.jpg size="950x" alt="Vue du toit"]]
 
 [[!ymlfront data="""
 MAC: DC:9F:DB:00:11:D9
@@ -7,20 +9,24 @@ IPv6:
 - 2001:470:b2a7::/48
 """]]
 
-## VPN
+<hr/>
+Sous les panneaux solaires, boulevard Lasalle, à Verdun
 
- * Envoyez-moi votre clé publique pour partager l'accès à un tunnel VPN. Voici ma [clé publique pour Tinc](http://www.deuxpi.ca/deuxpi.asc) signée avec la clé 0xC7287C24.
+<img src="https://chart.googleapis.com/chart?cht=qr&chs=350x350&chld=L&chl=WIFI%3AT%3Anopass%3BS%3Aacces.reseaulibre.ca%3B%3B" class="img" align="right" alt="acces.reseaulibre.ca">
+
+[[!waypoint lat="45.46919" lon="-73.56716" embed hidden width="550px" height="400px" right desc="Ubnt Bullet M2"]]
 
 # À faire
 
  * Faire passer un câble Ethernet entre la Bullet sur le toit et la salle des machines.
  * Monter la Bullet haut haut haut!
- * Installer le nouveau serveur/routeur dans la salle des machines.
+ * <s>Installer le nouveau serveur/routeur dans la salle des machines.</s>
    * Il faut réorganiser les alimentations électrique (présentement toutes occupées par le monitoring).
    * Il faut s'assurer qu'il y a moyen de raccorder autant le nouveau câble que le filage qui monte vers les appartements. Ces derniers ont été pensés pour être plus près des entrées de Bell et Vidéotron que des entrées électriques.
  * <s>Tester Babel sur [Quagga](http://www.nongnu.org/quagga/) au lieu de babeld.</s>
  * Tester une configuration Batman/switch et Babel/routeur pour des grands sites qui pourraient profiter d'une topologie différente.
  * <s>Installer le point d'accès TP-Link déjà configuré.</s>
+ * Assembler la station mobile solaire.
 
 # Détails
 
@@ -34,12 +40,12 @@ IPv6:
  * Status: [[!taglink up]]
  * Links: [[nodes/bgm-homs]], [[nodes/bgm-latakia]], [[nodes/hexa]], [[nodes/scientist]]
  * Azimuth: Omni
- * Panorama: [[!img panorama.jpg align="left" size="880x103" alt="Vue du toit"]], [[Vue du site de l'installation|https://farm6.staticflickr.com/5223/5881898216_6198d24176.jpg]]
+ * Panorama: [[Vue du site de l'installation|https://farm6.staticflickr.com/5223/5881898216_6198d24176.jpg]]
  * Operator: [[users/deuxpi]]
 
 # Configuration Babel
 
-[[!img reseau.png]]
+[[!img reseau.png size="400x400" align="right"]]
 
 ## Routeur "relais" pinxo.mesh.deuxpi.ca
 
