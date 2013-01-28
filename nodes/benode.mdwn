@@ -13,9 +13,6 @@ IPv6:
 hostname
 : (node hostname here)
 
-Type
-: [[!taglink relay]] (can also be accesspoint, test, server)
-
 SSID
 : relais.reseaulibre.ca (see [[policy/naming]])
 
