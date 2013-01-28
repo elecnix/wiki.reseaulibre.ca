@@ -3,7 +3,6 @@ My MAC ID:  de:9f:db:ff:fe:00:13:79
 fe80::227:22ff:fe72:cf9f unkode if wlan0    
 fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0    
 fe80::215:6dff:fe73:942f bgm-homs-eth1 if eth0    
-fe80::6670:2ff:fe5c:3e56 [unknown] if wlan0    
 fe80::215:6dff:fe72:942f bgm-homs-wlan0 if wlan0    
 *** Routes ***
 fe80::215:6dff:fe73:942f bgm-homs-eth1 -> 
