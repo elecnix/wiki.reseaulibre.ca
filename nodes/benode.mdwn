@@ -1,0 +1,76 @@
+[[!waypoint map=null  lat="45.521123" lon="-73.585782" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
+<!-- (remove map=null to display on the main map) -->
+
+(Description of the node here, with a link to your homepage.)
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: (mac address here)
+IP: (pick one from [[policy/numbering]])
+IPv6: 
+"""]]
+
+hostname
+: (node hostname here)
+
+Type
+: [[!taglink relay]] (can also be accesspoint, test, server)
+
+SSID
+: relais.reseaulibre.ca (see [[policy/naming]])
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Software
+: 
+
+Hardware
+: 
+
+Power
+: 
+
+Location
+: Roof
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Status
+: [[!taglink prospect]] (can also be up, down, planned, unknown)
+
+Operator
+: [[/users/alice]]
+
+Links
+: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+
+Backup power
+: (is it plugged into a UPS? how long will it last during an outage?)
+
+# Photos
+
+(You can upload images when you edit this page. Feel free to upload photos
+of your installation or of the panorama. It will help other people who may
+want to link with you.)
+
+[[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
