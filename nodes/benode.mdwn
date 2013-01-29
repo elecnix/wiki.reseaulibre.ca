@@ -47,7 +47,7 @@ Status
 : [[!taglink prospect]] (can also be up, down, planned, unknown)
 
 Operator
-: [[/users/alice]]
+: colonialemt(à)gmail.com, wahben sur IRC
 
 Links
 : (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
