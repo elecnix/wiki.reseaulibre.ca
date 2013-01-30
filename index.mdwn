@@ -8,3 +8,9 @@ Réseau libre inclut
 * l'écosystème applicatif sur le réseau, c'est à dire ce que chaque personne décide de partager, avec qui et comment.
 
 Le réseau s'organise depuis le début de 2012.  C'est encore à l'état expérimental, mais nous avons déjà [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(relay) and tagged(up)"]] [[relais en opération|nodes]].  Nous espérons bientôt pouvoir offrir une solution clé en main à ceux qui veulent ouvrir leur propre noeud.  En attendant, consultez le [[wiki|Documentation]] pour plus d'informations ou venez clavarder avec nous sur notre canal IRC [#reseaulibre](http://webchat.freenode.net/?channels=reseaulibre) sur le reseau Freenode.
+
+
+Je suis allé sur le toît et je crois avoir un line of sight avec Zoidberg, et R:
+
+Direction de zoidberg: <img src="http://i.imgur.com/PBbAI7l.jpg" />
+Direction de R: <img src="http://i.imgur.com/lMj6AGu.jpg" />
