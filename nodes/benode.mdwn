@@ -6,7 +6,7 @@ IPv6:
 
 # SETUP
 
-[[!waypoint lat="45.521123" lon="-73.585782" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.521123" lon="-73.585782" embed hidden width="950px" height="400px" right desc="Sur le toît de l'intermarché"]]
 
 Operator: colonialemt(à)gmail.com, [[users/wahben]] sur IRC
 
@@ -35,6 +35,10 @@ Bullet M2 + 15dBi
  * SWR : ≤ 1.5:1
  * Impedance: 50 Ohm
  * Power: 
+
+### Services prévus
+ * Minecraft
+ * File sharing
 
 ### Links
 
