@@ -40,6 +40,14 @@ Bullet M2 + 15dBi
  * Minecraft
  * File sharing
 
+### Infos d'installation
+
+Je suis allé sur le toît et je crois avoir un line of sight avec Zoidberg, et R. Il y a aussi line of sight avec l'emplacement potentiel chez Caravan.
+
+Direction de zoidberg: <img src="http://i.imgur.com/PBbAI7l.jpg" width="940" />
+Direction de R: <img src="http://i.imgur.com/lMj6AGu.jpg" width="940" />
+Ancre abandonné pour installer l'antenne (yay!) <img src="http://i.imgur.com/NOOLEmu.jpg" width="940" />
+
 ### Links
 
 [[!meta copyright="Copyright © 2012 Alexandre Guédon"]]
@@ -51,12 +59,3 @@ any later version published by the Free Software Foundation; with no Invariant
 Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
 is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
-
-
-
-
-Je suis allé sur le toît et je crois avoir un line of sight avec Zoidberg, et R. Il y a aussi line of sight avec l'emplacement potentiel chez Caravan.
-
-Direction de zoidberg: <img src="http://i.imgur.com/PBbAI7l.jpg" width="940" />
-Direction de R: <img src="http://i.imgur.com/lMj6AGu.jpg" width="940" />
-Ancre abandonné pour installer l'antenne (yay!) <img src="http://i.imgur.com/NOOLEmu.jpg" width="940" />
