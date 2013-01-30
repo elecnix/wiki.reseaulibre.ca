@@ -1,67 +1,44 @@
-[[!waypoint lat="45.521123" lon="-73.585782" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
-
-(Description of the node here, with a link to your homepage.)
-
-# Technical details
-
 [[!ymlfront data="""
-MAC: (mac address here)
-IP: (pick one from [[policy/numbering]])
+MAC: DC:9F:DB:0A:59:82
+IP: 
 IPv6: 
 """]]
 
-hostname
-: (node hostname here)
+# SETUP
 
-SSID
-: relais.reseaulibre.ca (see [[policy/naming]])
+[[!waypoint lat="45.521123" lon="-73.585782" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
 
-MAC address
-: {{$MAC}}
+Operator: colonialemt(à)gmail.com, [[users/wahben]] sur IRC
 
-IPv6 address
-: {{$IPv6}}
+Bullet M2 + 15dBi
 
-IP address
-: {{$IP}}
+# NODE - r-pop.relais.reseaulibre.ca
 
-Software
-: 
+ * Status: [[!taglink planned]]
+ * Hostname: benode.relais.reseaulibre.ca
+ * Location: 45.521123,-73.585782
+ * Software: OpenWRT 12.09 RC1
+ * IP address: {{$IP}}
+ * IPv6 address: {{$IPv6}}
+ * Routage: 
+ * Hardware: Ubnt Bullet M2
+ * MAC address: {{$MAC}}
+ * Channel: 1
+ * 802.11: b, g, n
+ * Autonomie estimée: ?
 
-Hardware
-: 
+### Antenna
+ * Azimuth: H: 360° / V: 6°
+ * Frequency: 2400 - 2483MHz
+ * Gain: 15 dBi
+ * Polarization: Vertical
+ * SWR : ≤ 1.5:1
+ * Impedance: 50 Ohm
+ * Power: 
 
-Power
-: 
+### Links
 
-Location
-: Roof
-
-Azimuth
-: 360°
-
-Panorama
-: N/A
-
-Status
-: [[!taglink planned]]
-
-Operator
-: colonialemt(à)gmail.com, wahben sur IRC
-
-Links
-: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
-
-Backup power
-: (is it plugged into a UPS? how long will it last during an outage?)
-
-# Photos
-
-(You can upload images when you edit this page. Feel free to upload photos
-of your installation or of the panorama. It will help other people who may
-want to link with you.)
-
-[[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
+[[!meta copyright="Copyright © 2012 Alexandre Guédon"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
