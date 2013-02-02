@@ -1,7 +1,7 @@
 [[!ymlfront data="""
 MAC: DC:9F:DB:0A:59:82
 IP: 
-IPv6: 
+IPv6: fe80::de9f:dbff:fe0a:5982/64
 """]]
 
 # SETUP
@@ -48,6 +48,7 @@ Direction de R: <img src="http://i.imgur.com/lMj6AGu.jpg" width="940" />
 Ancre abandonné pour installer l'antenne (yay!) <img src="http://i.imgur.com/NOOLEmu.jpg" width="940" />
 
 ### Links
+Links: [[R]], [[zoidberg]]
 
 [[!meta copyright="Copyright © 2012 Alexandre Guédon"]]
 
