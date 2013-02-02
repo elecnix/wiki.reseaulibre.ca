@@ -40,10 +40,9 @@ Bullet M2 + 15dBi
  * Minecraft
  * File sharing
 
-### Infos d'installation
+### Installation
 
-Je suis allé sur le toît et je crois avoir un line of sight avec Zoidberg, et R. Il y a aussi line of sight avec l'emplacement potentiel chez Caravan.
-
+Antenne: <img src="http://i.imgur.com/JPdsLqZ.jpg" width=940" />
 Direction de zoidberg: <img src="http://i.imgur.com/PBbAI7l.jpg" width="940" />
 Direction de R: <img src="http://i.imgur.com/lMj6AGu.jpg" width="940" />
 Ancre abandonné pour installer l'antenne (yay!) <img src="http://i.imgur.com/NOOLEmu.jpg" width="940" />
