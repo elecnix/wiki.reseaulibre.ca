@@ -48,7 +48,7 @@ Direction de R: <img src="http://i.imgur.com/lMj6AGu.jpg" width="940" />
 Ancre abandonné pour installer l'antenne (yay!) <img src="http://i.imgur.com/NOOLEmu.jpg" width="940" />
 
 ### Links
-Links: [[R]], [[zoidberg]]
+Links: [[zoidberg]]
 
 [[!meta copyright="Copyright © 2012 Alexandre Guédon"]]
 
