@@ -1,7 +1,5 @@
-[[!waypoint lat="45.50673" lon="-73.61638" embed hidden width="950px" height="400px" right desc="A node in my window"]]
-<!-- (remove map=null to display on the main map) -->
+[[!waypoint lat="45.506730" lon="-73.616380" embed hidden width="950px" height="400px" right desc="A node in my window"]]
 
-(Up accespoint in window)
 
 # Technical details
 
