@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.506738" lon="73.616384" embed hidden width="950px" height="400px" right desc="A node in my window"]]
+[[!waypoint lat="45.50673" lon="-73.61638" embed hidden width="950px" height="400px" right desc="A node in my window"]]
 <!-- (remove map=null to display on the main map) -->
 
 (Up accespoint in window)
@@ -30,7 +30,7 @@ IP address
 : {{$IP}}
 
 Software
-: 
+: OpenWRT
 
 Hardware
 : TP-Link WR1043ND
