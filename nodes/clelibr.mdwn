@@ -11,8 +11,8 @@ IP: (pick one from [[policy/numbering]])
 IPv6: 
 """]]
 
-clelibr
-: (node hostname here)
+hostname
+: clelibr
 
 Type
 : [[!taglink relay]] (can also be accesspoint, test, server)
