@@ -280,8 +280,9 @@ Troubleshooting
 Babel should generally "just work". You start it, and it starts
 exchanging routes with its neighbors through IPv6 broadcast packets.
 
-During your tests, give some time for Babel to synchronise. Things can
+* During your tests, give some time for Babel to synchronise. Things can
 take a few seconds (count to 10) to synchronise.
+* Vérifiez vous que le nom de l'interface suivant la section config interface est soit le nom du réseau configuré dans openwrt (ex: wan), ou bien le nom de l'interface réseau tel qu'affiché par ifconfig.
 
 Running babel manually
 ----------------------
