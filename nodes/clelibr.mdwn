@@ -7,7 +7,7 @@
 
 [[!ymlfront data="""
 MAC: (mac address here)
-IP: (pick one from [[policy/numbering]])
+IP: 172.16.1.18
 IPv6: 
 """]]
 
@@ -15,7 +15,7 @@ hostname
 : clelibr
 
 Type
-: [[!taglink relay]] (can also be accesspoint, test, server)
+: [[!taglink accesspoint]] (can also be accesspoint, test, server)
 
 SSID
 : relais.reseaulibre.ca (see [[policy/naming]])
@@ -39,7 +39,7 @@ Power
 : 
 
 Location
-: (where is this node physically installed?)
+: window
 
 Azimuth
 : 360°
@@ -48,10 +48,10 @@ Panorama
 : N/A
 
 Status
-: [[!taglink prospect]] (can also be up, down, planned, unknown)
+: [[!taglink up]] (can also be up, down, planned, unknown)
 
 Operator
-: [[/users/alice]]
+: [[/users/clelibr]]
 
 Links
 : (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
