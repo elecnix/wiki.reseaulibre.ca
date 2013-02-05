@@ -14,7 +14,7 @@ Bullet M2 + 15dBi
 
 # NODE - r-pop.relais.reseaulibre.ca
 
- * Status: [[!taglink planned]]
+ * Status: [[!taglink up]]
  * Hostname: benode.relais.reseaulibre.ca
  * Location: 45.521123,-73.585782
  * Software: OpenWRT 12.09 RC1
