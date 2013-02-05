@@ -1,7 +1,7 @@
 [[!waypoint map=null  lat="45.506738" lon="73.616384" embed hidden width="950px" height="400px" right desc="A node in my window"]]
 <!-- (remove map=null to display on the main map) -->
 
-(clelibr)
+(Up accespoint in window)
 
 # Technical details
 
@@ -33,7 +33,7 @@ Software
 : 
 
 Hardware
-: 
+: TP-Link WR1043ND
 
 Power
 : 
