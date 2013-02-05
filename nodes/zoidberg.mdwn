@@ -52,6 +52,31 @@ This node runs Babel. Access point for zoidserver
 ## Panorama
 [[!img 2012-10-18-zoidberg.jpg align="left" size="950x" alt="Panorama montrant au loin les édifices autour du Parc Lafontaine, le centre-ville, un arbre, un gros édifice, le Mont-Royal, le conservatoire d'art dramatique, les édifices du Mile-End, les cheminées de l'incinérateur, un arbre, le stade olympique, et la maison de la culture en face du métro Mont-Royal."]]
 
+# Config
+
+## /etc/config/network
+
+    config interface 'loopback'
+            option ifname 'lo'
+            option proto 'static'
+            option ipaddr '127.0.0.1'
+            option netmask '255.0.0.0'
+    
+    config interface 'lan'
+            option ifname 'eth0'
+            option type 'bridge'
+            option proto 'static'
+            option ipaddr '172.16.0.15'
+            option netmask '255.255.255.0'
+            option gateway '172.16.0.1'
+            option dns '172.16.0.1'
+            option ip6addr 'fd64:2c08:9fa7:15::/64'
+    
+    config interface 'wan'
+            option ifname 'wlan0'
+            option proto 'static'
+            option netmask '255.255.255.255'
+    
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
