@@ -15,14 +15,6 @@ is included in the section entitled [[GNU Free Documentation
 License|meta/gfdl]]."]]"""]]
 
 
-
-
- * Mode: managed|adhoc
- * Distance: 
- * Nodes: <links to nodes>
- * Speed: <X mbps>
- * Picture:
-
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
