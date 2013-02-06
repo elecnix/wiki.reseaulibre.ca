@@ -425,6 +425,89 @@ Antenne: <img src="http://i.imgur.com/JPdsLqZ.jpg" width=940" />
 	    option network 'wan'
 	    option ssid 'benode.relais.reseaulibre.ca'
 
+### État actuel (sur le bullet):
+
+# ip -6 ro
+
+    fd64:2c08:9fa7:15:: via fe80::de9f:dbff:fe06:d4cd dev wlan0  proto 42  metric 1024 
+    fd64:2c08:9fa7:15::100 via fe80::de9f:dbff:fe06:d4cd dev wlan0  proto 42  metric 1024 
+    fd64:2c08:9fa7:be40::/64 dev br-lan  proto kernel  metric 256 
+    fe80::/64 dev br-lan  proto kernel  metric 256 
+    fe80::/64 dev wlan0  proto kernel  metric 256
+
+# ./babelstatus 
+
+    My MAC ID:  de:9f:db:ff:fe:0a:59:82
+    *** Neighbours ***
+    fe80::de9f:dbff:fe06:d4cd [unknown] if wlan0 reach fdfc rxcost 260 txcost 580 cost 589
+    *** Exported routes ***
+    172.16.3.25/32 prefix 172.16.3.25/32 metric 0
+    fd64:2c08:9fa7:be40::1/128 prefix fd64:2c08:9fa7:be40::1/128 metric 0
+    *** Routes ***
+    fe80::de9f:dbff:fe06:d4cd [unknown] -> 
+ fd64:2c08:9fa7:15::/128-5ec368 prefix fd64:2c08:9fa7:15::/128 installed yes id de:9f:db:ff:fe:06:d4:cd metric 589 refmetric 0 via fe80::de9f:dbff:fe06:d4cd if wlan0
+     fd64:2c08:9fa7:15::100/128-5ec368 prefix fd64:2c08:9fa7:15::100/128 installed yes id 02:e0:4c:ff:fe:20:57:ca metric 845 refmetric 256 via fe80::de9f:dbff:fe06:d4cd if wlan0
+
+
+# ifconfig
+
+    br-lan    Link encap:Ethernet  HWaddr DC:9F:DB:0B:59:82  
+	      inet addr:172.16.3.25  Bcast:172.16.3.255  Mask:255.255.255.0
+	      inet6 addr: fd64:2c08:9fa7:be40::1/64 Scope:Global
+	      inet6 addr: fe80::de9f:dbff:fe0b:5982/64 Scope:Link
+	      UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+	      RX packets:482 errors:0 dropped:0 overruns:0 frame:0
+	      TX packets:701 errors:0 dropped:0 overruns:0 carrier:0
+	      collisions:0 txqueuelen:0 
+	      RX bytes:55854 (54.5 KiB)  TX bytes:131598 (128.5 KiB)
+
+    eth0      Link encap:Ethernet  HWaddr DC:9F:DB:0B:59:82  
+	      UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+	      RX packets:482 errors:0 dropped:0 overruns:0 frame:0
+	      TX packets:678 errors:0 dropped:0 overruns:0 carrier:0
+	      collisions:0 txqueuelen:1000 
+	      RX bytes:62602 (61.1 KiB)  TX bytes:129260 (126.2 KiB)
+	      Interrupt:4 
+
+    lo        Link encap:Local Loopback  
+	      inet addr:127.0.0.1  Mask:255.0.0.0
+	      inet6 addr: ::1/128 Scope:Host
+	      UP LOOPBACK RUNNING  MTU:16436  Metric:1
+	      RX packets:7896 errors:0 dropped:0 overruns:0 frame:0
+	      TX packets:7896 errors:0 dropped:0 overruns:0 carrier:0
+	      collisions:0 txqueuelen:0 
+	      RX bytes:538159 (525.5 KiB)  TX bytes:538159 (525.5 KiB)
+
+    wlan0     Link encap:Ethernet  HWaddr DC:9F:DB:0A:59:82  
+	      inet6 addr: fe80::de9f:dbff:fe0a:5982/64 Scope:Link
+	      UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+	      RX packets:316 errors:0 dropped:0 overruns:0 frame:0
+	      TX packets:377 errors:0 dropped:0 overruns:0 carrier:0
+	      collisions:0 txqueuelen:32 
+	      RX bytes:39148 (38.2 KiB)  TX bytes:52294 (51.0 KiB)
+
+# iptables --list
+
+    Chain INPUT (policy ACCEPT)
+    target     prot opt source               destination         
+
+    Chain FORWARD (policy ACCEPT)
+    target     prot opt source               destination         
+
+    Chain OUTPUT (policy ACCEPT)
+    target     prot opt source               destination
+
+
+# ping fd64:2c08:9fa7:15::  # <-- Zoidberg
+
+    PING fd64:2c08:9fa7:15:: (fd64:2c08:9fa7:15::): 56 data bytes
+    64 bytes from fd64:2c08:9fa7:15::: seq=0 ttl=64 time=13.041 ms
+    64 bytes from fd64:2c08:9fa7:15::: seq=1 ttl=64 time=2.484 ms
+    64 bytes from fd64:2c08:9fa7:15::: seq=2 ttl=64 time=2.301 ms
+    ^C
+    --- fd64:2c08:9fa7:15:: ping statistics ---
+    3 packets transmitted, 3 packets received, 0% packet loss
+    round-trip min/avg/max = 2.301/5.942/13.041 ms
 
 ### Links
 Links: [[zoidberg]] ~65dbm
