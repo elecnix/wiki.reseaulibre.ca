@@ -60,9 +60,7 @@ Backup power
 
 # Commentaires
 
-Ça serait bien que tu te crées une page user ([[/users/clelibr]]) pour qu'on puisse te contacter. Aussi, t'es taggé comme accesspoint mais ton SSID est relais.reseaulibre.ca . Un relais n'est généralement pas un access point, pour des raisons de performance. 
-
-Tu peux m'envoyer un email ou faire un tour sur IRC si tu as des questions. --[[users/gboudrias]]
+Ça serait bien que tu te crées une page user ([[/users/clelibr]]) pour qu'on puisse te contacter.  --[[users/gboudrias]]
 
 # Photos
 
