@@ -509,6 +509,49 @@ Antenne: <img src="http://i.imgur.com/JPdsLqZ.jpg" width=940" />
     3 packets transmitted, 3 packets received, 0% packet loss
     round-trip min/avg/max = 2.301/5.942/13.041 ms
 
+### Etat actuel (sur l'ordinateur)
+
+# ifconfig eth0
+
+    eth0      Link encap:Ethernet  HWaddr 14:da:e9:dd:ab:88  
+              inet addr:172.16.3.26  Bcast:172.16.3.255  Mask:255.255.255.0
+              inet6 addr: fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d/64 Scope:Global
+              inet6 addr: fd64:2c08:9fa7:be40:16da:e9ff:fedd:ab88/64 Scope:Global
+              inet6 addr: fe80::16da:e9ff:fedd:ab88/64 Scope:Link
+              UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+              RX packets:25983 errors:0 dropped:0 overruns:0 frame:0
+              TX packets:37873 errors:0 dropped:1 overruns:0 carrier:0
+              collisions:0 txqueuelen:1000 
+              RX bytes:5915636 (5.9 MB)  TX bytes:4163633 (4.1 MB)
+              Interrupt:48 Base address:0x6000
+
+# ip -6 ro
+
+    fd64:2c08:9fa7:be40::/64 dev eth0  proto kernel  metric 256  expires 85977sec
+    fe80::/64 dev eth0  proto kernel  metric 256 
+    default via fe80::de9f:dbff:fe0b:5982 dev eth0  proto kernel  metric 1024  expires 1366sec
+
+
+# ping6 fd64:2c08:9fa7:15::
+
+    PING fd64:2c08:9fa7:15::(fd64:2c08:9fa7:15::) 56 data bytes
+    ^C
+    --- fd64:2c08:9fa7:15:: ping statistics ---
+    9 packets transmitted, 0 received, 100% packet loss, time 7999ms
+
+# ping6 fd64:2c08:9fa7:be40::1
+
+    PING fd64:2c08:9fa7:be40::1(fd64:2c08:9fa7:be40::1) 56 data bytes
+    64 bytes from fd64:2c08:9fa7:be40::1: icmp_seq=1 ttl=64 time=0.557 ms
+    64 bytes from fd64:2c08:9fa7:be40::1: icmp_seq=2 ttl=64 time=0.550 ms
+    64 bytes from fd64:2c08:9fa7:be40::1: icmp_seq=3 ttl=64 time=0.565 ms
+    ^C
+    --- fd64:2c08:9fa7:be40::1 ping statistics ---
+    3 packets transmitted, 3 received, 0% packet loss, time 1998ms
+    rtt min/avg/max/mdev = 0.550/0.557/0.565/0.020 ms
+
+
+
 ### Links
 Links: [[zoidberg]] ~65dbm
 
