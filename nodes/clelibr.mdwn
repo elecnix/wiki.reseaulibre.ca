@@ -4,7 +4,7 @@
 # Technical details
 
 [[!ymlfront data="""
-MAC: (mac address here)
+MAC: 64:70:02:F9:0A:E4
 IP: 172.16.1.18
 IPv6: 
 """]]
@@ -16,7 +16,7 @@ Type
 : [[!taglink accesspoint]] (can also be accesspoint, test, server)
 
 SSID
-: relais.reseaulibre.ca (see [[policy/naming]])
+: acces.reseaulibre.ca(see [[policy/naming]])
 
 MAC address
 : {{$MAC}}
@@ -34,7 +34,7 @@ Hardware
 : TP-Link WR1043ND
 
 Power
-: 
+: 15dBm/28mW
 
 Location
 : window
