@@ -554,6 +554,52 @@ Antenne: <img src="http://i.imgur.com/JPdsLqZ.jpg" width=940" />
     3 packets transmitted, 3 received, 0% packet loss, time 1998ms
     rtt min/avg/max/mdev = 0.550/0.557/0.565/0.020 ms
 
+# sudo tcpdump -n -v -i eth0 ip6
+
+    tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
+    21:26:39.071438 IP6 (class 0xc0, hlim 1, next-header UDP (17) payload length: 20) fe80::de9f:dbff:fe0b:5982.6696 > ff02::1:6.6696: [udp sum ok] babel 2 (8)
+	    Hello seqno 53266 interval 400
+    21:26:42.058318 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 1
+    21:26:42.560469 IP6 (class 0xc0, hlim 1, next-header UDP (17) payload length: 20) fe80::de9f:dbff:fe0b:5982.6696 > ff02::1:6.6696: [udp sum ok] babel 2 (8)
+	    Hello seqno 53267 interval 400
+    21:26:43.065256 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 2
+    21:26:44.073262 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 3
+    21:26:45.081233 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 4
+    21:26:46.089264 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 5
+    21:26:46.417268 IP6 (class 0xc0, hlim 1, next-header UDP (17) payload length: 20) fe80::de9f:dbff:fe0b:5982.6696 > ff02::1:6.6696: [udp sum ok] babel 2 (8)
+	    Hello seqno 53268 interval 400
+    21:26:47.063087 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 32) fe80::16da:e9ff:fedd:ab88 > fe80::de9f:dbff:fe0b:5982: [icmp6 sum ok] ICMP6, neighbor solicitation, length 32, who has fe80::de9f:dbff:fe0b:5982
+	      source link-address option (1), length 8 (1): 14:da:e9:dd:ab:88
+    21:26:47.063551 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 24) fe80::de9f:dbff:fe0b:5982 > fe80::16da:e9ff:fedd:ab88: [icmp6 sum ok] ICMP6, neighbor advertisement, length 24, tgt is fe80::de9f:dbff:fe0b:5982, Flags [router, solicited]
+    21:26:47.097228 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 6
+    21:26:48.105260 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 7
+    21:26:49.113263 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 8
+    21:26:50.004241 IP6 (class 0xc0, hlim 1, next-header UDP (17) payload length: 144) fe80::de9f:dbff:fe0b:5982.6696 > ff02::1:6.6696: [udp sum ok] babel 2 (132)
+	    Hello seqno 53269 interval 400
+	    Router Id 02:e0:4c:ff:fe:20:57:ca
+	    Update/prefix fd64:2c08:9fa7:15::100/128 metric 1235 seqno 21685 interval 1600
+	    Router Id de:9f:db:ff:fe:06:d4:cd
+	    Update/prefix fd64:2c08:9fa7:15::/128 metric 979 seqno 41659 interval 1600
+	    Router Id de:9f:db:ff:fe:0a:59:82
+	    Update/prefix fd64:2c08:9fa7:be40::1/128 metric 0 seqno 35470 interval 1600
+	    Next Hop 172.16.3.25
+	    Update 172.16.3.25/32 metric 0 seqno 35470 interval 1600
+    21:26:50.121263 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 9
+    21:26:51.129203 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 10
+    21:26:52.070378 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 32) fe80::de9f:dbff:fe0b:5982 > fe80::16da:e9ff:fedd:ab88: [icmp6 sum ok] ICMP6, neighbor solicitation, length 32, who has fe80::16da:e9ff:fedd:ab88
+	      source link-address option (1), length 8 (1): dc:9f:db:0b:59:82
+    21:26:52.070418 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 24) fe80::16da:e9ff:fedd:ab88 > fe80::de9f:dbff:fe0b:5982: [icmp6 sum ok] ICMP6, neighbor advertisement, length 24, tgt is fe80::16da:e9ff:fedd:ab88, Flags [solicited]
+    21:26:52.137243 IP6 (hlim 64, next-header ICMPv6 (58) payload length: 64) fd64:2c08:9fa7:be40:e8a4:7ca2:e91:640d > fd64:2c08:9fa7:15::: [icmp6 sum ok] ICMP6, echo request, seq 11
+    21:26:54.359124 IP6 (class 0xc0, hlim 1, next-header UDP (17) payload length: 20) fe80::de9f:dbff:fe0b:5982.6696 > ff02::1:6.6696: [udp sum ok] babel 2 (8)
+	    Hello seqno 53270 interval 400
+    21:26:57.438309 IP6 (class 0xc0, hlim 1, next-header UDP (17) payload length: 20) fe80::de9f:dbff:fe0b:5982.6696 > ff02::1:6.6696: [udp sum ok] babel 2 (8)
+	    Hello seqno 53271 interval 400
+    21:27:01.275179 IP6 (class 0xc0, hlim 1, next-header UDP (17) payload length: 20) fe80::de9f:dbff:fe0b:5982.6696 > ff02::1:6.6696: [udp sum ok] babel 2 (8)
+	    Hello seqno 53272 interval 400
+    21:27:05.037679 IP6 (class 0xc0, hlim 1, next-header UDP (17) payload length: 20) fe80::de9f:dbff:fe0b:5982.6696 > ff02::1:6.6696: [udp sum ok] babel 2 (8)
+	    Hello seqno 53273 interval 400
+
+
 
 
 ### Links
