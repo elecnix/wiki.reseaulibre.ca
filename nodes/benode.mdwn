@@ -444,9 +444,8 @@ Antenne: <img src="http://i.imgur.com/JPdsLqZ.jpg" width=940" />
     172.16.3.25/32 prefix 172.16.3.25/32 metric 0
     fd64:2c08:9fa7:be40::1/128 prefix fd64:2c08:9fa7:be40::1/128 metric 0
     *** Routes ***
-    fe80::de9f:dbff:fe06:d4cd [unknown] -> 
- fd64:2c08:9fa7:15::/128-5ec368 prefix fd64:2c08:9fa7:15::/128 installed yes id de:9f:db:ff:fe:06:d4:cd metric 589 refmetric 0 via fe80::de9f:dbff:fe06:d4cd if wlan0
-     fd64:2c08:9fa7:15::100/128-5ec368 prefix fd64:2c08:9fa7:15::100/128 installed yes id 02:e0:4c:ff:fe:20:57:ca metric 845 refmetric 256 via fe80::de9f:dbff:fe06:d4cd if wlan0
+    fe80::de9f:dbff:fe06:d4cd [unknown] -> fd64:2c08:9fa7:15::/128-5ec368 prefix fd64:2c08:9fa7:15::/128 installed yes id de:9f:db:ff:fe:06:d4:cd metric 589 refmetric 0 via fe80::de9f:dbff:fe06:d4cd if wlan0
+    fd64:2c08:9fa7:15::100/128-5ec368 prefix fd64:2c08:9fa7:15::100/128 installed yes id 02:e0:4c:ff:fe:20:57:ca metric 845 refmetric 256 via fe80::de9f:dbff:fe06:d4cd if wlan0
 
 
 # ifconfig
