@@ -427,6 +427,11 @@ Antenne: <img src="http://i.imgur.com/JPdsLqZ.jpg" width=940" />
 
 ### État actuel (sur le bullet):
 
+# brctl show
+
+    bridge name	bridge id		STP enabled	interfaces
+    br-lan		8000.dc9fdb0b5982	no		eth0
+
 # ip -6 ro
 
     fd64:2c08:9fa7:15:: via fe80::de9f:dbff:fe06:d4cd dev wlan0  proto 42  metric 1024 
