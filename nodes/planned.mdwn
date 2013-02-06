@@ -12,7 +12,7 @@ IPv6:
 """]]
 
 hostname
-: reseaulibre.droidnest.org
+: droidnest.reseaulibre.ca
 
 Type
 : [[!taglink relay]] (can also be accesspoint, test, server)
