@@ -13,7 +13,7 @@ hostname
 : clelibr
 
 Type
-: [[!taglink accesspoint]]
+: accesspoint
 
 SSID
 : acces.reseaulibre.ca(see [[policy/naming]])
