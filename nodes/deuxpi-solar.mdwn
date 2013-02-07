@@ -1,7 +1,13 @@
-[[!waypoint map=null  lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
-<!-- (remove map=null to display on the main map) -->
+[[!waypoint map=null lat="45.46919" lon="-73.56716" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
 
-(Description of the node here, with a link to your homepage.)
+Cette station portable est alimentée par des batteries qui se chargent à partir d'un panneau solaire 80W. Le design est inspiré de la station sans-fil solaire de NoCatNet.
+
+## Matériaux
+
+* [Ubiquity Bullet M2](http://www.ubnt.com/airmax#bulletm)
+* 3 Batteries usagées 12 V de 2.2 Ah
+* [Panneau solaire](http://addison-electronique.com/catalog/product/view/id/13755/s/panneau-solaire-80-watts/category/293/) et controlleur de charge 12 V
+* Pièces de profilé d'acier galvanisé recyclées
 
 # Technical details
 
