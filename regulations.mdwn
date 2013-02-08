@@ -40,7 +40,8 @@ Par exemple:
 > * *elles doivent être éloignées des circuits électriques et munies de paratonnerres*
 > * *elles ne doivent pas être visibles de la rue à une hauteur de 1.5 mètre depuis l'axe du trottoir situé de l'autre côté d'une rue publique*
 >
-> [[source|http://www11.ville.montreal.qc.ca/sherlock2/servlet/template/sherlock%2CAfficherDocumentInternet.vm/nodocument/22105]]
+> <del>Lien Mort :[[source|http://www11.ville.montreal.qc.ca/sherlock2/servlet/template/sherlock%2CAfficherDocumentInternet.vm/nodocument/22105]]</del>
+> **Lien proposé :**[[source|http://www1.ville.montreal.qc.ca/banque311/content/outremont-%E2%80%93-antennes]]
 
 Translation: there are rules to avoid visual impact. A permit is required to do the work to install the antenna. The antenna needs to be grounded to a lightning rod, must not be visible from the street, and more.
 
@@ -188,7 +189,11 @@ dans un abri, cet abri doit être aussi peu apparent que possible sur un toit, d
 cour ou sur un terrain non bâti et son architecture doit s'intégrer au milieu.
 
 ## Verdun
-Source: [[http://www1.ville.montreal.qc.ca/banque311/content/verdun-antennes-de-radio-ou-de-t%C3%A9l%C3%A9vision]]
+> <del>Lien Mort - Source: [[http://www1.ville.montreal.qc.ca/banque311/content/verdun-antennes-de-radio-ou-de-t%C3%A9l%C3%A9vision]]</del>
+> **Lien proposé** : [[Source|http://www1.ville.montreal.qc.ca/banque311/content/verdun-%E2%80%93-antennes-de-transmission-dun-r%C3%A9seau-de-t%C3%A9l%C3%A9communication]]
+
+> *Il semblerai de plus que les informations suivantes ne soient pas à jour puisqu'il est dit que toute demande est assujettie à la procédure d'approbation*
+
 Aucun permis n'est exigé pour l'installation d'une antenne de radio ou de télévision, mais l'installation doit être conforme aux normes édictées au Règlement de zonage (1700).
 
 Quantité
@@ -198,3 +203,10 @@ Installation
 • l'antenne doit être installée sur la partie ou la moitié arrière du toit d'un bâtiment principal
 • la hauteur maximale de l'antenne est de cinq mètres
 • l'antenne doit être érigée sur un support approprié sur le toit et ayant la résistance requise
+
+## Mercier–Hochelaga-Maisonneuve
+[[Source|http://www1.ville.montreal.qc.ca/banque311/content/mercier%E2%80%93hochelaga-maisonneuve-%E2%80%93-antennes]]
+
+>*[[Le règlement d'urbanisme de l'arrondissement|http://ville.montreal.qc.ca/sel/sypre-consultation/afficherpdf?idDoc=273&typeDoc=1]] précise les règles d'installation des antennes, l'objectif étant d'en limiter l'impact visuel.*
+
+>*Il n'est pas requis d'obtenir un permis pour la majorité des antennes accessoires des bâtiments résidentiels, mais leur installation doit être conforme au règlement d'urbanisme de l'arrondissement. Toutefois, comme les règles d'application sont complexes et diversifiées, il est préférable de de consulter la Direction de l'aménagement urbain et des services aux entreprises avant d'entreprendre toute démarche.*
