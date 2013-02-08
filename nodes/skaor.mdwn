@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.59378" lon="-73.51398" embed hidden width="950px" height="400px" right desc="Node project"]]
+[[!waypoint lat="45.59378" lon="-73.51398" embed hidden width="950px" height="400px" right desc="Node project"]]
 <!-- (remove map=null to display on the main map) -->
 
 (Description of the node here, with a link to your homepage.)
