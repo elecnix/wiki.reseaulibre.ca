@@ -15,7 +15,7 @@ hostname
 : skaor-node
 
 Type
-: [[!taglink relay]] (can also be accesspoint, test, server)
+: relay (can also be accesspoint, test, server)
 
 SSID
 : relais.reseaulibre.ca (see [[policy/naming]])
