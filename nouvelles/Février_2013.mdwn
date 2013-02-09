@@ -1,5 +1,5 @@
 Premier noeud solaire: [[nodes/deuxpi-solar]]
 
-Nouveau noeud sur le Plateau: [[nodes/benode]]
+Nouveau noeud sur le Plateau: [[nodes/benode]] (au moins 1 lien!)
 
 Prochaine rencontre: date à déterminer: http://sondage.orangeseeds.org/studs.php?sondage=fhc2b2bgldufv9ll
