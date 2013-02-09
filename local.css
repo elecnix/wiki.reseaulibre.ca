@@ -222,6 +222,7 @@ input#searchbox {
     padding: 0;
     display: block;
     width: 1008px;
+    min-height: 400px;
     margin: 0 auto;
 }
 
