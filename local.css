@@ -106,8 +106,7 @@ body {
 }
 
 .page {
-    max-width: 1008px;
-    margin: 0 auto;
+    width: 100%;
     background-color: #eeeeee;
     color: #221122;
 }
@@ -121,6 +120,14 @@ a {
    /* background: #775544 url('img/monbg.png') no-repeat right top; */
     color: #eeeeee;
     border-color: #221122;
+    padding: 0;
+}
+
+.pageheader .header {
+    width: 1008px;
+    margin: 0 auto;
+    float: none;
+    position: relative; /* for search form */
 }
 
 .pageheader a {
@@ -129,6 +136,13 @@ a {
 
 .header {
     text-shadow: 2px 3px 3px rgba(10, 10, 10, 0.4);
+}
+
+.pageheader .actions {
+    display: bloc;
+    position: inherit;
+    width: 1008px;
+    margin: 0 auto;
 }
 
 .pageheader .actions ul li {
@@ -145,6 +159,12 @@ a {
     color: #eeeeee;
 }
 
+#searchform {
+    position: absolute; /* parent is relative */
+    top: 0;
+    right: 0;
+}
+
 input#searchbox {
     background-color: #eeeeee;
 }
@@ -157,10 +177,10 @@ input#searchbox {
 
 .sidebar {
     line-height: 40px;
-    width: 100%;
+    width: 1008px;
+    margin: 0 auto;
     background-color: #eeeeee;
     color: #775544 !important;
-    margin: 0 0 4px 0;
     border: none;
     border-bottom: 1px solid #221122;
     padding: 0;
@@ -201,15 +221,22 @@ input#searchbox {
     border: none;
     padding: 0;
     display: block;
+    width: 1008px;
+    margin: 0 auto;
 }
 
 /** Footer styles */
 #footer {
-    margin: 2em 0;
-    padding: 0 2em;
+    margin: 0;
+    padding: 0;
     border-top: 1px solid #221122;
     background-color: #775544 ;
     color: #eeeeee;
+}
+
+#footer div {
+    width: 1008px;
+    margin: 0 auto;
 }
 
 #pageinfo {
