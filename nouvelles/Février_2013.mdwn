@@ -1,3 +1,5 @@
-TODO: remplir cette page!
+Premier noeud solaire: [[nodes/deuxpi-solar]]
 
-Premier noeud solaire: http://wiki.reseaulibre.ca/nodes/deuxpi-solar/
+Nouveau noeud sur le Plateau: [[nodes/benode]]
+
+Prochaine rencontre: date à déterminer: http://sondage.orangeseeds.org/studs.php?sondage=fhc2b2bgldufv9ll

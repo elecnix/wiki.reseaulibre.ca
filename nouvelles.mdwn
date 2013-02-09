@@ -34,8 +34,3 @@ Ce qui est beaucoup plus lisible.
  [1]: http://daringfireball.net/projects/markdown/syntax
 
 Sinon, le courriel est un simple copier-coller du texte du wiki, avec la table des matières sous sa forme générée, bien entendu.
-
-Voir aussi
-==========
-
-La page de [[presentations]] a également des bonnes présentations du projet qui peuvent être réutilisées ici ou pour faire de la communication en général.
