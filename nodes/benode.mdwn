@@ -12,7 +12,7 @@ Operator: colonialemt(à)gmail.com, [[users/wahben]] sur IRC
 
 Bullet M2 + 15dBi
 
-# NODE - r-pop.relais.reseaulibre.ca
+# NODE - benode.relais.reseaulibre.ca
 
  * Status: [[!taglink up]]
  * Hostname: benode.relais.reseaulibre.ca
