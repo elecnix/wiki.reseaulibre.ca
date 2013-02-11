@@ -1,4 +1,4 @@
-= Rencontre le 20 février 2013 =
+### Rencontre le 20 février 2013
 
 Rencontre informelle pour discuter de Réseau libre:
 
@@ -9,16 +9,16 @@ Il n'y a pas de présentation formelle de prévue. C'est surtout une occasion de
 
 Si vous avez de la difficulté à trouver l'endroit, gardez ce numéro en main: 514-659-3328.
 
-= Nouveaux noeuds =
+### Nouveaux noeuds
 
 * Premier noeud solaire: [[nodes/deuxpi-solar]]
 
 * Nouveau noeud sur le Plateau: [[nodes/benode]]
 
-= Événements à surveiller =
+### Événements à surveiller
 
 Certaines personnes ont manifesté leur intérêt à participer à ces événements:
 
 * Battlemesh v6: date? URL?
 
-* Festival OHM2013: https://ohm2013.org/ (31 juillet au 4 août, Hollande)
+* Festival OHM2013: [https://ohm2013.org/](https://ohm2013.org/) (31 juillet au 4 août, Hollande)
