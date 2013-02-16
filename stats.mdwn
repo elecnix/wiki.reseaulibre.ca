@@ -17,7 +17,7 @@ Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/muni
 [[nodes/boulette]]
 ------------------
 
-<a href="http://munin.orangeseeds.org/munin/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi.html"><img src="http://munin.orangeseeds.org/munin/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi-week.png" /></a>
+<a href="http://munin.orangeseeds.org/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi.html"><img src="http://munin.orangeseeds.org/munin-cgi/munin-cgi-graph/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi-week.png" /></a>
 
 [[nodes/deuxpi]]
 ----------------
