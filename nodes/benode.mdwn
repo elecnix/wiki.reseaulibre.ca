@@ -42,7 +42,7 @@ Bullet M2 + 15dBi
 
 ### Installation
 
-Antenne: <img src="http://i.imgur.com/JPdsLqZ.jpg" width=940" />
+Antenne: <img src="http://i.imgur.com/boPCcTD.jpg" width=940" />
 
 ### Info de configuration
 
