@@ -32,14 +32,15 @@ Voir aussi les fiches de [[présentations|http://wiki.reseaulibre.ca/presentatio
 
 This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
 
+* [[Presentations]] - les présentations du projet ou de concepts reliés au projets, les "powerpoints" sont ici!
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
+* [[Compile]] - how to compile or participate in the development of the Reseau libre OpenWRT-based firmware images.
 * [[Software]] - the software used/evaluated in the project
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
-* [[Presentations]] - les présentations du projet ou de concepts reliés au projets, les "powerpoints" sont ici!
 
 ## Documentation orpheline
 
