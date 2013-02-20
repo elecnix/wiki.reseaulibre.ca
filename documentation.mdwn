@@ -18,7 +18,6 @@ Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre cha
 4. [[Configurer IPv4|ip]] [[!trailitem ip]]
 (optionnel: pour permettre l'accès au vieil internet)
 5. [[Configurer Babel|babel/]] [[!trailitem babel]]
-(jadis nous utilisions [[Batman|guides/openwrt+batman]])
 6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
 **ou**
