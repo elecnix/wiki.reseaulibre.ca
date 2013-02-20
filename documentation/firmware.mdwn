@@ -38,4 +38,4 @@ The firmware is managed by Geneviève (tahini).
 
 # Bugs, todo ?
 
-We do not have a bug tracker at the moment.. feel free to add things here, but try to keep it tidy and realistic.
+See the todo section in: [[documentation/compile]]
