@@ -1,5 +1,7 @@
 [[!toc levels=3]]
 
+Avant de commencer, voir la [[foire aux questions|faq]].
+
 # Inventaire
 
 * [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
@@ -10,7 +12,9 @@ Voir aussi la page de [[stats]] pour une idée de l'état du réseau.
 
 # Comment rejoindre le mesh
 
-Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre chaque étape. Ceci devrait se résumer à:
+1. [[Installation et configuration d'un noeud|guides/install+node+facile]] (avec web gui, plus simple)
+
+**ou** pour plus d'information sur chaque étape:
 
 1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
 2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trailitem ad-hoc]]
@@ -19,10 +23,6 @@ Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre cha
 (optionnel: pour permettre l'accès au vieil internet)
 5. [[Configurer Babel|babel/]] [[!trailitem babel]]
 6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
-
-**ou**
-
-1. [[Installation et configuration d'un noeud|guides/install+node+facile]] (avec web gui, plus simple)
 
 Les [[guides]] documentent également d'autres configurations utilisées.
 Voir aussi les fiches de [[présentations|http://wiki.reseaulibre.ca/presentations/]].
