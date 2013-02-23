@@ -4,7 +4,7 @@
 
 ##Qu'est-ce qu'un réseau libre?
 
-Un réseau libre est un réseau qui appartient aux personnes qui l'utilisent, permet aux gens d'être propriétaires de leurs propres données et dont le développement est mené par les participants.  Ceci par opposition au modèle client, où un individu paie une corporation pour utiliser ses infrastructures de télécommunications et doit respecter les règles imposées par celle-ci.
+Un réseau libre est un réseau qui appartient aux personnes qui l'utilisent, permet aux gens d'être propriétaires de leurs propres données et dont le développement est mené par les participants.  Ceci par opposition au modèle client, où un individu paie un fournisseur pour utiliser ses infrastructures de télécommunications et doit respecter les règles imposées par celle-ci.
 
 Le groupe adopte la définition et les 5 libertés de la [[Free Network Foundation|http://freenetworkfoundation.org/?p=898]]
 
@@ -18,9 +18,11 @@ Concrètement, les gens installent des routeurs chez eux sur lesquels roule une 
 
 Bien sûr.  Mais tout dépend de ce que "ça" veut dire.
 
-Les protocoles de mesh sont utilisés [[partout dans le monde|Similar]] et des communautés comme Réseau Libre sont en opération un peu partout.  Ça fonctionne et ça demande pratiquement pas de maintenance.
+Il existe de nombreuses communautés comme Réseau Libre [[partout dans le monde|Similar]].
 
-Par contre, il n'y a rien de garanti sur ce réseau.  Selon où l'on est connecté, la disponibilité des services, la vitesse de connexion et même la possibilité de naviguer sur le web dépendent des services disponibles à cet endroit, de l'achalandage de certains liens du réseau et du nombre de "sauts" (liens) nécessaires pour se rendre à destination.
+À Montréal, un réseau se "tisse" depuis 2012. Nous avons expérimenté avec différentes technologies logicielles et différents types de matériel réseau. Aujourd'hui (début 2013), nous avons une quarantaine de relais situés principalement dans les arrondissements du Plateau, Villeray, Verdun et Rosemont, mais nous avons mêmes des relais en fonction sur la Rive-Sud ou dans l'Est de Montréal, qui attendent que de nouveaux noeuds s'ajoutent!
+
+Par contre, il n'y a rien de garanti sur ce réseau.  Selon où l'on est connecté, la disponibilité des services, la vitesse de connexion et même la possibilité de naviguer sur le web dépendent des services disponibles à cet endroit, de l'achalandage de certains liens du réseau et du nombre de "relais" (liens) nécessaires pour se rendre à destination.
 
 ##Combien ça coûte ?##
 
