@@ -24,7 +24,6 @@ Voir aussi la page de [[stats]] pour une idée de l'état du réseau.
 5. [[Configurer Babel|babel/]] [[!trailitem babel]]
 6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
-Les [[guides]] documentent également d'autres configurations utilisées.
 Voir aussi les fiches de [[présentations|http://wiki.reseaulibre.ca/presentations/]].
 
 # Other documentation
@@ -46,6 +45,8 @@ This is a wiki, so we expect node operators to share their best practices here a
 Ceci est de la documentation que nous avons pas pris le temps de classifier correctement.
 
 [[!inline pages="!page(*/discussion) and !backlink(documentation) and page(documentation/*) and !page(documentation/*/*)" archive="yes" quick="yes" template="titlepage" sort="title"]]
+
+Les anciens [[guides]] documentent également d'autres configurations testées.
 
 [[!meta copyright="Copyright © 2011-2012 Antoine Beaupré"]]
 
