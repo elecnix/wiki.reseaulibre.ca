@@ -1,0 +1,1 @@
+[[!report pages="nodes/* and field(IPv6 *)" template="iptable6raw" sort="field(IPv6)"]]
