@@ -10,9 +10,11 @@ Avant de commencer, voir la [[foire aux questions|faq]].
 
 Voir aussi la page de [[stats]] pour une idée de l'état du réseau.
 
-# Comment rejoindre le mesh
+# Comment rejoindre le mesh / How to join the mesh
 
-1. [[Installation et configuration d'un noeud|guides/install+node+facile]] (avec web gui, plus simple)
+Guide de configuration simplifié, méthode recommandée:
+
+1. [[Installation et configuration d'un relais|guides/install+node+facile]]
 
 **ou** pour plus d'information sur chaque étape:
 
