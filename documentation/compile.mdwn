@@ -105,6 +105,46 @@ Usage:
         This command line adds the wireless interface and wired interface eth0 to the mesh"
         setup_babel wlan0 eth0"
 
+### setup_reseaulibre
+
+Configures IPv6 with an fd64::/64 (from [[policy/numbering]]) and radvd. This way, you can use this IP block to broadcast an IPv6 route on the mesh, and this route will also be broadcasted on your local network, so devices supporting IPv6 will automatically get access to the mesh.
+
+If your router has access to the Internet, the script will try to automatically find a free IPv6 block in our fd64::/48 block. So you don't need to know anything about IPv6 in order to use this.
+
+Note that in order to use this setup, it is recommended that your br-lan interface be configured as "static". Otherwise, br-lan will send route announcements (RA), and it will assign itself an IP.
+
+author: bgm
+
+Usage:
+
+    setup_reseaulibre interface [ipv6 /64 net block]
+    
+    Arguments:
+        interface: interface to configure (radvd)"
+        ipv6 /64 net block (optional): IP block to assign
+    
+    EXAMPLE:
+        setup_reseaulibre br-lan
+        setup_reseaulibre br-lan fd64:2c08:9fa7:5::
+
+    If you have an Internet connection, the script will try
+    to find the first free netblock.
+
+    The /64 IP block will be selected from:
+    http://wiki.reseaulibre.ca/policy/numbering/
+
+    The block will be announced on your local network, so that the other
+    devices on that network can access the mesh.
+
+Warning to technical users: the script does a few assumptions. For example, if you are specifying your own /64 block, type it as, for example, "fd64:2c08:9fa7:5::", not "fd64:2c08:9fa7:5::/64". The aim is to automate a simple and most common use-case.
+
+TODO:
+
+* chain with setup_babel
+* currently, setup_babel will add all IPs on br-lan, so it will also create IPv4 routes, we also want to make sure babel only exports the fd64::/64 route.
+* make sure the firewall configuration is strict, in order to avoid exposing internal services by mistake.
+
+
 ### bat-signal
 
 Displays signal levels from connected Wi-Fi stations. It works with the wifi device and has nothing to do with [[documentation/batman]].
