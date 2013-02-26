@@ -4,13 +4,15 @@
 
 ## Ubiquiti
 
-Le revendeur [[Converbit|http://www.converbit.ca/magasin/]] à Boucherville, Richard Marquis, offre la [[PicoStation M2HP pour 71$|http://www.converbit.ca/magasin/products.php?product=PicoStation-M2HP]], incluant un injecteur de courant PoE 15V et une antenne omnidirectionnelle (connecteur RP-SMA). Le Bullet M2HP est également offert [[tout nu à 75$|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]]. C'est exactement le même système que la PicoStation, à l'exception du connecteur d'antenne de type N. La Bullet n'inclus cependant pas d'injecteur PoE ni d'antenne. On peut aussi se procurer la Bullet en "kit", soit le [[kit omnidirectionnel avec injecteur PoE est 130$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-Antenne-Omni--8DBI-%252b-POE-15V]], et le [[kit à antenne parabolique avec injecteur PoE est 115$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-GRid-24DBI-%252b-POE-15V]]. Notez que le kit omnidirectionnel inclus une antenne 8dbi, mais qu'une 15dbi est également disponible chez ce fournisseur et qu'il ne revient pas vraiment plus cher de se faire son propre "kit". L'antenne parabolique directionnelle n'est pas recommandée pour le mesh, mais pourrait permettre d'établir des liens de point à point sur de plus grande distances, si cela est nécessaire.
+Nous avons utilisons beaucoup les modèles "Bullet" (avec antenne omni) et "Nanostation" (antenne directionnelle intégrée). Le "Picostation" est aussi une option, mais peu de gens ont opté pour ce modèle. Les modèles d'Ubiquity sont populaires parce qu'ils supportent 802.11n, sont bien supportés par OpenWRT, offrent un bon rapport qualité/prix, et ont été testé avec succès à l'extérieur dans notre hiver québécois.
+
+Version brève: si vous voulez poser une antenne sur votre toit, on recommande un "Bullet" (avec une antenne 15 dbi omni-directionnelle). Pour relier des points difficiles d'accès par une antenne omni, on recommande le modèle "Nanostation" (un antenne parabolique directionnelle n'est pas recommandée pour le mesh, mais peut permettre d'établir des liens de point à point sur de plus grande distances, si cela est nécessaire).
+
+Le revendeur [[Converbit|http://www.converbit.ca/magasin/]] à Boucherville, Richard Marquis, offre la [[PicoStation M2HP pour 71$|http://www.converbit.ca/magasin/products.php?product=PicoStation-M2HP]], incluant un injecteur de courant PoE 15V et une antenne omnidirectionnelle (connecteur RP-SMA). Le Bullet M2HP est également offert [[tout nu à 75$|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]]. C'est exactement le même système que la PicoStation, à l'exception du connecteur d'antenne de type N. La Bullet n'inclus cependant pas d'injecteur PoE ni d'antenne. On peut aussi se procurer la Bullet en "kit", soit le [[kit omnidirectionnel avec injecteur PoE est 130$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-Antenne-Omni--8DBI-%252b-POE-15V]], et le [[kit à antenne parabolique avec injecteur PoE est 115$|http://www.converbit.ca/magasin/products.php?product=Combo-BulletM2HP-%252b-GRid-24DBI-%252b-POE-15V]]. Notez que le kit omnidirectionnel inclus une antenne 8dbi, mais qu'une 15dbi est également disponible chez ce fournisseur et qu'il ne revient pas vraiment plus cher de se faire son propre "kit".
 
 Le revendeur officiel d'UBNT au Canada est http://www.ubnt.ca Leur site (un peu brisé par moments) charge en $US, mais si vous les appellez directement pour faire une commande ils peuvent vous la charger en $CAN et tout le monde sauve au bout du compte (Paypal sont assez chers pour les taux de change).
 
 À noter qu'OpenWRT ne supporte pas le mode "TDMA" des antennes.
-
-Il sera peut-être possible de compiler batman-adv pour AirOS. Suivre les développements sur la [[mailing list batman-adv|https://lists.open-mesh.org/pipermail/b.a.t.m.a.n/2012-April/006893.html]] (self-signed cert)
 
 De [[http://wiki.openwrt.org/toh/ubiquiti/airmaxm]] :
 
@@ -48,7 +50,7 @@ users per such access point if you're radiating that power.
 * Intérieur: 200 m et Extérieur (Ligne de vue): 400 m à 11Mbps
 * Omnidirectionnelle
 
-### Bullet2 (sans antenne)
+### Bullet2 (+ antenne omni-directionnelle)
 
 Pour des liens à plus grande distance, le [[Bullet-M2HP|http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP]] est plus flexible, car vous choisissez quelle antenne vous branchez dessus, et obtenir ainsi plusieurs kilomètres de portée.
 
