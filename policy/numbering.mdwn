@@ -7,30 +7,26 @@ strongly encourage the use of IPv6 to avoid starvation and simplify routing.
 
 This section documents the strategy and the addresses already allocated. Select a free IP or prefix from this page, then document it on the wiki page of your node.
 
-## Dynamic table of IP addresses
+## IP addresses
+
+We are using an IPv6 space (`fd64:2c08:9fa7::/48`, which allows for 65,536 `/64` networks) known as unique-local addresses (ULA, see below) for our mesh.
+
+Select a free IPv6 /64 block from the list, and document it in the wiki page of your node.
 
 This table is automatically generated using the metadata information in the node pages.
 
 <table>
-<tr><th>#</th><th>hostname</th><th>IP</th><th>IPv6</th><th>MAC</th></tr>
-[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="iptable" sort="field(IP)"]]
+<tr><th>#</th><th>hostname</th><th>IPv6</th><th>IP</th><th>MAC</th></tr>
+[[!report pages="nodes/* and (field(IPv6 *) or field(IP *))" template="iptable6" sort="field(IPv6)"]]
 </table>
-
-## IPv6
-
-We are using a huge IPv6 space (`fd64:2c08:9fa7::/48`, which allows for 65,536 `/64` networks) known as unique-local addresses (ULA, see below) for our mesh. This allows us to announce a single prefix, if we were to link with other networks (using a VPN to a mesh in another city, for example).
-
-Select a free IPv6 /64 block from the list above, and document it in the wiki page of your node.
 
 ### Note on ULA prefixes
 
 ULA prefixes are "local prefixes" (think like `192.168.0.1`) but that
 are unique across sites *and* can potentially be routed between
-sites. See [[!rfc 4193]] for more information about this. Freifunk
-[recommends we use the ULA prefixes](http://wiki.freifunk.net/6mesh.freifunk.net),
-and specifically the `fdca:ffee:babe:dada::/64`, but I don't see why
-we should stick with that prefix, which is bound to Freifunk
-(ie. Berlin), to which we are not interconnected.
+sites. See [[!rfc 4193]] for more information about this. The Freifunk
+project [also uses ULA prefixes](http://wiki.freifunk.net/6mesh.freifunk.net),
+`fdca:ffee:babe:dada::/64`.
 
 We are using `fd64:2c08:9fa7::/48` as our prefix. This prefix is advertised
 from the mesh, so you should be able to see some routes and your
@@ -49,11 +45,12 @@ class (from [[!rfc 1918]]). `172.16.0.X/24` is reserved for big
 interconnects (like [[nodes/boulette]]), so if you have just a node in
 your window, using `172.16.1.X/24` for now (like [[nodes/carton]]).
 
-> (!) We are on the process of migrating away from the
-> `192.168.3.0/24` netblock, which was too small for our needs and
-> only used informally during the
-> [[first setup|meetings/2012-04-06-antenna-party]]. See also the
-> [[discussion]] page for a rationale.
+This is the same table as in IPv6, but ordered by IPv4 address, to more easily find a free block:
+
+<table>
+<tr><th>#</th><th>hostname</th><th>IP</th><th>IPv6</th><th>MAC</th></tr>
+[[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="iptable" sort="field(IPv6)"]]
+</table>
 
 ## Other Networks in the World
 
