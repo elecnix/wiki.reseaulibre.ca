@@ -1,5 +1,7 @@
 [[!toc levels=3]]
 
+Avant de commencer, voir la [[foire aux questions|faq]].
+
 # Inventaire
 
 * [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
@@ -8,9 +10,13 @@
 
 Voir aussi la page de [[stats]] pour une idée de l'état du réseau.
 
-# Comment rejoindre le mesh
+# Comment rejoindre le mesh / How to join the mesh
 
-Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre chaque étape. Ceci devrait se résumer à:
+Guide de configuration simplifié, méthode recommandée:
+
+1. [[Installation et configuration d'un relais|guides/install+node+facile]]
+
+**ou** pour plus d'information sur chaque étape:
 
 1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
 2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trailitem ad-hoc]]
@@ -18,34 +24,31 @@ Joindre le mesh devrait être assez simple, si vous suivez bien à la lettre cha
 4. [[Configurer IPv4|ip]] [[!trailitem ip]]
 (optionnel: pour permettre l'accès au vieil internet)
 5. [[Configurer Babel|babel/]] [[!trailitem babel]]
-(jadis nous utilisions [[Batman|guides/openwrt+batman]])
 6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
-**ou**
-
-1. [[Installation et configuration d'un noeud|guides/install+node+facile]] (avec web gui, plus simple)
-
-Les [[guides]] documentent également d'autres configurations utilisées.
 Voir aussi les fiches de [[présentations|http://wiki.reseaulibre.ca/presentations/]].
 
 # Other documentation
 
 This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
 
+* [[Presentations]] - les présentations du projet ou de concepts reliés au projets, les "powerpoints" sont ici!
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
+* [[Compile]] - how to compile or participate in the development of the Reseau libre OpenWRT-based firmware images.
 * [[Software]] - the software used/evaluated in the project
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
-* [[Presentations]] - les présentations du projet ou de concepts reliés au projets, les "powerpoints" sont ici!
 
 ## Documentation orpheline
 
 Ceci est de la documentation que nous avons pas pris le temps de classifier correctement.
 
 [[!inline pages="!page(*/discussion) and !backlink(documentation) and page(documentation/*) and !page(documentation/*/*)" archive="yes" quick="yes" template="titlepage" sort="title"]]
+
+Les anciens [[guides]] documentent également d'autres configurations testées.
 
 [[!meta copyright="Copyright © 2011-2012 Antoine Beaupré"]]
 

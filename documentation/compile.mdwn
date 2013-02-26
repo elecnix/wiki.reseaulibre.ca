@@ -120,3 +120,16 @@ Use the leds on the ubiquiti device to show the strength of the link to one give
 author: ?
 
 sources: ?
+
+# Bugs, todo ?
+
+We do not have a bug tracker at the moment.. feel free to add things here, but try to keep it tidy and realistic.
+
+* Create a script to automatically configure IPv6 with a unique-local fd64 address block?
+
+Also see the brainstorm on network topology:
+
+* http://www.flickr.com/photos/elecnix/8289464397/in/set-72157629757019923/
+* http://www.flickr.com/photos/elecnix/8289465011/in/set-72157629757019923/
+* http://www.flickr.com/photos/elecnix/8290525058/in/set-72157629757019923/
+* http://www.flickr.com/photos/elecnix/8289466231/in/set-72157629757019923/

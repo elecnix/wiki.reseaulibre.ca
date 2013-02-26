@@ -17,10 +17,7 @@ IPv6: 2607:f2c0:f00f:29a1::1
  * IP address: {{$IP}}
  * Software: OpenWRT (attitude adjustment) Trunk 2012-07-26
  * Hardware: Ubiquity NanoStation M2
- * Power: 28dBm
- * Location: dans une fenêtre au 3e étage
- * Azimuth: 120°
- * Panorama: N/A
+ * Location: sur le toit
  * Status: [[!taglink up]]
  * Operator: [[users/bgm]]
  * Links: [[deuxpi]] (10mbps), [[bgm-homs]] (ethernet), [[bgm-alep]] (ethernet)

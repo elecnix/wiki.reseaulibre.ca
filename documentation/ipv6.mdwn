@@ -19,11 +19,11 @@ Installer les modules et utilitaires IPv6:
     opkg update
     opkg install kmod-ipv6 ip kmod-ip6tables ip6tables
 
-Il n'est pas nécessaire de redémarrer. Les interfaces physiques (eth0, wlan0, etc) devraient déjà afficher une adresse « link-local ».
+Il n'est pas nécessaire de redémarrer. Les interfaces physiques (br-lan, wlan0, etc) devraient déjà afficher une adresse « link-local ».
 
 # Adresses link-local
 
-Les adresses link-local sont automatiquement configurées par le système d'exploitation. Elles permettent aux machines sur le même lien physique (ethernet, wifi, batman) de se parler, sans avoir besoin de mécanisme d'assignation des adresses.
+Les adresses link-local sont automatiquement configurées par le système d'exploitation. Elles permettent aux machines sur le même lien physique (ethernet, wifi) de se parler, sans avoir besoin de mécanisme d'assignation des adresses.
 
     ifconfig
 

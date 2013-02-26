@@ -82,7 +82,7 @@ note
 
 ## Réseau Libre
 
-Based on OpenWRT, see [[guides/compile]].
+Based on OpenWRT, see [[documentation/compile]].
 
 ## Robin
 
