@@ -7,11 +7,11 @@ strongly encourage the use of IPv6 to avoid starvation and simplify routing.
 
 This section documents the strategy and the addresses already allocated. Select a free IP or prefix from this page, then document it on the wiki page of your node.
 
-## IP addresses
+## IPv6 addresses
 
-We are using an IPv6 space (`fd64:2c08:9fa7::/48`, which allows for 65,536 `/64` networks) known as unique-local addresses (ULA, see below) for our mesh.
+We are using an IPv6 space (`fd64:2c08:9fa7::/48`, which allows for 65,536 `/64` networks) known as unique-local addresses (ULA, see below) for our mesh. You can also use your own IPv6 address block, if your ISP offers it, or if you are using a tunnel (such as Tunnel broker). See [[documentation/ipv6]] for more information.
 
-Select a free IPv6 /64 block from the list, and document it in the wiki page of your node.
+To use a block part of our IPv6 space, select a free IPv6 /64 block from the list, and document it in the wiki page of your node.
 
 This table is automatically generated using the metadata information in the node pages.
 
