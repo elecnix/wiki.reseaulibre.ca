@@ -1,0 +1,51 @@
+Solution de monitoring - preuve de concept
+===================
+
+La solution de monitoring en cours de développement utilise des composants déjà existants et les fait coexister dans le but d'avoir une solution sur pied le plus rapidement possible tout en bénéficiant d'une expertise externe. Des efforts d'intégration sont aussi en cours, notamment en ce qui concerne la présentation des données directement sur une page du wiki.
+
+[OpenNMS](http://www.opennms.org/), une application de gestion de réseau open-source capable de plusieurs fonctionnalités telles la découverte de noeuds (automatique ou non), la gestion d'évènements de notification et la mesure de performance. Elle offre aussi une interface graphique intéressante, mais nous travaillons néanmoins à rendre disponibles les information récoltées par OpenNMS directement sur le wiki. 
+
+OpenNMS est compatible avec plusieurs protocoles pour la récolte d'informations propre à la gestion de réseau, dont SNMP. Des efforts sont mis à mettre sur pied un agent SNMP adéquat pour Réseau Libre. 
+
+La découverte du réseau se fait selon le diagramme de séquence suivant:
+
+[[!img Diagramme_Decouverte_reseau.png align="center" size="950x" alt="DecouverteReseau"]]
+
+Nous avons comme banc de test une simulation, mais disposons tout de même de quelques noeuds déjà configurés de manière "standard" pour Réseau Libre. Le reste de cette présentation a été effectuée avec ces noeuds physiques. 
+
+Les images qui suivent proviennent de l'interface graphique d'OpenNMS même. La démonstration a été exécutée sur un réseau ne contenant que 2 noeuds, mais les concepts peuvent évidemment être extrapolés à plus de noeuds. 
+
+La page Admin permet de configurer les différents paramètres relatifs à la gestion du réseau:
+
+[[!img adminPage.png align="center" size="950x" alt="AdminPage"]]
+
+
+Par l'interface graphique, il est possible de spécifier l'intervale d'addresse ip à scanner:
+
+[[!img addressesToScan.png align="center" size="950x" alt="addressesToScan"]]
+
+
+Par la suite, les noeuds sont automatiquement découverts:
+
+[[!img nodesList.png align="center" size="950x" alt="nodesList"]]
+
+
+En sélectionnant un noeud, on peut voir les informations qui y sont rattachées:
+
+[[!img nodesMainPage.png align="center" size="950x" alt="nodesMainPage"]]
+
+
+Il est possible de visualiser les évènements relatif à la gestion du réseau (découverte de noeuds, découverte de services...):
+
+[[!img eventsListOnNetwork.png align="center" size="950x" alt="nodesEventsList"]]
+
+
+Une grande quantité d'information est disponible, notamment sous forme de graphe:
+
+[[!img resourceGraph_1node.png align="center" size="950x" alt="resourceGraph"]]
+
+
+Plusieurs requête peuvent être effectuées, particulièrement par ligne de commande. Des fichiers de configuration peuvent aussi aider à spécifier les paramètres de gestion à utiliser. Voici un example de fichier de configuration:
+
+[[!img collectd-configuration_xmlFile.png align="center" size="950x" alt="configFile"]]
+

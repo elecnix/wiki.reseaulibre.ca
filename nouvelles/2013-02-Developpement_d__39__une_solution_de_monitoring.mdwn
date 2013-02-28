@@ -1,0 +1,4 @@
+Développement d'une solution de monitoring
+===================
+
+Une solution de monitoring pour le réseau est en cours de développement. Vous êtes invités à jeter un oeil à la [[preuve de concept|monitoring/preuveConcept]] et à partager vos idées, commentaires et questions!
