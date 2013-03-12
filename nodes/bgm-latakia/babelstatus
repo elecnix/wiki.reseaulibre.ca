@@ -1,8 +1,1 @@
-My MAC ID:  de:9f:db:ff:fe:00:13:79
-*** Neighbours ***
-fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0    
-fe80::215:6dff:fe72:942f bgm-homs-wlan0 if wlan0    
-fe80::215:6dff:fe73:942f bgm-homs-eth1 if eth0    
-*** Routes ***
-fe80::de9f:dbff:fe00:11d9 deuxpi-bullet -> 
-    2001:470:b2a7:2::/64-c053b8 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18   via fe80::de9f:dbff:fe00:11d9 if wlan0
+node is down
