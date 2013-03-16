@@ -112,9 +112,10 @@ Byzantium et de nous.
 Henning, du projet OLSR, m'a noté la distinction entre OLSR et Babel
 au niveau conceptuel et les problèmes que ça amène. Il est possible
 qu'un mesh babel s'écroule et doive reconstruire toutes ses tables de
-routage s'il y a une perte élevée de paquets.  [Edit: ce n'est pas vrai.
-Babel supprime un voisin s'il perd 8 paquets de suite, mais à aucun moment
-il ne s'« écroule ». -- jch]
+routage s'il y a une perte élevée de paquets.  [Edit: Babel supprime un
+voisin s'il perd 8 paquets de suite, ce qui supprime effectivement les routes qui
+passent par ce voisin ; par contre, il ne reconstruit pas la totalité du
+réseau.  -- jch]
 
 Il y a aussi un problème d'énumération infinie. C'est un peu complexe
 à expliquer, mais en bref, disons que les points A, B et C sont
@@ -124,8 +125,8 @@ annonces avant qu'il reçoive le changement de B, il est possible
 (selon Henning de OLSR), que B reçoive sa propre route et la
 réannonce, pensant que C a un chemin vers A. C va ensuite recevoir
 cette même route avec un hop de plus et la réannoncer, etc.
-[Edit: ce n'est pas vrai. Babel a été soigneusement conçu pour éviter
-le comptage à l'infini. Quelqu'un a dû se mélanger avec RIP. -- jch]
+[Edit: Babel a été soigneusement conçu pour éviter le comptage à l'infini.
+L'auteur a peut-être confondu avec RIP. -- jch]
 
 Ces deux problèmes ont été découverts durant les "Battle Mesh" et il
 n'est pas exactement clair s'ils ont été résolus. Je soupçonne que le
@@ -138,8 +139,8 @@ BMX6
 ----
 
 Eh oui, encore un autre protocole de routage! Pour bien nous mélanger,
-les Catalans ont écrit leur propre protocole, dérivé de Batman (pas
-advanced!). Quelques points clefs:
+les Catalans ont écrit leur propre protocole [Edit: Axel Neumann est
+Allemand -- jch], dérivé de Batman (pasadvanced!). Quelques points clefs:
 
  * utilise le même protocole IPv6 que nous (ULA) pour l'allocation
    automatique
