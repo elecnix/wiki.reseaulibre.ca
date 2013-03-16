@@ -116,10 +116,7 @@ routage s'il y a une perte élevée de paquets.  [Edit: ce n'est pas vrai.
 Babel supprime un voisin s'il perd 8 paquets de suite, mais à aucun moment
 il ne s'« écroule ». -- jch]
 
-Il y a aussi un problème d'énumération infinie.  [Edit: ce n'est pas vrai.
-Babel a été soigneusement conçu pour éviter le comptage à l'infini. Quelqu'un
-a dû se mélanger avec RIP. -- jch]
-C'est un peu complexe
+Il y a aussi un problème d'énumération infinie. C'est un peu complexe
 à expliquer, mais en bref, disons que les points A, B et C sont
 connectés en série (A - B - C). Si le lien de A à B disparaît, B le
 retire de sa table de routage et envoie l'annonce. Si C envoie ses
@@ -127,6 +124,8 @@ annonces avant qu'il reçoive le changement de B, il est possible
 (selon Henning de OLSR), que B reçoive sa propre route et la
 réannonce, pensant que C a un chemin vers A. C va ensuite recevoir
 cette même route avec un hop de plus et la réannoncer, etc.
+[Edit: ce n'est pas vrai. Babel a été soigneusement conçu pour éviter
+le comptage à l'infini. Quelqu'un a dû se mélanger avec RIP. -- jch]
 
 Ces deux problèmes ont été découverts durant les "Battle Mesh" et il
 n'est pas exactement clair s'ils ont été résolus. Je soupçonne que le
