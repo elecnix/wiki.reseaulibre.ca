@@ -7,3 +7,13 @@ Mes impressions de babeld après quelques tests et comparaison avec batman:
 * À date, je préfère batman, même s'il manque la propagation des routes internes.
 
 -- genb
+
+> On ne peut pas bridger une interface ad-hoc avec une ethernet, donc pour des routeurs où on veut le mesh sur eth0 et wlan0, il faut spécifier les 2 interfaces, donc 2 adresses ip, 2 subnets, etc.
+
+Effectivement, il faut passer deux interfaces à babeld.  Par contre, on peut mettre la même adresse IPv4 sur les deux interfaces, et il suffit de mettre une adresse IPv6 sur une des interfaces.
+
+> Avec batman, batctl offrait beaucoup d'informations que babeld
+
+killall -USR1 babeld met pas mal d'informations dans le log.  S'il manque quelque chose, on peut facilement le rajouter dans la prochaine version.
+
+--jch
