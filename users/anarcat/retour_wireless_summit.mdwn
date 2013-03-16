@@ -69,7 +69,7 @@ rendent le protocole incompatible avec les versions non-patchées.
 Un avantage de OLSR: il peut rouler dans une table de routage séparée,
 et donc, contrairement à babel, on garde la table de routage
 principale propre et on peut utiliser le règles de "policy" du kernel
-linux.
+linux. [Edit: Babel en est capable aussi. -- jch]
 
 À noter aussi que depuis la version 0.6, il est possible de rouler
 OLSR avec un fichier de configuration minime, mais j'ai eu de la
@@ -112,9 +112,14 @@ Byzantium et de nous.
 Henning, du projet OLSR, m'a noté la distinction entre OLSR et Babel
 au niveau conceptuel et les problèmes que ça amène. Il est possible
 qu'un mesh babel s'écroule et doive reconstruire toutes ses tables de
-routage s'il y a une perte élevée de paquets.
+routage s'il y a une perte élevée de paquets.  [Edit: ce n'est pas vrai.
+Babel supprime un voisin s'il perd 8 paquets de suite, mais à aucun moment
+il ne s'« écroule ». -- jch]
 
-Il y a aussi un problème d'énumération infinie. C'est un peu complexe
+Il y a aussi un problème d'énumération infinie.  [Edit: ce n'est pas vrai.
+Babel a été soigneusement conçu pour éviter le comptage à l'infini. Quelqu'un
+a dû se mélanger avec RIP. -- jch]
+C'est un peu complexe
 à expliquer, mais en bref, disons que les points A, B et C sont
 connectés en série (A - B - C). Si le lien de A à B disparaît, B le
 retire de sa table de routage et envoie l'annonce. Si C envoie ses
@@ -127,7 +132,8 @@ Ces deux problèmes ont été découverts durant les "Battle Mesh" et il
 n'est pas exactement clair s'ils ont été résolus. Je soupçonne que le
 second l'a été, mais le premier, le problème de packet loss, est sujet
 à débat, alors que le créateur de Babel considère le packet loss comme
-un problème distinct que Babel peut se permettre d'ignorer.
+un problème distinct que Babel peut se permettre d'ignorer. [Edit: je suis
+le créateur de Babel, et je n'ai jamais rien dit de semblable. -- jch]
 
 BMX6
 ----
