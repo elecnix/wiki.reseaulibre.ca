@@ -1,4 +1,41 @@
-Développement d'une solution de monitoring
-===================
+# Développement d'une solution de monitoring / conception of a monitoring solution
 
+## 15 mars
+Après une semaine de relâche plutôt tranquille du côté du développement, nous nous sommes rencontrés pour définir nos objectifs d'ici la fin de notre session en ce qui a trait à la solution de monitoring. Donc, au menu:
+
+* Amélioration de notre environement d'émulation du réseau
+* Raffinement de la stratégie de découverte du réseau d'OpenNMS
+* Ajout de fonctionnalités propres au monitoring (qui seront disponibles via le wiki de Réseau Libre)
+* Implémentation d'un "overlay" de monitoring afin de diviser le réseau en clusters (le but est de réduire la quantité de messages échangés sur le réseau et, par la même occasion, de rendre la solution plus extensive). 
+
+Des inquiétudes relatives à la sécurité et l'utilisation de SNMP ont été soulevées. Nous sommes conscients de cette problématique, et nous essaierons de réduire autant que possible les risques à l'intérieur des tâches mentionnées ci-haut, mais ne consacrerons pas de tâche complète à ce sujet. Les raisons sont principalement le temps limité dont nous disposons (jusqu'au 17 avril maximum, ce qui inclue le temps nécessaire à l'écriture de notre rapport final et le "packaging" de notre solution) ainsi que la quasi inexistence de dispositifs de sécurité en place sur le réseau. Nous évaluons que l'implantation de mesures de sécurité pourrait être en soit un projet en entier. 
+
+Néanmoins, nous envisagerons sérieusement des technologies permettant de réduire les risques, telle que SNMPv3.
+
+__À venir:__ nous avons écrit un rapport de mi-session dans le cadre de notre projet. Il contient, entre autres, les détails de nos développement passés et futurs, ainsi que quelques recherches que nous avons effectuées. Ces recherches concernent surtout les différences entre certains protocoles de routages utilisés dans des réseau Ad-hoc, ainsi qu'une évaluation préliminaire de quelques solutions de monitoring. Le rapport sera bientôt disponible dans la section [[documentation|documentation/]]
+
+* * *
+
+After a quiet spring break, we met with each other to define our objectives for the monitoring solution until the end of the semester. Our principal goals will be:
+
+* Improving our emulating environment for the network
+* Improving the strategy used by OpenNMS for the network discovery
+* Adding more monitoring features (which will be available through Réseau Libre's wiki)
+* Implementing a monitoring overlay  which will divide the network into clusters (our intention is to reduce the quantity of messages being exchanged on the network and, consequently, making our solution more scalable)
+
+Concerns about security and the use of SNMP have been raised. We are aware of the problem, and we will try to reduce as much as possible the risks while working on the tasks mentioned above, but we will not create an entire task for it. Mostly, the reasons are that we have a limited amount of time left for our project (maximum April 17th, including the time needed for writing our final report and packaging our solution) and the almost nonexistence of security technologies actually in place on the network. We consider that implementing security measures on the network could be an entire project. 
+
+However, we will not overlook this aspect and consider seriously the usage of technologies such as SNMPv3, which would help improving the security of our solution. 
+
+__Coming soon:__ we have written a mid-term report for our project. It includes, among others stuff, details of our past and futur developments, as well as some research we made according to different routing protocols used in Ad-hoc networks and different existing monitoring solutions. It will soon be available in the [[documentation section|documentation/]].
+
+## 1er mars
 Une solution de monitoring pour le réseau est en cours de développement. Vous êtes invités à jeter un oeil à la [[preuve de concept|monitoring/preuveConcept]] et à partager vos idées, commentaires et questions!
+
+* * *
+
+A monitoring solution is currently being developped. You are invited to take a look at its [[proof of concept|monitoring/preuveConcept]] and to share your ideas, questions and comments!
+
+---
+
+__L'équipe de projet de Polytechnique__
