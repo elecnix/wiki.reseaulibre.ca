@@ -1,5 +1,16 @@
 # Développement d'une solution de monitoring / conception of a monitoring solution
 
+## 22 mars
+Le rapport est maintenant disponible [[ici|monitoring/rapport.pdf]]. 
+
+Vous pouvez également trouver un tableau comparatifs de différents protocoles de routage [[ici|monitoring/tableauProtocoleRoutage.pdf]]. 
+
+* * *
+
+The French version of the report is now available [[here|monitoring/rapport.pdf]] (English version will come too, but it is not ready yet).
+
+You can also find a comparative table of a few routing protocols [[here|monitoring/tableauProtocoleRoutage.pdf]]. 
+
 ## 15 mars
 Après une semaine de relâche plutôt tranquille du côté du développement, nous nous sommes rencontrés pour définir nos objectifs d'ici la fin de notre session en ce qui a trait à la solution de monitoring. Donc, au menu:
 
@@ -12,7 +23,7 @@ Des inquiétudes relatives à la sécurité et l'utilisation de SNMP ont été s
 
 Néanmoins, nous envisagerons sérieusement des technologies permettant de réduire les risques, telle que SNMPv3.
 
-__À venir:__ nous avons écrit un rapport de mi-session dans le cadre de notre projet. Il contient, entre autres, les détails de nos développement passés et futurs, ainsi que quelques recherches que nous avons effectuées. Ces recherches concernent surtout les différences entre certains protocoles de routages utilisés dans des réseau Ad-hoc, ainsi qu'une évaluation préliminaire de quelques solutions de monitoring. Le rapport sera bientôt disponible dans la section [[documentation|documentation/]]
+Nous avons écrit un rapport de mi-session dans le cadre de notre projet. Il contient, entre autres, les détails de nos développement passés et futurs, ainsi que quelques recherches que nous avons effectuées. Ces recherches concernent surtout les différences entre certains protocoles de routages utilisés dans des réseau Ad-hoc, ainsi qu'une évaluation préliminaire de quelques solutions de monitoring. Le rapport sera bientôt disponible.  
 
 * * *
 
@@ -27,7 +38,7 @@ Concerns about security and the use of SNMP have been raised. We are aware of th
 
 However, we will not overlook this aspect and consider seriously the usage of technologies such as SNMPv3, which would help improving the security of our solution. 
 
-__Coming soon:__ we have written a mid-term report for our project. It includes, among others stuff, details of our past and futur developments, as well as some research we made according to different routing protocols used in Ad-hoc networks and different existing monitoring solutions. It will soon be available in the [[documentation section|documentation/]].
+__Coming soon:__ we have written a mid-term report for our project. It includes, among others stuff, details of our past and futur developments, as well as some research we made according to different routing protocols used in Ad-hoc networks and different existing monitoring solutions. The report will be available soon. 
 
 ## 1er mars
 Une solution de monitoring pour le réseau est en cours de développement. Vous êtes invités à jeter un oeil à la [[preuve de concept|monitoring/preuveConcept]] et à partager vos idées, commentaires et questions!
