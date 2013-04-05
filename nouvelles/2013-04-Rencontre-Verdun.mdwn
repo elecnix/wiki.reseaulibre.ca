@@ -8,10 +8,7 @@ Introduction à Réseau libre:
 
 Contact: 514-767-3975.
 
-Nouveaux noeuds
-===============
-
-* ?
+Abonnez-vous à la [[liste d'annonces|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca]] pour être informé de tout changement.
 
 Événements à surveiller
 =======================
@@ -19,16 +16,22 @@ Nouveaux noeuds
 * Battlemesh v6: [http://battlemesh.org/](http://battlemesh.org/) 15-21 avril 2013, Denmark
 * Festival OHM2013: [https://ohm2013.org/](https://ohm2013.org/) (31 juillet au 4 août, Hollande)
 
+Nouveaux noeuds
+===============
+
+* aucun nouveau noeud ce mois-ci
+
 Partager
 ========
 
-Pour partager cette annonce dans vos réseaux:
-http://wiki.reseaulibre.ca/nouvelles/2013-04-Rencontre-Verdun
+Pour partager cette annonce dans vos réseaux:  
+[[http://wiki.reseaulibre.ca/nouvelles/2013-04-Rencontre-Verdun]]
 
-Pour s'abonner au bulletin:
-https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca
+Pour s'abonner au bulletin:  
+[[https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca]]
 
-Pour nous écrire: info@reseaulibre.ca
+Pour nous écrire:  
+[[mailto:info@reseaulibre.ca]]
 
-Pour discuter avec nous:
-http://webchat.freenode.net/?channels=reseaulibre
+Pour discuter avec nous:  
+[[http://webchat.freenode.net/?channels=reseaulibre]]
