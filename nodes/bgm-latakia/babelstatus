@@ -1,8 +1,11 @@
 My MAC ID:  de:9f:db:ff:fe:00:13:79
 *** Neighbours ***
+fe80::227:22ff:fe72:cf9f unkode if wlan0    
 fe80::215:6dff:fe72:942f bgm-homs-wlan0 if wlan0    
 fe80::215:6dff:fe73:942f bgm-homs-eth1 if eth0    
 fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0    
 *** Routes ***
 fe80::215:6dff:fe73:942f bgm-homs-eth1 -> 
     2607:f2c0:f00f:2900::/56-83ae40 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::215:6dff:fe73:942f if eth0
+fe80::de9f:dbff:fe00:11d9 deuxpi-bullet -> 
+    2001:470:b2a7:2::/64-83a3b8 prefix 2001:470:b2a7:2::/64 installed yes id fa:d1:11:ff:fe:91:02:18   via fe80::de9f:dbff:fe00:11d9 if wlan0
