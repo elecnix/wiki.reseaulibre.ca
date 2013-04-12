@@ -345,7 +345,9 @@ Monitoring
 
 We have not yet adopted a particular monitoring method, we are still experimenting.
 
-One option is to commit your babelstatus output in the wiki using a cron, from another machine that has ssh access to your babel node. When your routes change (i.e. a new route is added, or a node is up/down), the cron will commit the change and it will be announced automatically on IRC by the bot that tracks wiki changes.
+The best option is probably to install [[babelweb]].
+
+Another option is to commit your babelstatus output in the wiki using a cron, from another machine that has ssh access to your babel node. When your routes change (i.e. a new route is added, or a node is up/down), the cron will commit the change and it will be announced automatically on IRC by the bot that tracks wiki changes.
 
 For example:
 
