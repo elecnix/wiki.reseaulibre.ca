@@ -1,0 +1,42 @@
+"Babelweb is a web-based monitoring tool for the Babel routing daemon developed by Gabriel Kerneis."
+
+[[http://www.pps.univ-paris-diderot.fr/~kerneis/software/babelweb/]]
+
+Random notes
+============
+
+Since aprox 2013-04-12, babelweb supports monitoring of multiple nodes.
+
+<pre>
+09:20 < bgm> kerneis: the multiple babel router support for babelweb is very interesting. How does it work in a 
+             nutshell? Do we open a ssh tunnel to each monitored router, with multiple babelAddress ?
+09:55 < kerneis> bgm: yes, except in fact I prefer to use socat on the router nowadays
+09:56 < kerneis> or you can patch babeld so that it allows connection from the outside (the result is the same)
+09:57 < kerneis> and then, babelweb is configured to connect to 192.168.4.{131,132,133,…}:33123
+09:57 < kerneis> since I trust the people on this network, making the "local-interface" not local anymore is not a 
+                 big deal
+09:58 < kerneis> and jch just added support for multiple connections to a single local-interface, which solves the 
+                 deny of service issue where someone would "steal" the connection
+09:59 < kerneis> so the only issue is really one of privacy/security
+10:02 < kerneis> my current setup is:
+10:02 < kerneis> - add this line to /etc/rc.local:
+10:02 < kerneis> socat TCP-LISTEN:1234,fork TCP6:[::1]:33123
+10:04 < kerneis> - use a babeld from http://git.wifi.pps.univ-paris-diderot.fr/?p=babeld.git;a=summary (master 
+                 branch) with support for 'multiple-local-interfaces'
+10:04 < kerneis> - run babeld with '-g 33123'
+10:04 < kerneis> - run babelweb with the addresses I'm interested in, and port=1234
+10:05 < kerneis> (cf. socat command)
+10:05 < kerneis> the good thing is that I don't need to create tunnels
+10:07 < kerneis> the "bad" thing is that anybody on the network can monitor any of my nodes (but is it such a bad 
+                 thing?) and can DoS the local-interface if they create more than 4 connections to it
+10:07 < kerneis> in any case, the DoS issue only prevents me from monitoring babel, it does not interfere with the 
+                 protocol itself
+10:09 < kerneis> note that using latest 'master' is not mandatory, but if you don't use it, you are limited to 1 
+10:09 < kerneis> and socat needs to be installed on your router (ie. opkg update && opkg install socat)
+10:10 < kerneis> I'll change the doc and configuration of babelweb shortly, to make configuration of multiple 
+                 monitoring easier (you need to tweak server.js right now)
+10:10 < kerneis> and then make a release
+10:11 < bgm> where does the limit of 4 come from?
+10:12 < kerneis> +#define MAX_LOCAL_SOCKETS 4
+10:13 < kerneis> you can tweak it at compile time (-DMAX_LOCAL_SOCKETS=42)
+</pre>
