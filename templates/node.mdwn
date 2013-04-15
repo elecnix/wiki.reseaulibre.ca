@@ -1,6 +1,4 @@
-[[!waypoint map=null  lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
-
-(Description of the node here, with a link to your homepage.)
+[[!waypoint lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
 
 # Technical details
 
@@ -53,7 +51,7 @@ Links
 of your installation or of the panorama. It will help other people who may
 want to link with you.)
 
-[[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
+[[!meta copyright="Copyright © 2011-2013 Your Name Here"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
