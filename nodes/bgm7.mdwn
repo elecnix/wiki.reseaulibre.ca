@@ -1,4 +1,4 @@
-[[!waypointlat="45.454697" lon="-73.57442" embed hidden width="950px" height="400px" right desc="Noeud potentiel."]]
+[[!waypoint lat="45.454697" lon="-73.57442" embed hidden width="950px" height="400px" right desc="Noeud potentiel."]]
 
 Noeud potentiel sur le toit.
 
