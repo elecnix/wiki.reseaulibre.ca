@@ -1,7 +1,5 @@
-[[!waypoint map=null lat="45.520667" lon="-73.633279" embed hidden width="400px" height="400px" right desc="A node on a roof"]]
-(remove map=null to display on the main map)
+[[!waypoint lat="45.520667" lon="-73.633279" embed hidden width="400px" height="400px" right desc="A node on a roof"]]
 
-(Description of the node here, with a link to your homepage.)
 # Technical details
 
 [[!ymlfront data="""
