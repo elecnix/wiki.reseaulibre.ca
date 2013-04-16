@@ -1,4 +1,6 @@
-[[!waypoint lat="45.520667" lon="-73.633279" embed hidden width="400px" height="400px" right desc="A node on a roof"]]
+[[!waypoint lat="45.454697" lon="-73.57442" embed hidden width="950px" height="400px" right desc="Noeud potentiel."]]
+
+Noeud potentiel sur le toit.
 
 # Technical details
 
@@ -11,6 +13,12 @@ IPv6:
 hostname
 : (node hostname here)
 
+Type
+: relay
+
+SSID
+: foo.relais.reseaulibre.ca (see [[policy/naming]])
+
 MAC address
 : {{$MAC}}
 
@@ -20,34 +28,32 @@ IPv6 address
 IP address
 : {{$IP}}
 
-Software
-: 
-
 Hardware
 : 
 
-Power
-: 
-
 Location
-: (where is this node physically installed?)
-
-Azimuth
-: 360°
-
-Panorama
-: N/A
+: Roof
 
 Status
-: [[!taglink planned]] (can also be up, down, planned, unknown)
+: [[!taglink prospect]]
 
 Operator
-: [[users/Danukeru]]
+: [[/users/bgm]]
 
 Links
 : (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
 
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+# Services
+
+(you can document services accessible from this location)
+
+# Photos
+
+(You can upload images when you edit this page. Feel free to upload photos
+of your installation or of the panorama. It will help other people who may
+want to link with you.)
+
+[[!meta copyright="Copyright © 2011-2012 Your Name Here"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this

@@ -53,7 +53,7 @@ Operator
 : [[/users/elecnix]]
 
 Links
-: 
+: [[nodes/bb]]
 
 Backup power
 : None

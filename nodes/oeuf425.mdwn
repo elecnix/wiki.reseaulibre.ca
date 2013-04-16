@@ -1,4 +1,4 @@
-[[!waypoint map=null  lat="45.526049" lon="-73.595269" embed hidden width="400px" height="400px" right desc="Possible dans la fenêtre."]]
+[[!waypoint lat="45.526049" lon="-73.595269" embed hidden width="400px" height="400px" right desc="Possible dans la fenêtre."]]
 
 Noeud possible dans la fenêtre du 4e étage.
 
