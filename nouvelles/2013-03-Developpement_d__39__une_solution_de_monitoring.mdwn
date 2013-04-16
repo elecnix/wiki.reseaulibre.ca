@@ -1,15 +1,11 @@
 # Développement d'une solution de monitoring / conception of a monitoring solution
 
 ## 22 mars
-Le rapport est maintenant disponible [[ici|monitoring/rapport.pdf]]. 
-
-Vous pouvez également trouver un tableau comparatifs de différents protocoles de routage [[ici|monitoring/tableauProtocoleRoutage.pdf]]. 
+Toute la documentation pertinente et relative au développement de la solution de monitoring se trouve [[ici|documentation/monitoring/documentationPertinente]].
 
 * * *
 
-The French version of the report is now available [[here|monitoring/rapport.pdf]] (English version will come too, but it is not ready yet).
-
-You can also find a comparative table of a few routing protocols [[here|monitoring/tableauProtocoleRoutage.pdf]]. 
+All the documentation related to the development of the monitoring solution ca be found [[here|documentation/monitoring/documentationPertinente]].
 
 ## 15 mars
 Après une semaine de relâche plutôt tranquille du côté du développement, nous nous sommes rencontrés pour définir nos objectifs d'ici la fin de notre session en ce qui a trait à la solution de monitoring. Donc, au menu:
