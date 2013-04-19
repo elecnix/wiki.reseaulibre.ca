@@ -3,6 +3,13 @@ META: résumé des discussions à propos de la traduction de la documentation da
 Proposition de bgm
 ==================
 
-* Communications par courriels: FR de référence, puis EN autant que possible.
+* Communications par courriels: FR de préférence, EN autant que possible.
 * Documentation wiki "grand public": FR de référence, EN autant que possible.
 * Documentation wiki "technique": préférence pour EN, car facilite la coopération avec d'autres groupes, mais les gens écrivent dans la langue qu'ils veulent, l'important c'est d'avoir de la documentation.
+
+Débat avec la traduction
+========================
+
+* Gettext / plugins ikiwiki: c'est compliqué, ne règle pas vraiment le problème de workflow.
+* Installer un CMS: ça amène sa propre part de complications.
+* Le plus simple serait d'avoir une façon simple de lier une page anglais / français, à la wikipedia, sans trop se soucier que les traductions soient exactement pareilles.
