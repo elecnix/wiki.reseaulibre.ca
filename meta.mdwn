@@ -2,6 +2,8 @@ Ce wiki est bilingue - le contenu peut être soit en français, soit en anglais 
 
 This wiki is bilingual - the content can be in english or in french depending on the author or the circumstances (e.g. a lot of technical documentation is often in english).
 
+Voir [[documentation/traduction]] pour les détails.
+
 Replication
 -----------
 
