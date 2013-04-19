@@ -2,30 +2,6 @@ Résumé des discussions à propos de la traduction de la documentation dans le 
 
 ( (!) Cette page devrait peut-être aller dans [[meta]]?)
 
-Trop souvent, on a eu cette situation:
-
-[[!format txt """
-11:12:37 <@anarcat> 1. hey, j'aimerais traduire!
-11:12:39 <@bgm> parce qu'on note rien :)
-11:12:39 <@anarcat> 2. yay
-11:12:46 <@anarcat> 3. comment on traduit dans ikiwiki?
-11:12:49 <@anarcat> 4. ya le plugin .po
-11:12:53 <@anarcat> 5. ouache, gettext
-11:13:01 <@anarcat> 6. faudrait forcer le monde a choisir une langue
-11:13:03 <@anarcat> 7. non
-11:13:05 <@anarcat> 8. oui
-11:13:08 <@bgm> +1 ouache gettext, ça règle rien :)
-11:13:09 <@anarcat> 9. fuck off
-11:13:14 <@scientist> lol
-11:13:17 <@anarcat> 10. je vais aller poser une antenne
-11:13:21 <@bgm> hahaha
-11:13:35 <@anarcat> 11. go to 1.
-11:13:48 <@anarcat> ya aussi le classique "c'est le bordel dans le wiki"
-11:13:56 <@anarcat> go to 7.
-11:14:12 <@anarcat> et l'inevitable "pourquoi on installe pas un $CMS_DE_SON_CHOIX"
-11:14:16 <@anarcat> go to 7.
-"""]]
-
 Proposition de bgm et anarcat
 =============================
 
@@ -50,3 +26,34 @@ Langue de base
 --------------
 
 Un des débats est la question de si on doit forcer les gens à écrire dans une certaine langue et faire de la traduction vers l'autre. Par exemple, on a déjà demandé d'écrire juste en français (ou en anglais) et que les traducteurs s’occupent de *tout* traduire vers l'anglais (ou le français).
+
+Quel debat?
+-----------
+
+Une autre question est si c'est vraiment une question importante, point à la ligne.
+
+Mais trop souvent, on a eu cette situation:
+
+[[!format txt """
+11:12:37 <@anarcat> 1. hey, j'aimerais traduire!
+11:12:39 <@bgm> parce qu'on note rien :)
+11:12:39 <@anarcat> 2. yay
+11:12:46 <@anarcat> 3. comment on traduit dans ikiwiki?
+11:12:49 <@anarcat> 4. ya le plugin .po
+11:12:53 <@anarcat> 5. ouache, gettext
+11:13:01 <@anarcat> 6. faudrait forcer le monde a choisir une langue
+11:13:03 <@anarcat> 7. non
+11:13:05 <@anarcat> 8. oui
+11:13:08 <@bgm> +1 ouache gettext, ça règle rien :)
+11:13:09 <@anarcat> 9. fuck off
+11:13:14 <@scientist> lol
+11:13:17 <@anarcat> 10. je vais aller poser une antenne
+11:13:21 <@bgm> hahaha
+11:13:35 <@anarcat> 11. go to 1.
+11:13:48 <@anarcat> ya aussi le classique "c'est le bordel dans le wiki"
+11:13:56 <@anarcat> go to 7.
+11:14:12 <@anarcat> et l'inevitable "pourquoi on installe pas un $CMS_DE_SON_CHOIX"
+11:14:16 <@anarcat> go to 7.
+"""]]
+
+Donc au moins documenter les pratiques actuelles et se mettre d'accord sur une direction va nous aider.
