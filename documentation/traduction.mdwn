@@ -1,0 +1,8 @@
+META: résumé des discussions à propos de la traduction de la documentation dans le wiki. Nous n'avons pas de consensus pour l'instant.
+
+Proposition de bgm
+==================
+
+* Communications par courriels: FR de référence, puis EN autant que possible.
+* Documentation wiki "grand public": FR de référence, EN autant que possible.
+* Documentation wiki "technique": préférence pour EN, car facilite la coopération avec d'autres groupes, mais les gens écrivent dans la langue qu'ils veulent, l'important c'est d'avoir de la documentation.
