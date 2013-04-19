@@ -1,6 +1,6 @@
 Résumé des discussions à propos de la traduction de la documentation dans le wiki. Nous n'avons pas de consensus pour l'instant.
 
-[[meta]].
+( (!) Cette page devrait peut-être aller dans [[meta]]?)
 
 Proposition de bgm et anarcat
 =============================
