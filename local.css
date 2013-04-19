@@ -308,3 +308,9 @@ pre.hl { color:#657b83; background-color:#fdf6e3; }
 .hl.kwb { color:#859900; }
 .hl.kwc { color:#cb4b16; }
 .hl.kwd { color:#93a1a1; }
+
+/* for the /stats page */
+.reseaulibre-monitoring-graphs {
+  width: 1200px;
+}
+
