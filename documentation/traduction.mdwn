@@ -1,11 +1,16 @@
-META: résumé des discussions à propos de la traduction de la documentation dans le wiki. Nous n'avons pas de consensus pour l'instant.
+Résumé des discussions à propos de la traduction de la documentation dans le wiki. Nous n'avons pas de consensus pour l'instant.
+
+[[meta]].
 
 Proposition de bgm et anarcat
 =============================
 
-* Communications par courriels: français de préférence, bilingue français/anglais dans les annonces grand public, autant que possible.
-* Documentation wiki "grand public": français de préférence, bilingue français/anglais dans les annonces grand public, autant que possible.
-* Documentation wiki "technique": préférence pour EN, car facilite la coopération avec d'autres groupes, mais les gens écrivent dans la langue qu'ils veulent, l'important c'est d'avoir de la documentation.
+On classe la documentation et nos communications en deux grandes parties: le "grand public", et le "technique". Le grand public inclus la page d'accueil et les guides d'utilisation de base, destinés aux utilisateurs lambdas. La documentation technique couvre le code, les pages wikis plus spécialisées (e.g. les installations manuelles), etc.
+
+* Communications grand public: bilingue de préférence, français en priorité
+* Documentation technique: dans la langue où l'auteurE est confortable, bilingue à temps perdu, en mettant clairement quelle est la langue de référence
+
+On s'entend que la priorité est d'avoir de la documentation claire et à jour, on ne va pas refuser du contenu sous prétexte que c'est dans la "mauvaise langue".
 
 Débat avec la traduction
 ========================
