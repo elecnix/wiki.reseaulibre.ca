@@ -8,7 +8,7 @@ Réseau Libre est un réseau ouvert.  Tout le monde peut s'impliquer et plus il 
 * Installer un relais ou un point d'accès en suivant la [[documentation]].
 * Voir la liste des [[tâches à faire|Todo]].
 * [[Donner du matériel|donate]], comme un routeur sans-fil ou de la quincaillerie d'antenne.
-* [[Traduction|traduction]]
+* [[Traduction|documentation/traduction]]
 
 Prochaine rencontre!
 : [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes template=titlepage show=1 feeds=no]]
