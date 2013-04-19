@@ -10,6 +10,14 @@ Proposition de bgm
 Débat avec la traduction
 ========================
 
-* Gettext / plugins ikiwiki: c'est compliqué, ne règle pas vraiment le problème de workflow.
+Solutions possibles
+-------------------
+
+* Le [plugin de traduction d'ikiwiki](http://ikiwiki.info/plugins/po/): utilise gettext, compliqué à utiliser. Il ne règle pas vraiment le problème de workflow.
 * Installer un CMS: ça amène sa propre part de complications.
-* Le plus simple serait d'avoir une façon simple de lier une page anglais / français, à la wikipedia, sans trop se soucier que les traductions soient exactement pareilles.
+* Gestion manuelle, "à la wikipedia": avoir une façon simple de lier une page anglais / français, sans trop se soucier que les traductions soient exactement pareilles.
+
+Langue de base
+--------------
+
+Un des débats est la question de si on doit forcer les gens à écrire dans une certaine langue et faire de la traduction vers l'autre. Par exemple, on a déjà demandé d'écrire juste en français (ou en anglais) et que les traducteurs s’occupent de *tout* traduire vers l'anglais (ou le français).
