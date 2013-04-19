@@ -4,6 +4,20 @@ This wiki is bilingual - the content can be in english or in french depending on
 
 Voir [[documentation/traduction]] pour les détails.
 
+[[!toc]]
+
+Maintenance
+-----------
+
+We maintain extensive [[meta/Maintenance]] documentation on how this wiki works and is configured.
+
+This wiki is powered by [[ikiwiki]] version [[!version]].
+
+Tests
+-----
+
+All wikis are supposed to have a [[SandBox]], so this one does too.
+
 Replication
 -----------
 
@@ -16,18 +30,9 @@ In short, you can clone and push this wiki through git using this:
     git clone git://wiki.reseaulibre.ca/
     git push
 
-See [[meta/Replication]] for more information. There is also the [[meta/Maintenance]] documentation.
+See [[meta/Replication]] for more information.
 
 Orphaned pages
 --------------
 
 [[!orphans pages="page(*) and !archives/* and !ikiwiki/* and !templates/*"]]
-
-Tests
------
-
-All wikis are supposed to have a [[SandBox]], so this one does too.
-
-----
-
-This wiki is powered by [[ikiwiki]] version [[!version]].
