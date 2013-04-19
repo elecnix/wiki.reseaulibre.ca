@@ -7,7 +7,9 @@ Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/muni
 [[nodes/bgm-latakia]]
 -----------------
 
-<a href="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi-week.png" /></a>
+<div class="reseaulibre-monitoring-graphs">
+<a href="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi-week.png" /></a> <a href="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/wifi_cells_per_channel.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/wifi_cells_per_channel-week.png" /></a>
+</div>
 
 [[nodes/bgm-homs]]
 -----------------
@@ -17,7 +19,9 @@ Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/muni
 [[nodes/boulette]]
 ------------------
 
-<a href="http://munin.orangeseeds.org/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi.html"><img src="http://munin.orangeseeds.org/munin-cgi/munin-cgi-graph/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi-week.png" /></a>
+<div class="reseaulibre-monitoring-graphs">
+<a href="http://munin.orangeseeds.org/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi.html"><img src="http://munin.orangeseeds.org/munin-cgi/munin-cgi-graph/reseaulibre.ca/boulette.reseaulibre.ca/adhoc_rssi-week.png" /></a> <a href="http://munin.orangeseeds.org/reseaulibre.ca/boulette.reseaulibre.ca/wifi_cells_per_channel.html"><img src="http://munin.orangeseeds.org/munin-cgi/munin-cgi-graph/reseaulibre.ca/boulette.reseaulibre.ca/wifi_cells_per_channel-week.png" /></a>
+</div>
 
 [[nodes/deuxpi]]
 ----------------
