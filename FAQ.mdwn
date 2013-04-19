@@ -119,3 +119,9 @@ Voir [[documentation/flashing]] (oui encore).
 ## Je suis perdu parmi le jargon technique!
 
 Consultez le [[glossaire]].
+
+## Je veux traduire le wiki! Pourquoi des bouts sont en anglais et en français?
+
+Aussi connu sous le nom de "c'est ben le bordel votre wiki!" :)
+
+Nous n'avons pas établi de procédure de traduction claire. De facto, la politique est que les gens écrivent dans la langue qu'il peuvent/veulent et on a pas de traduction formelle. Mais voir [[documentation/traduction]] pour des pistes de solution.
