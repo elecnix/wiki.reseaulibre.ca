@@ -314,3 +314,8 @@ pre.hl { color:#657b83; background-color:#fdf6e3; }
   width: 1200px;
 }
 
+/* makes it easy to place a photo on the float right, next to the map. */
+.reseaulibre-node-photo-right {
+  float: right;
+}
+
