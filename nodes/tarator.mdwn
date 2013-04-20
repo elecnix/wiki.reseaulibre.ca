@@ -1,3 +1,5 @@
+<div class="reseaulibre-node-photo-right">[[!img  tarator-002-small.jpg alt="Antenne sur le poteau du balcon, sous le toit."]]</div>
+
 [[!waypoint lat="45.465596" lon="-73.571102" embed hidden width="400px" height="400px" right desc="A relay (almost) on the roof."]]
 
 # Technical details
@@ -49,11 +51,13 @@ Relais seulement.
 
 Construction du support pour l'antenne:
 
-* l'antenne est vissée dans un premier bout de bois 2x4, le truc blanc (un restant de pancarte électorale) permet d'espacer un peu, sinon le Bullet, dont le diamètre est un peu plus grand que celui de l'antenne, accote trop sur le bois, et pourrait endommager le connecteur. Pour visser l'antenne, on a percé des trous dans le 2x4, puis utilisé les visses qui venaient avec l'antenne (en fait, c'est un "U", voir [[cette image|http://wiki.reseaulibre.ca/hardware/routers/500x-kit-bullet-m2.jpg]]).
-
-* ensuite, on a vissé avec un 2e morceau de bois, pour que ça laisse suffisamment d'espace pour que ça n'accroche pas dans le toit, et pouvoir poser l'antenne un peu plus haut.
-
 [[!img  tarator-001.jpg alt="Building the support for the antenna."]]
+
+* la base de l'antenne est vissée dans un premier bout de bois 2x4, le truc blanc (un restant de pancarte électorale) permet d'espacer un peu, sinon le Bullet, dont le diamètre est un peu plus grand que celui de l'antenne, accote trop sur le bois, et pourrait endommager le connecteur. Pour visser l'antenne, on a percé des trous dans le 2x4, puis utilisé les visses qui venaient avec l'antenne (en fait, c'est un "U", voir [[cette image|http://wiki.reseaulibre.ca/hardware/routers/500x-kit-bullet-m2.jpg]]).
+
+* ensuite, on a vissé avec un 2e morceau de bois, pour que ça laisse suffisamment d'espace pour que ça n'accroche pas dans le toit, et pouvoir poser l'antenne un peu plus haut. On a aussi mis un collet métallique (qui se visse) pour s'assurer que ça tienne bon.
+
+* le 2e morceau de bois (celui du bas) est fixé au poteau du balcon, avec deux collets métalliques.
 
 (merci [[users/scientist]]!)
 
