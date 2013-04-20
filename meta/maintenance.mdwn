@@ -113,6 +113,9 @@ the wiki:
 * [[!iki plugins/theme]] - using the actiontabs theme
 * [[!iki plugins/userlist]]
 * [[!iki plugins/contrib/osm]] - the OSM integration here, get the code at `git://src.anarcat.ath.cx/ikiwiki-osm.git`
+* [[!iki plugins/format]] - for different markup types in a page
+* [[!iki plugins/highlight]] - source code hilighting
+* [[!iki plugins/mirrorlist]] - if/when we get mirrors of this wiki
 
 ... and more, see the setup file.
 
@@ -121,17 +124,15 @@ the wiki:
 Those plugins are special, as they are not shipped with Ikiwiki out of
 the box.
 
-* [[!iki plugins/contrib/field]], [[!iki plugins/contrib/getfield]],
-  [[!iki plugins/contrib/ftemplate]], [[!iki plugins/contrib/report]],
-* 
+* [[!iki plugins/contrib/field]]
+* [[!iki plugins/contrib/getfield]]
+* [[!iki plugins/contrib/ftemplate]]
+* [[!iki plugins/contrib/report]]
 
 ### Possible plugins to enable
 
 * [[!iki plugins/anonok]] - may provoke a deluge of spam
 * [[!iki plugins/favicon]] - once we have an icon (but can't we just edit favicon.ico in the root of the wiki?)
-* [[!iki plugins/format]] - for different markup types in a page
-* [[!iki plugins/highlight]] - source code hilighting
-* [[!iki plugins/mirrorlist]] - if/when we get mirrors of this wiki
 
 ## Templates
 
@@ -140,7 +141,7 @@ This section documents which templates are available and to what pages they appl
  * [[!edittemplate template="templates/node" match="nodes/*"]]
  * [[!edittemplate template="templates/link" match="links/*"]]
 
-# Additionnaly configuration
+# Additional configuration
 
 The following steps are not required for the wiki to work correctly, but they are nevertheless useful.
 
