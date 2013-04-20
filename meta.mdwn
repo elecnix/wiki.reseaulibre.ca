@@ -5,7 +5,7 @@ Cette page documente le wiki lui-même.
 Maintenance
 -----------
 
-We maintain extensive [[meta/Maintenance]] documentation on how this wiki works and is configured.
+We have extensive [[meta/maintenance]] documentation on how this wiki works and is configured.
 
 This wiki is powered by [[ikiwiki]] version [[!version]].
 
