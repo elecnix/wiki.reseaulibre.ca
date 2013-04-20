@@ -39,7 +39,7 @@ Operator
 : [[/users/bgm]]
 
 Links
-: [[nodes/bgm-latakia]], [[nodes/deuxpi-bullet]]
+: [[nodes/bgm-latakia]], [[nodes/deuxpi]]
 
 # Services
 
