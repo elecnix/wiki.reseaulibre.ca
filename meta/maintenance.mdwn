@@ -81,7 +81,7 @@ See [[meta/Replication]] for instructions on how to replicate this wiki.
 
 ## HTTP acceleration and performance
 
-First, [[ikiwiki]] is designed to serve static pages, which is very efficient. Unless the wiki gets edited a **lot**, there should be no performance issues hosting it. Also, the wiki emits  based on the content, which means that pages are cached by proxies and your browser will not fetch new data until it is told so or the page changes, which is very useful. This seems to be the default Apache configuration on my machine...
+First, [[ikiwiki]] is designed to serve static pages, which is very efficient. Unless the wiki gets edited a **lot**, there should be no performance issues hosting it. Also, the wiki emits headers (E-Tag and Last-Modified) based on the content, which means that pages are cached by proxies and your browser will not fetch new data until it is told so or the page changes, which is very useful. This seems to be the default Apache configuration on my machine...
 
 ## License
 
