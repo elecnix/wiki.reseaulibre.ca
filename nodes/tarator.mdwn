@@ -1,4 +1,4 @@
-<div class="reseaulibre-node-photo-right">[[!img  tarator-002-small.jpg alt="Antenne sur le poteau du balcon, sous le toit."]]</div>
+<div class="reseaulibre-node-photo-right"><a href="/nodes/tarator/tarator-002-large.jpg"><img src="/nodes/tarator/tarator-002-small.jpg" alt="Antenne sur le poteau du balcon, sous le toit."/></a></div>
 
 [[!waypoint lat="45.465596" lon="-73.571102" embed hidden width="400px" height="400px" right desc="A relay (almost) on the roof."]]
 
