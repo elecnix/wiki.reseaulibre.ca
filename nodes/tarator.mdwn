@@ -43,13 +43,20 @@ Links
 
 # Services
 
-(you can document services accessible from this location)
+Relais seulement.
 
 # Photos
 
-(You can upload images when you edit this page. Feel free to upload photos
-of your installation or of the panorama. It will help other people who may
-want to link with you.)
+Construction du support pour l'antenne:
+
+* l'antenne est vissée dans un premier bout de bois 2x4, le truc blanc (un restant de pancarte électorale) permet d'espacer un peu, sinon le Bullet, dont le diamètre est un peu plus grand que celui de l'antenne, accote trop sur le bois, et pourrait endommager le connecteur. Pour visser l'antenne, on a percé des trous dans le 2x4, puis utilisé les visses qui venaient avec l'antenne (en fait, c'est un "U", voir [[cette image|http://wiki.reseaulibre.ca/hardware/routers/500x-kit-bullet-m2.jpg]]).
+
+* ensuite, on a vissé avec un 2e morceau de bois, pour que ça laisse suffisamment d'espace pour que ça n'accroche pas dans le toit, et pouvoir poser l'antenne un peu plus haut.
+
+[[!img  tarator-001.jpg alt="Building the support for the antenna."]]
+
+(merci [[users/scientist]]!)
+
 
 [[!meta copyright="Copyright © 2011-2013 bgm"]]
 
