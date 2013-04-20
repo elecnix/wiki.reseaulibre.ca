@@ -20,7 +20,7 @@ Solutions possibles
 
 * Le [plugin de traduction d'ikiwiki](http://ikiwiki.info/plugins/po/): utilise gettext, compliqué à utiliser. Il ne règle pas vraiment le problème de workflow. [Exemple d'un site traduit avec le plugin po](http://l10n.ikiwiki.info/)
 * Installer un CMS: ça amène sa propre part de complications.
-* Gestion manuelle, "à la wikipedia": avoir une façon simple de lier une page anglais / français, sans trop se soucier que les traductions soient exactement pareilles. Voir aussi [cette discussion](http://ikiwiki.info/translation/discussion/#index3h1) sur le site de ikiwiki pour des solutions sur comment faire cela dans Iki.
+* Gestion manuelle, "à la wikipedia": avoir une façon simple de lier une page anglais / français, sans trop se soucier que les traductions soient exactement pareilles. Voir aussi [cette spécification](http://ikiwiki.info/todo/translation_links) sur le site de ikiwiki pour des solutions sur comment faire cela dans Iki.
 
 Langue de base
 --------------
