@@ -38,7 +38,7 @@ Sous les panneaux solaires, boulevard Lasalle, à Verdun
  * Power: 16 dBm ?, 15 dBi
  * Location: Verdun, coin LaSalle et Rushbrooke
  * Status: [[!taglink up]]
- * Links: [[nodes/bgm-homs]], [[nodes/bgm-latakia]], [[nodes/hexa]], [[nodes/scientist]]
+ * Links: [[nodes/bgm-homs]], [[nodes/bgm-latakia]], [[nodes/hexa]], [[nodes/scientist]], [[nodes/tarator]]
  * Azimuth: Omni
  * Panorama: [[Vue du site de l'installation|https://farm6.staticflickr.com/5223/5881898216_6198d24176.jpg]]
  * Operator: [[users/deuxpi]]
