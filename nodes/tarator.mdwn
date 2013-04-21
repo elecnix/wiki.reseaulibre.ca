@@ -41,7 +41,7 @@ Operator
 : [[/users/bgm]]
 
 Links
-: [[nodes/bgm-latakia]], [[nodes/deuxpi]]
+: [[bgm-latakia]], [[deuxpi]]
 
 # Services
 
