@@ -9,7 +9,7 @@
  * Hardware: Ubiquiti Nanostation LOCO M2
  * Power:
  * Location:
- * Status: [[!taglink up]]
+ * Status: [[!taglink down]]
  * Links: 
  * Azimuth:
  * Panorama:
