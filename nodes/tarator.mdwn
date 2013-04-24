@@ -70,6 +70,7 @@ babeld.@filter[0]=filter
 babeld.@filter[0].type=redistribute
 babeld.@filter[0].local=true
 babeld.@filter[0].action=allow
+babeld.@filter[0].proto=2
 babeld.@filter[0].ip=fd64:2c08:9fa7:4::1/64
 babeld.@filter[1]=filter
 babeld.@filter[1].type=redistribute
