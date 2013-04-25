@@ -2,6 +2,11 @@
 Modem loué par Bell (obligatoire) pour du VDSL.
 
 ## TL;DR
+*** Ne marche plus sur les dernières versions du firmware :( (voir ci-dessous) ***
+
+* Ne pas brancher le RJ11 dans le mur avant de faire ceci, un update de firmware va désactiver la possibilité de l'activer!
+
+Une fois un upgrade fait, si on reset, il n'est plus possible de l'activer, mais il devrait rester activé!
 
 script pour activer telnet: [[sagemcom.sh|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/sagemcom.sh]]
 
