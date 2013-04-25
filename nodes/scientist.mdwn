@@ -14,7 +14,7 @@ Présentement à l'arrière dépassant un peu du toit .
  * Software: OpenWRT 12.09-beta
  * Hardware: Ubiquiti Bullet M2HP + Omni 15dbi
  * Power:
- * Location:
+ * Location: Just au dessus du 3e étage, à l'arrière du batiment. 
  * Status: [[!taglink up]]
  * Links: [[scientist-jardin]], [[deuxpi]]
  * Azimuth:
