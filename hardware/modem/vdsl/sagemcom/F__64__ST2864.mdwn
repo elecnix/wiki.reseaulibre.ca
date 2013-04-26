@@ -5,7 +5,7 @@ Modem loué par Bell (obligatoire) pour du VDSL.
 ** Ne marche plus sur les dernières versions du firmware :(
 
 
-* POUR LA NOUVELLE SOLUTION: Mettre [[pack.tar|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/pack.tar]] sur la racine d'un serveur tftp et exécutez [[sagemcom2.sh|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/sagemcom.sh]]
+* POUR LA NOUVELLE SOLUTION: Mettre [[pack.tar|http://twd.su/dl/pack.tar]] sur la racine d'un serveur tftp et exécuter [[sagemcom2.sh|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/sagemcom.sh]] (voir commentaire plus  bas)
 
 * POUR LA VIEILLE SOLUTION: Ne pas brancher le RJ11 dans le mur avant de faire ceci, un update de firmware va désactiver la possibilité de l'activer! Une fois un upgrade fait, si on reset, il n'est plus possible de l'activer, mais il devrait rester activé! Script pour activer telnet: [[sagemcom.sh|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/sagemcom.sh]]
 
@@ -29,6 +29,8 @@ par exemple sous Debian, ce sera probablement:
 
 /srv/tftp/pack.tar
 
+Puis éxécuter le script suivant après avoir vérifié la récupération de pack.tar du serveur tftp
+et avoir changé le numéro de série de votre modem (et si vous voulez, les DNS, etc...):
 
 [[!format  bash """
 #!/bin/bash
@@ -76,6 +78,9 @@ echo "Process complete."
 echo "Try opening $url/stats/ to see if it worked."
 """]]
 
+NOTE: Peut geler vers la fin de l'envoie, mais telnet semble marcher.
+Par contre en quittant il ne m'a pas retourné à la console comme la vieille solution.
+Retourner dans vdsl semble le geler après une commande comme "11".
 
 # VIEILLE SOLUTION:
 
