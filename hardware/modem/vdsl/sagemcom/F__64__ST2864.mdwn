@@ -2,19 +2,12 @@
 Modem loué par Bell (obligatoire) pour du VDSL.
 
 ## TL;DR
-*** Ne marche plus sur les dernières versions du firmware :( (voir ci-dessous) ***
+** Ne marche plus sur les dernières versions du firmware :(
 
-*** Solution possible:  ***
 
-* Win: [[https://secure.dslreports.com/forum/r28188441-Line-Stats-Tool-for-Sagemcom-2864]]
+* POUR LA NOUVELLE SOLUTION: Mettre [[pack.tar|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/pack.tar]] sur la racine d'un serveur tftp et exécutez [[sagemcom2.sh|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/sagemcom.sh]]
 
-* Linux: [[https://secure.dslreports.com/forum/r28222526-]]
-
-* Ne pas brancher le RJ11 dans le mur avant de faire ceci, un update de firmware va désactiver la possibilité de l'activer!
-
-Une fois un upgrade fait, si on reset, il n'est plus possible de l'activer, mais il devrait rester activé!
-
-script pour activer telnet: [[sagemcom.sh|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/sagemcom.sh]]
+* POUR LA VIEILLE SOLUTION: Ne pas brancher le RJ11 dans le mur avant de faire ceci, un update de firmware va désactiver la possibilité de l'activer! Une fois un upgrade fait, si on reset, il n'est plus possible de l'activer, mais il devrait rester activé! Script pour activer telnet: [[sagemcom.sh|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/sagemcom.sh]]
 
 ## HARDWARE
 
@@ -26,6 +19,65 @@ script pour activer telnet: [[sagemcom.sh|http://wiki.reseaulibre.ca/hardware/mo
 """]]
 
 ## Obtenir un accès par telnet:
+
+# NOUVELLE SOLUTION:
+
+* Linux: [[https://secure.dslreports.com/forum/r28222526-]]
+
+Assurez vous d'avoir [[pack.tar|http://wiki.reseaulibre.ca/hardware/modem/vdsl/sagemcom/F__64__ST2864/pack.tar]] sur la racine de votre serveur tftp, 
+par exemple sous Debian, ce sera probablement:
+
+/srv/tftp/pack.tar
+
+
+[[!format  bash """
+#!/bin/bash
+# What host is running a tftp server?
+TFTP_SERVER=192.168.2.2
+# What is the modem's address
+MODEM_ADDRESS=192.168.2.1
+# What is your modem's serial number?
+SERIAL=NQ1234567890123
+# which DNS servers do you want to use
+DNS1=8.8.4.4
+DNS2=8.8.8.8
+# Do you want to enable telnet (1 = yes, 0 = no)?
+ENABLE=1
+# Login info
+LOGIN=admin:admin
+
+# Allow remote machines to access... Uncomment this if you need it.
+# iptables -I INPUT 1 -p udp --dport 69 -j ACCEPT
+
+# Ne marchait pas avec mon client tftp
+# Test retrieve the file
+#tftp $TFTP_SERVER -c get pack.tar /tmp/$$.tar
+#if [ ! -r /tmp/$$.tar ]
+#then
+#echo "Failed to retrieve file via tftp" 1>&2
+#exit 1
+#fi
+#rm -f /tmp/$$.tar
+
+# setup
+strPost="page=dns&action=submit&update=1&serial_num=$SERIAL&modedns=1&domainname=home&primarydns=$DNS1&secondarydns=$DNS2"
+strStep1="%22%20%24(tftp%20-g%20-r%20pack.tar%20-l%20%2Fmnt%2Fjffs2%2Fp.tar%20$TFTP_SERVER)%22"
+strStep2="%22%20%24(mkdir%20%2Ftmp%2Funlock)%20%24(tar%20-xf%20%2Fmnt%2Fjffs2%2Fp.tar%20-C%20%2Ftmp%2Funlock)%20%24(%2Ftmp%2Funlock%2Fr.sh%20$ENABLE)%22"
+
+h=http
+url="$h://$MODEM_ADDRESS"
+#Do the requests
+echo "Sending tftp request..."
+curl -u "$LOGIN" -d "$strPost$strStep1" "$url/index.cgi" > /tmp/step1
+echo "Unpacking and installing..."
+curl -u "$LOGIN" -d "$strPost$strStep2" "$url/index.cgi" > /tmp/step2
+
+echo "Process complete."
+echo "Try opening $url/stats/ to see if it worked."
+"""]]
+
+
+# VIEILLE SOLUTION:
 
 ### Download Config:
 [[!format  bash """
@@ -56,7 +108,7 @@ Remplacer par:
 curl --data-urlencode new_rg_conf@HomeGateway.conf http://admin:admin@192.168.2.1/replace_rg_conf.cgi
 """]]
 
-### Conect:
+# Conect:
 Utilisez telnet:
 [[!format  bash """
 >telnet 192.168.2.1 
