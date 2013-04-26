@@ -4,7 +4,11 @@ Modem loué par Bell (obligatoire) pour du VDSL.
 ## TL;DR
 *** Ne marche plus sur les dernières versions du firmware :( (voir ci-dessous) ***
 
-*** Solution possible: https://secure.dslreports.com/forum/r28188441-Line-Stats-Tool-for-Sagemcom-2864 ***
+*** Solution possible:  ***
+
+* Win: [[https://secure.dslreports.com/forum/r28188441-Line-Stats-Tool-for-Sagemcom-2864]]
+
+* Linux: [[https://secure.dslreports.com/forum/r28222526-]]
 
 * Ne pas brancher le RJ11 dans le mur avant de faire ceci, un update de firmware va désactiver la possibilité de l'activer!
 
