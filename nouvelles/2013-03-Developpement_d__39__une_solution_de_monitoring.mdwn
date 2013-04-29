@@ -1,6 +1,17 @@
 # Développement d'une solution de monitoring / conception of a monitoring solution
 
 ## 22 mars
+Le code ainsi que les instructions pour installer le plugin OpenNMS sur le serveur du wiki ce trouve [[sur GitHub|https://github.com/pbtifo/opennms_plugin]].
+
+Pour que le plugin soit fonctionnel et utile, il faudra aussi déployer les autres pièces du projet (le plugin s'exécute seulement sur le serveur Web et a donc besoin du "backend" de notre solution), de créer un lien quelque part dans le wiki vers la page monitoring_opennms, déjà présente sur le wiki.
+
+* * *
+
+The code and instructions the OpenNMS plugin on the wiki server are [[on GitHub|https://github.com/pbtifo/opennms_plugin]].
+
+For the plugin to be functional, the others pieces of the project will have to be deployed (the plugin only executes on the web server, so it needs the "backend" of our solution), and create a link somewhere in the wiki to the monitoring_opennms page, already present on the wiki.
+
+## 22 mars
 Toute la documentation pertinente et relative au développement de la solution de monitoring se trouve [[ici|documentation/monitoring/documentationPertinente]].
 
 * * *
