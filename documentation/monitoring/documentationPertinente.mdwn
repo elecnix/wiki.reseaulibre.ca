@@ -1,8 +1,130 @@
 
 #Documentation relative au développement d'une solution de monitoring
 
-Tableau de comparaison entre différents protocoles de routage (version française):
+##Tableau de comparaison entre différents protocoles de routage (version française):
 [[!img tableauProtocoleRoutage.png align="center" size="950x" alt="tableauComparatif"]]
 
-Summary of a comparison between some routing protocols (English version):
+##Summary of a comparison between some routing protocols (English version):
 [[!img tableauProtocoleRoutage_en.png align="center" size="950x" alt="tableauComparatif"]]
+
+##Brève description des protocoles mentionnés dans les tableaux
+
+###AODV
+__AODV__ (Ad-hoc On-demand Distance Vector) est un protocole de routage pour les réseaux ad-hoc mobiles (MANETs) et qui fonctionne aussi avec les autres réseaux ad-hoc sans fil. Il a été développé en collaboration par Nokia, UC Santa Barbara et l’Université de Cincinnati. Il s’agit d’un protocole réactif, c’est-à-dire qu’il établit une route entre deux nœuds sur demande seulement. Quand un nœud requiert une connexion, il broadcast une requête de route sur le réseau. Cette requête est transmise de nœud en nœud jusqu’à ce qu’une route soit trouvée. Cette route est alors retournée au nœud original. Il y a deux façons de déterminer que l’on a une route appropriée. La première est que la requête de route se rende jusqu’au nœud destination, la route représente alors le chemin emprunté par la requête. La seconde est que la requête soit traitée par un nœud qui possède déjà une route vers la destination, la route finale est la concaténation du chemin emprunté par la requête et de la route déjà existante. Si plus d’une route est retourné au nœud original, celui-ci choisit la route la plus courte (le moins de sauts), donc le traitement dans le nœud est très simple et nécessite peu de ressources. Contrairement à plusieurs protocoles similaires, AODV utilise des numéros de séquence pour indiquer l’ « âge » des routes enregistrées dans les nœuds. Ainsi, un nœud qui effectue une requête de route peut spécifier l’ « âge » maximal des routes à utiliser. Dans AODV, les routes dans les nœuds sources et intermédiaires sont partielles, dans le sens que l’on a seulement l’adresse du prochain nœud (et non la route complète). Lorsqu’un nœud est retiré et que l’on essaie d’utiliser une route passant par ce nœud, un paquet d’erreur est retourné à la source, qui recommence le processus de détermination de la meilleure route. L’avantage majeur d’AODV est que, comme les routes sont calculées sur demande, celles-ci sont toujours à jour et l’overhead est nul quand aucun nœud n’effectue de requêtes de route. Cependant, ce calcul requiert un certain temps, donc le premier accès (temps de latence) à une destination à partir d’une source est plus long.
+
+###OLSR
+__Proactif au niveau IP.__
+
++ Surcharge du réseau à cause du  trafic de routage, mais pas de délai pour la communication.
+
+Le concept clé utilisé dans le protocole est l’utilisation des relais multipoints (MPR).
++ les nœuds ne déclarent qu'une sous-partie de leur voisinage 
++ minimiser le trafic dû à la diffusion des messages de contrôle sur le réseau.
+
+__Support de IP version 4 et 6.__
+
+Modularité: « plugin design »  permet d’ajouter des fonctionnalités au protocole
++ OLSR SNMP agent plug-in:  “network-management software module that resides on a managed device. An agent has local knowledge of management information and translates that information to or from an SNMP specific form”.
++ Olsr_dot_draw plug-in : “outputs the topology in the dot file format  on tcp port 2004. The graphyz tools can then be used to draw the graphs”
+
+Remarque
+“Olsr-topology-view.pl”  est un script perl  ecrit par “Brunoo Randdolf“ qui permet de collecter continuellement les information sur la topologie et l’afficher en utilisant «  graphyz » et «  ageMagick tools »
+
+3  types de messages :
+
++ __HELLO__ : utilisé pour la détection de voisinage
+
++ __TC__ : diffusent les informations de topologie
+
++ __MID__ : permettent de publier la liste des interfaces de chaque noeud.
+
+__Routage__
+
+La table de routage est mise à jour à chaque fois qu’on détecte un changement dans la base de voisinage ou de la topologie. Plus précisément quand on détecte la disparition ou l’apparition d’un nœud dans le voisinage, ou la disparition ou l’apparition d’un tuple dans la topologie. Cette mise à jour n’entraîne aucune génération de message dans le réseau ; il s’agit d’un simple recalcul local.
+
+Remarque: 
+OLSR ne fait pas le routage lui-meme, mais se contente de mettre a jour la table de routage du noyau du système d’exploitataion
+
+
+__Popularité__
+
+ “The OLSR code developed by Andreas Tønnesen is the best suited for our case as packages have been created for OpenWrt.”
+
+[[Wiki d'OpenWRT|http://wiki.openwrt.org/inbox/mesh.olsr]]
+
+[[Freifunk firmware|http://wiki.freifunk.net/Freifunk_Firmware]]
+
+“OLSR is highly scalable. It runs on community wireless mesh networks with 2000 nodes (Athens Wireless Metropolitan Network), ~600 nodes (berlin FreiFunk.net), Leipzig Freifunk net, ~400 nodes (FunkFeuer.at).” 
+[[http://routing.explode.gr/olsr?page=1]]
+
+__Performance__
+
+CPU usage
+
++ Real - The elapsed (real) time between invocation of the application being timed and its termination.
++ User - The User CPU time, equivalent to the sum of the tms_utime and tms_cutime fields returned by the times function for the process in which utility is executed.
++ Sys - The System CPU time, equivalent to the sum of the tms_stime and tms_cstime fields returned by the times function for the process in which utility is executed.
+
+[[!img tabPerf_OLSR.png align="center" size="500x" alt="tabPerf_OLSR"]]
+
+Le point faible d'OLSR est le taux d'overhead plus important qu'AODV (babel). En revanche, sa connaissance totale de la topologie lui permet d'avoir un temps de latence beaucoup plus faible. De plus, OLSR a l'avantage d’etre extensible grace au « plug-in design ». Plusieurs plug-ins sont déjà disponibles qui permettent d’ajouter des fonctionnalités au protocole, notamment le monitoring par SNMP.
+
+###Babel
+
+- Distance-vector protocol
+- Proactif (principalement)
+- IPv4 et IPv6
+- Permet évaluation de coûts des liens selon plusieurs métriques
+- Condition de faisabilité garantie l'absence de boucles (voire EIGRP et/ou AODV):
+
+-Condition de faisabilité:
+
+	(seqno, metric) < (seqno', metric') 
+
+              	tel que
+
+                seqno > seqno' OU (seqno = seqno' ET metric < metric')
+                
+où seqno est un numéro incrémenté sur demande où lors de changement de topologie et metric est le coût pour atteindre un certain noeud
+
+- Utilisation de "number sequence" (voire DSDV et AODV)
+- Quand "starvation" -> requête d'un nouveau numéro de séquence (réactif, voire AODV)
+- Permet injection de routes externes redistribuées dans le domaine de routage (voire EIGRP)
+
+- Message "Hello" et IHU ("I heard you") envoyés (source et destination), source dérive coût du lien entre les deux
+- Amélioration p/r à distance-vector naïf, Bellman-Ford et DSDV: 
+        -Update non prévu lors de changement majeur de topologie
+        -Les noeuds peuvent enregistrer d'autres routes que celle "officielle"
+        -Update sont rejetés à moins que preuve soit faite qu'aucune boucle ne peut être créée
+        -Quand "starvation" apparaît, noeud en question envoie à la source une requête pour un nouveau "sequence number", rendant ainsi une autre route "faisable"
+        - Maintient une route inatteignable quelques minutes après qu'une route soit déterminé comme telle, jusqu'à ce qu'une route faisable arrive ou un temps pré-déterminé soit atteint
+
+- Babel voyage par UDP
+- Adresse de la source est toujours unicast
+
+[[Site de Babel|http://www.pps.univ-paris-diderot.fr/~jch/software/babel/]]
+
+[[Specifications de Babel|http://tools.ietf.org/id/draft-chroboczek-babel-routing-protocol-05.html]]
+
+
+###BATMAN
+
+Les nœuds sur batman vont émettre des messages d’originateurs (des hello paquets, OGM) à chaque seconde, qui, lorsque reçus, sont rebroadcasté à partir du nœud l’ayant reçu. Pour acheminer un paquet, la meilleure route est déterminée un nœud à la fois, de nœud à nœud. Pour se faire, le nœud va déterminer la meilleure route vers une destination en regardant de quel nœud il reçoit le plus de OGM venant de cette destination (à cause du fait justement que les OGM sont rebroadcasté sous réception). La table de routage est donc construite de cette façon, donc le Protocol est proactif. 
+
+[[http://www.open-mesh.org/projects/batman-adv/wiki/Using-batctl]]
+
+[[http://researchrepository.murdoch.edu.au/3982/1/Comparison_of_Routing_Protocols.pdf]]
+
+[[http://pubs.cs.uct.ac.za/archive/00000760/01/PID2046979.pdf]]
+
+[[http://www.open-mesh.org/projects/open-mesh/wiki/2012-11-17-batman-adv-in-south-america#fn1]]
+
+[[https://en.wikipedia.org/wiki/B.A.T.M.A.N.#cite_note-1]]
+
+###CJDNS
+
+CJDNS est un protocole de routage multicouche sécurisé et décentralisé qui vise à combler les failles des protocoles conçus il y a plus de trente ans et qui constituent l'architecture fondamentale de l'internet moderne.  CJDNS cherche notamment à résoudre efficacement le problème de la taille des tables de routage par une utilisation judicieuse des tables de hashage décentralisée.  Son architecture permet entre autre le relai de paquets sans lecture mémoire grâce à des entêtes contenant le chemin jusqu'au prochain router.  Le routage se fait par étapes successives qui visent à s'approcher de la destination en utilisant une table routage restreinte obtenue par des demande de type “recherche” aux voisins connus.  Le protocole offre aussi une sécurité complète grâce à un mécanisme d'encryption incorporé au protocole.  L'authentification est basée sur SHA-256.  Ce protocole est réactif, mais son modèle de hashage décentralisé simplifie grandement la recherche de la destination. Par contre, la couche de sécurité supplémentaire réduit quelque peu sa performance.  On notera aussi que CJDNS est capable d'opérer via tunnel et que les adresses qu'il génère n'entrent pas en conflit avec l'internet traditionnel puisqu'elles se situent dans le bloc.  Il est important de noter que ce protocole ne comporte pas de processus de découverte de nouveaux noeuds, ce qui signifie qu'un nouveau noeud doit s'arrimer manuellement au réseau à travers un pair. Ce protocole est encore relativement récent, le statut courant est "pré-alpha".  Parmi les projets existants qui utilisent CJDNS, on notera Meshnet et Hyperboria, ce dernier aspirant à rien de moins qu'être le successeur de l'internet.
+
+[[https://github.com/cjdelisle/cjdns/blob/master/rfcs/Whitepaper.md]]
+[[http://en.wikipedia.org/wiki/Cjdns]]
+
