@@ -1,0 +1,8 @@
+
+#Documentation relative au développement d'une solution de monitoring
+
+Tableau de comparaison entre différents protocoles de routage (version française):
+[[!img tableauProtocoleRoutage.png align="center" size="950x" alt="tableauComparatif"]]
+
+Summary of a comparison between some routing protocols (English version):
+[[!img tableauProtocoleRoutage_en.png align="center" size="950x" alt="tableauComparatif"]]
