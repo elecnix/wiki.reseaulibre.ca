@@ -1,0 +1,214 @@
+# La solution
+
+Ici se trouve la documentation explication notre solution, son installation et sa configuration. Elle est divisée en trois sections: 
+
+1. Agent SNMP
+2. Données de monitoring par rapport au présent wiki
+3. Système de simulation de réseau pour les tests
+
+##1. Développement de l'agent snmp:
+
+Afin d'adapter la cueillette des données à un réseau décentralisé, nous avons conçu un agent snmp qui récoltera les informations pertinentes des noeuds avoisinants, permettant ainsi un partitionnement efficace du réseau à des fins de surveillance.  Bien que les proxy snmp semblent fournird des fonctionalités similaires, notre agent permet une configuration dynamique et un contrôle plus fin de la communication avec la station de surveillance (nms).  En effet, les différents mécanismes fournis par snmp (proxy, disman, etc) sont généralement conçus pour être configurés statiquement et modifier leurs paramètres en cours d'exécution demande une grande maîtrise de snmp.  Notre agent fourni une interface facile à utiliser pour accéder à ces fonctionnalités.  Dans certains cas, nous svons utilisé les mécanismes fournis par le protocole, et dans d'autres nous avons plutôt choisi d'implémenter un mécanisme de substitution.
+
+Concrètement, notre agent, nommé rlDemon, permet de spécifier une liste d'objets (oid) à récupérer sur les noeuds cibles.  Il existe deux mécanismes pour spécifier ces objets, la table  RESEAU-LIBRE-MIB::getOidTable et la table RESEAU-LIBRE-MIB::walkOidTable.  Les objets spécifiés dans la table getOidTable seront recueillis un par un avec des requêtes GET alors que ceux qui apparaissent dans la table walkOidTable représentent plutôt un sous-arbre que l'on désire recueillir en entier.  Un bon usage de RESEAU-LIBRE-MIB::walkOidTable est d'y spécifier les tables à recueillir puisque la taille de celles-ci n'est pas connue à l'avance.  Afin de modifier les entrées de ces tables, les objets RESEAU-LIBRE-MIB::rlOidTableAddRow,RESEAU-LIBRE-MIB::rlOidTableDelRow,RESEAU-LIBRE-MIB::rlWalkOidTableAddRow et rlWalkOidTableDelRow sont disponibles.  Il suffit d'envoyer un le nom d'un objet pour que la modification s'effectue, par exemple avec la commande 'snmpset -v 2c -c private localhost RESEAU-LIBRE-MIB::rlOidTableAddRow o IF-MIB::ifNumber' qui permet d'ajouter l'entrée "IF-MIB::ifNumber" (.1.3.6.1.2.1.2.1) à la table getOidTable.  L'agent détectera automatiquement les doublons.  Pour retirer cette entrée, il suffit d'utiliser la commande 'snmpset -v 2c -c private localhost RESEAU-LIBRE-MIB::rlOidTableDelRow o IF-MIB::ifNumber'.  Nous avons utilisé uniformément cette interface pour toutes les tables dans la configuration de l'agent.
+
+Les noeuds à interroger sont déterminés différemment selon la valeur du paramètre monitoringMethod.  Si ce dernier prend la valeur 0, l'agent tentera de détecter les noeuds adjacents.  Cette méthodes utilise le programme "ip" et nécessite du traffic entre les noeuds pour bien fonctionner.  L'agent tentera de générer du traffic en ipv6, mais les hôtes ipv4 demeures parfois invisible.  On notera cependant que le traffic généré par babel devrait suffir ici.  Si le paramètre monitoringMethod prend une autre valeur que 0, l'agent utilisera plutôt la liste explicite des noms d'hôtes contenus dans la table monitoringListTable.  Si monitoringMethod vaut 1, l'agent tentera d'ouvrir une session vers l'hôte spécifié lorsqu'il est ajouté à la table et générera une erreur si la connection échoue.  Cela permet de valider la syntaxe, la connectivité et la présence d'un agent snmp pour répondre aux requêtes.  Si l'on désire désactiver cette vérification, il suffit de spécifier une valeur différente de 1 pour monitoringMethod lors de l'ajout du nom d'hôte à la table monitoringListTable.  Il est à noter que l'agent utilisera le nom d'hôte tel que spécifié, il faut donc spécifier les adresses ipv6 avec la syntaxe propre à snmp: UDP6:[aaaa:aaaa::aaaa]:port.
+
+Pour démarrer la collecte, il faut placer l'agent en mode maître.  Pour se faire, il suffit de donner une valeur différente de 0 à RESEAU-LIBRE-MIB::rlIsMaster.  Réaffecter une telle valeur par la suite permet de forcer une collecte de données.  Par la suite, la collecte sera effectuée toutes les RESEAU-LIBRE-MIB::frequency secondes.
+
+Une fois la collecte terminée, si le paramètre RESEAU-LIBRE-MIB::method vaut 1, l'agent enverra une trappe contenant les données ainsi recueillies vers les stations de surveillances.  Ces stations peuvent être spécifiées dans le fichier de configuration en utilisant la configurations des trappes nmsp (trap_sink, infor,_sink, etc) ou dynamiquement à l'aide des tables nmsTable et nmsTable6 selon le protcole ip utilisé.  Dans le cas de nmsTable (ipv4), les adresses doivent être spécifiées en utilisant le type ipaddress ('a' avec snmpset) alors que pour nmsTable6 (ipv6) elles doivent plutôt être spécifiées avec le type string ('s' avec snmpset) et utiliser la syntaxe usuelle pour les adresses ipv6 (aaaa:bbbb::cccc).  Ces particularités sont due à l'absence de type défini pour les adresses ipv6 dans les applications standard de net-snmp et au format exigé par les tables de configuration des destination de trappes.
+
+Finalement, les données recueillies sont disponibles dans la table RESEAU-LIBRE-MIB::rlDataTable.  Le format de chaque ligne de la table est:
+Colonne		1 		2		3		4
+Contenu		index	hôte	objet	valeur
+
+Configuration:
+Le fichier de configuration se trouve dans le répertoire /etc/snmp/ et se nomme rlDemon.conf.  L'agent accepte les directives normalement acceptées par snmpd.conf s'il est en mode maître(agentX), c'est à dire configuré pour opérer sans s'attacher à un autre agent snmp sur le même noeud.  Les éléments de configuration additionnels disponibles dans ce fichier correspondent aux paramètres disponibles via snmp pour la configuration, c'est-à-dire: "frequency", "method", "masterMode" et "discovery".  Le champs "method" du fichier de configuration accepte des valeurs plus explicites que ses équivalents via snmp, soit "query" ou "trap" au lieu de 0 ou 1.  Dans le cas de "discovery", on utlisera les valeurs "auto", "list_check" ou "list_no_check" dans le au lieu de 0,1 2.  Voici la liste complète des paramètres en utilisant snmp ou rlDemon.conf:
+
+[[!img mib.png align="center" size="900x" alt="mib"]]
+
+On peut aussi utiliser la directive add_row pour ajouter directement une entrée dans les tables monListTable, walkOidTable et getOidTable.  La syntaxe est:
+
+tableName index donnee
+
+ou, dans __/etc/config/rlDemon__:
+
+	config add_row
+		option tableName	monListTable
+		option index		200
+		option donnee		UDP6:[::1]
+
+__Exemple de rlDemon.conf__
+
+	config agent
+		option agentaddress UDP:161
+		option agentaddress UDP6:161
+	#	option sysServices	72
+	#	option sysDescr		'adult playground'
+	#	option sysObjectID	'1.2.3.4'
+	#	option miboid	1.2.3.4
+	# Pour ajouter une entrée à l'une des tables, dans ce cas-ci la table des noeuds à surveiller
+	# Les tables valides sont:
+	# monListTable
+	# walkOidTable
+	# getOidTable
+
+	config add_row
+		option tableName 	monListTable
+		option index		200
+		option donnee		UDP6:[::1]
+	
+	config frequency
+		option frequency	3600
+	
+	config method
+		option method	query
+
+	config discovery
+		option discovery list_check
+	
+	config masterMode
+		option masterMode 0
+	
+__Structure du mib__
+
+La structure du MIB peut être obtenue de la façon suivante:
+( Le fichier RESEAU-LIBRE-MIB.txt doit être dans le chemin de recherche des fichiers mibs, par exemple /usr/share/snmp/mibs/ ou /usr/share/mibs/)
+
+	snmptranslate -M+. -mRESEAU-LIBRE-MIB -Tp -IR reseaulibre
+	+--reseaulibre(44444)
+  	|
+   	+--rlConfig(1)
+   	|  |
+   	|  +-- -R-- Integer32 rlMasterOK(1)
+   	|  +-- -RW- Integer32 rlIsMaster(2)
+   	|  +-- -RW- ObjID     rlOidTableAddRow(3)
+   	|  +-- -RW- ObjID     rlOidTableDelRow(4)
+   	|  |
+   	|  +--getOidTable(5)
+   	|  |
+   	|  +-- -RW- ObjID     rlWalkOidTableAddRow(6)
+   	|  +-- -RW- ObjID     rlWalkOidTableDelRow(7)
+   	|  |
+   	|  +--walkOidTable(8)
+   	|  |
+   	|  +--settings(9)
+   	|     |
+   	|     +-- -RW- Integer32 method(1)
+   	|     +-- -RW- Integer32 frequency(2)
+   	|     +-- -RW- IpAddr    rlNmsTableAddRow(3)
+   	|     +-- -RW- IpAddr    rlNmsTableDelRow(4)
+   	|     |
+   	|     +--nmsTable(5)
+   	|     |
+   	|     +-- -RW- String    rlNmsTable6AddRow(6)
+   	|     +-- -RW- String    rlNmsTable6DelRow(7)
+   	|     |
+   	|     +--nmsTable6(8)
+   	|     |
+   	|     +-- -RW- Integer32 monitoringMethod(9)
+   	|     +-- -RW- String    monitoringListAddRow(10)
+   	|     +-- -RW- String    monitoringListDelRow(11)
+   	|     |
+   	|     +--monitoringListTable(12)
+   	|
+   	+--rlDataTable(2)
+   	   |
+      	+--rlDataRow(1)
+      	   |  Index: rlDataIndex
+      	   |
+      	   +-- ---- Integer32 rlDataIndex(1)
+      	   |        Range: 1..1024
+       	   +-- ---- String    rlDataHost(2)
+       	   +-- ---- ObjID     rlDataOID(3)
+       	   +-- ---- String    rlDataData(4)
+
+##2. Monitoring et wiki
+Tel que mentionné sur la page de nouvelles de la solution de monitoring:
+
+Le code ainsi que les instructions pour installer le plugin OpenNMS sur le serveur du wiki ce trouve [[sur GitHub|https://github.com/pbtifo/opennms_plugin]].
+
+Pour que le plugin soit fonctionnel et utile, il faudra aussi déployer les autres pièces du projet (le plugin s'exécute seulement sur le serveur Web et a donc besoin du "backend" de notre solution), de créer un lien quelque part dans le wiki vers la page monitoring_opennms, déjà présente sur le wiki.
+
+##3. Simulateur CORE
+Le simulateur utilisé pour nos tests est CORE. 
+
+__Installation et configuration__
+
+- Installer Core en suivant les instructions [[ici|http://pf.itd.nrl.navy.mil/core/core-html/install.html]].
+ 
+Il est à noter que j’ai utilisé Core sur Ubuntu, je recommande donc d’utiliser Core sur un système Ubuntu, puisque je n’ai pas testé les autres versions de Core. 
+
+- Installer Emane en suivant les instructions [[ici|http://pf.itd.nrl.navy.mil/core/core-html/emane.html]].
+
+- Télécharger l’archive coreserv.zip et placer le contenu  dans un dossier sur votre disque dur.
+
+[[!img sim1.png align="center" size="950x" alt="sim1"]]
+
+- Modifier le fichier de configuration situé à /etc/core/core.conf  et ajoutez-y  cette ligne: 
+
+	custom_services_dir = le répertoire où vous avez mis les scripts de la dernière étape. 
+
+[[!img sim2.png align="center" size="950x" alt="sim2"]]
+
+- Vous pouvez maintenant lancer Core. Sur Ubuntu, ce sont les commandes suivantes : 
+
+	sudo /etc/init.d/core start
+	Core
+
+__Utilisation de core pour simuler un réseau Ad Hoc avec babel__
+
+- Pour créer un réseau ad hoc sans fil, la façon simple de faire est de suivre les étapes de la [[vidéo de tutoriel|http://cs.itd.nrl.navy.mil/work/core/demo2.php]] avec les modifications qui suivent. 
+
+Dans les services des nœuds (bouton droit sur un nœud – services) , activez babeld (si vous voulez tester avec le système de monitoring, il faut aussi activer snmpd ainsi que rlDemon). Ces services devraient fonctionner sans devoir changer leur configuration. Faites ceci pour tous les nœuds. La capture d’écran montre ce que vous devriez avoir pour chaque nœud. 
+
+[[!img sim3.png align="center" size="950x" alt="sim3"]]
+
+- L’utilisation d’Emane est aussi décrite dans la vidéo.
+
+- Pour interagir avec le réseau et relier le réseau avec un rooter avec une connexion Ethernet au router, vous pouvez ensuite suivre la [[démo|http://cs.itd.nrl.navy.mil/work/core/demo3.php]].
+
+N’oubliez pas de configurer Babel sur le router afin qu’il roule sur l’interface Ethernet aussi!!
+
+- Il est possible de mettre le bridge  dans le réseau Ad Hoc simplement en le reliant avec l’interface Wlan en utilisant le « link tool ». 
+
+[[!img sim4.png align="center" size="950x" alt="sim4"]]
+
+[[!img sim5.png align="center" size="950x" alt="sim5"]]
+
+Voici ce que nous devrions avoir en activant la simulation (le bouton play). Le bridge rj-45 est branché sur mon interface Ethernet, dans cet exemple. Les lignes montrent les différents liens entres les nœuds, selon leur distance. 
+
+[[!img sim6.png align="center" size="950x" alt="sim6"]]
+
+Les services actifs sur un nœud:
+
+[[!img sim7.png align="center" size="950x" alt="sim7"]]
+
+- Il est aussi possible de lier le réseau avec la machine qui roule la simulation directement. Pour se faire, les directives sont détaillées dans la documentation de [[core|http://pf.itd.nrl.navy.mil/core/core-html/usage.html#connecting-with-physical-networks]] (section 3.4.3).
+
+- Pour ce qui est de l’utilisation générale de Core, l’interface est claire, assez bien détaillée (il y a des tooltips sur tous les boutons) et facile à utiliser (les boutons font ce qu’ils disent, et les options sont bien expliquées). 
+
+- Finalement, pour tout autres questions, la documentation de Core est très complète et bien détaillée, et est située sur ce [[lien|http://pf.itd.nrl.navy.mil/core/core-html/]]. Il y a aussi d’autres vidéos de démonstrations qui montrent d’autres fonctions de Core [[ici|http://cs.itd.nrl.navy.mil/work/core/]]. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
