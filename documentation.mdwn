@@ -28,6 +28,10 @@ Guide de configuration simplifié, méthode recommandée:
 
 Voir aussi les fiches de [[présentations|http://wiki.reseaulibre.ca/presentations/]].
 
+# Développement d'une solution de monitoring
+
+Tous les détails sur le développement de la solution de monitoring sont disponibles [[ici|documentation/monitoring/Monitoring_solution+explication+install]]. 
+
 # Other documentation
 
 This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...

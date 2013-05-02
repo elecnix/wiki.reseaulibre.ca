@@ -1,5 +1,7 @@
 # La solution
 
+(notre étude préliminaire sur les protocoles de routage existants se trouve [[ici|documentation/monitoring/documentationPertinente]])
+
 Ici se trouve la documentation explication notre solution, son installation et sa configuration. Elle est divisée en trois sections: 
 
 1. Agent SNMP
