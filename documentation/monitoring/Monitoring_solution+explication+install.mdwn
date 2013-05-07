@@ -6,7 +6,8 @@ Ici se trouve la documentation explication notre solution, son installation et s
 
 1. Agent SNMP
 2. Données de monitoring par rapport au présent wiki
-3. Système de simulation de réseau pour les tests
+3. Installation d'OpenNMS.
+4. Système de simulation de réseau pour les tests
 
 ##1. Développement de l'agent snmp:
 
@@ -132,7 +133,10 @@ Le code ainsi que les instructions pour installer le plugin OpenNMS sur le serve
 
 Pour que le plugin soit fonctionnel et utile, il faudra aussi déployer les autres pièces du projet (le plugin s'exécute seulement sur le serveur Web et a donc besoin du "backend" de notre solution), de créer un lien quelque part dans le wiki vers la page monitoring_opennms, déjà présente sur le wiki.
 
-##3. Simulateur CORE
+##3. Installation d'OpenNMS (opt)
+Si vous désirez installer OpenNMS sur votre machine, vous pouvez vous référer à [ce tutoriel](http://www.opennms.org/wiki/Tutorial). Notre [[preuve de concept|monitoring/preuveConcept]] à l'égard d'OpenNMS peut aussi vous donner des indications sur sont utilisation. 
+
+##4. Simulateur CORE
 Le simulateur utilisé pour nos tests est CORE. 
 
 __Installation et configuration__

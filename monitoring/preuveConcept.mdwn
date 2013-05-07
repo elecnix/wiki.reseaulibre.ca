@@ -7,6 +7,8 @@ La solution de monitoring en cours de développement utilise des composants déj
 
 [OpenNMS](http://www.opennms.org/), une application de gestion de réseau open-source capable de plusieurs fonctionnalités telles la découverte de noeuds (automatique ou non), la gestion d'évènements de notification et la mesure de performance. Elle offre aussi une interface graphique intéressante, mais nous travaillons néanmoins à rendre disponibles les information récoltées par OpenNMS directement sur le wiki. 
 
+OpenNMS peut être installé sur votre poste de travail en suivant [ces instructions](http://www.opennms.org/wiki/Tutorial).
+
 OpenNMS est compatible avec plusieurs protocoles pour la récolte d'informations propre à la gestion de réseau, dont SNMP. Des efforts sont mis à mettre sur pied un agent SNMP adéquat pour Réseau Libre. 
 
 La découverte du réseau se fait selon le diagramme de séquence suivant:
