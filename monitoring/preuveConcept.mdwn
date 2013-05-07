@@ -1,8 +1,6 @@
 Solution de monitoring - preuve de concept
 ===================
 
-_*Note: Une démo un peu plus convaincante est à venir._ 
-
 La solution de monitoring en cours de développement utilise des composants déjà existants et les fait coexister dans le but d'avoir une solution sur pied le plus rapidement possible tout en bénéficiant d'une expertise externe. Des efforts d'intégration sont aussi en cours, notamment en ce qui concerne la présentation des données directement sur une page du wiki.
 
 [OpenNMS](http://www.opennms.org/), une application de gestion de réseau open-source capable de plusieurs fonctionnalités telles la découverte de noeuds (automatique ou non), la gestion d'évènements de notification et la mesure de performance. Elle offre aussi une interface graphique intéressante, mais nous travaillons néanmoins à rendre disponibles les information récoltées par OpenNMS directement sur le wiki. 
