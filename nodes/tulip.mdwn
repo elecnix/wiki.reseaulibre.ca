@@ -9,7 +9,7 @@ IPv6:
 """]]
 
 hostname
-: (node hostname here)
+: tulip
 
 Type
 : relay (can also be accesspoint, test, server)
