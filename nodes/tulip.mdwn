@@ -4,8 +4,8 @@
 
 [[!ymlfront data="""
 MAC: (mac address here)
-IP: (pick one from [[policy/numbering]])
-IPv6: 
+IP: 
+IPv6: fd64:2c08:9fa7:347
 """]]
 
 hostname
