@@ -18,10 +18,10 @@ SSID
 : foo.relais.reseaulibre.ca (see [[policy/naming]])
 
 MAC address
-: fd64:2c08:9fa7:347
+: 
 
 IPv6 address
-: {{$IPv6}}
+: fd64:2c08:9fa7:347
 
 IP address
 : {{$IP}}
