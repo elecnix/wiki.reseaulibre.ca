@@ -23,13 +23,13 @@ Il n'est pas nécessaire de redémarrer. Les interfaces physiques (br-lan, wlan0
 
 Si on a installé OpenWRT directement à partir de l'image du site OpenWRT.org, les modules kmod-ipv6 ip kmod-ip6tables et ip6tables ne sont pas inclus. Il faut 
 
-*les télécharger à partir du site http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/ inclure kernel-XXX.ipk 
-*les copier du PC vers l'antenne: 
+* les télécharger à partir du site http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/ inclure kernel-XXX.ipk 
+* les copier du PC vers l'antenne: 
 
     scp *.ipk root@192.168.1.1:/root
 
-*Se logger sur l'antenne
-*Installer les modules à partir des fichiers
+* Se logger sur l'antenne
+* Installer les modules à partir des fichiers
 
     opkg install *.ipk
 
