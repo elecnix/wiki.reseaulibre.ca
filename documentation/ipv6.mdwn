@@ -21,6 +21,16 @@ Installer les modules et utilitaires IPv6:
 
 Il n'est pas nécessaire de redémarrer. Les interfaces physiques (br-lan, wlan0, etc) devraient déjà afficher une adresse « link-local ».
 
+Si on a installé OpenWRT directement à partir de l'image du site OpenWRT.org, les modules kmod-ipv6 ip kmod-ip6tables et ip6tables ne sont pas inclus. Il faut 
+
+Les télécharger à partir du site http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/
+Inclure kernel-XXX.ipk pour 
+Les copier du PC vers l'antenne: 
+    scp *.ipk root@192.168.1.1:/root
+Se logger sur l'antenne
+Installer les modules à partir des fichiers
+    opkg install *.ipk
+
 # Adresses link-local
 
 Les adresses link-local sont automatiquement configurées par le système d'exploitation. Elles permettent aux machines sur le même lien physique (ethernet, wifi) de se parler, sans avoir besoin de mécanisme d'assignation des adresses.
