@@ -3,7 +3,7 @@ See also [[flashing]].
 Upgrade procedures
 ==================
 
-[[!toc]]
+[[!toc levels=2 startlevel=2]]
 
 General recommendations
 -----------------------
