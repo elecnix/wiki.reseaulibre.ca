@@ -1,0 +1,73 @@
+See also [[flashing]].
+
+Upgrade procedures
+==================
+
+General recommendations
+-----------------------
+
+We need to access the machine using the link-local IPv6 IP:
+
+    ssh root@fe80::215:6dff:fedb:d365%vr3
+
+Note the interface name after the `%`, essential for link-local
+connexions. This will work only if connected on the same physical
+network as the device, as link-local addresses are.. well, local.
+
+Best case scenario
+------------------
+
+This never happens.
+
+    sysupgrade http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin
+
+Then everything comes back. Problem is:
+
+    root@boulette:/etc# sysupgrade http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/openwrt-ar71xx-gen
+    eric-ubnt-bullet-m-squashfs-sysupgrade.bin
+    Saving config files...
+    killall: watchdog: no process killed
+    Sending TERM to remaining processes ... babeld dnsmasq syslogd klogd hotplug2
+    Sending KILL to remaining processes ...
+    Switching to ramdisk...
+    Performing system upgrade...
+    Unlocking firmware ...
+    
+    Writing from <stdin> to firmware ...  [ ]wget: bad address 'downloads.openwrt.org'
+    wget: bad address 'downloads.openwrt.org'
+    
+    Upgrade completed
+    Rebooting system...
+    Write failed: Broken pipe
+
+That's because babel gets killed! And this assumes we have a link that
+doesn't depend on babel (hint: use link-local IPv6).
+
+Workaround
+----------
+
+Instead, we wget locally then upgrade with that:
+
+    cd /tmp
+    wget http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin
+    sysupgrade openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin
+
+The result:
+
+    root@boulette:/tmp# sysupgrade openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin
+    Saving config files...
+    Sending TERM to remaining processes ... xinetd dnsmasq ntpd babeld syslogd klogd hotplug2
+    Sending KILL to remaining processes ...
+    Switching to ramdisk...
+    Performing system upgrade...
+    Unlocking firmware ...
+    
+    Writing from <stdin> to firmware ...  [w]
+    Appending jffs2 data from /tmp/sysupgrade.tgz to firmware...TRX header not found
+    Error fixing up TRX header
+    
+    Upgrade completed
+    Rebooting system...
+    Connection to fe80::215:6dff:fedb:d365%vr3 closed.
+
+And then all networking is lost to the device. Wheepdeedoo.
