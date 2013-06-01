@@ -3,6 +3,8 @@ See also [[flashing]].
 Upgrade procedures
 ==================
 
+[[!toc]]
+
 General recommendations
 -----------------------
 
@@ -13,6 +15,14 @@ We need to access the machine using the link-local IPv6 IP:
 Note the interface name after the `%`, essential for link-local
 connexions. This will work only if connected on the same physical
 network as the device, as link-local addresses are.. well, local.
+
+Make sure that access will remain after the device is upgraded!!! For
+example, if you upgrade to a stock OpenWRT image, it will *NOT*
+support IPv6 anymore, so make sure you configure an extra IPv4 address
+on one of the interfaces that is routable for your network.
+
+A simple solution is to use the [[firmware]] provided by Reseau Libre,
+see [[flashing]].
 
 Best case scenario
 ------------------
