@@ -12,13 +12,13 @@ Réseau Libre recommends the `attitude adjustment` release candidate series of t
 Depending on your [[hardware]], you must download the correct firmware version onto your computer, which we will use to flash the router in the next step.
 
 Bullet M2
-: [attitude_adjustment_rc1](http://downloads.openwrt.org/attitude_adjustment/12.09-rc1/ar71xx/generic/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin)
+: [attitude adjustment 12.09](http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin)
 
 Nanostation M2
-: [attitude_adjustment_rc1](http://downloads.openwrt.org/attitude_adjustment/12.09-rc1/ar71xx/generic/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
+: [attitude adjustment 12.09](http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin)
 
 TP-Link 1043ND
-: [attitude_adjustment_rc1](http://downloads.openwrt.org/attitude_adjustment/12.09-rc1/ar71xx/generic/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
+: [attitude adjustment 12.09](http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/openwrt-ar71xx-generic-tl-wr1043nd-v1-squashfs-factory.bin)
 
 See the excellent flashing guide on the Ubiquiti wiki: [Installing OpenWRT on NanoStations/Bullets](http://wiki.ubnt.com/Installing_OpenWRT_on_NanoStations/Bullets).
 
