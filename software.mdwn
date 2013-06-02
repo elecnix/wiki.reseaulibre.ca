@@ -78,11 +78,21 @@ also known as the [Hyperboria network](http://hyperboria.net).
 
 basic distribution. features OLSRd and Batman-adv.
 
-note
-
 ## Réseau Libre
 
 Based on OpenWRT, see [[documentation/compile]].
+
+## CeroWRT
+
+Fork of OpenWRT that features:
+
+ * Babel + quagga
+ * IPv6
+ * "bufferbloat" workarounds
+ * DNSSEC
+ * LuCI
+
+https://www.bufferbloat.net/projects/cerowrt/wiki
 
 ## Robin
 
