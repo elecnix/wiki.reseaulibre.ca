@@ -1,5 +1,7 @@
 This guide describes the procedure to compile images for Reseau Libre.  This default procedure is the one used to compile the images that can be found at [[http://packages.reseaulibre.ca:8080/Routeurs]].  The image can be configured as desired and the Reseau Libre package feed welcomes contributions.
 
+See [[firmware]] for usage instructions.
+
 [[!toc levels=3]]
 
 # Compile openwrt
