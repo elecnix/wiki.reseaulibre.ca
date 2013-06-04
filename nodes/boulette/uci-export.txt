@@ -1,0 +1,333 @@
+package ahcpd
+
+config ahcpd
+
+uci: Parse error (invalid character in field) at line 17, byte 17
+package dhcp
+
+config dnsmasq
+        option domainneeded '1'
+        option boguspriv '1'
+        option filterwin2k '0'
+        option localise_queries '1'
+        option rebind_protection '1'
+        option rebind_localhost '1'
+        option local '/lan/'
+        option domain 'lan'
+        option expandhosts '1'
+        option nonegcache '0'
+        option authoritative '1'
+        option readethers '1'
+        option leasefile '/tmp/dhcp.leases'
+        option resolvfile '/tmp/resolv.conf.auto'
+
+config dhcp 'lan'
+        option interface 'lan'
+        option start '100'
+        option limit '150'
+        option leasetime '12h'
+        option ignore '1'
+
+config dhcp 'wan'
+        option interface 'wan'
+        option ignore '1'
+
+package dropbear
+
+config dropbear
+        option PasswordAuth 'on'
+        option RootPasswordAuth 'on'
+        option Port '22'
+
+package firewall
+
+config defaults
+        option syn_flood '1'
+        option input 'ACCEPT'
+        option output 'ACCEPT'
+        option forward 'REJECT'
+        option disable_ipv6 '1'
+
+config zone
+        option name 'lan'
+        option network 'lan'
+        option input 'ACCEPT'
+        option output 'ACCEPT'
+        option forward 'REJECT'
+
+config zone
+        option name 'wan'
+        option network 'wan'
+        option input 'REJECT'
+        option output 'ACCEPT'
+        option forward 'REJECT'
+        option masq '1'
+        option mtu_fix '1'
+
+config forwarding
+        option src 'lan'
+        option dest 'wan'
+
+config rule
+        option name 'Allow-DHCP-Renew'
+        option src 'wan'
+        option proto 'udp'
+        option dest_port '68'
+        option target 'ACCEPT'
+        option family 'ipv4'
+
+config rule
+        option name 'Allow-Ping'
+        option src 'wan'
+        option proto 'icmp'
+        option icmp_type 'echo-request'
+        option family 'ipv4'
+        option target 'ACCEPT'
+
+config rule
+        option name 'Allow-DHCPv6'
+        option src 'wan'
+        option proto 'udp'
+        option src_ip 'fe80::/10'
+        option src_port '547'
+        option dest_ip 'fe80::/10'
+        option dest_port '546'
+        option family 'ipv6'
+        option target 'ACCEPT'
+
+config rule
+        option name 'Allow-ICMPv6-Input'
+        option src 'wan'
+        option proto 'icmp'
+        list icmp_type 'echo-request'
+        list icmp_type 'echo-reply'
+        list icmp_type 'destination-unreachable'
+        list icmp_type 'packet-too-big'
+        list icmp_type 'time-exceeded'
+        list icmp_type 'bad-header'
+        list icmp_type 'unknown-header-type'
+        list icmp_type 'router-solicitation'
+        list icmp_type 'neighbour-solicitation'
+        option limit '1000/sec'
+        option family 'ipv6'
+        option target 'ACCEPT'
+
+config rule
+        option name 'Allow-ICMPv6-Forward'
+        option src 'wan'
+        option dest '*'
+        option proto 'icmp'
+        list icmp_type 'echo-request'
+        list icmp_type 'echo-reply'
+        list icmp_type 'destination-unreachable'
+        list icmp_type 'packet-too-big'
+        list icmp_type 'time-exceeded'
+        list icmp_type 'bad-header'
+        list icmp_type 'unknown-header-type'
+        option limit '1000/sec'
+        option family 'ipv6'
+        option target 'ACCEPT'
+
+config include
+        option path '/etc/firewall.user'
+
+package luci
+
+config core 'main'
+        option lang 'auto'
+        option mediaurlbase '/luci-static/openwrt.org'
+        option resourcebase '/luci-static/resources'
+
+config extern 'flash_keep'
+        option uci '/etc/config/'
+        option dropbear '/etc/dropbear/'
+        option openvpn '/etc/openvpn/'
+        option passwd '/etc/passwd'
+        option opkg '/etc/opkg.conf'
+        option firewall '/etc/firewall.user'
+        option uploads '/lib/uci/upload/'
+
+config internal 'languages'
+        option en 'English'
+        option fr 'Français'
+
+config internal 'sauth'
+        option sessionpath '/tmp/luci-sessions'
+        option sessiontime '3600'
+
+config internal 'ccache'
+        option enable '1'
+
+config internal 'themes'
+        option OpenWrt '/luci-static/openwrt.org'
+
+package network
+
+config interface 'loopback'
+        option ifname 'lo'
+        option proto 'static'
+        option ipaddr '127.0.0.1'
+        option netmask '255.0.0.0'
+
+config interface 'lan'
+        option type 'bridge'
+        option proto 'static'
+        option mtu '1500'
+        option accept_ra '0'
+        option send_rs '0'
+        option ip6addr 'fd64:2c08:9fa7::2/64'
+        option dns '172.16.0.1'
+        option gateway '172.16.0.1'
+        option ipaddr '172.16.0.2'
+        option ifname 'eth0'
+        option netmask '255.255.255.255'
+
+config interface 'wan'
+        option ifname 'wlan0'
+        option proto 'static'
+        option ipaddr '169.254.32.13'
+        option netmask '255.255.255.0'
+
+package radvd
+
+config interface
+        option interface 'lan'
+        option AdvSendAdvert '1'
+        option AdvManagedFlag '0'
+        option AdvOtherConfigFlag '0'
+        list client ''
+        option ignore '1'
+
+config prefix
+        option interface 'lan'
+        list prefix ''
+        option AdvOnLink '1'
+        option AdvAutonomous '1'
+        option AdvRouterAddr '0'
+        option ignore '0'
+
+config route
+        option interface 'lan'
+        list prefix ''
+        option ignore '1'
+
+config rdnss
+        option interface 'lan'
+        list addr ''
+        option ignore '1'
+
+config dnssl
+        option interface 'lan'
+        list suffix ''
+        option ignore '1'
+
+package system
+
+config system
+        option timezone 'America/Montreal'
+        option hostname 'boulette'
+
+config timeserver 'ntp'
+        list server '0.openwrt.pool.ntp.org'
+        list server '1.openwrt.pool.ntp.org'
+        list server '2.openwrt.pool.ntp.org'
+        list server '3.openwrt.pool.ntp.org'
+
+package ubootenv
+
+package ucitrack
+
+config network
+        option init 'network'
+        list affects 'dhcp'
+        list affects 'radvd'
+
+config wireless
+        list affects 'network'
+
+config firewall
+        option init 'firewall'
+        list affects 'luci-splash'
+        list affects 'qos'
+        list affects 'miniupnpd'
+
+config olsr
+        option init 'olsrd'
+
+config dhcp
+        option init 'dnsmasq'
+
+config dropbear
+        option init 'dropbear'
+
+config httpd
+        option init 'httpd'
+
+config fstab
+        option init 'fstab'
+
+config qos
+        option init 'qos'
+
+config system
+        option init 'led'
+        list affects 'luci_statistics'
+
+config luci_splash
+        option init 'luci_splash'
+
+config upnpd
+        option init 'miniupnpd'
+
+config ntpclient
+        option init 'ntpclient'
+
+config samba
+        option init 'samba'
+
+config tinyproxy
+        option init 'tinyproxy'
+
+package uhttpd
+
+config uhttpd 'main'
+        list listen_http '0.0.0.0:80'
+        list listen_https '0.0.0.0:443'
+        option home '/www'
+        option rfc1918_filter '1'
+        option max_requests '3'
+        option cert '/etc/uhttpd.crt'
+        option key '/etc/uhttpd.key'
+        option cgi_prefix '/cgi-bin'
+        option script_timeout '60'
+        option network_timeout '30'
+        option tcp_keepalive '1'
+
+config cert 'px5g'
+        option days '730'
+        option bits '1024'
+        option country 'DE'
+        option state 'Berlin'
+        option location 'Berlin'
+        option commonname 'OpenWrt'
+
+package wireless
+
+config wifi-device 'radio0'
+        option type 'mac80211'
+        option macaddr '00:15:6d:da:d3:65'
+        option hwmode '11ng'
+        option htmode 'HT20'
+        list ht_capab 'SHORT-GI-40'
+        list ht_capab 'TX-STBC'
+        list ht_capab 'RX-STBC1'
+        list ht_capab 'DSSS_CCK-40'
+        option channel '1'
+
+config wifi-iface
+        option device 'radio0'
+        option encryption 'none'
+        option mode 'adhoc'
+        option bssid '02:CA:FF:EE:BA:BE'
+        option ssid 'relais.reseaulibre.ca'
+
