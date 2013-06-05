@@ -23,7 +23,7 @@ Questions ou commentaires:
 Pour discuter avec nous:  
 [[http://webchat.freenode.net/?channels=reseaulibre]]
 
-À PROPOS DE RÉSEAU-LIBRE (english follows)
+À PROPOS DE RÉSEAU LIBRE (english follows)
 ========================
 
 Réseau Libre est un regroupement informel de bénévoles qui a pour objectif
@@ -83,6 +83,3 @@ or you wish to learn more about the installation of wireless antennas and
 networking, Réseau Libre is an "ad hoc" place for collaboration open to all.
 
 For more information: [[http://www.reseaulibre.ca]]
-
-
-[[!tag/draft]]
