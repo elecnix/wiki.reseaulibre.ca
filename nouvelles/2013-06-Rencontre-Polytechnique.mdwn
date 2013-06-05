@@ -4,14 +4,14 @@ Prochaine rencontre
 Réunion régulière de Réseau libre:
 
 * Quand: le mercredi 12 juin, 18h30 à 20h
-* Où: l'École Polytechnique (Pavillon Lassonde, local L-4812) http://www.polymtl.ca/rensgen/coordonnees/campus.php
+* Où: l'École Polytechnique (Pavillon Lassonde, local L-4812, métro Université de Montréal) [[http://www.polymtl.ca/rensgen/coordonnees/campus.php]]
 
 Cette rencontre est ouverte à tous et toutes. Il y aura un mélange de discussions informelles pour tous les niveaux.
 
 Partager
 ========
 
-Abonnez-vous à la liste d'annonces pour être informé de tout changement:
+Abonnez-vous à la liste d'annonces pour être informé de tout changement:  
 [[https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca]]
 
 Pour partager cette annonce dans vos réseaux:  
@@ -26,22 +26,21 @@ Pour discuter avec nous:
 À PROPOS DE RÉSEAU-LIBRE (english follows)
 ========================
 
-Réseau Libre est un réseau en "maille" (en anglais, "mesh"), soit une topologie
-réseau dans laquelle chaque hôte est connecté à ses voisins, formant une
-structure en forme de filet. Chaque maille est aussi appelée "noeud". Chaque
-noeud a un certain nombre de "voisins", de sorte qu'il existe plusieurs chemins
-pour se rendre à un même point. L'avantage d'une telle topologie est qu'il n'y
-a pas de noeud essentiel où l'on centralise les services. Ainsi, en cas de
-panne d'un ou plusieurs des noeuds, le réseau peut continuer à fonctionner.
-Cela permet également de facilement y ajouter ou enlever des noeuds.
+Réseau Libre est un regroupement informel de bénévoles qui a pour objectif
+de construire un réseau sans-fil en "maille" (en anglais, "mesh") à Montréal.
 
-Concrètement, le réseau a besoin de gens qui installent des routeurs sans-fil
-chez eux, pour ajouter des noeuds au réseau et ainsi en élargir la couverture.
+Un réseau en maille est une topologie réseau dans laquelle chaque hôte est
+connecté à ses voisins, formant une structure en forme de filet. Chaque maille
+est aussi appelée "relais" (ou "noeud"). Chaque relais a un certain nombre de
+"voisins", de sorte qu'il existe plusieurs chemins pour se rendre à un même point.
+Ceci permet de construire un réseau décentralisé et résistant aux pannes.
+
+Concrètement, le réseau a besoin de participants qui installent des routeurs
+sans-fil chez eux, pour ajouter des relais au réseau et ainsi en élargir la couverture.
 On installe sur ces routeurs une application (à code source libre) qui trouve
-automatiquement les voisins et participe à relayer les données avec ces noeuds.
+automatiquement les voisins et participe à relayer les données.
 Les utilisateurs se connectent ensuite à un point d'accès sans-fil ordinaire
-connecté à ce noeud, et peuvent alors accéder à tout le contenu disponible
-depuis ce noeud.
+connecté à ce relais, et peuvent alors accéder au réseau.
 
 Notre réseau grandit! Nous avons déjà des réseaux en ligne dans les quartiers
 de Rosemont, Verdun et Saint-Michel à Montréal, avec plusieurs autres noeuds
