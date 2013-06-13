@@ -10,6 +10,16 @@ Les relais que j'administre:
 
 [[!map pages="link(.) and nodes/* and tagged(relay)"]]
 
+ * bb
+ * val
+ * btm
+ * grace
+ * jojo
+ * topo
+ * lacou
+ * elecnix
+ * besik
+
 Les points d'accès:
 
 [[!map pages="link(.) and nodes/* and tagged(accesspoint)"]]
