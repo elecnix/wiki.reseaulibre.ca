@@ -9,7 +9,7 @@ IPv6:
 """]]
 
 hostname
-: (node hostname here)
+: Canal de Nydus
 
 Type
 : relay (can also be accesspoint, test, server)
@@ -30,7 +30,7 @@ Hardware
 : 
 
 Location
-: (where is this node physically installed?)
+: Marie-Anne / Berri
 
 Status
 : [[!taglink prospect]] (can also be up, down, planned, unknown)
