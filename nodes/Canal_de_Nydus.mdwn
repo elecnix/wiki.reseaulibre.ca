@@ -30,7 +30,7 @@ Hardware
 : 
 
 Location
-: Marie-Anne / Berri
+: Berri / Marie-Anne
 
 Status
 : [[!taglink prospect]] (can also be up, down, planned, unknown)
