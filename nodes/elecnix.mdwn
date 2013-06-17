@@ -14,7 +14,7 @@ hostname
 : UBNT-elecnix
 
 Type
-: [[!taglink relay]]
+: relay
 
 SSID
 : elecnix.relais.reseaulibre.ca
