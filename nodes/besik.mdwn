@@ -1,16 +1,23 @@
-[[!waypoint lat="45.566779" lon="-73.595172" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.565838" lon="-73.594550" embed width="950px" height="200px" right desc="A node in my window"]]
+
+Un relais à l'extérieur de ma fenêtre, vers le nord géographique. Une migration vers OpenWrt et ad-hoc+Babel est prévue au début 2013.
+
+# Technical details
 
 [[!ymlfront data="""
-MAC: 00:15:6D:3C:00:7B
-IP: 172.16.0.60
-IPv6: 
+MAC: 00:15:6D:3C:01:B9
+IP: 172.16.0.61
+IPv6: fd64:2c08:9fa7:61::1/128
 """]]
 
 hostname
-: UBNT-besik
+: UBNT-elecnix
 
 Type
-: [[!taglink relay]]
+: relay
+
+SSID
+: elecnix.relais.reseaulibre.ca
 
 MAC address
 : {{$MAC}}
@@ -21,46 +28,42 @@ IPv6 address
 IP address
 : {{$IP}}
 
-SSID
-: (hidden) WDS with WPA2-AES PSK
-
 Software
 : AirOS
 
 Hardware
-: Ubiquity NanoStation M5 (XM.v5.2)
+: [[Ubiquity NanoStation M5 (XM.v5.2)|http://wiki.openwrt.org/toh/ubiquiti/nanostationm5]]
 
 Power
 : 8dBm/6,3mW (minimum, max is 26 dBm/500mW)
 
 Location
-: Roof
+: Window
 
 Azimuth
-: South-East
+: North
+
+Panorama
+: N/A
 
 Status
-: [[!taglink up]]
+: [[!taglink up]], but with WDS Access Point, WPA2-AES PSK, and no Babel yet
 
 Operator
 : [[/users/elecnix]]
 
 Links
-: [[elecnix]]
+: [[/nodes/besik]] ([[links/elecnix-besik/]])
 
-Access Point
-: [[/nodes/syrah]]
+Backup power
+: Short-term: 30 minutes (UPS), Emergency: car battery. I plan to increase capacity to 2 full days.
 
-Short-term backup power
-: none
+Pour me contacter, utiliser le courriel marchildon.net retourné par: 
 
-## Panorama
+    gpg --recv-keys 5E8410890036BB636997232C8FFB777D39D4B2D4
+    gpg --list-keys 39D4B2D4
 
-[[!img 6887807504_b8dc42eddb_o.jpg size="950x"]]
-
-[[!img 7033901979_4923b4082b_o.jpg size="950x"]]
-
-[[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
+[[!meta copyright="Copyright © 2012-2013 Nicolas Marchildon"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
