@@ -3,9 +3,6 @@ multiple copies). Basically, this is to allow you to access the
 documentation even if the network goes down. This is done through
 [[ikiwiki]], which is a the engine behind this wiki.
 
-(!) Note that this is all much easier with the "branchable" plugin of
-the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package.
-
 [[!toc levels=2]]
 
 # Basic offline editing and sharing
@@ -57,13 +54,13 @@ don't need to worry about versions.
 
 The following steps should get you going:
 
-    cd /var/www
+    mkdir ~/wikis
+    cd ~/wikis
     git clone git://wiki.reseaulibre.ca/ wiki.reseaulibre.ca
     cd wiki.reseaulibre.ca
     git branch setup origin/setup
-    cd ../
-    git clone -b setup wiki.reseaulibre.ca setup
-    cd setup
+    git clone -b setup wiki.reseaulibre.ca ../setup
+    cd ../setup
     edit ikiwiki.setup # fix paths
     ikiwiki --setup ikiwiki.setup
 
