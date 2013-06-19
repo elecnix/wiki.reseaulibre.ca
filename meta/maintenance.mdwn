@@ -75,6 +75,10 @@ This section documents which templates are available and to what pages they appl
  * [[!edittemplate template="templates/node" match="nodes/*"]]
  * [[!edittemplate template="templates/link" match="links/*"]]
 
+# Other tools
+
+* [[!iki tips/inside_dot_ikiwiki]] - good tips on how to interact with ikiwiki's metadata
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
