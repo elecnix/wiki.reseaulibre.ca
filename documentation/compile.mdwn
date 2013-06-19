@@ -20,7 +20,7 @@ For the latest attitude adjustment beta, the svn command line would be:
 
 Get the file from this git:
 
-    git clone git://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt.git reseau-libre-openwrt
+    git clone git://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt.git
 
 
 **Say you put the openwrt build environment in `/home/me/openwrt` and the git files are in `/home/me/reseau-libre-openwrt`**
