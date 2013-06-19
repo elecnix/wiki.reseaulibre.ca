@@ -59,11 +59,13 @@ don't need to worry about versions.
 The following steps should get you going:
 
     cd ~user
-    git clone git://wiki.reseaulibre.ca/ wiki.reseaulibre.ca
-    cd wiki.reseaulibre.ca
-    git branch setup origin/setup
-    git clone -b setup wiki.reseaulibre.ca ../setup
-    cd ../setup
+    # setup base repository
+    git clone --bare git://wiki.reseaulibre.ca/ wiki.reseaulibre.ca.git
+    # setup srcdir
+    git clone wiki.reseaulibre.ca.git
+    # convenience copy of the setup file
+    git clone -b origin/setup wiki.reseaulibre.ca.git setup
+    cd setup
     edit ikiwiki.setup # adapt configuration
 
 When editing `ikiwiki.setup`, make sure you change the following entries:
@@ -73,13 +75,13 @@ When editing `ikiwiki.setup`, make sure you change the following entries:
     srcdir: /home/user/wiki.reseaulibre.ca
     destdir: /var/www/wiki.reseaulibre.ca
     libdir: /home/user/wiki.reseaulibre.ca/.ikiwiki
-    git_wrapper: /home/user/wiki.reseaulibre.ca/.git/hooks/post-commit
-    git_test_receive_wrapper: /home/user/wiki.reseaulibre.ca/.git/hooks/pre-receive
+    git_wrapper: /home/user/wiki.reseaulibre.ca.git/hooks/post-commit
+    git_test_receive_wrapper: /home/user/wiki.reseaulibre.ca.git/hooks/pre-receive
     gitorigin_branch: "" # disable
     ENV:
       TMPDIR: /home/user/tmp
 
-This assumes that your `/var/www/wiki.reseaulibre.ca` directory is writable by your user.
+This assumes that your `/var/www` directory is writable by your user.
 
 Then render the wiki:
 
@@ -88,14 +90,26 @@ Then render the wiki:
 You may need to go over the [[meta/maintenance]] guide for the plugins
 to enable and the hooks configuration. Every time you change the `ikiwiki.setup` file, you will want to call the above `--setup` argument.
 
-At this point, your wiki should already be visible in `/var/www/wiki.reseaulibre.ca`.
+## Editing the wiki through git
+
+At this point, your wiki should already be visible in `/var/www/wiki.reseaulibre.ca`, the `destdir`. You can edit it and changes should show up automatically in the `destdir`.
+
+However, you need yet another clone for this, the `srcdir` being used internally by the web interface of Ikiwiki. So clone the `repository` elsewhere:
+
+    git clone ~user/wiki.reseaulibre.ca.git working-copy
+    cd working-copy
+    edit index.mdwn
+    git commit index.mdwn
+    git push
+
+This will refresh the main page of the wiki, for example.
 
 ## Webserver configuration
 
 You will also need a webserver to serve the content in the `destdir`
 defined above. We assume you will a virtual host named `wiki.reseaulibre.ca`. Here are some examples on how to do those, see [[!iki setup]] and [[!iki tips/dot_cgi]] for complete documentation.
 
-## Apache configuration
+### Apache configuration
 
     <VirtualHost *:80>
         ServerName wiki.reseaulibre.ca:80
@@ -110,7 +124,7 @@ defined above. We assume you will a virtual host named `wiki.reseaulibre.ca`. He
         ErrorDocument 404 "/ikiwiki.cgi"
     </VirtualHost>
 
-## Nginx configuration
+### Nginx configuration
 
     server {
         root /var/www/wiki.reseaulibre.ca/;
@@ -164,11 +178,11 @@ There is some work being done to host copies of this wiki on OpenWrt nodes. See 
 
 ## You're done!
 
-At this point, you are done! You can edit your own clone of the wiki, and although your changes will not go back to the main site, you can always push or pull manually from the git repository in `~/wiki.reseaulibre.ca`.
+At this point, you are done! You can edit your own clone of the wiki, although your changes will not go back to the main site. However, you can always push or pull manually from the `repository` in `~/wiki.reseaulibre.ca.git` to update the main site.
 
 # Two-way replication
 
-However, you may also want keep your mirror up to date with the main site, but also see your local edits sent automatically to the main site.
+So you may also want keep your mirror up to date with the main site. You can also see your local edits sent automatically to the main site.
 
 ## Keeping the mirror up to date
 
@@ -215,6 +229,30 @@ this wiki.
 
 The following steps are not required for the wiki to work correctly, but may nevertheless be useful.
 
+## Multiple committers
+
+(!) Note that this is done automatically by the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which handles this through anonymous git pushes.
+
+The [[!iki rcs/git]] page details a bit of the git internals of ikiwiki, but doesn't explain clearly how to do such a setup. In order to allow multiple committers, I therefore had to go through a few hoops to be able to allow the web interface, myself and others to push commits to the repository.
+
+First, create the sandbox user:
+
+    adduser --system --group reseaulibre
+
+Those bits ensure the wrappers are suid with the group.
+
+	# group for wrappers to run in
+	wrappergroup => 'reseaulibre',
+
+Then the git repository (`/home/user/wiki.reseaulibre.ca`) needs to be marked as shared so that permissions are kept right:
+
+    git config core.sharedRepository group
+    chmod -R g+ws .
+
+To allow users to push to the repository, use:
+
+    adduser anarcat reseaulibre
+
 ## Publishing the wiki source git repository through HTTP
 
 (!) Note that this has been is configured automatically by the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which configures a git daemon for each wiki.
@@ -240,30 +278,6 @@ published through the repolist plugin:
 	repositories => [qw{http://wiki.reseaulibre.ca/repository.git/}],
 
 You will need an `Alias` directive in your Apache configuration to make `/home/user/wiki.reseaulibre.ca/` appear as `repository.git`.
-
-## Multiple committers
-
-(!) Note that this is done automatically by the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which handles this through anonymous git pushes.
-
-The [[!iki rcs/git]] page details a bit of the git internals of ikiwiki, but doesn't explain clearly how to do such a setup. In order to allow multiple committers, I therefore had to go through a few hoops to be able to allow the web interface, myself and others to push commits to the repository.
-
-First, create the sandbox user:
-
-    adduser --system --group reseaulibre
-
-Those bits ensure the wrappers are suid with the group.
-
-	# group for wrappers to run in
-	wrappergroup => 'reseaulibre',
-
-Then the git repository (`/home/user/wiki.reseaulibre.ca`) needs to be marked as shared so that permissions are kept right:
-
-    git config core.sharedRepository group
-    chmod -R g+ws .
-
-To allow users to push to the repository, use:
-
-    adduser anarcat reseaulibre
 
 ## CIA.vc notifications
 
