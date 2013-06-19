@@ -20,7 +20,9 @@ and push them to the same URL.
 # Creating a mirror
 
 To create a mirror of this wiki, if it ever goes down, you can start
-from the above repository and create a new wiki.
+from the above repository and create a new wiki. Hosting mirrors of the wiki is also **encouraged** as it provides **redundancy** for the main site, and also allows you to **develop new features for the wiki** without disrupting the main site.
+
+This procedure shows you how to create a **one time clone** of the wiki that is **editable** both through the web interface (optional) and through the git repository. It will **not sync** back to or from the original wiki, for this you need to make extra configurations detailed in the second section.
 
 ## Preparation
 
@@ -56,14 +58,13 @@ don't need to worry about versions.
 
 The following steps should get you going:
 
-    cd ~
+    cd ~user
     git clone git://wiki.reseaulibre.ca/ wiki.reseaulibre.ca
     cd wiki.reseaulibre.ca
     git branch setup origin/setup
     git clone -b setup wiki.reseaulibre.ca ../setup
     cd ../setup
-    edit ikiwiki.setup # fix paths
-    ikiwiki --setup ikiwiki.setup
+    edit ikiwiki.setup # adapt configuration
 
 When editing `ikiwiki.setup`, make sure you change the following entries:
 
@@ -80,8 +81,14 @@ When editing `ikiwiki.setup`, make sure you change the following entries:
 
 This assumes that your `/var/www/wiki.reseaulibre.ca` directory is writable by your user.
 
+Then render the wiki:
+
+    ikiwiki --setup ikiwiki.setup
+
 You may need to go over the [[meta/maintenance]] guide for the plugins
-to enable and the hooks configuration.
+to enable and the hooks configuration. Every time you change the `ikiwiki.setup` file, you will want to call the above `--setup` argument.
+
+At this point, your wiki should already be visible in `/var/www/wiki.reseaulibre.ca`.
 
 ## Webserver configuration
 
@@ -155,14 +162,22 @@ use if the above doesn't work.
 
 There is some work being done to host copies of this wiki on OpenWrt nodes. See [[meta/ikiwiki+openwrt]].
 
+## You're done!
+
+At this point, you are done! You can edit your own clone of the wiki, and although your changes will not go back to the main site, you can always push or pull manually from the git repository in `~/wiki.reseaulibre.ca`.
+
 # Two-way replication
 
-The above will setup a one-time clone of the wiki, but it will not
-update automatically.
+However, you may also want keep your mirror up to date with the main site, but also see your local edits sent automatically to the main site.
 
 ## Keeping the mirror up to date
 
-There are two options here. One is to regularly pull from the master (less reliable, klunky, but doesn't require cooperation from the master), the other is to make the master push to the mirror. For this, the master needs to enable the [[!iki plugins/gitpush]] plugin and add the following to the setup file:
+There are two options here. One is to regularly **pull from the master**, either through a cron job or by hand. This is less reliable, klunky, but doesn't require cooperation from the master. Try:
+
+    cd ~user/wiki.reseaulibre.ca
+    git pull --rebase
+
+The other option is to make the master push to the mirror. For this, the master needs to enable the [[!iki plugins/gitpush]] plugin and add the following to the setup file:
 
     git_push_to:
     - ssh://user@example.com/source.git
@@ -173,7 +188,7 @@ It also needs to allow the following SSH key to push to the repository:
 
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQsHWlypnPe+4e0mKkE51oDHK2yXrEeja6299Es/wFvqihvzY4hQhJdUdl2KVmz5CGjRYqhnQ8l5Al5vtHoi9IxlI7yS7cOsj/wFt4EKDophqoyUFDaiWtXuFCNYwdTeX5Fb9N6nT8ihUUK/q9k8Ew9kuBTbznsVra5zqJv+LhfAMIesPwmP6iF966Evi0uXxz0CkIevttvYgRZyPIvdVN90nr5f7um1vOP6L1KkQne8guHpuNfxd9XZg0e3XPG6decGREy8jdOc3xlIADc+yxKpB+XqZyE3iYi2RsxnjqWbSURvOhvI5z4EVj5Qv8ktSj8g3LkukQr25EgNMl1cv9 r-wiki@marcos
 
-## Publishing the mirror
+## Announcing the mirror
 
 Once your mirror works, it needs to be added to the list of mirrors. You can ask the mirror where you take it from (and why not, all mirrors) to add it to their setup file. As an example, here's the configuration for the first mirror:
 
@@ -182,9 +197,9 @@ Once your mirror works, it needs to be added to the list of mirrors. You can ask
 
 The [[!iki plugins/mirrorlist]] plugin of course needs to be enabled.
 
-## Merging back into the wiki
+## Pushing changes back to the main site
 
-The final step is to make edits on the mirror reflect back to the master site. That way the mirror is not only for reading, but can also be edited, even when the master is offline or the network is separated.
+The final step is to push edits on the mirror back to the master site. That way the mirror is not only for reading, but can also be edited, even when the master is offline or the network is separated.
 
 To do this, the mirror needs to push back to the master, again using the gitpush plugin:
 
