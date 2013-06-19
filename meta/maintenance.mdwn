@@ -78,6 +78,7 @@ This section documents which templates are available and to what pages they appl
 # Other tools
 
 * [[!iki tips/inside_dot_ikiwiki]] - good tips on how to interact with ikiwiki's metadata
+* If you want to host your own map tiles instead of using the openstreetmap server (for instance, if you run without internet access), see [[Hosting your own maps]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
