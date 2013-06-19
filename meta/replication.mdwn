@@ -92,7 +92,7 @@ Then render the wiki:
 
     ikiwiki --setup ikiwiki.setup
 
-You may need to go over the [[meta/maintenance]] guide for the plugins
+You may need to go over the [[maintenance]] guide for the plugins
 to enable and the hooks configuration. Every time you change the `ikiwiki.setup` file, you will want to call the above `--setup` argument.
 
 ## Editing the wiki through git
@@ -179,7 +179,7 @@ better understanding of how ikiwiki works, see [[!iki rcs/git]].
 [This](http://piny.be/jrayhawk/notes/ikiwiki_creation/) may also be of
 use if the above doesn't work.
 
-There is some work being done to host copies of this wiki on OpenWrt nodes. See [[meta/ikiwiki+openwrt]].
+There is some work being done to host copies of this wiki on OpenWrt nodes. See [[ikiwiki+openwrt]].
 
 ## You're done!
 
