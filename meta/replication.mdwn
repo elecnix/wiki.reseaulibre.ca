@@ -17,8 +17,8 @@ using this command:
     git clone git://wiki.reseaulibre.ca/
 
 This will at least provide you with the raw source, the text files
-that generate the wiki website. There you can make changes and send me
-the patches by email.
+that generate the wiki website. There you can make changes, commmit
+and push them to the same URL.
 
 # Creating a mirror
 
@@ -33,6 +33,8 @@ don't plan on letting people edit the wiki, but generally you want the
 package to be installed on the webserver for editing to work.
 
     apt-get install ikiwiki
+
+Install all the recommended packages.
 
 Make sure you run at least version `3.20120319` of ikiwiki, available
 in since Debian squeeze (through backports). However, there were
@@ -82,6 +84,14 @@ This assumes that your `/var/www/wiki.reseaulibre.ca` directory is
 available in a virtual host named `wiki.reseaulibre.ca`. This needs
 special configuration in your webserver.
 
+You may need to go over the [[meta/maintenance]] guide for the plugins
+to enable and the hooks configuration.
+
+You will also need a webserver to serve the content in the `destdir`
+defined above. This configuration varies wildly, but the ikiwiki
+documentation ([[!iki setup]] and [[!iki tips/dot_cgi]]) has some
+hints.
+
 ## Apache configuration
 
     <VirtualHost *:80>
@@ -127,28 +137,36 @@ Make this writable:
 
     chmod a+w /tmp/fcgi.socket
 
-## Other configuration
+## Other extensions
 
-Disable the `search`, `ikiwikihosting` and `branchable` plugins.
+Also make sure you disable the `search`, `ikiwikihosting` and
+`branchable` plugins, as they require extra configuration not covered
+by this manual. See [[!iki plugins/search]] and
+<http://ikiwiki-hosting.branchable.com/> for more information.
+
+If you want to enable search, you will want to install those packages.
+
+ * [[!debpkg libsort-naturally-perl]]
+ * [[!debpkg libtext-wikicreole-perl]]
+ * [[!debpkg libsearch-xapian-perl]]
+ * [[!debpkg xapian-omega]]
+
+## Other guides
 
 Another guide is the [[!iki tips/laptop_wiki_with_git]] guide. To get a
 better understanding of how ikiwiki works, see [[!iki rcs/git]].
 
-Once the wiki can generate pages, you may need to go over the
-[[meta/Maintenance]] guide for the plugins to enable and the hooks
-configuration.
-
-You will also need a webserver to serve the content in the `destdir`
-defined above. This configuration varies wildly, but the ikiwiki
-documentation ([[!iki setup]] and [[!iki tips/dot_cgi]]) has some
-hints.
-
-(!) Oh, and [this](http://piny.be/jrayhawk/notes/ikiwiki_creation/)
-may also be of use if the above doesn't work.
+[This](http://piny.be/jrayhawk/notes/ikiwiki_creation/) may also be of
+use if the above doesn't work.
 
 There is some work being done to host copies of this wiki on OpenWrt nodes. See [[meta/ikiwiki+openwrt]].
 
-# Keeping the mirror up to date
+# Two-way replication
+
+The above will setup a one-time clone of the wiki, but it will not
+update automatically.
+
+## Keeping the mirror up to date
 
 There are two options here. One is to regularly pull from the master (less reliable, klunky, but doesn't require cooperation from the master), the other is to make the master push to the mirror. For this, the master needs to enable the [[!iki plugins/gitpush]] plugin and add the following to the setup file:
 
@@ -161,7 +179,7 @@ It also needs to allow the following SSH key to push to the repository:
 
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQsHWlypnPe+4e0mKkE51oDHK2yXrEeja6299Es/wFvqihvzY4hQhJdUdl2KVmz5CGjRYqhnQ8l5Al5vtHoi9IxlI7yS7cOsj/wFt4EKDophqoyUFDaiWtXuFCNYwdTeX5Fb9N6nT8ihUUK/q9k8Ew9kuBTbznsVra5zqJv+LhfAMIesPwmP6iF966Evi0uXxz0CkIevttvYgRZyPIvdVN90nr5f7um1vOP6L1KkQne8guHpuNfxd9XZg0e3XPG6decGREy8jdOc3xlIADc+yxKpB+XqZyE3iYi2RsxnjqWbSURvOhvI5z4EVj5Qv8ktSj8g3LkukQr25EgNMl1cv9 r-wiki@marcos
 
-# Publishing the mirror
+## Publishing the mirror
 
 Once your mirror works, it needs to be added to the list of mirrors. You can ask the mirror where you take it from (and why not, all mirrors) to add it to their setup file. As an example, here's the configuration for the first mirror:
 
@@ -170,7 +188,7 @@ Once your mirror works, it needs to be added to the list of mirrors. You can ask
 
 The [[!iki plugins/mirrorlist]] plugin of course needs to be enabled.
 
-# Merging back into the wiki
+## Merging back into the wiki
 
 The final step is to make edits on the mirror reflect back to the master site. That way the mirror is not only for reading, but can also be edited, even when the master is offline or the network is separated.
 
@@ -180,6 +198,93 @@ To do this, the mirror needs to push back to the master, again using the gitpush
     - git://wiki.reseaulibre.ca/
 
 This will ensure that commits done on the mirror will propagate back to the master.
+
+# Deprecated documentation
+
+Those steps may not be necessary in your setup and are not used in
+this wiki. The following steps are not required for the wiki to work correctly, but they are nevertheless useful.
+
+## Publishing the wiki source
+
+(!) Note that this has been superseded by the use of the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which configures git hooks automatically.
+
+To publish the source, I use a regular HTTP server. For this, I had to
+change the post-update hook as described
+[[!iki todo/call_git-update-server-info_from_post-udpate_hook desc="here"]],
+which means specifically changing the git-wrapper parameter to:
+
+	git_wrapper => '/home/mtl-mesh/repository.git/hooks/post-update.ikiwiki
+
+then creating the post-update hook with the following content:
+
+    #!/bin/sh
+    
+    ./hooks/post-update.ikiwiki
+    
+    exec git update-server-info
+
+... and setting it executable. Then the URL of the repository can be
+published through the repolist plugin:
+
+	repositories => [qw{http://mesh.openisp.ca/repository.git/}],
+
+The above url works because of the `Alias` directive in the above
+Apache configuration.
+
+See [[meta/Replication]] for instructions on how to replicate this wiki.
+
+## Multiple committers
+
+(!) Note that this has been superseded by the use of the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which handles this automatically through anonymous git pushes.
+
+The [[!iki rcs/git]] page details a bit of the git internals of ikiwiki, but doesn't explain clearly how to do such a setup. In order to allow multiple committers, I therefore had to go through a few hoops to be able to allow the web interface, myself and others to push commits to the repository.
+
+First, create the sandbox user:
+
+    adduser --system --group mtl-mesh
+
+Those bits ensure the wrappers are suid with the group.
+
+	# group for wrappers to run in
+	wrappergroup => 'mtl-mesh',
+
+Then the git repository (repository.git) needs to be marked as shared so that permissions are kept right:
+
+    git config core.sharedRepository group
+    chmod -R g+ws .
+
+To allow users to push to the repository, use:
+
+    adduser anarcat mtl-mesh
+
+## CIA.vc notifications
+
+I am using the
+[Koumbit git-hooks](https://redmine.koumbit.net/projects/git-hooks) to
+do CIA.vc notifications. To deploy the script, install both the
+`ciabot.pl` and `ciabot-post-receive` hooks in the `source.git/hooks`
+directory. It is important that both script be in the same
+directory. Symlink the `post-receive` hook in place:
+
+    ln -s ciabot-post-receive post-receive
+
+.. and configure the script according to your preference:
+
+    git config hooks.ciaproject reseaulibre
+    git config hooks.ciafrom ciabot@marcos.reseaulibre.ca
+
+We use email notifications because the potentially disconnected nature
+of the mesh.
+
+Note that the scripts are available in the `setup` branch.
+
+## Hosting your own maps
+
+If you want to host your own map tiles instead of using the openstreetmap server (for instance, if you run without internet access), see [[Hosting your own maps]]
+
+# Other tools
+
+* [[!iki tips/inside_dot_ikiwiki]] - good tips on how to interact with ikiwiki's metadata
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
