@@ -6,63 +6,33 @@ See [[firmware]] for usage instructions.
 
 # Compile openwrt
 
-## Get the openwrt compilation environment
+## Make sure you have all prerequisites for building openwrt
 
-Follow the instructions at [[http://wiki.openwrt.org/doc/howto/buildroot.exigence]]
+Follow the instructions at the beginning of the page [[http://wiki.openwrt.org/doc/howto/buildroot.exigence]]
 
-At step 2, the command mentioned will download the trunk.  Click on the link below saying "Downloading sources" for information on how to download specific version.
+## Setup the Reseau libre build environment
 
-For the latest trunk, the command line would be:
-
-    git clone git://git.openwrt.org/openwrt.git
-
-For attitude adjustment:
-
-    git clone git://git.openwrt.org/12.09/openwrt.git
-
-## Get the Reseau libre feed
-
-Get the file from this git:
+Obtain the reseau libre build environment then prepare the environment with the following commands:
 
     git clone git://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt.git
+    cd reseau-libre-openwrt
+    ./setup.sh
 
-**Say you put the openwrt build environment in `/home/me/openwrt` and the git files are in `/home/me/reseau-libre-openwrt`**
+Follow the instructions on screen
 
-## Add reseau libre feed
+## Compile openwrt
 
-Add the reseaulibre feed to openwrt by editing the file `/home/me/openwrt/feeds.conf.default` and add the following line:
+From the git repository downloaded at previous step, do the following
 
-    src-git reseaulibre git://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt.git
-
-## Update the feeds
-
-    cd /home/me/openwrt
-    ./scripts/feeds update -a
-    ./scripts/feeds install -a
-
-## Copy the config to openwrt
-
-    cp /home/me/reseau-libre-openwrt/openwrt/.config /home/me/openwrt
-
-## Modify the image (optional)
-
-Optionally, modify the packages to include in the image by running:
-
-    make menuconfig
-
-There, navigate to `Network/Reseau Libre` and enable both options with a `*` star to ensure they are part of the produced image, not just as packages.
-
-The `.config` file included in the git is the one used to build the image at [[http://packages.reseaulibre.ca:8080/Routeurs]].  It will build for Ubiquiti products.  The `make menuconfig` command also allows you to change the device for which to build.
-
-## Build the image
-
-You should be good to go.  Type:
-  
+    cd openwrt
+    make menuconfig # to add or change packages or modify material to build for
     make V=99
 
-This may take a few hours. On a quad-core computer, you may want to enable parallelism by adding the `-j4` option. After successful compilation, the images are in the `bin/<arch>` directory.
-
 # Reseau libre package information 
+
+The reseaulibre-feed repository is available with the following git command:
+
+    git clone git://gitorious.org/reseau-libre-openwrt/reseaulibre-feed.git
 
 Here are the details on what the Reseau libre packages do:
 
