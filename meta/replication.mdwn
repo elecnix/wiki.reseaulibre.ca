@@ -39,15 +39,66 @@ The following steps should get you going:
 Sample configurations:
 
     cgiurl: http://wiki.reseaulibre.ca/ikiwiki.cgi
-    cgi_wrapper: /home/anarcat/public_html/ikiwiki.cgi
+    cgi_wrapper: /var/www/ikiwiki.cgi
     srcdir: /home/anarcat/wikis/wiki.reseaulibre.ca
-    destdir: /home/anarcat/public_html/wiki.reseaulibre.ca
+    destdir: /var/www/wiki.reseaulibre.ca
     libdir: /home/anarcat/wikis/wiki.reseaulibre.ca/.ikiwiki
     git_wrapper: /home/anarcat/wikis/wiki.reseaulibre.ca/.git/hooks/post-commit
     git_test_receive_wrapper: /home/anarcat/wikis/wiki.reseaulibre.ca/.git/hooks/pre-receive
     gitorigin_branch: "" # disable
     ENV:
       TMPDIR: /home/anarcat/tmp
+
+This assumes that your `/var/www/wiki.reseaulibre.ca` directory is
+available in a virtual host named `wiki.reseaulibre.ca`. This needs
+special configuration in your webserver.
+
+## Apache configuration
+
+    <VirtualHost *:80>
+        ServerName wiki.reseaulibre.ca:80
+        DocumentRoot /var/www/wiki.reseaulibre.ca
+        <Directory /var/www/wiki.reseaulibre.ca>
+            Options Indexes MultiViews ExecCGI
+            AllowOverride None
+            Order allow,deny
+            allow from all
+        </Directory>
+        ScriptAlias /ikiwiki.cgi /var/www/ikiwiki.cgi
+        ErrorDocument 404 "/ikiwiki.cgi"
+    </VirtualHost>
+
+## Nginx configuration
+
+    server {
+        root /var/www/wiki.reseaulibre.ca/;
+        index index.html index.htm;
+
+        # Make site accessible from http://localhost/
+        server_name wiki.reseaulibre.ca;
+
+        location / {
+            try_files $uri $uri/ /index.html;
+        }
+        location /ikiwiki.cgi {
+            fastcgi_pass  unix:/tmp/fcgi.socket;
+            fastcgi_index ikiwiki.cgi;
+            fastcgi_param SCRIPT_FILENAME   /var/www/ikiwiki.cgi;
+            fastcgi_param  DOCUMENT_ROOT      /var/www/wiki.reseaulibre.ca;
+            include /etc/nginx/fastcgi_params;
+        }
+    }
+
+Start this process as your own user (or the user that has write access
+to `srcdir`, `destdir`, etc):
+
+    spawn-fcgi -s /tmp/fcgi.socket -n -- /usr/sbin/fcgiwrap
+
+Make this writable:
+
+    chmod a+w /tmp/fcgi.socket
+
+## Other configuration
 
 Disable the `search`, `ikiwikihosting` and `branchable` plugins.
 
