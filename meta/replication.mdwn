@@ -25,8 +25,37 @@ the patches by email.
 To create a mirror of this wiki, if it ever goes down, you can start
 from the above repository and create a new wiki.
 
+## Preparation
+
+You need to install the `ikiwiki` package for the mirror to work. You
+can use ikiwiki to publish the actual HTML pages elsewhere if you
+don't plan on letting people edit the wiki, but generally you want the
+package to be installed on the webserver for editing to work.
+
+    apt-get install ikiwiki
+
+Make sure you run at least version `3.20120319` of ikiwiki, available
+in since Debian squeeze (through backports). However, there were
+several bugfixes to the OpenStreetMap plugin (`osm`) in `3.20120725`,
+which is available only since Debian Jessie. To enable Debian Jessie
+repositories on your Debian install, use:
+
+    cat > /etc/apt/preferences.d/jessie.pref <<EOF
+    Package: *
+    Pin: release a=jessie
+    Pin-Priority: 1
+    EOF
+    echo 'deb http://ftp.ca.debian.org/debian/ jessie main' > /etc/apt/sources.list.d/jessie.list
+    apt-get install -t jessie ikiwiki
+
+If you disable the osm plugin and do not use the map feature, you
+don't need to worry about versions.
+
+## Setting up the wiki
+
 The following steps should get you going:
 
+    cd /var/www
     git clone git://wiki.reseaulibre.ca/ wiki.reseaulibre.ca
     cd wiki.reseaulibre.ca
     git branch setup origin/setup
@@ -36,7 +65,7 @@ The following steps should get you going:
     edit ikiwiki.setup # fix paths
     ikiwiki --setup ikiwiki.setup
 
-Sample configurations:
+When editing `ikiwiki.setup`, make sure you change the following entries:
 
     cgiurl: http://wiki.reseaulibre.ca/ikiwiki.cgi
     cgi_wrapper: /var/www/ikiwiki.cgi
