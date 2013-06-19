@@ -60,23 +60,23 @@ The following steps should get you going:
 
     cd ~user
     # setup base repository
-    git clone --bare git://wiki.reseaulibre.ca/ wiki.reseaulibre.ca.git
+    git clone --bare git://wiki.reseaulibre.ca/ reseaulibre.deuxpi.ca.git
     # setup srcdir
-    git clone wiki.reseaulibre.ca.git
+    git clone reseaulibre.deuxpi.ca.git
     # convenience copy of the setup file
-    git clone -b origin/setup wiki.reseaulibre.ca.git setup
+    git clone -b origin/setup reseaulibre.deuxpi.ca.git setup
     cd setup
     edit ikiwiki.setup # adapt configuration
 
 When editing `ikiwiki.setup`, make sure you change the following entries:
 
-    cgiurl: http://wiki.reseaulibre.ca/ikiwiki.cgi
+    cgiurl: http://reseaulibre.deuxpi.ca/ikiwiki.cgi
     cgi_wrapper: /var/www/ikiwiki.cgi
-    srcdir: /home/user/wiki.reseaulibre.ca
-    destdir: /var/www/wiki.reseaulibre.ca
-    libdir: /home/user/wiki.reseaulibre.ca/.ikiwiki
-    git_wrapper: /home/user/wiki.reseaulibre.ca.git/hooks/post-commit
-    git_test_receive_wrapper: /home/user/wiki.reseaulibre.ca.git/hooks/pre-receive
+    srcdir: /home/user/reseaulibre.deuxpi.ca
+    destdir: /var/www/reseaulibre.deuxpi.ca
+    libdir: /home/user/reseaulibre.deuxpi.ca/.ikiwiki
+    git_wrapper: /home/user/reseaulibre.deuxpi.ca.git/hooks/post-commit
+    git_test_receive_wrapper: /home/user/reseaulibre.deuxpi.ca.git/hooks/pre-receive
     gitorigin_branch: "" # disable
     ENV:
       TMPDIR: /home/user/tmp
@@ -92,12 +92,12 @@ to enable and the hooks configuration. Every time you change the `ikiwiki.setup`
 
 ## Editing the wiki through git
 
-At this point, your wiki should already be visible in `/var/www/wiki.reseaulibre.ca`, the `destdir`. You can edit it and changes should show up automatically in the `destdir`.
+At this point, your wiki should already be visible in `/var/www/reseaulibre.deuxpi.ca`, the `destdir`. You can edit it and changes should show up automatically in the `destdir`.
 
 However, you need yet another clone for this, the `srcdir` being used internally by the web interface of Ikiwiki. So clone the `repository` elsewhere:
 
-    git clone ~user/wiki.reseaulibre.ca.git working-copy
-    cd working-copy
+    git clone ~user/reseaulibre.deuxpi.ca.git rl-wiki
+    cd rl-wiki
     edit index.mdwn
     git commit index.mdwn
     git push
@@ -107,14 +107,14 @@ This will refresh the main page of the wiki, for example.
 ## Webserver configuration
 
 You will also need a webserver to serve the content in the `destdir`
-defined above. We assume you will a virtual host named `wiki.reseaulibre.ca`. Here are some examples on how to do those, see [[!iki setup]] and [[!iki tips/dot_cgi]] for complete documentation.
+defined above. We assume you will a virtual host named `reseaulibre.deuxpi.ca`. Here are some examples on how to do those, see [[!iki setup]] and [[!iki tips/dot_cgi]] for complete documentation.
 
 ### Apache configuration
 
     <VirtualHost *:80>
-        ServerName wiki.reseaulibre.ca:80
-        DocumentRoot /var/www/wiki.reseaulibre.ca
-        <Directory /var/www/wiki.reseaulibre.ca>
+        ServerName reseaulibre.deuxpi.ca:80
+        DocumentRoot /var/www/reseaulibre.deuxpi.ca
+        <Directory /var/www/reseaulibre.deuxpi.ca>
             Options Indexes MultiViews ExecCGI
             AllowOverride None
             Order allow,deny
@@ -127,9 +127,9 @@ defined above. We assume you will a virtual host named `wiki.reseaulibre.ca`. He
 ### Nginx configuration
 
     server {
-        root /var/www/wiki.reseaulibre.ca/;
+        root /var/www/reseaulibre.deuxpi.ca/;
         index index.html index.htm;
-        server_name wiki.reseaulibre.ca;
+        server_name reseaulibre.deuxpi.ca;
 
         location / {
             try_files $uri $uri/ /index.html;
@@ -138,7 +138,7 @@ defined above. We assume you will a virtual host named `wiki.reseaulibre.ca`. He
             fastcgi_pass  unix:/tmp/fcgi.socket;
             fastcgi_index ikiwiki.cgi;
             fastcgi_param SCRIPT_FILENAME   /var/www/ikiwiki.cgi;
-            fastcgi_param  DOCUMENT_ROOT      /var/www/wiki.reseaulibre.ca;
+            fastcgi_param  DOCUMENT_ROOT      /var/www/reseaulibre.deuxpi.ca;
             include /etc/nginx/fastcgi_params;
         }
     }
@@ -178,7 +178,7 @@ There is some work being done to host copies of this wiki on OpenWrt nodes. See 
 
 ## You're done!
 
-At this point, you are done! You can edit your own clone of the wiki, although your changes will not go back to the main site. However, you can always push or pull manually from the `repository` in `~/wiki.reseaulibre.ca.git` to update the main site.
+At this point, you are done! You can edit your own clone of the wiki, although your changes will not go back to the main site. However, you can always push or pull manually from the `repository` in `~/reseaulibre.deuxpi.ca.git` to update the main site.
 
 # Two-way replication
 
@@ -188,13 +188,13 @@ So you may also want keep your mirror up to date with the main site. You can als
 
 There are two options here. One is to regularly **pull from the master**, either through a cron job or by hand. This is less reliable, klunky, but doesn't require cooperation from the master. Try:
 
-    cd ~user/wiki.reseaulibre.ca
+    cd ~user/reseaulibre.deuxpi.ca
     git pull --rebase
 
 The other option is to make the master push to the mirror. For this, the master needs to enable the [[!iki plugins/gitpush]] plugin and add the following to the setup file:
 
     git_push_to:
-    - ssh://user@example.com/source.git
+    - ssh://user@reseaulibre.deuxpi.ca/reseaulibre.deuxpi.ca.git
 
 The repository URL above needs to point to the "repository" directory of the mirror, see the [[!iki rcs/git]] documentation for a good explanation of the layout of the different git repositories in ikiwiki.
 
@@ -244,7 +244,7 @@ Those bits ensure the wrappers are suid with the group.
 	# group for wrappers to run in
 	wrappergroup => 'reseaulibre',
 
-Then the git repository (`/home/user/wiki.reseaulibre.ca`) needs to be marked as shared so that permissions are kept right:
+Then the git repository (`/home/user/reseaulibre.deuxpi.ca`) needs to be marked as shared so that permissions are kept right:
 
     git config core.sharedRepository group
     chmod -R g+ws .
@@ -262,7 +262,7 @@ change the post-update hook as described
 [[!iki todo/call_git-update-server-info_from_post-udpate_hook desc="here"]],
 which means specifically changing the git-wrapper parameter to:
 
-	git_wrapper => '/home/user/wiki.reseaulibre.ca/.git/hooks/post-update.ikiwiki
+	git_wrapper => '/home/user/reseaulibre.deuxpi.ca/.git/hooks/post-update.ikiwiki
 
 then creating the post-update hook with the following content:
 
@@ -275,9 +275,9 @@ then creating the post-update hook with the following content:
 ... and setting it executable. Then the URL of the repository can be
 published through the repolist plugin:
 
-	repositories => [qw{http://wiki.reseaulibre.ca/repository.git/}],
+	repositories => [qw{http://reseaulibre.deuxpi.ca/repository.git/}],
 
-You will need an `Alias` directive in your Apache configuration to make `/home/user/wiki.reseaulibre.ca/` appear as `repository.git`.
+You will need an `Alias` directive in your Apache configuration to make `/home/user/reseaulibre.deuxpi.ca/` appear as `repository.git`.
 
 ## CIA.vc notifications
 
