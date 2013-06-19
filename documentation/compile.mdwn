@@ -10,11 +10,15 @@ See [[firmware]] for usage instructions.
 
 Follow the instructions at [[http://wiki.openwrt.org/doc/howto/buildroot.exigence]]
 
-At step 2, the svn command mentioned will download the trunk.  Click on the link below saying "Downloading sources" for information on how to download specific version.
+At step 2, the command mentioned will download the trunk.  Click on the link below saying "Downloading sources" for information on how to download specific version.
 
-For the latest attitude adjustment beta, the svn command line would be:
+For the latest trunk, the command line would be:
 
-    svn co -r 33883 https://dev.openwrt.org/log/branches/attitude_adjustment
+    git clone git://git.openwrt.org/openwrt.git
+
+For attitude adjustment:
+
+    git clone git://git.openwrt.org/12.09/openwrt.git
 
 ## Get the Reseau libre feed
 
@@ -22,14 +26,13 @@ Get the file from this git:
 
     git clone git://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt.git
 
-
 **Say you put the openwrt build environment in `/home/me/openwrt` and the git files are in `/home/me/reseau-libre-openwrt`**
 
 ## Add reseau libre feed
 
 Add the reseaulibre feed to openwrt by editing the file `/home/me/openwrt/feeds.conf.default` and add the following line:
 
-    src-link reseaulibre /home/me/reseau-libre-openwrt/reseaulibre-feed
+    src-git reseaulibre git://gitorious.org/reseau-libre-openwrt/reseau-libre-openwrt.git
 
 ## Update the feeds
 
