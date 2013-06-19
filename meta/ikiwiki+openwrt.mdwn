@@ -9,3 +9,7 @@ TODO:
 
 * install required perl packages
 * document how to install on USB key with extroot overlay filesystem (http://wiki.openwrt.org/doc/howto/extroot)
+
+Remember that ikiwiki can be setup to just sync HTML files and have
+the perl/git/etc setup on a separate server. So you could just need a
+webserver, see [[!iki plugins/rsync/]].
