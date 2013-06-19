@@ -64,12 +64,12 @@ on your machine, but those things are not all necessary.
 The following steps should get you going:
 
     cd ~user
-    # setup base repository
-    git clone --bare git://wiki.reseaulibre.ca/ reseaulibre.example.com.git
-    # setup srcdir
-    git clone reseaulibre.example.com.git
+    # setup base repository, named source.git
+    git clone --bare git://wiki.reseaulibre.ca/ source.git
+    # setup srcdir, named source
+    git clone source.git
     # convenience copy of the setup file
-    git clone -b origin/setup reseaulibre.example.com.git setup
+    git clone -b origin/setup source.git setup
     cd setup
     edit ikiwiki.setup # adapt configuration
 
@@ -77,11 +77,11 @@ When editing `ikiwiki.setup`, make sure you change the following entries:
 
     cgiurl: http://reseaulibre.example.com/ikiwiki.cgi
     cgi_wrapper: /var/www/ikiwiki.cgi
-    srcdir: /home/user/reseaulibre.example.com
+    srcdir: /home/user/source
     destdir: /var/www/reseaulibre.example.com
-    libdir: /home/user/reseaulibre.example.com/.ikiwiki
-    git_wrapper: /home/user/reseaulibre.example.com.git/hooks/post-commit
-    git_test_receive_wrapper: /home/user/reseaulibre.example.com.git/hooks/pre-receive
+    libdir: /home/user/source/.ikiwiki
+    git_wrapper: /home/user/source.git/hooks/post-commit
+    git_test_receive_wrapper: /home/user/source.git/hooks/pre-receive
     gitorigin_branch: "" # disable
     ENV:
       TMPDIR: /home/user/tmp
@@ -101,8 +101,8 @@ At this point, your wiki should already be visible in `/var/www/reseaulibre.exam
 
 However, you need yet another clone for this, the `srcdir` being used internally by the web interface of Ikiwiki. So clone the `repository` elsewhere:
 
-    git clone ~user/reseaulibre.example.com.git rl-wiki
-    cd rl-wiki
+    git clone ~user/source.git checkout
+    cd checkout
     edit index.mdwn
     git commit index.mdwn
     git push
@@ -183,7 +183,7 @@ There is some work being done to host copies of this wiki on OpenWrt nodes. See 
 
 ## You're done!
 
-At this point, you are done! You can edit your own clone of the wiki, although your changes will not go back to the main site. However, you can always push or pull manually from the `repository` in `~/reseaulibre.example.com.git` to update the main site.
+At this point, you are done! You can edit your own clone of the wiki, although your changes will not go back to the main site. However, you can always push or pull manually from the `repository` in `~user/source.git` to update the main site.
 
 # Two-way replication
 
@@ -193,13 +193,13 @@ So you may also want keep your mirror up to date with the main site. You can als
 
 There are two options here. One is to regularly **pull from the master**, either through a cron job or by hand. This is less reliable, klunky, but doesn't require cooperation from the master. Try:
 
-    cd ~user/reseaulibre.example.com
+    cd ~user/source.git
     git pull --rebase
 
 The other option is to make the master push to the mirror. For this, the master needs to enable the [[!iki plugins/gitpush]] plugin and add the following to the setup file:
 
     git_push_to:
-    - ssh://user@reseaulibre.example.com/reseaulibre.example.com.git
+    - ssh://user@reseaulibre.example.com/source.git
 
 The repository URL above needs to point to the "repository" directory of the mirror, see the [[!iki rcs/git]] documentation for a good explanation of the layout of the different git repositories in ikiwiki.
 
@@ -212,7 +212,7 @@ It also needs to allow the following SSH key to push to the repository:
 Once your mirror works, it needs to be added to the list of mirrors. You can ask the mirror where you take it from (and why not, all mirrors) to add it to their setup file. As an example, here's the configuration for the first mirror:
 
     mirrorlist:
-      deuxpi: https://reseaulibre.example.com/
+      example: https://reseaulibre.example.com/
 
 The [[!iki plugins/mirrorlist]] plugin of course needs to be enabled.
 
@@ -249,7 +249,7 @@ Those bits ensure the wrappers are suid with the group.
 	# group for wrappers to run in
 	wrappergroup => 'reseaulibre',
 
-Then the git repository (`~user/reseaulibre.example.com`) needs to be marked as shared so that permissions are kept right:
+Then the git repository (`~user/source.git`) needs to be marked as shared so that permissions are kept right:
 
     git config core.sharedRepository group
     chmod -R g+ws .
@@ -267,7 +267,7 @@ change the post-update hook as described
 [[!iki todo/call_git-update-server-info_from_post-udpate_hook desc="here"]],
 which means specifically changing the git-wrapper parameter to:
 
-	git_wrapper => '/home/user/reseaulibre.example.com/.git/hooks/post-update.ikiwiki
+	git_wrapper => '/home/user/source.git/hooks/post-update.ikiwiki
 
 then creating the post-update hook with the following content:
 
@@ -278,9 +278,9 @@ then creating the post-update hook with the following content:
 ... and setting it executable. Then the URL of the repository can be
 published through the repolist plugin:
 
-	repositories => [qw{http://reseaulibre.example.com/repository.git/}],
+	repositories => [qw{http://reseaulibre.example.com/source.git/}],
 
-You will need an `Alias` directive in your Apache configuration to make `~user/reseaulibre.example.com/` appear as `repository.git`.
+You will need an `Alias` directive in your Apache configuration to make `~user/source.git` appear as `/source.git`.
 
 ## CIA.vc notifications
 
