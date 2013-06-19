@@ -52,10 +52,11 @@ don't need to worry about versions.
 
 ## Setting up the wiki
 
+(!) Optionnally: create a user just for this wiki. Otherwise the wiki will run as your user from here on. We assume your username is "user".
+
 The following steps should get you going:
 
-    mkdir ~/wikis
-    cd ~/wikis
+    cd ~
     git clone git://wiki.reseaulibre.ca/ wiki.reseaulibre.ca
     cd wiki.reseaulibre.ca
     git branch setup origin/setup
@@ -68,26 +69,24 @@ When editing `ikiwiki.setup`, make sure you change the following entries:
 
     cgiurl: http://wiki.reseaulibre.ca/ikiwiki.cgi
     cgi_wrapper: /var/www/ikiwiki.cgi
-    srcdir: /home/anarcat/wikis/wiki.reseaulibre.ca
+    srcdir: /home/user/wiki.reseaulibre.ca
     destdir: /var/www/wiki.reseaulibre.ca
-    libdir: /home/anarcat/wikis/wiki.reseaulibre.ca/.ikiwiki
-    git_wrapper: /home/anarcat/wikis/wiki.reseaulibre.ca/.git/hooks/post-commit
-    git_test_receive_wrapper: /home/anarcat/wikis/wiki.reseaulibre.ca/.git/hooks/pre-receive
+    libdir: /home/user/wiki.reseaulibre.ca/.ikiwiki
+    git_wrapper: /home/user/wiki.reseaulibre.ca/.git/hooks/post-commit
+    git_test_receive_wrapper: /home/user/wiki.reseaulibre.ca/.git/hooks/pre-receive
     gitorigin_branch: "" # disable
     ENV:
-      TMPDIR: /home/anarcat/tmp
+      TMPDIR: /home/user/tmp
 
-This assumes that your `/var/www/wiki.reseaulibre.ca` directory is
-available in a virtual host named `wiki.reseaulibre.ca`. This needs
-special configuration in your webserver.
+This assumes that your `/var/www/wiki.reseaulibre.ca` directory is writable by your user.
 
 You may need to go over the [[meta/maintenance]] guide for the plugins
 to enable and the hooks configuration.
 
+## Webserver configuration
+
 You will also need a webserver to serve the content in the `destdir`
-defined above. This configuration varies wildly, but the ikiwiki
-documentation ([[!iki setup]] and [[!iki tips/dot_cgi]]) has some
-hints.
+defined above. We assume you will a virtual host named `wiki.reseaulibre.ca`. Here are some examples on how to do those, see [[!iki setup]] and [[!iki tips/dot_cgi]] for complete documentation.
 
 ## Apache configuration
 
@@ -109,8 +108,6 @@ hints.
     server {
         root /var/www/wiki.reseaulibre.ca/;
         index index.html index.htm;
-
-        # Make site accessible from http://localhost/
         server_name wiki.reseaulibre.ca;
 
         location / {
@@ -199,18 +196,20 @@ This will ensure that commits done on the mirror will propagate back to the mast
 # Deprecated documentation
 
 Those steps may not be necessary in your setup and are not used in
-this wiki. The following steps are not required for the wiki to work correctly, but they are nevertheless useful.
+this wiki.
 
-## Publishing the wiki source
+The following steps are not required for the wiki to work correctly, but may nevertheless be useful.
 
-(!) Note that this has been superseded by the use of the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which configures git hooks automatically.
+## Publishing the wiki source git repository through HTTP
 
-To publish the source, I use a regular HTTP server. For this, I had to
+(!) Note that this has been is configured automatically by the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which configures a git daemon for each wiki.
+
+To publish the git repository through HTTP, you can
 change the post-update hook as described
 [[!iki todo/call_git-update-server-info_from_post-udpate_hook desc="here"]],
 which means specifically changing the git-wrapper parameter to:
 
-	git_wrapper => '/home/mtl-mesh/repository.git/hooks/post-update.ikiwiki
+	git_wrapper => '/home/user/wiki.reseaulibre.ca/.git/hooks/post-update.ikiwiki
 
 then creating the post-update hook with the following content:
 
@@ -223,40 +222,39 @@ then creating the post-update hook with the following content:
 ... and setting it executable. Then the URL of the repository can be
 published through the repolist plugin:
 
-	repositories => [qw{http://mesh.openisp.ca/repository.git/}],
+	repositories => [qw{http://wiki.reseaulibre.ca/repository.git/}],
 
-The above url works because of the `Alias` directive in the above
-Apache configuration.
-
-See [[meta/Replication]] for instructions on how to replicate this wiki.
+You will need an `Alias` directive in your Apache configuration to make `/home/user/wiki.reseaulibre.ca/` appear as `repository.git`.
 
 ## Multiple committers
 
-(!) Note that this has been superseded by the use of the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which handles this automatically through anonymous git pushes.
+(!) Note that this is done automatically by the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package, which handles this through anonymous git pushes.
 
 The [[!iki rcs/git]] page details a bit of the git internals of ikiwiki, but doesn't explain clearly how to do such a setup. In order to allow multiple committers, I therefore had to go through a few hoops to be able to allow the web interface, myself and others to push commits to the repository.
 
 First, create the sandbox user:
 
-    adduser --system --group mtl-mesh
+    adduser --system --group reseaulibre
 
 Those bits ensure the wrappers are suid with the group.
 
 	# group for wrappers to run in
-	wrappergroup => 'mtl-mesh',
+	wrappergroup => 'reseaulibre',
 
-Then the git repository (repository.git) needs to be marked as shared so that permissions are kept right:
+Then the git repository (`/home/user/wiki.reseaulibre.ca`) needs to be marked as shared so that permissions are kept right:
 
     git config core.sharedRepository group
     chmod -R g+ws .
 
 To allow users to push to the repository, use:
 
-    adduser anarcat mtl-mesh
+    adduser anarcat reseaulibre
 
 ## CIA.vc notifications
 
-I am using the
+(!) We are not using this anymore, and instead use KGB, but that has to be documented.
+
+We used
 [Koumbit git-hooks](https://redmine.koumbit.net/projects/git-hooks) to
 do CIA.vc notifications. To deploy the script, install both the
 `ciabot.pl` and `ciabot-post-receive` hooks in the `source.git/hooks`
