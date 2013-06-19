@@ -6,7 +6,7 @@ documentation even if the network goes down. This is done through
 (!) Note that this is all much easier with the "branchable" plugin of
 the [[ikiwiki-hosting|http://ikiwiki-hosting.branchable.com/]] package.
 
-[[!toc]]
+[[!toc levels=2]]
 
 # Basic offline editing and sharing
 
