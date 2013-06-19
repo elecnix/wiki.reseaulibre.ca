@@ -112,7 +112,7 @@ This will refresh the main page of the wiki, for example.
 ## Webserver configuration
 
 You will also need a webserver to serve the content in the `destdir`
-defined above. We assume you will a virtual host named `reseaulibre.example.com`. Here are some examples on how to do those, see [[!iki setup]] and [[!iki tips/dot_cgi]] for complete documentation.
+defined above. We assume you will configure a virtual host named `reseaulibre.example.com`. Here are some examples on how to do those, see [[!iki setup]] and [[!iki tips/dot_cgi]] for complete documentation.
 
 ### Apache configuration
 
