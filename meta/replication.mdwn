@@ -82,7 +82,6 @@ When editing `ikiwiki.setup`, make sure you change the following entries:
     libdir: /home/user/source/.ikiwiki
     git_wrapper: /home/user/source.git/hooks/post-commit
     git_test_receive_wrapper: /home/user/source.git/hooks/pre-receive
-    gitorigin_branch: "" # disable
     ENV:
       TMPDIR: /home/user/tmp
 
