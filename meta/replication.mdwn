@@ -171,6 +171,10 @@ If you want to enable search, you will want to install those packages.
  * [[!debpkg libsearch-xapian-perl]]
  * [[!debpkg xapian-omega]]
 
+## You're done!
+
+At this point, you are done! You can edit your own clone of the wiki, although your changes will not go back to the main site. However, you can always push or pull manually from the `repository` in `~user/source.git` to update the main site.
+
 ## Other guides
 
 Another guide is the [[!iki tips/laptop_wiki_with_git]] guide. To get a
@@ -180,10 +184,6 @@ better understanding of how ikiwiki works, see [[!iki rcs/git]].
 use if the above doesn't work.
 
 There is some work being done to host copies of this wiki on OpenWrt nodes. See [[ikiwiki+openwrt]].
-
-## You're done!
-
-At this point, you are done! You can edit your own clone of the wiki, although your changes will not go back to the main site. However, you can always push or pull manually from the `repository` in `~user/source.git` to update the main site.
 
 # Two-way replication
 
