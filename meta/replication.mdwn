@@ -166,10 +166,13 @@ by this manual. See [[!iki plugins/search]] and
 
 If you want to enable search, you will want to install those packages.
 
- * [[!debpkg libsort-naturally-perl]]
- * [[!debpkg libtext-wikicreole-perl]]
  * [[!debpkg libsearch-xapian-perl]]
  * [[!debpkg xapian-omega]]
+
+Other plugins in the default `.setup` file may require:
+
+ * [[!debpkg libsort-naturally-perl]]
+ * [[!debpkg libtext-wikicreole-perl]]
 
 ## You're done!
 
