@@ -36,7 +36,7 @@ Panorama
 : N/A
 
 Status
-: [[!taglink planned]], [[!taglink needsfunding]]
+: [[!taglink planned]], needsfunding
 
 Operator
 : [[/users/elecnix]] (well, there is no node...)
