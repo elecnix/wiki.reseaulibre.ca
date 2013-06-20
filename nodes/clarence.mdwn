@@ -1,4 +1,4 @@
-[[!waypoint  lat="45.53976" lon="-73.60090" embed hidden width="400px" height="400px" right desc="Noeud sur le balcon"]]
+[[!waypoint  lat="45.53976" lon="-73.60090" embed hidden width="400px" height="400px" right desc="Node batman dans la maison"]]
 
 # Technical details
 
