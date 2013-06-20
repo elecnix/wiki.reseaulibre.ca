@@ -1,0 +1,59 @@
+[[!waypoint lat="45.542950" lon="-73.610123" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: DC:9F:DB:01:11:89
+IP: 172.16.3.4
+IPv6: fd64:2c08:9fa7:4::4/128
+"""]]
+
+hostname
+: ticoune
+
+Type
+: relay
+
+SSID
+: relais.reseaulibre.ca (see [[policy/naming]])
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Hardware
+: Bullet M2
+
+Location
+: Papineau/Everett
+
+Status
+: up
+
+Operator
+: mtc
+
+Links
+: 
+
+# Services
+
+
+
+# Photos
+
+
+[[!meta copyright="Copyright © 2011-2013 Your Name Here"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
