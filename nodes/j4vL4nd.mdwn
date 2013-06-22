@@ -9,7 +9,7 @@ IPv6:
 """]]
 
 hostname
-: (node hostname here)
+: j4vL4nd
 
 Type
 : relay (can also be accesspoint, test, server)
