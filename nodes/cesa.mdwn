@@ -1,4 +1,4 @@
-[[!waypoint lat="48.1617" lon="-66.2551" embed hidden width="950px" height="400px" right desc="A node in a shed"]]
+[[!waypoint lat="48,1617" lon="-66,2551" embed hidden width="950px" height="400px" right desc="A node in a shed"]]
 
 # Technical details
 
@@ -9,13 +9,13 @@ IPv6:
 """]]
 
 hostname
-: (node hostname here)
+: Le chalet
 
 Type
-: accesspoint (can also be relay, test, server)
+: accesspoint
 
 SSID
-: foo.relais.reseaulibre.ca (see [[policy/naming]])
+: acces.reseaulibre.ca
 
 MAC address
 : {{$MAC}}
@@ -26,32 +26,30 @@ IPv6 address
 IP address
 : {{$IP}}
 
+Software
+: DD-WRT
+ 
 Hardware
 :  D-Link DIR-615-C1 
 
 Location
-: (where is this node physically installed?)
+: In the wood shed.
 
 Status
-: planned [[!taglink prospect]] (can also be up, down, planned, unknown)
+: planned [[!taglink planned]]
 
 Operator
-: [[/users/alice]]
+: [[/users/border0464]]
 
 Links
-: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+: Pretty alone... 
 
 # Services
+Limited speed internet.
 
-(you can document services accessible from this location)
 
-# Photos
 
-(You can upload images when you edit this page. Feel free to upload photos
-of your installation or of the panorama. It will help other people who may
-want to link with you.)
-
-[[!meta copyright="Copyright © 2011-2013 Your Name Here"]]
+[[!meta copyright="Copyright © 2011-2013 Frederic Guilbault"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
