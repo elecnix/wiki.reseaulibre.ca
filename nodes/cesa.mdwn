@@ -1,4 +1,4 @@
-[[!waypoint lat="48,1617" lon="-66,2551" embed hidden width="950px" height="400px" right desc="A node in a shed"]]
+[[!waypoint lat="48.1617" lon="-66.2551" embed hidden width="950px" height="400px" right desc="A node in a shed"]]
 
 # Technical details
 
