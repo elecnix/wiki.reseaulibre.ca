@@ -1,4 +1,4 @@
-[[!waypoint lat="45.542950" lon="-73.610123" embed hidden width="950px" height="400px" right desc="Un neud sur le balcon"]]
+[[!waypoint lat="45.542950" lon="-73.610123" embed width="950px" height="400px" right desc="Un neud sur le balcon"]]
 
 # Technical details
 
@@ -33,7 +33,7 @@ Location
 : Papineau/Everett
 
 Status
-: up
+: [[!taglink up]]
 
 Operator
 : mtc
