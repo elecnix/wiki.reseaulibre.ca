@@ -1,4 +1,6 @@
-[[!waypoint lat="45.542950" lon="-73.610123" embed width="950px" height="400px" right desc="Un neud sur le balcon"]]
+[[!waypoint lat="45.325688" lon="-73.610123" embed width="4000px" height="400px" right desc="Un nœud sur le toit, coin papineau/everett"]]
+
+Un nœud sur le toit de notre 2e étage. Ce nœud est maintenu par 2 ticounes.
 
 # Technical details
 
@@ -26,17 +28,20 @@ IPv6 address
 IP address
 : {{$IP}}
 
+Software
+: OpenWrt + babeld
+
 Hardware
-: Bullet M2
+: Bullet M2 + omni 15dbi
 
 Location
-: Papineau/Everett
+: Sur le toit de notre 2e étage, coin Papineau/Everett dans villeray.
 
 Status
 : [[!taglink up]]
 
 Operator
-: mtc
+: mtc & Bountam
 
 Links
 : 
