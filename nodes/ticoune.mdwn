@@ -1,4 +1,5 @@
-[[!waypoint lat="45.549135" lon="-45.549135" embed width="4000px" height="400px" right desc="Un nœud sur le toit, coin papineau/everett"]]
+[[!waypoint lat="45.549135" lon="-73.610432" embed width="95%" height="400px" bottom desc="Un nœud sur le toit, coin papineau/everett"]]
+
 
 Un nœud sur le toit de notre 2e étage. Ce nœud est maintenu par 2 ticounes.
 
