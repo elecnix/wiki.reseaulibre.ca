@@ -1,6 +1,6 @@
 My MAC ID:  02:15:6d:ff:fe:73:94:2f
 *** Neighbours ***
-fe80::de9f:dbff:fe00:1379 bgm-latakia-wlan0 if wlan0    
 fe80::de9f:dbff:fe0a:592b [unknown] if wlan0    
+fe80::de9f:dbff:fe00:1379 bgm-latakia-wlan0 if wlan0    
 fe80::f6ec:38ff:feb5:db29 bgm-alep-eth0 if eth1    
 fe80::de9f:dbff:fe01:1379 bgm-latakia-eth0 if eth0    
