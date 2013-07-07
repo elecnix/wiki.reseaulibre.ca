@@ -18,7 +18,7 @@ Sous les panneaux solaires, boulevard Lasalle, à Verdun
 
 # À faire
 
- * Faire passer un câble Ethernet entre la Bullet sur le toit et la salle des machines.
+ * <s>Faire passer un câble Ethernet entre la Bullet sur le toit et la salle des machines.</s>
  * Monter la Bullet haut haut haut!
  * <s>Installer le nouveau serveur/routeur dans la salle des machines.</s>
    * Il faut réorganiser les alimentations électrique (présentement toutes occupées par le monitoring).
