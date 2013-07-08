@@ -324,6 +324,9 @@ pre.hl { color:#657b83; background-color:#fdf6e3; }
    Apply to pagebody, avoids applying float to the full page map. */
 #pagebody #content #mapdiv-map {
   float: right;
+  margin-left: 1.5em !important; /* leave spacing between text and map */
+  margin-bottom: 1.5em !important; /* leave spacing between text and map */
+  border: 1px solid #ccc;
 }
 
 /* Subscribe box for the mailing list */
