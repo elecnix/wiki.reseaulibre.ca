@@ -333,9 +333,10 @@ pre.hl { color:#657b83; background-color:#fdf6e3; }
   padding: 1em;
   margin: 0 auto; /* center */
   margin-top: 3em; /* leave a space after content */
+  width: 550px;
 }
 
-.reseaulibre-subscribe-description {
+.reseaulibre-subscribe-box-description {
   font-weight: bold;
   padding-bottom: 1em;
 }
