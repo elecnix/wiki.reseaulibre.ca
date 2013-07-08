@@ -157,11 +157,6 @@ a {
 .pageheader .actions ul li:hover {
   transition: 0.5s linear;
   background-color: rgba(50, 50, 50, 1);
-  border: 0;
-}
-
-.pageheader .actions ul li:hover {
-    border: 1px solid #CCC;
 }
 
 .pageheader .actions ul li a{
