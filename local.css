@@ -334,8 +334,7 @@ pre.hl { color:#657b83; background-color:#fdf6e3; }
   border: 1px solid #777;
   border-radius: 10px;
   padding: 1em;
-  margin: 0 auto; /* center */
-  margin-top: 3em; /* leave a space after content */
+  margin: 2em auto; /* center, and space vertically from content */
   width: 550px;
 }
 
