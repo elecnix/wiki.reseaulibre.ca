@@ -319,3 +319,49 @@ pre.hl { color:#657b83; background-color:#fdf6e3; }
   float: right;
 }
 
+/* consistently float the map right in both Chrome and FF.
+   Not sure why this bug occurs in the first place. Might be in openlayers.
+   Apply to pagebody, avoids applying float to the full page map. */
+#pagebody #content #mapdiv-map {
+  float: right;
+}
+
+/* Subscribe box for the mailing list */
+.reseaulibre-subscribe-box {
+  border: 1px solid #777;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0 auto; /* center */
+  margin-top: 3em; /* leave a space after content */
+}
+
+.reseaulibre-subscribe-description {
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.reseaulibre-subscribe-box label {
+  display: block;
+}
+
+.reseaulibre-subscribe-box input[type="submit"] {
+  background-color: #fff;
+  color: #000;
+  border: 0px none;
+  font: 15px Helvetica,Arial,sans-serif;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+
+/* Hightlight the focussed form element. */
+textarea:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+select[multiple="multiple"]:focus {
+  box-shadow: 0 0 5px rgb(170, 204, 238);
+}
+
