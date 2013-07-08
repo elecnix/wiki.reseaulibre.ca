@@ -13,7 +13,7 @@ Le réseau s'organise depuis le début de 2012.  C'est encore à l'état expéri
   <div class="reseaulibre-subscribe-box-description">Pour recevoir les annonces des événements à venir:</div>
     <form action="https://listes.koumbit.net/cgi-bin/mailman/subscribe/nouvelles-reseaulibre.ca" method="POST">
       <label for="email">Adresse courriel:</label>
-      <input id="email" name="email" />
+      <input type="text" id="email" name="email" />
       <input type="submit" value="Inscrire" />
     </form>
   </div>
