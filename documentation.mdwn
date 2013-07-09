@@ -1,46 +1,66 @@
 # Qu'est-ce que c'est?
 
-* [[Presentations]] - les présentations du projet ou de concepts reliés au projets, les "powerpoints" sont ici!
+* [[Presentations]] - les présentations du projet ou des concepts reliés au projets, les "powerpoints" sont ici!
 * [[Foire aux questions|faq]]
 
-# Inventaire
+
+# Comment rejoindre le mesh / How to join the mesh
+Pour etendre le mesh, il y'a deux types d'elements possible, les nodes et les relais. 
+
+##Node: 
+
+Ce sont des points d'acces ou les utilisateur-e-s peuvent se connecter au mesh. Un node peut aussi permettre un acces a l'internet conventionel, contenire un serveur web ou autres services. Voici les etapes a suivre:
+
+1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
+2. [[Installation et configuration d'un relais|guides/install+node+facile]]
+
+
+
+
+##Relais: 
+
+Les relais sont des equipements physiques qui permetent de faire le pont entre 2 ou plusieurs autre equipements (node ou relais). Aucun acces publique n'est possible via ces machines. Voici les etapes a suivre:   
+
+1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
+2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trailitem ad-hoc]]
+3. [[Configurer IPv6|ipv6]] [[!trailitem ipv6]]
+4. [[Configurer IPv4|ip]] [[!trailitem ip]](optionnel: pour permettre l'accès au vieil internet)
+5. [[Configurer Babel|babel/]] [[!trailitem babel]]
+6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
+
+
+
+
+## Techniques alternatives ou optionelles:
+Pour l'instalation manuelle, de devlopement, les instalations non standardes et la documentation du projet,
+
+* [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
+* [[Firmware]] - how to use our custom OpenWrt image, or compile it yourself!
+* [[Software]] - the software used/evaluated in the project
+* [[Monitoring|documentation/monitoring/Monitoring_solution+explication+install]] - surveillance de l'état du réseau
+* [[Idees]] - possible uses for the mesh
+* [[Meta]] - gestion de ce wiki
+* [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
+
+
+
+
+
+# Informations et statistiques du reseau. 
 
 * [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
 * [[Nodes]] - the list of deployed nodes
 * [[Links]] - the links between the nodes
 * [[stats]] - l'état du réseau
 
-# Comment rejoindre le mesh / How to join the mesh
 
-Guide de configuration simplifié, méthode recommandée:
 
-1. [[Installation et configuration d'un relais|guides/install+node+facile]]
-
-**ou** pour plus d'information sur chaque étape:
-
-1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
-2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trailitem ad-hoc]]
-3. [[Configurer IPv6|ipv6]] [[!trailitem ipv6]]
-4. [[Configurer IPv4|ip]] [[!trailitem ip]]
-(optionnel: pour permettre l'accès au vieil internet)
-5. [[Configurer Babel|babel/]] [[!trailitem babel]]
-6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
-
-# Other documentation
-
-This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
-
+# Documentation legale
 * [[Policy]] - what we agree on when opening a node on the mesh
-* [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
-* [[Firmware]] - how to use our custom OpenWrt image, or compile it yourself!
-* [[Software]] - the software used/evaluated in the project
-* [[Monitoring|documentation/monitoring/Monitoring_solution+explication+install]] - surveillance de l'état du réseau
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
-* [[Idees]] - possible uses for the mesh
-* [[Meta]] - gestion de ce wiki
-* [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
 
-## Documentation orpheline
+
+# Documentation orpheline
 
 Ceci est de la documentation que nous avons pas pris le temps de classifier correctement.
 
