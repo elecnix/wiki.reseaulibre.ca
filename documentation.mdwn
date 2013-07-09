@@ -32,7 +32,7 @@ This is a wiki, so we expect node operators to share their best practices here a
 
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
-* [[Compile]] - how to compile or participate in the development of the Reseau libre OpenWRT-based firmware images.
+* [[Firmware]] - how to use our custom OpenWrt image, or compile it yourself!
 * [[Software]] - the software used/evaluated in the project
 * [[Monitoring|documentation/monitoring/Monitoring_solution+explication+install]] - surveillance de l'état du réseau
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
