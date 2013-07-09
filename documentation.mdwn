@@ -9,7 +9,7 @@ Pour etendre le mesh, il y'a deux types d'elements possible, les nodes et les re
 
 ##Node: 
 
-Ce sont des points d'acces ou les utilisateur-e-s peuvent se connecter au mesh. Un node peut aussi permettre un acces a l'internet conventionel, contenire un serveur web ou autres services. Voici les etapes a suivre:
+Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se connecter pour naviguer sur le mesh et/ou le web. L'installation d'un point d'accès n'est pas obligatoire. Il est possible d'opérer simplement un relais.
 
 1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
 2. [[Installation et configuration d'un relais|guides/install+node+facile]]
@@ -19,7 +19,11 @@ Ce sont des points d'acces ou les utilisateur-e-s peuvent se connecter au mesh. 
 
 ##Relais: 
 
-Les relais sont des equipements physiques qui permetent de faire le pont entre 2 ou plusieurs autre equipements (node ou relais). Aucun acces publique n'est possible via ces machines. Voici les etapes a suivre:   
+Un relais est un appareil configuré pour se connecter sur le mesh avec Babel, le protocole de mesh utilisé. L'appareil, une fois bien configuré, devrait se connecter automatiquement aux autres relais disponibles aux alentours. Même si aucun noeud n'est disponible, vous pouvez laisser votre relais en place. Un jour, quelqu'un s'y connectera!
+
+L'appareil qui servira de relais devrait idéalement être dédié au mesh et ne pas servir de point d'accès, à moins d'avoir 2 radios, afin de ne pas ralentir le mesh.
+
+Pour participer au mesh, avoir un relais est obligatoire!
 
 1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
 2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trailitem ad-hoc]]
