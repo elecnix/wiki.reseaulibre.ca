@@ -26,7 +26,7 @@ For example, for the ar71xx architecture, use:
 
 # Building the firmware
 
-See [[this guide|documentation/compile]] to compile this firmware
+See [[this guide|documentation/compile]] for how to compile or participate in the development of the Reseau libre OpenWRT-based firmware images.
 
 # Support & contact
 
