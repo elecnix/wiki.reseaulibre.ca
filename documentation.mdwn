@@ -34,12 +34,11 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
 * [[Compile]] - how to compile or participate in the development of the Reseau libre OpenWRT-based firmware images.
 * [[Software]] - the software used/evaluated in the project
+* [[Monitoring|documentation/monitoring/Monitoring_solution+explication+install]] - surveillance de l'état du réseau
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
-
-Tous les détails sur le développement de la solution de monitoring sont disponibles [[ici|documentation/monitoring/Monitoring_solution+explication+install]]. 
 
 ## Documentation orpheline
 
