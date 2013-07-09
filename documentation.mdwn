@@ -1,14 +1,14 @@
-[[!toc levels=3]]
+# Qu'est-ce que c'est?
 
-Avant de commencer, voir la [[foire aux questions|faq]].
+* [[Presentations]] - les présentations du projet ou de concepts reliés au projets, les "powerpoints" sont ici!
+* [[Foire aux questions|faq]]
 
 # Inventaire
 
 * [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
 * [[Nodes]] - the list of deployed nodes
 * [[Links]] - the links between the nodes
-
-Voir aussi la page de [[stats]] pour une idée de l'état du réseau.
+* [[stats]] - l'état du réseau
 
 # Comment rejoindre le mesh / How to join the mesh
 
@@ -26,17 +26,10 @@ Guide de configuration simplifié, méthode recommandée:
 5. [[Configurer Babel|babel/]] [[!trailitem babel]]
 6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
-Voir aussi les fiches de [[présentations|http://wiki.reseaulibre.ca/presentations/]].
-
-# Développement d'une solution de monitoring
-
-Tous les détails sur le développement de la solution de monitoring sont disponibles [[ici|documentation/monitoring/Monitoring_solution+explication+install]]. 
-
 # Other documentation
 
 This is a wiki, so we expect node operators to share their best practices here and converge on a common set of procedures and tools...
 
-* [[Presentations]] - les présentations du projet ou de concepts reliés au projets, les "powerpoints" sont ici!
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
 * [[Compile]] - how to compile or participate in the development of the Reseau libre OpenWRT-based firmware images.
@@ -45,6 +38,8 @@ This is a wiki, so we expect node operators to share their best practices here a
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
+
+Tous les détails sur le développement de la solution de monitoring sont disponibles [[ici|documentation/monitoring/Monitoring_solution+explication+install]]. 
 
 ## Documentation orpheline
 
