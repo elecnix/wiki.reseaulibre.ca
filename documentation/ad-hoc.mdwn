@@ -26,6 +26,8 @@ ESSID.
 
 # Ad-hoc on OpenWRT
 
+This shows how to configure the wireless adapter in Ad-hoc mode on OpenWrt. If you plan to use the [[Réseau Libre Firmware|documentation/firmware]], this is done automatically by the `setup_reseaulibre` script.
+
 Connect a cable from the LAN to your PC.
 Set your PC to get an IP address automatically.
 Get into the router with its default IP address.
