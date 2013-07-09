@@ -14,6 +14,8 @@ Politiquement, IPv6 augmente considérablement le nombre de machines pouvant êt
 
 # Pré-requis
 
+Cette page explique les concepts fondamentaux de la configuration IPv6. Le minimum de cette configuration est effectué automatiquement par le [[Firmware Réseau Libre|documentation/firmware]], à l'aide du script `setup_reseaulibre`.
+
 Installer les modules et utilitaires IPv6:
 
     opkg update
