@@ -23,3 +23,10 @@ Le réseau s'organise depuis le début de 2012. Nous avons [[!pagecount pages="n
 </div>
 
 Nous avons aussi une [[liste de discussion|https://listes.koumbit.net/cgi-bin/mailman/listinfo/nodes-lists.openisp.ca]] et vous pouvez clavarder avec nous sur notre canal IRC [#reseaulibre](http://webchat.freenode.net/?channels=reseaulibre) sur le réseau Freenode.
+
+## Présentations
+
+À Montréal Python, novembre 2012:
+
+<iframe width="640" height="390" src="http://www.youtube.com/embed/Dzequ8RzlxA" frameborder="0" allowfullscreen></iframe>
+
