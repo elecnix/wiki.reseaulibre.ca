@@ -64,7 +64,7 @@ de faire des diagrammes rapidement.
 Videos
 ------
 
- * Présentation faite à Montréal Python: https://www.youtube.com/watch?v=Dzequ8RzlxA
+Voir la page [[videos]].
 
 Autres outils
 -------------
