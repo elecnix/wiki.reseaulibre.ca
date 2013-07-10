@@ -17,6 +17,10 @@ This will at least provide you with the raw source, the text files
 that generate the wiki website. There you can make changes, commmit
 and push them to the same URL.
 
+Use this for new copies, as it is faster than the regular wiki, hosted on a residential connexion. This is in a real datacenter:
+
+    git clone git://git.koumbit.net/reseaulibre.git
+
 # Creating a mirror
 
 To create a mirror of this wiki, if it ever goes down, you can start
