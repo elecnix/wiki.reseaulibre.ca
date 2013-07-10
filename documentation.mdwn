@@ -1,6 +1,7 @@
 # Qu'est-ce que c'est?
 
 * [[Presentations]] - les présentations du projet ou des concepts reliés au projets, les "powerpoints" sont ici!
+* [[Videos]] - introduction vidéos
 * [[Foire aux questions|faq]]
 
 
