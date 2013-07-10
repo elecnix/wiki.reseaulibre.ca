@@ -1,0 +1,6 @@
+## Présentations vidéo
+
+À Montréal Python, novembre 2012:
+
+<iframe width="640" height="390" src="http://www.youtube.com/embed/Dzequ8RzlxA" frameborder="0" allowfullscreen></iframe>
+
