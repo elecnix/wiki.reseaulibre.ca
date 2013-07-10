@@ -3,7 +3,9 @@ Libre. Vous voudrez peut-être [cloner le dépôt git][] afin de pouvoir recrée
 
  [cloner le dépôt git]: http://wiki.reseaulibre.ca/ikiwiki.cgi?do=branchable
 
-[[!testpagespec  pagespec="presentations/*.mdwn" match="presentations/foo.mdwn"]]
+Voir aussi [[videos]] pour les enregistrement vidéos de certaines de ces présentations.
+
+<!-- [[!testpagespec  pagespec="presentations/*.mdwn" match="presentations/foo.mdwn"]] -->
 
 Introductions courriel / textes
 -------------------------------
