@@ -35,6 +35,10 @@ In short, you can clone and push this wiki through git using this:
     git clone git://wiki.reseaulibre.ca/
     git push
 
+Pour une copie plus rapide, utilisez:
+
+    git clone git://git.koumbit.net/reseaulibre.git
+
 See [[meta/Replication]] for more information.
 
 Orphaned pages
