@@ -6,7 +6,7 @@
 
 
 # Comment rejoindre le mesh / How to join the mesh
-Pour etendre le mesh, il y'a deux types d'elements possible, les nodes et les relais. 
+Pour etendre le mesh, il y'a deux types d'elements possible, les nodes et les relais.(Voir [[topology|policy/topology/]]) 
 
 
 ##Relais: 
