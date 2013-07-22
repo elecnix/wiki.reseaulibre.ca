@@ -1,7 +1,1 @@
-My MAC ID:  de:9f:db:ff:fe:00:13:79
-*** Neighbours ***
-fe80::215:6dff:fe73:942f bgm-homs-eth1 if eth0    
-*** Routes ***
-fe80::215:6dff:fe73:942f bgm-homs-eth1 -> 
-    2607:f2c0:f00f:2900::/56-6853b8 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::215:6dff:fe73:942f if eth0
-    fd64:2c08:9fa7:4::1/128-6853b8 prefix fd64:2c08:9fa7:4::1/128 installed yes id de:9f:db:ff:fe:0b:59:2b   via fe80::215:6dff:fe73:942f if eth0
+node is down
