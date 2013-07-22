@@ -8,15 +8,6 @@
 # Comment rejoindre le mesh / How to join the mesh
 Pour etendre le mesh, il y'a deux types d'elements possible, les nodes et les relais. 
 
-##Node: 
-
-Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se connecter pour naviguer sur le mesh et/ou le web. L'installation d'un point d'accès n'est pas obligatoire. Il est possible d'opérer simplement un relais.
-
-1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
-2. [[Installation et configuration d'un relais|guides/install+node+facile]]
-
-
-
 
 ##Relais: 
 
@@ -33,10 +24,7 @@ Pour participer au mesh, avoir un relais est obligatoire!
 5. [[Configurer Babel|babel/]] [[!trailitem babel]]
 6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
-
-
-
-## Techniques alternatives ou optionelles:
+### Techniques alternatives ou optionelles:
 Pour l'instalation manuelle, de devlopement, les instalations non standardes et la documentation du projet,
 
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
@@ -46,6 +34,23 @@ Pour l'instalation manuelle, de devlopement, les instalations non standardes et 
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
+
+
+
+
+
+
+
+##Node: 
+
+Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se connecter pour naviguer sur le mesh et/ou le web. L'installation d'un point d'accès n'est pas obligatoire. Il est possible d'opérer simplement un relais.
+
+1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
+2. [[Installation et configuration d'un relais|guides/install+node+facile]]
+
+### Techniques alternatives ou optionelles:
+1. [[ Partager sa connection internet|documentation/services/#index10h2]]  
+   
 
 
 
@@ -63,7 +68,7 @@ Pour l'instalation manuelle, de devlopement, les instalations non standardes et 
 # Documentation legale
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
-
+* [[documentation/services/internet/]] Information sur le droit de partage de connection internet.
 
 # Documentation orpheline
 
