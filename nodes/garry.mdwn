@@ -1,4 +1,4 @@
-[[!waypoint lat="45.462907" lon="-73.569762" embed hidden width="950px" height="400px" right desc="A potential node close to my roof."]]
+[[!waypoint lat="45.46290" lon="-73.56976" embed hidden width="950px" height="400px" right desc="A potential node close to my roof."]]
 
 # Technical details
 
