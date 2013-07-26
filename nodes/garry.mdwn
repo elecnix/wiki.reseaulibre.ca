@@ -1,0 +1,53 @@
+[[!waypoint lat="45.462907" lon="-73.569762" embed hidden width="950px" height="400px" right desc="A potential node close to my roof."]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: (mac address here)
+IP: (pick one from [[policy/numbering]])
+IPv6: 
+"""]]
+
+hostname
+: (node hostname here)
+
+Type
+: relay (can also be accesspoint, test, server)
+
+SSID
+: foo.relais.reseaulibre.ca (see [[policy/naming]])
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Hardware
+: Looking at Ubiquiti Bullet M2.
+
+Location
+: Possibly my roof. Maybe.
+
+Status
+: [[!taglink planned]]
+
+Operator
+: Adam
+
+Links
+: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
+
+
+[[!meta copyright="Copyright © 2011-2013 Your Name Here"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
