@@ -31,7 +31,7 @@ NB: on peut configurer un relais et un point d'accès sur le même appareil. Ce 
 
 ## Point d'accès: 
 
-Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se connecter pour naviguer sur le mesh et/ou le web. L'installation d'un point d'accès n'est pas obligatoire. Il est possible d'opérer simplement un relais.
+Un point d'accès permet aux utilisateurs d'accéder au réseau facilement (comme si c'était un point d'accès régulier pour accéder à Internet, mais dans ce cas-ci, on accède au "mesh").
 
 1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
 2. à documenter.. :)
