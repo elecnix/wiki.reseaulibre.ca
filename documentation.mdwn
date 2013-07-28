@@ -6,26 +6,29 @@
 
 # Comment rejoindre le réseau / How to join the network
 
-On peut rejoindre (et agrandir) le réseau de deux façons: par un relais et par un point d'accès. (Voir [[topology|policy/topology/]])
+On peut rejoindre (et agrandir) le réseau de deux façons: par un relais et par un point d'accès. (voir [[topology|policy/topology/]])
 
 ## Relais:
 
-Un relais est un appareil configuré pour se connecter sur le mesh avec Babel, le protocole de mesh utilisé. L'appareil, une fois bien configuré, devrait se connecter automatiquement aux autres relais disponibles aux alentours. Même si aucun noeud n'est disponible, vous pouvez laisser votre relais en place. Un jour, quelqu'un s'y connectera!
+Les relais tissent la toile du réseau "mesh". Ils sont généralement installés sur le toit ou dans une fenêtre. Une fois configuré, un relais se connecte aux relais voisins et calcule le chemin le plus court pour se rendre d'un point A à un point B. C'est en installant de nouveaux relais que l'on fait grandir le réseau. Même si aucun noeud n'est disponible, vous pouvez laisser votre relais en place. Un jour, quelqu'un s'y connectera!
 
-L'appareil qui servira de relais devrait idéalement être dédié au mesh et ne pas servir de point d'accès, à moins d'avoir 2 radios, afin de ne pas ralentir le mesh.
+Pour configurer un relais:
 
-Pour participer au mesh, avoir un relais est obligatoire!
+1. [[Installation et configuration d'un relais|guides/install+node+facile]]
+
+Documentation plus technique et détaillée, mais possiblement pas à jour:
 
 1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
 2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trailitem ad-hoc]]
 3. [[Configurer IPv6|ipv6]] [[!trailitem ipv6]]
-4. [[Configurer IPv4|ip]] [[!trailitem ip]](optionnel: pour permettre l'accès au vieil internet)
-5. [[Configurer Babel|babel/]] [[!trailitem babel]]
-6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
+4. [[Configurer Babel|babel/]] [[!trailitem babel]]
+5. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
+
+NB: on peut configurer un relais et un point d'accès sur le même appareil. Ce sera plus lent, mais pour démarrer, ça peut éviter d'installer deux appareils sur le toit.
 
 ### Techniques alternatives ou optionelles:
 
-Pour l'instalation manuelle, de devlopement, les instalations non standardes et la documentation du projet,
+Pour l'instalation manuelle, de developement, les instalations non standardes et la documentation du projet,
 
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
 * [[Firmware]] - how to use our custom OpenWrt image, or compile it yourself!
@@ -41,7 +44,7 @@ Pour l'instalation manuelle, de devlopement, les instalations non standardes et 
 Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se connecter pour naviguer sur le mesh et/ou le web. L'installation d'un point d'accès n'est pas obligatoire. Il est possible d'opérer simplement un relais.
 
 1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
-2. [[Installation et configuration d'un relais|guides/install+node+facile]]
+2. à documenter.. :)
 
 ### Techniques alternatives ou optionelles:
 
