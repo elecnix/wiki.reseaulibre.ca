@@ -1,4 +1,4 @@
-# Qu'est-ce que c'est?
+# Qu'est-ce que c'est? / What is it?
 
 * [[Vidéos|videos]] - introduction vidéos
 * [[Présentations|presentations]] - les présentations du projet ou des concepts reliés au projets, les "powerpoints" sont ici!
@@ -29,18 +29,6 @@ Documentation plus technique et détaillée, mais possiblement pas à jour:
 
 NB: on peut configurer un relais et un point d'accès sur le même appareil. Ce sera plus lent, mais pour démarrer, ça peut éviter d'installer deux appareils sur le toit.
 
-### Techniques alternatives ou optionelles:
-
-Pour l'instalation manuelle, de developement, les instalations non standardes et la documentation du projet,
-
-* [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
-* [[Firmware]] - how to use our custom OpenWrt image, or compile it yourself!
-* [[Software]] - the software used/evaluated in the project
-* [[Monitoring|documentation/monitoring/Monitoring_solution+explication+install]] - surveillance de l'état du réseau
-* [[Idees]] - possible uses for the mesh
-* [[Meta]] - gestion de ce wiki
-
-
 ## Point d'accès: 
 
 Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se connecter pour naviguer sur le mesh et/ou le web. L'installation d'un point d'accès n'est pas obligatoire. Il est possible d'opérer simplement un relais.
@@ -53,6 +41,15 @@ Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se
 * [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
 * [[Nodes]] - the list of deployed nodes
 * [[stats]] - l'état du réseau
+
+# Développement
+
+* [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
+* [[Firmware]] - how to use our custom OpenWrt image, or compile it yourself!
+* [[Software]] - the software used/evaluated in the project
+* [[Monitoring|documentation/monitoring/Monitoring_solution+explication+install]] - surveillance de l'état du réseau
+* [[Idees]] - possible uses for the mesh
+* [[Meta]] - gestion de ce wiki
 
 # Services
 
@@ -70,7 +67,6 @@ Voir: [[Configurer des services|services]] [[!trailitem services]] (voir aussi [
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
 * [[documentation/services/internet/]] Information sur le droit de partage de connection internet.
-
 
 # Documentation orpheline
 
