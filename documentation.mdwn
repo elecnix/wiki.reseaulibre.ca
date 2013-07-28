@@ -16,7 +16,7 @@ Les relais tissent la toile du réseau "mesh". Ils sont généralement installé
 Pour configurer un relais:
 
 1. [[Installation et configuration d'un relais|guides/install+node+facile]]
-2. on travaille sur le script setup_reseaulibre qui automatisera plusieurs configurations, mais entre temps..
+2. on travaille sur le script [[setup_reseaulibre|http://gitorious.org/reseau-libre-openwrt/reseaulibre-feed/blobs/master/reseaulibre-mesh/files/usr/bin/setup_reseaulibre]] qui automatisera plusieurs configurations, mais entre temps il faut soit tester setup_reseaulibre ou bien configurer ipv6 et babel manuellement.
 3. [[Configurer IPv6|ipv6]] [[!trailitem ipv6]]
 4. [[Configurer Babel|babel/]] [[!trailitem babel]]
 
