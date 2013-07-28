@@ -3,6 +3,7 @@
 * [[Vidéos|videos]] - introduction vidéos
 * [[Présentations|presentations]] - les présentations du projet ou des concepts reliés au projets, les "powerpoints" sont ici!
 * [[Foire aux questions|faq]]
+* [[Participer|participer]] - pour s'abonner à nos listes de discussions et discuter de votre projet.
 
 # Comment rejoindre le réseau / How to join the network
 
@@ -15,6 +16,9 @@ Les relais tissent la toile du réseau "mesh". Ils sont généralement installé
 Pour configurer un relais:
 
 1. [[Installation et configuration d'un relais|guides/install+node+facile]]
+2. on travaille sur le script setup_reseaulibre qui automatisera plusieurs configurations, mais entre temps..
+3. [[Configurer IPv6|ipv6]] [[!trailitem ipv6]]
+4. [[Configurer Babel|babel/]] [[!trailitem babel]]
 
 Documentation plus technique et détaillée, mais possiblement pas à jour:
 
@@ -22,7 +26,6 @@ Documentation plus technique et détaillée, mais possiblement pas à jour:
 2. [[Configurer le mode réseau adhoc|ad-hoc]] [[!trailitem ad-hoc]]
 3. [[Configurer IPv6|ipv6]] [[!trailitem ipv6]]
 4. [[Configurer Babel|babel/]] [[!trailitem babel]]
-5. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
 NB: on peut configurer un relais et un point d'accès sur le même appareil. Ce sera plus lent, mais pour démarrer, ça peut éviter d'installer deux appareils sur le toit.
 
@@ -36,22 +39,14 @@ Pour l'instalation manuelle, de developement, les instalations non standardes et
 * [[Monitoring|documentation/monitoring/Monitoring_solution+explication+install]] - surveillance de l'état du réseau
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
-* [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
 
 
-# Point d'accès: 
+## Point d'accès: 
 
 Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se connecter pour naviguer sur le mesh et/ou le web. L'installation d'un point d'accès n'est pas obligatoire. Il est possible d'opérer simplement un relais.
 
 1. [[Installation de OpenWRT|flashing/]] [[!trailitem flashing]]
 2. à documenter.. :)
-
-### Techniques alternatives ou optionelles:
-
-1. Partager sa connection internet
- * Avec le voisinage direct: on recommande de configurer un point d'accès régulier (et idéalement, faire passer le traffic dans Tor - besoin de documentation).
- * Par dessus le mesh: on recommande d'utiliser un lien [[VPN|documentation/vpn/], comme ça le traffic sera encrypté, et vous pourrez mieux contrôler à qui ou comment l'accès est fourni.
-
 
 # Informations et statistiques du réseau. 
 
@@ -59,12 +54,23 @@ Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se
 * [[Nodes]] - the list of deployed nodes
 * [[stats]] - l'état du réseau
 
+# Services
 
+/!\ Besoin de ménage dans cette section
 
-# Documentation legale
+Voir: [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
+
+1. Partager sa connection internet (à fusionner avec: [[documentation/services/internet/]]?)
+ * Avec le voisinage direct: on recommande de configurer un point d'accès régulier (et idéalement, faire passer le traffic dans Tor - besoin de documentation).
+ * Par dessus le mesh: on recommande d'utiliser un lien [[VPN|documentation/vpn/], comme ça le traffic sera encrypté, et vous pourrez mieux contrôler à qui ou comment l'accès est fourni.
+
+# Documentation légale et gouvernance
+
 * [[Policy]] - what we agree on when opening a node on the mesh
 * [[Regulations]] - règlements pertinents au mesh: municipal, fédéral, pose d'antennes, puissance, etc
+* [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
 * [[documentation/services/internet/]] Information sur le droit de partage de connection internet.
+
 
 # Documentation orpheline
 
