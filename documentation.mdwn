@@ -1,15 +1,14 @@
 # Qu'est-ce que c'est?
 
-* [[Presentations]] - les présentations du projet ou des concepts reliés au projets, les "powerpoints" sont ici!
-* [[Videos]] - introduction vidéos
+* [[Vidéos|videos]] - introduction vidéos
+* [[Présentations|presentations]] - les présentations du projet ou des concepts reliés au projets, les "powerpoints" sont ici!
 * [[Foire aux questions|faq]]
 
+# Comment rejoindre le réseau / How to join the network
 
-# Comment rejoindre le mesh / How to join the mesh
-Pour etendre le mesh, il y'a deux types d'elements possible, les nodes et les relais.(Voir [[topology|policy/topology/]]) 
+On peut rejoindre (et agrandir) le réseau de deux façons: par un relais et par un point d'accès. (Voir [[topology|policy/topology/]])
 
-
-##Relais: 
+## Relais:
 
 Un relais est un appareil configuré pour se connecter sur le mesh avec Babel, le protocole de mesh utilisé. L'appareil, une fois bien configuré, devrait se connecter automatiquement aux autres relais disponibles aux alentours. Même si aucun noeud n'est disponible, vous pouvez laisser votre relais en place. Un jour, quelqu'un s'y connectera!
 
@@ -25,6 +24,7 @@ Pour participer au mesh, avoir un relais est obligatoire!
 6. [[Configurer des services|services]] [[!trailitem services]] (voir aussi [[vpn]], [[zeroconf]])
 
 ### Techniques alternatives ou optionelles:
+
 Pour l'instalation manuelle, de devlopement, les instalations non standardes et la documentation du projet,
 
 * [[Hardware]] - hardware (routers, cables, antennas) used in the project, and how it's configured, includes radio theory
@@ -36,12 +36,7 @@ Pour l'instalation manuelle, de devlopement, les instalations non standardes et 
 * [[Similar projects|similar]] - autres projets sur lesquels on s'inspire et avec lesquels on communique
 
 
-
-
-
-
-
-##Node: 
+# Point d'accès: 
 
 Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se connecter pour naviguer sur le mesh et/ou le web. L'installation d'un point d'accès n'est pas obligatoire. Il est possible d'opérer simplement un relais.
 
@@ -49,18 +44,16 @@ Un point d'accès ou Node est un appareil sur lequel les utilisateurs peuvent se
 2. [[Installation et configuration d'un relais|guides/install+node+facile]]
 
 ### Techniques alternatives ou optionelles:
-1. [[ Partager sa connection internet|documentation/services/#index10h2]]  
-   
+
+1. Partager sa connection internet
+ * Avec le voisinage direct: on recommande de configurer un point d'accès régulier (et idéalement, faire passer le traffic dans Tor - besoin de documentation).
+ * Par dessus le mesh: on recommande d'utiliser un lien [[VPN|documentation/vpn/], comme ça le traffic sera encrypté, et vous pourrez mieux contrôler à qui ou comment l'accès est fourni.
 
 
-
-
-
-# Informations et statistiques du reseau. 
+# Informations et statistiques du réseau. 
 
 * [[Map|http://mesh.openisp.ca/ikiwiki.cgi?map=map&amp=&zoom=12&lat=45.52901&do=osm&lon=-73.6004]] - shows where all the nodes are!
 * [[Nodes]] - the list of deployed nodes
-* [[Links]] - the links between the nodes
 * [[stats]] - l'état du réseau
 
 
