@@ -1,3 +1,5 @@
+Je ne trouve pas que cette page ait une utilité. Je propose de la supprimer. --bgm 2013-07-28
+
 [[!osm map="map" href="/map" right]]
 
 Links metadata is documented here. To create a link between two nodes on the map, you simply have to add a wiki link between the first page and the second and it will magically show up on the map. The pages here are only to document extra information about the links.
