@@ -17,6 +17,7 @@ Le réseau de Montréal préconise la bande de fréquence 2.4 GHz.
 Voir aussi:
 
  * [[Achats]] - collective buying spree
+ * [[Ventes]] - surplus de la communauté
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
