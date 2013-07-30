@@ -1,0 +1,23 @@
+Si vous avez du matériel en trop que vous voulez revendre, ajoutez votre nom ici et une façon de vous contacter:
+
+[[users/R]] :
+
+* [Bullet M2HP Ti][] + [antenne omni 15 dbi][] + [injecteur POE 24V 1A w/RESET][]
+* [NanoStation M2][] + [injecteur POE 15V][]
+
+
+
+
+
+
+[NanoStation M2]: http://www.converbit.ca/magasin/products.php?product=NanoStation-M2
+[NanoBracket]: http://www.converbit.ca/magasin/products.php?product=NanoBracket
+[Bullet M2HP]: http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP
+[Bullet M2HP Ti]: http://www.converbit.ca/magasin/products.php?product=Bullet-M2-Titanium
+[PicoStation M2HP]: http://www.converbit.ca/magasin/products.php?product=PicoStation-M2HP
+[antenne omni 15 dbi]: http://www.converbit.ca/magasin/products.php?product=Antenne-omni-directionnel-2.4-GHZ-15DBI
+[injecteur POE 15V]: http://www.converbit.ca/magasin/products.php?product=-POE-15V
+[injecteur POE 24V]: http://www.converbit.ca/magasin/products.php?product=POE-24v
+[Injecteur POE 24V 1A w/RESET]: http://www.ubnt.ca/index.php?page=shop.product_details&flypage=flypage.tpl&category_id=7&product_id=105&option=com_virtuemart&Itemid=1
+[Cable Cat 5E extérieur]: http://www.converbit.ca/magasin/products.php?product=Shireen-Cable-Exterieur-Cat-5E-avec-Shield
+[antenne sectorielle 120°]: https://www.streakwave.com/Itemdesc.asp?ic=SA24-120-9
