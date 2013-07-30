@@ -5,7 +5,9 @@ Si vous avez du matériel en trop que vous voulez revendre, ajoutez votre nom ic
 * [Bullet M2HP Ti][] + [antenne omni 15 dbi][] + [injecteur POE 24V 1A w/RESET][]
 * [NanoStation M2][] + [injecteur POE 15V][]
 
+[[users/bgm]] :
 
+* 1 x [NanoStation M2][] + [injecteur POE 15V][], 50$. (courriel: bgm à bidon.ca)
 
 
 
