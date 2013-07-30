@@ -1,10 +1,10 @@
 My MAC ID:  de:9f:db:ff:fe:00:13:79
 *** Neighbours ***
 fe80::de9f:dbff:fe0a:592b tarator if wlan0    
-fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0    
 fe80::f6ec:38ff:feb5:db29 bgm-alep-eth0 if eth0    
+fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0    
 *** Routes ***
 fe80::f6ec:38ff:feb5:db29 bgm-alep-eth0 -> 
-    2607:f2c0:f00f:2900::/56-7503a0 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::f6ec:38ff:feb5:db29 if eth0
+    2607:f2c0:f00f:2900::/56-8df3c0 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::f6ec:38ff:feb5:db29 if eth0
 fe80::de9f:dbff:fe0a:592b tarator -> 
-    fd64:2c08:9fa7:4::/64-7503d8 prefix fd64:2c08:9fa7:4::/64 installed yes id de:9f:db:ff:fe:0b:59:2b   via fe80::de9f:dbff:fe0a:592b if wlan0
+    fd64:2c08:9fa7:4::/64-8df800 prefix fd64:2c08:9fa7:4::/64 installed yes id de:9f:db:ff:fe:0b:59:2b   via fe80::de9f:dbff:fe0a:592b if wlan0
