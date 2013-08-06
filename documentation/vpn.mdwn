@@ -84,7 +84,7 @@ is defined in the `tinc-up` startup script (to be put in
 
 The script needs to be made executable:
 
-    chmod a-x tinc-up
+    chmod a+x tinc-up
 
 For my laptop:
 
