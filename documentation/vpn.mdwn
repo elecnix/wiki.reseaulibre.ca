@@ -69,6 +69,8 @@ This will create a private key for the host in
 `reseaulibre/rsa_key.priv` and add the public key material to the
 `hosts/roadkiller` configuration file.
 
+The public key for each host must be copied to each other host that tinc will connect to (in /etc/tinc/reseaulibre/hosts/[...]).
+
 IP allocation
 -------------
 
