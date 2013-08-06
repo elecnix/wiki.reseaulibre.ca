@@ -56,7 +56,7 @@ for a discussion about this.
 SSL certificates
 ----------------
 
-SSL certificates are created with this command in the `1.0` serie
+SSL certificates must be created on each host with this command in the `1.0` serie
 (this changes in later releases):
 
     tincd -n reseaulibre -K
