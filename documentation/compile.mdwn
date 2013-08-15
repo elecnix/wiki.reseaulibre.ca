@@ -10,6 +10,11 @@ See [[firmware]] for usage instructions.
 
 Follow the instructions at the beginning of the page [[http://wiki.openwrt.org/doc/howto/buildroot.exigence]]
 
+i.e. most importantly:
+
+    sudo apt-get update
+    sudo apt-get install git-core subversion build-essential
+
 ## Setup the Reseau libre build environment
 
 Obtain the reseau libre build environment then prepare the environment with the following commands:
