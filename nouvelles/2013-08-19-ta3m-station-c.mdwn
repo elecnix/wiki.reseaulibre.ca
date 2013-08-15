@@ -1,3 +1,5 @@
+[[!waypoint lat="45.528103" lon="-73.597972" embed hidden width="300px" height="300px" right desc="Station-C, 5605 Avenue de Gaspé suite 204"]]
+
 Prochaine rencontre
 ===================
 
