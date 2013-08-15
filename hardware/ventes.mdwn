@@ -9,10 +9,14 @@ Si vous avez du matériel en trop que vous voulez revendre, ajoutez votre nom ic
 
 * 1 x [NanoStation M2][] + [injecteur POE 15V][], usagé, 50$. (courriel: bgm à bidon.ca)
 
+[[users/elecnix]] :
 
+* [antenne omni 15 dbi][] 2,4 GHz, neuve, 30$
+* 2 x [NanoStation M5][] + [injecteur POE 24V][], usagé, 50$ (ATTENTION 5 GHz, pas compatible avec le réseau 2,4 GHz existant)
 
 
 [NanoStation M2]: http://www.converbit.ca/magasin/products.php?product=NanoStation-M2
+[NanoStation M5]: http://www.converbit.ca/magasin/products.php?product=NanoStation-M5-International
 [NanoBracket]: http://www.converbit.ca/magasin/products.php?product=NanoBracket
 [Bullet M2HP]: http://www.converbit.ca/magasin/products.php?product=Bullet-M2HP
 [Bullet M2HP Ti]: http://www.converbit.ca/magasin/products.php?product=Bullet-M2-Titanium
