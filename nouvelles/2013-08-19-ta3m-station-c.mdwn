@@ -28,6 +28,21 @@ Questions ou commentaires:
 Pour discuter avec nous:  
 [[http://webchat.freenode.net/?channels=reseaulibre]]
 
+Autres nouvelles
+================
+
+*Développement d'un script de configuration*
+
+Un script nommé `setup_reseaulibre` est en développement, avec comme objectif d'automatiser la configuration du réseau sur les routeurs Ubiquiti. Incorporé à notre firmware basé sur OpenWrt, il permettra d'accélérer et de simplifier la mise en place de relais. Il est encore à l'état expérimental, et le code source est publié sur Gitorious:
+
+https://gitorious.org/reseau-libre-openwrt
+
+*Matériel à vendre*
+
+Certains ont du matériel dont ils n'ont plus besoin, et désirent s'en départir. Nous avons maintenant une liste de matériel à vendre - ou à donner ici:
+
+http://wiki.reseaulibre.ca/hardware/ventes/
+
 À PROPOS DE RÉSEAU LIBRE (english follows)
 ========================
 
