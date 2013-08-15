@@ -5,7 +5,7 @@
 [[!ymlfront data="""
 MAC: 00:15:6D:72:94:2F
 IP: 
-IPv6: 2607:f2c0:f00f:29a5:15:6dff:fe73:942f
+IPv6: fd64:2c08:9fa7:21::/64
 """]]
 
  * hostname: homs
