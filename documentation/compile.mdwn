@@ -33,6 +33,13 @@ From the git repository downloaded at previous step, do the following
     make menuconfig # to add or change packages or modify material to build for
     make V=99
 
+The resulting images are located in, for example:
+
+    openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin
+    openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin
+    openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin
+    openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-sysupgrade.bin
+
 # Reseau libre package information 
 
 The reseaulibre-feed repository is available with the following git command:
