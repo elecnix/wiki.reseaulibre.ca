@@ -1,4 +1,4 @@
-[[!waypoint lat="45.465677" lon="-73.572597" embed hidden width="400px" height="400px" right desc="AP au 3e etage."]]
+## [[!waypoint lat="45.465677" lon="-73.572597" embed hidden width="400px" height="400px" right desc="AP au 3e etage."]]
 
 # Technical details
 
@@ -11,7 +11,7 @@ hostname
 : (node hostname here)
 
 Type
-: [[!taglink accesspoint]]
+: router & restricted access point (AP)
 
 MAC address
 : {{$MAC}}
@@ -19,26 +19,14 @@ MAC address
 IPv6 address
 : {{$IPv6}}
 
-IP address
-: {{$IP}}
-
 Software
-: 
+: OpenWRT Attitude Adjustment
 
 Hardware
-: 
-
-Power
-: 
+: TP-Link
 
 Location
-: (where is this node physically installed?)
-
-Azimuth
-: 360°
-
-Panorama
-: N/A
+: inside
 
 Status
 : [[!taglink up]] (can also be up, down, planned, unknown)
@@ -47,11 +35,7 @@ Operator
 : [[users/bgm]]
 
 Links
-: [[bgm-homs]] [[bgm-damas]]
-
-
- * Routes babel: [[bgm-homs/babelstatus]]
-
+: [[bgm-latakia]] [[bgm-damas]]
 
 # Commandes UCI
 
