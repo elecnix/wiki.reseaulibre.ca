@@ -118,11 +118,6 @@ IMPORTANT: 2607:f2c0:f00f:2900::1/56 doit être assigné à une interface résea
 
 Configurer ça comme ça permet d'exporter une seule entrée pour tout mon réseau.
 
-    # Route pour Homs
-    #  homs.net4.bidon.ca = 2607:f2c0:f00f:29a1::1/64
-    #  upstream: 2607:f2c0:f00f:2910:215:6dff:fe73:942f
-    ip -6 route add 2607:f2c0:f00f:29a1::/64 via fe80::215:6dff:fe73:942f dev eth1
-
     # Route pour Alep
     #  alep.net4.bidon.ca = 2607:f2c0:f00f:29a2::1/64 (voisin) et 2607:f2c0:f00f:29a5::1/64 (wifi)
     ip -6 route add 2607:f2c0:f00f:29a2::/64 via fe80::f6ec:38ff:feb5:db2b dev eth1
@@ -147,23 +142,6 @@ Ce routeur a du wifi (wlan0), mais c'est du WPA2 pour les visiteurs, ce n'est pa
 
 NB: désactiver "iptables", sinon ça bloque le routage par défaut.
 
-## Routeur nanostation "homs" (OpenWRT)
-
-    babeld.@general[0]=general
-    babeld.@general[0].local_server=33123
-    babeld.@filter[0]=filter
-    babeld.@filter[0].type=redistribute
-    babeld.@filter[0].local=true
-    babeld.@filter[0].action=deny
-    babeld.@filter[1]=filter
-    babeld.@filter[1].type=redistribute
-    babeld.@filter[1].action=deny
-    babeld.wlan0=interface
-    babeld.eth0=interface
-    babeld.eth1=interface
-
-Ici on utilise les 3 interfaces, car eth0 connecte à "latakia" (bullet), eth1 à "alep" (vers le réseau local) et le wlan0 connecte à hexa en mode adhoc.
-
 ## Routeur nanostation "latakia" (OpenWRT)
 
     babeld.@general[0]=general
@@ -177,8 +155,6 @@ Ici on utilise les 3 interfaces, car eth0 connecte à "latakia" (bullet), eth1 �
     babeld.@filter[1].action=deny
     babeld.wlan0=interface
     babeld.eth0=interface
-
-Fin de la chaîne.. wlan0 connecte à deuxpi par adhoc, eth0 connecte à "homs" (bullet).
 
 # Topologie du réseau
 
