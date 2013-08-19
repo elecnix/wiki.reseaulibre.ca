@@ -211,4 +211,5 @@ Puis sur mon serveur web, j'ai une configuration pour le vhost par IP:
 * Babillard local / "wall" pour poster des bêtises
 * Cryptocat?
 * partage de fichier via un serveur centralisé (upload un fichier, obtient un hash, envoie le hash à l'ami)
+** voir: [[https://coquelicot.potager.org/]]
 * partage de fichiers direct p2p par HTML5? (est-ce que WebRTC permet ça?)
