@@ -1,0 +1,19 @@
+Une façon alternative de bâtir une image serait d'utiliser le générateur d'images d'OpenWrt:
+
+http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
+
+J'ai essayé:
+
+    wget http://downloads.openwrt.org/snapshots/trunk/ar71xx/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-x86_64.tar.bz2
+    tar xjf OpenWrt-ImageBuilder-ar71xx_generic-for-linux-x86_64.tar.bz2
+    cd OpenWrt-ImageBuilder-ar71xx_generic-for-linux-x86_64
+    echo "src http://packages.reseaulibre.ca:8080/Routeurs/reseaulibre-openwrt/0.1.2/ar71xx/packages" >> repositories.conf
+    make image PROFILE=UBNT PACKAGES="kmod-ipv6 ip kmod-ip6tables ip6tables babeld radvd nano iperf opkg reseaulibre-base reseaulibre-mesh"
+
+Pour l'instant, je n'ai pas réussi avec `repositories.conf`, mais ceci fonctionne et ne prend qu'une minute:
+
+    make image PROFILE=UBNT PACKAGES="kmod-ipv6 ip kmod-ip6tables ip6tables babeld radvd nano iperf opkg"
+
+Je peux flasher, puis envoyer setup_reseaulibre sur le Bullet, mais sans les packages `reseaulibre-base` et `reseaulibre-mesh`.
+
+-- elecnix
