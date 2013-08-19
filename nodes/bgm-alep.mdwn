@@ -1,5 +1,3 @@
-## [[!waypoint lat="45.465677" lon="-73.572597" embed hidden width="400px" height="400px" right desc="AP au 3e etage."]]
-
 # Technical details
 
 [[!ymlfront data="""
