@@ -195,7 +195,18 @@ Source: [[reseau-bgm.dia]], avec les images "Cisco - switch").
 
 nodogsplash ne semble pas supporter IPv6. Une solution pourrait être de configurer IPv4 sur l'AP, et puisque la tentative de connexion vers Google/Facebook en IPv6 ne sera pas routée (car le client obtient une adresse non-routable), 
 
-Comme solution de rechange
+Comme solution de rechange, je configure dnsmasq pour que toutes les requêtes DNS pointent à mon serveur web interne:
+
+    /etc/config/dhcp
+
+    config dnsmasq
+        [...]
+	list address  '/#/2607:f2c0:f00f:2901::69'
+
+ou par UCI:
+
+    uci set dhcp.@dnsmasq[0].address=/#/2607:f2c0:f00f:2901::69
+
 
 # TODO
 
