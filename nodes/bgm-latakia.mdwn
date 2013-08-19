@@ -8,20 +8,20 @@
 [[!ymlfront data="""
 MAC: DC:9F:DB:01:13:79
 IP: 
-IPv6: 2607:f2c0:f00f:29a1::1
+IPv6: 2607:f2c0:f00f:29a5:de9f:dbff:fe01:1379
 """]]
 
  * hostname: latakia
  * MAC address: {{$MAC}}
  * IPv6 address: {{$IPv6}}
- * Link-local IPv6 address: n/a (wlan0), fe80::de9f:dbff:fe01:1379 (eth0), 2607:f2c0:f00f:2910:de9f:dbff:fe01:1379/64 (eth0)
+ * Link-local IPv6 address: fe80::de9f:dbff:fe00:1379 (wlan0), fe80::de9f:dbff:fe01:1379 (eth0)
  * IP address: {{$IP}}
- * Software: OpenWRT (attitude adjustment) Trunk 2012-07-26
- * Hardware: Ubiquity NanoStation M2
+ * Software: OpenWRT (attitude adjustment)
+ * Hardware: Ubiquity Bullet M2
  * Location: sur le toit
  * Status: [[!taglink up]]
  * Operator: [[users/bgm]]
- * Links: [[deuxpi]] (10mbps), [[bgm-homs]] (ethernet), [[bgm-alep]] (ethernet)
+ * Links: [[deuxpi]] (10mbps), [[bgm-alep]] (ethernet)
  * Routes babel: [[bgm-latakia/babelstatus]]
 
 # Stats
@@ -113,15 +113,15 @@ Voir la section "topologie" au bas de la page pour un diagramme.
 
 IMPORTANT: 2607:f2c0:f00f:2900::1/56 doit être assigné à une interface réseau, pour que la route existe. C'est équivalent à 2607:f2c0:f00f:2900::/56, mais on ne peut pas assigner ça à une interface réseau. Initialement j'avais 2607:f2c0:f00f:2900::1/128 (= damas.net4.bidon.ca).
 
-    ip -f inet6 addr del 2607:f2c0:f00f:2900::1/128 dev eth0
-    ip -f inet6 addr add 2607:f2c0:f00f:2900::1/56 dev eth0
+    ip -6 addr del 2607:f2c0:f00f:2900::1/128 dev eth0
+    ip -6 addr add 2607:f2c0:f00f:2900::1/56 dev eth0
 
 Configurer ça comme ça permet d'exporter une seule entrée pour tout mon réseau.
 
     # Route pour Homs
     #  homs.net4.bidon.ca = 2607:f2c0:f00f:29a1::1/64
     #  upstream: 2607:f2c0:f00f:2910:215:6dff:fe73:942f
-    ip route add 2607:f2c0:f00f:29a1::/64 via fe80::215:6dff:fe73:942f dev eth1
+    ip -6 route add 2607:f2c0:f00f:29a1::/64 via fe80::215:6dff:fe73:942f dev eth1
 
     # Route pour Alep
     #  alep.net4.bidon.ca = 2607:f2c0:f00f:29a2::1/64 (voisin) et 2607:f2c0:f00f:29a5::1/64 (wifi)
