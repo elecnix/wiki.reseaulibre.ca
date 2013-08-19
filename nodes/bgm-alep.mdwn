@@ -6,7 +6,7 @@ IPv6: 2607:f2c0:f00f:29a5::1
 """]]
 
 hostname
-: (node hostname here)
+: alep.net4.bidon.ca
 
 Type
 : router & restricted access point (AP)
