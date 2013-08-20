@@ -39,7 +39,7 @@ Panorama
 : À venir bientôt!
 
 Status
-: [[!taglink up]]
+: [[!taglink down]]
 
 Operator
 : [[users/gboudrias]]
