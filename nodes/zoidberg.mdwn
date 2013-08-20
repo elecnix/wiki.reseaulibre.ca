@@ -39,13 +39,13 @@ Panorama
 : À venir bientôt!
 
 Status
-: [[!taglink down]]
+
 
 Operator
 : [[users/gboudrias]]
 
 Links
-: [[R]], [[Coop_Sur_Genereux]]
+
 
 This node runs Babel. Access point for zoidserver
 
