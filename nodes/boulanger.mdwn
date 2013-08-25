@@ -1,0 +1,52 @@
+[[!waypoint lat="45.775867" lon="-73.177197" embed hidden width="950px" height="400px" right desc="Possible location"]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: 
+IP: 
+IPv6: 
+"""]]
+
+hostname
+: boulanger
+
+Type
+: relay
+
+SSID
+: boulanger.relais.reseaulibre.ca
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Hardware
+: 
+
+Location
+: Cheminée
+
+Status
+: [[!taglink prospect]]
+
+Operator
+: [[/users/elecnix]]
+
+Links
+: 
+
+[[!meta copyright="Copyright © 2011-2013 Nicolas Marchildon"]]
+
+[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
+id="license" text="Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free Documentation License, Version 1.2 or
+any later version published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+is included in the section entitled [[GNU Free Documentation
+License|meta/gfdl]]."]]"""]]
