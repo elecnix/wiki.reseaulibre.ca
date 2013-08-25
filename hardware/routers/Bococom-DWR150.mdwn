@@ -123,7 +123,7 @@ http://www.bococom.com/download.asp?type=DWR150
 
 # Getting access to the serial port
 
-I used an old [[Siemens IP-40 cellphone serial communication cable|http://pinouts.ru/CellularPhones-P-W/siemens_c55_pinout.shtml]] to connect to the TTL-level serial port on the PCB, inspired by the [[unbricking of a TP-Link MR3420|https://forum.openwrt.org/viewtopic.php?pid=158464]] and connected to the Bococom with minicom on Linux with the `57600 8N1` settings.
+I used an old [[Siemens IP-40 cellphone serial communication cable|http://pinouts.ru/CellularPhones-P-W/siemens_c55_pinout.shtml]] to connect to the TTL-level serial port on the PCB, inspired by the [[unbricking of a TP-Link MR3420|https://forum.openwrt.org/viewtopic.php?pid=158464]] and connected to the Bococom with minicom on Linux with the `57600 8N1` settings, hardware & software flow control at OFF. Using Minicom, launch it with `minicom -s` to open the configuration.
 
 If you want to do the same, we suggest to have a look at the [[Serial Console Documentation|http://wiki.openwrt.org/doc/hardware/port.serial]] on the OpenWRT wiki.
 
