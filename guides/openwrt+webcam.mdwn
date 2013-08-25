@@ -1,5 +1,7 @@
 # Guide de configuration d'une caméra web sur OpenWrt
 
+Ces instructions assument que vous avez une caméra supportant la vidéo par USB, standardisé par la norme UVC. Une liste des caméras supportées par Linux (et donc OpenWrt) existe ici: http://www.ideasonboard.org/uvc/
+
 ## Installation de OpenWrt
 
 To install OpenWrt, you must [[flash your router|documentation/flashing]] with a recent version. The flashing instructions are out of the scope of this guide, but **we assume that you're installing trunk**.
