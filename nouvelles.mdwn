@@ -7,6 +7,17 @@ Dernières nouvelles
 
 [[!inline pages="nouvelles/* and !nouvelles/*/* and !nouvelles/discussion and !tagged(draft)" archive=yes]]
 
+
+<div class="reseaulibre-subscribe-box">
+  <div class="reseaulibre-subscribe-box-description">Pour recevoir les annonces des événements à venir:</div>
+    <form action="https://listes.koumbit.net/cgi-bin/mailman/subscribe/nouvelles-reseaulibre.ca" method="POST">
+      <label for="email">Adresse courriel:</label>
+      <input type="text" id="email" name="email" />
+      <input type="submit" value="Inscrire" />
+    </form>
+  </div>
+</div>
+
 En rédaction
 ============
 
