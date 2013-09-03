@@ -2,7 +2,7 @@ Voici la liste des meetings documentés dans le wiki:
 
 [[!inline pages="meetings/* and !*/*/* and !*/discussion" archive=yes rootpage=meetings template=titlepage postformtext="Record a new meeting: " ]]
 
-Voir aussi la page [[nouvelles]]. Desfois on oublie de créer une page "meeting".
+Voir aussi la page [[nouvelles]]. Parfois on oublie de créer une page "meeting".
 
 Pour organiser une rencontre
 ----------------------------
