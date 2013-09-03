@@ -2,9 +2,9 @@
 
 Always on the TOP !!
 
- * MAC address:
- * IP address:
- * IPv6 address:
+ * MAC address: 0027222ebc42
+ * IP address: 
+ * IPv6 address: fd64:2c08:9fa7:55::1/64
  * Software:
  * Hardware:
  * Power:..to the people !!
