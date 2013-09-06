@@ -3,6 +3,8 @@ multiple copies). Basically, this is to allow you to access the
 documentation even if the network goes down. This is done through
 [[ikiwiki]], which is a the engine behind this wiki.
 
+(!) Note that this documentation should probably be merged into [[!iki tips/distributed_wikis]]. I copied most of it there, but I am not sure i want to completely remove this important documentation... 
+
 [[!toc levels=2]]
 
 # Basic offline editing and sharing

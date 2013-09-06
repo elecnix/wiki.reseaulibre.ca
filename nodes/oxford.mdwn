@@ -3,13 +3,13 @@
 Always on the TOP !!
 
  * MAC address: 0027222ebc42
- * IP address: 
+ * IP address: 172.16.0.55
  * IPv6 address: fd64:2c08:9fa7:55::1/64
  * Software:
- * Hardware:
+ * Hardware:Bullet M2 + 15dbi Omni
  * Power:..to the people !!
  * Location: 45.470313,-73.612186
- * Status:[[!taglink planned]] (can also be up, down, unknown)
+ * Status:[[!taglink up]] (can also be up, down, unknown)
  * Links: (a wiki link to the nodes this node is connected with, will show up on the map, metadata in [[links]])
  * Azimuth:
  * Panorama:
