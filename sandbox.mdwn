@@ -4,6 +4,7 @@ This is the SandBox, a page anyone can edit to learn how to use the wiki.
 
 [[!sparkline 20 24 28 31 34 37 39 40 40 39 38 36 34 30 27 23 19 15 11 8 style=bar barwidth=20 barspacing=3 height=60]]
 
+cou cou rou coui coui
 
 # Désolé pour le bruit :)
 
