@@ -2,15 +2,17 @@ My MAC ID:  de:9f:db:ff:fe:00:13:79
 *** Neighbours ***
 fe80::de9f:dbff:fe0a:592b tarator if wlan0    
 fe80::de9f:dbff:fe00:11d9 deuxpi-bullet if wlan0    
+fe80::f6ec:38ff:feb5:db29 bgm-alep-eth0 if eth0    
 *** Routes ***
+fe80::f6ec:38ff:feb5:db29 bgm-alep-eth0 -> 
+    2607:f2c0:f00f:2900::/56-b54370 prefix 2607:f2c0:f00f:2900::/56 installed yes id 02:1b:21:ff:fe:40:3a:ab   via fe80::f6ec:38ff:feb5:db29 if eth0
 fe80::de9f:dbff:fe00:11d9 deuxpi-bullet -> 
-    2001:470:b2a7:1::/64-a45370 prefix 2001:470:b2a7:1::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:470:b2a7:2::/64-a45370 prefix 2001:470:b2a7:2::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:470:b2a7:3::/64-a45370 prefix 2001:470:b2a7:3::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:1928:1:9::/64-a45370 prefix 2001:1928:1:9::/64 installed yes id 00:bd:eb:ff:fe:34:00:00   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2001:1928:1:9::/128-a45370 prefix 2001:1928:1:9::/128 installed yes id 00:bd:eb:ff:fe:34:00:00   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128-a45370 prefix 2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128 installed yes id 02:27:22:ff:fe:72:cf:9f   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    fd64:2c08:9fa7::1/128-a45370 prefix fd64:2c08:9fa7::1/128 installed yes id 00:bd:eb:ff:fe:34:00:00   via fe80::de9f:dbff:fe00:11d9 if wlan0
-    fd64:2c08:9fa7:1::3/128-a45370 prefix fd64:2c08:9fa7:1::3/128 installed yes id fa:d1:11:ff:fe:b7:5a:62   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:470:b2a7:1::/64-b543a8 prefix 2001:470:b2a7:1::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:470:b2a7:2::/64-b543a8 prefix 2001:470:b2a7:2::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:470:b2a7:3::/64-b543a8 prefix 2001:470:b2a7:3::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:1928:1:9::/64-b543a8 prefix 2001:1928:1:9::/64 installed yes id 00:bd:eb:ff:fe:34:00:00   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    2001:1928:1:9::/128-b543a8 prefix 2001:1928:1:9::/128 installed yes id 00:bd:eb:ff:fe:34:00:00   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    fd64:2c08:9fa7::1/128-b543a8 prefix fd64:2c08:9fa7::1/128 installed yes id 00:bd:eb:ff:fe:34:00:00   via fe80::de9f:dbff:fe00:11d9 if wlan0
+    fd64:2c08:9fa7:1::3/128-b543a8 prefix fd64:2c08:9fa7:1::3/128 installed yes id 00:bd:eb:ff:fe:34:00:00   via fe80::de9f:dbff:fe00:11d9 if wlan0
 fe80::de9f:dbff:fe0a:592b tarator -> 
-    fd64:2c08:9fa7:4::/64-a45438 prefix fd64:2c08:9fa7:4::/64 installed yes id de:9f:db:ff:fe:0b:59:2b   via fe80::de9f:dbff:fe0a:592b if wlan0
+    fd64:2c08:9fa7:4::/64-b54878 prefix fd64:2c08:9fa7:4::/64 installed yes id de:9f:db:ff:fe:0b:59:2b   via fe80::de9f:dbff:fe0a:592b if wlan0
