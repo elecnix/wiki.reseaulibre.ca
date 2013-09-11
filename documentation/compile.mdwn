@@ -47,6 +47,10 @@ Main article: [[http://wiki.openwrt.org/doc/howtobuild/single.package]]
     cd ~/path/to/reseau-libre-openwrt/openwrt
     make tools/install
     make toolchain/install
+
+Our reseaulibre packages are in a feed, so we need to update the feed (will do a "git pull") and compile:
+
+    scripts/feeds update -a
     make package/feeds/reseaulibre/reseaulibre-base/compile
     make package/feeds/reseaulibre/reseaulibre-base/install
     make package/feeds/reseaulibre/reseaulibre-mesh/compile
