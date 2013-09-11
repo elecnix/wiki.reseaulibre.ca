@@ -4,7 +4,7 @@ See [[firmware]] for usage instructions.
 
 [[!toc levels=3]]
 
-# Compile openwrt
+# Compile openwrt from source
 
 ## Make sure you have all prerequisites for building openwrt
 
@@ -39,6 +39,43 @@ The resulting images are located in, for example:
     openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin
     openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin
     openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-sysupgrade.bin
+
+## To compile only a specific package
+
+Main article: [[http://wiki.openwrt.org/doc/howtobuild/single.package]]
+
+    cd ~/path/to/reseau-libre-openwrt/openwrt
+    make tools/install
+    make toolchain/install
+    make package/feeds/reseaulibre/reseaulibre-base/compile
+    make package/feeds/reseaulibre/reseaulibre-base/install
+    make package/feeds/reseaulibre/reseaulibre-mesh/compile
+    make package/feeds/reseaulibre/reseaulibre-mesh/install
+
+Resulting packages are in ~/path/to/reseau-libre-openwrt/openwrt/bin/ar71xx/packages/reseaulibre-{base,mesh}[...].ipk
+
+# Create an image using "image builder" (experimental)
+
+Main documentation: http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
+
+* Pros: avoids the long build time of openwrt from source, useful for building against an architecture not provided by reseaulibre
+* Cons: if you want to build a specific package (ex: reseaulibre-base, reseaulibre-mesh), you will still need to compile most of OpenWRT anyway, because it will build all the dependancies (although maybe we can reduce the dependancies?).
+
+In short, for the ar71xx architecture:
+
+    mkdir ~/openwrt && cd ~/openwrt
+    wget http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
+    tar -xvjf OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
+    cd OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486
+
+The build command:
+
+    make image PROFILE=Default PACKAGES="kmod-ipv6 ip radvd tcpdump ip6tables iperf babeld"
+
+The resulting firmware can be found in, for example:
+
+    ~/openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin
+    ~/openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin
 
 # Reseau libre package information 
 
