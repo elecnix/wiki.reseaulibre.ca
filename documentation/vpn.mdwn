@@ -7,7 +7,7 @@ We are therefore using [tinc][] for mesh interconnection, as it is completely de
 tinc: interconnect disjoint mesh networks
 =========================================
 
-We are using [tinc][] of IPsec or OpenVPN for the mesh, for 2 reasons:
+We recommend using [tinc][] to interconnect the mesh, for 2 reasons:
 
  1. it is deployed for use in the Freifunk mesh
  2. it supports full mesh routing (all nodes have access to all nodes,
