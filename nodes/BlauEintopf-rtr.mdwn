@@ -5,7 +5,7 @@ In the future this router will provide internet access through Tor.
 
 [[!ymlfront data="""
 IP: 172.16.0.29/48
-IPv6: Not yet
+IPv6: fd64:2c08:9fa7:40::1/64
 """]]
 
  * MAC address: {{$MAC}}
