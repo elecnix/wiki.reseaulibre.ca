@@ -53,17 +53,18 @@ switch mode, see
 [this post](http://www.tinc-vpn.org/pipermail/tinc/2012-September/003029.html)
 for a discussion about this.
 
-SSL certificates
-----------------
+Encryption keys
+---------------
 
-SSL certificates must be created on each host with this command in the `1.0` serie
-(this changes in later releases):
+Public/private encryption keys must be created on each host. Tinc 1.0 used RSA keys by default. Tinc 1.1 (since 1.1pre9?) generates both RSA and eleptic-curve (ECDSA).
+
+For tinc 1.0:
 
     tincd -n reseaulibre -K
 
-For the new version of tinc:
+For tinc 1.1:
 
-    tincctl -n reseaulibre generate-keys
+    tinc -n reseaulibre generate-keys
 
 This will create a private key for the host in
 `reseaulibre/rsa_key.priv` and add the public key material to the
