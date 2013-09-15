@@ -4,7 +4,7 @@ still in the mesh at the IP level because it is connected to [[BlauEintopf]]
 In the future this router will provide internet access through Tor.
 
 [[!ymlfront data="""
-IP: 172.16.0.29/48
+IP: 172.16.1.30/48
 IPv6: fd64:2c08:9fa7:40::1/64
 """]]
 
