@@ -47,7 +47,7 @@ Operator
 : [[users/Cooper]], [[users/gboudrias]]
 
 Links
-: [[zoidberg]], [[R]]
+: 
 
 [[!img 2012-11-07-coop-nuit.jpg size=950x]]
 
