@@ -1,5 +1,5 @@
 This is my mesh router, which is not part of the BATMAN mesh but is
-still in the mesh at the IP level because it is connected to [[BlauEintopf]]
+still in the mesh at the IP level because it is connected to [[nodes/BlauEintopf-relais]]
 
 In the future this router will provide internet access through Tor.
 
@@ -16,7 +16,7 @@ IPv6: fd64:2c08:9fa7:40::1/64
  * Power: N/A
  * Location: [[RagoutBleu]]
  * Status: [[!taglink planned]]
- * Links: [[BlauEintopf]], [[BlauEintopf-AP]]
+ * Links: [[nodes/BlauEintopf-relais]], [[BlauEintopf-AP]]
  * Azimuth: N/A
  * Panorama: N/A
  * Operator: [[users/RagoutBleu]]
