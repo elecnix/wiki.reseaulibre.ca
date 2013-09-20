@@ -46,7 +46,7 @@ Operator
 : [[users/Eric]]
 
 Links
-: 
+: [[nodes/BlauEintopf-dorsale]]
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
