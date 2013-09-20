@@ -4,8 +4,8 @@ still in the mesh at the IP level because it is connected to [[nodes/BlauEintopf
 In the future this router will provide internet access through Tor.
 
 [[!ymlfront data="""
-IP: 172.16.1.30/48
-IPv6: fd64:2c08:9fa7:40::1/64
+IP: 172.16.0.30/32
+IPv6: fd64:2c08:9fa7:30::1/64
 """]]
 
  * MAC address: {{$MAC}}
@@ -16,7 +16,7 @@ IPv6: fd64:2c08:9fa7:40::1/64
  * Power: N/A
  * Location: [[RagoutBleu]]
  * Status: [[!taglink planned]]
- * Links: [[nodes/BlauEintopf-relais]], [[BlauEintopf-AP]]
+ * Links: [[nodes/BlauEintopf-relais]], [[BlauEintopf-dorsale]]
  * Azimuth: N/A
  * Panorama: N/A
  * Operator: [[users/RagoutBleu]]
