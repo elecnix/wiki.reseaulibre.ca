@@ -1,4 +1,4 @@
-[[!waypoint lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A 5Ghz PtP link on my roof"]]
+[[!waypoint  lat="45.466301" lon="-73.623719" embed hidden width="400px" height="400px" right desc="A 5Ghz PtP link on my roof"]]
 
 # Technical details
 
