@@ -45,7 +45,7 @@ Operator
 : [[users/RagoutBleu]]
 
 Links
-: [[nodes/BlauEintopf]], [[BlauEintopf-AP]]
+: [[nodes/BlauEintopf]], [[BlauEintopf-dorsale]]
 
 [[!meta copyright="Copyright © 2011 Blau Eintopf"]]
 
