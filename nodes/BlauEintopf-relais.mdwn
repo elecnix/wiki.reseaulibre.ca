@@ -8,7 +8,7 @@ IP: 169.254.32.224/29
 IPv6: SELFASSIGNED
 """]]
 
-hostname
+Hostname
 : relais.eintopf.mesh
 
 MAC address
