@@ -7,19 +7,47 @@ IP: 172.16.0.30/32
 IPv6: fd64:2c08:9fa7:30::1/64
 """]]
 
- * MAC address: {{$MAC}}
- * IPv6 address: {{$IPv6}}
- * IP address: {{$IP}}
- * Hotname: router.eintopf.mesh eintopf.mesh
- * Software: OpenWRT
- * Hardware: TPLink WDR3600
- * Power: [internal]
- * Location: [[RagoutBleu]]
- * Status: [[!taglink up]]
- * Links: [[nodes/BlauEintopf-relais]], [[BlauEintopf-dorsale]]
- * Azimuth: 360°
- * Panorama: N/A
- * Operator: [[users/RagoutBleu]]
+Hostname
+: router.eintopf.mesh eintopf.mesh
+MAC
+: {{$MAC}}
+
+IPv6
+: {{$IPv6}}
+
+IPv4
+: {{$IP}}
+
+SSID
+: access.reseaulibre.ca
+
+Software
+: OpenWRT
+
+Hardware
+: TPLink WDR3600
+
+Power
+: [internal]
+
+Location
+: [[RagoutBleu]]
+
+Status
+: [[!taglink up]]
+
+Links
+: [[nodes/BlauEintopf-relais]], [[nodes/BlauEintopf-dorsale]]
+
+Azimuth
+: 360°
+
+Panorama
+: N/A
+
+Operator
+: [[users/RagoutBleu]]
+
 
 [[!meta copyright="Copyright © 2011 Ragout Bleu"]]
 
