@@ -26,17 +26,11 @@ Operator
 : [[users/RagoutBleu]]
 
 Links
-: [[nodes/BlauEintopf]], [[BlauEintopf-relais]]
+: [[nodes/BlauEintopf]], [[nodes/BlauEintopf-relais]], [nodes/beastly]]
 
 # Services
 
 This link is default routing...
-
-# Photos
-
-(You can upload images when you edit this page. Feel free to upload photos
-of your installation or of the panorama. It will help other people who may
-want to link with you.)
 
 [[!meta copyright="Copyright © 2011-2013 Your Name Here"]]
 
