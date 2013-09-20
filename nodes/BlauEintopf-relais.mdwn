@@ -20,6 +20,9 @@ IPv6 address
 IP address
 : {{$IP}}
 
+SSID
+: eintopf.relais.reseaulibre.ca
+
 Software
 : OpenWRT
 
