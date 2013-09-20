@@ -26,7 +26,7 @@ Operator
 : [[users/RagoutBleu]]
 
 Links
-: [[nodes/BlauEintopf]], [[nodes/BlauEintopf-relais]], [nodes/beastly]]
+: [[nodes/BlauEintopf]], [[nodes/BlauEintopf-relais]], [[nodes/beastly]]
 
 # Services
 
