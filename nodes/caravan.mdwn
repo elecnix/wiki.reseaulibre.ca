@@ -6,7 +6,7 @@ Emplacement possible au 12e étage vers le sud et/ou l'ouest.
 
 [[!ymlfront data="""
 MAC: 
-IP: 
+IP: 172.16.1.142
 IPv6: 
 """]]
 
@@ -17,7 +17,7 @@ Type
 : relay
 
 SSID
-: Caravan.coop
+: caravan.relais.reseaulibre.ca
 
 MAC address
 : {{$MAC}}
