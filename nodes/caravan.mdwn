@@ -17,7 +17,7 @@ Type
 : relay
 
 SSID
-: caravan.relais.reseaulibre.ca
+: Caravan.coop
 
 MAC address
 : {{$MAC}}
@@ -44,7 +44,7 @@ Azimuth
 : TBD
 
 Status
-: [[!taglink prospect]] (can also be up, down, planned, unknown)
+: [[!taglink up]] (can also be up, down, planned, unknown)
 
 Operator
 : [[/users/elecnix]]
