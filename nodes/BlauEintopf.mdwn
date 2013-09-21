@@ -5,6 +5,7 @@ In the future the access point might provide internet access through Tor.
 [[!ymlfront data="""
 IP: 172.16.0.30/32
 IPv6: fd64:2c08:9fa7:30::1/64
+VPN: 172.16.242.30
 """]]
 
 Hostname
@@ -17,6 +18,9 @@ IPv6
 
 IPv4
 : {{$IP}}
+
+VPN-IPv4
+: {{$VPN}}
 
 SSID
 : access.reseaulibre.ca
