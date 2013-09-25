@@ -6,13 +6,20 @@ A mesh is fun, but otherwise not very useful until services are plugged into it.
 
 # Currently available services
 
- * DNS server at `172.16.0.1` / `fd64:2c08:9fa7:1::1` (`roadkiller.anarcat.ath.cx`)
- * <http://mesh.openisp.ca/> - this wiki, should be running on
-   `marcos.orangeseeds.org` (`2001:1928:1:9::1`), which should be
-   routed by roadkiller, above
- * this wiki is also available through git, see [[meta]]
- * <http://anarcat.ath.cx/> - various services, also available through
-   `marcos`
+ * Via [[nodes/roadkiller]]:
+  * DNS server at `172.16.0.1` / `fd64:2c08:9fa7:1::1` (`roadkiller.anarcat.ath.cx`)
+  * <http://mesh.openisp.ca/> - this wiki, should be running on
+    `marcos.orangeseeds.org` (`2001:1928:1:9::1`), which should be
+    routed by roadkiller, above
+  * this wiki is also available through git, see [[meta]]
+  * <http://anarcat.ath.cx/> - various services, also available through
+    `marcos`
+ * Via [[nodes/deuxpi]]:
+  * Game Server (NetHack: `telnet nethack.deuxpi.ca`, Tetrinet: `tetrinet.deuxpi.ca`)
+  * Media Server <http://media.deuxpi.ca>
+  * PGP Key Server <http://keyserver.mesh.deuxpi.ca>
+  * VPN access to Mesh (public key: <https://www.deuxpi.ca/deuxpi.asc>, see [[documentation/vpn]] for setup)
+  * Git Annex storage, backups, and more...
 
 # Naming your device
 
