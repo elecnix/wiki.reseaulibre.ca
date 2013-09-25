@@ -52,6 +52,9 @@ Panorama
 Operator
 : [[users/RagoutBleu]]
 
+# Topology
+
+[[!img eintops.mesh.png alt="Topologie"]]
 
 [[!meta copyright="Copyright © 2011 Ragout Bleu"]]
 
