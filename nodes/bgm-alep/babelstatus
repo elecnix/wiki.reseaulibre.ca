@@ -8,6 +8,7 @@ fe80::de9f:dbff:fe01:1379 bgm-latakia-eth0 ->
     2001:470:b2a7:2::/64-a2e498 prefix 2001:470:b2a7:2::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::de9f:dbff:fe01:1379 if eth0
     2001:470:b2a7:3::/64-a2e498 prefix 2001:470:b2a7:3::/64 installed yes id 00:25:90:ff:fe:93:e9:fc   via fe80::de9f:dbff:fe01:1379 if eth0
     2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128-a2e498 prefix 2607:f2c0:f00e:4d00:227:22ff:fe73:cf9f/128 installed yes id 02:27:22:ff:fe:72:cf:9f   via fe80::de9f:dbff:fe01:1379 if eth0
+    fd64:2c08:9fa7:1::3/128-a2e498 prefix fd64:2c08:9fa7:1::3/128 installed yes id fa:d1:11:ff:fe:b7:5a:62   via fe80::de9f:dbff:fe01:1379 if eth0
     fd64:2c08:9fa7:4::/64-a2e498 prefix fd64:2c08:9fa7:4::/64 installed yes id de:9f:db:ff:fe:0b:59:2b   via fe80::de9f:dbff:fe01:1379 if eth0
     fd64:2c08:9fa7:30::/64-a2e498 prefix fd64:2c08:9fa7:30::/64 installed yes id a2:f3:c1:ff:fe:86:30:cc   via fe80::de9f:dbff:fe01:1379 if eth0
     fd64:2c08:9fa7:30::/128-a2e498 prefix fd64:2c08:9fa7:30::/128 installed yes id a2:f3:c1:ff:fe:86:30:cc   via fe80::de9f:dbff:fe01:1379 if eth0
