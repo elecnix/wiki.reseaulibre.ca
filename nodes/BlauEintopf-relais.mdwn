@@ -13,6 +13,12 @@ IPv6: SELFASSIGNED
 Hostname
 : relais.eintopf.mesh
 
+Type
+: [[!taglink relay]]
+
+Status
+: [[!taglink up]]
+
 MAC address
 : {{$MAC}}
 
@@ -40,19 +46,14 @@ Location
 Azimuth
 : 360°
 
-Panorama
-: N/A
-
-Status
-: [[!taglink up]]
-
 Operator
 : [[users/RagoutBleu]]
 
 Links
 : [[BlauEintopf]], [[BlauEintopf-dorsale]]
 
-[[!img nodes/BlauEintopf/relais.eintopf.mesh.jpg size="1000x" alt="Installation de relais.eintopf.mesh"]]
+Panorama
+: [[!img nodes/BlauEintopf/relais.eintopf.mesh.jpg size="900x" alt="Installation de relais.eintopf.mesh"]]
 
 [[!meta copyright="Copyright © 2011 Blau Eintopf"]]
 
