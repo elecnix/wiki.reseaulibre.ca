@@ -1,10 +1,14 @@
 [[!waypoint  lat="45.466301" lon="-73.623719" embed width="400px" height="400px" right desc="A 5Ghz PtP link on my roof"]]
 
+[[!toc levels=3]]
+
 # Technical details
 
 This installation is not currently part of the mesh but could be used to link people in NDG. It runs in the 5Ghz band
 
-hostname
+# Technical details
+
+Hostname
 : dorsale.eintopf.mesh
 
 Type
@@ -26,7 +30,7 @@ Operator
 : [[users/RagoutBleu]]
 
 Links
-: [[nodes/BlauEintopf]], [[nodes/BlauEintopf-relais]], [[nodes/beastly]]
+: [[BlauEintopf]], [[BlauEintopf-relais]], [[beastly]]
 
 # Services
 
