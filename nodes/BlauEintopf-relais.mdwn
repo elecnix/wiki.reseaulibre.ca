@@ -50,6 +50,8 @@ Operator
 Links
 : [[nodes/BlauEintopf]], [[nodes/BlauEintopf-dorsale]]
 
+[[!img nodes/BlauEintopf/relais.eintopf.mesh.jpg alt="Installation de relais.eintopf.mesh"]]
+
 [[!meta copyright="Copyright © 2011 Blau Eintopf"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
