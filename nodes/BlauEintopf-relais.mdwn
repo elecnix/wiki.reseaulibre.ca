@@ -1,5 +1,7 @@
 [[!waypoint  lat="45.466301" lon="-73.623719" embed width="400px" height="400px" right desc="A relay node on my roof"]]
 
+[[!toc levels=3]]
+
 # Technical details
 
 [[!ymlfront data="""
@@ -48,9 +50,9 @@ Operator
 : [[users/RagoutBleu]]
 
 Links
-: [[nodes/BlauEintopf]], [[nodes/BlauEintopf-dorsale]]
+: [[BlauEintopf]], [[BlauEintopf-dorsale]]
 
-[[!img nodes/BlauEintopf/relais.eintopf.mesh.jpg alt="Installation de relais.eintopf.mesh"]]
+[[!img nodes/BlauEintopf/relais.eintopf.mesh.jpg size="1000x" alt="Installation de relais.eintopf.mesh"]]
 
 [[!meta copyright="Copyright © 2011 Blau Eintopf"]]
 
