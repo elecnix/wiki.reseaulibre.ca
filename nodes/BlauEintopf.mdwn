@@ -14,10 +14,19 @@ In the future the access point might provide internet access through Tor.
 IP: 172.16.0.30/32
 IPv6: fd64:2c08:9fa7:30::1/64
 VPN: 172.16.242.30
+VPNv6: Link-Local
+MAC: 02:CA:FF:EE:BE:EF
 """]]
 
 Hostname
 : router.eintopf.mesh eintopf.mesh
+
+Type
+: [[!taglink accesspoint]], [[!taglink server]]
+
+Status
+: [[!taglink up]]
+
 MAC
 : {{$MAC}}
 
@@ -31,7 +40,7 @@ VPN-IPv4
 : {{$VPN}}
 
 SSID
-: access.reseaulibre.ca
+: eintopf.access.reseaulibre.ca
 
 Software
 : OpenWRT
@@ -45,17 +54,11 @@ Power
 Location
 : [[RagoutBleu]]
 
-Status
-: [[!taglink up]]
-
 Links
 : [[BlauEintopf-relais]], [[BlauEintopf-dorsale]]
 
 Azimuth
 : 360°
-
-Panorama
-: N/A
 
 Operator
 : [[users/RagoutBleu]]
