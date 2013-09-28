@@ -291,3 +291,11 @@ Another option would be to add tap0, the openvpn interface, to the mesh
 itself, so that the BATMAN mesh would run on top of the VPN. This
 seems rather perilous, and i was not able to run either BATMAN or
 OpenVPN in bridge mode in FreeBSD.
+
+# IP Allocation
+
+
+<table>
+<tr><th>#</th><th>hostname</th><th>VPN</th><th>VPNv6</th></tr>
+[[!report pages="nodes/* and (field(VPN *) or field(VPNv6 *))" template="iptable" sort="field(VPN)"]]
+</table>
