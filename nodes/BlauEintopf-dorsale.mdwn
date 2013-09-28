@@ -2,8 +2,6 @@
 
 [[!toc levels=3]]
 
-# Technical details
-
 This installation is not currently part of the mesh but could be used to link people in NDG. It runs in the 5Ghz band
 
 # Technical details
