@@ -38,6 +38,8 @@ IPv4
 
 VPN-IPv4
 : {{$VPN}}
+VPN-IPv6
+: {{$VPNv6}}
 
 SSID
 : eintopf.access.reseaulibre.ca
