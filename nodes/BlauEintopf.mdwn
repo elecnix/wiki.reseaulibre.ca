@@ -1,6 +1,12 @@
-This is my mesh router and access point (2.4Ghz and 5.8Ghz, running in 192.168.120.0/24), it redistributes my mesh routes via babel and is connected to [[nodes/BlauEintopf-relais]]
+[[!toc levels=3]]
+
+# BlauEintopf
+
+This is my mesh router and access point (2.4Ghz and 5.8Ghz, running in 192.168.0.0/24), it redistributes my mesh routes via babel and is connected to [[nodes/BlauEintopf-relais]]
 
 In the future the access point might provide internet access through Tor.
+
+# Technical details
 
 [[!ymlfront data="""
 IP: 172.16.0.30/32
@@ -41,7 +47,7 @@ Status
 : [[!taglink up]]
 
 Links
-: [[nodes/BlauEintopf-relais]], [[nodes/BlauEintopf-dorsale]]
+: [[BlauEintopf-relais]], [[BlauEintopf-dorsale]]
 
 Azimuth
 : 360°
@@ -58,7 +64,7 @@ Operator
 
 # Relais
 
-[[!img relais.eintopf.mesh.jpg alt="Installation de relais.eintopf.mesh"]]
+[[!img relais.eintopf.mesh.jpg size="1000x" alt="Installation de relais.eintopf.mesh"]]
 
 [[!meta copyright="Copyright © 2011 Ragout Bleu"]]
 
