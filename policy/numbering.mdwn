@@ -52,6 +52,17 @@ This is the same table as in IPv6, but ordered by IPv4 address, to more easily f
 [[!report pages="nodes/* and (field(IP *) or field(IPv6 *))" template="iptable" sort="field(IPv6)"]]
 </table>
 
+## VPN
+
+These IPs are used "internally" for the [[inter-relay-node VPN|/documentation/vpn/]]. The 172.16.242.0/24 block is currently reserved for this purpose.
+
+It is not yet clear whether or not these IP should be redistributed by babel. It might be best to do so to allow masquerading.
+
+<table>
+<tr><th>#</th><th>hostname</th><th>VPN</th><th>VPNv6</th></tr>
+[[!report pages="nodes/* and (field(VPN *) or field(VPNv6 *))" template="iptable" sort="field(VPN)"]]
+</table>
+
 ## Other Networks in the World
 
 Documented here is our own policies, but we're not alone with this problem. See this [[list on the Open Networks Interoperability Wiki|http://interop.wlan-si.net/wiki/IPAddressing/List]] for IP ranges used by other community networks around the world.
