@@ -56,6 +56,10 @@ Operator
 
 [[!img eintopf.mesh.png alt="Topologie"]]
 
+# Relais
+
+[[!img relais.eintopf.mesh.jpg alt="Installation de relais.eintopf.mesh"]]
+
 [[!meta copyright="Copyright © 2011 Ragout Bleu"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
