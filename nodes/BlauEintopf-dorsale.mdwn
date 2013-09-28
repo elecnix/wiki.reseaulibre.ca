@@ -10,7 +10,10 @@ Hostname
 : dorsale.eintopf.mesh
 
 Type
-: point-to-point, test
+: [[!taglink backhaul]]
+
+Status
+: [[!taglink up]], [[!taglink test]]
 
 SSID
 : eintopf.dorsale.reseaulibre.ca
@@ -20,9 +23,6 @@ Hardware
 
 Location
 : [[users/RagoutBleu]]
-
-Status
-: [[!taglink up]]
 
 Operator
 : [[users/RagoutBleu]]
