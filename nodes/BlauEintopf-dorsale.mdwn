@@ -13,7 +13,7 @@ Type
 : [[!taglink backhaul]]
 
 Status
-: [[!taglink up]], [[!taglink test]]
+: [[!taglink up]]
 
 SSID
 : eintopf.dorsale.reseaulibre.ca
