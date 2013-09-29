@@ -71,7 +71,7 @@ Operator
 
 # Relais
 
-[[!img relais.eintopf.mesh.jpg size="1000x" alt="Installation de relais.eintopf.mesh"]]
+[[!img relais.eintopf.mesh.jpg size="900x" alt="Installation de relais.eintopf.mesh"]]
 
 [[!meta copyright="Copyright © 2011 Ragout Bleu"]]
 
