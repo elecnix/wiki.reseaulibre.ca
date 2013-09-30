@@ -136,50 +136,7 @@ config filter
  * Adresse IPv6 2001:470:b2a7:1:225:90ff:fe94/64 sur eth0.
  * VPN vers [[nodes/roadkiller]]
 
-Il y a un bug présentement dans la version principale de Quagga qui empêche d'avoir une redistribution des routes sur IPv4 et IPv6 en même temps sur la même interface, alors la configuration suivante ne considère que IPv6.
-
-[[!format txt """
-! Fichier /etc/quagga/zebra.conf
-interface eth0
-"""]]
-
-[[!format txt """
-! Fichier /etc/quagga/babeld.conf
-password XXXXX
-!
-access-list vty permit 127.0.0.0/8
-access-list vty deny any
-!
-line vty
- access-class vty
-!
-!debug babel common
-!debug babel filter
-log file /var/log/quagga/babeld.log
-!
-router babel
- network eth0
- network mesh
- redistribute connected
- redistribute kernel
- redistribute static
- distribute-list filter in eth0
- distribute-list local out eth0
- distribute-list filter in mesh
- distribute-list local out mesh
-!
-interface eth0
- babel wired
- babel split-horizon
-!
-interface mesh
- babel wired
-!
-ipv6 access-list filter deny ::/4
-ipv6 access-list filter permit any
-ipv6 access-list local permit 2001:470:b2a7:1::/64
-ipv6 access-list local deny any
-"""]]
+Ce serveur est un peu différent des autres machines sur le réseau mesh puisqu'il roule le logiciel de routage Quagga au lieu du code "standalone" babeld. Les instructions d'installation sont décrites à https://www.deuxpi.ca/wiki/Quagga-RE pour ce serveur.
 
 ### Configuration DNS
 
@@ -228,6 +185,10 @@ zone "16.172.in-addr.arpa" {
 };
 """]]
 
+### Serveur de jeux
+
+Le serveur gelato offre quelques jeux pour des fins de démonstration. Pour les essayer, connectez-vous via telnet à nethack.deuxpi.ca pour une partie de NetHack, ou utilisez l'adresse tetrinet.deuxpi.ca pour rejoindre un serveur Tetrinet.
+
 ### Autres services
 
 Un serveur de clés publiques PGP est disponible. Par exemple pour obtenir une clé de ce serveur (ici c'est la clé Monkeysphere du serveur), on peut lancer:
@@ -243,7 +204,7 @@ Pour obtenir la liste des noeuds connectés et leurs niveaux de signal respectif
 En cours de développement, une [interface curses](https://gitorious.org/babelcurse) pour suivre Babel. Les [paquets OpenWRT](http://www.deuxpi.ca/babelcurse/) sont aussi disponibles.
 
 
-[[!meta copyright="Copyright © 2012 Philippe Gauthier"]]
+[[!meta copyright="Copyright © 2012-2013 Philippe Gauthier"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
 id="license" text="Permission is granted to copy, distribute and/or modify this
