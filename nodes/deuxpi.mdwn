@@ -21,12 +21,13 @@ Sous les panneaux solaires, boulevard Lasalle, à Verdun
  * <s>Faire passer un câble Ethernet entre la Bullet sur le toit et la salle des machines.</s>
  * Monter la Bullet haut haut haut!
  * <s>Installer le nouveau serveur/routeur dans la salle des machines.</s>
-   * Il faut réorganiser les alimentations électrique (présentement toutes occupées par le monitoring).
-   * Il faut s'assurer qu'il y a moyen de raccorder autant le nouveau câble que le filage qui monte vers les appartements. Ces derniers ont été pensés pour être plus près des entrées de Bell et Vidéotron que des entrées électriques.
+   * <s>Il faut réorganiser les alimentations électrique (présentement toutes occupées par le monitoring).</s>
+   * <s>Il faut s'assurer qu'il y a moyen de raccorder autant le nouveau câble que le filage qui monte vers les appartements. Ces derniers ont été pensés pour être plus près des entrées de Bell et Vidéotron que des entrées électriques.</s>
  * <s>Tester Babel sur [Quagga](http://www.nongnu.org/quagga/) au lieu de babeld.</s>
  * Tester une configuration Batman/switch et Babel/routeur pour des grands sites qui pourraient profiter d'une topologie différente.
  * <s>Installer le point d'accès TP-Link déjà configuré.</s>
  * Assembler la station mobile solaire.
+ * Ajouter un relais 5 GHz.
 
 # Détails
 
