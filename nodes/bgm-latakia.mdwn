@@ -183,6 +183,11 @@ ou par UCI:
 
     uci set dhcp.@dnsmasq[0].address=/#/2607:f2c0:f00f:2901::69
 
+Rappel pour moi, en cas de problèmes:
+
+* s'assurer que radvd fonctionne bien sur latakia
+* s'assurer que damas ait une route pour 2607:f2c0:f00f:29a6::/64
+
 Puis sur mon serveur web, j'ai une configuration pour le vhost par IP:
 
 <pre>
