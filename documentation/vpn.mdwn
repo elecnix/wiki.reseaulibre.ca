@@ -394,8 +394,10 @@ OpenVPN in bridge mode in FreeBSD.
 
 # IP Allocation
 
-
+**This template does not work and needs fixing, sorry**
+~~
 <table>
 <tr><th>#</th><th>hostname</th><th>VPN</th><th>VPNv6</th></tr>
 [[!report pages="nodes/* and (field(VPN *) or field(VPNv6 *))" template="iptable" sort="field(VPN)"]]
 </table>
+~~
