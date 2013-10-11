@@ -260,6 +260,7 @@ References
  * [Tinc manual](http://www.tinc-vpn.org/documentation/tinc_toc)
  * [Example configuration](http://www.tinc-vpn.org/documentation/tinc_4.html#Example-configuration)
  * [Bridging example configuration](http://www.tinc-vpn.org/examples/bridging/) - note that we do not use bridges, as we rely on babel to do the magic, weird, but it seems to work
+ * [OpenWRT Wiki Tinc Reference](http://wiki.openwrt.org/doc/howto/vpn.tinc)
 
 OpenVPN: providing client access to the mesh
 ============================================
