@@ -3,13 +3,13 @@
 # Technical details
 
 [[!ymlfront data="""
-MAC: (mac address here)
-IP: (pick one from [[policy/numbering]])
+MAC: 00:15:6d:fc:be:90
+IP: 172.16.42.42
 IPv6: 
 """]]
 
 hostname
-: (node hostname here)
+: rayuela
 
 Type
 : relay (can also be accesspoint, test, server)
@@ -27,7 +27,7 @@ IP address
 : {{$IP}}
 
 Hardware
-: 
+: NanoStation M2 
 
 Location
 : window, 6th floor of nouveau colisee in Sherbrooke
