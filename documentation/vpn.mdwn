@@ -2,8 +2,6 @@ We are using different tools for different purposes. The simplest thing we can p
 
 We are therefore using [tinc][] for mesh interconnection, as it is completely decentralised (as opposed to OpenVPN, which uses a client/server architecture). We can't use IPsec as it doesn't pass babel's IPv6 broadcasts properly. We could also have used tinc for simple client access, and instructions on how to do this (and therefore replace the OpenVPN instructions are welcome here).
 
-To join the Tinc VPN interconnection you will require a [Dynamic DNS](http://en.wikipedia.org/wiki/Dynamic_DNS) or a static IP.
-
 [[!toc levels=2]]
 
 tinc: interconnect disjoint mesh networks
@@ -17,6 +15,8 @@ We recommend using [tinc][] to interconnect the mesh, for 2 reasons:
 
 tinc supports bridged mode like OpenVPN does, which allows
 us to send Babel broadcasts across the network.
+
+To join the Tinc VPN interconnection you will require a [Dynamic DNS](http://en.wikipedia.org/wiki/Dynamic_DNS) or a static IP.
 
 [tinc]: http://www.tinc-vpn.org/
 
