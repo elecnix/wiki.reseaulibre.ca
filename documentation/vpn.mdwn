@@ -2,6 +2,8 @@ We are using different tools for different purposes. The simplest thing we can p
 
 We are therefore using [tinc][] for mesh interconnection, as it is completely decentralised (as opposed to OpenVPN, which uses a client/server architecture). We can't use IPsec as it doesn't pass babel's IPv6 broadcasts properly. We could also have used tinc for simple client access, and instructions on how to do this (and therefore replace the OpenVPN instructions are welcome here).
 
+To join the Tinc VPN interconnection you will require a [Dynamic DNS](http://en.wikipedia.org/wiki/Dynamic_DNS) or a static IP.
+
 [[!toc levels=2]]
 
 tinc: interconnect disjoint mesh networks
@@ -262,6 +264,16 @@ References
  * [Bridging example configuration](http://www.tinc-vpn.org/examples/bridging/) - note that we do not use bridges, as we rely on babel to do the magic, weird, but it seems to work
  * [OpenWRT Wiki Tinc Reference](http://wiki.openwrt.org/doc/howto/vpn.tinc)
 
+IP Allocation
+----------
+
+**This template does not work and needs fixing, sorry**
+
+<table style="color: grey">
+<tr><th>#</th><th>hostname</th><th>VPN</th><th>VPNv6</th></tr>
+[[!report pages="nodes/* and (field(VPN *) or field(VPNv6 *))" template="iptable" sort="field(VPN)"]]
+</table>
+
 OpenVPN: providing client access to the mesh
 ============================================
 
@@ -392,13 +404,3 @@ Another option would be to add tap0, the openvpn interface, to the mesh
 itself, so that the BATMAN mesh would run on top of the VPN. This
 seems rather perilous, and i was not able to run either BATMAN or
 OpenVPN in bridge mode in FreeBSD.
-
-# IP Allocation
-
-**This template does not work and needs fixing, sorry**
-~~
-<table>
-<tr><th>#</th><th>hostname</th><th>VPN</th><th>VPNv6</th></tr>
-[[!report pages="nodes/* and (field(VPN *) or field(VPNv6 *))" template="iptable" sort="field(VPN)"]]
-</table>
-~~
