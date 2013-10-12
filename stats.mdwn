@@ -45,3 +45,11 @@ Ajoutez vos graphiques ici si vous en avez! Pour configurer [[documentation/muni
 <div class="reseaulibre-monitoring-graphs">
 <a href="http://www.bidon.ca/munin/net4.bidon.ca/tarator.net4.bidon.ca/adhoc_rssi.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/tarator.net4.bidon.ca/adhoc_rssi-week.png" /></a> <a href="http://www.bidon.ca/munin/net4.bidon.ca/tarator.net4.bidon.ca/wifi_cells_per_channel.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/tarator.net4.bidon.ca/wifi_cells_per_channel-week.png" /></a>
 </div>
+
+[[nodes/BlauEintopf-relaus]]
+-------------------------
+
+<div class="reseaulibre-monitoring-graphs">
+<img src="/nodes/BlauEintopf-relais/signal_levels-week.png" />
+<img src="/nodes/BlauEintopf-relais/wifi_cells_per_channel-week.png" />
+</div>
