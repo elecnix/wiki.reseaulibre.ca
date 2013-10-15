@@ -14,7 +14,7 @@ Hostname
 : relais.eintopf.mesh
 
 Type
-: [[!taglink relay]]
+: relay
 
 Status
 : [[!taglink up]]
