@@ -1,0 +1,49 @@
+[[!waypoint lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A node over the rainbow"]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: (mac address here)
+IP: (pick one from [[policy/numbering]])
+IPv6: 
+"""]]
+
+hostname
+: amman
+
+Type
+: dorsale
+
+SSID
+: amman.dorsale.reseaulibre.ca
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Hardware
+: Nanobridge M5
+
+Location
+: toit
+
+Status
+: [[!taglink up]]
+
+Operator
+: [[/users/bgm]]
+
+Links
+: [[beastly]]
+
+# Services
+
+n/a
+
+# Photos
+
