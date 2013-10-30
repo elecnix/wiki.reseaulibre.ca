@@ -1,10 +1,10 @@
-[[!waypoint lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A node over the rainbow"]]
+[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Nanobridge M5 sur un toit."]]
 
 # Technical details
 
 [[!ymlfront data="""
-MAC: (mac address here)
-IP: (pick one from [[policy/numbering]])
+MAC: DC:9F:DB:7E:3E:E0
+IP: 
 IPv6: 
 """]]
 
@@ -39,7 +39,7 @@ Operator
 : [[/users/bgm]]
 
 Links
-: [[beastly]]
+: [[beastly]], [[bgm-alep]]
 
 # Services
 
@@ -47,3 +47,4 @@ n/a
 
 # Photos
 
+[[!img IMG_0066_amman-small.jpg alt="Nanobridge M5"]]
