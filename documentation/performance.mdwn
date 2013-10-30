@@ -1,0 +1,24 @@
+This page documents performance methodology and testing that we have done on existing links.
+
+[[!toc]]
+
+# Methodology: iperf
+
+We run 3 tests to simulate various types of transfers. All tests assume that one end is running the iperf server:
+
+   iperf -s
+
+and the other end is running the iperf client "-c" mode (see examples below).
+
+1- TCP mode
+
+2- UDP mode (5 mbps)
+
+3- UDP mode (10 mbps)
+
+# Examples from other organisations using similar hardware
+
+The methodology was based on that of HWMN:
+
+* HWMN (Greece): [[http://wiki.hwmn.org/w/NanoBridge_M5_OpenWRT_Benchmarking]]
+ * [[English Google translation|http://translate.google.com/translate?hl=en&sl=el&tl=en&u=http%3A%2F%2Fwiki.hwmn.org%2Fw%2FNanoBridge_M5_OpenWRT_Benchmarking&sandbox=1]]
