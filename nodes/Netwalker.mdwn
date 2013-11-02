@@ -1,4 +1,4 @@
-[[!waypoint lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="Planned node"]]
+[[!waypoint lat="45.700698" lon="-73.480624" embed width="950px" height="400px" right desc="Planned node"]]
 
 # Technical details
 
@@ -9,10 +9,10 @@ IPv6:
 """]]
 
 hostname
-: (node hostname here)
+: node_netwalker
 
 Type
-: relay (can also be accesspoint, test, server)
+: relay 
 
 SSID
 : foo.relais.reseaulibre.ca (see [[policy/naming]])
@@ -30,10 +30,10 @@ Hardware
 : 
 
 Location
-: (where is this node physically installed?)
+:  Nowhere yet
 
 Status
-: [[!taglink prospect]] (can also be up, down, planned, unknown)
+: planned
 
 Operator
 : [[/users/alice]]
