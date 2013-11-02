@@ -33,7 +33,7 @@ Location
 :  Nowhere yet
 
 Status
-: planned
+: [[!taglink planned]]
 
 Operator
 : [[/users/alice]]
