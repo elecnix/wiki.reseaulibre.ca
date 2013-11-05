@@ -213,7 +213,7 @@ config interface 'lan'
         option gateway '172.16.0.1'
         option ipaddr '172.16.0.2'
         option ifname 'eth0'
-        option netmask '255.255.255.255'
+        option netmask '255.255.255.0'
 
 config interface 'wan'
         option ifname 'wlan0'
