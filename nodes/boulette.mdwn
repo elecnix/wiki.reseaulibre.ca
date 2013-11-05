@@ -37,6 +37,8 @@ Power
 Location
 : 10 feet up on a pole, on top of the third floor
 
+[<img src="http://photos.orangeseeds.org/cache/documentation-radio-boulette-new-install-20131104-1.jpg_800.jpg" alt="Cheminée" align="right" />](http://photos.orangeseeds.org/#!/documentation-radio-boulette/new-install-20131104-1.jpg)
+
 Azimuth
 : 360°
 
@@ -52,12 +54,12 @@ Operator
 Links
 : [[carton]], [[roadkiller]], [[Grace]], [[plastik]]
 
-[[!img nodes/boulette/20111101_004.jpg alt="Cheminée" align="right"]]
-
 Configuration
 =============
 
 This node runs babel according to the [[documentation/babel]] howto.
+
+Here is the [full backup of the configuration](uci-export.txt).
 
 Babel
 -----
