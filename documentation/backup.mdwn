@@ -1,0 +1,61 @@
+Backup and restore procedures
+=============================
+
+You should do backups, or expect everything to die and all your work be
+lost forever.
+
+Do backups. Please.
+
+Backup procedure
+----------------
+
+This will export your configuration and list of installed packages:
+
+    uci export > /tmp/hostname-export-uci.txt
+    opkg list-installed > /tmp/hostname-opkg-installed.txt
+
+You may also want to look around your `/etc` directory for modified
+files you may want to backup as well. In doubt, backup the whole
+directory:
+
+    tar cfz /tmp/etc.tgz /etc
+
+Especially consider backing up those files:
+
+    /etc/firewall.user
+    /etc/dropbear/authorized_keys
+
+Then transfer those files over to another computer:
+
+    scp /etc/etc.tgz foo.example.com:
+
+... or, if scp is failing for you, revert down to netcat:
+
+    nc foo.example.com 34393 < /tmp/etc.tgz
+
+... and on foo.example.com:
+
+    nc -l -s 34393 > etc.tgz
+
+Restore procedure
+-----------------
+
+Reinstall the OS (see [[flashing]]).
+
+Make a backup of the generated configuration:
+
+    uci export > /tmp/orig
+
+Then restore the configuration:
+
+    uci import < /tmp/hostname-export-uci.txt
+
+Update the restored configuration to make sure the MAC address on the
+wireless card is correct:
+
+    vi /etc/config/wireless
+
+Make sure to enable babeld on boot (only found a way through the web
+interface).
+
+Restore other files from the backup as necessary, reboot.
