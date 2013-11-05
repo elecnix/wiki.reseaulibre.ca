@@ -24,6 +24,8 @@ Especially consider backing up those files:
 
     /etc/firewall.user
     /etc/dropbear/authorized_keys
+    /etc/dropbear/dropbear_dss_host_key
+    /etc/dropbear/dropbear_rsa_host_key
 
 Then transfer those files over to another computer:
 
@@ -56,6 +58,6 @@ wireless card is correct:
     vi /etc/config/wireless
 
 Make sure to enable babeld on boot (only found a way through the web
-interface).
+interface, maybe there's a way through `/etc/rc.d`).
 
 Restore other files from the backup as necessary, reboot.
