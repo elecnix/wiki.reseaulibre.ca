@@ -2,7 +2,40 @@ package ahcpd
 
 config ahcpd
 
-uci: Parse error (invalid character in field) at line 17, byte 17
+package babeld
+
+config general
+	option local_server '33123'
+
+config filter
+	option ignore 'true'
+	option type 'redistribute'
+	option ip '0.0.0.0/0'
+	option le '0'
+	option proto '3'
+	option action 'metric 128'
+
+config interface 'wan'
+
+config interface 'lan'
+
+package babeld
+
+config general
+	option local_server '33123'
+
+config filter
+	option ignore 'true'
+	option type 'redistribute'
+	option ip '0.0.0.0/0'
+	option le '0'
+	option proto '3'
+	option action 'metric 128'
+
+config interface 'wan'
+
+config interface 'lan'
+
 package dhcp
 
 config dnsmasq
