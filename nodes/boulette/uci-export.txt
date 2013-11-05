@@ -19,23 +19,6 @@ config interface 'wan'
 
 config interface 'lan'
 
-package babeld
-
-config general
-	option local_server '33123'
-
-config filter
-	option ignore 'true'
-	option type 'redistribute'
-	option ip '0.0.0.0/0'
-	option le '0'
-	option proto '3'
-	option action 'metric 128'
-
-config interface 'wan'
-
-config interface 'lan'
-
 package dhcp
 
 config dnsmasq
@@ -213,7 +196,7 @@ config interface 'lan'
 	option gateway '172.16.0.1'
 	option ipaddr '172.16.0.2'
 	option ifname 'eth0'
-	option netmask '255.255.255.0'
+	option netmask '255.255.255.255'
 
 config interface 'wan'
 	option ifname 'wlan0'
