@@ -7,7 +7,7 @@
 # Technical details
 
 [[!ymlfront data="""
-MAC: 00:15:6d:da:d3:65
+MAC: dc:9f:db:00:13:56
 IP: 172.16.0.2/32
 IPv6: fd64:2c08:9fa7::2/64
 """]]
@@ -59,7 +59,9 @@ Configuration
 
 This node runs babel according to the [[documentation/babel]] howto.
 
-Here is the [full backup of the configuration](uci-export.txt).
+Here is the [full backup of the configuration](uci-export.txt). See also
+the [list of installed packages](opkg-installed.txt) and the firewall
+rules (empty), [[firewall.user]].
 
 Babel
 -----
@@ -142,7 +144,7 @@ Wifi
 
     wireless.radio0=wifi-device
     wireless.radio0.type=mac80211
-    wireless.radio0.macaddr=00:15:6d:da:d3:65
+    wireless.radio0.macaddr=dc:9f:db:00:13:56
     wireless.radio0.hwmode=11ng
     wireless.radio0.htmode=HT20
     wireless.radio0.ht_capab=SHORT-GI-40 TX-STBC RX-STBC1 DSSS_CCK-40

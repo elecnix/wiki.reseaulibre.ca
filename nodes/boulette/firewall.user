@@ -1,0 +1,30 @@
+#! /bin/sh
+
+extif=br-lan
+intif=wlan0
+
+# clear all tables
+iptables -X
+iptables -F
+iptables -t mangle -F
+iptables -t mangle -X
+iptables -t raw -F
+iptables -t raw -X
+iptables -t nat -F
+iptables -t nat -X
+# default to open
+iptables -P INPUT   ACCEPT
+iptables -P OUTPUT  ACCEPT
+iptables -P FORWARD ACCEPT
+
+# clear all tables
+ip6tables -X
+ip6tables -F
+ip6tables -t mangle -F
+ip6tables -t mangle -X
+ip6tables -t raw -F
+ip6tables -t raw -X
+# default to open
+ip6tables -P INPUT   ACCEPT
+ip6tables -P OUTPUT  ACCEPT
+ip6tables -P FORWARD ACCEPT
