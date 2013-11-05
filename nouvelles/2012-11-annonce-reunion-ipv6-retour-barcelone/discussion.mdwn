@@ -1,0 +1,22 @@
+Notes de la présentation du 13 novembre 2012
+============================================
+
+theorie vs pratique pour la performance: freebsd vise la parité dans
+FreeBSD 9.
+
+QUestions:
+
+ * pourquoi :: juste une fois? - parce que sinon c'est ambigu?
+ * les crochets pour les URIs, c'est recommandé ou obligatoire?
+   * si c'est juste une adresse, pas de crochets, sinon, crochets,
+     mais ça varie!
+
+et est-ce que ca sert pour l'espace? quand on va être rendus à mettre
+des routeurs dans l'espace? il paraît que mars a une IP..
+
+est-ce que IPsec est obligatoire pour les tunnels IPv6 mobile? (non)
+
+un firewall ipv6, ca ressemble a quoi? c'est comme IPv4, sans
+NAT. faut bloquer les paquets entrants!
+
+
