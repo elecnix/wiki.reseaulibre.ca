@@ -4,17 +4,73 @@ This page documents performance methodology and testing that we have done on exi
 
 # Methodology: iperf
 
-We run 3 tests to simulate various types of transfers. All tests assume that one end is running the iperf server:
+Methodology used is based on that of HWMN (see page footer). We run 3 tests to simulate various types of transfers. All tests assume that one end is running the iperf server.
 
-   iperf -s
+In TCP mode:
 
-and the other end is running the iperf client "-c" mode (see examples below).
+    iperf -s
+
+In UDP mode:
+
+    iperf -u -s
+
+If using IPv6, add the "-V" option.
+
+The other end runs the iperf client "-c" mode (see examples below).
 
 1- TCP mode
 
+    iperf -c 10.176.7.2
+
+The output will look like this:
+
+    -------------------------------------------------- ---------
+    client connecting to 10.176.7.2, TCP port 5001
+    TCP window size: 16.0 KByte (default)
+    -------------------------------------------------- ----------
+    [6] local 10.176.7.71 port 39579 connected with 10.176.7.2 port 5001
+    [ID] Interval Transfer Bandwidth
+    [6] 0.0-10.0 sec 26.3 MBytes **22.1 Mbits / sec**
+
+In that test, the speed result was 22.1 mbps.
+
 2- UDP mode (5 mbps)
 
+    iperf -c 10.176.7.2 -u -b 5m -r
+
+Result:
+
+    [...]
+    [7] Server Report:
+    [ID] Interval Transfer Bandwidth Jitter Lost / Total Datagrams
+    [7] 0.0-10.0 sec 5.96 MBytes 5.00 Mbits / sec **0.277 ms** 0/4251 (0%)
+    [6] local 10.176.7.71 port 5001 connected with 10.176.7.2 port 55848
+    [ID] Interval Transfer Bandwidth Jitter Lost / Total Datagrams
+    [6] 0.0-10.0 sec 5.96 MBytes 5.00 Mbits / sec **0.045 ms** 0/4252 (0%) 
+
 3- UDP mode (10 mbps)
+
+    iperf -c 10.176.7.2 -u -b 10m -r
+
+Result:
+
+    [...]
+    [7] Server Report:
+    [ID] Interval Transfer Bandwidth Jitter Lost / Total Datagrams
+    [7] 0.0-10.0 sec 11.9 MBytes 9.97 Mbits / sec **0.191 ms** 0/8477 (0%)
+    [6] local 10.176.7.71 port 5001 connected with 10.176.7.2 port 50092
+    [ID] Interval Transfer Bandwidth Jitter Lost / Total Datagrams
+    [6] 0.0-10.0 sec 11.9 MBytes 10.0 Mbits / sec **0.358 ms** 0/8501 (0%)
+    [6] 0.0-10.0 sec 1 datagrams received out-of-order
+
+# Verdun: bullet m2 15dbi openwrt-AA latakia<->tarator (~100 meters distance, line of sight = TCP 20mbps)
+
+TCP 2013-10-30:
+
+<pre>
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-10.1 sec  24.0 MBytes  19.9 Mbits/sec
+</pre>
 
 # Examples from other organisations using similar hardware
 
@@ -22,3 +78,5 @@ The methodology was based on that of HWMN:
 
 * HWMN (Greece): [[http://wiki.hwmn.org/w/NanoBridge_M5_OpenWRT_Benchmarking]]
  * [[English Google translation|http://translate.google.com/translate?hl=en&sl=el&tl=en&u=http%3A%2F%2Fwiki.hwmn.org%2Fw%2FNanoBridge_M5_OpenWRT_Benchmarking&sandbox=1]]
+
+See also <https://wiki.koumbit.net/DiagnosticsR%C3%A9seau#D.2BAOk-bit>
