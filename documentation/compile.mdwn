@@ -60,7 +60,7 @@ Resulting packages are in ~/path/to/reseau-libre-openwrt/openwrt/bin/ar71xx/pack
 
 # Create an image using "image builder" (experimental)
 
-Main documentation: http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
+Main documentation: [[http://wiki.openwrt.org/doc/howto/obtain.firmware.generate]]
 
 * Pros: avoids the long build time of openwrt from source, useful for building against an architecture not provided by reseaulibre
 * Cons: if you want to build a specific package (ex: reseaulibre-base, reseaulibre-mesh), you will still need to compile most of OpenWRT anyway, because it will build all the dependancies (although maybe we can reduce the dependancies?).
