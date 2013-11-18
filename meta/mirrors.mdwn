@@ -1,0 +1,14 @@
+Miroir principal
+: <http://wiki.reseaulibre.ca/>
+: `git clone git://wiki.reseaulibre.ca/`
+: disponible sur le mesh, hébergé sur une connexion DSL (donc débit réduit)
+
+Miroir deuxpi
+: <https://reseaulibre.deuxpi.ca/>
+: `git clone https://reseaulibre.deuxpi.ca/repository.git/`
+: hébergé sur le "cloud", donc plus rapide
+
+Miroir Koumbit
+: pas de rendu web
+: `git clone git://git.koumbit.net/reseaulibre.git`
+: hébergé sur une connexion gigabit à Montréal, donc plus rapide
