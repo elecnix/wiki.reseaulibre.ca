@@ -4,19 +4,20 @@ Here's a list of suggested MAC address to hostname translations for
 BATMAN. This can be added directly to your `/etc/ethers` to
 facilitate reading `batctl` output.
 
+<pre>
 [[!report pages="nodes/* and (field(MAC *))" template="bathosts" sort="field(MAC)"]]
-    00:13:10:1b:6d:dd linksys-pierre
-    00:15:6d:5a:f7:27 batman-94
-    00:15:6d:81:e0:5b batman-92
-    00:15:6d:fc:be:90 batman-93
-    00:1C:10:22:02:AE carton
-    00:25:9c:5e:44:59 linksys-grace
-    00:b0:c0:02:39:5c elecnix-sl7205
-    e8:9a:8f:6e:0f:60 angela-eth0
-    00:15:6d:db:d3:65 boulette-eth
-    dc:9f:db:01:12:d3 lacou-eth0
-    00:b0:c0:02:1a:9f bococom-lacou
-    dc:9f:db:01:11:dc rogatien-eth
-    00:15:6d:f9:5c:9b clarence-eth
-    00:27:22:2f:bd:3d theodore-eth
-    
+00:13:10:1b:6d:dd linksys-pierre
+00:15:6d:5a:f7:27 batman-94
+00:15:6d:81:e0:5b batman-92
+00:15:6d:fc:be:90 batman-93
+00:1C:10:22:02:AE carton
+00:25:9c:5e:44:59 linksys-grace
+00:b0:c0:02:39:5c elecnix-sl7205
+e8:9a:8f:6e:0f:60 angela-eth0
+00:15:6d:db:d3:65 boulette-eth
+dc:9f:db:01:12:d3 lacou-eth0
+00:b0:c0:02:1a:9f bococom-lacou
+dc:9f:db:01:11:dc rogatien-eth
+00:15:6d:f9:5c:9b clarence-eth
+00:27:22:2f:bd:3d theodore-eth
+</pre>
