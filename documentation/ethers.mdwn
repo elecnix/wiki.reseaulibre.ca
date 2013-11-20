@@ -1,22 +1,20 @@
-You may have noticed that `batctl tcpdump` and other commands display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our `ethers` file to let batman display nice, user-friendly names (such as [[nodes/boulette]], our very first Ubiquiti "Bullet").
+You may have noticed that some commands, such as babelstatus, display MAC addresses, and tried to match these adresses to your network interfaces. Do no more! You can use our `ethers` file to let these tools display nice, user-friendly names that will make it easier to lookup the corresponding entry in the [[nodes]] database.
 
-Here's a list of suggested MAC address to hostname translations for
-BATMAN. This can be added directly to your `/etc/ethers` to
-facilitate reading `batctl` output.
+Here's a list of suggested MAC address to hostname translations. This can be added directly to your `/etc/ethers`. It is generated automatically from the MAC address located in the node details page of a node.
 
+<pre>
 [[!report pages="nodes/* and (field(MAC *))" template="bathosts" sort="field(MAC)"]]
-    00:13:10:1b:6d:dd linksys-pierre
-    00:15:6d:5a:f7:27 batman-94
-    00:15:6d:81:e0:5b batman-92
-    00:15:6d:fc:be:90 batman-93
-    00:1C:10:22:02:AE carton
-    00:25:9c:5e:44:59 linksys-grace
-    00:b0:c0:02:39:5c elecnix-sl7205
-    e8:9a:8f:6e:0f:60 angela-eth0
-    00:15:6d:db:d3:65 boulette-eth
-    dc:9f:db:01:12:d3 lacou-eth0
-    00:b0:c0:02:1a:9f bococom-lacou
-    dc:9f:db:01:11:dc rogatien-eth
-    00:15:6d:f9:5c:9b clarence-eth
-    00:27:22:2f:bd:3d theodore-eth
-    
+00:13:10:1b:6d:dd linksys-pierre
+00:1C:10:22:02:AE carton
+00:25:9c:5e:44:59 linksys-grace
+00:b0:c0:02:39:5c elecnix-sl7205
+e8:9a:8f:6e:0f:60 angela-eth0
+00:15:6d:db:d3:65 boulette-eth
+dc:9f:db:01:12:d3 lacou-eth0
+00:b0:c0:02:1a:9f bococom-lacou
+dc:9f:db:01:11:dc rogatien-eth
+00:15:6d:f9:5c:9b clarence-eth
+00:27:22:2f:bd:3d theodore-eth
+</pre>
+
+PS: note that some old nodes are still hardcoded here. Please add your MAC address to your [[node|nodes]] page in this wiki.
