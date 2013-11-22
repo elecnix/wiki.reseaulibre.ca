@@ -81,6 +81,8 @@ The resulting firmware can be found in, for example:
     ~/openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin
     ~/openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin
 
+For the full instructions on how it is built on our build machines: [[documentation/compile/rlbuild]]
+
 # Reseau libre package information 
 
 The reseaulibre-feed repository is available with the following git command:
