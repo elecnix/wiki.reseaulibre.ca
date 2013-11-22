@@ -7,7 +7,7 @@ Routeur Bullet M2 sur le toit, avec point d'accès (actuellement hors-service) a
 [[!ymlfront data="""
 MAC: DC:9F:DB:00:12:D3
 IP: 172.16.0.19
-IPv6: 
+IPv6: fd64:2c08:9fa7:19::2/64
 """]]
 
 hostname
@@ -52,6 +52,15 @@ Links
 [[!img 2012-08-20-lacou.jpg size=950x]]
 Panorama en haute qualité: http://www.flickr.com/photos/elecnix/7828916420
 
+# operations
+
+## 2013-11-21
+
+ 1. reset avec sysupgrade vers 12.09
+ 2. reset du mot de passe
+ 3. modifie l'ip pour 172.16.0.19 sur le lan
+ 4. ipv6 fd64:2c08:9fa7:19::2/64
+ 5. installed babeld
 
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
