@@ -47,6 +47,7 @@ On peut ensuite télécharger et placer le script suivant dans le répertoire /e
     cd /etc/munin/plugins
     wget http://wiki.reseaulibre.ca/documentation/munin/adhoc_rssi
     chmod +x adhoc_rssi
+    opkg install wireless-tools
     wget http://redmine.bidon.ca/projects/reseaulibre-scripts/repository/revisions/master/raw/wifi_cells_per_channel
     chmod +x wifi_cells_per_channel
 
