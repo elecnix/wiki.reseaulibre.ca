@@ -1,8 +1,7 @@
-# Idées pour l'utilisation du réseau MESH
+Idées pour l'utilisation du réseau MESH
+=======================================
 
-Utilisez cette page pour documenter les utilisations potentielles. Le but de cette page est de répondre à la question "qu'est-ce que je vais pouvoir faire avec le réseau MESH?".
-
-Use this page to document potential utilizations. The goal is to answer "what will I be able to do with the MESH?".
+Utilisez cette page pour documenter les utilisations potentielles. Le but de cette page est de répondre à la question "*qu'est-ce que je vais pouvoir faire avec réseau libre?*".
 
 * Accéder à son ordinateur à la maison sans être limité par la vitesse de téléchargement d'une connexion par DSL ou câble.
 * Partager des fichiers sur nos intérêts envers les films et la musique de façon anonyme
