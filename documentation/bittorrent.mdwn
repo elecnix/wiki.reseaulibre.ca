@@ -34,8 +34,8 @@ tracker, a web mirror is enough to seed the files. More specifically, we
 are using the [Getright](http://www.getright.com/seedtorrent.html)
 protocol.
 
-Note that as Transmission
-[doesn't support it yet](https://trac.transmissionbt.com/ticket/4645),
+Note that as [Transmission](http://transmissionbt.com)
+[can't create those torrents yet](https://trac.transmissionbt.com/ticket/4645),
 and the [bittornado client](http://bittornado.com/) has its own
 different protocol which is also used by
 [Deluge](http://deluge-torrent.org) and others, so you need to be careful when choosing "web seeds", they are not all compatible with each other.
