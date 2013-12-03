@@ -1,4 +1,4 @@
-[[!waypoint lat="45.484853" lon="-73.563101" embed hidden width="950px" height="400px" right desc="Dorsale/Backbone"]]
+[[!waypoint lat="45.484999" lon="-73.565101" embed hidden width="950px" height="400px" right desc="Dorsale/Backbone"]]
 
 # Technical details
 
