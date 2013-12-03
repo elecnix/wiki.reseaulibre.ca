@@ -12,7 +12,7 @@ hostname
 : (node hostname here)
 
 Type
-: relay (can also be accesspoint, test, server)
+: dorsale
 
 SSID
 : nrdlc.dorsale.reseaulibre.ca
@@ -33,7 +33,7 @@ Location
 : (where is this node physically installed?)
 
 Status
-: [[!taglink prospect]] (can also be up, down, planned, unknown)
+: [[!taglink planned]]
 
 Operator
 : Eric
