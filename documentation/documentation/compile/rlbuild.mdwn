@@ -1,0 +1,26 @@
+Réseau libre has a jenkins service that builds new images when changes are made to the [[code|https://gitorious.org/reseau-libre-openwrt/reseaulibre-feed/]].
+
+### Build script
+
+For reference, here is the build script, based on [[compile]]:
+
+<pre>
+mkdir -p ~/openwrt
+cd ~/openwrt
+
+# Get the R-L custom scripts
+git clone https://git.gitorious.org/reseau-libre-openwrt/reseaulibre-feed.git
+
+# Update the list of ethers from the wiki
+wget -O - http://wiki.reseaulibre.ca/documentation/ethers/ | grep -E [0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2} > reseaulibre-feed/reseaulibre-mesh/files/etc/ethers
+
+# wget http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
+wget --continue --quiet https://forum.bidon.ca/nav/reseaulibre-openwrt/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
+tar -jxf OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
+cd OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486
+
+make image PROFILE=Default PACKAGES="kmod-ipv6 ip radvd tcpdump ip6tables iperf babeld tinc wireless-tools luci luci-theme-bootstrap" FILES="../reseaulibre-feed/reseaulibre-mesh/files/"
+
+# /mnt is a read-write NFS mount to the web server (it's on the same network).
+rsync --partial -r ~/openwrt/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486/bin/ar71xx /mnt/
+</pre>
