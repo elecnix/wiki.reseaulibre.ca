@@ -7,9 +7,9 @@ Le réseau se construit de façon organique et évolutive à mesure que de nouve
 Le projet vous intéresse?
 
 <ul class="reseaulibre-list-actions">
-<li class="reseaulibre-list-actions-participate"><a class="reseaulibre-link-action" href="/participer">Participer</a> - pour s'abonner à nos listes de discussions et discuter de votre projet;</li>
-<li class="reseaulibre-list-actions-documentation"><a class="reseaulibre-link-action" href="/documentation">Documentation</a> - documentation technique et politiques de fonctionnement;</li>
-<li class="reseaulibre-list-actions-faq"><a class="reseaulibre-link-action" href="/FAQ">Foire aux questions</a> - réponses à des questions fréquemment posées.</li>
+<li class="reseaulibre-list-actions-participate"><a class="reseaulibre-link-action" href="/participer">Participer</a></li>
+<li class="reseaulibre-list-actions-documentation"><a class="reseaulibre-link-action" href="/documentation">Documentation</a></li>
+<li class="reseaulibre-list-actions-faq"><a class="reseaulibre-link-action" href="/FAQ">Foire aux questions</a></li>
 </ul>
 
 Le réseau s'organise depuis le début de 2012. Nous avons [[!pagecount pages="nodes/* and !*/*/* and !*/discussion and tagged(up)"]] [[relais en opération|nodes]].
