@@ -39,12 +39,17 @@ Operator
 : [[/users/bgm]]
 
 Links
-: [[beastly]], [[bgm-alep]]
+: [[ndg-nanobridge]], [[bgm-alep]]
 
 # Services
 
-n/a
+Connexion dorsale entre les arrondissements Verdun et NDG.
 
 # Photos
 
 [[!img IMG_0066_amman-small.jpg alt="Nanobridge M5"]]
+
+# Autres détails techniques
+
+* Pour l'instant le routeur fonctionne avec AirOS et AirMAX (TDMA)
+* La prochaine étape est de tester sans AirMax, et si les résultats sont bons, installer OpenWRT+babeld directement. Sinon, voir si, en mode bridge, on peut faire passer les packets de babeld de façon transparente, sans avoir à installer babeld sur AirOS comme tel (propriétaire, beurk).
