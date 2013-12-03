@@ -382,6 +382,7 @@ ul.reseaulibre-list-actions {
 
 ul.reseaulibre-list-actions li a.reseaulibre-link-action {
   display: block;
+  width: 300px;
   padding-left: 70px;
   padding-top: 10px;
   height: 70px;
