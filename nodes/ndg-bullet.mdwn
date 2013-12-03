@@ -1,0 +1,39 @@
+[[!waypoint  lat="45.472525" lon="-73.62572" embed hidden width="950px" height="400px" right desc="A local relay"]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: (mac address here)
+IP: (pick one from [[policy/numbering]])
+IPv6: 
+"""]]
+
+hostname
+: ndg-bullet
+
+Type
+: relay
+
+SSID
+: ndg-bullet.relais.reseaulibre.ca
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Hardware
+: Ubiquity Bullet (5.8 gHz)
+
+Status
+: [[!taglink up]]
+
+Operator
+: Eric
+
+Links
+: [[ndg-nanobridge]], [[beastly]], [[BlauEintopf-dorsale]]
