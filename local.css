@@ -374,3 +374,28 @@ select[multiple="multiple"]:focus {
   box-shadow: 0 0 5px rgb(170, 204, 238);
 }
 
+/* Icons on front page (Participate, Documentation, ..) */
+ul.reseaulibre-list-actions {
+  list-style: none;
+  padding: 0;
+}
+
+ul.reseaulibre-list-actions li a.reseaulibre-link-action {
+  display: block;
+  padding-left: 70px;
+  padding-top: 10px;
+  height: 70px;
+  font-size: 32px;
+}
+
+ul.reseaulibre-list-actions .reseaulibre-list-actions-participate a.reseaulibre-link-action {
+  background: url("/img/speech_bubble-64px.png") no-repeat scroll 0% 0% transparent;
+}
+
+ul.reseaulibre-list-actions .reseaulibre-list-actions-documentation a.reseaulibre-link-action {
+  background: url("/img/settings2-64px.png") no-repeat scroll 0% 0% transparent;
+}
+
+ul.reseaulibre-list-actions .reseaulibre-list-actions-faq a.reseaulibre-link-action {
+  background: url("/img/help-64px.png") no-repeat scroll 0% 0% transparent;
+}
