@@ -1,0 +1,43 @@
+[[!waypoint  lat="45.472525" lon="-73.62572" embed hidden width="400px" height="400px" right desc="A node on my roof"]]
+
+# Technical details
+
+[[!ymlfront data="""
+MAC: 
+IP: 
+IPv6: 
+"""]]
+
+hostname
+: ndg-nanobridge
+
+Type
+: dorsale
+
+SSID
+: ndg-nanobridge.relais.reseaulibre.ca
+
+MAC address
+: {{$MAC}}
+
+IPv6 address
+: {{$IPv6}}
+
+IP address
+: {{$IP}}
+
+Hardware
+: Ubiquity Nanobridge M5 5.8 gHz
+
+Location
+: 
+
+Status
+: [[!taglink up]]
+
+Operator
+: Eric
+
+Links
+: [[amman]]
+
