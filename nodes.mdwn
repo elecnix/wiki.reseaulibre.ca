@@ -1,5 +1,7 @@
 [[!toc levels=2]]
 
+Un "node" (noeud) est le terme générique pour désigner un relais ou point d'accès (voir [[topology|policy/topology/]]).
+
 Comment créer un node
 =====================
 
