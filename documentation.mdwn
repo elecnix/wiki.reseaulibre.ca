@@ -1,5 +1,7 @@
 # Qu'est-ce que c'est? / What is it?
 
+<div class="reseaulibre-node-photo-right"><img src="/img/settings2-64px.png" alt="" /></div>
+
 * [[Vidéos|videos]] - introduction vidéos
 * [[Présentations|presentations]] - les présentations du projet ou des concepts reliés au projets, les "powerpoints" sont ici!
 * [[Foire aux questions|faq]]
