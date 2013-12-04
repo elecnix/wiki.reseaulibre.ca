@@ -6,6 +6,7 @@ subgraph mesh {
     "relai A" -- "relai B";
     "relai B" -- "relai C" [len=2]; /* push those appart otherwise they collapse */
     "relai C" -- "relai A"; "relai C" -- "relai D"; "relai D" -- "relai B";
+    "relai E" -- "relai C";
 }
 subgraph AP {
     node [color="#887733"];
