@@ -40,16 +40,15 @@ Différentes politiques...
 
 Les relais doivent suivre la politique suivante:
 
- * configuration mesh ([[documentation/batman]] ou
-   [[documentation/olsrd]], selon le voisinage)
+ * configuration mesh ([[documentation/babel]]
  * assignation IP statique, selon [[numbering]]
  * pas de serveur DHCP sur le mesh
  * enregistrement sur le wiki, dans la section [[nodes]]
  * respect de la [[policy]] générale
 
 Les APs, en plus de la politique ci-haut, peuvent offrir des services
-supplémentaires à leur clients (mais pas au mesh!!):
+supplémentaires à leur clients:
 
- * serveur DHCP *local*
+ * serveur DHCP *local au AP*
  * allocation d'un bloc d'IPv6 du mesh pour le réseau local, donc globalement routable dans le mesh, sinon:
  * utilisation d'un bloc privé [[!rfc 1918]] pour le IPv4 local (suggestion: `192.168.3.x/24`), donc non globalement routable dans le mesh, donc NAT
