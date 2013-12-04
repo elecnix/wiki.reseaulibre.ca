@@ -22,17 +22,14 @@ bgcolor="#EEEEEE";
 """]]
 </div>
 
-Idée de politique à deux niveaux
-================================
+Idée de politique à trois niveaux
+=================================
 
-Une idée est d'avoir le réseau en deux niveaux: un niveau "global" où on
-a des "relais" interconnectés par BATMAN ou autre, mais qui est
-globalement routable et accessible seulement aux nodes documentés dans
-le wiki, et un autre niveau de nodes (les "AP"s) qui donnent accès internet général à n'importe qui qui a un ordinateur, sans configuration spéciale.
+Une idée est d'avoir le réseau en trois niveaux: les dorsales (backbone) ou VPN pour les longues distances entre les arrondissements, les relais pour les connexions dans le voisinage, et des points d'accès (AP) pour permettre une connexion au réseau par le public sans configuration spéciale.
 
-On voit, ci-contre, un exemple d'un mesh simple avec des relais qui roulent le mesh (BATMAN, par exemple), des APs qui sont connectés au relais (pas nécessairement en mesh) et des clients connectés aux APs, nécessairement sans mesh.
+On voit, ci-contre, un exemple d'un mesh simple avec des relais, des APs qui sont connectés au relais et des clients connectés aux APs.
 
-On note que les nodes nommés `relai` sont toutes (ou presque)
+On note que les nodes nommés `relais` sont toutes (ou presque)
 interconnectées, alors que les `AP` sont connectés seulement à un relai. 
 
 Dans l'exemple ci-contre, on pourrait dire que [[nodes/boulette]] serait comme `relaiA`, [[nodes/carton]] serait  `APh` et [[nodes/grace]] serait `relaiB`, en date du 17 mai 2012.
