@@ -1,3 +1,5 @@
+<div class="reseaulibre-node-photo-right"><img src="/img/help-64px.png" alt="" /></div>
+
 [[!toc levels=2]]
 
 # Questions générales
