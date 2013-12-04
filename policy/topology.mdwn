@@ -40,7 +40,7 @@ Différentes politiques...
 
 Les relais doivent suivre la politique suivante:
 
- * configuration mesh ([[documentation/babel]]
+ * configuration mesh ([[documentation/babel]])
  * assignation IP statique, selon [[numbering]]
  * pas de serveur DHCP sur le mesh
  * enregistrement sur le wiki, dans la section [[nodes]]
