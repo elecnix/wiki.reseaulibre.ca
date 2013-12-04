@@ -1,3 +1,5 @@
+<div class="reseaulibre-node-photo-right"><img src="/img/message-64px.png" alt="" /></div>
+
 Réseau Libre est ouvert et décentralisé, sans organisme officiel le
 représentant. Mais nous avons tout de même un petit comité de
 communication qui s'occuppe de faire de l'information auprès du
