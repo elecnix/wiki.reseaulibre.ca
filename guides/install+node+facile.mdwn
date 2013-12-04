@@ -177,3 +177,13 @@ Your device should now be part of the mesh.  Once rebooted, its mesh interfaces 
 
 Read the guide on [[Securing your device|securing+device]] to know how to setup the firewall, protect the web gui and ssh console, etc.
 
+# Physical installation checklist
+
+## Planning a new rooftop installation
+
+0. Do you have pictures of the precise installation location?
+0. Do you have clearance from the building owner?
+0. Have you figured where the network cable will run?
+0. Did you test the mesh software on the router?
+0. Do you have the hardware to mount the antenna? (TODO: make list; elecnix has one)
+0. Will you have sun or light for 3 hours?
