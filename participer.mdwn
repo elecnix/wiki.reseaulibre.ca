@@ -1,3 +1,5 @@
+<div class="reseaulibre-node-photo-right"><img src="/img/speech_bubble-64px.png" alt="" /></div>
+
 Réseau Libre est un réseau ouvert.  Tout le monde peut s'impliquer et plus il y aura de monde dans le réseau, plus ça deviendra intéressant.  
 
 * D'abord prendre connaissance de la [[foire aux questions|FAQ]].
