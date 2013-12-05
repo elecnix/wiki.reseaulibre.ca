@@ -1,4 +1,4 @@
-[[!waypoint lat="45.5" lon="-73.666667" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
+[[!waypoint lat="45.473449" lon="-73.588704" embed hidden width="950px" height="400px" right desc="A node on my roof"]]
 
 # Technical details
 
@@ -30,7 +30,7 @@ Hardware
 : 
 
 Location
-: 45.473449,-73.588704
+: toit
 
 Status
 : [[!taglink prospect]] (can also be up, down, planned, unknown)
