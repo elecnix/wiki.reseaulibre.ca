@@ -47,7 +47,7 @@ Panorama
 
 # mettre à jour anarc.at/services quand on change ici
 Status
-: [[!taglink down]]
+: [[!taglink up]]
 
 Operator
 : [[users/anarcat]]
