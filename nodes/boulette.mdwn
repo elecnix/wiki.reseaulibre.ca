@@ -45,8 +45,9 @@ Azimuth
 Panorama
 : N/A
 
+# mettre à jour anarc.at/services quand on change ici
 Status
-: [[!taglink up]]
+: [[!taglink down]]
 
 Operator
 : [[users/anarcat]]
