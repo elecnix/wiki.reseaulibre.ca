@@ -39,7 +39,7 @@ Operator
 : [[/users/bgm]]
 
 Links
-: [[ndg-nanobridge]], [[bgm-alep]]
+: [[ndg-nanobridge-dorsale]], [[bgm-alep]]
 
 # Services
 
