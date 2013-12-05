@@ -2,7 +2,44 @@ Une chose qui semble nous manquer est un logo. On a un "color scheme" (brun et b
 
 On pourrait faire un concours ou simplement payer quelqu'un pour faire un logo?
 
+Lors des discussions précédentes sur le logo sur la liste de discussion, on a proposé de voir ce qu'on veut représenter par le logo, déterminer une identité par une liste priorisée...
+
+Idées à représenter
+===================
+
+ * diversité
+ * liberté
+ * "mesh"
+ * indépendant
+ * décentralisé
+ * local
+ * non-commercial
+ * contre la censure
+ * services d'urgence
+ * citoyenneté
+ * participatif
+ * ... ajoutez votre idée ici
+
 Suggestions de logos
 ====================
 
 ... ajouter un lien vers votre suggestion ici!
+
+* http://reseaulibre.deuxpi.ca/reseaulibre-doodle.png (+ .svg)
+
+Exemples de logos intéressants
+==============================
+
+* Meraki: [[http://www.flickr.com/photos/sykes/2181593173/]]
+
+* [[http://pictures.inspirationfeed.netdna-cdn.com/wp-content/uploads/2010/06/Mesh.png]]
+
+* [[http://www.vectorstock.com/royalty-free-vectors?order=trending&vector=50681]]
+
+* [[http://www.thelogomix.com/]]
+
+* [[http://www.behance.net]]
+
+Trucs tangentes:
+
+* [[http://www.judegomila.com/2012/10/how-to-name-your-company.html]]
