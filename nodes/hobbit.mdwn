@@ -9,7 +9,7 @@ IPv6:
 """]]
 
 hostname
-: (node hostname here)
+: hobbit
 
 Type
 : relay (can also be accesspoint, test, server)
@@ -30,7 +30,7 @@ Hardware
 : 
 
 Location
-: (where is this node physically installed?)
+: 45.473449,-73.588704
 
 Status
 : [[!taglink prospect]] (can also be up, down, planned, unknown)
