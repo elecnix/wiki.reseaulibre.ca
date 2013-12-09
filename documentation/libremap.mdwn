@@ -44,7 +44,7 @@ NB: as of 2013-12, Debian unstable had CouchDB 1.4, although CouchDB 2.x now exi
 After compilation, you probably want to install it somewhere outside a user directory, ex:
 
 <pre>
-cp -r ebin /usr/local/lib/couchdb-geocouch
+sudo cp -r ebin /usr/local/lib/couchdb-geocouch
 </pre>
 
 And tell erlang ("man erl") to add that to the "code path". In Debian, this can be done in the /etc/default/couchdb file:
@@ -52,3 +52,14 @@ And tell erlang ("man erl") to add that to the "code path". In Debian, this can 
 <pre>
 ERL_FLAGS="-pa /usr/local/lib/couchdb-geocouch"
 </pre>
+
+Restart couchdb to make sure everything is OK:
+
+<pre>
+sudo service couchdb restart
+</pre>
+
+References:
+
+* [[https://github.com/couchbase/geocouch/]]
+* [[http://wiki.openstreetmap.org/wiki/OSMCouch#CouchDB_and_GeoCouch]]
