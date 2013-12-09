@@ -28,5 +28,5 @@ Si un point de contact cause problème, Réseau libre se garde le droit de suppr
 
 [[!table  data="""
 Arrondissement/Ville | Nom | Contact
-Verdun | Mathieu L. | mathieu@bidon.ca
+Verdun | Mathieu Lu. | mathieu@bidon.ca
 """]]
