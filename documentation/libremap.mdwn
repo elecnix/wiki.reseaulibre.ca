@@ -1,6 +1,6 @@
 "LibreMap is a scalable, global and decentralized router database and map visualization for community networks, such as guifi, Altermundi, FunkFeuer, ninux, freifunk, Commotion... It emerged around the is4cwn by merging the maps of AlterMap (Altermundi) and OpenWiFiMap (freifunk)."
 
-* [[https://github.com/libre-mesh/libremap]]
+* [[https://github.com/libremap/]] ("libremap-api" does the backend stuff, "libremap-webui" does the front end)
 * [[http://libremap.net/]]
 * [[http://libre-mesh.github.io/libremap-talk-2013-is4cwn/]]
 
