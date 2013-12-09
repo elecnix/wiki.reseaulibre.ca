@@ -145,6 +145,8 @@ To enable routing, make sure this is in your `/etc/sysctl.conf`:
 
 Si votre fournisseur Internet en amont le supporte (ex: Teksavvy), c'est possible d'avoir une connexion IPv6 native (dual-stack avec ipv4). Par exemple, Teksavvy offre un block `/56`, ce qui permet d'avoir 256 sous-réseaux de beaucoup de machines (256 * /32). On peut donc prendre un de ces sous-réseaux et l'annoncer par babel sur le mesh.
 
+Electronic Box sur DSL supporte aussi IPv6 depuis décembre 2013: [[http://www.dslreports.com/forum/r28841642-IPv6-slowly-making-it-s-way-to-eBox]]
+
 Sinon, contactez quand même votre fournisseur pour leur dire que IPv6 est important pour vous. C'est un enjeu politique!
 
 ## Par Tunnel Broker
