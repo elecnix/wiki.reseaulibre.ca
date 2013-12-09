@@ -4,7 +4,7 @@
 * [[http://libremap.net/]]
 * [[http://libre-mesh.github.io/libremap-talk-2013-is4cwn/]]
 
-### Installation on Debian (unstable/jessie)
+# Installation on Debian (unstable/jessie)
 
 We will need to compile 'geocouch' manually, since it is not yet packaged in Debian.
 
@@ -35,7 +35,20 @@ Compile (NB: change 1.4.0 below to the version you downloaded):
 <pre>
 cd ~/src/geocouch/
 export COUCH_SRC=~/src/couchdb-1.4.0/src/couchdb
+git checkout couchdb1.3.x
 make
 </pre>
 
-(TODO)
+NB: as of 2013-12, Debian unstable had CouchDB 1.4, although CouchDB 2.x now exists. GeoCouch must be built against the same version of CouchDB. There wasn't a 1.4 branch of geocouch, but it seems to compile correctly with the 1.3 branch, To see the available GeoCouch branches available, type "git branch -v -r".
+
+After compilation, you probably want to install it somewhere outside a user directory, ex:
+
+<pre>
+cp -r ebin /usr/local/lib/couchdb-geocouch
+</pre>
+
+And tell erlang ("man erl") to add that to the "code path". In Debian, this can be done in the /etc/default/couchdb file:
+
+<pre>
+ERL_FLAGS="-pa /usr/local/lib/couchdb-geocouch"
+</pre>
