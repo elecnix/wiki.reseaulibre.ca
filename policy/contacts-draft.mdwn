@@ -1,5 +1,7 @@
 *Ceci est une proposition qui n'a pas encore été adoptée*
 
+# Introduction
+
 Les "points de contacts" de Réseau libre, ou ambassadeurs, sont des participants de Réseau libre qui offrent de répondre à vos questions et vous aider à joindre le projet. S'il n'y a pas de point de contact dans votre arrondissement (ou ville!), nous vous invitons à vous impliquer!
 
 Les points de contacts peuvent:
@@ -21,3 +23,10 @@ Les points de contacts doivent:
 * être abonnés à la liste de discussion (afin d'être au courant de ce qui se passe dans le projet).
 
 Si un point de contact cause problème, Réseau libre se garde le droit de supprimer un point de contact avec l'accord de 75% des participants, selon notre processus décisionnel. [[http://wiki.reseaulibre.ca/policy/#index4h1]]
+
+# Points de contacts bénévoles
+
+[[!table  data="""
+Arrondissement/Ville | Nom | Contact
+Verdun | Mathieu L. | mathieu@bidon.ca
+"""]]
