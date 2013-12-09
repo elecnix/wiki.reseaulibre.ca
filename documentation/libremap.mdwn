@@ -4,3 +4,38 @@
 * [[http://libremap.net/]]
 * [[http://libre-mesh.github.io/libremap-talk-2013-is4cwn/]]
 
+### Installation on Debian (unstable/jessie)
+
+We will need to compile 'geocouch' manually, since it is not yet packaged in Debian.
+
+Install dependancies to build geocouch from source:
+
+<pre>
+sudo apt-get install build-essential erlang libicu-dev libmozjs-dev libcurl4-openssl-dev \
+ libtool automake checkinstall
+</pre>
+
+Install the couchdb source:
+
+<pre>
+mkdir ~/src
+cd ~/src
+apt-get source couchdb
+</pre>
+
+Download the geocouch source:
+
+<pre>
+cd ~/src
+git clone https://github.com/couchbase/geocouch.git
+</pre>
+
+Compile (NB: change 1.4.0 below to the version you downloaded):
+
+<pre>
+cd ~/src/geocouch/
+export COUCH_SRC=~/src/couchdb-1.4.0/src/couchdb
+make
+</pre>
+
+(TODO)
