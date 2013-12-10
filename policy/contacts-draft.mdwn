@@ -7,7 +7,7 @@ Les "points de contacts" de Réseau libre, ou ambassadeurs, sont des participant
 Les points de contacts peuvent:
 
 * avoir un rôle de relation/médiation avec le voisinage (entre participants, ou en dehors de Réseau libre);
-* aider les personnes intéressées à joindre le réseau (évaluer le lieux, liens possibles, aider à acheter du matériel, faciliter les achats de groupes, aider à la configuration technique);
+* aider les personnes intéressées à joindre le réseau (évaluer le lieux, liens possibles, aider à acheter du matériel, faciliter les achats de groupe, aider à la configuration technique);
 * faire la promotion de Réseau libre dans leur quartier.
 
 Ces personnes sont des bénévoles actifs qui sont là pour aider et encourager la participation en concordance avec les valeurs du projet.
@@ -17,12 +17,12 @@ Ces personnes sont des bénévoles actifs qui sont là pour aider et encourager 
 * ne sont pas responsables de ce que les autres participants font dans leur quartier; ils peuvent offrir de la médiation, des pistes de résolution;
 * n'ont pas de pouvoir décisionnel, mais peuvent offrir de faire la médiation avec le reste de la communauté de Réseau libre;
 
-Les points de contacts doivent:
+Les bénévoles désirant être point de contact doivent:
 
 * fournir une façon d'être contacté (courriel, téléphone, ..);
 * être abonnés à la liste de discussion (afin d'être au courant de ce qui se passe dans le projet).
 
-Si un point de contact cause problème, Réseau libre se garde le droit de supprimer un point de contact avec l'accord de 75% des participants, selon notre processus décisionnel. [[http://wiki.reseaulibre.ca/policy/#index4h1]]
+Les candidatures sont considérées ou re-considérées selon notre [[processus décisionnel habituel|http://wiki.reseaulibre.ca/policy/#index4h1]].
 
 # Points de contacts bénévoles
 
