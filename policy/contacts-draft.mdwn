@@ -28,5 +28,6 @@ Les candidatures sont considérées ou re-considérées selon notre [[processus 
 
 [[!table  data="""
 Arrondissement/Ville | Nom | Contact
-Verdun | Mathieu Lu. | mathieu@bidon.ca
+Montréal / Verdun | Mathieu Lu. | mathieu@bidon.ca
+Montréal / Saint-Michel | Nicolas Marchildon | nicolas@marchildon.net
 """]]
