@@ -191,3 +191,40 @@ You can now point your browser to http://192.168.42.1:9000/
 References:
 
 * [[http://internshipua.blogspot.ca/2013/11/adding-router-libremap.html]]
+
+## Creating a node
+
+(I have no idea what I'm doing at this point --bgm)
+
+Create a text file, for example, latakia.json:
+
+<pre>
+{
+  "api_rev": "1.0",
+  "type": "router",
+  "ctime": "2013-08-20T19:00:00.000Z",
+  "mtime": "2013-12-10T19:00:00.000Z",
+  "hostname": "latakia",
+  "lat": 45.465676,
+  "lon": -73.572185,
+  "community": "Réseau libre/Montréal"
+}
+</pre>
+
+Send it to the server:
+
+    $ curl -X POST -d @latakia.json http://192.168.42.1:5984/libremap-dev/_design/libremap-api/_rewrite/router/
+
+It responds:
+
+    {"ok":true,"id":"e31ac2d003d2ef25b3d241ff92000f3a"}
+
+We can then query the server to see if it worked:
+
+    curl -X GET http://192.168.42.1:5984/libremap-dev/_design/libremap-api/_rewrite/router/e31ac2d003d2ef25b3d241ff92000f3a
+
+It should print the equivalent of what we had saved.
+
+References:
+
+ * [[https://github.com/libremap/libremap-api/blob/master/doc-api.md]]
