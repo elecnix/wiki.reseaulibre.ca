@@ -70,7 +70,7 @@ References:
 
 This assumes that you have completed the GeoCouch installation.
 
-Install the requirements:
+Install the requirements for libremap-api:
 
 <pre>
 sudo apt-get install nodejs
@@ -79,7 +79,7 @@ sudo npm install -g grunt-cli
 
 NB: npm installs modules to /usr/local/lib/node_modules/.
 
-Install and compile libremap-api:
+Install libremap-api:
 
 <pre>
 cd ~/src/
@@ -88,9 +88,59 @@ cd libremap-api
 npm install
 </pre>
 
-(incomplete.. more todo)
+Create a CouchDB database:
+
+* access http://localhost:5974/_utils/  (if you are not working locally, edit your /etc/couchdb/default.ini and change the "bind_address" in the 'httpd' section, then restart couchdb)
+* create an admin account by clicking on the link in the lower-right corner of the screen (more info: http://www.youtube.com/watch?v=oHKvV3Nh-CI)
+* (I could not really figure out how users work in CouchDB, so just moved on to the next step, expecting permissions problems, but it didn't make much of a difference, maybe the admin account was still wide open)
+* in ~/src/libremap-api, copy the file 'couch.json.example' to couch.json
+* change the configuration to match yours.
+
+For example:
+
+<pre>
+{
+  "couches": {
+    "localhost": {
+      "database": "http://192.168.42.1:5984/libremap"
+    },
+    "dev": {
+      "database": "http://192.168.42.1:5984/libremap-dev",
+      "user": "libremap-dev",
+      "pass": "somerandompassword"
+    },
+    "production": {
+      "database": "http://192.168.42.1:5984/libremap",
+      "user": "libremap",
+      "pass": "anotherrandompassword"
+    }
+  }
+}
+</pre>
+
+* run "grunt push --couch dev"
 
 References:
 
 * [[https://github.com/libremap/libremap-api/blob/master/doc-install.md]]
 * [[http://internshipua.blogspot.be/2013/11/libremap-installation-ubuntu-1304.html]]
+
+## libremap-webui installation
+
+This assumes that you have completed the GeoCouch and libremap-api installation.
+
+Install the requirements for libremap-webui:
+
+<pre>
+sudo npm install -g bower
+</pre>
+
+Install libremap-webui:
+
+<pre>
+cd ~/src/
+git clone git://github.com/libremap/libremap-webui.git
+cd libremap-webui
+npm install
+bower install
+</pre>
