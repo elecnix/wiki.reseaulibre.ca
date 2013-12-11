@@ -160,9 +160,27 @@ Edit to adapt to local configurations. For example:
   "plugins": {
     "tileLayer": "./plugins/tileLayer",
 [...]
+  "dataLayers": [
+    {
+      "plugin": "lmLayer",
+      "id": "carte.bidon.ca",
+      "name": "Routers and Links",
+      "api_url": "http://carte.bidon.ca/api",
 </pre>
 
 Note that the above example is pointing to the dev DB (libremap-dev).
+
+An Apache vhost doing a proxy for carte.bidon.ca/api :
+
+<pre>
+<VirtualHost *:80>
+  ServerName carte.bidon.ca
+
+  ProxyPass /api http://192.168.42.1:5984/libremap-dev/
+  ProxyPass / http://192.168.42.1:9000/
+  SetEnv proxy-sendchunks 1
+</VirtualHost>
+</pre>
 
 And finally, ready to run it:
 
