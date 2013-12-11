@@ -3,6 +3,7 @@
 * [[https://github.com/libremap/]] ("libremap-api" does the backend stuff, "libremap-webui" does the front end)
 * [[http://libremap.net/]]
 * [[http://libre-mesh.github.io/libremap-talk-2013-is4cwn/]]
+* [[https://github.com/libremap/libremap-api/blob/master/doc-api.md]] (API documentation)
 
 # Installation on Debian (unstable/jessie)
 
