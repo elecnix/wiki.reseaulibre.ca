@@ -57,14 +57,19 @@ sudo cp -r ebin /usr/local/lib/couchdb-geocouch
 And tell erlang ("man erl") to add that to the "code path". In Debian, this can be done in the /etc/default/couchdb file:
 
 <pre>
-ERL_FLAGS="-pa /usr/local/lib/couchdb-geocouch"
+export ERL_FLAGS="-pa /usr/local/lib/couchdb-geocouch"
 </pre>
 
 Restart couchdb to make sure everything is OK:
 
 <pre>
-sudo service couchdb restart
+sudo service couchdb stop
+ps aux | grep couchdb
+sudo kill -9 [...]
+sudo service couchdb start
 </pre>
+
+(on Debian jessy, as of 2013-12, doing a restart does not really restart couchdb, because couchdb keeps respawning itself automatically; TODO: is there a bug report open about this already?)
 
 References:
 
