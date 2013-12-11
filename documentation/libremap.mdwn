@@ -187,3 +187,7 @@ And finally, ready to run it:
     grunt
 
 You can now point your browser to http://192.168.42.1:9000/
+
+References:
+
+* [[http://internshipua.blogspot.ca/2013/11/adding-router-libremap.html]]
