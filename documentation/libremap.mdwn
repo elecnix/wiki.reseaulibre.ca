@@ -144,3 +144,27 @@ cd libremap-webui
 npm install
 bower install
 </pre>
+
+Configure the local settings so that libremap-webui knows where our couchdb is:
+
+    cp -i config.json.example config.json
+
+Edit to adapt to local configurations. For example:
+
+<pre>
+{
+  "api_url": "http://192.168.42.1:5984/libremap-dev",
+  "title": "Réseau libre",
+  "init_bbox": [[45.29324494090279,-74.07737731933594],[45.77997516219389,-73.32069396972655]],
+  "plugins": {
+    "tileLayer": "./plugins/tileLayer",
+[...]
+</pre>
+
+Note that the above example is pointing to the dev DB (libremap-dev).
+
+And finally, ready to run it:
+
+    grunt
+
+You can now point your browser to http://192.168.42.1:9000/
