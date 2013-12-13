@@ -29,10 +29,59 @@ We need to use the ID from the above output:
 
     curl -X GET -d @latakia.json http://carte.bidon.ca/api/router/e4279a0dbc2b2d694f2352ebd30312f9
 
+You can pretty-format it with Python:
+
+    curl -X GET http://carte.bidon.ca/api/router/e4279a0dbc2b2d694f2352ebd30312f9 | python -mjson.tool > latakia.json
+
 The result has new fields: "_id", "_rev" and "ctime". You should keep this copy if you want to update it later on, since those fields are mandatory for updates.
 
 # Updating the information for a node
 
-For example:
+See above about doing a 'get' first, so that you have the ID and revision of the document.
+
+Updates are done with the 'PUT' command:
 
     curl -X PUT -d @latakia.json http://carte.bidon.ca/api/router/e4279a0dbc2b2d694f2352ebd30312f9
+
+# Defining links
+
+You must first define aliases for the node, then define the links. Even if it seems redundant, it will not work if you do not define aliases first.
+
+Aliases could be used in a more clever way. For example, the alias could be the IP route exported by the router.
+
+Example:
+
+<pre>
+{
+    "_id": "e4279a0dbc2b2d694f2352ebd30312f9",
+    "_rev": "7-b861358870860af407d2ea02fda35d60",
+    "type": "router",
+    "api_rev": "1.0",
+    "community": "Réseau libre Montréal",
+    "ctime": "2013-12-13T15:39:45.505Z",
+    "mtime": "2013-12-13T16:13:04.447Z",
+    "hostname": "latakia",
+    "lat": 45.465676,
+    "lon": -73.572185,
+    "aliases": [
+        {
+            "alias": "latakia",
+            "type": "babel"
+        }
+    ],
+    "links": [
+        {
+            "alias_local": "latakia",
+            "alias_remote": "deuxpi",
+            "quality": 0.5,
+            "type": "babel"
+        },
+        {
+            "alias_local": "latakia",
+            "alias_remote": "tarator",
+            "quality": 0.9,
+            "type": "babel"
+        }
+    ]
+}
+</pre>
