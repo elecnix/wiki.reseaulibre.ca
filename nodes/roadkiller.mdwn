@@ -26,6 +26,40 @@ IPv6:
  * Panorama: N/A
  * Operator: [[users/anarcat]]
 
+Babel configuration
+-------------------
+
+[[!format txt """
+# mesh IPv6
+redistribute local ip fd64:2c08:9fa7:1::1/128 metric 128
+redistribute local ip fd64:2c08:9fa7::1/128 metric 128
+redistribute ip fd64:2c08:9fa7::/48 metric 128
+# mesh IPv4
+redistribute local ip 172.16.0.1/32 metric 128
+redistribute ip 172.16.0.0/12 ge 12 metric 128
+# bgm - not necessary?
+redistribute ip 2607:f2c0:f00f:2900::/56 metric 128
+# public IPv6
+redistribute local ip 2001:1928:1:9::/64 metric 128
+# public IPv4
+redistribute local ip 72.0.72.144/32 metric 128
+# default route
+redistribute ip 0.0.0.0/0 le 0 metric 128
+# IPv6 default route
+redistribute ip ::/4 metric 128
+# do not redistribute local routes that are not explicitely allowed
+redistribute local deny
+# but do redistribute arbitrary routes from the mesh
+redistribute metric 128
+# allow mesh IPs in
+in ip fd64:2c08:9fa7::/48 ge 48 metric 128
+in ip 172.16.0.0/12 ge 12 metric 128
+# bgm
+in ip 2607:f2c0:f00f:2900::/56 ge 56 metric 128
+# deny anything from the mesh by default
+in deny
+"""]]
+
 [[!meta copyright="Copyright © 2011 Antoine Beaupré"]]
 
 [[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
