@@ -1,6 +1,6 @@
 (work in progress)
 
-[[toc]]
+[[!toc]]
 
 # Creating a new node
 
@@ -21,5 +21,18 @@ Send it to the map:
 
     curl -X POST -d @latakia.json http://carte.bidon.ca/api/router
 
-# Updating the information for a node:
+Responds: "{"ok":true,"id":"e4279a0dbc2b2d694f2352ebd3022da9"}".
 
+# Fetch the information on a node
+
+We need to use the ID from the above output:
+
+    curl -X GET -d @latakia.json http://carte.bidon.ca/api/router/e4279a0dbc2b2d694f2352ebd30312f9
+
+The result has new fields: "_id", "_rev" and "ctime". You should keep this copy if you want to update it later on, since those fields are mandatory for updates.
+
+# Updating the information for a node
+
+For example:
+
+    curl -X PUT -d @latakia.json http://carte.bidon.ca/api/router/e4279a0dbc2b2d694f2352ebd30312f9
