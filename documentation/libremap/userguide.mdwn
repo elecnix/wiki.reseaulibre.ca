@@ -2,6 +2,10 @@
 
 [[!toc]]
 
+# API documentation
+
+See: [[https://github.com/libremap/libremap-api/blob/master/doc-api-router.md]]
+
 # Creating a new node
 
 Create a text json file, for example "latakia.json" :
