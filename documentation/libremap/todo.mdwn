@@ -1,6 +1,6 @@
 Todo list of things to figure out with [[libremap]] before we can formally recommend it to Réseau libre:
 
-* How to create links between routers?
+* ✔ How to create links between routers?
 * Filters: there is an option to show only APs, but not:
 ** show only routers
 ** show only "up/planned/potential" routers
