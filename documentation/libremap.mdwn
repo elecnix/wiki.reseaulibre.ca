@@ -163,7 +163,7 @@ Edit to adapt to local configurations. For example:
 
 <pre>
 {
-  "api_url": "http://192.168.42.1:5984/libremap-dev",
+  "api_url": "http://carte.bidon.ca/api", // <-- couchDB server via proxy vhost
   "title": "Réseau libre",
   "init_bbox": [[45.29324494090279,-74.07737731933594],[45.77997516219389,-73.32069396972655]],
   "plugins": {
@@ -175,6 +175,23 @@ Edit to adapt to local configurations. For example:
       "id": "carte.bidon.ca",
       "name": "Routers and Links",
       "api_url": "http://carte.bidon.ca/api",
+[...]
+      "routers": {
+        "cluster": false,  // <-- set to false (for Montreal, does not give a good result)
+        "filter_mode": "or",
+        "filters": [
+          {
+            "plugin": "lmFilterRouterAP",
+            "enabled": false, // <-- disable, since we have mostly relays, not routers
+            "name": "Access Points"
+          },
+          {
+            "plugin": "lmFilterRouterCommunity",
+            "enabled": false,
+            "name": "Community",
+            "val": "Réseau libre Montréal"
+          }
+[...]
 </pre>
 
 Note that the above example is pointing to the dev DB (libremap-dev).
