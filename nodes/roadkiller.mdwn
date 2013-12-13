@@ -33,7 +33,7 @@ Babel configuration
 # mesh IPv6
 redistribute local ip fd64:2c08:9fa7:1::1/128 metric 128
 redistribute local ip fd64:2c08:9fa7::1/128 metric 128
-redistribute ip fd64:2c08:9fa7::/48 metric 128
+redistribute ip fd64:2c08:9fa7::/48 ge 48 metric 128
 # mesh IPv4
 redistribute local ip 172.16.0.1/32 metric 128
 redistribute ip 172.16.0.0/12 ge 12 metric 128
@@ -49,8 +49,8 @@ redistribute ip 0.0.0.0/0 le 0 metric 128
 redistribute ip ::/4 metric 128
 # do not redistribute local routes that are not explicitely allowed
 redistribute local deny
-# but do redistribute arbitrary routes from the mesh
-redistribute metric 128
+# do not redistribute arbitrary routes from the mesh
+redistribute deny
 # allow mesh IPs in
 in ip fd64:2c08:9fa7::/48 ge 48 metric 128
 in ip 172.16.0.0/12 ge 12 metric 128
