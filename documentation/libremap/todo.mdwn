@@ -1,11 +1,12 @@
 Todo list of things to figure out with [[libremap]] before we can formally recommend it to Réseau libre:
 
 * ✔ How to create links between routers? (must set an 'alias', then define 'links')
-* Filters: there is an option to show only APs, but not:
- * show only routers
- * show only "up/planned/potential" routers
+* Export data from the wiki
 * Have a user-friendly way to add new routers to the map (long/lat position)
 
 Other things that we do not currently have, but would be nice:
 
 * Have a filter for 'servers'? (to find services)
+* Filters: there is an option to show only APs, but not:
+ * show only routers
+ * show only "up/planned/potential" routers
