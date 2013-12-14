@@ -1,6 +1,6 @@
 Installation instructions for [[libremap]] on Debian sid/jessie.
 
-[[toc]]
+[[!toc]]
 
 # CouchDB and GeoCouch installation
 
