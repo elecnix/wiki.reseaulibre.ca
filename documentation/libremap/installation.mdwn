@@ -1,0 +1,247 @@
+Installation instructions for [[libremap]] on Debian sid/jessie.
+
+## CouchDB and GeoCouch installation
+
+We will need to compile 'geocouch' manually, since it is not yet packaged in Debian.
+
+Install dependancies to build geocouch from source:
+
+<pre>
+sudo apt-get install build-essential erlang libicu-dev libmozjs-dev libcurl4-openssl-dev \
+ libtool automake checkinstall couchdb
+</pre>
+
+Install the couchdb source:
+
+<pre>
+mkdir ~/src
+cd ~/src
+apt-get source couchdb
+</pre>
+
+Download the geocouch source:
+
+<pre>
+cd ~/src
+git clone https://github.com/couchbase/geocouch.git
+</pre>
+
+Compile (NB: change 1.4.0 below to the version you downloaded):
+
+<pre>
+cd ~/src/geocouch/
+export COUCH_SRC=~/src/couchdb-1.4.0/src/couchdb
+git checkout couchdb1.3.x
+make
+</pre>
+
+NB: as of 2013-12, Debian unstable had CouchDB 1.4, although CouchDB 2.x now exists. GeoCouch must be built against the same version of CouchDB. There wasn't a 1.4 branch of geocouch, but it seems to compile correctly with the 1.3 branch, To see the available GeoCouch branches available, type "git branch -v -r".
+
+After compilation, you probably want to install it somewhere outside a user directory, ex:
+
+<pre>
+sudo cp -r ebin /usr/local/lib/couchdb-geocouch
+</pre>
+
+And tell erlang ("man erl") to add that to the "code path". In Debian, this can be done in the /etc/default/couchdb file:
+
+<pre>
+export ERL_FLAGS="-pa /usr/local/lib/couchdb-geocouch"
+</pre>
+
+Restart couchdb to make sure everything is OK:
+
+<pre>
+sudo service couchdb stop
+ps aux | grep couchdb
+sudo kill -9 [...]
+sudo service couchdb start
+</pre>
+
+(on Debian jessy, as of 2013-12, doing a restart does not really restart couchdb, because couchdb keeps respawning itself automatically; TODO: is there a bug report open about this already?)
+
+References:
+
+* [[https://github.com/couchbase/geocouch/]]
+* [[http://wiki.openstreetmap.org/wiki/OSMCouch#CouchDB_and_GeoCouch]]
+
+## libremap-api installation
+
+This assumes that you have completed the GeoCouch installation.
+
+Install the requirements for libremap-api:
+
+<pre>
+sudo apt-get install nodejs
+sudo npm install -g grunt-cli
+</pre>
+
+NB: npm installs modules to /usr/local/lib/node_modules/.
+
+Install libremap-api:
+
+<pre>
+cd ~/src/
+git clone git://github.com/libremap/libremap-api.git
+cd libremap-api
+npm install
+</pre>
+
+Create a CouchDB database:
+
+* access http://localhost:5974/_utils/  (if you are not working locally, edit your /etc/couchdb/default.ini and change the "bind_address" in the 'httpd' section, then restart couchdb)
+* create an admin account by clicking on the link in the lower-right corner of the screen (more info: http://www.youtube.com/watch?v=oHKvV3Nh-CI)
+* (I could not really figure out how users work in CouchDB, so just moved on to the next step, expecting permissions problems, but it didn't make much of a difference, maybe the admin account was still wide open)
+* in ~/src/libremap-api, copy the file 'couch.json.example' to couch.json
+* change the configuration to match yours.
+
+For example:
+
+<pre>
+{
+  "couches": {
+    "localhost": {
+      "database": "http://192.168.42.1:5984/libremap"
+    },
+    "dev": {
+      "database": "http://192.168.42.1:5984/libremap-dev",
+      "user": "libremap-dev",
+      "pass": "somerandompassword"
+    },
+    "production": {
+      "database": "http://192.168.42.1:5984/libremap",
+      "user": "libremap",
+      "pass": "anotherrandompassword"
+    }
+  }
+}
+</pre>
+
+* run "grunt push --couch dev"
+
+References:
+
+* [[https://github.com/libremap/libremap-api/blob/master/doc-install.md]]
+* [[http://internshipua.blogspot.be/2013/11/libremap-installation-ubuntu-1304.html]]
+
+## libremap-webui installation
+
+This assumes that you have completed the GeoCouch and libremap-api installation.
+
+Install the requirements for libremap-webui:
+
+<pre>
+sudo npm install -g bower
+</pre>
+
+Install libremap-webui:
+
+<pre>
+cd ~/src/
+git clone git://github.com/libremap/libremap-webui.git
+cd libremap-webui
+npm install
+bower install
+</pre>
+
+Configure the local settings so that libremap-webui knows where our couchdb is:
+
+    cp -i config.json.example config.json
+
+Edit to adapt to local configurations. For example:
+
+<pre>
+{
+  "api_url": "http://carte.bidon.ca/api", // <-- couchDB server via proxy vhost
+  "title": "Réseau libre",
+  "init_bbox": [[45.29324494090279,-74.07737731933594],[45.77997516219389,-73.32069396972655]],
+  "plugins": {
+    "tileLayer": "./plugins/tileLayer",
+[...]
+  "dataLayers": [
+    {
+      "plugin": "lmLayer",
+      "id": "carte.bidon.ca",
+      "name": "Routers and Links",
+      "api_url": "http://carte.bidon.ca/api",
+[...]
+      "routers": {
+        "cluster": false,  // <-- set to false (for Montreal, does not give a good result)
+        "filter_mode": "or",
+        "filters": [
+          {
+            "plugin": "lmFilterRouterAP",
+            "enabled": false, // <-- disable, since we have mostly relays, not routers
+            "name": "Access Points"
+          },
+          {
+            "plugin": "lmFilterRouterCommunity",
+            "enabled": false,
+            "name": "Community",
+            "val": "Réseau libre Montréal"
+          }
+[...]
+</pre>
+
+Note that the above example is pointing to the dev DB (libremap-dev).
+
+An Apache vhost doing a proxy for carte.bidon.ca/api :
+
+<pre>
+<VirtualHost *:80>
+  ServerName carte.bidon.ca
+
+  ProxyPass /api http://192.168.42.1:5984/libremap-dev/
+  ProxyPass / http://192.168.42.1:9000/
+  SetEnv proxy-sendchunks 1
+</VirtualHost>
+</pre>
+
+And finally, ready to run it:
+
+    grunt
+
+You can now point your browser to http://192.168.42.1:9000/
+
+References:
+
+* [[http://internshipua.blogspot.ca/2013/11/adding-router-libremap.html]]
+
+## Creating a node
+
+(I have no idea what I'm doing at this point --bgm)
+
+Create a text file, for example, latakia.json:
+
+<pre>
+{
+  "api_rev": "1.0",
+  "type": "router",
+  "ctime": "2013-08-20T19:00:00.000Z",
+  "mtime": "2013-12-10T19:00:00.000Z",
+  "hostname": "latakia",
+  "lat": 45.465676,
+  "lon": -73.572185,
+  "community": "Réseau libre/Montréal"
+}
+</pre>
+
+Send it to the server:
+
+    $ curl -X POST -d @latakia.json http://192.168.42.1:5984/libremap-dev/_design/libremap-api/_rewrite/router/
+
+It responds:
+
+    {"ok":true,"id":"e31ac2d003d2ef25b3d241ff92000f3a"}
+
+We can then query the server to see if it worked:
+
+    curl -X GET http://192.168.42.1:5984/libremap-dev/_design/libremap-api/_rewrite/router/e31ac2d003d2ef25b3d241ff92000f3a
+
+It should print the equivalent of what we had saved.
+
+References:
+
+ * [[https://github.com/libremap/libremap-api/blob/master/doc-api.md]]
+
+For more examples, see: [[documentation/libremap/userguide]]
