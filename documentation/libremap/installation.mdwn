@@ -1,6 +1,8 @@
 Installation instructions for [[libremap]] on Debian sid/jessie.
 
-## CouchDB and GeoCouch installation
+[[toc]]
+
+# CouchDB and GeoCouch installation
 
 We will need to compile 'geocouch' manually, since it is not yet packaged in Debian.
 
@@ -65,7 +67,7 @@ References:
 * [[https://github.com/couchbase/geocouch/]]
 * [[http://wiki.openstreetmap.org/wiki/OSMCouch#CouchDB_and_GeoCouch]]
 
-## libremap-api installation
+# libremap-api installation
 
 This assumes that you have completed the GeoCouch installation.
 
@@ -124,7 +126,7 @@ References:
 * [[https://github.com/libremap/libremap-api/blob/master/doc-install.md]]
 * [[http://internshipua.blogspot.be/2013/11/libremap-installation-ubuntu-1304.html]]
 
-## libremap-webui installation
+# libremap-webui installation
 
 This assumes that you have completed the GeoCouch and libremap-api installation.
 
@@ -207,7 +209,7 @@ References:
 
 * [[http://internshipua.blogspot.ca/2013/11/adding-router-libremap.html]]
 
-## Creating a node
+# Creating a node
 
 (I have no idea what I'm doing at this point --bgm)
 
