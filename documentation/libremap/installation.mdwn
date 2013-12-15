@@ -203,11 +203,18 @@ And finally, ready to run it:
 
     grunt
 
+Note that if you need to debug stuff and want to avoid js/css aggregation, you can run:
+
+    grunt --debug
+
 You can now point your browser to http://192.168.42.1:9000/
+
+IMPORTANT: if you have a firewall running, there is a script called "livereload" that tries to connect directly on port 31337 of your web server. See references for more info, I'm not sure yet what it's for, and why it needs to run on a separate port. Long story short, you will want to either disable livereload or open the firewall port, otherwise loading the map will be extremely slow.
 
 References:
 
 * [[http://internshipua.blogspot.ca/2013/11/adding-router-libremap.html]]
+* [[https://github.com/gruntjs/grunt-contrib-watch#optionslivereload]] (more info on "livereload")
 
 # Creating a node
 
