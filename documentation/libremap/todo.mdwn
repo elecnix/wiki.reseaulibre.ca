@@ -4,6 +4,7 @@ Todo list of things to figure out with [[libremap]] before we can formally recom
 * ✔ Export data from the wiki: [[https://github.com/mlutfy/ikimaptolibremap]]
 * Have a user-friendly way to add new routers to the map (long/lat position)
 * Have a user-friendly way to include a mini-map on the relay page.
+  * maybe we can do this simply with an iframe for now. the problem will be the individual node pages, which would be more annoying - unless there's a way to query libremap for a router name? --[[anarcat]]
 * Have a link from the map to the node page (there is an "attribute" in the JSON popup, and the URL is imported during the conversion with ikimaptolibremap).
 
 Other things that we do not currently have, but would be nice:
@@ -12,3 +13,8 @@ Other things that we do not currently have, but would be nice:
 * Filters: there is an option to show only APs, but not:
  * show only routers
  * show only "up/planned/potential" routers
+
+Candy on top:
+
+* custom icons, based on status
+* move all node metadata in there so we don't need the nodes/ directory anymore (other than for node-specific documentation, like configuration backups - and even those could be stored in couchdb...)
