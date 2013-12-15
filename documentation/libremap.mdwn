@@ -9,6 +9,11 @@
 * [[http://libre-mesh.github.io/libremap-talk-2013-is4cwn/]]
 * [[https://github.com/libremap/libremap-api/blob/master/doc-api.md]] (API documentation)
 
+Features:
+
+* REST API (http get/post/update) to add/edit node information, so it's easy to communicate with and extend.
+* Database replication (using CouchDB), so it's possible to have our own local Montreal map, but also push our information upstream to the libremap.net map.
+
 # User guide
 
 See: [[documentation/libremap/userguide]]
