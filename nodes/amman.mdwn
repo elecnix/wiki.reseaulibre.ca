@@ -1,4 +1,4 @@
-[[!waypoint lat="45.465676" lon="-73.572185" embed hidden width="400px" height="400px" right desc="Nanobridge M5 sur un toit."]]
+[[!waypoint lat="45.465670" lon="-73.572189" embed hidden width="400px" height="400px" right desc="Nanobridge M5 sur un toit."]]
 
 # Technical details
 
