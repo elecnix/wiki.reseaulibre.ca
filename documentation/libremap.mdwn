@@ -11,6 +11,8 @@
 
 Features:
 
+* Open Street Map integration to location wireless relays and other types of nodes
+* Displays links between relays and signal strength.
 * REST API (http get/post/update) to add/edit node information, so it's easy to communicate with and extend.
 * Database replication (using CouchDB), so it's possible to have our own local Montreal map, but also push our information upstream to the libremap.net map.
 
