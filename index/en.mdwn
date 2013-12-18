@@ -2,7 +2,7 @@
 
 Réseau Libre is an informal group of volunteers who aim to create a neighbourhood community wireless network that is independent and decentralised. It's a space for learning, helping and exploring technology.
 
-Le réseau se construit de façon organique et évolutive à mesure que de nouveaux membres s'y joignent.  Chaque personne participant au réseau installe une antenne sur son toit, ou dans sa fenêtre (un [[relais|nodes]]) et choisit [[les services qu'il désire partager|Idees]] avec la communauté. 
+The network is being built in an organic and evolutive way, as new members join. Participants to the network can grow the network by installing an antenna on their roof or in their window (a [[relay|nodes]]) and choose [[services to share|Idees]] with the community.
 
 Interested?
 
