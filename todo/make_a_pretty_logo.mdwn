@@ -27,10 +27,18 @@ Suggestions de logos
 
 * http://reseaulibre.deuxpi.ca/reseaulibre-doodle.png (+ .svg)
 
-Exemples de logos intéressants
+Exemples de logos intéressants / autres projets
 ==============================
 
 * Meraki: [[http://www.flickr.com/photos/sykes/2181593173/]]
+
+* Freifunk: [[http://freifunk.net/]]
+
+* Village Telco: [[http://villagetelco.org/]]
+
+* Oakland Mesh: [[https://sudoroom.org/wiki/Mesh/Stickers]]
+
+* Commotion Wireless: [[https://commotionwireless.net/]]
 
 * [[http://pictures.inspirationfeed.netdna-cdn.com/wp-content/uploads/2010/06/Mesh.png]]
 
