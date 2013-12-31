@@ -228,6 +228,7 @@ input#searchbox {
     min-height: 400px;
     padding: 1em 0;
     margin: 0 auto;
+    background: #fff;
 }
 
 #pagebody #content {
