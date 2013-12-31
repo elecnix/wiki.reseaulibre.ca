@@ -211,7 +211,7 @@ input#searchbox {
 }
 
 .sidebar ul li:hover {
-    border-bottom: 3px solid #221122;
+    border-bottom: 1px solid #999;
 }
 
 .sidebar ul li a{
