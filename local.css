@@ -185,7 +185,7 @@ input#searchbox {
     line-height: 40px;
     width: 1008px;
     margin: 0 auto;
-    background-color: #eeeeee;
+    background-color: #fff;
     color: #775544 !important;
     border: none;
     border-bottom: 1px solid #221122;
@@ -204,10 +204,8 @@ input#searchbox {
 .sidebar ul li {
     float: left;
     margin-right: 5px;
-    background-color: #EEEEEE;
     padding: 0 2em 0 2em;
     border: 3px none #221122;
-
 }
 
 .sidebar ul li:hover {
@@ -225,12 +223,17 @@ input#searchbox {
 
 #pagebody {
     border: none;
-    padding: 0;
     display: block;
     width: 1008px;
     min-height: 400px;
+    padding: 1em 0;
     margin: 0 auto;
 }
+
+#pagebody #content {
+  margin: 0 2em;
+}
+
 
 /** Footer styles */
 #footer {
