@@ -1,0 +1,132 @@
+[[!toc levels=2]]
+
+OpenVPN: providing client access to the mesh
+============================================
+
+The following configurations use OpenVPN to allow external users to access the mesh directly.
+
+/!\ Warning: this will give users to which you give access (through the SSL certificate) complete access to your internal network.
+
+FreeBSD
+-------
+
+This is the server configuration, which we assume you are running on a router. It is quite FreeBSD-specific, but the OpenVPN configuration should be similar.
+
+    pkg_add -r openvpn
+
+Then add this to `/etc/rc.conf` to make sure the daemon is started on
+boot:
+
+    openvpn_enable="YES"      # set to YES to enable openvpn
+    openvpn_if="tun"          # driver(s) to load, set to "tun", "tap" or "tun tap"
+
+Load the tap device:
+
+    kldload if_tun
+
+You also need to add this to `/boot/loader.conf`:
+
+    if_tun_load="YES"
+
+using the easy-rsa package, here are my changes to the `vars` as
+suggested in the [SSL howto][ca-howto].
+
+[[!format diff """
+--- vars.org    2012-05-15 00:54:05.000000000 -0400
++++ vars        2012-05-15 00:54:07.000000000 -0400
+@@ -50,7 +50,7 @@
+ # down TLS negotiation performance
+ # as well as the one-time DH parms
+ # generation process.
+-export KEY_SIZE=1024
++export KEY_SIZE=2048
+
+ # In how many days should the root CA key expire?
+ export CA_EXPIRE=3650
+@@ -61,8 +61,8 @@
+ # These are the default values for fields
+ # which will be placed in the certificate.
+ # Don't leave any of these fields blank.
+-export KEY_COUNTRY="US"
+-export KEY_PROVINCE="CA"
+-export KEY_CITY="SanFrancisco"
+-export KEY_ORG="Fort-Funston"
+-export KEY_EMAIL="me@myhost.mydomain"
++export KEY_COUNTRY="CA"
++export KEY_PROVINCE="QC"
++export KEY_CITY="Montreal"
++export KEY_ORG="Anarcat"
++export KEY_EMAIL="anarcat@orangeseeds.org"
+"""]]
+
+Then this series of easy commands:
+
+    ./clean-all
+    ./build-ca
+    ./build-key-server myserver.example.com
+    ./build-dh
+    ./build-key client.example.com
+
+(To be continued: the build-dh step is still generating that 2048 bit
+prime - maybe a bad idea to be paranoid about that bit...)
+
+Create the `/usr/local/etc/openvpn/openvpn.conf` file, [the FreeBSD
+diary howto][openvpn] has a good sample file, but we are using a
+different, point to point configuration. This is a minimal
+configuration, see the OpenVPN configuration for more samples.
+
+    dev tun
+    ifconfig 192.168.100.1 192.168.100.2
+    # not working?
+    push "route 172.16.0.0 255.240.0.0"
+    tls-server
+    dh /usr/local/etc/openvpn/easy-rsa/2.0/keys/dh2048.pem
+    ca /usr/local/etc/openvpn/easy-rsa/2.0/keys/ca.crt
+    cert /usr/local/etc/openvpn/easy-rsa/2.0/keys/vpn.orangeseeds.org.crt
+    key /usr/local/etc/openvpn/easy-rsa/2.0/keys/vpn.orangeseeds.org.key
+    port 1194
+    user nobody
+    group nobody
+    verb 3
+    status openvpn-status.log
+
+I was successful in using this configuration to access the mesh (and
+indeed my internal network too) by adding extra routes on the client,
+as it seems the `push` argument isn't working properly.
+
+[openvpn-routed]: http://www.freebsddiary.org/openvpn-routed.php
+[openvpn]: http://www.freebsddiary.org/openvpn.php
+[ca-howto]: http://www.freebsddiary.org/openvpn-easy-rsa.php
+
+Debian
+------
+
+This is the client configuration.
+
+    apt-get install openvpn
+
+I use pretty much the stock config in [the client part of the OpenVPN
+howto][openvpn], but note that you can use ifup/down (and Network
+Manager) to automatically start/stop OpenVPN instances depending on
+network conditions, which is especially relevant on laptops, for
+example.
+
+I transfer the client certificate created in the last step of the above
+FreeBSD config to the Debian client.
+
+Other considerations
+--------------------
+
+The above configuration basically hardcodes routes and netblocks. This
+means that the clients are necessarily on a different subnet than the
+server, although routes are magically added to make sure this still
+works.
+
+A better option would be to use the [bridge mode configuration](http://openvpn.net/index.php/open-source/documentation/miscellaneous/76-ethernet-bridging.html) in
+which clients are directly on the local network, which requires
+OS-level bridge configuration outside of OpenVPN.
+
+Another option would be to add tap0, the openvpn interface, to the mesh
+itself, so that the BATMAN mesh would run on top of the VPN. This
+seems rather perilous, and i was not able to run either BATMAN or
+OpenVPN in bridge mode in FreeBSD.
