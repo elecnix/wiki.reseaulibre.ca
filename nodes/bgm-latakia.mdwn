@@ -8,7 +8,7 @@
 [[!ymlfront data="""
 MAC: DC:9F:DB:01:13:79
 IP: 
-IPv6: 2607:f2c0:f00f:29a5:de9f:dbff:fe01:1379
+IPv6:
 """]]
 
  * hostname: latakia
@@ -31,72 +31,6 @@ IPv6: 2607:f2c0:f00f:29a5:de9f:dbff:fe01:1379
 # Photo
 
 [[!img img/557254_529308290429346_1820250233_n.jpg alt="Bullet M2"]]
-
-# Configuration UCI
-
-    # base
-    uci delete wireless.radio0.disabled
-    uci set wireless.@wifi-iface[0].ssid=latakia.relais.reseaulibre.ca
-    uci set system.@system[0].hostname=latakia
-
-    # connexion réseau local
-    uci set network.lan=interface
-    uci set network.lan.ifname=eth0
-    uci set network.lan.proto=dhcp
-
-    # wifi
-    uci delete wireless.@wifi-iface[0].network
-    uci set wireless.radio0.channel=1
-    uci set wireless.@wifi-iface[0].mode=adhoc
-    uci set wireless.@wifi-iface[0].ssid=latakia.relais.reseaulibre.ca
-    uci set wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
-    uci set network.wlan0=interface
-    uci set network.wlan0.ifname=wlan0
-    uci set network.wlan0.proto=none
-    uci set network.wlan0.mtu=1500
-    
-    # packages pour batman et babel
-    opkg update
-    opkg install kmod-ipv6 babeld iperf ip
-
-    uci commit
-    reboot
-
-    uci set babeld.@general[0]=general
-    uci set babeld.@general[0].local_server=33123
-    uci set babeld.@filter[0]=filter
-    uci set babeld.@filter[0].type=redistribute
-    uci set babeld.@filter[0].local=true
-    uci set babeld.@filter[0].action=deny
-    uci set babeld.@filter[1]=filter
-    uci set babeld.@filter[1].type=redistribute
-    uci set babeld.@filter[1].action=deny
-    uci set babeld.wlan0=interface
-    uci set babeld.eth0=interface
-
-    # ipv6 radvd ??
-    uci set radvd.@interface[0]=interface
-    uci set radvd.@interface[0].interface=wifi
-    uci set radvd.@interface[0].AdvSendAdvert=1
-    uci set radvd.@interface[0].client=
-    uci set radvd.@interface[0].AdvManagedFlag=1
-    uci set radvd.@interface[0].AdvOtherConfigFlag=1
-    uci set radvd.@interface[0].ignore=0
-    uci set radvd.@prefix[0]=prefix
-    uci set radvd.@prefix[0].interface=wifi
-    uci set radvd.@prefix[0].AdvOnLink=1
-    uci set radvd.@prefix[0].AdvAutonomous=1
-    uci set radvd.@prefix[0].ignore=0
-    uci set radvd.@route[0]=route
-    uci set radvd.@route[0].interface=wifi
-    uci set radvd.@route[0].prefix=2607:f2c0:f00f:29a2::/64
-    uci set radvd.@route[0].ignore=0
-    uci set radvd.@rdnss[0]=rdnss
-    uci set radvd.@rdnss[0].interface=wifi
-    uci set radvd.@rdnss[0].addr=2607:f2c0:f00f:2900::1
-    uci set radvd.@dnssl[0]=dnssl
-    uci set radvd.@dnssl[0].interface=wifi
-    uci set radvd.@dnssl[0].suffix=net4.bidon.ca
 
 # Configuration babel
 
@@ -141,20 +75,6 @@ i.e. on écoute sur les interfaces câblées, et on ne redistribue pas de routes
 Ce routeur a du wifi (wlan0), mais c'est du WPA2 pour les visiteurs, ce n'est pas un AP ouvert, donc pas besoin d'y rouler babel.
 
 NB: désactiver "iptables", sinon ça bloque le routage par défaut.
-
-## Routeur nanostation "latakia" (OpenWRT)
-
-    babeld.@general[0]=general
-    babeld.@general[0].local_server=33123
-    babeld.@filter[0]=filter
-    babeld.@filter[0].type=redistribute
-    babeld.@filter[0].local=true
-    babeld.@filter[0].action=deny
-    babeld.@filter[1]=filter
-    babeld.@filter[1].type=redistribute
-    babeld.@filter[1].action=deny
-    babeld.wlan0=interface
-    babeld.eth0=interface
 
 # Topologie du réseau
 
