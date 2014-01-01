@@ -35,36 +35,12 @@ Operator
 Links
 : [[bgm-latakia]] [[bgm-damas]]
 
-# Commandes UCI
+# Documentation
 
-    uci set network.lan=interface
-    uci set network.lan.ifname=eth0
-    uci set network.lan.proto=dhcp
-    uci set network.wan=interface
-    uci set network.wan.ifname=eth1
-    uci set network.wan.proto=dhcp
-    uci set network.wifi=interface
-    uci set network.wifi.ifname=wlan0
-    uci set network.wifi.proto=static
-    uci set network.wifi.ipaddr=192.168.52.1
-    uci set network.wifi.netmask=255.255.255.0
-    uci set network.wifi.ip6addr=2607:f2c0:f00f:29a2::1/64
-    uci set network.@switch[0]=switch
-    uci set network.@switch[0].name=eth0
-    uci set network.@switch[0].reset=1
-    uci set network.@switch[0].enable_vlan=1
-    uci set network.@switch_vlan[0]=switch_vlan
-    uci set network.@switch_vlan[0].device=eth0
-    uci set network.@switch_vlan[0].vlan=1
-    uci set network.@switch_vlan[0].ports=0 1 2 3 4
-    uci set wireless.@wifi-iface[0].network=wifi
-    uci set wireless.@wifi-iface[0]=wifi-iface
-    uci set wireless.@wifi-iface[0].device=radio0
-    uci set wireless.@wifi-iface[0].network=wifi
-    uci set wireless.@wifi-iface[0].mode=ap
-    uci set wireless.@wifi-iface[0].ssid=alep.acces.reseaulibre.ca
-    uci set wireless.@wifi-iface[0].encryption=psk2
-    uci set wireless.@wifi-iface[0].key= ....
-    uci commit
+Routeur TP-Link avec OpenWRT:
 
-NB: mes interfaces ne sont pas bridgées parce que je fais du routage. Il manque peut-être des configurations à noter..
+* fournis du sans-fil à mon appartement (ipv4 + ipv6, WPA2 fermé)
+* connecte physiquement par ethernet aux relais sur le toit (latakia, amman),
+* et est connecté à damas, mon routeur principal, par long câble qui traverse tout mon appartement.
+
+Pour plus d'infos voir: [[bgm-latakia]] pour la topologie.
