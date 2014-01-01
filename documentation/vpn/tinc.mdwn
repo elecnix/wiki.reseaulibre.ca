@@ -1,0 +1,271 @@
+[[!toc]]
+
+tinc: interconnect disjoint mesh networks
+=========================================
+
+We recommend using [tinc][] to interconnect the mesh, for 2 reasons:
+
+ 1. it is deployed for use in the Freifunk mesh
+ 2. it supports full mesh routing (all nodes have access to all nodes,
+    no client/server model)
+
+tinc supports bridged mode like OpenVPN does, which allows
+us to send Babel broadcasts across the network.
+
+To join the Tinc VPN interconnection you will require a [Dynamic DNS](http://en.wikipedia.org/wiki/Dynamic_DNS) or a static IP.
+
+[tinc]: http://www.tinc-vpn.org/
+
+Configuring one node
+--------------------
+
+The directory structure of tinc configuration files is important, so
+you first need to create that:
+
+    mkdir -p /etc/tinc/reseaulibre/hosts
+
+Here we have created the `hosts` directory that will hold the node
+configurations for the `reseaulibre` network. Then we need to create a
+configuration file for this host in `/etc/tinc/reseaulibre/tinc.conf`:
+
+    Name = roadkiller
+    Mode = switch
+
+> (!) This is necessary on FreeBSD:
+> 
+>     Device = /dev/tap0
+
+The above configuration defines the current host, but we
+need to create a configuration file in `hosts` on every
+host in the tinc mesh, including the current host, for example in
+`hosts/roadkiller`:
+
+    Address = vpn.orangeseeds.org
+
+And this is for my laptop in `hosts/angela`:
+
+    Address = angela.anarcat.ath.cx
+
+Note that we should *not* put `Subnet` blocks here since we are in
+switch mode, see
+[this post](http://www.tinc-vpn.org/pipermail/tinc/2012-September/003029.html)
+for a discussion about this.
+
+Encryption keys
+---------------
+
+Public/private encryption keys must be created on each host. Tinc 1.0 used RSA keys by default. Tinc 1.1 (since 1.1pre9?) generates both RSA and eleptic-curve (ECDSA).
+
+For tinc 1.0:
+
+    tincd -n reseaulibre -K
+
+For tinc 1.1:
+
+    tinc -n reseaulibre generate-keys
+
+This will create a private key for the host in
+`reseaulibre/rsa_key.priv` and add the public key material to the
+`hosts/roadkiller` configuration file.
+
+The public key for each host must be copied to each other host that tinc will connect to (in /etc/tinc/reseaulibre/hosts/[...]).
+
+IP allocation
+-------------
+
+Each host in the network needs to have an IP allocated in the
+mesh. This IP is assigned to the interface, so it needs to be
+different than existing IPs you have configured on your network. This
+is defined in the `tinc-up` startup script (to be put in
+`/etc/tinc/reseaulibre/`):
+
+    ifconfig $INTERFACE 172.16.242.43 netmask 255.255.255.255 up
+
+The script needs to be made executable:
+
+    chmod a+x tinc-up
+
+For my laptop:
+
+    ifconfig $INTERFACE 172.16.242.42 netmask 255.255.255.255 up
+
+Note that we allocate IPs in a special netblock (arbitrarily
+reserved). Those IPs won't be pingable, but can be used by babel to
+establish its routes. To have them routable, you can make the netmask
+a `/24`, but then it could interfere with other routes in the network.
+
+Running tinc by hand
+--------------------
+
+To do your first tests, you may prefer to run it by hand, using:
+
+    tincd -d4 -D -n reseaulibre
+
+ * `-d4` is to enable good debugging
+ * `-D` means to not detach as a daemon
+ * `-n reseaulibre` means to start the reseaulibre network
+
+Connecting with babel
+---------------------
+
+The resulting device can be added to the list of interfaces used by
+Babel for its routing:
+
+    babeld -D tap0
+
+Since this is now in "switched" mode, babeld will pass announcements
+through that device and add proper routing. Note that you will very
+likely refuse routes from babel that interfere with the uplink, for
+example to connect to roadkiller, you want this in your `babeld.conf`:
+
+    in ip 72.0.72.144/32 deny
+    in ip 172.16.0.0/12 le 12 deny
+    in ip 2001:1928:1:9::/128 deny
+    in ip 2001:1928:1:9::/64 deny
+
+Note that we also block the BATMAN `/12` which interferes with our
+regular point to point routing as, if it would be installed on the
+tinc interface, it would actually block traffic as it would start to
+issue arp requests that would eventually fail.
+
+Getting a secure VPN connection with the mesh
+---------------------------------------------
+
+To make a VPN connexion to the mesh, you will need to have at least one peer configured with a trusted RSA key and a `ConnectTo` statement. Then this peer will send you the RSA keys it knows for the other hosts through that connexion and you can establish direct connexions to the other peers using those keys. 
+
+To setup a connexion work [[nodes/roadkiller]], download the [[signed
+certificate|documentation/vpn/roadkiller.asc]] and extract it in place:
+
+    cd /etc/tinc/hosts/
+    gpg roadkiller.asc > roadkiller
+
+Make sure that your `/etc/tinc/reseaulibre/tinc.conf` has the following statement so that you connect to the host:
+
+    ConnectTo = roadkiller
+
+Automatic connection at startup
+-------------------------------
+
+In Debian, tinc will connect to the other peers automatically if you add the name of the network in `/etc/tinc/nets.boot`. For example:
+
+    ## This file contains all names of the networks to be started on system startup.
+    reseaulibre
+
+
+Configuring in OpenWRT
+-----------------------
+In OpenWRT configuring tinc requires a mixture of the above directory structure and UCI configurations.
+
+### Directory structure and keys
+
+The reason OpenWRT still requires a directory structure under `/etc/` is that UCI cannot hold the key files, so first create the directories:
+
+    mkdir -p /etc/tinc/reseaulibre/hosts
+
+You may now generate your host keys:
+
+    tincd -n reseaulibre -K
+
+Now create a file to hold the key you have exchanged with another peer with the name of the host in the aforementioned directory:
+
+    gpg /tmp/roadkiller.asc > /etc/tinc/reseaulibre/hosts/roadkiller
+
+### IP Allocation
+
+See the [[step above|/documentation/vpn/#index3h2]] as this is no different. You will need to create the `tinc-up` and `tinc-down` scripts.
+
+### Creating the UCI file
+
+This is where things get significantly different; we will configure Tinc by creating the following UCI configuration file in `/etc/config/tinc`:
+
+	config tinc-net reseaulibre
+		option enabled 1
+
+		## Daemon Configuration	(cmd arguments)
+		option generate_keys 0
+		option key_size 2048
+		#option logfile /tmp/log/tinc.reseaulibre.log
+		#option debug 3
+
+		## Server Configuration (tinc.conf)
+		#option AddressFamily any
+		#option BindToAddress 0.0.0.0
+		#option BindToInterface lo
+
+		list ConnectTo roadkiller
+
+		option DirectOnly 0
+		#option Forwarding internal
+		option GraphDumpFile /tmp/log/tinc.reseaulibre.dot
+		#option Hostnames 0
+		#option IffOneQueue 0
+		option Interface reseaulibre
+		#option KeyExpire 3600
+		#option MACExpire 600
+		#option MaxTimeout 900
+		option Mode switch
+
+		option Name MYNODE
+
+		#option PingInterval 60
+		#option PingTimeout 5
+		#option PriorityInheritance 0
+		#option PrivateKeyFile /etc/tinc/reseaulibre/rsa_key.priv
+		#option ProcessPriority normal
+		#option ReplayWindow 16
+		#option StrictSubnets 0
+		#option TunnelServer 0
+		#option UDPRcvBuf x
+		#option UDPSndBuf x
+
+	config tinc-host MYNODE
+		option enabled 0
+
+		option net reseaulibre
+
+		list Address MYNODE.DOMAIN.TLD
+		option Compression 1
+		option Digest sha256
+
+	config tinc-host roadkiller
+		option enabled 1
+		option net reseaulibre
+		list Address vpn.anarc.at
+		option Compression 1
+
+		#option Cipher blowfish
+		#option ClampMSS yes
+		#option Digest sha1
+		#option IndirectData 0
+		#option MACLength 4
+		#option PMTU 1514
+		#option PMTUDiscovery yes
+		#option Port 655
+		#option Subnet 192.168.1.0/24
+
+### Launching Tinc
+
+You should now be able to launch tinc using `/etc/init.d/tinc start`. You can view some status information (most noteably the connected nodes and edges) by issuing a User1 and User2 signal via kill:
+
+    killall -SIGUSR1 tincd; killall -SIGUSR2 tincd; logread
+
+You can now [[configure babel|/documentation/vpn/#index5h2]] to work on the VPN.
+
+References
+----------
+
+ * [tinc home page](http://www.tinc-vpn.org/)
+ * [Tinc manual](http://www.tinc-vpn.org/documentation/tinc_toc)
+ * [Example configuration](http://www.tinc-vpn.org/documentation/tinc_4.html#Example-configuration)
+ * [Bridging example configuration](http://www.tinc-vpn.org/examples/bridging/) - note that we do not use bridges, as we rely on babel to do the magic, weird, but it seems to work
+ * [OpenWRT Wiki Tinc Reference](http://wiki.openwrt.org/doc/howto/vpn.tinc)
+
+IP Allocation
+----------
+
+**This template does not work and needs fixing, sorry**
+
+<table style="color: grey">
+<tr><th>#</th><th>hostname</th><th>VPN</th><th>VPNv6</th></tr>
+[[!report pages="nodes/* and (field(VPN *) or field(VPNv6 *))" template="iptable" sort="field(VPN)"]]
+</table>
