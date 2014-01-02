@@ -1,0 +1,16 @@
+EXPERIMENTAL - OpenWRT tests done on a Ubiquity Nanobridge M5.
+
+[[!toc]]
+
+# Firmware
+
+Use the same openwrt firemware as for the "bullet".
+
+# Issues
+
+* txpower is limited to 17 dBm (instead of 22?)
+
+# References
+
+* http://translate.google.ca/translate?hl=en&sl=el&tl=en&u=http%3A%2F%2Fwiki.hwmn.org%2Fw%2FUbiquiti_NanoBridge_M5
+* https://dev.openwrt.org/ticket/12890
