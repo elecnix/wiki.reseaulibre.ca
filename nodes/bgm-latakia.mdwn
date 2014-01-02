@@ -26,7 +26,7 @@ IPv6:
 
 # Stats
 
-<a href="http://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/homs.net4.bidon.ca/adhoc_rssi-week.png" /></a>
+<a href="https://www.bidon.ca/munin/net4.bidon.ca/latakia.net4.bidon.ca/adhoc_rssi.html"><img src="http://www.bidon.ca/munin/net4.bidon.ca/homs.net4.bidon.ca/adhoc_rssi-week.png" /></a>
 
 # Photo
 
