@@ -45,7 +45,7 @@ Links
 
 # Services
 
-Relais seulement.
+Relais + point d'accès avec portail captif qui pointe vers forum.bidon.ca
 
 # Photos
 
@@ -61,77 +61,6 @@ Construction du support pour l'antenne:
 
 (merci [[users/scientist]]!)
 
-# Configuration
+# Statistiques
 
-<pre>
-babeld.@general[0]=general
-babeld.@general[0].local_server=33123
-babeld.@filter[0]=filter
-babeld.@filter[0].type=redistribute
-babeld.@filter[0].local=true
-babeld.@filter[0].action=allow
-babeld.@filter[0].proto=2
-babeld.@filter[0].ip=fd64:2c08:9fa7:4::1/64
-babeld.@filter[1]=filter
-babeld.@filter[1].type=redistribute
-babeld.@filter[1].action=deny
-babeld.eth0=interface
-babeld.wlan0=interface
-
-network.lan=interface
-network.lan.ifname=eth0
-network.lan.proto=static
-network.lan.ip6addr=fd64:2c08:9fa7:4::1/64
-network.wlan0=interface
-network.wlan0.ifname=wlan0
-network.wlan0.proto=none
-
-radvd.@interface[0]=interface
-radvd.@interface[0].interface=lan
-radvd.@interface[0].AdvSendAdvert=1
-radvd.@interface[0].client=
-radvd.@interface[0].AdvManagedFlag=1
-radvd.@interface[0].AdvOtherConfigFlag=1
-radvd.@interface[0].AdvDefaultPreference=low
-radvd.@prefix[0]=prefix
-radvd.@prefix[0].interface=lan
-radvd.@prefix[0].prefix=
-radvd.@prefix[0].AdvOnLink=1
-radvd.@prefix[0].AdvAutonomous=1
-radvd.@prefix[0].AdvRouterAddr=0
-radvd.@route[0]=route
-radvd.@route[0].interface=lan
-radvd.@route[0].prefix=fd64:2c08:9fa7:4::/64
-radvd.@rdnss[0]=rdnss
-radvd.@rdnss[0].interface=lan
-radvd.@rdnss[0].addr=
-radvd.@rdnss[0].ignore=1
-radvd.@dnssl[0]=dnssl
-radvd.@dnssl[0].interface=lan
-radvd.@dnssl[0].suffix=
-radvd.@dnssl[0].ignore=1
-
-wireless.radio0=wifi-device
-wireless.radio0.type=mac80211
-wireless.radio0.channel=1
-wireless.radio0.macaddr=dc:9f:db:0a:59:2b
-wireless.radio0.hwmode=11ng
-wireless.radio0.htmode=HT20
-wireless.radio0.ht_capab=SHORT-GI-40 TX-STBC RX-STBC1 DSSS_CCK-40
-wireless.@wifi-iface[0]=wifi-iface
-wireless.@wifi-iface[0].device=radio0
-wireless.@wifi-iface[0].mode=adhoc
-wireless.@wifi-iface[0].ssid=tarator.relais.reseaulibre.ca
-wireless.@wifi-iface[0].bssid=02:CA:FF:EE:BA:BE
-wireless.@wifi-iface[0].encryption=none
-</pre>
-
-[[!meta copyright="Copyright © 2011-2013 bgm"]]
-
-[[!meta license="""[[!toggle id="license" text="GFDL 1.2+"]][[!toggleable
-id="license" text="Permission is granted to copy, distribute and/or modify this
-document under the terms of the GNU Free Documentation License, Version 1.2 or
-any later version published by the Free Software Foundation; with no Invariant
-Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
-is included in the section entitled [[GNU Free Documentation
-License|meta/gfdl]]."]]"""]]
+<a href="https://www.bidon.ca/munin/net4.bidon.ca/tarator.net4.bidon.ca/adhoc_rssi.html"><img src="https://www.bidon.ca/munin/net4.bidon.ca/tarator.net4.bidon.ca/adhoc_rssi-month.png" /></a>
