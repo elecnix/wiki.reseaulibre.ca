@@ -19,7 +19,7 @@ wget --continue --quiet https://forum.bidon.ca/nav/reseaulibre-openwrt/OpenWrt-I
 tar -jxf OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
 cd OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486
 
-make image PROFILE=Default PACKAGES="kmod-ipv6 ip radvd tcpdump ip6tables iperf babeld tinc wireless-tools luci luci-theme-bootstrap" FILES="../reseaulibre-feed/reseaulibre-mesh/files/"
+make image PROFILE=Default PACKAGES="kmod-ipv6 ip radvd tcpdump ip6tables iperf babeld tinc wireless-tools luci luci-theme-bootstrap luci-i18n-french" FILES="../reseaulibre-feed/reseaulibre-mesh/files/"
 
 # /mnt is a read-write NFS mount to the web server (it's on the same network).
 rsync --partial -r ~/openwrt/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486/bin/ar71xx /mnt/
