@@ -4,7 +4,34 @@ See [[firmware]] for usage instructions.
 
 [[!toc levels=3]]
 
-# Compile openwrt from source
+# Recommended: Create an image using "image builder"
+
+Main documentation: [[http://wiki.openwrt.org/doc/howto/obtain.firmware.generate]]
+
+* Pros: avoids the long build time of openwrt from source, useful for building against an architecture not provided by reseaulibre
+* Cons: if you want to build a specific package (ex: reseaulibre-base, reseaulibre-mesh), you will still need to compile most of OpenWRT anyway, because it will build all the dependancies (although maybe we can reduce the dependancies?).
+
+In short, for the ar71xx architecture:
+
+    mkdir ~/openwrt && cd ~/openwrt
+    wget http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
+    tar -xvjf OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
+    cd OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486
+
+The build command:
+
+    make image PROFILE=Default PACKAGES="kmod-ipv6 ip radvd tcpdump ip6tables iperf babeld tinc wireless-tools luci luci-theme-bootstrap luci-i18n-french" FILES="../reseaulibre-feed/reseaulibre-mesh/files/"
+
+The resulting firmware can be found in, for example:
+
+    ~/openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin
+    ~/openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin
+
+For the full instructions on how it is built on our build machines: [[documentation/compile/rlbuild]]
+
+# Alternative: Compile openwrt from source
+
+Warning: this is the full process to build OpenWRT and takes more time/resources. The documentation below may not be fully up to date.
 
 ## Make sure you have all prerequisites for building openwrt
 
@@ -57,31 +84,6 @@ Our reseaulibre packages are in a feed, so we need to update the feed (will do a
     make package/feeds/reseaulibre/reseaulibre-mesh/install
 
 Resulting packages are in ~/path/to/reseau-libre-openwrt/openwrt/bin/ar71xx/packages/reseaulibre-{base,mesh}[...].ipk
-
-# Create an image using "image builder" (experimental)
-
-Main documentation: [[http://wiki.openwrt.org/doc/howto/obtain.firmware.generate]]
-
-* Pros: avoids the long build time of openwrt from source, useful for building against an architecture not provided by reseaulibre
-* Cons: if you want to build a specific package (ex: reseaulibre-base, reseaulibre-mesh), you will still need to compile most of OpenWRT anyway, because it will build all the dependancies (although maybe we can reduce the dependancies?).
-
-In short, for the ar71xx architecture:
-
-    mkdir ~/openwrt && cd ~/openwrt
-    wget http://downloads.openwrt.org/attitude_adjustment/12.09/ar71xx/generic/OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
-    tar -xvjf OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486.tar.bz2
-    cd OpenWrt-ImageBuilder-ar71xx_generic-for-linux-i486
-
-The build command:
-
-    make image PROFILE=Default PACKAGES="kmod-ipv6 ip radvd tcpdump ip6tables iperf babeld"
-
-The resulting firmware can be found in, for example:
-
-    ~/openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin
-    ~/openwrt/bin/ar71xx/openwrt-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin
-
-For the full instructions on how it is built on our build machines: [[documentation/compile/rlbuild]]
 
 # Reseau libre package information 
 
