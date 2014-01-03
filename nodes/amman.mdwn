@@ -51,5 +51,27 @@ Connexion dorsale entre les arrondissements Verdun et NDG.
 
 # Autres détails techniques
 
-* Pour l'instant le routeur fonctionne avec AirOS et AirMAX (TDMA)
-* La prochaine étape est de tester sans AirMax, et si les résultats sont bons, installer OpenWRT+babeld directement. Sinon, voir si, en mode bridge, on peut faire passer les packets de babeld de façon transparente, sans avoir à installer babeld sur AirOS comme tel (propriétaire, beurk).
+* Système d'exploitation: AirOS.
+** OpenWRT n'arrivait pas à transmettre assez fort pour voir NDG. Voir: [[documentation/nanobridge]].
+** Mais pas de AirMAX (ne faisait pas de différence).
+
+Routes statiques pour NDG.
+
+<pre>
+# cat /etc/persistent/rc.poststart 
+</pre>
+
+<pre>
+#!/bin/sh
+
+# Route to NDG
+ip -6 route add fd64:2c08:9fa7:f1e0::/60 via fe80::ba27:ebff:fea1:81ed dev ath0
+</pre>
+
+Configurations are saved on AirOS with:
+
+<pre>
+cfgmtd -w -p /etc/
+</pre>
+
+c.f. http://wiki.ubnt.com/Manual_Routes
