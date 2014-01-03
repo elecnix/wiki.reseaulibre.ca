@@ -1,5 +1,7 @@
 [[!waypoint lat="45.465670" lon="-73.572189" embed hidden width="400px" height="400px" right desc="Nanobridge M5 sur un toit."]]
 
+[[!toc]]
+
 # Technical details
 
 [[!ymlfront data="""
@@ -48,6 +50,12 @@ Connexion dorsale entre les arrondissements Verdun et NDG.
 # Photos
 
 [[!img IMG_0066_amman-small.jpg alt="Nanobridge M5"]]
+
+# Statistiques
+
+<a href="https://www.bidon.ca/munin/net4.bidon.ca/damas.net4.bidon.ca/airos_dbm.html"><img src="https://www.bidon.ca/munin/net4.bidon.ca/damas.net4.bidon.ca/airos_dbm-week.png" /></a>
+
+<a href="https://www.bidon.ca/munin/net4.bidon.ca/damas.net4.bidon.ca/airos_wrate.html"><img src="https://www.bidon.ca/munin/net4.bidon.ca/damas.net4.bidon.ca/airos_wrate-week.png" /></a>
 
 # Autres détails techniques
 
