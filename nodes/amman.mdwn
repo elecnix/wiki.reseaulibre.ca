@@ -52,8 +52,8 @@ Connexion dorsale entre les arrondissements Verdun et NDG.
 # Autres détails techniques
 
 * Système d'exploitation: AirOS.
-** OpenWRT n'arrivait pas à transmettre assez fort pour voir NDG. Voir: [[documentation/nanobridge]].
-** Mais pas de AirMAX (ne faisait pas de différence).
+ * OpenWRT n'arrivait pas à transmettre assez fort pour voir NDG. Voir: [[documentation/nanobridge]].
+ * Mais pas de AirMAX (ne faisait pas de différence).
 
 Routes statiques pour NDG.
 
@@ -71,7 +71,7 @@ ip -6 route add fd64:2c08:9fa7:f1e0::/60 via fe80::ba27:ebff:fea1:81ed dev ath0
 Configurations are saved on AirOS with:
 
 <pre>
-cfgmtd -w -p /etc/
+# cfgmtd -w -p /etc/
 </pre>
 
-c.f. http://wiki.ubnt.com/Manual_Routes
+c.f. [[http://wiki.ubnt.com/Manual_Routes]]
