@@ -66,6 +66,9 @@ Routes statiques pour NDG.
 
 # Route to NDG
 ip -6 route add fd64:2c08:9fa7:f1e0::/60 via fe80::ba27:ebff:fea1:81ed dev ath0
+
+# Enable IP forwarding for IPv6
+sysctl -w net.ipv6.conf.all.forwarding=1
 </pre>
 
 Configurations are saved on AirOS with:
