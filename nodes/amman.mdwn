@@ -63,7 +63,7 @@ Connexion dorsale entre les arrondissements Verdun et NDG.
  * OpenWRT n'arrivait pas à transmettre assez fort pour voir NDG. Voir: [[documentation/nanobridge]].
  * Mais pas de AirMAX (ne faisait pas de différence).
 
-Routes statiques pour NDG.
+## Routes statiques pour NDG
 
 <pre>
 # cat /etc/persistent/rc.poststart 
@@ -86,3 +86,10 @@ Configurations are saved on AirOS with:
 </pre>
 
 c.f. [[http://wiki.ubnt.com/Manual_Routes]]
+
+## Graphes munin
+
+Générés à partir de mon routeur principal. Le plugin munin se connecte en ssh avec un clé.
+
+* [[http://community.ubnt.com/t5/airOS-Software-Configuration/Now-with-SSH-support-AirOS-plugin-for-Munin-monitoring/td-p/469169]]
+* [[https://github.com/munin-monitoring/contrib/blob/master/plugins/network/ubiquiti_airos_]]
