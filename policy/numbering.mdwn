@@ -2,14 +2,20 @@
 
 # IP allocation strategy
 
-IP addresses are allocated on a first come first serve basis. We
-strongly encourage the use of IPv6 to avoid starvation and simplify routing.
+This section documents the strategy and the addresses already allocated. Select a free IP or prefix from this page, then document it on the wiki page of your [[node|nodes]].
 
-This section documents the strategy and the addresses already allocated. Select a free IP or prefix from this page, then document it on the wiki page of your node.
+IP addresses are allocated on a first come first serve basis. We
+strongly encourage the use of IPv6 to simplify routing and allocation on both the mesh and your network (but IPv4 is also supported, as long as it is in the range described below).
 
 ## IPv6 addresses
 
-We are using an IPv6 space (`fd64:2c08:9fa7::/48`, which allows for 65,536 `/64` networks) known as unique-local addresses (ULA, see below) for our mesh. You can also use your own IPv6 address block, if your ISP offers it, or if you are using a tunnel (such as Tunnel broker). See [[documentation/ipv6]] for more information.
+You can get an IPv6 address prefix space by one of the following means:
+
+* if your ISP supports IPv6 (ex: TekSavvy, ElectronicBox, Vidéotron) and has already allocated a network prefix to, you can announce that prefix on the mesh. This avoids having to manage with two sets of IP allocations on your local network. If your ISP does not support IPv6, make sure to call them and let them know that this is an important requirement for you!
+* you can also get an IPv6 prefix from a free tunnel provider, such as [[Tunnel Broker|http://tunnelbroker.net/]] (by Hurricane Electric). This makes it possible to connect to the IPv6 public Internet, as well as announce that network prefix on the mesh.
+* or, if you do not want to depend on an external entity or with to remain more anonymous on the mesh, you can use a network prefix from the address space `fd64:2c08:9fa7::/48`, known as unique-local addresses (ULA, see below). This means that the prefix is non-public routable (similar to 192.168.x.x on IPv4), but ensures a relative uniqueness worldwide, in case we inter-connect the mesh with another private network. The auto-configuration script of the Réseau Libre [[documentation/firmware]] automatically allocate a /60 prefix from this network.
+
+See [[documentation/ipv6]] for more information.
 
 To use a block part of our IPv6 space, select a free IPv6 /64 block from the list, and document it in the wiki page of your node.
 
