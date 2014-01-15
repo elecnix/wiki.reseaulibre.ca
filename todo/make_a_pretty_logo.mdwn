@@ -51,3 +51,5 @@ Exemples de logos intéressants / autres projets
 Trucs tangentes:
 
 * [[http://www.judegomila.com/2012/10/how-to-name-your-company.html]]
+
+* Parallax design: [[http://blog.andresmax.com/post/42279937752/im-tired-of-companies-ripping-off-our-site-so-im]]
