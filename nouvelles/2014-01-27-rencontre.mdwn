@@ -1,0 +1,86 @@
+Prochaine rencontre
+===================
+
+Rencontre réguilère de Réseau libre. Courte introduction et discussions informelles.
+
+* Quand: le lundi 27 janvier 2014, 18h30 à 20h30
+* Où: l'École Polytechnique (Pavillon Lassonde, local L-4812, métro Université de Montréal) [[http://www.polymtl.ca/rensgen/coordonnees/campus.php]]
+
+Cette rencontre est ouverte à tous et toutes.
+
+Partager
+========
+
+Abonnez-vous à la liste d'annonces pour être informé de tout changement:  
+[[https://listes.koumbit.net/cgi-bin/mailman/listinfo/nouvelles-reseaulibre.ca]]
+
+Pour partager cette annonce dans vos réseaux:  
+[[http://wiki.reseaulibre.ca/nouvelles/2014-01-27-rencontre]]
+
+Questions ou commentaires:  
+[[mailto:info@reseaulibre.ca]]
+
+Pour discuter avec nous:  
+[[http://webchat.freenode.net/?channels=reseaulibre]]
+
+
+À PROPOS DE RÉSEAU LIBRE (english follows)
+========================
+
+Réseau Libre est un regroupement informel de bénévoles qui a pour objectif
+de construire un réseau sans-fil en "maille" (en anglais, "mesh") à Montréal.
+
+Un réseau en maille est une topologie réseau dans laquelle chaque hôte est
+connecté à ses voisins, formant une structure en forme de filet. Chaque maille
+est aussi appelée "relais" (ou "noeud"). Chaque relais a un certain nombre de
+"voisins", de sorte qu'il existe plusieurs chemins pour se rendre à un même point.
+Ceci permet de construire un réseau décentralisé et résistant aux pannes.
+
+Concrètement, le réseau a besoin de participants qui installent des routeurs
+sans-fil chez eux, pour ajouter des relais au réseau et ainsi en élargir la couverture.
+On installe sur ces routeurs une application (à code source libre) qui trouve
+automatiquement les voisins et participe à relayer les données.
+Les utilisateurs se connectent ensuite à un point d'accès sans-fil ordinaire
+connecté à ce relais, et peuvent alors accéder au réseau.
+
+Notre réseau grandit! Nous avons déjà des réseaux en ligne dans les quartiers
+de Rosemont, Verdun et Saint-Michel à Montréal, avec plusieurs autres noeuds
+qui seront bientôt en ligne. Peut-être y a-t-il déjà un noeud près de chez
+vous? Consultez notre carte interactive!
+
+Que vous soyez simplement curieux des nouveaux usages rendus possibles par un
+tel réseau ou que vous souhaitez en apprendre plus sur l'installation
+d'antennes sans-fil et la réseautique, le Réseau Libre est un espace d'entraide
+"ad hoc" ouvert à tous et toutes.
+
+Pour plus d'information: [[http://www.reseaulibre.ca]]
+
+ABOUT RÉSEAU-LIBRE
+==================
+
+Réseau Libre is a mesh network, meaning that it is a type of network topology
+where each host is connected to its neighbours, thus forming a sort of fishing
+net. Each participant, also called a "node", is linked to its direct
+neighbours, making it possible to have many routes possible between two points
+on the network. The main advantage of this topology is that there are no single
+point of failure essential for the network to function. In the event of a
+failure of one or many nodes, the network can still continue to function. This
+also makes it easy to add new nodes.
+
+Concretely, the network needs people who want to install wireless routers in
+their home or office, adding nodes to the network and increasing its coverage.
+There routers run a (free software) program that automatically finds other
+nodes and participates in relaying information. General users then connect to a
+wireless access points, making it easy to access the mesh network without
+installing additional software.
+
+Our network is growing! We already have networks online in the Montreal
+boroughs of Rosemont, Plateau, Verdun and Saint-Michel-Parc-Extention, with
+many new nodes to come. There may already be one near your location? Look at
+our website for the interactive map!
+
+Whether you are simply curious about the new possibilities of such a network,
+or you wish to learn more about the installation of wireless antennas and
+networking, Réseau Libre is an "ad hoc" place for collaboration open to all.
+
+For more information: [[http://www.reseaulibre.ca]]
