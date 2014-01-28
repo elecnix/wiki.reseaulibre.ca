@@ -1,0 +1,32 @@
+# Introduction
+
+Cette page sert de point d'entrée pour accéder à la documentation concernant le projet d'intégration du protocole de routage Babel à la technologie développée par [[Commotion Wireless|https://wiki.commotionwireless.net/doku.php]]. 
+
+# Avantages d'intégrer Babel à Commotion
+
+* Les images pour routeurs produites par Commotion pourront être utilisées sur le mesh Réseau Libre
+* L'interface de Commotion simplifie la configuration d'un noeud (interface web simple + wizard de configuration)
+* Génération automatique d'adresses IP
+
+# Roadmap : Janvier 2014 - Avril 2014
+
+La première étape est d'intégrer Babel à commotion.
+
+La seconde étape est d'ajouter le support IPv6.
+
+S'il reste du temps, il y a d'autres fonctionnalités qu'il serait possible d'ajouter à Babel en dupliquant celles déjà présentes pour OLSR.
+
+# Développement actuel
+
+## 2014-01-28
+
+Nous sommes présentement à l'étape de mieux comprendre comment modifier le code source de Commotion pour intégrer Babel correctement. 
+
+Selon nos pistes, les modifications doivent être effectuées dans le code source sous le répertoire git [[commotion-router|https://github.com/opentechinstitute/commotion-router]]. 
+
+Nos efforts se concentrent sur la création d'un script hotplug pour Babel étant donné que la configuration du protocole OLSR utilisé par Commotion est effectuée à l'aide d'un script normalement situé à ces endroits :
+* [[Dépôt git|https://github.com/opentechinstitute/commotion-router/blob/master/default-files/etc/hotplug.d/iface/40-olsrd]]
+* Sur un routeur flashé : /etc/hotplug.d/iface/40-olsrd
+
+En parallèle, nous cherchons et déveleppons la bonne configuration à donner à Babel (/etc/config/babeld/) pour avoir deux noeuds Commotion fonctionnant avec Babel au lieu de OLSR. 
+ 
