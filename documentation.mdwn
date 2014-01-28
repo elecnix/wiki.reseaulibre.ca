@@ -52,6 +52,7 @@ Un point d'accès permet aux utilisateurs d'accéder au réseau facilement (comm
 * [[Monitoring|documentation/monitoring/Monitoring_solution+explication+install]] - surveillance de l'état du réseau
 * [[Idees]] - possible uses for the mesh
 * [[Meta]] - gestion de ce wiki
+* [[Intégration à Commotion Wireless]] - projet d'intégration de Babel et d'IPv6 à la technologie Commotion
 
 # Services
 
